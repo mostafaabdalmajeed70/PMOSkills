@@ -1,8 +1,33 @@
+---
+skill_id: SKL-02-01
+skill_name: "Project Charter Creation"
+pack: "02 — Initiating"
+status: "Draft · Untested"
+source_type: PMI-derived
+primary_artifact_output: "A04 — Project Charter"
+artifacts_updated:
+  - "A05 — Context Register (Assumption Log)"
+pmbok8_process_anchor: "Guide §2.1.6.1 Initiate Project or Phase · Figure 2-3"
+performance_domains:
+  - Governance
+  - Stakeholders
+focus_area: Initiating
+upstream_prerequisites:
+  - "A01 — Business Case must be approved"
+  - "Pack 01 complete (governance, doc control, repository configured)"
+downstream_skills:
+  - SKL-02-02
+  - SKL-03-01
+file_path: "skills/02-initiating/SKL-02-01-project-charter.md"
+tests: 5
+version: "1.1.0"
+---
+
 # SKL-02-01 — Project Charter Creation
 **Skill ID:** SKL-02-01  
 **Skill Name:** Project Charter Creation  
-**Version:** 1.0.0-draft  
-**Lifecycle Pack:** 02-Initiating  
+**Version:** 1.1.0  
+**Lifecycle Pack:** 02 — Initiating  
 **Status:** Draft · Untested  
 **Source Type:** PMI-derived  
 **File Path:** `skills/02-initiating/SKL-02-01-project-charter.md`
@@ -96,6 +121,20 @@ This skill must be executed **once per project** — and once per phase in multi
 
 ---
 
+## Inputs Required
+
+| Input | Source | Mandatory? |
+|---|---|---|
+| Approved business case | A01 | Yes |
+| Benefits management plan | A02 | Recommended |
+| Feasibility record | A03 | Recommended |
+| EEFs and OPAs | A05 | Yes |
+| Intake / prioritization record | A10 | Conditional |
+
+**Gate check:** A01 must be approved before this skill executes. Pack 01 (governance, doc control, repository) must be complete.
+
+---
+
 ## Instructions
 
 Execute this skill in the following sequence. The PM typically drafts the charter; the sponsor owns and approves it.
@@ -179,6 +218,26 @@ Once the charter is signed, immediately trigger:
 
 ---
 
+## Outputs
+
+| Output | Artifact | Section |
+|---|---|---|
+| Signed Project Charter | A04 | Complete document |
+| Assumption Log entries | A05 | Context Register — Assumption Log section |
+| Downstream skill trigger list | Internal record | SKL-02-02 and subsequent Pack 02 skills |
+
+---
+
+## Constraints
+
+- Charter must not reproduce the full business case — cite A01 by reference only.
+- PM authority limits must be explicitly stated — no implied authority.
+- Sponsor signature is mandatory — PM self-approval is not permitted.
+- Charter must not contain WBS, detailed schedule, or risk register content — those belong in Pack 03 outputs.
+- Phase re-authorization charters must reference the prior charter and the gate decision record.
+
+---
+
 ## Tailoring Guidance
 
 | Context | Tailoring Decision |
@@ -209,57 +268,15 @@ Once the charter is signed, immediately trigger:
 
 ---
 
-## Outputs Produced by This Skill
-
-| Output | Location | Notes |
-|--------|---------- |-------|
-| Signed Project Charter | `artifacts/templates/A04-project-charter.md` (filled) | Primary deliverable |
-| Assumption Log entries | A05 (Context Register) | Transfer assumptions captured during charter drafting |
-| Downstream skill trigger list | Internal record | Document which Pack 02 skills are immediately triggered |
-
----
-
-## Integration Points
-
-| Connected Artifact or Skill | Relationship |
-|----------------------------|-------------|
-| A01 Business Case | Input — charter derives authority from the approved business case |
-| A02 Benefits Record | Input — charter references success criteria and benefit measures |
-| A03 Feasibility Record | Input — charter reflects the selected option from feasibility analysis |
-| A05 Context Register | Bidirectional — EEFs and OPAs feed the charter; assumptions from the charter feed A05 |
-| A06 Tailoring Decision Record | Downstream — charter triggers the initial tailoring assessment |
-| A07 Stakeholder Register | Downstream — charter provides the initial stakeholder list for A07 |
-| A35 Governance Record | Downstream — charter authority model feeds the governance setup |
-| A14 Integrated Plan | Downstream — all planning builds on the charter as its foundation |
-
----
-
 ## Tests
 
-### Test T-1: Minimum Valid Charter
-**Given:** An approved business case and a nominated PM  
-**When:** SKL-02-01 is executed  
-**Then:** The output must contain all 9 mandatory fields, must be signed by the sponsor, and must not reproduce the full business case
-
-### Test T-2: Waste Test Pass
-**Given:** A draft charter with full planning content included  
-**When:** Waste test is applied in Step 3  
-**Then:** The skill must return FAIL and require removal of planning content before routing
-
-### Test T-3: Missing Business Case Prerequisite
-**Given:** No approved business case exists  
-**When:** Step 1 prerequisite check is run  
-**Then:** The skill must halt and return "Return to SKL-01-02 — Business Case not approved"
-
-### Test T-4: Adaptive Tailoring
-**Given:** An adaptive (Agile) project context  
-**When:** Charter is drafted with tailoring applied  
-**Then:** The charter must still include PM authority, sponsor, and success criteria — but may omit detailed milestone dates
-
-### Test T-5: Multi-phase Gate Charter
-**Given:** A predictive project entering Phase 2  
-**When:** SKL-02-01 is executed for phase re-authorization  
-**Then:** The output must reference the prior charter and the gate decision (A35) and must state the new phase scope boundary
+| Test ID | Test description | Pass condition | Fail condition |
+|---|---|---|---|
+| T-1 | Minimum valid charter — all 9 mandatory fields present, sponsor-signed | All mandatory fields populated; sponsor signature present; no full plan content | Any mandatory field missing or PM self-approved |
+| T-2 | Waste test — charter does not reproduce full business case | Charter ≤ 6 pages; no WBS, schedule, or risk register content | Charter reproduces full business case or contains plan-level detail |
+| T-3 | Missing business case prerequisite | Skill halts; returns "Return to SKL-01-02" | Skill proceeds without approved A01 |
+| T-4 | Adaptive tailoring applied | Charter includes PM authority, sponsor, and success criteria; detailed milestones omitted appropriately | Adaptive charter missing sponsor or PM authority |
+| T-5 | Multi-phase gate charter issued | Phase charter references prior charter and gate decision (A35); new phase scope boundary stated | Phase 2 starts without re-authorization |
 
 ---
 
@@ -289,6 +306,21 @@ Once the charter is signed, immediately trigger:
 
 ---
 
+## Integration Points
+
+| Connected Artifact or Skill | Relationship |
+|----------------------------|-------------|
+| A01 Business Case | Input — charter derives authority from the approved business case |
+| A02 Benefits Record | Input — charter references success criteria and benefit measures |
+| A03 Feasibility Record | Input — charter reflects the selected option from feasibility analysis |
+| A05 Context Register | Bidirectional — EEFs and OPAs feed the charter; assumptions from the charter feed A05 |
+| A06 Tailoring Decision Record | Downstream — charter triggers the initial tailoring assessment |
+| A07 Stakeholder Register | Downstream — charter provides the initial stakeholder list for A07 |
+| A35 Governance Record | Downstream — charter authority model feeds the governance setup |
+| A14 Integrated Plan | Downstream — all planning builds on the charter as its foundation |
+
+---
+
 ## Companion References
 
 | Alias | Source | Relevant Section |
@@ -298,6 +330,15 @@ Once the charter is signed, immediately trigger:
 | Process-Groups | Process Groups Practice Guide | Initiating Process Group |
 | PMI-BA | Business Analysis Practice Guide | Project initiation and needs analysis |
 | Forms-Book | PMI Practice Standard Forms | Project Charter template reference |
+
+---
+
+## Change Log
+
+| Version | Date | Description |
+|---|---|---|
+| 1.0.0 | 2026-05-29 | Initial build — full skill file with Purpose, Scope, Authority, Instructions, Core Fields, Tailoring, Failure Cases, Tests, Examples |
+| 1.1.0 | 2026-05-30 | Canonical patch — added YAML frontmatter; added Inputs Required table with gate check; normalized Outputs table; added Constraints section; normalized Tests to table format; updated version reference |
 
 ---
 

@@ -1,8 +1,33 @@
+---
+skill_id: SKL-02-02
+skill_name: "Stakeholder Identification"
+pack: "02 — Initiating"
+status: "Draft · Untested"
+source_type: PMI-derived
+primary_artifact_output: "A07 — Stakeholder Register and Engagement Strategy (Identification section)"
+artifacts_updated:
+  - "A05 — Context Register (Assumption Log)"
+  - "A19 — Risk Management Record (engagement gap risks)"
+pmbok8_process_anchor: "Guide §2.5.2.1 Identify Stakeholders · Figure 2-33"
+performance_domains:
+  - Stakeholders
+  - Governance
+focus_area: Initiating
+upstream_prerequisites:
+  - "SKL-02-01 — Project Charter (A04) must be signed"
+downstream_skills:
+  - SKL-03-07
+  - SKL-03-08
+file_path: "skills/02-initiating/SKL-02-02-stakeholder-identification.md"
+tests: 7
+version: "1.1.0"
+---
+
 # SKL-02-02 — Stakeholder Identification
 **Skill ID:** SKL-02-02  
 **Skill Name:** Stakeholder Identification  
-**Version:** 1.0.0-draft  
-**Lifecycle Pack:** 02-Initiating  
+**Version:** 1.1.0  
+**Lifecycle Pack:** 02 — Initiating  
 **Status:** Draft · Untested  
 **Source Type:** PMI-derived  
 **File Path:** `skills/02-initiating/SKL-02-02-stakeholder-identification.md`
@@ -113,6 +138,20 @@ This skill is first executed during **initiation**, immediately after the Projec
 | **Change requests** | A12 | When identification reveals scope, risk, or plan impacts requiring formal change |
 | **Project management plan updates** | — | Requirements management plan, communications management plan, risk management plan, and stakeholder engagement plan may all require updates |
 | **Project document updates** | — | Assumption log (A05), issue log (A18), risk register (A19) updated when identification reveals new issues or risks |
+
+---
+
+## Inputs Required
+
+| Input | Source | Mandatory? |
+|---|---|---|
+| Project Charter | A04 | Yes |
+| Business Case | A01 | Yes |
+| Context Register (EEFs and OPAs) | A05 | Yes |
+| Prior A07 version | A07 | Yes (re-runs only) |
+| Change log, issue log, requirements | A12, A18, A08 | Conditional |
+
+**Gate check:** A04 must be signed before this skill executes. On re-runs, always update from the prior A07 state — never start from blank.
 
 ---
 
@@ -251,6 +290,26 @@ Once A07 is baselined, immediately trigger:
 
 ---
 
+## Outputs
+
+| Output | Artifact | Section |
+|---|---|---|
+| Stakeholder Register and Engagement Strategy | A07 | Complete record — Identification section |
+| Risk register updates | A19 | Engagement gap risk entries |
+| Assumption log updates | A05 | New assumptions surfaced during identification |
+
+---
+
+## Constraints
+
+- A04 must be signed before this skill executes — do not run without an approved charter.
+- A07 is a living record — always update from the prior state; never blank-slate on re-runs.
+- Do not maintain a separate salience canvas if it duplicates A07 fields — merge content and retire the duplicate (waste rule).
+- Sponsor review is mandatory for initial release of A07 — PM self-approval is not permitted for first execution.
+- Engagement gaps with risk implications must be logged in A19 — not left as unrecorded observations.
+
+---
+
 ## Tailoring Guidance
 
 | Context | Tailoring Decision |
@@ -283,17 +342,6 @@ Once A07 is baselined, immediately trigger:
 
 ---
 
-## Outputs Produced by This Skill
-
-| Output | Location | Notes |
-|--------|---------- |-------|
-| Stakeholder Register and Engagement Strategy | `artifacts/templates/A07-stakeholder-register.md` (filled) | Primary deliverable |
-| Risk register updates | A19 (Risk Management Record) | Risk flags from engagement gaps |
-| Assumption log updates | A05 (Context Register) | New assumptions surfaced during identification |
-| Downstream skill trigger list | Internal record | SKL-03-07 and SKL-03-08 triggered |
-
----
-
 ## Re-Run Schedule
 
 | Trigger | Re-Run Type |
@@ -307,61 +355,17 @@ Once A07 is baselined, immediately trigger:
 
 ---
 
-## Integration Points
-
-| Connected Artifact or Skill | Relationship |
-|----------------------------|-------------|
-| A04 Project Charter | Input — primary trigger; charter names the sponsor, PM, and key parties |
-| A01 Business Case | Input — identifies business owners and benefit recipients |
-| A02 Benefits Record | Input — identifies benefit owners |
-| A05 Context Register | Bidirectional — EEFs and OPAs feed identification; new assumptions feed back to A05 |
-| A12 Change and Exception Decision Log | Conditional input on re-runs; output when identification triggers a change |
-| A18 Issue, Impediment, and Action Log | Conditional input on re-runs; issues often reveal hidden stakeholders |
-| A19 Risk Management Record | Output — engagement gaps with risk implications are logged here |
-| A28 Communications and Reporting Record | Downstream — stakeholder communication needs from A07 feed A28 |
-| A07 (itself — prior version) | Input on all re-runs — always update from the prior state, never blank-slate |
-| SKL-02-01 | Upstream prerequisite — charter must be signed before this skill runs |
-| SKL-03-07 | Downstream — Plan Stakeholder Engagement consumes A07 as its primary input |
-| SKL-03-08 | Downstream — Plan Communications Management uses A07 stakeholder information needs |
-
----
-
 ## Tests
 
-### Test T-1: Minimum Valid A07 at Initiation
-**Given:** A signed Project Charter (A04) and approved Business Case (A01)  
-**When:** SKL-02-02 is executed at project initiation  
-**Then:** A07 must contain at minimum: sponsor, PM, and at least three other named stakeholder groups; all mandatory fields populated; current and target engagement levels assigned; last reviewed date recorded
-
-### Test T-2: Missing Charter Prerequisite
-**Given:** No signed Project Charter exists  
-**When:** Step 1 prerequisite check is run  
-**Then:** Skill must halt and return "Return to SKL-02-01 — Project Charter not approved"
-
-### Test T-3: Only Supportive Stakeholders
-**Given:** A07 draft contains only Supportive and Leading entries  
-**When:** The PM reviews a complex organizational change project  
-**Then:** Skill must flag this as a likely identification gap and prompt a facilitated discovery session to surface Neutral and Resistant stakeholders
-
-### Test T-4: Re-Run at Phase Gate
-**Given:** A predictive project completing Phase 1 and entering Phase 2  
-**When:** SKL-02-02 is re-run at the phase gate  
-**Then:** A07 must be updated with the last reviewed date; new phase stakeholders (e.g., operational teams, end users) must be assessed; engagement levels must be revised based on phase progression
-
-### Test T-5: Engagement Gap Risk Flag
-**Given:** A key decision-maker stakeholder is classified as Resistant with a target of Supportive  
-**When:** Step 6 downstream impact check is run  
-**Then:** A risk entry must be created in A19 referencing the engagement gap, with an assigned owner and target engagement action
-
-### Test T-6: Waste Rule — Duplicate Salience Canvas
-**Given:** A separate salience canvas exists alongside A07 with identical stakeholder rows  
-**When:** Waste test is applied  
-**Then:** Skill must flag the duplicate; recommend merging salience classification into A07 and retiring the canvas
-
-### Test T-7: Adaptive Project Re-Run
-**Given:** An adaptive (Scrum) project entering Sprint 3  
-**When:** A lightweight re-run of SKL-02-02 is performed  
-**Then:** A07 must confirm no new external stakeholders have emerged; engagement levels for product owner and key users must be confirmed or updated; last reviewed date updated
+| Test ID | Test description | Pass condition | Fail condition |
+|---|---|---|---|
+| T-1 | Minimum valid A07 at initiation | A07 contains sponsor, PM, and ≥3 other named groups; all mandatory fields populated; engagement levels assigned; last reviewed date recorded | Any mandatory field missing |
+| T-2 | Missing charter prerequisite | Skill halts; returns "Return to SKL-02-01" | Skill proceeds without signed A04 |
+| T-3 | Only supportive stakeholders | Skill flags identification gap; prompts facilitated discovery session | Gap not flagged on complex change project |
+| T-4 | Re-run at phase gate | A07 updated with last reviewed date; new phase stakeholders assessed; engagement levels revised | A07 not updated at phase gate |
+| T-5 | Engagement gap risk flag | Risk entry created in A19 referencing engagement gap; owner assigned; action documented | Gap noted in A07 but not logged in A19 |
+| T-6 | Waste rule — duplicate salience canvas | Skill flags duplicate; recommends merge into A07 and retirement of canvas | Duplicate maintained without flag |
+| T-7 | Adaptive project re-run | A07 confirms no new external stakeholders; product owner and key user engagement levels confirmed or updated; last reviewed date updated | A07 not updated after sprint |
 
 ---
 
@@ -392,6 +396,25 @@ Re-run after Sprint 3 reveals:
 
 ---
 
+## Integration Points
+
+| Connected Artifact or Skill | Relationship |
+|----------------------------|-------------|
+| A04 Project Charter | Input — primary trigger; charter names the sponsor, PM, and key parties |
+| A01 Business Case | Input — identifies business owners and benefit recipients |
+| A02 Benefits Record | Input — identifies benefit owners |
+| A05 Context Register | Bidirectional — EEFs and OPAs feed identification; new assumptions feed back to A05 |
+| A12 Change and Exception Decision Log | Conditional input on re-runs; output when identification triggers a change |
+| A18 Issue, Impediment, and Action Log | Conditional input on re-runs; issues often reveal hidden stakeholders |
+| A19 Risk Management Record | Output — engagement gaps with risk implications are logged here |
+| A28 Communications and Reporting Record | Downstream — stakeholder communication needs from A07 feed A28 |
+| A07 (itself — prior version) | Input on all re-runs — always update from the prior state, never blank-slate |
+| SKL-02-01 | Upstream prerequisite — charter must be signed before this skill runs |
+| SKL-03-07 | Downstream — Plan Stakeholder Engagement consumes A07 as its primary input |
+| SKL-03-08 | Downstream — Plan Communications Management uses A07 stakeholder information needs |
+
+---
+
 ## Companion References
 
 | Alias | Source | Relevant Section |
@@ -401,6 +424,15 @@ Re-run after Sprint 3 reveals:
 | Process-Groups | Process Groups Practice Guide | Initiating Process Group · Identify Stakeholders |
 | PMI-BA | Business Analysis Practice Guide | Stakeholder identification and analysis |
 | Forms-Book | PMI Practice Standard Forms | Stakeholder register template reference |
+
+---
+
+## Change Log
+
+| Version | Date | Description |
+|---|---|---|
+| 1.0.0 | 2026-05-29 | Initial build — full skill file with Purpose, Scope, Authority, PMBOK8 ITT, Instructions (8 steps), Core Fields, Tailoring, Failure Cases, Re-Run Schedule, Tests (7), Examples, Integration Points |
+| 1.1.0 | 2026-05-30 | Canonical patch — added YAML frontmatter; added Inputs Required table with gate check; added Outputs table; added Constraints section; normalized Tests to table format; updated version reference |
 
 ---
 
