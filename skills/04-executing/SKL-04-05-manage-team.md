@@ -2,7 +2,7 @@
 skill_id: SKL-04-05
 skill_name: Manage Team
 pack: "04 — Executing"
-version: "1.0.0"
+version: "1.1.0"
 status: "Draft · Untested"
 source_type: PMI-derived
 primary_artifact: "A25 — Team Operating and Responsibility Record (performance and conflict log)"
@@ -35,7 +35,7 @@ tests: 8
 
 ## Purpose
 
-Manage Team tracks team member performance, provides feedback, resolves issues and conflicts, and manages changes to team composition. It is the active day-to-day team leadership skill. Issues that exceed the PM's authority are escalated through A18.
+Manage Team tracks team member performance, provides feedback, resolves issues and conflicts, and manages changes to team composition. It is the active day-to-day team leadership skill. Issues that exceed the PM’s authority are escalated through A18.
 
 ---
 
@@ -133,6 +133,8 @@ Capture significant team management events in A21:
 | Unresolved conflict | Conflict known to PM but not in A25 | Log immediately; apply conflict resolution technique |
 | Force overuse | A25 shows force/direct used more than once per phase | PM self-assessment; recalibrate to collaborative approach |
 | RACI stale after team change | A25 RACI shows departed team member still assigned | Immediate RACI update; notify affected work package owners |
+| Undocumented termination or release | Team member released from project with no A25 update or transition record | Retroactive A25 update; confirm all in-progress work reassigned; update A26 capacity |
+| Performance feedback not acknowledged | A25 shows feedback given but no agreed actions or response from team member | Follow-up session required; document outcome; escalate to functional manager if pattern persists |
 
 ---
 
@@ -156,6 +158,7 @@ Capture significant team management events in A21:
 | Version | Date | Change description |
 |---|---|---|
 | 1.0.0 | 2026-05-29 | Initial build |
+| 1.1.0 | 2026-05-30 | Expanded failure modes from 4 to 6: added undocumented termination/release and performance feedback not acknowledged |
 
 ---
 
