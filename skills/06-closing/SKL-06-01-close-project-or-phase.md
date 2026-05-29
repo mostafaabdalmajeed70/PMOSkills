@@ -1,302 +1,283 @@
 # SKL-06-01 — Close Project or Phase
 
 **Skill ID:** SKL-06-01  
-**Canonical Title:** Close Project or Phase  
 **Pack:** 06 — Closing  
 **Version:** 1.0.0  
-**Status:** Draft · Untested  
-**Source Type:** PMI-derived  
-**File Path:** `skills/06-closing/SKL-06-01-close-project-or-phase.md`  
-**Authority:** Process Groups: A Practice Guide §8.1 · Figure 8-1 · Figure 8-2  
-**Last Updated:** 2026-05-30
+**Status:** Active  
+**Authority:** PMI-derived  
+**Primary Reference:** Process-Groups §8.1 · PMBOK 8 — Close Project or Phase focus area  
+**Secondary References:** Forms-Book · Artifacts-V-1.1.md (A27 — Project Closure Record)  
+**Lifecycle Stage:** Closing  
+**Performance Domains:** Delivery · Governance · Stakeholders  
+**PMBOK 8 Principles Applied:** Stewardship · Value · Stakeholders · Adaptability  
 
 ---
 
-## 1. Purpose
+## Purpose
 
-Close Project or Phase is the process of finalizing all activities for the project, phase, or contract. Its key benefits are that project or phase information is archived, the planned work is completed, and organizational team resources are released to pursue new endeavors. This process is performed once or at predefined points in the project.
-
-Closing is not merely administrative wrap-up. It is the formal verification that all work is complete, all acceptance criteria have been met, all contracts are settled, and all knowledge is captured and archived so the organization benefits from the project long after its resources have been released.
+Formally complete all project or phase activities, confirm acceptance of all deliverables, release resources, close contracts, archive project records, and transfer the final product, service, or result to the appropriate receiving entity. This skill verifies that all Process Group processes have been completed and that the project or phase is formally concluded.
 
 ---
 
-## 2. Scope
+## Scope
 
-This skill covers:
-- Verifying that all project work defined in the project management plan is complete
-- Confirming formal customer or sponsor acceptance of all deliverables
-- Closing all project accounts and ensuring all costs are charged
-- Releasing and reassigning all project resources — team members, equipment, facilities
-- Disposing of excess project material
-- Finalizing and closing all contractual agreements and procurement records
-- Archiving all project records in organizational process assets
-- Capturing and finalizing lessons learned
-- Producing the final report
-- Transitioning the final product, service, or result to operations or the next phase
-- Measuring stakeholder satisfaction
-- Documenting reasons for early closure if the project is terminated before completion
-
-This skill does **not** cover:
-- The detailed mechanics of lessons learned capture — that is SKL-06-03
-- The final performance review analysis — that is SKL-06-02
-- Individual contract closure mechanics — that is SKL-05-10 (Control Procurements)
+| In Scope | Out of Scope |
+|---|---|
+| Administrative closure of project or phase | Benefits realization monitoring post-transition |
+| Formal acceptance of deliverables from customer/sponsor | Ongoing operations management |
+| Contract closure and final procurement records | Portfolio-level archiving |
+| Resource release and personnel reassignment | Program-level closure |
+| Lessons learned final update | Organizational change management post-handover |
+| OPA updates and final archive | |
 
 ---
 
-## 3. PMBOK Anchor
+## Trigger Conditions
 
-| Field | Value |
-|-------|-------|
-| **Process** | Close Project or Phase |
-| **Guide Section** | Process Groups §8.1 |
-| **Figure** | Figure 8-1 — I/T/O · Figure 8-2 — Data Flow Diagram |
-| **Performance Domain** | Delivery · Stakeholders |
-| **Focus Area** | Closing |
-| **Primary Outcome** | Final product/service/result transition · Final report · OPA updates · Lessons learned (final) |
-
-**PMI definition (paraphrased):** Close Project or Phase finalizes all activities, archives project information, confirms completion of planned work, and releases organizational resources.
+Activate this skill when:
+- All project deliverables have been accepted (or project is being terminated)
+- All Executing and Monitoring & Controlling processes are confirmed complete
+- Sponsor or governing body has directed project or phase closure
+- Contract completion confirmation has been received from all sellers
+- Phase gate review has approved progression or final closure
 
 ---
 
-## 4. The Two Closure Scenarios
+## Inputs
 
-Process Groups §8.1 explicitly addresses two closure scenarios:
-
-### 4.1 Normal Closure
-The project or phase has met its objectives. All deliverables have been accepted. The project manager verifies that all project management plan components have been completed, all issues are resolved, all costs are charged, all contracts are settled, and all records are archived.
-
-### 4.2 Early Closure (Terminated Projects)
-The project is closed before completion due to: objectives being unachievable, funding exhaustion, change in organizational strategy or priority, legal cause, or customer cancellation. The project manager must document the reasons for termination, capture lessons learned to that point, archive all available records, and formally release resources. The same closure checklist applies — adapted to the stage reached.
-
----
-
-## 5. Roles
-
-### 5.1 Project Manager
-Owns the entire closure process. Reviews the project management plan against completed work. Confirms acceptance. Coordinates all administrative, contractual, and knowledge-capture activities. Signs the final report.
-
-### 5.2 Project Sponsor
-Provides formal sign-off on project closure. Confirms that the business objectives were met or accepts the documented reason for termination.
-
-### 5.3 Customer / Authorized Stakeholder
-Provides formal acceptance of all deliverables. Signs acceptance documentation.
-
-### 5.4 Project Team Members
-Complete final deliverable documentation. Contribute to lessons learned. Release assigned resources. Hand over technical knowledge to operations.
-
-### 5.5 Procurement / Contracts Team
-Finalizes all vendor and supplier agreements. Closes open claims. Archives procurement records.
-
-### 5.6 Finance / Accounting
-Closes project accounts. Confirms all costs are charged. Releases remaining budget.
-
-### 5.7 Operations / Receiving Organization
-Accepts the final product, service, or result transition. Confirms operational readiness.
+| Input | Source | Notes |
+|---|---|---|
+| Project Charter | A01 | Baseline reference for original objectives |
+| Project Management Plan (all components) | A06 | Confirm all planned work is complete |
+| Assumption Log | A03 | Final review for open assumptions |
+| Basis of Estimates | A04 | Archive alongside final actuals |
+| Change Log | A12 | Confirm all changes closed |
+| Issue Log | A18 | Confirm all issues resolved or formally deferred |
+| Lessons Learned Register | A21 | Final update before archive |
+| Milestone List | A15 (schedule) | Confirm all milestones achieved |
+| Project Communications | A28 | Archive final communications |
+| Quality Control Measurements | A30 | Archive with deliverables |
+| Quality Reports | A30 | Archive |
+| Requirements Documentation | A08 | Confirm all requirements met |
+| Risk Register | A19 | Final status of all risks |
+| Risk Report | A19 | Final summary |
+| Accepted Deliverables | Validate Scope output | Formal sign-off received |
+| Business Case | A02 | Verify project objectives were achieved |
+| Benefits Management Plan | Sponsor/PMO | Confirm benefits handover |
+| Agreements | Procurement | All contracts to be formally closed |
+| Procurement Documentation | A31 | Complete procurement record |
+| Organizational Process Assets | OPA | Policies, templates, historical info |
 
 ---
 
-## 6. Inputs
+## Tools and Techniques
 
-Process Groups Figure 8-1 identifies:
-
-| Input | Artifact | Role in This Skill |
-|-------|----------|--------------------|
-| **Project charter** | A02 | Defines the original objectives against which closure is verified |
-| **Project management plan** — all components | A14 | The complete plan that must be verified as executed |
-| **Assumption log** | A10 | Final review of assumptions and their resolution |
-| **Basis of estimates** | A11 | Reference for final cost and schedule variance analysis |
-| **Change log** | A12 | Complete record of all approved changes — confirms all changes were implemented |
-| **Issue log** | A18 | Confirms all issues are resolved before closure |
-| **Lessons learned register** | A21 | Accumulated learning throughout the project — finalized at closure |
-| **Milestone list** | A15-linked | Confirms all milestones were achieved |
-| **Project communications** | A28 records | Archive of project communication history |
-| **Quality control measurements** | A20-linked | Final quality performance data |
-| **Quality reports** | A20 | Final quality assurance summary |
-| **Requirements documentation** | A08-linked | Confirms all requirements were delivered |
-| **Risk register** | A19 | Final risk status — confirms all residual risks are acknowledged and handed over |
-| **Risk report** | A19-linked | Summary of overall risk performance |
-| **Accepted deliverables** | A13 | The formally accepted project outputs — primary basis for closure confirmation |
-| **Business case** | A01 | Original justification — referenced in final benefit realization assessment |
-| **Benefits management plan** | A01-linked | Defines how benefits will be measured post-project |
-| **Agreements** | Procurement records | All contracts requiring formal closure |
-| **Procurement documentation** | Procurement records | Complete procurement history for archiving |
-| **Organizational process assets** | OPA / A05 | Closure templates, procedures, historical archives |
+| Tool / Technique | Application |
+|---|---|
+| Expert Judgment | Confirm completeness of closure activities; review compliance with organizational standards |
+| Data Analysis — Document Analysis | Review project records for completeness and gaps |
+| Data Analysis — Regression Analysis | Assess patterns in performance data for final report |
+| Data Analysis — Trend Analysis | Identify performance trends over project lifecycle |
+| Data Analysis — Variance Analysis | Compare planned vs. actual scope, schedule, cost, quality |
+| Meetings | Closure meeting with sponsor, stakeholders, team; handover sessions |
 
 ---
 
-## 7. Tools and Techniques
+## Outputs
 
-Process Groups Figure 8-1 names:
-
-### 7.1 Expert Judgment
-Used to assess whether all closure activities are complete, evaluate final project performance, interpret variance data, and confirm that lessons learned are comprehensive and accurately captured.
-
-### 7.2 Data Analysis
-
-**Document analysis:**  
-Systematic review of all project documents to confirm completeness, accuracy, and readiness for archiving.
-
-**Regression analysis:**  
-Analyzes relationships between project variables and final outcomes — used to identify which planning or execution factors most influenced project success or failure.
-
-**Trend analysis:**  
-Reviews performance trends across the project lifecycle to identify patterns in schedule, cost, quality, and risk performance.
-
-**Variance analysis:**  
-Compares planned vs. actual outcomes across all performance dimensions — scope, schedule, cost, quality, risk — to produce the final performance assessment.
-
-### 7.3 Meetings
-Closure meetings serve multiple purposes: formal acceptance sign-off, final lessons learned sessions, team debriefs, stakeholder satisfaction measurement, and transition coordination with operations.
+| Output | Artifact | Action |
+|---|---|---|
+| Final Product, Service, or Result Transition | — | Formal handover to operations, customer, or next phase |
+| Final Report | A17 (final version) | Comprehensive summary of project performance |
+| Lessons Learned Register (updated) | A21 | Final version archived to OPA |
+| Organizational Process Assets Updates | OPA | Updated policies, procedures, templates, historical records |
 
 ---
 
-## 8. Closure Checklist
+## Primary Artifact — Project Closure Record (A27)
 
-Process Groups §8.1 defines the following activities as necessary for administrative closure:
+### What to Generate
 
-### Group 1 — Completion and Exit Criteria
-- [ ] All documents and deliverables are up to date
-- [ ] All issues are resolved
-- [ ] Delivery and formal acceptance of deliverables confirmed by the customer
-- [ ] All costs charged to the project
+A27 — Project Closure Record is the formal document confirming that the project or phase is closed.
+
+**Minimum Required Fields:**
+
+```markdown
+## Project Closure Record
+
+**Project Name:**
+**Project ID:**
+**Phase (if phase closure):**
+**Closure Date:**
+**Project Manager:**
+**Sponsor:**
+**Closure Type:** [ ] Normal Completion  [ ] Phase Gate  [ ] Early Termination
+
+---
+
+### 1. Objectives vs. Outcomes
+
+| Objective (from Charter) | Achieved? | Notes |
+|---|---|---|
+| | | |
+
+### 2. Deliverables Acceptance Register
+
+| Deliverable | Accepted By | Acceptance Date | Conditions |
+|---|---|---|---|
+| | | | |
+
+### 3. Scope Summary
+| Planned Scope | Delivered Scope | Variance | Cause |
+|---|---|---|---|
+| | | | |
+
+### 4. Schedule Summary
+| Baseline Finish | Actual Finish | Variance | Cause |
+|---|---|---|---|
+| | | | |
+
+### 5. Cost Summary
+| Budget at Completion (BAC) | Actual Cost (AC) | Variance | EAC |
+|---|---|---|---|
+| | | | |
+
+### 6. Quality Summary
+| Quality Objective | Met? | Evidence |
+|---|---|---|
+| | | |
+
+### 7. Contract Closure
+| Contract / Vendor | Status | Closed Date | Outstanding Claims |
+|---|---|---|---|
+| | | | |
+
+### 8. Resource Release
+| Resource / Team Member | Release Date | Reassigned To |
+|---|---|---|
+| | | |
+
+### 9. Open Items at Closure (Formally Deferred)
+| Item | Owner | Disposition |
+|---|---|---|
+| | | |
+
+### 10. Transition Confirmation
+**Receiving Entity:**
+**Transition Date:**
+**Transition Conditions:**
+**Signed Off By:**
+
+### 11. Final Signatures
+| Role | Name | Signature | Date |
+|---|---|---|---|
+| Project Manager | | | |
+| Sponsor | | | |
+| Customer Representative | | | |
+| PMO Representative | | | |
+```
+
+---
+
+## Closure Checklist
+
+### Administrative Closure
+- [ ] All deliverables accepted and signed off
+- [ ] All project documents updated and finalized
+- [ ] All issues in Issue Log resolved or formally deferred
+- [ ] All change requests formally closed
+- [ ] All open risks formally closed or transferred
+- [ ] All costs charged to project accounts
 - [ ] Project accounts closed
-- [ ] Personnel reassigned
-- [ ] Excess project material dealt with
-- [ ] Project facilities, equipment, and other resources reallocated
-- [ ] Final project reports elaborated per organizational policy
+- [ ] All facilities, equipment, and resources reallocated
+- [ ] All personnel reassigned
+- [ ] Excess project materials disposed of
 
-### Group 2 — Contractual Closure
-- [ ] Formal acceptance of all sellers' work confirmed
-- [ ] Open claims finalized
-- [ ] Records updated to reflect final results
-- [ ] Procurement documentation archived
+### Contract Closure
+- [ ] Formal acceptance of all seller work obtained
+- [ ] All open claims finalized
+- [ ] Procurement records updated with final results
+- [ ] All procurement documentation archived
 
-### Group 3 — Knowledge and Records
-- [ ] Project or phase records collected
-- [ ] Project success or failure audited
-- [ ] Knowledge sharing and transfer managed
-- [ ] Lessons learned identified and finalized
-- [ ] Project information archived for future organizational use
+### Knowledge and Archive
+- [ ] Lessons Learned Register finalized
+- [ ] All project records archived in OPA
+- [ ] Final project report completed and distributed
+- [ ] Stakeholder satisfaction assessment completed
 
-### Group 4 — Transition
-- [ ] Products, services, or results transitioned to next phase, production, or operations
-- [ ] Suggestions for improving organizational policies and procedures sent to appropriate unit
-
-### Group 5 — Stakeholder Satisfaction
-- [ ] Stakeholder satisfaction measured
+### Transition
+- [ ] Final product, service, or result formally transitioned
+- [ ] Receiving entity has confirmed acceptance
+- [ ] Operational handover documentation provided
+- [ ] Post-project benefits realization owner confirmed
 
 ---
 
-## 9. Step-by-Step Instructions
+## Early Termination Procedure
 
-### Step 1 — Verify Project Management Plan Completion
-Review every component of A14. Confirm that all work defined in the plan has been executed. Identify any remaining open items and resolve or formally document them as accepted exceptions.
+When a project is terminated before completion, this skill governs documentation of closure under termination conditions:
 
-### Step 2 — Confirm Acceptance of All Deliverables
-Verify that all deliverables in the accepted deliverables record have been formally signed off by the authorized customer or sponsor. Obtain any missing acceptance signatures.
-
-### Step 3 — Resolve All Open Issues
-Review A18. Confirm every issue is either resolved or formally documented as a known residual accepted by the sponsor. No issue should remain open at formal closure.
-
-### Step 4 — Finalize All Contracts and Procurement Records
-Work with the procurement team to confirm formal acceptance of all sellers' work, settle open claims, update procurement records to reflect final results, and archive all procurement documentation.
-
-### Step 5 — Close Project Accounts
-Coordinate with finance to confirm all costs are charged to the project, close project accounts, and release remaining budget.
-
-### Step 6 — Release All Resources
-Reassign team members to new assignments or release them to functional managers. Release all equipment, facilities, and physical resources. Dispose of excess project material per organizational procedures.
-
-### Step 7 — Perform Data Analysis
-Conduct document analysis, variance analysis, trend analysis, and (where applicable) regression analysis across all performance dimensions. This forms the factual basis for the final report (SKL-06-02).
-
-### Step 8 — Finalize Lessons Learned
-Convene lessons learned session(s). Compile, review, and finalize A21. Route to OPA archiving (SKL-06-03).
-
-### Step 9 — Produce the Final Report
-Compile the final report summarizing project performance across all dimensions. See SKL-06-02 for full final report content.
-
-### Step 10 — Transition Final Product, Service, or Result
-Coordinate formal handover to operations, the receiving organization, or the next phase. Confirm operational readiness. Document the transition.
-
-### Step 11 — Measure Stakeholder Satisfaction
-Conduct stakeholder satisfaction assessment. Document results. Feed into OPA for future project planning.
-
-### Step 12 — Update Organizational Process Assets
-Archive all project records — plans, documents, reports, communications, lessons learned, procurement records — in A05. Send suggestions for policy and procedure improvements to the appropriate organizational unit.
-
-### Step 13 — Obtain Formal Closure Approval
-Obtain sponsor sign-off on project closure. Document the formal closure date.
+1. Document the reasons for termination in the Project Closure Record
+2. Identify the state of all in-progress work and deliverables
+3. Confirm which, if any, deliverables are accepted in their current state
+4. Close all contracts per termination clauses
+5. Release all resources immediately
+6. Update Lessons Learned with findings from the termination
+7. Archive all records
+8. Obtain formal closure authorization from sponsor or governing body
 
 ---
 
-## 10. Outputs
+## Authority Routing
 
-Process Groups Figure 8-1 identifies:
-
-| Output | Artifact | Content |
-|--------|----------|---------|
-| **Project documents updates** — lessons learned register | A21 (final) | Complete, finalized lessons learned for the entire project |
-| **Final product, service, or result transition** | Transition record | Documented handover to operations, next phase, or customer |
-| **Final report** | A17-final / standalone | Complete summary of project performance — see SKL-06-02 |
-| **Organizational process assets updates** | OPA / A05 | All archived project records, updated templates, policy improvement suggestions, stakeholder satisfaction data |
-
----
-
-## 11. Decision Logic
-
-| Condition | Action |
-|-----------|--------|
-| All deliverables accepted, all issues closed, all contracts settled | Proceed through closure checklist; produce final report; obtain sign-off |
-| Open issue at closure | Resolve or obtain formal sponsor acceptance of known exception; document in final report |
-| Pending acceptance on a deliverable | Escalate to sponsor; do not formally close until resolved or exception accepted |
-| Open procurement claim | Do not close project accounts until claim is settled or formally documented as pending |
-| Project terminated early | Apply full closure checklist to the stage reached; document termination reasons; capture lessons learned to date; archive all available records |
-| Benefits management plan requires post-project measurement | Document handover responsibility; confirm benefits measurement owner in transition record |
+| Decision | Authority Level | Threshold |
+|---|---|---|
+| Approve project closure | Sponsor + Governing Body | T3 |
+| Accept final deliverables | Customer / Sponsor-delegated authority | T2 |
+| Close individual contracts | Project Manager + Procurement authority | T2 |
+| Approve early termination | Governing Body or Portfolio authority | T3–T4 |
+| Archive records | PMO / Project Manager | T1 |
+| Release personnel | Project Manager + HR | T1–T2 |
 
 ---
 
-## 12. Early Closure Protocol
+## Validation Criteria
 
-When a project is terminated before completion, Process Groups §8.1 requires the project manager to:
-1. Document the specific reasons for termination
-2. Define and obtain sponsor acceptance of closure criteria at the stage reached
-3. Apply the complete closure checklist to the work completed
-4. Capture lessons learned relevant to the decision and the partial execution
-5. Archive all records available at the point of termination
-6. Release all resources formally
-7. Settle or formally document the status of all contracts
-
----
-
-## 13. Tailoring Guidance
-
-| Context | Guidance |
-|---------|----------|
-| **Small project** | Simplified closure meeting; combined final report and lessons learned; informal resource release |
-| **Multi-phase project** | Phase gate closure at each phase boundary using this same skill; full project closure at the final phase |
-| **Adaptive project** | Final sprint retrospective feeds into closure; product owner confirms backlog disposition; release planning confirms final increment acceptance |
-| **Government or regulated project** | Formal audit of closure activities may be required; procurement closure follows regulatory requirements; all records retained per legal/regulatory schedule |
+This skill output is valid when:
+- [ ] All deliverables in scope appear in the Deliverables Acceptance Register with sign-off
+- [ ] No unresolved issues remain in the Issue Log without formal deferral notation
+- [ ] All contracts are confirmed closed
+- [ ] Lessons Learned Register has been archived to OPA
+- [ ] Final Report has been reviewed and distributed
+- [ ] Final product/service/result transition is formally confirmed
+- [ ] Project Closure Record bears required signatures
 
 ---
 
-## 14. Failure Cases
+## Failure Cases
 
-| Failure Mode | Consequence | Prevention |
-|-------------|-------------|-----------|
-| Closure declared before all deliverables accepted | Disputed completion; contractual liability | Step 2: Confirm all acceptance before closure |
-| Open issues not resolved | Unresolved problems handed to operations without documentation | Step 3: Resolve or formally document all issues |
-| Lessons learned not finalized | Organizational learning lost; same mistakes repeated | Step 8: Finalize A21 before closure sign-off |
-| Project accounts not closed | Costs continue to accrue after project ends | Step 5: Close accounts as part of closure checklist |
-| Resources released without formal reassignment | Team members left in limbo; equipment unreturned | Step 6: Formal resource release with assignments confirmed |
+| Failure | Indicator | Resolution |
+|---|---|---|
+| Closure initiated before all deliverables accepted | Unsigned acceptance rows in register | Obtain sign-off or document formal deferral |
+| Open contracts not closed | Procurement log shows active contracts | Engage procurement authority for formal closure |
+| Resources released without OPA update | HR records show reassigned but no closure record | Complete administrative closure before release confirmation |
+| Lessons Learned not archived | A21 status = draft at closure | Finalize and archive to OPA before signing closure record |
+| Transition not confirmed | No receiving entity sign-off | Obtain formal transition acceptance before closure |
 
 ---
 
-## 15. Tests
+## Linked Skills
 
-| Test | Assertion | Pass | Fail |
-|------|-----------|------|------|
-| T-1 | All deliverables formally accepted | Signed acceptance records for all deliverables | Any deliverable without formal acceptance sign-off |
-| T-2 | All issues in A18 closed or formally documented | Issue log shows no open unresolved items | Open issues with no resolution record |
-| T-3 | All project accounts closed | Finance confirms account closure | Accounts still active after closure sign-off |
-| T-
+| Skill ID | Skill Name | Relationship |
+|---|---|---|
+| SKL-04-09 | Conduct Procurements | Contracts must be closed before project closure |
+| SKL-05-01 | Monitor and Control Project Work | Final performance data feeds closure |
+| SKL-05-02 | Perform Integrated Change Control | All changes must be closed |
+| SKL-05-03 | Control Scope | All scope accepted before closure |
+| SKL-06-02 | Conduct Final Performance Review | Feeds Final Report |
+| SKL-06-03 | Capture and Archive Lessons Learned | Feeds OPA update |
+
+---
+
+*Authority: PMI-derived — Process-Groups §8.1 · PMBOK 8 Close Project or Phase*  
+*PMO Skill Repository v1.0.0 · Pack 06 — Closing*
