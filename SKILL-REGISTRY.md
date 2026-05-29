@@ -1,5 +1,5 @@
 # SKILL-REGISTRY.md — Project Management Skills Repository
-**Version:** 1.2.0  
+**Version:** 1.3.0  
 **Status:** Active · Maintained  
 **Authority:** PMBOK8 · Artifacts-V-1.1 · Repository Operating Rules  
 **Last Updated:** 2026-05-30  
@@ -47,14 +47,87 @@ Each skill entry contains the following fields:
 
 | Pack | Name | Skills Built | Skills Planned | Total | Status |
 |------|------|-------------|----------------|-------|--------|
-| 01 | Organizational Setup | 0 | TBD | TBD | Not started |
+| **01** | **Organizational Setup** | **3** | 0 | **3** | ✅ Complete |
 | **02** | **Initiating** | **2** | 0 | **2** | ✅ Complete |
 | **03** | **Planning** | **17** | 0 | **17** | ✅ Complete |
 | **04** | **Executing** | **9** | 0 | **9** | ✅ Complete |
 | **05** | **Monitoring & Controlling** | **9** | 0 | **9** | ✅ Complete |
 | **06** | **Closing** | **3** | 0 | **3** | ✅ Complete |
 | **07** | **Adaptive & Hybrid** | **4** | 0 | **4** | ✅ Complete |
-| — | **TOTAL** | **44 built** | **0 planned** | **44** | ✅ **All built** |
+| — | **TOTAL** | **47 built** | **0 planned** | **47** | ✅ **All built** |
+
+---
+
+## Pack 01 — Organizational Setup
+
+> **Pack Purpose:** Skills that establish the organizational foundation required before any project can be initiated — governance framework, document and artifact control standards, and repository/tool environment configuration. These skills run once per organizational setup or when a significant structural change occurs. All downstream packs depend on these foundations being in place.
+
+> **Pack Prerequisites:** A business case or authorization trigger (A01) must exist before SKL-01-01 runs. No prior skill prerequisites.
+
+> **Pack Completion Criteria:** A05 Governance section baselined · A05 Document Control Standards baselined · A03 Repository and Tool Configuration Record baselined · Repository folder structure verified and accessible.
+
+---
+
+### SKL-01-01 — Establish PM Governance Framework
+
+| Field | Value |
+|-------|-------|
+| **Skill ID** | SKL-01-01 |
+| **Skill Name** | Establish PM Governance Framework |
+| **Pack** | 01 — Organizational Setup |
+| **Status** | Draft · Untested |
+| **Source Type** | PMI-derived |
+| **Primary Artifact (Output)** | A05 — Context Register (Governance section) |
+| **Artifacts Updated** | A06 — Project Management Plan (governance reference) · A04 — Project Charter (authority thresholds reference) |
+| **PMBOK8 Process Anchor** | PMBOK8 Standard §3 Principles · Guide §2.1 Project Integration Management · AUTHORITY-ROUTING.md |
+| **Performance Domains** | Governance · Stakeholders |
+| **Focus Area** | Organizational Setup |
+| **Upstream Prerequisites** | A01 — Business Case or equivalent authorization trigger must exist |
+| **Downstream Skills** | SKL-01-02 · SKL-01-03 · SKL-02-01 |
+| **File Path** | `skills/01-organizational-setup/SKL-01-01-establish-pm-governance-framework.md` |
+| **Notes** | Defines authority thresholds, decision rights, governance RACI, escalation path, meeting cadence, and compliance obligations. Must align with AUTHORITY-ROUTING.md. Re-run at program level or for projects with unique governance requirements. 9 tests. |
+
+---
+
+### SKL-01-02 — Define Artifact and Document Control Standards
+
+| Field | Value |
+|-------|-------|
+| **Skill ID** | SKL-01-02 |
+| **Skill Name** | Define Artifact and Document Control Standards |
+| **Pack** | 01 — Organizational Setup |
+| **Status** | Draft · Untested |
+| **Source Type** | PMI-derived |
+| **Primary Artifact (Output)** | A05 — Context Register (OPA / Document Control Standards section) |
+| **Artifacts Updated** | A06 — Project Management Plan (document control reference) |
+| **PMBOK8 Process Anchor** | PMBOK8 Standard §3 Principles · Guide §2.1.6.4 Manage Project Knowledge · Artifacts-V-1.1 |
+| **Performance Domains** | Governance · Delivery |
+| **Focus Area** | Organizational Setup |
+| **Upstream Prerequisites** | SKL-01-01 — A05 Governance section must be baselined |
+| **Downstream Skills** | SKL-01-03 · SKL-02-01 · All artifact-producing skills (Pack 02 through Pack 07) |
+| **File Path** | `skills/01-organizational-setup/SKL-01-02-define-artifact-and-document-control-standards.md` |
+| **Notes** | Defines naming conventions (A##-kebab-case.md), semantic versioning (major/minor/patch), six-status lifecycle, artifact ownership, baseline/change control rules per artifact type, and archiving/retention rules. Artifacts-V-1.1 is the authoritative artifact registry. 9 tests. |
+
+---
+
+### SKL-01-03 — Configure Project Repository and Tool Environment
+
+| Field | Value |
+|-------|-------|
+| **Skill ID** | SKL-01-03 |
+| **Skill Name** | Configure Project Repository and Tool Environment |
+| **Pack** | 01 — Organizational Setup |
+| **Status** | Draft · Untested |
+| **Source Type** | PMI-derived |
+| **Primary Artifact (Output)** | A03 — Repository and Tool Configuration Record |
+| **Artifacts Updated** | A05 — Context Register (EEF / tool environment section) · A06 — Project Management Plan (tool environment reference) |
+| **PMBOK8 Process Anchor** | PMBOK8 Standard §3 Principles · Guide §2.1.6.4 Manage Project Knowledge · Guide §2.6 Resource Management |
+| **Performance Domains** | Governance · Resources · Delivery |
+| **Focus Area** | Organizational Setup |
+| **Upstream Prerequisites** | SKL-01-01 — A05 Governance section must be baselined · SKL-01-02 — A05 Document Control Standards must be baselined |
+| **Downstream Skills** | SKL-02-01 · All Pack 02 through Pack 07 skills |
+| **File Path** | `skills/01-organizational-setup/SKL-01-03-configure-project-repository-and-tool-environment.md` |
+| **Notes** | Configures canonical folder structure, version control settings (branch naming, commit conventions, branch protection), access controls, tool integrations (CI/CD, MCP server, agent pipelines), and repository readiness checklist. Creates A03 as the single authority for repository and tool configuration. 9 tests. |
 
 ---
 
@@ -62,7 +135,7 @@ Each skill entry contains the following fields:
 
 > **Pack Purpose:** Skills that execute during the Initiating focus area — authorizing the project, establishing governance context, identifying stakeholders, and producing the foundational records that all planning skills depend on.
 
-> **Pack Prerequisites:** A business case or equivalent authorization trigger must exist before any Pack 02 skill runs.
+> **Pack Prerequisites:** A business case or equivalent authorization trigger must exist before any Pack 02 skill runs. Pack 01 (Organizational Setup) must be complete.
 
 > **Pack Completion Criteria:** A04 (Project Charter), A05 (Context Register), and A07 (Stakeholder Register — Identification section) must all be baselined before Pack 03 skills begin.
 
@@ -82,7 +155,7 @@ Each skill entry contains the following fields:
 | **PMBOK8 Process Anchor** | Guide §2.1.6.1 Initiate Project or Phase · Figure 2-3 |
 | **Performance Domains** | Governance · Stakeholders |
 | **Focus Area** | Initiating |
-| **Upstream Prerequisites** | A01 (Business Case) must exist |
+| **Upstream Prerequisites** | A01 (Business Case) must exist · Pack 01 complete |
 | **Downstream Skills** | SKL-02-02 · All Pack 03 skills |
 | **File Path** | `skills/02-initiating/SKL-02-01-initiate-project-or-phase.md` |
 | **Notes** | Charter is the enabling artifact for all downstream work. Includes predictive and adaptive tailoring paths. |
@@ -981,6 +1054,14 @@ Each skill entry contains the following fields:
 ## Dependency Chain Diagram
 
 ```
+PACK 01 — ORGANIZATIONAL SETUP ✅
+══════════════════════════════════════════════════════
+[A01 Authorization trigger]
+    └──▶ SKL-01-01 (Establish PM Governance Framework)
+              └──▶ SKL-01-02 (Define Artifact and Document Control Standards)
+                        └──▶ SKL-01-03 (Configure Repository and Tool Environment)
+                                  └──▶ [Pack 02 Initiating begins]
+
 PACK 02 — INITIATING ✅
 ══════════════════════════════════════════════════════
 SKL-02-01 (Initiate Project or Phase)
@@ -1051,6 +1132,9 @@ SKL-02-01 ──▶ SKL-07-01 (Select Lifecycle Approach)
 
 | Pack | Skill ID | Skill Name | Status |
 |------|----------|-----------|--------|
+| 01 | SKL-01-01 | Establish PM Governance Framework | ✅ Draft · Untested |
+| 01 | SKL-01-02 | Define Artifact and Document Control Standards | ✅ Draft · Untested |
+| 01 | SKL-01-03 | Configure Project Repository and Tool Environment | ✅ Draft · Untested |
 | 02 | SKL-02-01 | Initiate Project or Phase | ✅ Draft · Untested |
 | 02 | SKL-02-02 | Identify Stakeholders | ✅ Draft · Untested |
 | 03 | SKL-03-01 | Integrate and Align Project Plans | ✅ Draft · Untested |
@@ -1096,9 +1180,9 @@ SKL-02-01 ──▶ SKL-07-01 (Select Lifecycle Approach)
 | 07 | SKL-07-03 | Facilitate Retrospectives and Continuous Improvement | ✅ Draft · Untested |
 | 07 | SKL-07-04 | Plan and Deliver Hybrid Projects | ✅ Draft · Untested |
 
-**Built:** 44 skills ✅  
+**Built:** 47 skills ✅  
 **Planned:** 0  
-**Total indexed:** 44 skills — Phase 1 build complete
+**Total indexed:** 47 skills — All packs complete (Pack 01–07)
 
 ---
 
@@ -1106,9 +1190,10 @@ SKL-02-01 ──▶ SKL-07-01 (Select Lifecycle Approach)
 
 | Artifact | Created By | Extended / Updated By |
 |---------|-----------|----------------------|
+| A03 — Repository and Tool Configuration Record | SKL-01-03 | SKL-01-03 (re-run on major environment change) |
 | A04 — Project Charter | SKL-02-01 | — |
-| A05 — Context Register / OPA | SKL-02-01 | SKL-02-02 · SKL-04-02 · SKL-06-03 |
-| A06 — Project Management Plan (lifecycle/tailoring sections) | SKL-07-01 | SKL-07-04 · SKL-07-03 (tailoring changelog) |
+| A05 — Context Register / OPA | SKL-01-01 (Governance) · SKL-01-02 (Doc Control) · SKL-01-03 (Tool Environment) | SKL-02-01 · SKL-02-02 · SKL-04-02 · SKL-06-03 |
+| A06 — Project Management Plan (lifecycle/tailoring sections) | SKL-07-01 | SKL-07-04 · SKL-07-03 (tailoring changelog) · SKL-01-01 (governance ref) · SKL-01-02 (doc control ref) · SKL-01-03 (tool env ref) |
 | A07 — Stakeholder Register and Engagement Strategy | SKL-02-02 | SKL-03-07 · SKL-03-08 · SKL-04-06 · SKL-05-07 |
 | A08 — Scope and Requirements / Backlog | SKL-03-02 | SKL-03-03 · SKL-03-04 · SKL-03-05 · SKL-05-03 · SKL-07-02 |
 | A12 — Change Log | SKL-05-02 | SKL-05-02 (ongoing) |
@@ -1132,7 +1217,7 @@ SKL-02-01 ──▶ SKL-07-01 (Select Lifecycle Approach)
 |-----------|------|
 | Skill ID format | `SKL-PP-NN` — PP = 2-digit pack number; NN = 2-digit sequence within pack |
 | File naming | `SKL-PP-NN-kebab-case-skill-name.md` |
-| Pack folder | `skills/PP-packname/` (e.g., `skills/04-executing/`) |
+| Pack folder | `skills/PP-packname/` (e.g., `skills/01-organizational-setup/`) |
 | Status values | `Draft · Untested` → `Draft · In Review` → `Reviewed` → `Approved · Production` |
 | Source type | `PMI-derived` / `synthesis` / `organization-defined` |
 | PMBOK8 anchor | Always cite Guide section number + Figure number |
@@ -1144,7 +1229,7 @@ SKL-02-01 ──▶ SKL-07-01 (Select Lifecycle Approach)
 1. **Add a shell entry for every planned skill before it is built** — the registry must always show the full planned build scope.
 2. **Update status immediately** when a skill file is created, reviewed, or approved.
 3. **Update the Artifact Cross-Reference table** whenever a skill adds a new artifact write target.
-4. **Update the Dependency Chain Diagram** when a new skill’s position in the chain is non-obvious.
+4. **Update the Dependency Chain Diagram** when a new skill's position in the chain is non-obvious.
 5. **Never remove a skill entry** — deprecated skills are marked `Deprecated · Replaced by SKL-XX-XX`.
 6. **This registry is not a skill file** — it does not contain instructions, tests, or step-by-step guidance.
 
@@ -1152,4 +1237,4 @@ SKL-02-01 ──▶ SKL-07-01 (Select Lifecycle Approach)
 
 *Authority: PMBOK8 · Artifacts-V-1.1 · Repository Operating Rules §3.2 Consolidation Rule*  
 *Owner: Repository Maintainer*  
-*Version: 1.2.0 — Updated 2026-05-30 — Pack 03 all 17 skills confirmed built; total built = 44/44; Phase 1 complete*
+*Version: 1.3.0 — Updated 2026-05-30 — Pack 01 Organizational Setup (3 skills) added; total built = 47/47; all packs complete*
