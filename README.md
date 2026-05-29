@@ -1,7 +1,7 @@
 # PMO Skill Repository
-**Version:** 1.0.0-draft  
-**Authority:** PMBOK 8 (Primary) · PMI Companion References (Secondary) · Organization-Defined Methods (Tertiary)  
-**Scope:** Pre-sign through Project Closure — full project lifecycle PMO reference and point of truth  
+**Version:** 1.3.0
+**Authority:** PMBOK 8 (Primary) · PMI Companion References (Secondary) · Organization-Defined Methods (Tertiary)
+**Scope:** Organizational Setup through Project Closure — full project lifecycle PMO reference and point of truth
 **Status:** Active development
 
 ---
@@ -23,9 +23,10 @@ Every skill in this repository can:
 
 | Layer | Coverage |
 |-------|----------|
-| **Lifecycle** | Pre-sign → Initiating → Planning → Executing → Monitoring & Controlling → Closing |
-| **Performance Domains** | Governance · Scope · Schedule · Finance · Stakeholders · Resources · Risk |
-| **Principles** | All 6 PMBOK 8 Standard principles embedded in every skill |
+| **Lifecycle** | Organizational Setup → Initiating → Planning → Executing → Monitoring & Controlling → Closing → Adaptive & Hybrid |
+| **Skills Built** | **47 skills across 7 packs** (SKL-01-01 through SKL-07-04) — all packs complete |
+| **Performance Domains** | Governance · Scope · Schedule · Finance · Stakeholders · Resources · Risk · Team · Measurement · Delivery · Development Approach & Life Cycle |
+| **Principles** | All 12 PMBOK 8 Standard principles embedded in every skill |
 | **Processes** | All 40 nonprescriptive PMBOK 8 processes mapped and anchored |
 | **Appendices** | PMO (X2) · AI (X3) · Procurement (X4) · PMBOK Evolution (X5) |
 | **Governance Layers** | Organizational · OPM · PMO · Portfolio/Program/Project · Delivery Team |
@@ -38,57 +39,75 @@ Every skill in this repository can:
 ```
 pmo-skill-repo/
 ├── README.md                        ← This file
-├── SKILL-REGISTRY.md                ← Master index of all skills
+├── SKILL-REGISTRY.md                ← Master index of all 47 skills (v1.3.0)
 ├── AUTHORITY-ROUTING.md             ← T1–T4 threshold model and escalation rules
 ├── LIFECYCLE-MAP.md                 ← Visual and tabular lifecycle flow
-├── PRINCIPLES-CROSSWALK.md          ← 6 principles × 7 domains × 40 processes
+├── PRINCIPLES-CROSSWALK.md          ← 12 principles × 11 domains × 40 processes
+├── source-authority.md              ← Source authority rules and reference list
+├── pmi_reference_list.md            ← Canonical PMI reference list
 │
-├── reference/
-│   ├── principles/                  ← 6 PMBOK 8 principles, detailed notes
-│   ├── performance-domains/         ← 7 domain summaries with process maps
-│   ├── focus-areas/                 ← 5 focus areas with artifact triggers
-│   ├── processes/                   ← 40 process records (I/O/T&T per process)
-│   ├── inputs-outputs/              ← inputs-outputs-registry.md (PMBOK 8 §4)
-│   ├── tools-techniques/            ← tools-techniques-registry.md (PMBOK 8 §5)
+├── reference/                       ← [planned] PMBOK 8 reference layer
+│   ├── principles/                  ← [planned] 12 PMBOK 8 principles, detailed notes
+│   ├── performance-domains/         ← [planned] 11 domain summaries with process maps
+│   ├── focus-areas/                 ← [planned] 5 focus areas with artifact triggers
+│   ├── processes/                   ← [planned] 40 process records (I/O/T&T per process)
+│   ├── inputs-outputs/              ← [planned] inputs-outputs-registry.md (PMBOK 8 §4)
+│   ├── tools-techniques/            ← [planned] tools-techniques-registry.md (PMBOK 8 §5)
 │   └── appendices/
-│       ├── X2-pmo.md
-│       ├── X3-ai.md
-│       ├── X4-procurement.md
-│       └── X5-evolution.md
+│       ├── X2-pmo.md                ← [planned]
+│       ├── X3-ai.md                 ← [planned]
+│       ├── X4-procurement.md        ← [planned]
+│       └── X5-evolution.md          ← [planned]
 │
 ├── artifacts/
-│   ├── definitions/                 ← A01–A41 definitions (from Artifacts-V-1.1.md)
-│   ├── templates/                   ← Fillable markdown templates per artifact
-│   └── examples/                   ← Completed examples per artifact type
+│   ├── closing/                     ← Closing artifacts (A21-final, A27)
+│   ├── monitoring-and-decisions/    ← M&C artifacts (A12, A17, A18)
+│   ├── planning-and-baselines/      ← Planning artifacts (A06, A08, A14, A15, A16, A19, A26, A28)
+│   ├── procurement/                 ← Procurement artifacts (A31)
+│   ├── resources/                   ← Resource artifacts (A03, A26-ext)
+│   └── stakeholders/                ← Stakeholder artifacts (A02, A07)
 │
 ├── skills/
-│   ├── 00-core/                     ← Shared skill components, validators, helpers
-│   ├── 01-pre-sign/                 ← Before formal project authorization
-│   ├── 02-initiating/               ← Initiate Project or Phase focus area
-│   ├── 03-planning/                 ← Integrate and Align Project Plans focus area
-│   ├── 04-executing/                ← Manage Project Execution focus area
-│   ├── 05-monitoring-controlling/   ← Monitor and Control focus area
-│   ├── 06-closing/                  ← Close Project or Phase focus area
-│   ├── 07-pmo/                      ← PMO configuration, services, maturity
-│   └── 08-ai-procurement/           ← AI governance and procurement skills
+│   ├── 01-organizational-setup/     ← Governance, doc control, repo config (3 skills)
+│   ├── 02-initiating/               ← Initiate Project or Phase focus area (2 skills)
+│   ├── 03-planning/                 ← Planning focus area (17 skills)
+│   ├── 04-executing/                ← Executing focus area (9 skills)
+│   ├── 05-monitoring-controlling/   ← Monitor and Control focus area (9 skills)
+│   ├── 06-closing/                  ← Close Project or Phase focus area (3 skills)
+│   └── 07-adaptive-hybrid/          ← Adaptive & Hybrid lifecycle skills (4 skills)
 │
-├── shared/
-│   ├── components/                  ← Reusable field blocks and section patterns
-│   ├── validators/                  ← Waste-test and quality-check routines
-│   ├── routing/                     ← Authority routing logic per decision type
-│   └── checklists/                  ← Domain and phase readiness checklists
+├── shared/                          ← [planned] Reusable components and validators
+│   ├── components/                  ← [planned] Reusable field blocks and section patterns
+│   ├── validators/                  ← [planned] Waste-test and quality-check routines
+│   ├── routing/                     ← [planned] Authority routing logic per decision type
+│   └── checklists/                  ← [planned] Domain and phase readiness checklists
 │
-└── tests/
-    ├── skill-tests/                 ← Test cases per skill (inputs → expected outputs)
-    └── integration-tests/           ← Cross-skill flow tests (e.g., Pre-sign → Close)
+└── tests/                           ← [planned] Skill and integration test cases
+    ├── skill-tests/                 ← [planned] Test cases per skill (inputs → expected outputs)
+    └── integration-tests/           ← [planned] Cross-skill flow tests (e.g., Setup → Close)
 ```
+
+---
+
+## Skills Summary
+
+| Pack | Name | Skills | Status |
+|------|------|--------|--------|
+| 01 | Organizational Setup | 3 | ✅ Complete |
+| 02 | Initiating | 2 | ✅ Complete |
+| 03 | Planning | 17 | ✅ Complete |
+| 04 | Executing | 9 | ✅ Complete |
+| 05 | Monitoring & Controlling | 9 | ✅ Complete |
+| 06 | Closing | 3 | ✅ Complete |
+| 07 | Adaptive & Hybrid | 4 | ✅ Complete |
+| **—** | **TOTAL** | **47** | ✅ **All packs complete** |
 
 ---
 
 ## Authority Model
 
-1. **Primary:** PMBOK8 — The Standard for Project Management + PMBOK Guide 8th Edition  
-2. **Secondary:** PMO-Guide · GPPP · OPM-Standard · Process-Groups · PMI-BA · BAP-2E · Requirements · Complexity · Risk-PPP · Forms-Book  
+1. **Primary:** PMBOK8 — The Standard for Project Management + PMBOK Guide 8th Edition
+2. **Secondary:** PMO-Guide · GPPP · OPM-Standard · Process-Groups · PMI-BA · BAP-2E · Requirements · Complexity · Risk-PPP · Forms-Book
 3. **Tertiary:** Organization-defined operating methods (explicitly labeled)
 
 All artifacts are labeled: `PMI-derived` | `synthesis` | `organization-defined`
@@ -123,7 +142,7 @@ All artifacts are labeled: `PMI-derived` | `synthesis` | `organization-defined`
 ### As a PMO Reference
 1. Navigate to `SKILL-REGISTRY.md` and filter by lifecycle stage, domain, or artifact
 2. Open the relevant skill file for instructions, inputs, outputs, and constraints
-3. Use templates from `artifacts/templates/` to generate the artifact
+3. Use templates from `artifacts/` to generate the artifact
 4. Apply authority routing from `AUTHORITY-ROUTING.md`
 
 ### As an AI Agent
@@ -136,7 +155,7 @@ All artifacts are labeled: `PMI-derived` | `synthesis` | `organization-defined`
 ### As a Book Authoring Reference
 1. Use `reference/` directories for PMBOK 8 source-grounded chapter content
 2. Use `PRINCIPLES-CROSSWALK.md` for principle-to-domain mappings
-3. Use artifact definitions in `artifacts/definitions/` for structured chapter sections
+3. Use artifact definitions in `artifacts/` for structured chapter sections
 
 ---
 
@@ -144,13 +163,12 @@ All artifacts are labeled: `PMI-derived` | `synthesis` | `organization-defined`
 
 | File | Purpose |
 |------|---------|
-| `Artifacts-V-1.1.md` | Canonical artifact definitions A01–A41 |
-| `Artifacts-Authorities-V-1.1.md` | Authority matrix, T1–T4 model, RACI defaults |
-| `SKILL-REGISTRY.md` | Master skill index (this repo) |
+| `SKILL-REGISTRY.md` | Master skill index — all 47 skills, dependency chains, artifact cross-reference |
+| `AUTHORITY-ROUTING.md` | T1–T4 threshold model, escalation rules, authority RACI |
 | `LIFECYCLE-MAP.md` | Phase-by-phase process and artifact flow |
-| `PRINCIPLES-CROSSWALK.md` | 6 principles × 7 domains matrix |
-| `inputs-outputs-registry.md` | All 40 process I/O per PMBOK 8 §4 |
-| `tools-techniques-registry.md` | All tools and techniques per PMBOK 8 §5 |
+| `PRINCIPLES-CROSSWALK.md` | 12 principles × 11 domains matrix |
+| `source-authority.md` | Source authority rules, reference hierarchy |
+| `pmi_reference_list.md` | Canonical list of all PMI references used in this repo |
 
 ---
 
@@ -159,8 +177,11 @@ All artifacts are labeled: `PMI-derived` | `synthesis` | `organization-defined`
 | Version | Date | Changes |
 |---------|------|---------|
 | 1.0.0-draft | 2026-05-29 | Initial structure — repo skeleton, README, registry schema defined |
+| 1.1.0 | 2026-05-29 | Pack 02 (Initiating) and Pack 03 (Planning, 17 skills) complete; SKILL-REGISTRY.md established |
+| 1.2.0 | 2026-05-29 | Pack 04 (Executing, 9 skills) complete; artifacts/ subdirectories created |
+| 1.3.0 | 2026-05-30 | Packs 05–07 complete (22 skills); all 47 skills built; SKILL-REGISTRY.md v1.3.0; README updated to reflect actual repo structure |
 
 ---
 
-*Authority: PMBOK 8 Primary · PMI Companion References Secondary · Organization-Defined Tertiary*  
+*Authority: PMBOK 8 Primary · PMI Companion References Secondary · Organization-Defined Tertiary*
 *This repository is part of the PMI PMBOK 8 Knowledge Base Space.*
