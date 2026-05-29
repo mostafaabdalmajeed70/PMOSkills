@@ -1,0 +1,125 @@
+{
+  "domain_id": "RISK",
+  "domain_name": "Risk Management",
+  "authority_order": [
+    "PMBOK8",
+    "PMI companion guides",
+    "Repository artifact model"
+  ],
+  "canonical_skills": [
+    {
+      "skill_id": "SKL-03-11",
+      "title": "Perform Risk Analysis",
+      "focus_area": "Planning",
+      "pmbok8_anchor": "Risk Performance Domain, Perform Risk Analysis in §2.7.2 Processes",
+      "supporting_sources": [
+        "Risk-PPP §4.4",
+        "Risk-PPP §4.5"
+      ],
+      "primary_artifacts": [
+        "A19",
+        "A20"
+      ],
+      "main_outputs": [
+        "Updated risk assessments",
+        "Prioritization",
+        "Quantified exposure insight when justified"
+      ],
+      "handoff_to": [
+        "SKL-03-12"
+      ]
+    },
+    {
+      "skill_id": "SKL-03-12",
+      "title": "Plan Risk Responses",
+      "focus_area": "Planning",
+      "pmbok8_anchor": "Plan Risk Responses, Figure 2-51",
+      "supporting_sources": [
+        "Risk-PPP §4.6",
+        "Process-Groups §5.22"
+      ],
+      "primary_artifacts": [
+        "A19",
+        "A12",
+        "A16"
+      ],
+      "main_outputs": [
+        "Agreed response strategies",
+        "Triggers",
+        "Contingency or fallback plans",
+        "Reserve implications"
+      ],
+      "handoff_to": [
+        "SKL-04-01"
+      ]
+    },
+    {
+      "skill_id": "SKL-04-01",
+      "title": "Implement Risk Responses",
+      "focus_area": "Executing",
+      "pmbok8_anchor": "§2.7.2.5, Figure 2-52",
+      "supporting_sources": [
+        "Risk-PPP §4.7",
+        "Risk-PPP §7.2.5"
+      ],
+      "primary_artifacts": [
+        "A19",
+        "A18",
+        "A12",
+        "A16"
+      ],
+      "main_outputs": [
+        "Executed actions",
+        "Issue conversion",
+        "Reserve-use traceability",
+        "Secondary-risk capture"
+      ],
+      "handoff_to": [
+        "SKL-05-01"
+      ]
+    },
+    {
+      "skill_id": "SKL-05-01",
+      "title": "Monitor Risks",
+      "aliases": [
+        "SKL-05 — Monitor Risk"
+      ],
+      "focus_area": "Monitoring and Controlling",
+      "pmbok8_anchor": "§2.7.2.6, Figure 2-53",
+      "supporting_sources": [
+        "Risk-PPP §4.8",
+        "Risk-PPP §7.2.6",
+        "Process-Groups §7.10"
+      ],
+      "primary_artifacts": [
+        "A19",
+        "A18",
+        "A12",
+        "A16"
+      ],
+      "main_outputs": [
+        "Work performance information",
+        "Updated risk and issue records",
+        "Escalation or change decisions",
+        "Lessons learned"
+      ],
+      "handoff_to": [
+        "SKL-03-11",
+        "SKL-03-12",
+        "SKL-04-01"
+      ]
+    }
+  ],
+  "artifact_registry": {
+    "A12": "Change and Exception Decision Log",
+    "A16": "Financial Management and Cost Baseline Record",
+    "A18": "Issue, Impediment, and Action Log",
+    "A19": "Risk Management Record",
+    "A20": "Quantitative Risk and Reserve Decision Record"
+  },
+  "notes": [
+    "A19 is the central risk artifact across the four-skill chain.",
+    "A18 becomes active when a risk event occurs and requires issue control.",
+    "A20 is optional and used when quantitative analysis materially supports a decision."
+  ]
+}
