@@ -2,7 +2,7 @@
 skill_id: SKL-04-06
 skill_name: Manage Stakeholder Engagement
 pack: "04 — Executing"
-version: "1.0.0"
+version: "1.1.0"
 status: "Draft · Untested"
 source_type: PMI-derived
 primary_artifact: "A07 — Stakeholder Register and Engagement Strategy (execution engagement log)"
@@ -122,9 +122,11 @@ For high-power stakeholders who remain Resistant after two consecutive engagemen
 | Failure mode | Detection signal | Corrective action |
 |---|---|---|
 | SEAM levels stale | A07 C-levels not updated for >1 period | Review all engagement events; update C-levels retroactively |
-| Resistant stakeholder ignored | High-power Resistant stakeholder with no escalation | Immediate A18 entry and sponsor notification |
+| Resistant stakeholder ignored | High-power Resistant stakeholder with no escalation | Immediate A18 entry and sponsor notification per A06 threshold |
 | Unlogged engagement | Team members engaging stakeholders informally without A28 entries | Team briefing on engagement logging; retroactive A28 entries |
 | Strategy not revised | Repeated failed engagement with no change in approach | Re-trigger SKL-03-07; revise A07 engagement strategy section |
+| Engagement strategy not updated after escalation | Sponsor notified but no A07 strategy revision follows | Confirm revised engagement approach with sponsor; update A07 strategy section and SEAM desired (D) level if changed |
+| Stakeholder privacy breach | Sensitive stakeholder information from A07 shared without authorization | Immediate containment; review A07 access controls; log in A18; notify governance authority per A06 |
 
 ---
 
@@ -148,6 +150,7 @@ For high-power stakeholders who remain Resistant after two consecutive engagemen
 | Version | Date | Change description |
 |---|---|---|
 | 1.0.0 | 2026-05-29 | Initial build |
+| 1.1.0 | 2026-05-30 | Expanded failure modes from 4 to 6: added engagement strategy not updated after escalation and stakeholder privacy breach |
 
 ---
 
