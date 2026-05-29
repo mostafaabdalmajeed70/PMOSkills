@@ -2,7 +2,7 @@
 skill_id: SKL-04-03
 skill_name: Acquire Resources
 pack: "04 — Executing"
-version: "1.0.0"
+version: "1.1.0"
 status: "Draft · Untested"
 source_type: PMI-derived
 primary_artifact: "A25 — Team Operating and Responsibility Record"
@@ -127,10 +127,12 @@ If a required resource cannot be acquired within acceptable constraints:
 
 | Failure mode | Detection signal | Corrective action |
 |---|---|---|
-| Resource assumption (verbal only) | A25 RACI entries with no confirmed acquisition path | Formalize all assignments; document paths in A26 |
-| Availability conflict discovered late | Resource assigned to two projects simultaneously | Escalate to functional manager; A12 if schedule impact |
+| Resource assumption (verbal only) | A25 RACI entries with no confirmed acquisition path | Formalize all assignments; document acquisition paths in A26 |
+| Availability conflict discovered late | Resource assigned to two projects simultaneously | Escalate to functional manager; A12 change request if schedule impact |
 | External resource without A31 | Contract in place but no A31 entry | Create A31 entry retroactively; review compliance with A06 |
-| Gap not escalated | Critical path role unfilled for >1 period | A18 entry + sponsor escalation |
+| Gap not escalated | Critical path role unfilled for >1 period | A18 entry + sponsor escalation per A06 threshold |
+| Resource skill mismatch discovered post-assignment | Assigned resource cannot perform the work package tasks | Reassign; initiate supplementary training or replacement; log in A18 |
+| Physical resource acquisition omitted | Equipment or facility needed for a work package has no acquisition record in A26 | Audit A26 for physical resource gaps; create acquisition entries; assess schedule impact |
 
 ---
 
@@ -154,6 +156,7 @@ If a required resource cannot be acquired within acceptable constraints:
 | Version | Date | Change description |
 |---|---|---|
 | 1.0.0 | 2026-05-29 | Initial build |
+| 1.1.0 | 2026-05-30 | Expanded failure modes from 4 to 6: added resource skill mismatch and physical resource acquisition omission |
 
 ---
 
