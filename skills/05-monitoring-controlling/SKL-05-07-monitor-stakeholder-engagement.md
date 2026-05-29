@@ -1,156 +1,331 @@
----
-skill_id: SKL-05-07
-skill_name: Monitor Stakeholder Engagement
-pack: "05 — Monitoring & Controlling"
-version: "1.0.0"
-status: "Draft · Untested"
-source_type: PMI-derived
-primary_artifact: "A07 — Stakeholder Register and Engagement Strategy"
-artifacts_updated:
-  - "A17 — Integrated Performance Reporting Record (stakeholder section)"
-  - "A18 — Issue, Impediment and Action Log (engagement gaps)"
-pmbok8_anchor: "Guide §2.5.2.5 Monitor Stakeholder Engagement · Process Groups Practice Guide §5.10"
-performance_domains:
-  - Stakeholders
-  - Governance
-focus_area: Monitoring & Controlling
-upstream_prerequisites:
-  - "SKL-04-06 — Manage Stakeholder Engagement must be active (A07 current levels being recorded)"
-downstream_skills:
-  - "SKL-06-01 — Close Project or Phase (final stakeholder closure)"
-file_path: "skills/05-monitoring-controlling/SKL-05-07-monitor-stakeholder-engagement.md"
-tests: 7
----
-
 # SKL-05-07 — Monitor Stakeholder Engagement
 
-**Pack:** 05 — Monitoring & Controlling
-**Status:** Draft · Untested
-**Primary Artifact:** A07 — Stakeholder Register and Engagement Strategy
-**PMBOK8 Anchor:** Guide §2.5.2.5 · Process Groups Practice Guide §5.10
+**Skill ID:** SKL-05-07  
+**Canonical Title:** Monitor Stakeholder Engagement  
+**Pack:** 05 — Monitoring and Controlling  
+**Version:** 1.0.0  
+**Status:** Draft · Untested  
+**Source Type:** PMI-derived  
+**File Path:** `skills/05-monitoring-controlling/SKL-05-07-monitor-stakeholder-engagement.md`  
+**Authority:** Process Groups: A Practice Guide §7.12 · Figure 7-23 · Figure 7-24  
+**Last Updated:** 2026-05-30
 
 ---
 
-## Purpose
+## 1. Purpose
 
-Monitor Stakeholder Engagement evaluates the effectiveness of stakeholder engagement activities by comparing current (C) and desired (D) SEAM levels across all stakeholders, identifies persistent engagement gaps, assesses stakeholder risk, and determines whether engagement strategies need to be revised. This skill is the surveillance complement to SKL-04-06 (Manage Stakeholder Engagement), which executes; this skill evaluates.
+Monitor Stakeholder Engagement is the process of monitoring project stakeholder relationships and tailoring strategies for engaging stakeholders through the modification of engagement strategies and plans. Its key benefit is that it maintains or increases the efficiency and effectiveness of stakeholder engagement activities as the project evolves and its environment changes. This process is performed throughout the project.
 
----
-
-## Inputs
-
-| Input | Artifact | Section | Status required |
-|---|---|---|---|
-| Stakeholder register | A07 | All stakeholders | Current |
-| SEAM current (C) and desired (D) levels | A07 | SEAM column | Updated by SKL-04-06 |
-| Engagement event log | A28 | Delivery log | Current |
-| Issue log | A18 | Engagement issues | Current |
-| Performance report | A17 | Stakeholder section | Current |
+Stakeholder engagement is not a one-time planning activity. Stakeholders change their positions, priorities shift, and new stakeholders may emerge during execution. Monitoring ensures that engagement remains aligned to current stakeholder status and project needs.
 
 ---
 
-## Steps
+## 2. Scope
 
-### Step 1 — Review SEAM Trend Data
-For each stakeholder in A07, compare current (C) vs. desired (D) engagement level:
-- Calculate the gap: D − C (positive = under-engaged; negative = over-engaged relative to desired)
-- Assess trend: is C moving toward D, static, or moving away from D?
-- Classify each stakeholder:
+This skill covers:
+- Monitoring current stakeholder engagement levels against the planned engagement levels in A07
+- Using the Stakeholder Engagement Assessment Matrix (SEAM) to identify gaps
+- Analyzing stakeholder data to identify shifts in engagement, influence, or interest
+- Applying communication, interpersonal, and decision-making techniques to close engagement gaps
+- Updating the stakeholder register with current engagement levels
+- Updating the stakeholder engagement plan, communications plan, and resource management plan
+- Raising change requests for engagement strategy adjustments
+- Updating the issue log, lessons learned, and risk register based on stakeholder signals
 
-| Classification | Condition | Priority |
-|---|---|---|
-| On target | C = D | Low — maintain |
-| Improving | C moving toward D | Medium — sustain |
-| Static gap | C unchanged for ≥2 periods, C ≠ D | High — strategy review needed |
-| Deteriorating | C moving away from D | High — immediate action |
-| High-power resistant | C = Resistant, Power = High | Critical — sponsor escalation |
-
-### Step 2 — Assess Engagement Strategy Effectiveness
-For each stakeholder in the Static gap or Deteriorating category:
-- Review A07 engagement strategy for that stakeholder
-- Review A28 engagement event log — are planned activities being executed?
-- Assess whether the strategy itself is incorrect (wrong method, wrong channel, wrong frequency)
-- Determine required action: intensify, change method, re-trigger SKL-03-07, or escalate
-
-### Step 3 — Identify New or Changed Stakeholders
-Review the project environment for:
-- New stakeholders who have not yet been added to A07
-- Existing stakeholders whose role, interest, or power has changed
-- Stakeholders who should be exited from active engagement (project phase no longer relevant to them)
-
-Update A07 register for any changes found. New high-power or high-interest stakeholders must trigger SKL-03-07 strategy development.
-
-### Step 4 — Log Engagement Gaps and Risks
-For every stakeholder with a Static gap or Deteriorating trend:
-- Log in A18 if the gap poses a risk to project outcomes, milestone acceptance, or sponsor support
-- Link the A18 issue to the A07 stakeholder record
-- Assess whether the engagement gap should be added to A19 as a stakeholder-related project risk
-
-### Step 5 — Update A17 Stakeholder Section
-Record monitoring findings in A17:
-- Number of stakeholders by SEAM classification
-- Count of stakeholders On Target, Improving, Static gap, Deteriorating
-- High-priority engagement actions taken this period
-- Escalations raised
-- Changes to stakeholder register
+This skill does **not** cover:
+- Initial stakeholder identification — SKL-01-02
+- Planning stakeholder engagement — SKL-03-14
+- Managing stakeholder engagement during execution — SKL-04-06
 
 ---
 
-## Outputs
+## 3. PMBOK Anchor
 
-| Output | Artifact | Section |
-|---|---|---|
-| Updated SEAM trend data | A07 | SEAM trend column |
-| Strategy revision decisions | A07 | Engagement strategy section |
-| Engagement gap issues | A18 | Issue log |
-| Stakeholder risk entries | A19 | Risk register (if applicable) |
-| Stakeholder performance section | A17 | Stakeholder section |
+| Field | Value |
+|-------|-------|
+| **Process** | Monitor Stakeholder Engagement |
+| **Guide Section** | Process Groups §7.12 |
+| **Figure** | Figure 7-23 — I/T/O · Figure 7-24 — Data Flow Diagram |
+| **Performance Domain** | Stakeholders · Measurement |
+| **Focus Area** | Monitoring and Controlling |
+| **Primary Outcome** | Work performance information · Change requests · Updated stakeholder register and engagement plan |
 
----
-
-## Operating Rules
-
-1. A07 SEAM trend must be assessed at every reporting period — not only when problems are visible.
-2. Stakeholders with a Static gap for two or more consecutive periods must have a revised engagement strategy in A07.
-3. New high-power or high-interest stakeholders must be added to A07 within the same reporting period they are identified.
-4. High-power Resistant stakeholders must be escalated per A06 — retention of this category beyond two periods without action is a governance failure.
-5. Engagement monitoring findings must be reported in A17 at every period.
+**PMI definition (paraphrased):** Monitor Stakeholder Engagement monitors stakeholder relationships and adapts strategies to maintain or improve the efficiency and effectiveness of stakeholder engagement as the project and its environment evolve.
 
 ---
 
-## Failure Modes
+## 4. The SEAM as the Core Monitoring Tool
 
-| Failure mode | Detection signal | Corrective action |
-|---|---|---|
-| SEAM trend not assessed | A07 has no trend history; C levels static across all stakeholders | Immediate SEAM trend review; retroactive categorization; confirm A28 activities are being executed |
-| Static gap not actioned | A07 shows two or more periods of Static gap with no strategy change | Immediate engagement strategy revision for affected stakeholders; re-trigger SKL-03-07 |
-| New stakeholder not added | Stakeholder identified informally but not in A07 | Add to A07 immediately; assess power and interest; create engagement strategy if High power/interest |
-| Engagement gap not in A18 | Deteriorating stakeholder with no A18 entry | Log in A18; assess project risk; add to A19 if risk to project outcomes |
-| A17 stakeholder section omitted | A17 issued without stakeholder monitoring data | Supplement A17 with stakeholder section before next issuance; confirm reporting template includes stakeholder data |
+The Stakeholder Engagement Assessment Matrix (SEAM) maps each stakeholder against five engagement levels:
 
----
+| Level | Definition |
+|-------|------------|
+| **Unaware** | Unaware of the project and its potential impacts |
+| **Resistant** | Aware but resistant to project changes |
+| **Neutral** | Aware but neither supportive nor resistant |
+| **Supportive** | Aware and supportive of the project |
+| **Leading** | Actively engaged and promoting the project |
 
-## Tests
+For each stakeholder, two positions are recorded:
+- **C** — Current engagement level (assessed through monitoring)
+- **D** — Desired engagement level (as defined in the stakeholder engagement plan)
 
-| Test ID | Test description | Pass condition | Fail condition |
-|---|---|---|---|
-| T-1 | SEAM trend assessed each period | A07 has trend classification for all stakeholders at every reporting period | Period passes with no SEAM trend assessment |
-| T-2 | Static gap actioned | Every stakeholder with Static gap ≥2 periods has a revised A07 strategy | Static gap stakeholder with unchanged strategy after two periods |
-| T-3 | Deteriorating escalated | Deteriorating stakeholder has A18 issue and corrective action | Deteriorating stakeholder with no A18 entry |
-| T-4 | New stakeholders captured | A07 updated within same period as new stakeholder identification | New stakeholder active in project environment not in A07 |
-| T-5 | High-power resistant escalated | High-power Resistant stakeholder escalated per A06 within two cycles | High-power Resistant retained three or more cycles without escalation |
-| T-6 | Stakeholder risk in A19 | Significant engagement gaps with project risk impact logged in A19 | Engagement gap posing project risk with no A19 entry |
-| T-7 | A17 stakeholder section current | A17 contains stakeholder monitoring data at every period | A17 issued without stakeholder section |
+A gap between C and D indicates that engagement intervention is needed. No gap indicates that current engagement is sufficient and should be maintained.
 
 ---
 
-## Change Log
+## 5. Roles
 
-| Version | Date | Change description |
-|---|---|---|
-| 1.0.0 | 2026-05-30 | Initial build |
+### 5.1 Project Manager
+Owns stakeholder monitoring. Reviews the SEAM at each cycle. Identifies engagement gaps. Selects appropriate intervention strategies. Escalates critical stakeholder disengagement to the sponsor.
+
+### 5.2 Project Team Members
+Observe stakeholder behavior during project activities. Report observations about stakeholder engagement level changes. Participate in stakeholder interactions that provide engagement data.
+
+### 5.3 Communications Lead
+Monitors whether communications are reaching stakeholders and achieving the intended effect. Reviews feedback signals from surveys, responses to communications, and meeting participation.
+
+### 5.4 Sponsor
+Provides executive-level stakeholder engagement support where needed. Engages resistant or neutral senior stakeholders when the project manager's authority is insufficient.
 
 ---
 
-*Authority: PMBOK8 Guide §2.5.2.5 · Process Groups Practice Guide §5.10*
-*Source type: PMI-derived*
+## 6. Inputs
+
+Process Groups Figure 7-23 identifies:
+
+| Input | Artifact | Role in This Skill |
+|-------|----------|--------------------|
+| **Resource management plan** | A25 / A14-linked | Defines roles and responsibilities relevant to stakeholder engagement activities |
+| **Communications management plan** | A28 / A14-linked | Defines what communications are being sent and to whom — the basis for monitoring communication effectiveness |
+| **Stakeholder engagement plan** | A07 | Defines desired engagement levels and strategies; the baseline against which monitoring compares current status |
+| **Issue log** | A18 | Issues often reflect stakeholder concerns or disengagement that require monitoring |
+| **Lessons learned register** | A21 | Historical engagement patterns and intervention effectiveness |
+| **Project communications** | A28 delivery records | Sent communications and their responses provide direct evidence of stakeholder engagement |
+| **Risk register** | A19 | Stakeholder resistance or disengagement may be recorded as risks requiring monitoring |
+| **Stakeholder register** | A03 | The authoritative record of stakeholders, their roles, interests, and current engagement level |
+| **Work performance data** | Executing outputs | Participation rates, response rates, meeting attendance, feedback — raw data for engagement assessment |
+| **Enterprise environmental factors** | EEF | Organizational culture, political environment, and stakeholder power dynamics |
+| **Organizational process assets** | OPA / A05 | Engagement monitoring templates, historical stakeholder data, organizational policies |
+
+---
+
+## 7. Tools and Techniques
+
+Process Groups Figure 7-23 names:
+
+### 7.1 Data Analysis
+- **Alternatives analysis:** Evaluates different engagement strategies for closing the gap between current and desired engagement levels
+- **Root cause analysis:** Identifies the underlying reasons for stakeholder disengagement or resistance rather than addressing symptoms
+- **Stakeholder analysis:** Re-examines stakeholder positions, interests, influence, and power to update the engagement picture
+
+### 7.2 Decision Making
+- **Multicriteria decision analysis:** Evaluates multiple engagement strategy options against criteria such as effectiveness, cost, time, and political sensitivity
+- **Voting:** Used in group settings to select among engagement strategy options
+
+### 7.3 Data Representation
+- **Stakeholder Engagement Assessment Matrix (SEAM):** Maps current (C) vs. desired (D) engagement levels for each stakeholder; the primary visual monitoring tool for this process
+
+### 7.4 Communication Skills
+- **Feedback:** Obtaining direct input from stakeholders on their engagement experience and project concerns
+- **Presentations:** Structured information sharing to re-engage resistant or neutral stakeholders
+
+### 7.5 Interpersonal and Team Skills
+- **Active listening:** Detecting signals of disengagement, concern, or shifting priorities that may not be stated explicitly
+- **Cultural awareness:** Interpreting engagement signals correctly across cultural contexts
+- **Leadership:** Inspiring and motivating stakeholders toward the desired engagement level
+- **Networking:** Building informal relationships that sustain engagement beyond formal communications
+- **Political awareness:** Understanding organizational power dynamics that influence stakeholder behavior
+
+### 7.6 Meetings
+Stakeholder engagement review meetings, one-on-one sessions, and broader stakeholder forums provide direct engagement data and intervention opportunities.
+
+---
+
+## 8. Stakeholder Monitoring Rules
+
+### Rule 1 — SEAM must be updated at each monitoring cycle
+The SEAM is the primary instrument for detecting engagement gaps. It must reflect current assessed engagement levels, not levels from the initial stakeholder planning.
+
+### Rule 2 — Engagement gaps require explicit intervention plans
+A C-D gap in the SEAM is not resolved by noting it. An explicit intervention — a communication, meeting, relationship-building action, or escalation — must be planned and assigned.
+
+### Rule 3 — Resistance and unaware stakeholders are the highest priority
+Stakeholders at Unaware or Resistant are the most likely to disrupt the project. They require active engagement strategies, not passive monitoring.
+
+### Rule 4 — New stakeholders identified during monitoring must be added to A03
+If monitoring reveals a stakeholder not previously in A03, they must be formally registered and their desired engagement level assessed before engagement planning proceeds.
+
+### Rule 5 — Stakeholder engagement risks must be reflected in A19
+Significant engagement gaps, persistent resistance, or high-influence stakeholders trending toward disengagement must be captured or updated in the risk register.
+
+---
+
+## 9. Step-by-Step Instructions
+
+### Step 1 — Collect Engagement Evidence
+Gather engagement data from:
+- Meeting attendance and participation quality
+- Response rates to project communications
+- Feedback received through surveys or direct channels
+- Observations of stakeholder behavior in project activities
+- Issue log entries reflecting stakeholder concerns
+- Change requests initiated or blocked by specific stakeholders
+
+### Step 2 — Update the SEAM
+For each stakeholder, assess current engagement level based on collected evidence. Update the C position in the SEAM. Compare to the D (desired) position. Identify and record any gaps.
+
+### Step 3 — Perform Stakeholder Analysis
+For stakeholders with gaps, assess:
+- Has the stakeholder's role, interest, or influence changed since last assessment?
+- Are there new concerns driving the shift in engagement?
+- What is the root cause of the current gap?
+- Is the desired engagement level still appropriate, or does it need revision?
+
+### Step 4 — Identify New or Unregistered Stakeholders
+Review the project environment for any parties not currently in A03 who have emerged as having interest or influence over the project. Formally register them and assess engagement level and desired target.
+
+### Step 5 — Design Intervention Strategies
+For each engagement gap, select an intervention:
+- **Unaware → Aware:** Targeted communications, briefings, project updates
+- **Resistant → Neutral or Supportive:** One-on-one meetings, root cause discussions, escalation to sponsor, concern resolution, change in project approach
+- **Neutral → Supportive:** Involvement in decisions, recognition of contribution, increased communication frequency
+- **Supportive → Leading:** Assign advocacy roles, invite to steering forums, leverage for peer influence
+
+### Step 6 — Update Documents
+Update A03 (stakeholder register) with current engagement levels. Update A07 (stakeholder engagement plan) if strategies have changed. Update A21 (lessons learned), A18 (issue log), and A19 (risk register) where stakeholder signals have implications for issues or risks.
+
+### Step 7 — Raise Change Requests
+For significant engagement strategy changes that affect the communications plan, resource plan, or other baseline components, raise A12 and route to SKL-05-02.
+
+### Step 8 — Report Stakeholder Engagement Status
+Include SEAM summary, key engagement gaps, interventions planned or in progress, and any high-risk stakeholder situations in A17 work performance reporting. Escalate critical resistance or disengagement to the sponsor.
+
+---
+
+## 10. Outputs
+
+Process Groups Figure 7-23 identifies:
+
+| Output | Artifact | Content |
+|--------|----------|---------|
+| **Work performance information** | A17 | SEAM summary, engagement gap status, intervention progress, high-risk stakeholder flags |
+| **Change requests** | A12 | Engagement strategy changes requiring updates to communications plan, resource plan, or stakeholder engagement plan |
+| **Project management plan updates** | Resource management plan · Communications management plan · Stakeholder engagement plan | Updated when engagement monitoring reveals need to revise approach |
+| **Project document updates** | A18 issue log · A21 lessons learned · A19 risk register · A03 stakeholder register | Reflect current engagement levels, new stakeholders, and risk implications |
+
+---
+
+## 11. Decision Logic
+
+| Condition | Action |
+|-----------|--------|
+| C = D for all stakeholders | Maintain current engagement activities; update SEAM; report status |
+| C < D for a non-critical stakeholder | Plan targeted communication or involvement opportunity; monitor next cycle |
+| C < D for a high-influence stakeholder | Root cause analysis; executive engagement; escalate to sponsor if needed |
+| New stakeholder identified | Register in A03; assess engagement level; set desired target; plan initial engagement |
+| Stakeholder previously Supportive now Resistant | Immediate root cause analysis; one-on-one meeting; sponsor escalation if high influence |
+| Stakeholder engagement risk not in A19 | Add or update risk entry; assess probability and impact |
+| Communications not reaching stakeholders | Review channel effectiveness; update A28; raise A12 for plan change |
+
+---
+
+## 12. SEAM Quick Reference
+
+| C Position | D Position | Gap? | Priority Action |
+|------------|------------|------|----------------|
+| Unaware | Supportive | Yes — major | Targeted awareness campaign; briefing session |
+| Resistant | Neutral | Yes | Root cause meeting; concern resolution |
+| Neutral | Supportive | Yes | Involvement in decisions; increased communication |
+| Supportive | Supportive | No | Maintain; sustain current engagement |
+| Supportive | Leading | Yes — minor | Advocacy role assignment; steering forum invitation |
+| Leading | Leading | No | Leverage influence; involve in peer engagement |
+
+---
+
+## 13. Tailoring Guidance
+
+| Context | Guidance |
+|---------|----------|
+| **Small project with few stakeholders** | Informal SEAM maintained by project manager; engagement monitoring at status meetings |
+| **Large or politically complex project** | Formal SEAM reviewed at each cycle; dedicated stakeholder engagement reviews; sponsor-level escalation protocol |
+| **Adaptive project** | Stakeholder engagement assessed at sprint reviews and retrospectives; product owner manages key stakeholder relationship |
+| **Regulated or public-sector project** | Engagement monitoring includes formal public consultation records; regulatory body engagement tracked separately |
+
+---
+
+## 14. Failure Cases
+
+| Failure Mode | Consequence | Prevention |
+|-------------|-------------|-----------|
+| SEAM not updated since initial planning | Engagement gaps invisible until project impact occurs | Rule 1: SEAM updated at every monitoring cycle |
+| Gap identified but no intervention planned | Engagement deteriorates without response | Rule 2: Every gap requires an explicit intervention |
+| Resistant high-influence stakeholders not escalated | Executive resistance blocks project progress | Rule 3: Resistance from high-influence stakeholders escalated immediately |
+| New stakeholders not registered | Unmanaged influence; surprise opposition | Rule 4: New stakeholders formally registered |
+| Stakeholder resistance not reflected in A19 | Risk exposure underestimated | Rule 5: Significant gaps captured in risk register |
+
+---
+
+## 15. Tests
+
+| Test | Assertion | Pass | Fail |
+|------|-----------|------|------|
+| T-1 | SEAM updated with current C positions this cycle | A07 or monitoring record shows updated SEAM with date | SEAM unchanged from prior cycle |
+| T-2 | Gaps between C and D identified and documented | Gap analysis documented in A17 or A07 | No gap analysis performed |
+| T-3 | Intervention planned for each identified gap | Intervention log or A07 update shows planned action and owner | Gaps noted but no action assigned |
+| T-4 | New stakeholders identified during monitoring formally registered | A03 shows new entries with registration date | New stakeholders known but not in A03 |
+| T-5 | High-influence resistant stakeholders escalated | Escalation record or sponsor communication documented | Escalation not performed |
+| T-6 | Change requests raised for engagement strategy changes affecting plans | A12 shows CR for plan-level engagement changes | Plan changed without A12 record |
+
+---
+
+## 16. Dependency Chain
+
+```text
+UPSTREAM
+SKL-01-02 — Identify Stakeholders (initial A03)
+SKL-03-14 — Plan Stakeholder Engagement (A07 baseline)
+SKL-04-06 — Manage Stakeholder Engagement (executing engagement activities)
+A03 — Stakeholder register
+A07 — Stakeholder engagement plan with SEAM
+A28 — Communications delivery records
+A18 — Issue log (engagement-related issues)
+
+CURRENT SKILL
+SKL-05-07 — Monitor Stakeholder Engagement
+
+DOWNSTREAM
+A03 — Updated stakeholder register with current engagement levels
+A07 — Updated stakeholder engagement plan
+A17 — Work performance information (stakeholder section)
+A12 — Change requests for engagement strategy changes
+SKL-05-02 — Perform Integrated Change Control
+A19 — Risk register updated with stakeholder engagement risks
+A21 — Lessons learned updated
+```
+
+---
+
+## 17. Examples
+
+### Example A — High-Influence Stakeholder Shifts to Resistant
+At week 12, SEAM review reveals that a senior department director (previously Supportive) is now assessed as Resistant following a reorganization that reduced her budget allocation. Root cause analysis confirms she fears the project will compete with her department's priorities. The project manager arranges a one-on-one meeting with the sponsor present. The meeting results in a revised resource allocation commitment and a role for the director on the project steering committee. Next cycle assessment shows her position has returned to Neutral, trending toward Supportive. A19 is updated with a reduced probability for the stakeholder resistance risk.
+
+### Example B — New Stakeholder Identified
+At month 3, the project manager learns through a team member that a regional operations manager has significant authority over the deployment site and has not been engaged. He is not in A03. The project manager formally registers him in A03, assesses his current engagement as Unaware with a desired level of Supportive, and plans an introductory briefing. The communications management plan is updated to include him in the project update distribution. A12 is raised for the plan update.
+
+---
+
+## 18. Primary References
+
+| Reference | Alias | Section | Purpose |
+|-----------|-------|---------|---------|
+| Process Groups: A Practice Guide | Process-Groups | §7.12, Figure 7-23, Figure 7-24 | Core process definition, I/T/O, data flow |
+| PMBOK Guide, Eighth Edition | PMBOK8 | Stakeholders domain · Measurement domain | Engagement principles, SEAM, tailoring |
+
+---
+
+*Authority: Process-Groups §7.12 · PMBOK8*  
+*Owner: Project Manager / Communications Lead*  
+*Upstream: A03 stakeholder register · A07 engagement plan · SKL-04-06*  
+*Downstream: A03 updated · A07 updated · A17 stakeholder information · A12 change requests · SKL-05-02*

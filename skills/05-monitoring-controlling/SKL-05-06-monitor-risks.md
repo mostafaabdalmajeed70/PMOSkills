@@ -2,44 +2,43 @@
 
 **Skill ID:** SKL-05-06  
 **Canonical Title:** Monitor Risks  
-**Alias:** SKL-05 — Monitor Risk  
 **Pack:** 05 — Monitoring and Controlling  
-**Version:** 1.0.1  
+**Version:** 1.0.0  
 **Status:** Draft · Untested  
 **Source Type:** PMI-derived  
 **File Path:** `skills/05-monitoring-controlling/SKL-05-06-monitor-risks.md`  
-**Authority:** PMBOK8 Guide §2.7.2.6 · Figure 2-53 · PMBOK8 Guide §2.7.5 Table 2-11 · Risk Management in Portfolios, Programs, and Projects A Practice Guide §4.8, §4.8.1, §4.8.2, Figure 4-5, §7.2.6 · Process Groups: A Practice Guide §7.10  
-**Last Updated:** 2026-05-30  
-**Renamed From:** SKL-05-01 (2026-05-30)
+**Authority:** Process Groups: A Practice Guide §7.10 · Figure 7-19 · Figure 7-20  
+**Last Updated:** 2026-05-30
 
 ---
 
 ## 1. Purpose
 
-Monitor Risks is the process of tracking identified risks, monitoring the implementation of risk response plans, identifying and analyzing new risks, planning responses for new risks, and evaluating the effectiveness of risk responses and risk management processes throughout the project. Its purpose is to maintain continuity of risk ownership, detect changes in exposure early, and keep response plans viable as the project environment changes.
+Monitor Risks is the process of monitoring the implementation of agreed-upon risk response plans, tracking identified risks, identifying and analyzing new risks, and evaluating risk process effectiveness throughout the project. Its key benefit is that it enables project decisions to be based on current information about overall project risk exposure and individual project risks. This process is performed throughout the project.
 
-In PMI terms, this process is not limited to checking whether a risk still exists. It also reassesses the status of previously identified risks, identifies emergent, secondary, and residual risks, verifies that trigger conditions are watched, reviews reserve sufficiency, analyzes trends and performance signals, and captures lessons learned for improvement.
+Risk monitoring is not a passive tracking activity. It actively tests whether the risk management approach remains valid, whether implemented responses are working, and whether new risks have emerged that require immediate identification, analysis, and response.
 
 ---
 
 ## 2. Scope
 
 This skill covers:
-- Tracking the current status of previously identified risks in A19
-- Monitoring trigger conditions for contingent responses
-- Checking whether implemented responses are effective
-- Detecting emergent, secondary, and residual risks
-- Converting realized risks into active issue control through A18 when appropriate
-- Reviewing whether contingency and management reserves remain sufficient
-- Checking risk trends, risk profile movement, and relevant performance signals
-- Raising A12 change or exception decisions when monitoring reveals the need for corrective action or replanning
-- Updating A19, lessons learned records, and related planning documents
-- Feeding new or changed risks back into Identify Risks, Perform Risk Analysis, and Plan Risk Responses when needed
+- Monitoring the implementation of risk response plans (from SKL-04-08)
+- Tracking the status of identified individual project risks in A19
+- Identifying new individual project risks that have emerged
+- Analyzing new and changed risks (probability, impact, priority)
+- Evaluating the effectiveness of risk management processes
+- Performing technical performance analysis against planned targets
+- Performing reserve analysis to assess contingency adequacy
+- Conducting risk audits
+- Updating the risk register, risk report, assumption log, lessons learned
+- Raising change requests for corrective or preventive actions
 
 This skill does **not** cover:
-- The original selection of risk response strategies from scratch
-- The physical execution of response actions already approved
-- General project performance control outside the risk lens unless directly relevant to risk signals
+- Initial risk identification — SKL-03-10 through SKL-03-12
+- Planning risk responses — SKL-03-13
+- Implementing risk responses — SKL-04-08
+- Approving risk-driven baseline changes — SKL-05-02
 
 ---
 
@@ -48,354 +47,282 @@ This skill does **not** cover:
 | Field | Value |
 |-------|-------|
 | **Process** | Monitor Risks |
-| **Guide Section** | §2.7.2.6 |
-| **Figure** | Figure 2-53 — Monitor Risks Inputs, Tools and Techniques, and Outputs |
-| **Performance Domain** | Risk · Governance · Finance · Schedule · Stakeholders |
+| **Guide Section** | Process Groups §7.10 |
+| **Figure** | Figure 7-19 — I/T/O · Figure 7-20 — Data Flow Diagram |
+| **Performance Domain** | Uncertainty · Measurement |
 | **Focus Area** | Monitoring and Controlling |
-| **Primary Outcome** | Continued risk visibility, effective responses, timely escalation, and updated risk records |
-| **Secondary Authority** | Risk-PPP §4.8, Figure 4-5, §7.2.6; Process Groups §7.10 |
+| **Primary Outcome** | Work performance information · Change requests · Updated risk register and risk report |
 
-**PMI definition (paraphrased):** Monitor Risks tracks and analyzes risks, monitors implementation of response plans, identifies new risks, plans responses for new risks, and evaluates response and process effectiveness throughout the project.
-
----
-
-## 4. Operating Model
-
-This skill uses a six-state monitoring model for each risk record:
-
-| State | Meaning | Typical Control Action |
-|------|---------|------------------------|
-| **Active Watch** | Risk remains relevant and is being monitored | Review status, triggers, trends, and exposure |
-| **Triggered** | Defined condition has been observed | Confirm response activation or escalation path |
-| **Response Under Review** | A response has been implemented and its effectiveness is being observed | Measure whether exposure is decreasing |
-| **Residual Exposure** | Planned response executed but some exposure remains | Keep active, adjust score, or plan additional action |
-| **Realized / Issue Active** | The uncertain event has occurred or is occurring | Maintain A18 issue control linked to A19 |
-| **Closed / No Longer Relevant** | Risk no longer applies or exposure is acceptable and inactive | Record closure basis and lessons learned |
-
-This model keeps monitoring distinct from implementation. A response can be implemented under SKL-04, yet the risk still needs observation here until the team confirms either effectiveness, residual exposure, or closure.
+**PMI definition (paraphrased):** Monitor Risks monitors risk response implementation, tracks identified risks, identifies and analyzes new risks, and evaluates overall risk process effectiveness throughout the project.
 
 ---
 
-## 5. Core Monitoring Questions
+## 4. What Monitor Risks Evaluates
 
-Every monitoring cycle should answer the following:
-1. Does the risk still exist in a meaningful way?
-2. Has its probability, impact, timing, or manageability changed?
-3. Have any trigger conditions been reached or invalidated?
-4. Were planned responses actually implemented?
-5. Are implemented responses effective and efficient?
-6. Did execution create any secondary risks?
-7. What residual exposure remains after the response?
-8. Has a new emergent risk appeared?
-9. Are contingency and management reserves still adequate?
-10. Does the project need replanning, escalation, or formal change control?
-
----
-
-## 6. Roles
-
-### 6.1 Risk Owner
-The risk owner remains accountable for tracking the specific risk, monitoring its trigger conditions, coordinating reassessment, and ensuring contingent actions occur in a timely manner when defined conditions are met.
-
-### 6.2 Project Manager
-The project manager integrates risk monitoring into regular project control, ensures updates propagate to the relevant logs and plans, and raises A12 decisions when monitoring reveals threshold breaches, ineffective responses, or material baseline implications.
-
-### 6.3 Risk Response Owner
-When a response is in effect or was recently implemented, the response owner provides status and outcome evidence so the risk owner can judge effectiveness and residual exposure.
-
-### 6.4 Team and Functional Leads
-Team members and functional leads provide signal data, technical observations, schedule and cost indicators, stakeholder feedback, and lessons learned that may reveal changed or newly emerging risks.
-
-### 6.5 Sponsor or Governance Authority
-The sponsor or designated authority receives escalations when residual exposure exceeds tolerance, reserves are insufficient, new responses exceed delegated authority, or overall project risk threatens objectives or viability.
+Process Groups §7.10 identifies that Monitor Risks determines whether:
+- Implemented risk responses are effective
+- Level of overall project risk has changed
+- Status of identified individual project risks has changed
+- New individual project risks have arisen
+- Risk management approach is still appropriate
+- Project assumptions are still valid
+- Risk management policies and procedures are being followed
+- Contingency reserves for cost or schedule require modification
+- Project strategy is still valid
 
 ---
 
-## 7. Inputs
+## 5. Roles
 
-PMBOK8 Figure 2-53 identifies the main inputs as the project management plan, project documents including issue log, lessons learned register, risk register, and risk report, plus work performance data and work performance reports.
+### 5.1 Project Manager
+Owns overall risk monitoring. Reviews the risk register at each cycle, evaluates overall risk exposure, approves reserve drawdowns within authority, and escalates material risk changes to the sponsor.
 
-| Input | Source | Use in This Skill |
-|------|--------|-------------------|
-| **A19 — Risk Management Record** | Risk domain records | Primary source for current risks, triggers, owners, planned responses, residual notes, and status history |
-| **A18 — Issue, Impediment, and Action Log** | Execution / control | Tracks realized risks and active issue management linked back to A19 |
-| **A12 — Change and Exception Decision Log** | Governance | Receives escalations, threshold breaches, and corrective or preventive decision needs |
-| **A16 — Financial Management and Cost Baseline Record** | Finance control | Supports reserve sufficiency review and approved reserve consumption tracking |
-| **Risk management plan / A14-linked plan content** | Planning baseline | Provides thresholds, review cadence, definitions, reporting rules, and ownership model |
-| **Lessons learned register** | Knowledge records | Supplies historical effectiveness and captures new learning |
-| **Work performance data and reports** | Project control system | Reveal trends, variances, emerging signals, and effectiveness clues |
-| **Assumption and issue records** | Cross-domain records | Help determine whether a risk remains valid or has evolved |
+### 5.2 Risk Owner
+Responsible for monitoring the specific risks assigned to them in A19. Reports on the status of their risk, the effectiveness of implemented responses, and any changes to probability or impact.
 
-Supporting inputs when relevant:
-- Schedule and milestone status
-- Cost forecasts and variance reports
-- Quality and defect information
-- Stakeholder feedback and escalation notes
-- Procurement and supplier performance information
+### 5.3 Project Team Members
+Report emerging risks observed during execution. Validate assumption status. Participate in risk review meetings.
+
+### 5.4 Risk Specialist (if assigned)
+Facilitates risk reviews and audits. Supports technical performance analysis. Ensures risk management procedures are being followed.
+
+### 5.5 Sponsor
+Receives escalated risk status reports. Approves reserve releases above the project manager's delegated authority. Provides strategic guidance when overall project risk exposure changes materially.
 
 ---
 
-## 8. Tools and Techniques
+## 6. Inputs
 
-PMBOK8 Figure 2-53 names **data analysis**, **technical performance analysis**, **reserve analysis**, **audits**, and **meetings** as the principal techniques.
+Process Groups Figure 7-19 identifies:
 
-### 8.1 Data Analysis
-Used to detect changed exposure, trend movement, emerging patterns, and response effectiveness. This includes reading performance reports for signals that indicate new risks or ineffective responses.
-
-### 8.2 Technical Performance Analysis
-Used to compare actual technical or delivery performance against thresholds, tolerances, or leading indicators that may reveal threat growth or opportunity emergence.
-
-### 8.3 Reserve Analysis
-Used to check whether contingency and management reserves remain adequate for current exposure, whether reserve usage aligns with approved risk responses, and whether additional action is needed.
-
-### 8.4 Audits
-Used to assess the effectiveness of risk management practices, identify barriers, and extract broader improvements for current and future projects.
-
-### 8.5 Meetings
-Used to maintain risk awareness, validate updated status, coordinate reassessment, confirm ownership continuity, and align actions across the project team and stakeholder groups.
+| Input | Artifact | Role in This Skill |
+|-------|----------|--------------------|
+| **Risk management plan** | A14-linked plan | Defines monitoring frequency, roles, thresholds, audit schedule, and reserve rules |
+| **Issue log** | A18 | Active issues may indicate that risks have materialized and require status update |
+| **Lessons learned register** | A21 | Historical risk patterns that inform current risk monitoring judgment |
+| **Risk register** | A19 | The authoritative record of all identified risks, their owners, responses, and current status |
+| **Risk report** | A19 risk report | Summary of overall project risk exposure and key individual risks |
+| **Work performance data** | Executing outputs | Actual execution data against which risk triggers and technical targets are measured |
+| **Work performance reports** | A17 | Integrated performance reports that surface schedule, cost, and quality signals relevant to risk |
 
 ---
 
-## 9. Monitoring Rules
+## 7. Tools and Techniques
 
-### Rule 1 — Monitoring is continuous
-Risk monitoring is not a one-time review. It occurs at regular intervals, at phase gates, and whenever relevant events or exception conditions arise.
+Process Groups Figure 7-19 names:
 
-### Rule 2 — Triggers must remain observable
-A contingent response is only useful if its trigger conditions are actively watched and remain valid. If the trigger definition no longer matches project reality, the risk record must be updated.
+### 7.1 Data Analysis
 
-### Rule 3 — Realized risks must be controlled as issues
-If the uncertain event has occurred, the item is no longer only a future possibility. It must be linked to active issue management in A18 while the originating risk history remains in A19.
+**Technical performance analysis:**  
+Compares actual technical achievements to planned technical targets. Deviations from planned technical performance (e.g., weight, defect rates, throughput, system response time) may signal emerging risk or indicate that implemented risk responses are insufficient.
 
-### Rule 4 — Ineffective responses require action
-If monitoring shows that a response is not reducing exposure or not being executed as planned, the team must replan, escalate, or request change through A12 as appropriate.
+**Reserve analysis:**  
+Compares remaining contingency and management reserves against remaining risk exposure. If reserves are being consumed faster than risks are closing, additional reserve may be needed. If reserves exceed remaining exposure, surplus may be released.
 
-### Rule 5 — New risks found during monitoring enter the risk cycle
-Emergent, secondary, or residual risks discovered here are added to A19 and sent into analysis and response planning as needed.
+### 7.2 Audits
+Risk audits examine and document the effectiveness of risk responses, identify process compliance issues, and evaluate the quality of the risk management process overall. Audits may be conducted by the project manager, internal audit, or an external party. The risk management plan defines the audit schedule and format.
 
-### Rule 6 — Monitoring includes the process itself
-The team does not only monitor risks; it also monitors whether its risk management approach is working. Audits, integrated review, and lessons learned are part of this process.
+### 7.3 Meetings
+Periodic risk review meetings are held to assess the current status of identified risks, review the effectiveness of responses in progress, identify new risks, validate assumptions, and update the risk register. The risk management plan specifies meeting frequency.
 
 ---
 
-## 10. What to Monitor
+## 8. Risk Monitoring Rules
 
-| Monitoring Object | Minimum Check |
-|------------------|---------------|
-| **Individual risk status** | Still relevant, changed, inactive, or closed |
-| **Probability / impact / timing** | Any material shift since last review |
-| **Trigger conditions** | Reached, approaching, invalid, or missing |
-| **Response implementation status** | Not started, in progress, completed, ineffective, or effective |
-| **Residual risk** | Remaining exposure after implemented response |
-| **Secondary risk** | New risk created by a response action |
-| **Emergent risk** | Newly detected uncertainty from changing conditions |
-| **Overall risk profile** | Trend in aggregate exposure or concentration |
-| **Reserves** | Adequate, tightening, or insufficient |
-| **Risk process effectiveness** | Cadence working, ownership clear, updates timely, decisions traceable |
-| **Lessons learned** | Improvement opportunities captured |
+### Rule 1 — Risk monitoring is continuous, not periodic-only
+Although scheduled risk reviews are required, the project team should report new or changed risks as they are observed during execution, not wait for the next formal cycle.
 
-Process Groups §7.10 also emphasizes monitoring whether known risks are no longer about to occur, monitoring all actions implemented in response to risks, observing risk trends and profile, assessing KPIs and KRIs, and ensuring effective communication among team members, risk owners, and risk response owners.
+### Rule 2 — Closed risks must be formally closed in A19
+When a risk window has passed or a risk has been successfully resolved, it must be formally closed in the risk register with a date and outcome record. Do not leave stale open risks in A19.
 
----
+### Rule 3 — Risk owners are accountable for their assigned risks
+Monitor Risks does not mean the project manager monitors all risks alone. Risk owners report on their risks and are accountable for the effectiveness of their assigned responses.
 
-## 11. Step-by-Step Instructions
+### Rule 4 — New risks identified during monitoring must go through full assessment
+A risk identified for the first time during monitoring is a new individual risk. It must be assessed for probability, impact, and priority before being added to A19 and before a response is planned.
 
-### Step 1 — Establish the Monitoring Set
-Pull the current A19 records and separate them into:
-- Active watch risks
-- Triggered risks
-- Recently implemented responses awaiting effectiveness review
-- Residual risks
-- Closed risks pending archival verification
-- Newly logged emergent risks awaiting analysis
-
-This ensures no risk disappears because of poor list hygiene.
-
-### Step 2 — Review Each Risk's Current Validity
-For each active risk, determine whether it:
-- Still exists as stated
-- Has changed in probability, impact, timing, or exposure path
-- Has been overtaken by events and should be closed or rewritten
-- Has become an issue because the event occurred
-
-If the risk statement is no longer accurate, update A19 rather than carrying forward stale wording.
-
-### Step 3 — Check Trigger Conditions
-Verify for every contingent response that:
-- The trigger is still relevant
-- The trigger is being observed by a named owner
-- Evidence exists for whether the trigger has or has not occurred
-- New warning signs suggest the trigger definition should be refined
-
-If a trigger fires, confirm whether the planned action under SKL-04 was initiated and whether escalation is needed.
-
-### Step 4 — Assess Response Implementation Status
-For every risk with a planned or implemented response, determine whether the response was:
-- Not started
-- In progress
-- Completed as planned
-- Delayed or blocked
-- Ineffective
-- Effective but leaving residual exposure
-
-If monitoring reveals that a planned response was never executed, open or update A18 action items and escalate as needed.
-
-### Step 5 — Evaluate Effectiveness and Efficiency
-Judge whether the response is actually reducing exposure and whether it is doing so at an acceptable cost and pace. Use performance indicators, technical outcomes, defect data, schedule effects, cost impacts, and stakeholder signals as evidence.
-
-A response can be technically completed yet still ineffective. In that case, the risk remains active and further planning is required.
-
-### Step 6 — Identify Residual, Secondary, and Emergent Risks
-During each review, explicitly ask:
-- What exposure remains after the response?
-- Did the response create a new threat or opportunity?
-- Did external or internal changes create a new risk not previously listed?
-
-Create new A19 entries for each secondary or emergent risk, and link them to the source event or response where relevant.
-
-### Step 7 — Review Reserves and Tolerance Position
-Check whether remaining contingency and management reserves are still aligned with current exposure. Reserve analysis should answer whether the project still has enough time, money, or other reserved capacity to manage known uncertainty.
-
-If reserve sufficiency is weak or thresholds are breached, raise A12 for decision or escalation.
-
-### Step 8 — Review Overall Risk Trend and Communication Health
-Move from the individual level to the overall profile:
-- Is aggregate exposure rising or falling?
-- Are risks clustering around the same cause or objective?
-- Are stakeholders informed at the required cadence?
-- Are risk owners and response owners actively communicating?
-
-This step prevents local monitoring from missing systemic exposure.
-
-### Step 9 — Update Records and Decide Control Actions
-Update A19 with the new status, evidence, trend notes, changed scores where applicable, residual exposure notes, and next review date. Update A18 for realized issues or action follow-up, and create A12 entries for changes, escalation, or exceptions that require decision.
-
-Possible control decisions are:
-- Keep under active watch
-- Close the risk
-- Reanalyze the risk
-- Replan or replace the response
-- Escalate the exposure
-- Convert to active issue control
-
-### Step 10 — Capture Process Learning
-At the end of the review cycle, record lessons learned about triggers, response effectiveness, reserve sizing, ownership clarity, review cadence, and information quality. Periodically perform risk audits and broader integrated analysis to improve the risk process itself and update organizational knowledge.
+### Rule 5 — Reserve analysis must be performed at each cycle
+Contingency and management reserve balances must be reviewed at each risk monitoring cycle against the current exposure. Reserve adequacy must not be assumed.
 
 ---
 
-## 12. Decision Logic
+## 9. Step-by-Step Instructions
 
-| Condition Observed | Control Decision |
-|-------------------|------------------|
-| Risk no longer relevant and no residual concern remains | Close risk in A19 with closure rationale |
-| Event occurred and is actively affecting objectives | Keep A19 history, open or continue A18 issue control |
-| Response implemented and exposure now acceptable | Mark as residual watch or close, depending on remaining exposure |
-| Response not implemented or ineffective | Replan, escalate, or raise A12 |
-| New uncertainty discovered | Add new A19 entry and route to analysis and response planning |
-| Aggregate exposure exceeds tolerance | Escalate to governance and review reserves / strategy |
-| Trigger definition is invalid or stale | Update A19 and possibly replan contingent response |
+### Step 1 — Review Work Performance Data and Reports
+Review A17 work performance reports and raw execution data from SKL-04-01 for signals that risks are materializing or that new risk conditions are emerging. Flag technical deviations, cost variances, schedule delays, quality anomalies, and issue log entries for risk relevance.
+
+### Step 2 — Update Risk Status in A19
+For each open risk in A19, update:
+- Current probability and impact (have they changed?)
+- Current priority (re-score if parameters have changed)
+- Response implementation status (planned, in progress, complete)
+- Response effectiveness (is the response working?)
+- Trigger status (have any triggers been observed?)
+- Any residual or secondary risks
+
+Close risks whose window has passed or whose triggers can no longer fire.
+
+### Step 3 — Identify New Risks
+Gather new risk submissions from the project team, stakeholders, and execution observations. For each new risk, document:
+- Risk description (cause → event → effect format)
+- Owner
+- Probability and impact assessment
+- Priority
+- Planned response
+
+Add to A19 and include in the risk report.
+
+### Step 4 — Perform Technical Performance Analysis
+Compare actual technical achievements against planned targets. Identify deviations. Determine whether deviations are within acceptable tolerances or represent emerging risk signals requiring response.
+
+### Step 5 — Perform Reserve Analysis
+Calculate remaining contingency reserve. Compare against total remaining risk exposure (sum of probability × impact for all open risks). Determine whether reserves are sufficient, excessive, or insufficient. Flag for action if reserve coverage is below threshold.
+
+### Step 6 — Conduct Risk Audits (per schedule)
+When scheduled, conduct a risk audit. Evaluate:
+- Are risk responses being implemented as planned?
+- Are risk owners fulfilling their responsibilities?
+- Are risk management procedures being followed?
+- Is the overall risk management approach still appropriate?
+
+Document findings and corrective actions.
+
+### Step 7 — Evaluate Overall Risk Exposure
+Update the overall project risk level (e.g., low/medium/high/critical). Determine whether overall exposure has changed since the last cycle. If the project strategy is no longer valid given current risk exposure, escalate to the sponsor.
+
+### Step 8 — Update Documents
+Update A19 (risk register and risk report), A21 (lessons learned), A18 (issue log) for any materialized risks, and assumption log for any invalidated assumptions.
+
+### Step 9 — Raise Change Requests
+For any risk-driven corrective or preventive actions that require scope, schedule, cost, or baseline changes, raise A12 and route to SKL-05-02.
+
+### Step 10 — Report Risk Status
+Include current overall risk exposure, key risk changes, reserve status, and any significant new risks in A17. Escalate material changes to the sponsor.
 
 ---
 
-## 13. Outputs
+## 10. Outputs
 
-PMBOK8 Figure 2-53 identifies the outputs as **work performance information**, **change requests**, **project management plan updates**, **project document updates**, and **organizational process asset updates**.
+Process Groups Figure 7-19 identifies:
 
-| Output | Artifact / Record | Content |
-|-------|-------------------|---------|
-| **Work performance information** | Project reporting layer | Risk trend insights, reserve position, response effectiveness observations |
-| **Change requests** | A12 | Corrective action, preventive action, replanning, reserve escalation, response replacement |
-| **Project management plan updates** | A14-linked components | Risk management plan or other affected plans where monitoring shows needed adjustment |
-| **Project document updates** | A19, A18, lessons learned register, assumptions, issue records | Status, new risks, changed triggers, residual and secondary risks, closure notes |
-| **Organizational process asset updates** | Knowledge repository | Risk audit results, lessons learned, reusable guidance |
-
----
-
-## 14. Tailoring Guidance
-
-| Context | Tailoring Guidance |
-|--------|--------------------|
-| **Small project** | Use short cadence reviews and a compact risk board, but still separate active risks, realized issues, and closed items |
-| **Large or regulated project** | Use formal audit trails, explicit trigger evidence, reserve analysis, risk review boards, and tighter escalation thresholds |
-| **Adaptive project** | Monitor risks at iteration or sprint cadence, refresh triggers more frequently, and treat backlog changes as risk signals |
-| **Supplier-heavy project** | Pay special attention to contractual triggers, delivery performance, external dependencies, and transferred or shared risks |
-| **High-uncertainty environment** | Increase review frequency, emphasize emergent risk detection, and keep management reserve visibility high |
+| Output | Artifact | Content |
+|--------|----------|---------|
+| **Work performance information** | A17 | Current risk status, overall exposure level, reserve status, key risk changes |
+| **Change requests** | A12 | Corrective actions, preventive actions, contingency plan activations requiring baseline change |
+| **Project management plan updates** | Any component | Updates driven by risk-triggered changes affecting plan components |
+| **Project document updates** | A19 risk register · A19 risk report · A21 lessons learned · A18 issue log · Assumption log | Reflect current risk status, new risks, closed risks, and assumption validity |
+| **Organizational process assets updates** | OPA / A05 | Risk templates, checklists, and historical risk data updated from current cycle learning |
 
 ---
 
-## 15. Failure Cases
+## 11. Decision Logic
+
+| Condition | Action |
+|-----------|--------|
+| Risk status unchanged, response on track | Update A19, report status, no change request needed |
+| Risk probability or impact has increased | Re-score priority; evaluate enhanced response; raise A12 if baseline affected |
+| Implemented response is not effective | Develop alternative response; update A19; raise A12 if baseline change needed |
+| Risk window has passed without trigger | Formally close risk in A19 with outcome record |
+| New risk identified | Assess, assign owner, plan response, add to A19 |
+| Assumption invalidated | Update assumption log; assess risk implications; raise A12 if baseline affected |
+| Contingency reserve insufficient for current exposure | Reserve analysis; raise A12 for reserve replenishment or baseline adjustment |
+| Overall project risk level materially changed | Update risk report; escalate to sponsor; evaluate strategy validity |
+
+---
+
+## 12. Agile and Hybrid Adaptation
+
+| Predictive Practice | Agile Equivalent |
+|---------------------|------------------|
+| Periodic risk register review | Risk review at each sprint planning / retrospective |
+| Formal risk audit | Retrospective risk effectiveness discussion |
+| Reserve analysis | Buffer review against remaining backlog and velocity |
+| Technical performance analysis | Definition of Done compliance rate, defect density per sprint |
+| Risk report to sponsor | Risk section in iteration review or release planning |
+
+In adaptive contexts, risk monitoring is embedded in the iteration cadence. Retrospectives surface both process risks and product risks. Risk register may be maintained as a backlog item category or a dedicated risk log.
+
+---
+
+## 13. Tailoring Guidance
+
+| Context | Guidance |
+|---------|----------|
+| **Small project** | Informal risk review at status meetings; simplified A19; reserve tracked as a single contingency line |
+| **Large or high-risk project** | Formal risk register with structured review cycles; dedicated risk owner roles; quantitative reserve analysis; periodic external audits |
+| **Adaptive project** | Risk monitoring embedded in iteration cadence; retrospectives capture risk learning |
+| **Regulated or safety-critical project** | Risk audits mandatory; technical performance analysis against safety thresholds; formal risk reporting to governance bodies |
+
+---
+
+## 14. Failure Cases
 
 | Failure Mode | Consequence | Prevention |
 |-------------|-------------|-----------|
-| Risk register updated rarely | Stale exposure picture and late action | Monitor at defined cadence |
-| Triggers exist on paper but no one watches them | Contingent responses activate too late | Assign named trigger owners |
-| Team marks responses complete without checking effect | False confidence and hidden residual exposure | Require effectiveness review |
-| Realized risk remains only in A19 | Active problem is unmanaged as an issue | Link to A18 when event occurs |
-| New secondary risk mentioned informally but not logged | New exposure is invisible to planning | Capture new A19 entries |
-| Reserve sufficiency never reviewed | Project runs out of time or money buffers unexpectedly | Include reserve analysis in each cycle |
+| Risk register updated only at formal cycles, not continuously | New risks missed between cycles | Rule 1: Risk monitoring is continuous |
+| Closed risks not formally closed in A19 | Stale register; misleading overall exposure | Rule 2: Formally close risks with outcome record |
+| Risk owners not reporting | Project manager unaware of response failures | Rule 3: Risk owner accountability enforced at each cycle |
+| Reserve analysis skipped | Reserve exhausted without warning | Rule 5: Reserve analysis at every cycle |
+| New risks added without assessment | Unscored risks distort overall exposure picture | Rule 4: New risks go through full assessment |
 
 ---
 
-## 16. Tests
+## 15. Tests
 
 | Test | Assertion | Pass | Fail |
 |------|-----------|------|------|
-| T-1 | Every active risk reviewed at cadence | A19 shows recent monitoring date | Active risks beyond cadence without review |
-| T-2 | Trigger ownership and evidence current | A19 shows owner, state, and evidence | Trigger exists without current observation |
-| T-3 | Effectiveness review present for implemented responses | A19 records whether exposure decreased | Response marked done with no effectiveness note |
-| T-4 | Realized risk linked to A18 | A19 links to A18 issue | Risk event occurred but no issue linkage |
-| T-5 | Secondary and emergent risks captured as new A19 entries | Each new risk has own ID and source link | New risks appear only in narrative notes |
-| T-6 | Reserve sufficiency reviewed | Reserve status noted in monitoring record | No evidence of reserve analysis |
+| T-1 | A19 updated this cycle with current status for all open risks | A19 shows updated date and status per risk | Last update date is more than one cycle old |
+| T-2 | Reserve balance calculated and compared to remaining exposure | Reserve analysis documented in A17 or A16 | No reserve analysis evidence |
+| T-3 | New risks identified during monitoring formally assessed and entered | A19 shows new risk with probability, impact, owner, response | New risks mentioned verbally but not in A19 |
+| T-4 | Closed risks formally closed with outcome record | A19 shows closure date and outcome for resolved risks | Risks closed by deletion only, no record |
+| T-5 | Risk audit conducted per schedule | Audit findings documented | No audit record for the period |
+| T-6 | Change requests raised for risk-driven corrective actions affecting baselines | A12 shows CR for risk-triggered baseline changes | Baseline adjusted without A12 record |
 
 ---
 
-## 17. Dependency Chain
+## 16. Dependency Chain
 
 ```text
 UPSTREAM
-SKL-03-11 — Perform Risk Analysis
-SKL-03-12 — Plan Risk Responses
-SKL-04-08 — Implement Risk Responses
-A19 — Current risk records
-A18 — Current realized issues and action tracking
-A16 — Reserve position
+SKL-03-10 through SKL-03-13 — Identify, Analyze, and Plan Risk Responses
+SKL-04-08 — Implement Risk Responses (produces the responses being monitored)
+A19 — Risk register and risk report
+A17 — Work performance reports (risk signal inputs)
 
 CURRENT SKILL
 SKL-05-06 — Monitor Risks
 
-DOWNSTREAM / LOOP-BACK
-A19 — Updated status, emergent, secondary, and residual risks
-A18 — Realized risk issue control
-A12 — Decisions, escalations, corrective or preventive actions
-SKL-03-11 — Reanalyze changed or new risks
-SKL-03-12 — Replan responses where monitoring shows need
-SKL-04-08 — Execute newly approved or triggered responses
-Knowledge assets — Lessons learned and audit outputs
+DOWNSTREAM
+A19 — Updated risk register and risk report
+A17 — Work performance information (risk section)
+A12 — Change requests for risk-driven corrective actions
+SKL-05-02 — Perform Integrated Change Control
+A21 — Lessons learned updated with risk process learning
+A05 OPA — Updated with risk templates, checklists, historical data
 ```
 
 ---
 
-## 18. Example
+## 17. Examples
 
-### Example A — Residual Threat After Mitigation
-A supplier delay risk was mitigated by adding a backup vendor. Monitoring shows the primary vendor recovered, but the backup vendor created added coordination cost and only partially reduced schedule exposure. The original risk remains open in A19 with a lower schedule score but a residual cost exposure note, and a secondary coordination risk is added as a new A19 entry.
+### Example A — Implemented Response Failing
+At week 10, the risk owner for RISK-017 (vendor delivery delay) reports that the mitigation response (alternate vendor qualification) has stalled because the alternate vendor failed the technical assessment. The project manager elevates the risk priority in A19, activates the contingency plan (order from primary vendor with expedited shipping at additional cost), and raises A12 for the cost impact of $6,200. A new residual risk (expedited shipping schedule uncertainty) is added to A19.
 
-### Example B — Triggered Opportunity Review
-An opportunity to accelerate deployment depended on permit approval by a specific date. Monitoring confirms the trigger occurred, the exploit response was implemented, and milestone tracking now shows a one-week gain instead of the planned two-week gain. The opportunity remains under review until the team confirms whether the remaining benefit is fully realized or whether a follow-on action is needed.
+### Example B — Reserve Insufficient for Remaining Exposure
+Reserve analysis at month 4 shows contingency reserve balance of $8,500 against a remaining risk-weighted exposure of $22,000 across open risks. The project manager raises A12 requesting a management reserve release of $15,000 into contingency. The risk report is updated to reflect the reserve gap and the change request is routed to the sponsor for approval.
 
 ---
 
-## 19. Primary References
+## 18. Primary References
 
 | Reference | Alias | Section | Purpose |
 |-----------|-------|---------|---------|
-| PMBOK Guide, Eighth Edition | PMBOK8 | §2.7.2.6, Figure 2-53, Table 2-11 | Core process definition, I/T/O, outcomes |
-| Risk Management in Portfolios, Programs, and Projects: A Practice Guide | Risk-PPP | §4.8, §4.8.1, §4.8.2, Figure 4-5, §7.2.6 | Monitoring mechanics, risk audits, reassessment |
-| Process Groups: A Practice Guide | Process-Groups | §7.10 Monitor Risks | Detailed monitoring and controlling checks |
+| Process Groups: A Practice Guide | Process-Groups | §7.10, Figure 7-19, Figure 7-20 | Core process definition, I/T/O, data flow, monitoring criteria |
+| PMBOK Guide, Eighth Edition | PMBOK8 | Uncertainty domain · Measurement domain | Risk monitoring principles, tailoring |
 
 ---
 
-*Authority: PMBOK8 · Risk-PPP · Process-Groups*  
-*Owner: Project Manager or designated risk lead during monitoring and controlling*  
-*Predecessor: SKL-04-08 — Implement Risk Responses*  
-*Loop-back Skills: SKL-03-11, SKL-03-12, SKL-04-08*
+*Authority: Process-Groups §7.10 · PMBOK8*  
+*Owner: Project Manager / Risk Owner*  
+*Upstream: A19 risk register · SKL-04-08 risk responses · A17 performance reports*  
+*Downstream: A19 updated · A17 risk information · A12 change requests · SKL-05-02*
