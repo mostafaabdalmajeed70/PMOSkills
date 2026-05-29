@@ -1,5 +1,5 @@
 # SKILL-REGISTRY.md — Project Management Skills Repository
-**Version:** 1.1.0  
+**Version:** 1.2.0  
 **Status:** Active · Maintained  
 **Authority:** PMBOK8 · Artifacts-V-1.1 · Repository Operating Rules  
 **Last Updated:** 2026-05-30  
@@ -29,7 +29,7 @@ Each skill entry contains the following fields:
 | **Skill ID** | Unique identifier — format: `SKL-PP-NN` where PP = pack number, NN = sequence within pack |
 | **Skill Name** | Full name matching the skill file heading |
 | **Pack** | Lifecycle pack number and name |
-| **Status** | `Draft · Untested` / `Draft · In Review` / `Reviewed` / `Approved · Production` / `Planned` |
+| **Status** | `Draft · Untested` / `Draft · In Review` / `Reviewed` / `Approved · Production` |
 | **Source Type** | `PMI-derived` / `organization-defined` / `synthesis` |
 | **Primary Artifact (Output)** | The artifact this skill produces or whose primary section it populates |
 | **Artifacts Updated** | Additional artifacts modified as outputs |
@@ -48,13 +48,13 @@ Each skill entry contains the following fields:
 | Pack | Name | Skills Built | Skills Planned | Total | Status |
 |------|------|-------------|----------------|-------|--------|
 | 01 | Organizational Setup | 0 | TBD | TBD | Not started |
-| **02** | **Initiating** | **2** | 0 | **2** | ✅ Complete (initial build) |
-| **03** | **Planning** | **4** | 13 | **17** | 🔄 In progress |
-| **04** | **Executing** | **9** | 0 | **9** | ✅ Built |
-| **05** | **Monitoring & Controlling** | **9** | 0 | **9** | ✅ Built |
-| **06** | **Closing** | **3** | 0 | **3** | ✅ Built |
-| **07** | **Adaptive & Hybrid** | **4** | 0 | **4** | ✅ Built |
-| — | **TOTAL** | **31 built** | **13 planned** | **44** | — |
+| **02** | **Initiating** | **2** | 0 | **2** | ✅ Complete |
+| **03** | **Planning** | **17** | 0 | **17** | ✅ Complete |
+| **04** | **Executing** | **9** | 0 | **9** | ✅ Complete |
+| **05** | **Monitoring & Controlling** | **9** | 0 | **9** | ✅ Complete |
+| **06** | **Closing** | **3** | 0 | **3** | ✅ Complete |
+| **07** | **Adaptive & Hybrid** | **4** | 0 | **4** | ✅ Complete |
+| — | **TOTAL** | **44 built** | **0 planned** | **44** | ✅ **All built** |
 
 ---
 
@@ -127,7 +127,7 @@ Each skill entry contains the following fields:
 | **Skill ID** | SKL-03-01 |
 | **Skill Name** | Integrate and Align Project Plans |
 | **Pack** | 03 — Planning |
-| **Status** | Planned |
+| **Status** | Draft · Untested |
 | **Source Type** | PMI-derived |
 | **Primary Artifact (Output)** | A14 — Integrated Project Management Plan |
 | **PMBOK8 Process Anchor** | Guide §2.1.6.2 · Figure 2-4 |
@@ -147,7 +147,7 @@ Each skill entry contains the following fields:
 | **Skill ID** | SKL-03-02 |
 | **Skill Name** | Plan Scope Management |
 | **Pack** | 03 — Planning |
-| **Status** | Planned |
+| **Status** | Draft · Untested |
 | **Source Type** | PMI-derived |
 | **Primary Artifact (Output)** | A08 — Scope Management Plan section |
 | **PMBOK8 Process Anchor** | Guide §2.2.2.1 · Figure 2-14 |
@@ -166,7 +166,7 @@ Each skill entry contains the following fields:
 | **Skill ID** | SKL-03-03 |
 | **Skill Name** | Elicit and Analyze Requirements |
 | **Pack** | 03 — Planning |
-| **Status** | Planned |
+| **Status** | Draft · Untested |
 | **Source Type** | PMI-derived |
 | **Primary Artifact (Output)** | A08 — Requirements section |
 | **PMBOK8 Process Anchor** | Guide §2.2.2.2 · Figure 2-15 |
@@ -185,7 +185,7 @@ Each skill entry contains the following fields:
 | **Skill ID** | SKL-03-04 |
 | **Skill Name** | Define Scope |
 | **Pack** | 03 — Planning |
-| **Status** | Planned |
+| **Status** | Draft · Untested |
 | **Source Type** | PMI-derived |
 | **Primary Artifact (Output)** | A08 — Project Scope Statement section |
 | **PMBOK8 Process Anchor** | Guide §2.2.2.3 · Figure 2-16 |
@@ -204,7 +204,7 @@ Each skill entry contains the following fields:
 | **Skill ID** | SKL-03-05 |
 | **Skill Name** | Develop Scope Structure |
 | **Pack** | 03 — Planning |
-| **Status** | Planned |
+| **Status** | Draft · Untested |
 | **Source Type** | PMI-derived |
 | **Primary Artifact (Output)** | A08 — WBS / Scope Structure section |
 | **PMBOK8 Process Anchor** | Guide §2.2.2.4 · Figure 2-17 |
@@ -223,7 +223,7 @@ Each skill entry contains the following fields:
 | **Skill ID** | SKL-03-06 |
 | **Skill Name** | Plan Schedule Management |
 | **Pack** | 03 — Planning |
-| **Status** | Planned |
+| **Status** | Draft · Untested |
 | **Source Type** | PMI-derived |
 | **Primary Artifact (Output)** | A15 — Schedule Management Plan section |
 | **PMBOK8 Process Anchor** | Guide §2.3.2.1 · Figure 2-21 |
@@ -235,7 +235,7 @@ Each skill entry contains the following fields:
 
 ---
 
-### SKL-03-07 — Plan Stakeholder Engagement ✓
+### SKL-03-07 — Plan Stakeholder Engagement
 
 | Field | Value |
 |-------|-------|
@@ -256,7 +256,7 @@ Each skill entry contains the following fields:
 
 ---
 
-### SKL-03-08 — Plan Communications Management ✓
+### SKL-03-08 — Plan Communications Management
 
 | Field | Value |
 |-------|-------|
@@ -284,7 +284,7 @@ Each skill entry contains the following fields:
 | **Skill ID** | SKL-03-09 |
 | **Skill Name** | Plan Risk Management |
 | **Pack** | 03 — Planning |
-| **Status** | Planned |
+| **Status** | Draft · Untested |
 | **Source Type** | PMI-derived |
 | **Primary Artifact (Output)** | A19 — Risk Management Plan section |
 | **PMBOK8 Process Anchor** | Guide §2.7.2.1 · Figure 2-48 |
@@ -303,7 +303,7 @@ Each skill entry contains the following fields:
 | **Skill ID** | SKL-03-10 |
 | **Skill Name** | Identify Risks |
 | **Pack** | 03 — Planning |
-| **Status** | Planned |
+| **Status** | Draft · Untested |
 | **Source Type** | PMI-derived |
 | **Primary Artifact (Output)** | A19 — Risk Register section |
 | **PMBOK8 Process Anchor** | Guide §2.7.2.2 · Figure 2-49 |
@@ -322,7 +322,7 @@ Each skill entry contains the following fields:
 | **Skill ID** | SKL-03-11 |
 | **Skill Name** | Perform Risk Analysis |
 | **Pack** | 03 — Planning |
-| **Status** | Planned |
+| **Status** | Draft · Untested |
 | **Source Type** | PMI-derived |
 | **Primary Artifact (Output)** | A19 — Risk Analysis section · A20 (conditional) |
 | **PMBOK8 Process Anchor** | Guide §2.7.2.3 · Figure 2-50 |
@@ -341,7 +341,7 @@ Each skill entry contains the following fields:
 | **Skill ID** | SKL-03-12 |
 | **Skill Name** | Plan Risk Responses |
 | **Pack** | 03 — Planning |
-| **Status** | Planned |
+| **Status** | Draft · Untested |
 | **Source Type** | PMI-derived |
 | **Primary Artifact (Output)** | A19 — Risk Response section |
 | **PMBOK8 Process Anchor** | Guide §2.7.2.4 · Figure 2-51 |
@@ -360,7 +360,7 @@ Each skill entry contains the following fields:
 | **Skill ID** | SKL-03-13 |
 | **Skill Name** | Plan Financial Management |
 | **Pack** | 03 — Planning |
-| **Status** | Planned |
+| **Status** | Draft · Untested |
 | **Source Type** | PMI-derived |
 | **Primary Artifact (Output)** | A16 — Financial Management Plan section |
 | **PMBOK8 Process Anchor** | Guide §2.4.2.1 · Figure 2-27 |
@@ -379,7 +379,7 @@ Each skill entry contains the following fields:
 | **Skill ID** | SKL-03-14 |
 | **Skill Name** | Estimate Costs |
 | **Pack** | 03 — Planning |
-| **Status** | Planned |
+| **Status** | Draft · Untested |
 | **Source Type** | PMI-derived |
 | **Primary Artifact (Output)** | A16 — Cost Estimates section |
 | **PMBOK8 Process Anchor** | Guide §2.4.2.2 · Figure 2-28 |
@@ -398,7 +398,7 @@ Each skill entry contains the following fields:
 | **Skill ID** | SKL-03-15 |
 | **Skill Name** | Develop Budget |
 | **Pack** | 03 — Planning |
-| **Status** | Planned |
+| **Status** | Draft · Untested |
 | **Source Type** | PMI-derived |
 | **Primary Artifact (Output)** | A16 — Cost Baseline / BAC section |
 | **PMBOK8 Process Anchor** | Guide §2.4.2.3 · Figure 2-29 |
@@ -417,7 +417,7 @@ Each skill entry contains the following fields:
 | **Skill ID** | SKL-03-16 |
 | **Skill Name** | Plan Resource Management |
 | **Pack** | 03 — Planning |
-| **Status** | Planned |
+| **Status** | Draft · Untested |
 | **Source Type** | PMI-derived |
 | **Primary Artifact (Output)** | A26 — Resource Management Plan section |
 | **PMBOK8 Process Anchor** | Guide §2.6.2.1 · Figure 2-41 |
@@ -436,7 +436,7 @@ Each skill entry contains the following fields:
 | **Skill ID** | SKL-03-17 |
 | **Skill Name** | Estimate Resources |
 | **Pack** | 03 — Planning |
-| **Status** | Planned |
+| **Status** | Draft · Untested |
 | **Source Type** | PMI-derived |
 | **Primary Artifact (Output)** | A26 — Resource Estimates section |
 | **PMBOK8 Process Anchor** | Guide §2.6.2.2 · Figure 2-42 |
@@ -981,35 +981,35 @@ Each skill entry contains the following fields:
 ## Dependency Chain Diagram
 
 ```
-PACK 02 — INITIATING
+PACK 02 — INITIATING ✅
 ══════════════════════════════════════════════════════
 SKL-02-01 (Initiate Project or Phase)
     └──▶ SKL-02-02 (Identify Stakeholders)
               └──▶ [Pack 03 Planning begins]
               └──▶ SKL-07-01 (Lifecycle selection — may run in parallel)
 
-PACK 03 — PLANNING (Stakeholder/Comms — BUILT)
+PACK 03 — PLANNING (Stakeholder/Comms) ✅
 ══════════════════════════════════════════════════════
 SKL-02-02 ──▶ SKL-03-07 (Plan Stakeholder Engagement)
                    └──▶ SKL-03-08 (Plan Communications Management)
 
-PACK 03 — PLANNING (Scope/Schedule/Finance/Resource — PLANNED)
+PACK 03 — PLANNING (Scope/Schedule/Finance/Resource) ✅
 ══════════════════════════════════════════════════════
 SKL-02-02 ──▶ SKL-03-02 ──▶ SKL-03-03 ──▶ SKL-03-04 ──▶ SKL-03-05
                                                               ├──▶ SKL-03-06
                                                               ├──▶ SKL-03-13 ──▶ SKL-03-14 ──▶ SKL-03-15
                                                               └──▶ SKL-03-16 ──▶ SKL-03-17
 
-PACK 03 — PLANNING (Risk — PLANNED)
+PACK 03 — PLANNING (Risk) ✅
 ══════════════════════════════════════════════════════
 SKL-03-07 + SKL-03-02 ──▶ SKL-03-09 ──▶ SKL-03-10 ──▶ SKL-03-11 ──▶ SKL-03-12
 
-PACK 03 — Integration (PLANNED)
+PACK 03 — PLANNING (Integration) ✅
 ══════════════════════════════════════════════════════
 All Pack 03 skills ──▶ SKL-03-01 (A14 Integrated PM Plan)
                               └──▶ [Pack 04 Executing begins]
 
-PACK 04 — EXECUTING (BUILT)
+PACK 04 — EXECUTING ✅
 ══════════════════════════════════════════════════════
 SKL-03-01 ──▶ SKL-04-01 (Direct & Manage Work)
  SKL-03-17 ──▶ SKL-04-03 ──▶ SKL-04-04 ──▶ SKL-04-05
@@ -1019,7 +1019,7 @@ SKL-03-01 ──▶ SKL-04-01 (Direct & Manage Work)
  SKL-03-01 ──▶ SKL-04-09
  SKL-04-01 ──▶ SKL-04-02
 
-PACK 05 — MONITORING & CONTROLLING (BUILT)
+PACK 05 — MONITORING & CONTROLLING ✅
 ══════════════════════════════════════════════════════
 SKL-04-01 ──▶ SKL-05-01 ──▶ SKL-05-02
 SKL-03-05 + SKL-05-02 ──▶ SKL-05-03
@@ -1030,13 +1030,13 @@ SKL-04-06 ──▶ SKL-05-07
 SKL-04-03 + SKL-04-05 ──▶ SKL-05-08
 SKL-04-07 ──▶ SKL-05-09
 
-PACK 06 — CLOSING (BUILT)
+PACK 06 — CLOSING ✅
 ══════════════════════════════════════════════════════
 SKL-05-01 + deliverables accepted ──▶ SKL-06-01
 SKL-06-01 ──▶ SKL-06-02
 SKL-06-02 + SKL-07-03 ──▶ SKL-06-03  [terminal]
 
-PACK 07 — ADAPTIVE & HYBRID (BUILT)
+PACK 07 — ADAPTIVE & HYBRID ✅
 ══════════════════════════════════════════════════════
 SKL-02-01 ──▶ SKL-07-01 (Select Lifecycle Approach)
                    ├──▶ SKL-07-02 (Backlog & Iterations)  ──▶ SKL-07-03 (Retrospectives)
@@ -1053,23 +1053,23 @@ SKL-02-01 ──▶ SKL-07-01 (Select Lifecycle Approach)
 |------|----------|-----------|--------|
 | 02 | SKL-02-01 | Initiate Project or Phase | ✅ Draft · Untested |
 | 02 | SKL-02-02 | Identify Stakeholders | ✅ Draft · Untested |
-| 03 | SKL-03-01 | Integrate and Align Project Plans | 🔲 Planned |
-| 03 | SKL-03-02 | Plan Scope Management | 🔲 Planned |
-| 03 | SKL-03-03 | Elicit and Analyze Requirements | 🔲 Planned |
-| 03 | SKL-03-04 | Define Scope | 🔲 Planned |
-| 03 | SKL-03-05 | Develop Scope Structure | 🔲 Planned |
-| 03 | SKL-03-06 | Plan Schedule Management | 🔲 Planned |
+| 03 | SKL-03-01 | Integrate and Align Project Plans | ✅ Draft · Untested |
+| 03 | SKL-03-02 | Plan Scope Management | ✅ Draft · Untested |
+| 03 | SKL-03-03 | Elicit and Analyze Requirements | ✅ Draft · Untested |
+| 03 | SKL-03-04 | Define Scope | ✅ Draft · Untested |
+| 03 | SKL-03-05 | Develop Scope Structure | ✅ Draft · Untested |
+| 03 | SKL-03-06 | Plan Schedule Management | ✅ Draft · Untested |
 | 03 | SKL-03-07 | Plan Stakeholder Engagement | ✅ Draft · Untested |
 | 03 | SKL-03-08 | Plan Communications Management | ✅ Draft · Untested |
-| 03 | SKL-03-09 | Plan Risk Management | 🔲 Planned |
-| 03 | SKL-03-10 | Identify Risks | 🔲 Planned |
-| 03 | SKL-03-11 | Perform Risk Analysis | 🔲 Planned |
-| 03 | SKL-03-12 | Plan Risk Responses | 🔲 Planned |
-| 03 | SKL-03-13 | Plan Financial Management | 🔲 Planned |
-| 03 | SKL-03-14 | Estimate Costs | 🔲 Planned |
-| 03 | SKL-03-15 | Develop Budget | 🔲 Planned |
-| 03 | SKL-03-16 | Plan Resource Management | 🔲 Planned |
-| 03 | SKL-03-17 | Estimate Resources | 🔲 Planned |
+| 03 | SKL-03-09 | Plan Risk Management | ✅ Draft · Untested |
+| 03 | SKL-03-10 | Identify Risks | ✅ Draft · Untested |
+| 03 | SKL-03-11 | Perform Risk Analysis | ✅ Draft · Untested |
+| 03 | SKL-03-12 | Plan Risk Responses | ✅ Draft · Untested |
+| 03 | SKL-03-13 | Plan Financial Management | ✅ Draft · Untested |
+| 03 | SKL-03-14 | Estimate Costs | ✅ Draft · Untested |
+| 03 | SKL-03-15 | Develop Budget | ✅ Draft · Untested |
+| 03 | SKL-03-16 | Plan Resource Management | ✅ Draft · Untested |
+| 03 | SKL-03-17 | Estimate Resources | ✅ Draft · Untested |
 | 04 | SKL-04-01 | Direct and Manage Project Work | ✅ Draft · Untested |
 | 04 | SKL-04-02 | Manage Project Knowledge | ✅ Draft · Untested |
 | 04 | SKL-04-03 | Acquire Resources | ✅ Draft · Untested |
@@ -1096,9 +1096,9 @@ SKL-02-01 ──▶ SKL-07-01 (Select Lifecycle Approach)
 | 07 | SKL-07-03 | Facilitate Retrospectives and Continuous Improvement | ✅ Draft · Untested |
 | 07 | SKL-07-04 | Plan and Deliver Hybrid Projects | ✅ Draft · Untested |
 
-**Built:** 31 skills ✅  
-**Planned (shell entries only):** 13 skills 🔲  
-**Total indexed:** 44 skills
+**Built:** 44 skills ✅  
+**Planned:** 0  
+**Total indexed:** 44 skills — Phase 1 build complete
 
 ---
 
@@ -1144,7 +1144,7 @@ SKL-02-01 ──▶ SKL-07-01 (Select Lifecycle Approach)
 1. **Add a shell entry for every planned skill before it is built** — the registry must always show the full planned build scope.
 2. **Update status immediately** when a skill file is created, reviewed, or approved.
 3. **Update the Artifact Cross-Reference table** whenever a skill adds a new artifact write target.
-4. **Update the Dependency Chain Diagram** when a new skill's position in the chain is non-obvious.
+4. **Update the Dependency Chain Diagram** when a new skill’s position in the chain is non-obvious.
 5. **Never remove a skill entry** — deprecated skills are marked `Deprecated · Replaced by SKL-XX-XX`.
 6. **This registry is not a skill file** — it does not contain instructions, tests, or step-by-step guidance.
 
@@ -1152,4 +1152,4 @@ SKL-02-01 ──▶ SKL-07-01 (Select Lifecycle Approach)
 
 *Authority: PMBOK8 · Artifacts-V-1.1 · Repository Operating Rules §3.2 Consolidation Rule*  
 *Owner: Repository Maintainer*  
-*Version: 1.1.0 — Updated 2026-05-30 — Added Packs 04–07 (25 skills); total indexed: 44*
+*Version: 1.2.0 — Updated 2026-05-30 — Pack 03 all 17 skills confirmed built; total built = 44/44; Phase 1 complete*
