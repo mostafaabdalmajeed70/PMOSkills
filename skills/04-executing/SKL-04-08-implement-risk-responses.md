@@ -2,7 +2,7 @@
 skill_id: SKL-04-08
 skill_name: Implement Risk Responses
 pack: "04 — Executing"
-version: "1.0.0"
+version: "1.1.0"
 status: "Draft · Untested"
 source_type: PMI-derived
 primary_artifact: "A19 — Risk Management Record (response implementation log)"
@@ -121,9 +121,11 @@ When a risk response is complete:
 | Failure mode | Detection signal | Corrective action |
 |---|---|---|
 | Ad hoc responses with no documentation | Risk handled but not in A19 | Retroactive A19 documentation; enforce process going forward |
-| Triggered risk not in A18 | Issue being managed informally | Log in A18 immediately; cross-reference A19 |
+| Triggered risk not in A18 | Issue being managed informally without A18 entry | Log in A18 immediately; cross-reference A19 Risk ID |
 | Reserve over-consumed silently | A16 reserve balance at zero or negative without sponsor notification | Immediate sponsor notification; A12 change request for additional reserve |
 | Response closed without residual assessment | A19 shows risk Closed with no residual note | Reopen for residual assessment before final closure |
+| Opportunity response not activated | A19 shows opportunity risk with trigger met but no response initiated | Review A19 opportunity register; activate enhancement or exploit response immediately; log missed window in A21 |
+| Workaround implemented without A19 entry | Risk event addressed operationally but no A19 workaround or new risk record exists | Retroactive A19 entry required; if baseline affected, raise A12 retroactively; document in A21 as process failure |
 
 ---
 
@@ -147,6 +149,7 @@ When a risk response is complete:
 | Version | Date | Change description |
 |---|---|---|
 | 1.0.0 | 2026-05-29 | Initial build |
+| 1.1.0 | 2026-05-30 | Expanded failure modes from 4 to 6: added opportunity response not activated and workaround without A19 entry |
 
 ---
 

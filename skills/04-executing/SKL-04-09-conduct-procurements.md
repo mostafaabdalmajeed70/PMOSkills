@@ -2,7 +2,7 @@
 skill_id: SKL-04-09
 skill_name: Conduct Procurements
 pack: "04 — Executing"
-version: "1.0.0"
+version: "1.1.0"
 status: "Draft · Untested"
 source_type: PMI-derived
 primary_artifact: "A31 — Procurement and Supplier Management Record"
@@ -170,6 +170,8 @@ Review A19 risk register for all procurement-related risks. For each:
 | Supplier performance not reviewed | A31 §6 review dates passed with no entry | Conduct overdue review; document in A31 §6 |
 | Contract change without A12 | A31 §6 change with no A12 Approved reference | Retroactive A12 entry; assess if change was authorized |
 | Procurement risk not in A19 | A31 §8 has no A19 cross-reference | Identify procurement risks; log in A19 and cross-reference |
+| Supplier insolvency or sudden incapacity | Supplier unable to perform mid-contract; no contingency plan in A31 or A19 | Log in A18 as High priority; activate A19 procurement risk response; assess replacement options; raise A12 if baseline affected |
+| Contract dispute with no escalation path | Supplier challenges deliverable acceptance or payment; no dispute resolution clause referenced in A31 §6 | Engage contract manager and legal counsel; document dispute in A31 §6; escalate per A06; do not unilaterally withhold payment |
 
 ---
 
@@ -194,6 +196,7 @@ Review A19 risk register for all procurement-related risks. For each:
 | Version | Date | Change description |
 |---|---|---|
 | 1.0.0 | 2026-05-29 | Initial build |
+| 1.1.0 | 2026-05-30 | Expanded failure modes from 4 to 6: added supplier insolvency/incapacity and contract dispute with no escalation path |
 
 ---
 
