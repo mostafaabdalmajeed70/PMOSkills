@@ -2,7 +2,7 @@
 skill_id: SKL-04-04
 skill_name: Develop Team
 pack: "04 — Executing"
-version: "1.0.0"
+version: "1.1.0"
 status: "Draft · Untested"
 source_type: PMI-derived
 primary_artifact: "A25 — Team Operating and Responsibility Record (team development section)"
@@ -129,10 +129,12 @@ Feed significant findings to A21.
 
 | Failure mode | Detection signal | Corrective action |
 |---|---|---|
-| Development deferred | A25 development section empty during execution | Conduct emergency competency assessment; create action plans |
-| Ground rules missing | Team conflicts arising from unclear norms | Facilitate ground rules session; update A25 |
+| Development deferred | A25 development section empty during execution | Conduct emergency competency assessment; create action plans immediately |
+| Ground rules missing | Team conflicts arising from unclear norms | Facilitate ground rules session; update A25 before next execution period |
 | Recognition inconsistent | Some team members never recognized; others over-recognized | Audit A25 recognition log; correct with next recognition cycle |
-| Virtual members isolated | Low participation from remote team members | Review and revise team-building approach for virtual inclusion |
+| Virtual members isolated | Low participation from remote team members | Review and revise team-building approach to ensure virtual inclusion |
+| Performance assessment skipped at phase gate | Phase gate passes with no A25 performance assessment entry | Conduct overdue assessment retroactively; add gate check to phase gate checklist |
+| Development action overdue with no escalation | A25 shows development action past target date with status unchanged | Immediate PM review; reassign or extend with documented rationale; escalate if gap is on critical skill |
 
 ---
 
@@ -155,6 +157,7 @@ Feed significant findings to A21.
 | Version | Date | Change description |
 |---|---|---|
 | 1.0.0 | 2026-05-29 | Initial build |
+| 1.1.0 | 2026-05-30 | Expanded failure modes from 4 to 6: added performance assessment skipped at gate and development action overdue with no escalation |
 
 ---
 
