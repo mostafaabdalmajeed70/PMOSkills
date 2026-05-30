@@ -1,8 +1,31 @@
+<p align="center">
+  <img src="docs/img/pmoskills.jpg" alt="PMOSkills logo" width="360">
+</p>
+
+```
+===================================================================
+      _____   __  __   ____     ____   _  __  _   _   _       ____  
+     |  __ \ |  \/  | / __ \   / ___| | |/ / | | | | | |     / ___| 
+     | |__) || \  / || |  | |  \___ \ | ' /  | | | | | |     \___ \ 
+     |  ___/ | |\/| || |  | |   ___) || . \  | | | | | |___   ___) |
+     |_|     |_|  |_| \____/   |____/ |_|\_\ |_| |_| |_____| |____/ 
+                                                                    
+========================= PMBOK 8 ALIGNED =========================
+```
+
 # PMO Skill Repository
 **Version:** 1.3.0
 **Authority:** PMBOK 8 (Primary) · PMI Companion References (Secondary) · Organization-Defined Methods (Tertiary)
 **Scope:** Organizational Setup through Project Closure — full project lifecycle PMO reference and point of truth
 **Status:** Active development
+
+---
+
+## Disclaimer
+This repository contains personal summaries, interpretations, and educational notes
+compiled from public project management frameworks. "PMBOK" and "PMI" are registered
+trademarks of the Project Management Institute, Inc. This project is independently
+developed and is not affiliated with, endorsed by, or sponsored by PMI.
 
 ---
 
@@ -45,6 +68,10 @@ pmo-skill-repo/
 ├── PRINCIPLES-CROSSWALK.md          ← 12 principles × 11 domains × 40 processes
 ├── source-authority.md              ← Source authority rules and reference list
 ├── pmi_reference_list.md            ← Canonical PMI reference list
+│
+├── docs/
+│   └── img/
+│       └── pmoskills.jpg            ← Repository logo
 │
 ├── reference/                       ← [planned] PMBOK 8 reference layer
 │   ├── principles/                  ← [planned] 12 PMBOK 8 principles, detailed notes
@@ -180,6 +207,7 @@ All artifacts are labeled: `PMI-derived` | `synthesis` | `organization-defined`
 | 1.1.0 | 2026-05-29 | Pack 02 (Initiating) and Pack 03 (Planning, 17 skills) complete; SKILL-REGISTRY.md established |
 | 1.2.0 | 2026-05-29 | Pack 04 (Executing, 9 skills) complete; artifacts/ subdirectories created |
 | 1.3.0 | 2026-05-30 | Packs 05–07 complete (22 skills); all 47 skills built; SKILL-REGISTRY.md v1.3.0; README updated to reflect actual repo structure |
+| 1.3.1 | 2026-05-31 | Added logo reference (docs/img/pmoskills.jpg), ASCII art banner, and PMI disclaimer |
 
 ---
 
