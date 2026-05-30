@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/img/pmoskills.jpg" alt="PMOSkills logo" width="360">
+  <img src="docs/img/pmoskills.jpeg" alt="PMOSkills logo" width="360">
 </p>
 
 ```
