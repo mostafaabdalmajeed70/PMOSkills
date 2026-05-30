@@ -1,9 +1,36 @@
+---
+skill_id: SKL-07-01
+name: Select and Tailor Lifecycle Approach
+pack: "07 — Adaptive & Hybrid"
+version: 1.1.0
+status: "Draft · Untested"
+source_type: PMI-derived
+authority: PMI-derived
+pmbok8_anchor: "PMBOK8 Standard §4.2–4.3 · Guide §2.3 (Development Approach and Life Cycle Performance Domain)"
+performance_domains:
+  - Development Approach and Life Cycle
+  - Governance
+  - Planning
+focus_area: "Initiating · Planning"
+primary_artifact: "A06 §2 — Development Approach and Lifecycle section"
+artifacts_updated:
+  - "Tailoring Decision Log"
+upstream_prerequisites:
+  - SKL-02-01
+downstream_skills:
+  - SKL-07-02
+  - SKL-07-04
+  - "SKL-03-01 (A06 input)"
+file_path: skills/07-adaptive-hybrid/SKL-07-01-select-and-tailor-lifecycle-approach.md
+tests: 9
+---
+
 # SKL-07-01 — Select and Tailor Lifecycle Approach
 
 **Skill ID:** SKL-07-01  
 **Pack:** 07 — Adaptive & Hybrid  
-**Version:** 1.0.0  
-**Status:** Active  
+**Version:** 1.1.0  
+**Status:** Draft · Untested  
 **Authority:** PMI-derived  
 **Primary Reference:** PMBOK 8 Standard §4.2–4.3 · PMBOK 8 Guide §2.3 (Development Approach and Life Cycle Performance Domain)  
 **Secondary References:** APG §3 (Life Cycle Selection) · APG §3.3 (Project Factors That Influence Tailoring) · DA Toolkit (Hybrid Levels 1–3)  
@@ -15,7 +42,7 @@
 
 ## Purpose
 
-Select the most appropriate development approach — predictive, adaptive, hybrid, or a custom blend — and tailor it to the project’s specific characteristics. Document the lifecycle selection rationale in the Project Management Plan (A06), ensuring the approach is proportionate to the project’s uncertainty, complexity, team maturity, stakeholder needs, and organizational context.
+Select the most appropriate development approach — predictive, adaptive, hybrid, or a custom blend — and tailor it to the project's specific characteristics. Document the lifecycle selection rationale in the Project Management Plan (A06), ensuring the approach is proportionate to the project's uncertainty, complexity, team maturity, stakeholder needs, and organizational context.
 
 ---
 
@@ -24,7 +51,7 @@ Select the most appropriate development approach — predictive, adaptive, hybri
 | In Scope | Out of Scope |
 |---|---|
 | Lifecycle approach selection (predictive / adaptive / hybrid) | Organizational agile transformation (OCM) |
-| Tailoring decisions per project, team, and organization context | Prescriptive methodology selection (e.g., “use Scrum”) |
+| Tailoring decisions per project, team, and organization context | Prescriptive methodology selection (e.g., "use Scrum") |
 | Documenting approach rationale in A06 | Portfolio lifecycle governance |
 | Applying PMBOK 8 4-step tailoring framework | Program-level approach design |
 | DA Hybrid Level 1–3 classification | |
@@ -62,8 +89,8 @@ Activate this skill when:
 | Step | Action | Key Question |
 |---|---|---|
 | 1 | **Select initial development approach** using suitability filters | Does the project have stable or evolving requirements? |
-| 2 | **Tailor for the organization** — align methodology to org policies, culture, maturity | What does the organization’s governance and PMO require? |
-| 3 | **Tailor for the project** — evaluate product, team, and culture attributes | What does this specific project’s profile demand? |
+| 2 | **Tailor for the organization** — align methodology to org policies, culture, maturity | What does the organization's governance and PMO require? |
+| 3 | **Tailor for the project** — evaluate product, team, and culture attributes | What does this specific project's profile demand? |
 | 4 | **Implement ongoing improvement** — retrospectives, phase gates, continuous adaptation | What is working and what should change each cycle? |
 
 ---
@@ -197,22 +224,38 @@ Use these patterns (PMBOK 8 §4.2.3, Figures 4-8 through 4-11) to select the app
 
 | Decision | Authority Level | Threshold |
 |---|---|---|
-| Select initial lifecycle approach | Project Manager + Sponsor | T2 |
-| Override org-standard methodology | PMO + Sponsor | T2–T3 |
-| Re-tailor approach mid-project | PM + CCB or Governing Body | T2–T3 |
-| Change from predictive to adaptive (or vice versa) | Governing Body | T3 |
+| Approve initial lifecycle selection | PM + Sponsor | T2 |
+| Change lifecycle approach mid-project | Governing Body + PMO | T3 |
+| Approve tailoring decisions that deviate from org standards | PMO | T2 |
+| Approve DA Hybrid Level assignment | PM + PMO | T1–T2 |
+
+---
+
+## Tests
+
+| Test ID | Test Description | Pass Condition | Fail Condition |
+|---|---|---|---|
+| T01 | Approach selected and documented in A06 §2 | Approach field = Predictive / Adaptive / Hybrid with rationale | Field blank or "TBD" |
+| T02 | All three suitability filter dimensions completed | Deliverable, project, and org factor tables all populated | Any filter table empty |
+| T03 | PMBOK 8 4-step tailoring framework applied | All 4 tailoring steps documented in tailoring decisions table | Any step left blank |
+| T04 | DA Hybrid Level assigned if approach = Hybrid | Level 1, 2, or 3 recorded | Hybrid selected but level not specified |
+| T05 | Hybrid pattern identified if approach = Hybrid | One of P1–P4 selected and documented | Hybrid selected but pattern not documented |
+| T06 | Delivery cadence confirmed | One cadence option checked in A06 §2 | Cadence field blank |
+| T07 | Governance model documented for selected approach | Governance model section populated | Governance model blank |
+| T08 | Sponsor/PMO approval recorded | Approval line signed with date | Approval blank |
+| T09 | Re-tailoring trigger documented | Trigger conditions for re-running this skill are identified | No re-tailoring conditions specified |
 
 ---
 
 ## Validation Criteria
 
 This skill output is valid when:
-- [ ] All four PMBOK 8 tailoring steps are completed and documented
-- [ ] Suitability filter assessment covers deliverable, project, and org factors
-- [ ] Approach selection rationale is documented in A06 §2
-- [ ] Delivery cadence is explicitly defined
-- [ ] Governance model is named and authorized
-- [ ] Hybrid level (if applicable) is identified per DA framework
+- [ ] Lifecycle approach is documented in A06 §2 with rationale
+- [ ] All three suitability filter dimensions assessed
+- [ ] PMBOK 8 4-step tailoring framework applied and documented
+- [ ] Hybrid Level and Pattern identified (if hybrid selected)
+- [ ] Delivery cadence and governance model confirmed
+- [ ] Sponsor or PMO approval recorded in A06 §2
 
 ---
 
@@ -220,11 +263,11 @@ This skill output is valid when:
 
 | Failure | Indicator | Resolution |
 |---|---|---|
-| Approach selected by default (“we always do waterfall”) | No suitability filter completed | Run suitability filter; document rationale explicitly |
-| Adaptive selected without team readiness | Team has no agile experience; no servant leader | Assess team maturity; plan hybrid L1 as transition |
-| Hybrid selected without pattern defined | No clear description of which streams are adaptive vs. predictive | Map streams to pattern from PMBOK 8 Figures 4-8 to 4-11 |
-| No tailoring log maintained | Approach changes mid-project with no record | Initiate tailoring changelog; retrospect at each iteration |
-| Approach not re-evaluated after major change | Scope or team changes but approach unchanged | Trigger re-tailoring via SKL-05-02 (Integrated Change Control) |
+| Approach selected by default ("we always do waterfall") | No suitability assessment; no rationale | Conduct suitability filter workshop; document decision |
+| Hybrid selected but not structured | Project called "hybrid" but no stream mapping or governance differentiation | Activate SKL-07-04 to design hybrid structure |
+| Tailoring skipped | A06 §2 blank or copy-paste from template | Re-run this skill with PM + PMO |
+| Approach selected but never revisited | Same approach used despite major scope/team/context changes | Add re-tailoring trigger review to phase gate checklist |
+| Level/pattern not assigned for hybrid | "We're doing hybrid" with no specifics | Apply DA Hybrid Level criteria; select pattern P1–P4 |
 
 ---
 
@@ -232,13 +275,22 @@ This skill output is valid when:
 
 | Skill ID | Skill Name | Relationship |
 |---|---|---|
-| SKL-02-01 | Develop Project Charter | Approach constraints visible in charter |
-| SKL-03-01 | Develop Project Management Plan | A06 §2 is an output of this skill |
-| SKL-07-02 | Manage Backlog and Iterations | Required if adaptive/hybrid selected |
-| SKL-07-04 | Plan and Deliver Hybrid Projects | Required if hybrid selected |
-| SKL-05-02 | Perform Integrated Change Control | Governs approach change requests |
+| SKL-02-01 | Initiate Project or Phase | Charter must exist before approach can be selected |
+| SKL-03-01 | Integrate and Align Project Plans | A06 §2 is a required input to the Integrated PM Plan |
+| SKL-07-02 | Manage Backlog and Iterations | Activated when adaptive or hybrid approach is selected |
+| SKL-07-04 | Plan and Deliver Hybrid Projects | Activated when hybrid approach is selected |
+| SKL-07-03 | Facilitate Retrospectives | Step 4 of tailoring framework — ongoing improvement |
 
 ---
 
-*Authority: PMI-derived — PMBOK 8 Standard §4.2–4.3 · APG §3 · DA Toolkit (Hybrid Levels)*  
-*PMO Skill Repository v1.0.0 · Pack 07 — Adaptive & Hybrid*
+## Change Log
+
+| Version | Date | Author | Change Description |
+|---|---|---|---|
+| 1.0.0 | 2026-05-29 | PMO Repository | Initial build |
+| 1.1.0 | 2026-05-30 | QA Phase A | Added YAML front matter, Tests table (T01–T09), Change Log; version bump |
+
+---
+
+*Authority: PMI-derived — PMBOK8 Standard §4.2–4.3 · Guide §2.3 · APG §3 · DA Toolkit*  
+*PMO Skill Repository v1.1.0 · Pack 07 — Adaptive & Hybrid*

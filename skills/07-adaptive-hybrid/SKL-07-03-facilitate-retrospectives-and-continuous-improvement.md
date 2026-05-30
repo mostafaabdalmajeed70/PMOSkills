@@ -1,9 +1,36 @@
+---
+skill_id: SKL-07-03
+name: Facilitate Retrospectives and Continuous Improvement
+pack: "07 — Adaptive & Hybrid"
+version: 1.1.0
+status: "Draft · Untested"
+source_type: PMI-derived
+authority: PMI-derived
+pmbok8_anchor: "PMBOK8 Standard Principle 12 · APG §5 · APG §3.3 Table 3-2"
+performance_domains:
+  - Team
+  - Measurement
+  - Development Approach and Life Cycle
+focus_area: Executing
+primary_artifact: "A21 — Retrospective section"
+artifacts_updated:
+  - "Tailoring Changelog"
+  - A06
+upstream_prerequisites:
+  - SKL-07-02
+downstream_skills:
+  - "SKL-07-01 (re-tailoring trigger)"
+  - SKL-06-03
+file_path: skills/07-adaptive-hybrid/SKL-07-03-facilitate-retrospectives-and-continuous-improvement.md
+tests: 9
+---
+
 # SKL-07-03 — Facilitate Retrospectives and Continuous Improvement
 
 **Skill ID:** SKL-07-03  
 **Pack:** 07 — Adaptive & Hybrid  
-**Version:** 1.0.0  
-**Status:** Active  
+**Version:** 1.1.0  
+**Status:** Draft · Untested  
 **Authority:** PMI-derived  
 **Primary Reference:** APG §5 (Delivering in an Agile Environment) · PMBOK 8 Standard Principle 12 (continuous improvement) · PMBOK 8 Guide §2.3  
 **Secondary References:** APG §3.3 Table 3-2 (Tailoring options) · Artifacts-V-1.0.2.md (Item 29 — Continuous Adaptation Tracking Loop) · Artifacts-V-1.1.md (A21 — Lessons Learned Register)  
@@ -15,7 +42,7 @@
 
 ## Purpose
 
-Facilitate structured retrospective sessions at the end of each iteration, phase, or trigger event to inspect team process, delivery quality, and ways of working. Capture improvement actions, feed them into the next cycle, and maintain a continuous improvement log that contributes to the project’s Lessons Learned Register (A21) and organizational process improvement.
+Facilitate structured retrospective sessions at the end of each iteration, phase, or trigger event to inspect team process, delivery quality, and ways of working. Capture improvement actions, feed them into the next cycle, and maintain a continuous improvement log that contributes to the project's Lessons Learned Register (A21) and organizational process improvement.
 
 ---
 
@@ -45,7 +72,7 @@ Activate this skill when:
 
 ## Key Concept: The Agile Principle
 
-> *“At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behaviour accordingly.”*  
+> *"At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behaviour accordingly."*  
 > — Agile Manifesto Principle 12 [APG §2.2]
 
 Retrospectives are not optional events — they are the primary mechanism by which an adaptive team continuously improves. A team that delivers without retrospecting is delivering without learning.
@@ -67,7 +94,7 @@ Retrospectives are not optional events — they are the primary mechanism by whi
 | Category | Question |
 |---|---|
 | **Liked** | What did you appreciate about this iteration? |
-| **Learned** | What did you learn that you didn’t know before? |
+| **Learned** | What did you learn that you didn't know before? |
 | **Lacked** | What was missing that would have made the iteration better? |
 | **Longed For** | What do you wish had been available or done differently? |
 
@@ -81,7 +108,7 @@ Useful when team morale or emotional dynamics need to be surfaced safely.
 
 | Phase | Time | Facilitator Action |
 |---|---|---|
-| **Set the stage** | 5 min | Confirm safety: this is about process, not people. Use Prime Directive: “Everyone did the best job they could with the knowledge, skills, and resources available.” |
+| **Set the stage** | 5 min | Confirm safety: this is about process, not people. Use Prime Directive: "Everyone did the best job they could with the knowledge, skills, and resources available." |
 | **Gather data** | 15 min | Individually write observations; post to board (physical or virtual) |
 | **Generate insights** | 20 min | Group themes; identify root causes of top friction areas |
 | **Decide on actions** | 10 min | Select 1–3 improvement actions; assign owner and timebox |
@@ -159,7 +186,7 @@ Useful when team morale or emotional dynamics need to be surfaced safely.
 ### Stop (things creating friction)
 - 
 
-### Continue (what’s working)
+### Continue (what's working)
 - 
 
 ---
@@ -222,6 +249,22 @@ Maintain a persistent improvement backlog across all retrospectives:
 
 ---
 
+## Tests
+
+| Test ID | Test Description | Pass Condition | Fail Condition |
+|---|---|---|---|
+| T01 | Retrospective held at end of every sprint | RETRO record exists for every sprint | Any sprint with no RETRO record |
+| T02 | Prime Directive stated at session open | Facilitator notes confirm Prime Directive recited | No reference to psychological safety in record |
+| T03 | 1–3 improvement actions captured per retrospective | Improvement Actions table has 1–3 rows with owner and due date | Zero actions recorded or actions with no owner |
+| T04 | Previous cycle actions reviewed | "Previous Actions Review" section populated | Section blank in any retrospective beyond the first |
+| T05 | Root cause provided for top issues | Top Issues table has root cause (5-Why or similar) | Issues listed without root cause |
+| T06 | A21 Lessons Learned Candidates field completed | Field checked Yes or No with LL-ID if Yes | Field blank |
+| T07 | Tailoring change recommendation documented | Tailoring Change field answered Yes/No with detail | Field blank |
+| T08 | Retrospective metrics populated | Velocity, stories, defects, blockers all entered | Metrics table empty |
+| T09 | All improvement actions either closed or carried forward | Improvement backlog shows status for every action | Actions with no status update after 2 sprints |
+
+---
+
 ## Validation Criteria
 
 This skill output is valid when:
@@ -238,11 +281,11 @@ This skill output is valid when:
 
 | Failure | Indicator | Resolution |
 |---|---|---|
-| Retrospectives skipped (“no time”) | Same issues recurring sprint after sprint | Protect retrospective slot in sprint cadence; timebox to 45 min if needed |
+| Retrospectives skipped ("no time") | Same issues recurring sprint after sprint | Protect retrospective slot in sprint cadence; timebox to 45 min if needed |
 | Team silent in retrospective | Only PM or lead speaks | Use anonymous pre-retro survey or written format (sticky notes) |
 | No follow-through on actions | Improvement backlog grows without closures | Review previous actions first in every retrospective |
 | Retrospective focuses on people, not process | Blame language observed | Restate Prime Directive; refocus to process, tools, and practices |
-| Actions too vague | “Communicate better” with no definition | Require specific, measurable, owned actions |
+| Actions too vague | "Communicate better" with no definition | Require specific, measurable, owned actions |
 
 ---
 
@@ -257,5 +300,14 @@ This skill output is valid when:
 
 ---
 
+## Change Log
+
+| Version | Date | Author | Change Description |
+|---|---|---|---|
+| 1.0.0 | 2026-05-29 | PMO Repository | Initial build |
+| 1.1.0 | 2026-05-30 | QA Phase A | Added YAML front matter, Tests table (T01–T09), Change Log; version bump |
+
+---
+
 *Authority: PMI-derived — APG §5 · PMBOK 8 Standard Principle 12 · APG §3.3 Table 3-2*  
-*PMO Skill Repository v1.0.0 · Pack 07 — Adaptive & Hybrid*
+*PMO Skill Repository v1.1.0 · Pack 07 — Adaptive & Hybrid*

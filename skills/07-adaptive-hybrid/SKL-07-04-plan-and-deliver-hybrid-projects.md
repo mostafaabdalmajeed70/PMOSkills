@@ -1,9 +1,39 @@
+---
+skill_id: SKL-07-04
+name: Plan and Deliver Hybrid Projects
+pack: "07 — Adaptive & Hybrid"
+version: 1.1.0
+status: "Draft · Untested"
+source_type: PMI-derived
+authority: PMI-derived
+pmbok8_anchor: "PMBOK8 Standard §4.2.3 · APG §3.1.6–3.1.11 · DA Hybrid Levels 1–3"
+performance_domains:
+  - Development Approach and Life Cycle
+  - Planning
+  - Delivery
+  - Governance
+focus_area: "Planning · Executing · Monitoring and Controlling"
+primary_artifact: "A06 §2 — Hybrid Structure extension"
+artifacts_updated:
+  - "A15 — master schedule"
+  - "A19 — cross-stream risks"
+  - "A17 — hybrid dashboard"
+upstream_prerequisites:
+  - SKL-07-01
+downstream_skills:
+  - SKL-07-02
+  - SKL-05-02
+  - SKL-05-01
+file_path: skills/07-adaptive-hybrid/SKL-07-04-plan-and-deliver-hybrid-projects.md
+tests: 9
+---
+
 # SKL-07-04 — Plan and Deliver Hybrid Projects
 
 **Skill ID:** SKL-07-04  
 **Pack:** 07 — Adaptive & Hybrid  
-**Version:** 1.0.0  
-**Status:** Active  
+**Version:** 1.1.0  
+**Status:** Draft · Untested  
 **Authority:** PMI-derived  
 **Primary Reference:** PMBOK 8 Standard §4.2.3 (Hybrid Approaches) · PMBOK 8 Guide §2.3 · APG §3.1.6–3.1.11  
 **Secondary References:** APG §3.1.7–3.1.10 (Hybrid Patterns) · DA Toolkit (Hybrid Levels 1–3) · Artifacts-V-1.0.2.md (Item 75 — Approach-Tailored Scope Structure Elaboration Blueprint)  
@@ -131,7 +161,7 @@ Activate this skill when:
 - Sprint planning as planning mechanism
 - Product Owner as scope authority within sprint
 - Backlog prioritization as continuous planning
-- Team empowered to determine “how”; PO determines “what”
+- Team empowered to determine "how"; PO determines "what"
 
 ### Hybrid Governance Bridges
 - **Integration point reviews** — formal gateway when adaptive output feeds predictive stream
@@ -206,6 +236,22 @@ Activate this skill when:
 
 ---
 
+## Tests
+
+| Test ID | Test Description | Pass Condition | Fail Condition |
+|---|---|---|---|
+| T01 | Hybrid pattern (P1–P4) selected and documented | One of P1–P4 checked in A06 §2 | Pattern field blank or "TBD" |
+| T02 | DA Hybrid Level (1–3) assigned | Level 1, 2, or 3 recorded | Level not specified |
+| T03 | Stream map completed with approach per stream | All streams listed with predictive/adaptive assignment | Any stream without approach assignment |
+| T04 | At least one integration point identified and documented | Integration Points table has ≥1 row with dependency type | Integration Points table empty |
+| T05 | Governance model defined per stream | Governance table populated for each stream | Any stream with no governance model |
+| T06 | Change control architecture documented | Change Control Architecture table populated | Table empty or missing stream-level distinction |
+| T07 | Reporting model covers both EVM and velocity/burndown | Reporting Model table shows both predictive and adaptive reporting | Reporting covers only one approach |
+| T08 | Hybrid kickoff conducted | Hybrid kickoff meeting record exists | No kickoff record |
+| T09 | Hybrid structure approved by sponsor and PMO | Approval recorded in A06 §2 | Approval blank |
+
+---
+
 ## Validation Criteria
 
 This skill output is valid when:
@@ -223,9 +269,9 @@ This skill output is valid when:
 
 | Failure | Indicator | Resolution |
 |---|---|---|
-| No stream separation | Project called “hybrid” but managed entirely predictively | Perform stream mapping; assign approach per deliverable |
+| No stream separation | Project called "hybrid" but managed entirely predictively | Perform stream mapping; assign approach per deliverable |
 | Integration points not tracked | Adaptive stream finishes but predictive stream is not ready | Add integration points to risk register and master schedule |
-| Reporting confusion | Sponsor asks “how are we doing?” and gets two incompatible reports | Create unified hybrid dashboard |
+| Reporting confusion | Sponsor asks "how are we doing?" and gets two incompatible reports | Create unified hybrid dashboard |
 | Governance mismatch | Product Owner decisions constantly escalated to CCB | Clarify governance boundaries; educate stakeholders |
 | Approach change not controlled | Mid-project switch from agile to waterfall without governance | Require T3 governing body decision; document rationale |
 
@@ -244,5 +290,14 @@ This skill output is valid when:
 
 ---
 
+## Change Log
+
+| Version | Date | Author | Change Description |
+|---|---|---|---|
+| 1.0.0 | 2026-05-29 | PMO Repository | Initial build |
+| 1.1.0 | 2026-05-30 | QA Phase A | Added YAML front matter, Tests table (T01–T09), Change Log; version bump |
+
+---
+
 *Authority: PMI-derived — PMBOK 8 Standard §4.2.3 · APG §3.1.6–3.1.11 · DA Toolkit Hybrid Levels 1–3*  
-*PMO Skill Repository v1.0.0 · Pack 07 — Adaptive & Hybrid*
+*PMO Skill Repository v1.1.0 · Pack 07 — Adaptive & Hybrid*
