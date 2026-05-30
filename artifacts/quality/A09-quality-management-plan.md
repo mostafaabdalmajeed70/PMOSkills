@@ -2,154 +2,165 @@
 artifact_id: A09
 name: Quality Management Plan
 version: 1.0.0
-status: "Definition · Active"
-category: Quality
-authority: "PMBOK8 Guide §2.7 · Process Groups PG §4.3 · Standard §3 (Quality Principle)"
+status: Active
+category: Quality Planning
+governance_layer: Project Governance
 source_type: PMI-derived
-pmbok8_anchor: "PMBOK8 Guide §2.7 · Plan Quality Management"
+pmbok8_anchor: "PMBOK8 Guide §2.7 Delivery Performance Domain; Table 2-1 Plan Quality Management"
+authority: PMI-derived
+performance_domains:
+  - Delivery
+  - Governance
+  - Scope
+focus_areas:
+  - Planning
+  - Monitoring and Controlling
 required_by_skills:
   - SKL-03-09
+  - SKL-05-01
 created_by_skills:
   - SKL-03-09
-file_path: artifacts/quality/A09-quality-management-plan.md
+linked_artifacts:
+  - A06
+  - A08
+  - A14
+  - A17
+  - A12
 ---
 
 # A09 — Quality Management Plan
-**Artifact ID:** A09  
-**Artifact Name:** Quality Management Plan  
-**Version:** 1.0.0  
-**Status:** Definition · Active  
-**Authority:** PMBOK8 Guide §2.7 · Process Groups PG §4.3 (Plan Quality Management) · Standard §3 (Quality Principle)  
-**Source Type:** PMI-derived  
-**File Path:** `artifacts/quality/A09-quality-management-plan.md`
+
+**Artifact ID:** A09
+**Name:** Quality Management Plan
+**Version:** 1.0.0
+**Status:** Active
+**Source Type:** PMI-derived
+**Governance Layer:** Project Governance
+**Authority:** PMBOK8 Guide §2.7 Delivery Performance Domain; Table 2-1 Plan Quality Management
 
 ---
 
-## Definition
+## 1. Purpose
 
-A09 defines the quality standards applicable to the project, how the team will achieve quality in deliverables and project management processes, and the approach to quality assurance (QA) and quality control (QC). It establishes acceptance criteria, quality metrics, and the audit and inspection schedule.
+The Quality Management Plan describes how the project will implement the organization's quality policy, identifies quality standards applicable to the project, defines how compliance with those standards will be achieved and verified, and establishes the quality roles, responsibilities, and control mechanisms.
 
-**PMI Source:** PMBOK8 Guide §2.7 — Delivery Performance Domain; PG §4.3 — Plan Quality Management.
+It answers the question: *How will the project ensure that deliverables meet defined acceptance criteria and that processes produce predictable, fit-for-purpose results?* The plan distinguishes between quality assurance (process-oriented, prevention-focused) and quality control (output-oriented, inspection-focused), and links both to the acceptance criteria in the Scope and Requirements Decision Record (A08).
 
 ---
 
-## Artifact Type
+## 2. Scope
 
-| Field | Value |
+| In Scope | Out of Scope |
 |---|---|
-| **Category** | Quality |
-| **Type** | Subsidiary plan (component of A06 PM Plan) |
-| **Lifecycle** | Created in Planning · Applied in Executing · Monitored in M&C |
-| **Baseline?** | Yes — quality standards are baselined at planning approval |
-| **Ownership** | Project Manager · Quality Assurance Lead |
+| Quality standards applicable to project deliverables | Detailed acceptance test scripts (belong with A08 per work package) |
+| Quality roles and responsibilities | Detailed defect tracking log (maintained as a living execution artifact) |
+| Quality assurance approach (process audits, reviews) | Vendor quality audit results (belong in A31 Procurement record) |
+| Quality control approach (inspections, testing, metrics) | Financial audit procedures (belong in A16) |
+| Quality metrics and measurement approach | Product specification or technical design standards |
+| Acceptance criteria process and sign-off rules | Risk register (belongs in A19) |
+| Non-conformance and corrective action process | Change requests and decisions (belong in A12) |
+| Continuous improvement approach | PMO maturity assessment (belongs in A36) |
 
 ---
 
-## Purpose
+## 3. Trigger Conditions
 
-- Define the quality standards and requirements applicable to project deliverables
-- Establish acceptance criteria for all major deliverables
-- Define the QA approach (process audits, reviews) and QC approach (inspections, testing)
-- Document quality metrics and thresholds
-- Assign quality roles and responsibilities
-- Specify the cost of quality approach
+The Quality Management Plan is created when:
 
----
+- Planning begins and the project has defined deliverables requiring quality standards.
+- The organization's quality policy requires a documented quality approach for projects of this type or complexity.
+- Regulatory, contractual, or customer requirements mandate a formal quality plan.
 
-## Sections
+The plan is updated when:
 
-| Section | Content | Populated By |
-|---|---|---|
-| §1 Quality Standards | Applicable standards (ISO, industry, organizational) | SKL-03-09 |
-| §2 Quality Objectives | Measurable quality goals for this project | SKL-03-09 |
-| §3 Deliverable Acceptance Criteria | Pass/fail criteria per major deliverable | SKL-03-09 · SKL-03-03 |
-| §4 Quality Metrics | Measurable indicators (defect rate, rework %, test pass rate) | SKL-03-09 |
-| §5 Quality Assurance Approach | Process audits, peer reviews, gate reviews | SKL-03-09 |
-| §6 Quality Control Approach | Inspections, testing, sampling, checklists | SKL-03-09 |
-| §7 Cost of Quality | Cost of conformance vs. non-conformance estimate | SKL-03-09 |
-| §8 Quality Roles and Responsibilities | QA/QC owner, reviewers, approvers | SKL-03-09 |
-| §9 Non-Conformance Process | How defects and failures are tracked and resolved | SKL-03-09 |
+- Scope changes introduce new deliverables with different quality standards.
+- Quality performance data reveals that the current approach is not achieving intended results.
+- Regulatory or contractual quality requirements change.
+- A non-conformance triggers a review of the quality approach.
 
 ---
 
-## Required Fields
+## 4. Required Sections / Fields
 
 | Field | Description | Required |
 |---|---|---|
-| Applicable standards | Named standards (ISO 9001, industry standard, org standard) | Mandatory |
-| Acceptance criteria | Pass/fail criteria per major deliverable | Mandatory |
-| Quality metrics | ≦2 measurable metrics with thresholds | Mandatory |
-| QA approach | At least one QA activity type defined | Mandatory |
-| QC approach | At least one QC activity type defined | Mandatory |
-| Quality roles | Named QA/QC owners | Mandatory |
-| Non-conformance process | Process for handling failures and defects | Mandatory |
+| Quality standards reference | Which organizational, industry, regulatory, or contractual standards apply | Mandatory |
+| Quality objectives | Measurable quality targets for key deliverables or processes | Mandatory |
+| Quality roles and responsibilities | Who owns quality assurance, quality control, and acceptance sign-off | Mandatory |
+| Quality assurance activities | Scheduled process audits, peer reviews, phase gate quality checks | Mandatory |
+| Quality control activities | Inspection, testing, verification, and validation activities with frequency | Mandatory |
+| Quality metrics | What will be measured, how, and at what threshold | Mandatory |
+| Acceptance criteria process | How acceptance criteria from A08 are verified and formally accepted | Mandatory |
+| Non-conformance process | How defects, failures, and non-conformances are recorded, escalated, and resolved | Mandatory |
+| Continuous improvement approach | How quality lessons are captured and fed back into the process | Recommended |
+| Tools and techniques | Quality management tools to be used (e.g., checklists, statistical sampling, reviews) | Recommended |
 
 ---
 
-## Inputs
+## 5. PMBOK 8 Authority
 
-| Input | Source | Notes |
+| Source | Section | Purpose of Citation |
 |---|---|---|
-| A04 — Project Charter | SKL-02-01 | Scope, objectives, success criteria |
-| A05 — Context Register | SKL-01-02 | Org quality standards, OPA quality templates |
-| A08 — Scope Documentation | SKL-03-03 | Deliverables list and requirements |
-| A13 — Requirements Traceability Matrix | SKL-03-03 | Requirements linked to acceptance criteria |
-| Stakeholder requirements | A07 | Quality expectations from key stakeholders |
+| PMBOK8 Guide | §2.7 Delivery Performance Domain | Establishes quality as a core delivery concern — fit for purpose and meeting acceptance criteria |
+| PMBOK8 Guide | Table 2-1 Plan Quality Management | Confirms the Quality Management Plan as the output of the Plan Quality Management process |
+| PMBOK8 Guide | Table 2-1 Manage Quality | Links the plan to the quality assurance execution process |
+| PMBOK8 Guide | Table 2-1 Control Quality | Links the plan to the quality control and inspection process |
+| PMI Lexicon | Quality Management Plan definition | Canonical PMI definition: a component of the project management plan that describes how applicable policies, procedures, and guidelines will be implemented to achieve the quality objectives |
 
 ---
 
-## Outputs / Produces
+## 6. Used By (Skills That Consume This Artifact)
 
-| Output | Used By |
+| Skill ID | Skill Name | How Used |
+|---|---|---|
+| SKL-03-09 | Plan Quality Management | Primary producing skill — defines and documents the quality approach |
+| SKL-04-01 | Direct and Manage Project Work | References quality approach during execution to ensure compliance |
+| SKL-05-01 | Monitor and Control Project Work | Quality metrics and non-conformance data feed into performance monitoring |
+| SKL-05-03 | Control Scope | Acceptance criteria process from quality plan governs scope validation |
+| SKL-06-01 | Close Project or Phase | Quality acceptance records are part of closure evidence |
+
+---
+
+## 7. Created By (Skills That Produce This Artifact)
+
+| Skill ID | Skill Name | How Produced |
+|---|---|---|
+| SKL-03-09 | Plan Quality Management | Defines and documents the complete quality management approach |
+
+---
+
+## 8. Linked Artifacts
+
+| Artifact ID | Artifact Name | Relationship |
+|---|---|---|
+| A06 | Tailoring Decision Record | Tailoring decisions determine the depth of quality planning required |
+| A08 | Scope and Requirements Decision Record | Acceptance criteria in A08 are the primary input to quality control activities |
+| A14 | Integrated Project Management Plan | Quality Management Plan is a subsidiary plan within A14 |
+| A17 | Integrated Performance Reporting Record | Quality metrics feed into performance reporting |
+| A12 | Change and Exception Decision Log | Non-conformances and corrective actions may trigger change decisions in A12 |
+| A19 | Risk Management Record | Quality failures are a risk category — risk responses may include quality controls |
+
+---
+
+## 9. Validation Criteria
+
+| Check | Validation Rule |
 |---|---|
-| Quality standards and acceptance criteria | SKL-04-01 · SKL-05-01 |
-| Quality metrics | A17 (Performance Report §5 Quality) |
-| QA/QC schedule | A06 PM Plan (integrated schedule) |
-| Non-conformance process | A18 (Issue Log) |
+| Standards referenced | At least one applicable quality standard (organizational, regulatory, or contractual) is identified |
+| Quality objectives measurable | At least one quality objective has a numeric or observable target |
+| Roles assigned | Quality assurance owner and quality control owner are named |
+| QA activities scheduled | At least one planned quality assurance activity with timing is documented |
+| QC activities defined | Inspection or testing activities linked to at least one deliverable acceptance criterion |
+| Non-conformance process present | A clear process for recording and resolving defects or failures is documented |
+| Linked to A08 | The acceptance criteria process references A08 as the source of acceptance criteria |
+| Waste test pass | Quality assurance and quality control activities are not duplicated across separate audit plans, checklists, and inspection sheets without distinct control value |
+
+**Waste test:** Fail if a standalone quality assurance audit plan, a separate quality control checklist set, and a defect tracking workbook all contain the same quality standard requirements without providing distinct decision control. Consolidate into this plan plus living execution logs.
 
 ---
 
-## Quality Criteria
-
-- Acceptance criteria defined for every major deliverable before execution begins
-- Quality metrics are measurable with defined thresholds (not vague targets)
-- Both QA (process) and QC (product) activities are planned
-- Cost of quality estimated and documented
-- A09 reviewed and updated at each phase gate
-
----
-
-## Related Artifacts
-
-| Artifact | Relationship |
-|---|---|
-| A06 — PM Plan | A09 is a subsidiary plan of A06 |
-| A08 — Scope Documentation | Deliverables list is input to acceptance criteria |
-| A13 — RTM | Requirements ↔ acceptance criteria traceability |
-| A17 — Performance Report | Quality metrics reported in §5 |
-| A18 — Issue Log | Non-conformances tracked as issues |
-| A21 — Lessons Learned | Quality failures and improvements archived |
-
----
-
-## PMBOK8 Anchors
-
-| Reference | Detail |
-|---|---|
-| PMBOK8 Guide §2.7 | Delivery Performance Domain — quality |
-| Process Groups PG §4.3 | Plan Quality Management — inputs, tools, outputs |
-| PMBOK8 Standard §3 | Quality principle — build quality in, don’t inspect it in |
-
----
-
-## Change Log
+## 10. Change Log
 
 | Version | Date | Author | Change Description |
 |---|---|---|---|
-| 1.0.0 | 2026-05-30 | B1 Batch 2 | Initial definition — Phase B1 |
-
----
-
-*Owner: Project Manager · Quality Lead*  
-*Change Control: Quality standard changes require PM + Sponsor (T2 per AUTHORITY-ROUTING.md)*  
-*Last Updated: 2026-05-30 · B1 Batch 2*
+| 1.0.0 | 2026-05-30 | @fakhruldeen | Initial definition — Phase B1 Priority 4 |

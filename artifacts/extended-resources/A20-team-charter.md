@@ -2,153 +2,162 @@
 artifact_id: A20
 name: Team Charter
 version: 1.0.0
-status: "Definition · Active"
-category: Resources
-authority: "PMBOK8 Guide §2.6 · Process Groups PG §4.4 · Standard §3 (Team Principle)"
+status: Active
+category: Team Operating Agreement
+governance_layer: Delivery Ways of Working / Project Governance
 source_type: PMI-derived
-pmbok8_anchor: "PMBOK8 Guide §2.6.2 · Develop Team"
+pmbok8_anchor: "PMBOK8 Guide §2.6 Team Performance Domain; Table 2-1 Develop Team"
+authority: PMI-derived
+performance_domains:
+  - Team
+  - Governance
+  - Resources
+focus_areas:
+  - Planning
+  - Executing
 required_by_skills:
+  - SKL-03-14
   - SKL-04-04
-  - SKL-04-05
 created_by_skills:
+  - SKL-03-14
   - SKL-04-04
-file_path: artifacts/extended-resources/A20-team-charter.md
+linked_artifacts:
+  - A06
+  - A09
+  - A14
+  - A25
+  - A26
 ---
 
 # A20 — Team Charter
-**Artifact ID:** A20  
-**Artifact Name:** Team Charter  
-**Version:** 1.0.0  
-**Status:** Definition · Active  
-**Authority:** PMBOK8 Guide §2.6 · Process Groups PG §4.4 (Develop Team) · Standard §3 (Team Principle)  
-**Source Type:** PMI-derived  
-**File Path:** `artifacts/extended-resources/A20-team-charter.md`
+
+**Artifact ID:** A20
+**Name:** Team Charter
+**Version:** 1.0.0
+**Status:** Active
+**Source Type:** PMI-derived
+**Governance Layer:** Delivery Ways of Working / Project Governance
+**Authority:** PMBOK8 Guide §2.6 Team Performance Domain; Table 2-1 Develop Team
 
 ---
 
-## Definition
+## 1. Purpose
 
-A20 is the team’s self-authored agreement on how the team will work together. It establishes shared values, working agreements, communication norms, decision-making rules, conflict resolution approaches, and meeting standards. It is created collaboratively by the project team in the Executing phase.
+The Team Charter establishes the shared values, agreements, operating norms, decision-making rules, and working boundaries that govern how the project team will collaborate. It is co-created by the team and makes explicit the behavioral expectations, communication norms, conflict resolution approach, and authority boundaries that might otherwise remain implicit and cause friction.
 
-**PMI Source:** PMBOK8 Guide §2.6 — Team Performance Domain; PG §4.4 — Develop Team.
+A well-formed Team Charter accelerates team integration, reduces misunderstanding about decision rights, and creates a reference point for resolving working disagreements constructively.
 
 ---
 
-## Artifact Type
+## 2. Scope
 
-| Field | Value |
+| In Scope | Out of Scope |
 |---|---|
-| **Category** | Resources |
-| **Type** | Team working agreement |
-| **Lifecycle** | Created early in Executing · Reviewed at team milestones and retrospectives · Updated when team composition or norms change |
-| **Baseline?** | No — living team agreement, updated by consensus |
-| **Ownership** | Project Team (collectively) · Facilitated by PM |
+| Team values and shared commitments | Role definitions and responsibility assignments (belong in A25) |
+| Communication and meeting norms | Resource acquisition and capacity planning (belong in A26) |
+| Decision-making rules within team authority | Project authority boundaries and governance thresholds (belong in A06) |
+| Conflict resolution approach | Performance appraisal or HR management |
+| Working hours, availability, and response expectations | Delivery approach and lifecycle selection (belong in A09 and A13) |
+| Tool and platform agreements | Procurement activities |
+| Definition of done (team-level) | Stakeholder engagement strategy (belongs in A07) |
 
 ---
 
-## Purpose
+## 3. Trigger Conditions
 
-- Establish shared team values and behavioral expectations
-- Define working agreements (hours, availability, communication preferences)
-- Clarify decision-making authority within the team
-- Establish conflict resolution norms before conflict arises
-- Create psychological safety by making norms explicit and agreed upon
-- Reduce misunderstandings and improve team cohesion
+The Team Charter is created when:
 
----
+- A project team is being assembled at the start of a new project or phase.
+- A significant change in team composition warrants re-establishing operating norms.
+- An adaptive or hybrid delivery approach requires explicit team working agreements at the sprint or iteration level.
 
-## Sections
+The charter is updated when:
 
-| Section | Content | Populated By |
-|---|---|---|
-| §1 Team Purpose | Why this team exists; project mission in team’s own words | Team · PM |
-| §2 Team Values | Shared values the team commits to upholding | Team |
-| §3 Working Agreements | Hours, availability, remote work norms, response time expectations | Team |
-| §4 Communication Norms | Preferred channels, meeting etiquette, status update protocols | Team |
-| §5 Decision-Making | How decisions are made: consensus, PM authority, domain authority | Team · PM |
-| §6 Conflict Resolution | Agreed approach when disagreements arise | Team · PM |
-| §7 Meeting Standards | Standard meeting types, facilitation rules, agenda requirements | Team |
-| §8 Definition of Done (Adaptive) | If adaptive lifecycle: team’s DoD for story completion | Team (adaptive) |
-| §9 Amendments | How the charter can be changed (requires team consensus) | Team |
+- The team composition changes significantly.
+- A retrospective or team health review reveals that current norms are not working.
+- A new phase or context shift requires revised working agreements.
 
 ---
 
-## Required Fields
+## 4. Required Sections / Fields
 
 | Field | Description | Required |
 |---|---|---|
-| Team values | ≦3 named values with behavioral descriptions | Mandatory |
-| Working agreements | Hours, availability, response time | Mandatory |
-| Communication norms | Channels and meeting etiquette | Mandatory |
-| Decision-making approach | Explicit authority and consensus rules | Mandatory |
-| Conflict resolution | Named approach (not just “escalate to PM”) | Mandatory |
-| Team signatures / acknowledgment | All team members confirm agreement | Mandatory |
-| Amendment process | How to change the charter | Recommended |
+| Team values | 3–7 shared values or commitments the team agrees to uphold | Mandatory |
+| Communication norms | Preferred channels, response time expectations, meeting cadence | Mandatory |
+| Decision-making rules | What decisions the team makes autonomously vs. what requires escalation | Mandatory |
+| Meeting norms | Standing meetings, attendance expectations, facilitation approach | Mandatory |
+| Conflict resolution approach | How the team will surface and resolve disagreements constructively | Mandatory |
+| Definition of done | What done means for the team's deliverables or work items | Mandatory |
+| Working hours and availability | Expected working hours, time-zone considerations, on-call expectations | Recommended |
+| Tool and platform agreements | Which tools the team uses for what purpose | Recommended |
+| New member onboarding | How new team members will be brought up to speed on the charter | Optional |
 
 ---
 
-## Inputs
+## 5. PMBOK 8 Authority
 
-| Input | Source | Notes |
+| Source | Section | Purpose of Citation |
 |---|---|---|
-| A04 — Project Charter | SKL-02-01 | Project objectives and PM authority |
-| A05 — Context Register | SKL-01-02 | Org culture, team location, working norms |
-| A25 — Resource Management Plan | SKL-03-10 | Team roles and RACI |
-| Team kickoff discussions | PM · Team | Direct input to charter content |
+| PMBOK8 Guide | §2.6 Team Performance Domain | Grounds the Team Charter in the Team Performance Domain — shared values, culture, and norms are explicit team performance enablers |
+| PMBOK8 Guide | Table 2-1 Develop Team | Confirms team charter creation as an activity within the Develop Team process |
+| PMBOK8 Guide | §2.6.3 Collaborative Team Culture | Links team charter to the creation of a shared, high-performing collaborative culture |
+| APG | Agile Practice Guide team agreements sections | Supports the use of team charters and working agreements in adaptive and hybrid contexts |
+| PMI Lexicon | Team Charter definition | Canonical PMI definition: a document that establishes the team values, agreements, and operating guidelines, and establishes clear expectations regarding acceptable behavior by project team members |
 
 ---
 
-## Outputs / Produces
+## 6. Used By (Skills That Consume This Artifact)
 
-| Output | Used By |
+| Skill ID | Skill Name | How Used |
+|---|---|---|
+| SKL-03-14 | Plan Resource Management | Team charter is established during resource planning |
+| SKL-04-04 | Develop Team | Team charter is used and reinforced during team development activities |
+| SKL-04-05 | Manage Team | Team charter provides the behavioral reference point for performance management and conflict resolution |
+| SKL-07-03 | Facilitate Retrospectives | Team charter is reviewed and updated during retrospectives |
+
+---
+
+## 7. Created By (Skills That Produce This Artifact)
+
+| Skill ID | Skill Name | How Produced |
+|---|---|---|
+| SKL-03-14 | Plan Resource Management | Initial charter established during resource planning |
+| SKL-04-04 | Develop Team | Charter is co-created or refined during team development activities |
+
+---
+
+## 8. Linked Artifacts
+
+| Artifact ID | Artifact Name | Relationship |
+|---|---|---|
+| A06 | Tailoring Decision Record | Project authority boundaries in A06 define the limits within which team-level decisions in the charter operate |
+| A09 | Delivery Approach and Team Operating Agreement | A09 and A20 are complementary — A09 covers delivery cadence and lifecycle; A20 covers behavioral norms and working agreements |
+| A14 | Integrated Project Management Plan | Team Charter is a referenced operating agreement within the integrated plan |
+| A25 | Team Operating and Responsibility Record | A25 defines formal roles and responsibilities; A20 defines how the team behaves within those roles |
+| A26 | Resource Capacity and Acquisition Record | A26 provides the resource capacity context within which the team's working norms in A20 operate |
+
+---
+
+## 9. Validation Criteria
+
+| Check | Validation Rule |
 |---|---|
-| Shared working agreements | SKL-04-04 · SKL-04-05 |
-| Decision-making norms | AUTHORITY-ROUTING.md T1 threshold guidance |
-| Conflict resolution approach | SKL-04-05 (Manage Team) |
-| DoD (if adaptive) | SKL-07-02 (Backlog and Iterations) |
+| Co-created by team | Charter reflects team input, not just project manager dictation |
+| Values present | At least three team values or shared commitments are explicitly stated |
+| Decision rules defined | At least one explicit statement of what decisions require escalation vs. team authority |
+| Conflict resolution approach present | A constructive mechanism for surfacing and resolving team disagreements is described |
+| Definition of done included | Team-level definition of done is stated |
+| Not duplicating A25 | Role definitions and formal RACI assignments are not repeated — A25 holds that content |
+| Not duplicating A09 | Delivery cadence, ceremonies, and lifecycle approach are not re-stated — A09 holds that content |
+| Waste test pass | Separate team norms document, working agreement canvas, and retrospective action log are not maintained as independent governance artifacts |
+
+**Waste test:** Fail if a separate team norms document, a working agreement canvas, and a team operating model sheet all contain the same behavioral agreements. Consolidate into this charter and update it via retrospective cadence.
 
 ---
 
-## Quality Criteria
-
-- Charter is created by the team, not imposed by the PM
-- All team members have contributed to and signed the charter
-- Values have behavioral indicators — not just abstract nouns
-- Decision-making authority is explicit for T1 decisions
-- Charter reviewed and updated at each retrospective or major team change
-
----
-
-## Related Artifacts
-
-| Artifact | Relationship |
-|---|---|
-| A25 — Resource Management Plan | RACI and roles context for charter |
-| A21 — Lessons Learned | Team retrospective inputs feed A21 |
-| A07 — Stakeholder Register | Team members are internal stakeholders |
-| A19 — Risk Register | Team dysfunction is a risk — charter mitigates it |
-
----
-
-## PMBOK8 Anchors
-
-| Reference | Detail |
-|---|---|
-| PMBOK8 Guide §2.6 | Team Performance Domain |
-| Process Groups PG §4.4 | Develop Team — team charter as output |
-| PMBOK8 Standard §3 | Team principle — shared values and accountability |
-| APG §4.2 | Agile teams — working agreements and team norms |
-
----
-
-## Change Log
+## 10. Change Log
 
 | Version | Date | Author | Change Description |
 |---|---|---|---|
-| 1.0.0 | 2026-05-30 | B1 Batch 2 | Initial definition — Phase B1 |
-
----
-
-*Owner: Project Team (collectively)*  
-*Change Control: Charter changes require team consensus (T1 per AUTHORITY-ROUTING.md)*  
-*Last Updated: 2026-05-30 · B1 Batch 2*
+| 1.0.0 | 2026-05-30 | @fakhruldeen | Initial definition — Phase B1 Priority 8 |

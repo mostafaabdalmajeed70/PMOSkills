@@ -2,164 +2,170 @@
 artifact_id: A11
 name: Procurement Management Plan
 version: 1.0.0
-status: "Definition · Active"
-category: Procurement
-authority: "PMBOK8 Guide §2.6 · Process Groups PG §4.9 · Standard §3 (Stewardship)"
+status: Active
+category: Procurement Planning
+governance_layer: Project Governance
 source_type: PMI-derived
-pmbok8_anchor: "PMBOK8 Guide §2.6 · Plan Procurement Management"
+pmbok8_anchor: "PMBOK8 Guide Appendix X4 Procurement; Table 2-1 Plan Procurement Management"
+authority: PMI-derived
+performance_domains:
+  - Governance
+  - Finance
+  - Risk
+  - Resources
+focus_areas:
+  - Planning
+  - Executing
+  - Monitoring and Controlling
 required_by_skills:
+  - SKL-03-16
   - SKL-04-09
 created_by_skills:
-  - SKL-03-11
-file_path: artifacts/extended-procurement/A11-procurement-management-plan.md
+  - SKL-03-16
+linked_artifacts:
+  - A06
+  - A08
+  - A14
+  - A16
+  - A19
+  - A31
+  - A32
 ---
 
 # A11 — Procurement Management Plan
-**Artifact ID:** A11  
-**Artifact Name:** Procurement Management Plan  
-**Version:** 1.0.0  
-**Status:** Definition · Active  
-**Authority:** PMBOK8 Guide §2.6 · Process Groups PG §4.9 (Plan Procurement Management) · Standard §3 (Stewardship)  
-**Source Type:** PMI-derived  
-**File Path:** `artifacts/extended-procurement/A11-procurement-management-plan.md`
+
+**Artifact ID:** A11
+**Name:** Procurement Management Plan
+**Version:** 1.0.0
+**Status:** Active
+**Source Type:** PMI-derived
+**Governance Layer:** Project Governance
+**Authority:** PMBOK8 Guide Appendix X4 Procurement; Table 2-1 Plan Procurement Management
 
 ---
 
-## Definition
+## 1. Purpose
 
-A11 defines how the project team will acquire goods, services, or results from outside the organization. It documents what will be procured, the procurement approach, contract types, vendor selection criteria, and contract management procedures.
+The Procurement Management Plan describes how the project will acquire goods, services, or results from outside the project team. It defines the procurement strategy, contract types to be used, supplier selection approach, roles and responsibilities, and how procurement activities will be administered and closed.
 
-**PMI Source:** PMBOK8 Guide §2.6 — Project Work Performance Domain; PG §4.9 — Plan Procurement Management.
+It answers the question: *What will be procured, how, from whom, under what contract structure, and who is responsible for managing the supplier relationship?* It is the governing reference for all procurement activities from make-or-buy decisions through contract closure.
 
 ---
 
-## Artifact Type
+## 2. Scope
 
-| Field | Value |
+| In Scope | Out of Scope |
 |---|---|
-| **Category** | Procurement |
-| **Type** | Subsidiary plan (component of A06 PM Plan) |
-| **Lifecycle** | Created in Planning · Applied in Executing (Conduct Procurements) · Monitored in M&C |
-| **Baseline?** | Yes — procurement approach is baselined at planning approval |
-| **Ownership** | Project Manager · Procurement Officer |
+| Make-or-buy decisions for project work | Individual contract documents (governed by A31) |
+| Procurement strategy and sourcing approach | Supplier evaluation scores and award decisions (governed by A32) |
+| Contract types to be used | Supplier claims or dispute records (governed by A33) |
+| Supplier selection criteria and process | Vendor performance data (maintained in A31 as a living record) |
+| Procurement roles and responsibilities | Financial baseline and cost estimates (belong in A16) |
+| Procurement schedule and milestones | Risk register entries for procurement risks (belong in A19) |
+| Contract administration approach | Organizational procurement policy (an OPA referenced from A05) |
+| Procurement closure approach | Post-project benefits realization |
 
 ---
 
-## Purpose
+## 3. Trigger Conditions
 
-- Identify what will be procured vs. built in-house (make-or-buy analysis)
-- Define the procurement approach, contract types, and authority thresholds
-- Establish the source selection process and evaluation criteria
-- Define vendor management and contract administration responsibilities
-- Specify how risks are allocated between buyer and seller
-- Comply with organizational procurement policies and legal requirements
+The Procurement Management Plan is created when:
 
----
+- Planning identifies that project work will require external procurement of goods, services, or results.
+- A make-or-buy analysis confirms that one or more work packages will be procured.
+- Regulatory, contractual, or organizational policy requires a documented procurement approach.
 
-## Sections
+The plan is updated when:
 
-| Section | Content | Populated By |
-|---|---|---|
-| §1 Make-or-Buy Analysis | What is procured vs. delivered in-house with rationale | SKL-03-11 |
-| §2 Procurement List | All items/services to be procured with description and priority | SKL-03-11 |
-| §3 Contract Types | Type per procurement: FFP, T&M, CPFF, CPIF | SKL-03-11 |
-| §4 Source Selection Criteria | Evaluation factors and weights for vendor selection | SKL-03-11 |
-| §5 Procurement Timeline | Key procurement milestones | SKL-03-11 |
-| §6 Contract Administration | How contracts are managed, monitored, and closed | SKL-04-09 |
-| §7 Risk Allocation | How procurement risks are shared between buyer and seller | SKL-03-11 |
-| §8 Procurement Authority | Who can authorize and sign contracts (thresholds) | SKL-03-11 |
+- A new procurement need is identified during execution that was not anticipated at planning.
+- Contract type or sourcing strategy changes for an approved procurement package.
+- Organizational procurement policy changes affect the project's procurement authority.
 
 ---
 
-## Contract Types Reference
-
-| Type | Description | Risk Bearer |
-|---|---|---|
-| **FFP** | Firm Fixed Price — price set at contract signing | Seller |
-| **FP-EPA** | Fixed Price with Economic Price Adjustment | Shared |
-| **T&M** | Time and Materials — pay per hour + materials | Buyer |
-| **CPFF** | Cost Plus Fixed Fee | Buyer |
-| **CPIF** | Cost Plus Incentive Fee | Shared |
-| **CPAF** | Cost Plus Award Fee | Buyer |
-
----
-
-## Required Fields
+## 4. Required Sections / Fields
 
 | Field | Description | Required |
 |---|---|---|
-| Make-or-buy decisions | Decision + rationale for each major procurement item | Mandatory |
-| Procurement list | Named items/services to be procured | Mandatory |
-| Contract types | Contract type per procurement | Mandatory |
-| Source selection criteria | Evaluation factors with weights | Mandatory |
-| Procurement authority thresholds | Who can sign what value | Mandatory |
-| Contract administration approach | Named owner and monitoring approach | Mandatory |
+| Make-or-buy decisions | Summary of what will be procured vs. performed internally, with rationale | Mandatory |
+| Procurement items register | What is being procured, contract type, estimated value, target award date | Mandatory |
+| Contract types | Fixed-price, cost-reimbursable, time-and-materials — with rationale for each | Mandatory |
+| Supplier selection criteria | How suppliers will be evaluated and selected | Mandatory |
+| Procurement roles and responsibilities | Who has authority to solicit, evaluate, award, administer, and close contracts | Mandatory |
+| Procurement schedule | Key milestones — RFP/RFQ issue, bid close, award, contract start, delivery, closure | Mandatory |
+| Contract administration approach | How contracts will be monitored, changed, and closed | Mandatory |
+| Organizational constraints and policies | Applicable procurement policies, approved supplier lists, spend thresholds | Mandatory |
+| Pre-qualified suppliers | Any pre-approved or preferred suppliers relevant to this project | Recommended |
+| Risk considerations | Procurement-specific risks that feed into A19 | Recommended |
 
 ---
 
-## Inputs
+## 5. PMBOK 8 Authority
 
-| Input | Source | Notes |
+| Source | Section | Purpose of Citation |
 |---|---|---|
-| A04 — Project Charter | SKL-02-01 | Budget constraints and organizational authority |
-| A05 — Context Register | SKL-01-02 | Procurement policies, preferred vendors, legal requirements |
-| A08 — Scope Documentation | SKL-03-03 | What needs to be delivered — input to make-or-buy |
-| A19 — Risk Register | SKL-03-12 | Procurement risks — inform contract type selection |
-| A25 — Resource Management Plan | SKL-03-10 | Internal resource gaps requiring external procurement |
+| PMBOK8 Guide | Appendix X4 Procurement | Provides the procurement process guidance anchoring this plan |
+| PMBOK8 Guide | Table 2-1 Plan Procurement Management | Confirms the Procurement Management Plan as the output of the Plan Procurement Management process |
+| PMBOK8 Guide | Table 2-1 Conduct Procurements | Links the plan to the execution process for procurement |
+| PMBOK8 Guide | Table 2-1 Control Procurements | Links the plan to the monitoring and control process for active contracts |
+| Forms-Book | Procurement forms and templates | Supports procurement planning and administration using PMI-aligned templates |
+| PMI Lexicon | Procurement Management Plan definition | Canonical PMI definition: a component of the project management plan that contains the activities to be performed during the procurement process |
 
 ---
 
-## Outputs / Produces
+## 6. Used By (Skills That Consume This Artifact)
 
-| Output | Used By |
+| Skill ID | Skill Name | How Used |
+|---|---|---|
+| SKL-03-16 | Plan Procurement Management | Primary producing skill |
+| SKL-04-09 | Conduct Procurements | Executes the sourcing and contract award activities defined in this plan |
+| SKL-05-01 | Monitor and Control Project Work | Procurement performance feeds into integrated project monitoring |
+| SKL-06-01 | Close Project or Phase | Contract closure activities are governed by this plan |
+
+---
+
+## 7. Created By (Skills That Produce This Artifact)
+
+| Skill ID | Skill Name | How Produced |
+|---|---|---|
+| SKL-03-16 | Plan Procurement Management | Defines and documents the complete procurement approach |
+
+---
+
+## 8. Linked Artifacts
+
+| Artifact ID | Artifact Name | Relationship |
+|---|---|---|
+| A05 | Context Register | OPAs (procurement policies, approved supplier lists) and EEFs (market conditions, regulatory environment) from A05 are primary inputs |
+| A06 | Tailoring Decision Record | Tailoring decisions affect procurement planning depth and formality |
+| A08 | Scope and Requirements Decision Record | Procurement scope derived from work packages in A08 |
+| A14 | Integrated Project Management Plan | Procurement Management Plan is a subsidiary plan within A14 |
+| A16 | Financial Management and Cost Baseline Record | Procurement costs are a major component of the financial baseline |
+| A19 | Risk Management Record | Procurement risks (supplier failure, cost overrun, delivery delay) are captured in A19 |
+| A31 | Procurement and Supplier Management Record | A31 is the living contract administration record — this plan governs what A31 should track |
+| A32 | Supplier Evaluation and Award Decision Record | Supplier selection criteria from this plan govern the evaluation process in A32 |
+
+---
+
+## 9. Validation Criteria
+
+| Check | Validation Rule |
 |---|---|
-| Procurement list and contract types | A23 (Bid Documents) · A24 (Source Selection) · A31 (Contract Log) |
-| Source selection criteria | A24 — Source Selection Criteria |
-| Contract administration plan | SKL-04-09 · SKL-05-01 |
+| Make-or-buy decisions documented | At least one explicit make-or-buy decision is recorded with rationale |
+| Procurement items register present | All known procurement packages are listed with contract type and estimated value |
+| Roles assigned | Procurement authority (who can award) and contract administrator (who monitors) are named |
+| Schedule milestones defined | At minimum: RFP/RFQ issue date, award date, and contract start date are planned |
+| Contract administration approach defined | A process for managing, changing, and closing contracts is described |
+| Linked to financial baseline | Procurement costs are referenced in or linked to A16 |
+| Procurement risks captured | At least one procurement-specific risk is referenced in A19 |
+| Waste test pass | Separate procurement strategy, sourcing strategy, and contract administration mini-plans are not maintained independently if they cover the same decisions |
+
+**Waste test:** Fail if a separate procurement strategy document, a sourcing strategy worksheet, and a contract administration checklist all address the same procurement decisions without distinct control value.
 
 ---
 
-## Quality Criteria
-
-- Make-or-buy decision documented for all significant procurement items
-- Contract types selected based on risk profile (not defaulted to T&M for convenience)
-- Source selection criteria defined before solicitation begins
-- Procurement authority thresholds aligned with AUTHORITY-ROUTING.md
-- A11 reviewed and updated when scope or resource assumptions change materially
-
----
-
-## Related Artifacts
-
-| Artifact | Relationship |
-|---|---|
-| A06 — PM Plan | A11 is a subsidiary plan of A06 |
-| A08 — Scope Documentation | Deliverable list drives make-or-buy analysis |
-| A23 — Bid Documents | A11 procurement list seeds A23 |
-| A24 — Source Selection Criteria | A11 §4 expanded into A24 |
-| A31 — Contract and Vendor Log | A11 defines what A31 tracks |
-| A32 — Procurement SOW | A11 procurement list seeds individual SOWs |
-
----
-
-## PMBOK8 Anchors
-
-| Reference | Detail |
-|---|---|
-| PMBOK8 Guide §2.6 | Project Work Performance Domain — procurement |
-| Process Groups PG §4.9 | Plan Procurement Management |
-| PMBOK8 Standard §3 | Stewardship — responsible resource acquisition |
-
----
-
-## Change Log
+## 10. Change Log
 
 | Version | Date | Author | Change Description |
 |---|---|---|---|
-| 1.0.0 | 2026-05-30 | B1 Batch 2 | Initial definition — Phase B1 |
-
----
-
-*Owner: Project Manager · Procurement Officer*  
-*Change Control: Procurement approach changes require PM + Sponsor (T2 per AUTHORITY-ROUTING.md)*  
-*Last Updated: 2026-05-30 · B1 Batch 2*
+| 1.0.0 | 2026-05-30 | @fakhruldeen | Initial definition — Phase B1 Priority 6 |

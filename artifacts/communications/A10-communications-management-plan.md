@@ -2,166 +2,176 @@
 artifact_id: A10
 name: Communications Management Plan
 version: 1.0.0
-status: "Definition · Active"
-category: Communications
-authority: "PMBOK8 Guide §2.5 · Process Groups PG §4.6 · Standard §3 (Stakeholders Principle)"
+status: Active
+category: Communications Planning
+governance_layer: Project Governance
 source_type: PMI-derived
-pmbok8_anchor: "PMBOK8 Guide §2.5 · Plan Communications Management"
+pmbok8_anchor: "PMBOK8 Guide §2.5 Stakeholders Performance Domain; Table 2-1 Plan Communications Management"
+authority: PMI-derived
+performance_domains:
+  - Stakeholders
+  - Governance
+  - Resources
+focus_areas:
+  - Planning
+  - Executing
+  - Monitoring and Controlling
 required_by_skills:
-  - SKL-03-08
+  - SKL-03-13
   - SKL-04-07
   - SKL-05-09
 created_by_skills:
-  - SKL-03-08
-file_path: artifacts/communications/A10-communications-management-plan.md
+  - SKL-03-13
+linked_artifacts:
+  - A07
+  - A14
+  - A17
+  - A28
 ---
 
 # A10 — Communications Management Plan
-**Artifact ID:** A10  
-**Artifact Name:** Communications Management Plan  
-**Version:** 1.0.0  
-**Status:** Definition · Active  
-**Authority:** PMBOK8 Guide §2.5 · Process Groups PG §4.6 (Plan Communications Management) · Standard §3 (Stakeholders Principle)  
-**Source Type:** PMI-derived  
-**File Path:** `artifacts/communications/A10-communications-management-plan.md`
+
+**Artifact ID:** A10
+**Name:** Communications Management Plan
+**Version:** 1.0.0
+**Status:** Active
+**Source Type:** PMI-derived
+**Governance Layer:** Project Governance
+**Authority:** PMBOK8 Guide §2.5 Stakeholders Performance Domain; Table 2-1 Plan Communications Management
 
 ---
 
-## Definition
+## 1. Purpose
 
-A10 defines the approach, methods, frequency, and responsibilities for all project communications. It translates stakeholder information needs (from A07) into a structured communications matrix that specifies what is communicated, to whom, when, by whom, and through what channel.
+The Communications Management Plan describes how project communications will be planned, structured, monitored, and controlled throughout the project lifecycle. It defines what information will be communicated, to whom, by whom, how often, through which channels, and in what format — ensuring that all stakeholders receive timely and appropriate information to support their engagement and decision-making needs.
 
-**PMI Source:** PMBOK8 Guide §2.5 — Stakeholder Performance Domain; PG §4.6 — Plan Communications Management.
+Effective communications planning prevents information gaps, reduces stakeholder surprise, and ensures that governance authorities receive the performance information they need to exercise oversight.
 
 ---
 
-## Artifact Type
+## 2. Scope
 
-| Field | Value |
+| In Scope | Out of Scope |
 |---|---|
-| **Category** | Communications |
-| **Type** | Subsidiary plan (component of A06 PM Plan) |
-| **Lifecycle** | Created in Planning · Applied in Executing · Monitored in M&C |
-| **Baseline?** | Yes — communications plan is baselined; tailored as stakeholder needs change |
-| **Ownership** | Project Manager |
+| Communications needs by stakeholder group | Stakeholder identification and engagement strategy (belongs in A07) |
+| Communication frequency, format, and channel | Detailed meeting minutes and action logs (living execution records) |
+| Sender and receiver responsibilities | Performance data and metrics content (belongs in A17) |
+| Escalation communications approach | Change request documentation (belongs in A12) |
+| Sensitive communications handling rules | Procurement communications (governed by A11 and A31) |
+| Communication feedback and monitoring approach | Organizational change management communications (governed by A39) |
+| Information distribution methods and tools | HR or personnel communications |
 
 ---
 
-## Purpose
+## 3. Trigger Conditions
 
-- Define the information needs of all stakeholders
-- Establish a communications matrix mapping who receives what, when, and how
-- Define communication formats, channels, and technology
-- Assign communication responsibilities
-- Establish a feedback and escalation path for communications
-- Ensure communications are timely, accurate, and fit for purpose
+The Communications Management Plan is created when:
 
----
+- Planning begins and stakeholders have been identified in A07.
+- The project involves multiple stakeholder groups with different information needs.
+- Governance or contractual requirements mandate a documented communications approach.
 
-## Sections
+The plan is updated when:
 
-| Section | Content | Populated By |
-|---|---|---|
-| §1 Communications Principles | Project communication norms, preferred channels, escalation rules | SKL-03-08 |
-| §2 Stakeholder Information Needs | What each stakeholder needs to know, when, and why (from A07) | SKL-03-08 |
-| §3 Communications Matrix | Full table: message · audience · frequency · format · channel · owner | SKL-03-08 |
-| §4 Communication Technologies | Tools and platforms used (email, PMIS, meetings, dashboards) | SKL-03-08 |
-| §5 Escalation Path | Communication escalation trigger and routing | SKL-03-08 |
-| §6 Meeting Management | Standard meeting types, cadence, facilitation rules | SKL-03-08 |
-| §7 Communication Monitoring | How communications effectiveness is assessed | SKL-05-09 |
+- Key stakeholders are added, removed, or change roles.
+- Communications approach proves ineffective (stakeholder feedback, missed escalations).
+- Project phase transition changes the information needs of governance stakeholders.
+- Sensitive communications requirements change (confidentiality, regulatory disclosure).
 
 ---
 
-## Communications Matrix Schema (§3)
-
-| Field | Description |
-|---|---|
-| Communication ID | COMM-NNN |
-| Message / Report | What is being communicated |
-| Purpose | Why this communication is needed |
-| Audience | Recipient(s) (link to A07 Stakeholder ID) |
-| Frequency | Daily / Weekly / Monthly / At milestone / Ad hoc |
-| Format | Report / Dashboard / Email / Presentation / Meeting |
-| Channel | Email / PMIS / Video call / Physical meeting / Portal |
-| Owner | Person responsible for producing and distributing |
-| Feedback Mechanism | How recipients respond or confirm receipt |
-
----
-
-## Required Fields
+## 4. Required Sections / Fields
 
 | Field | Description | Required |
 |---|---|---|
-| Communications matrix | At least one entry per key stakeholder group | Mandatory |
-| Communication channels | Named tools/platforms | Mandatory |
-| Owners per communication | Named person per communication row | Mandatory |
-| Escalation path | Defined trigger and routing | Mandatory |
-| Stakeholder linkage | A07 stakeholder IDs referenced | Mandatory |
-| Monitoring approach | At least one method to assess effectiveness | Recommended |
+| Stakeholder communications needs | Summary of what information each key stakeholder group requires | Mandatory |
+| Communication item register | What is communicated, to whom, by whom, frequency, format, channel | Mandatory |
+| Sender and receiver responsibilities | Who is accountable for producing and distributing each communication | Mandatory |
+| Communication channels and tools | Approved tools and channels (email, portal, meetings, reports, dashboards) | Mandatory |
+| Escalation communications | How and when escalation communications are triggered and structured | Mandatory |
+| Sensitive information handling | Rules for confidential, commercially sensitive, or regulated information | Mandatory |
+| Communication feedback mechanism | How the team will know whether communications are effective | Recommended |
+| Glossary / terminology alignment | Common terms used to ensure clarity across stakeholder groups | Optional |
+
+**Communication item register — minimum fields per item:**
+
+| Field | Description |
+|---|---|
+| Item ID | Unique identifier |
+| Communication name | What is being communicated (e.g., Weekly Status Report) |
+| Purpose | Why this communication is needed |
+| Audience | Named stakeholders or groups |
+| Frequency | How often (daily, weekly, monthly, event-triggered) |
+| Format | Written report, verbal update, dashboard, meeting, email |
+| Channel | Distribution method or platform |
+| Owner | Who produces and sends it |
+| Review / approval required | Yes/No — and by whom if yes |
 
 ---
 
-## Inputs
+## 5. PMBOK 8 Authority
 
-| Input | Source | Notes |
+| Source | Section | Purpose of Citation |
 |---|---|---|
-| A07 — Stakeholder Register (SEAM) | SKL-02-02 · SKL-03-07 | Information needs and engagement strategies |
-| A04 — Project Charter | SKL-02-01 | Sponsor and key stakeholder identification |
-| A05 — Context Register | SKL-01-02 | Communication tools and org standards |
-| A06 — PM Plan | SKL-03-01 | Project lifecycle — shapes communication frequency |
+| PMBOK8 Guide | §2.5 Stakeholders Performance Domain | Grounds communications planning in stakeholder engagement — communications serve stakeholder information needs |
+| PMBOK8 Guide | Table 2-1 Plan Communications Management | Confirms the Communications Management Plan as the output of the Plan Communications Management process |
+| PMBOK8 Guide | Table 2-1 Manage Communications | Links the plan to the execution process that distributes information per the plan |
+| PMBOK8 Guide | Table 2-1 Monitor Communications | Links the plan to the monitoring process that verifies communications are effective |
+| PMI Lexicon | Communications Management Plan definition | Canonical PMI definition: a component of the project management plan that describes how project communications will be planned, structured, monitored, and controlled |
 
 ---
 
-## Outputs / Produces
+## 6. Used By (Skills That Consume This Artifact)
 
-| Output | Used By |
+| Skill ID | Skill Name | How Used |
+|---|---|---|
+| SKL-03-13 | Plan Communications Management | Primary producing skill |
+| SKL-04-07 | Manage Communications | Executes the distribution approach defined in this plan |
+| SKL-05-07 | Monitor Stakeholder Engagement | Uses communications effectiveness data from this plan |
+| SKL-05-09 | Monitor Communications | Verifies communications are being executed per the plan |
+| SKL-06-01 | Close Project or Phase | Final communications (closure notices, handover announcements) follow plan |
+
+---
+
+## 7. Created By (Skills That Produce This Artifact)
+
+| Skill ID | Skill Name | How Produced |
+|---|---|---|
+| SKL-03-13 | Plan Communications Management | Defines the complete communications approach |
+
+---
+
+## 8. Linked Artifacts
+
+| Artifact ID | Artifact Name | Relationship |
+|---|---|---|
+| A07 | Stakeholder Register and Engagement Strategy | A07 drives communications needs — stakeholder information needs identified in A07 are the primary input to this plan |
+| A14 | Integrated Project Management Plan | Communications Management Plan is a subsidiary plan within A14 |
+| A17 | Integrated Performance Reporting Record | Performance reports are a primary communication output governed by this plan |
+| A28 | Communications and Reporting Record | A28 is the living execution record — this plan defines what A28 should contain and when |
+| A06 | Tailoring Decision Record | Tailoring decisions affect the depth and formality of communications planning |
+
+---
+
+## 9. Validation Criteria
+
+| Check | Validation Rule |
 |---|---|
-| Communications matrix | A28 (Comms Record) · SKL-04-07 |
-| Meeting schedule | A06 PM Plan |
-| Communication monitoring criteria | SKL-05-09 |
+| All key stakeholder groups covered | Every stakeholder group from A07 has at least one identified communication item |
+| Communication item register populated | Minimum five communication items documented with full fields |
+| Senders assigned | Every communication item has a named owner responsible for production and distribution |
+| Escalation path defined | At least one escalation communication type is described with trigger condition |
+| Sensitive information rules present | Confidentiality or information-sensitivity handling is explicitly addressed |
+| Linked to A07 | Stakeholder communications needs trace to the stakeholder register |
+| Not duplicating A07 | Stakeholder identification and engagement strategy are not re-stated here |
+| Waste test pass | Separate communications matrix, stakeholder communications plan, and distribution list spreadsheet are not maintained as independent documents containing the same communication items |
+
+**Waste test:** Fail if a separate communications matrix, a stakeholder distribution list, and a meeting schedule are all maintained as independent documents containing the same information. Consolidate into this plan plus the living A28 execution record.
 
 ---
 
-## Quality Criteria
-
-- Every key stakeholder in A07 has ≥1 communication entry in the matrix
-- Owners are named (not left as "PM" generically)
-- Communication frequency matches stakeholder engagement needs
-- Escalation path is defined with a clear trigger condition
-- A10 reviewed and updated when stakeholder register changes materially
-
----
-
-## Related Artifacts
-
-| Artifact | Relationship |
-|---|---|
-| A06 — PM Plan | A10 is a subsidiary plan of A06 |
-| A07 — Stakeholder Register | Stakeholder information needs drive communications matrix |
-| A28 — Communications Record | A10 is the plan; A28 is the execution log |
-| A29 — Meeting Records | Meeting management §6 governs A29 |
-| A17 — Performance Report | A10 defines how A17 is distributed |
-
----
-
-## PMBOK8 Anchors
-
-| Reference | Detail |
-|---|---|
-| PMBOK8 Guide §2.5 | Stakeholder Performance Domain — communications |
-| Process Groups PG §4.6 | Plan Communications Management |
-| PMBOK8 Standard §3 | Engage stakeholders principle |
-
----
-
-## Change Log
+## 10. Change Log
 
 | Version | Date | Author | Change Description |
 |---|---|---|---|
-| 1.0.0 | 2026-05-30 | B1 Batch 2 | Initial definition — Phase B1 |
-
----
-
-*Owner: Project Manager*  
-*Change Control: Changes to communications plan require PM authorization (T1–T2 per AUTHORITY-ROUTING.md)*  
-*Last Updated: 2026-05-30 · B1 Batch 2*
+| 1.0.0 | 2026-05-30 | @fakhruldeen | Initial definition — Phase B1 Priority 5 |
