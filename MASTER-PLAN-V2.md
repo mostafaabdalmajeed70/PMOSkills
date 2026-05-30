@@ -1,16 +1,16 @@
 # PMOSkills Repository — Master Development Plan
-**Version:** 2.3.0
+**Version:** 2.4.0
 **Date:** 2026-05-30
 **Repository:** [https://github.com/fakhruldeen/PMOSkills](https://github.com/fakhruldeen/PMOSkills)
 **Authority:** PMBOK 8 Primary · PMI Companion References Secondary
 **Status:** Active roadmap — supersedes NEXT-STEPS-PLAN.md v1.0.0 (2026-05-29)
 **Supersedes:** `NEXT-STEPS-PLAN.md` v1.0.0
 
-> **v2.3.0 update note (2026-05-30):** Phase B1 complete — all 24 missing artifact definitions confirmed built and present in the repository. Artifact table corrected to reflect actual folder layout (diverges from v2.2.0 plan due to v1.0.5 normalization). A38, A40, and A41 confirmed consolidated per Artifacts-V-1.0.5 authority model (see Section 3.2 for details). A26 duplicate deleted. CHANGELOG.md created (K2 resolved). Plan aligned to v1.0.5 vocabulary throughout. Phase B2 (artifact templates) is next.
+> **v2.4.0 update note (2026-05-30):** 9 stale duplicate definition files deleted across `planning-and-baselines/`, `monitoring-and-decisions/`, and `closing/`. Each artifact now has exactly one canonical definition file. B2 first-batch templates (A04, A06, A07, A14, A15, A16) confirmed present. Section 3.6 (A05 duplicate) resolved — only `A05-context-register.md` remains in `artifacts/governance/`. Artifact table updated to reflect clean post-dedup state.
 
 ---
 
-## 1. Current State Assessment (as of 2026-05-30 21:00 EEST)
+## 1. Current State Assessment (as of 2026-05-30)
 
 ### 1.1 Repository Structure
 
@@ -28,8 +28,8 @@
 | `SECURITY.md` | ✅ Present | Secrets, PII, AI agent security |
 | `.github/ISSUE_TEMPLATE/` | ✅ Present | 3 templates: bug, content, improvement |
 | `.github/pull_request_template.md` | ✅ Present | Full PMBOK-quality PR checklist |
-| `MASTER-PLAN-V2.md` | ✅ v2.3.0 | This document — updated 2026-05-30 |
-| `CHANGELOG.md` | ✅ v2.3.0 | Created 2026-05-30 · K2 resolved |
+| `MASTER-PLAN-V2.md` | ✅ v2.4.0 | This document — updated 2026-05-30 |
+| `CHANGELOG.md` | ✅ Present | Created 2026-05-30 · K2 resolved |
 | `LICENSE` | ✅ Present | |
 | `.gitignore` | ✅ Present | |
 
@@ -51,43 +51,36 @@
 | Pack AI | `skills/09-ai/` *(proposed)* | None | 0/4 | — | ❌ Not started |
 | **TOTAL (core packs 01–07)** | | **All 47 confirmed** | **47/47** | **v1.1.0** | ✅ **Skills layer complete + QA'd** |
 
-**QA standard applied to all 47 skills (Phase A):**
-- [x] YAML front matter — `skill_id`, `name`, `pack`, `version`, `status`, `source_type`, `authority`, `pmbok8_anchor`, `performance_domains`, `focus_area`, `primary_artifact`, `artifacts_updated`, `upstream_prerequisites`, `downstream_skills`, `file_path`, `tests`
-- [x] Tests table — T01–T09 with Pass Condition and Fail Condition per test
-- [x] Change Log — version history at bottom of every file
-- [x] Version bumped from 1.0.0 → 1.1.0
-
 ### 1.3 Artifact Definitions Layer — Phase B1 Complete ✅
 
-> **v2.3.0 note:** The actual folder layout diverges from the v2.2.0 plan table due to v1.0.5 normalization. The table below reflects the actual repository state as of 2026-05-30.
-> A38 (AI Risk Register) is **consolidated into A37** per Artifacts-V-1.0.5. No separate A38 file is required or expected.
-> A40 (OPM Maturity Assessment) is **consolidated into A36** per Artifacts-V-1.0.5. No separate A40 file is required or expected.
-> A41 (Benefits Realization Report) is **consolidated into A24 + A02** per Artifacts-V-1.0.5. No separate A41 file is required or expected.
+> **v2.4.0 note:** 9 stale duplicate definition files deleted 2026-05-30 (see Section 3.7). Each artifact folder now contains exactly one canonical definition file per artifact ID. The table below reflects the clean, post-dedup repository state.
+>
+> A38 (AI Risk Register) is **consolidated into A37** per Artifacts-V-1.0.5.
+> A40 (OPM Maturity Assessment) is **consolidated into A36** per Artifacts-V-1.0.5.
+> A41 (Benefits Realization Report) is **consolidated into A24 + A02** per Artifacts-V-1.0.5.
 
-| Actual Folder | Files Present | Status |
-|---|---|---|
-| `artifacts/planning-and-baselines/` | A06, A08, A14, A15, A16, A19, A26 (canonical), A28 | ✅ 8 files |
-| `artifacts/monitoring-and-decisions/` | A12, A17, A18 | ✅ 3 files |
-| `artifacts/closing/` | A21, A27 | ✅ 2 files |
-| `artifacts/stakeholders/` | A02, A07 | ✅ 2 files |
-| `artifacts/resources/` | A03, A25, A26 (canonical v1.0.5 Batch-4), A27 | ✅ 4 files |
-| `artifacts/procurement/` | A31 | ✅ 1 file |
-| `artifacts/initiating/` | A01, A04 | ✅ 2 files — B1 batch 1 |
-| `artifacts/governance/` | A05 (×2 variants), A34, A35, A37, A39 | ✅ 6 files — B1 batch 1–4 |
-| `artifacts/quality/` | A09, A13 | ✅ 2 files — B1 batch 2 |
-| `artifacts/communications/` | A10 | ✅ 1 file — B1 batch 2 |
-| `artifacts/extended-procurement/` | A11, A33 | ✅ 2 files — B1 batch 3 |
-| `artifacts/extended-resources/` | A20 | ✅ 1 file — B1 batch 3 |
-| `artifacts/portfolio/` | A22 | ✅ 1 file — B1 batch 3 |
-| `artifacts/pmo/` | A23, A36 | ✅ 2 files — B1 batch 4 |
-| `artifacts/closure/` | A24 | ✅ 1 file — B1 batch 4 |
-| `artifacts/knowledge/` | A30 (inferred) | ✅ 1 file — B1 batch 4 |
-| `artifacts/stakeholders-communications/` | A29 (inferred) | ✅ 1 file — B1 batch 4 |
-| `artifacts/team-resources/` | Seeded | 🟡 Seeded |
-| **Templates layer** | None | ❌ 0 done — Phase B2 |
-| **Examples layer** | None | ❌ 0 done — Phase B3 |
-
-**A26 duplicate resolved:** `artifacts/resources/A26-Resource-Capacity-and-Acquisition-Record.md` (title-case, 7,069 bytes older variant) deleted 2026-05-30. Canonical file: `artifacts/resources/A26-resource-capacity-acquisition-record.md`.
+| Actual Folder | Canonical Definition Files | Templates Present | Status |
+|---|---|---|---|
+| `artifacts/initiating/` | A01, A04 | A04-project-charter-template.md | ✅ Clean |
+| `artifacts/governance/` | A05, A34, A35, A37, A39 | — | ✅ Clean |
+| `artifacts/planning-and-baselines/` | A06, A08, A14, A15, A16, A28 | A06-tailoring-decision-record-template.md · A14-integrated-project-management-plan-template.md · A15-schedule-baseline-template.md · A16-financial-baseline-template.md | ✅ Clean |
+| `artifacts/stakeholders/` | A02, A07 | A07-stakeholder-register-template.md | ✅ Clean |
+| `artifacts/quality/` | A09, A13 | — | ✅ Clean |
+| `artifacts/communications/` | A10 | — | ✅ Clean |
+| `artifacts/extended-procurement/` | A11, A33 | — | ✅ Clean |
+| `artifacts/monitoring-and-decisions/` | A12, A17, A18, A19, A20, A21 | — | ✅ Clean |
+| `artifacts/extended-resources/` | A20 | — | ✅ Clean |
+| `artifacts/portfolio/` | A22 | — | ✅ Clean |
+| `artifacts/pmo/` | A23, A36 | — | ✅ Clean |
+| `artifacts/closure/` | A24 | — | ✅ Clean |
+| `artifacts/resources/` | A25, A26 | — | ✅ Clean |
+| `artifacts/procurement/` | A31, A32 | — | ✅ Clean |
+| `artifacts/closing/` | A27 | — | ✅ Clean |
+| `artifacts/knowledge/` | A30 | — | ✅ Clean |
+| `artifacts/stakeholders-communications/` | A29 | — | ✅ Clean |
+| `artifacts/team-resources/` | — | — | 🟡 Seeded |
+| **Templates layer** | — | 6 templates present (A04, A06, A07, A14, A15, A16) | 🟡 B2 in progress |
+| **Examples layer** | — | None | ❌ B3 not started |
 
 ### 1.4 Reference / Shared / Tests Layer
 
@@ -119,22 +112,11 @@
 | Phase 2.2 — Create Pack 06 (3 skills) | Write SKL-06-01 through 06-03 | ✅ All 3 Pack 06 skills present + QA'd |
 | Phase 2.3 — Create Pack 07 Adaptive (4 skills) | Write SKL-07-01 through 07-04 | ✅ All 4 Pack 07 skills present + QA'd |
 | Phase 2.4 — Confirm Pack 01 Pre-Sign | Verify `skills/01-pre-sign/` | ✅ Present as `01-organizational-setup/` — 3 skills confirmed |
-| Phase 3 — Artifact definitions + templates | Populate all A01–A41 definitions, templates, examples | ✅ Definitions: 24+17 = 41 present · A38/A40/A41 consolidated · Templates B2 pending |
+| Phase 3 — Artifact definitions + templates | Populate all A01–A41 definitions, templates, examples | ✅ Definitions: 41 present · A38/A40/A41 consolidated · B2 templates 6/41 done |
 | Phase 4 — Reference layer | Build `reference/` tree | 🟡 Seeded only |
 | Phase 5 — Shared + Tests | Build `shared/` and `tests/` | 🟡 Seeded only |
 | Phase 6 — PMO + AI packs | Design and write Pack PMO + Pack AI | ❌ Not started |
 | Phase 7 — QA sweep | Full quality pass + registry + README update | ✅ Phase A complete |
-
-**New items added in v2.0.0 not in old plan:**
-- Community standards layer ✅ Done
-- CHANGELOG.md ✅ Done (K2 resolved)
-- Book authoring track (Phase I)
-- MCP server design and build track (Phase G)
-- AI agent design track (Phase H)
-- GitHub Actions / CI validation (Phase K)
-- GLOSSARY.md / PMI Lexicon file
-- Artifact templates and examples (explicit plan)
-- Branch protection verification
 
 ---
 
@@ -142,59 +124,19 @@
 
 ### 3.1 ✅ RESOLVED — Phase A QA Complete
 
-All 47 skills upgraded to v1.1.0 on 2026-05-30. QA standard applied across all packs:
-- Pack 04 (9 skills) — v1.1.0 ✅
-- Pack 05 (9 skills) — v1.1.0 ✅
-- Pack 06 (3 skills) — v1.1.0 ✅
-- Pack 07 (4 skills) — v1.1.0 ✅
-
-Commit refs:
-- Pack 06 + 07 QA: `b785ee6` (2026-05-30)
+All 47 skills upgraded to v1.1.0 on 2026-05-30. QA standard applied across all packs.
 
 ### 3.2 ✅ RESOLVED — Phase B1: Artifact Definitions Complete
 
-All 24 originally missing artifact definitions are confirmed present in the repository as of 2026-05-30.
-
-**Vocabulary alignment note:** The v2.2.0 plan table used stale pre-normalization names for some artifacts. The table below reflects the v1.0.5-canonical names actually used in the built files. The plan vocabulary has been updated accordingly.
+All 24 originally missing artifact definitions confirmed present as of 2026-05-30.
 
 **Consolidation decisions (Artifacts-V-1.0.5 authority):**
 
 | Legacy Plan Entry | v1.0.5 Consolidation Decision | Rationale |
 |---|---|---|
-| A38 — AI Risk Register | **Consolidated into A37** (AI, Data, and Privacy Control Record) | v1.0.5 waste rule: AI risk controls belong in one integrated record, not a separate register |
-| A40 — OPM Maturity Assessment | **Consolidated into A36** (PMO Value, Maturity, and Improvement Record) | v1.0.5 consolidation rule: PMO maturity assessment is a sub-function of PMO improvement governance |
-| A41 — Benefits Realization Report | **Consolidated into A24 + A02** (Closure and Benefits Transition Record + Benefits Realization Record) | v1.0.5 waste rule: closure and benefits tracking are unified in A24; post-project benefit ownership in A02 |
-
-**Full B1 build verification table:**
-
-| Priority | ID | Name (v1.0.5 canonical) | Actual Folder | Status |
-|---|---|---|---|---|
-| 🔴 1 | A04 | Project Charter | `artifacts/initiating/` | ✅ Built |
-| 🔴 2 | A01 | Business Case | `artifacts/initiating/` | ✅ Built |
-| 🔴 3 | A05 | Context Register | `artifacts/governance/` | ✅ Built |
-| 🟠 4 | A09 | Quality Management Plan | `artifacts/quality/` | ✅ Built |
-| 🟠 5 | A10 | Communications Management Plan | `artifacts/communications/` | ✅ Built |
-| 🟠 6 | A11 | Procurement Management Plan | `artifacts/extended-procurement/` | ✅ Built |
-| 🟠 7 | A13 | Requirements Traceability Matrix | `artifacts/quality/` | ✅ Built |
-| 🟠 8 | A20 | Team Charter | `artifacts/extended-resources/` | ✅ Built |
-| 🟠 9 | A39 | Change Management Plan | `artifacts/governance/` | ✅ Built |
-| 🟡 10 | A25 | Team Operating and Responsibility Record | `artifacts/resources/` | ✅ Built |
-| 🟡 11 | A22 | Portfolio Interdependency Record | `artifacts/portfolio/` | ✅ Built |
-| 🟡 12 | A29 | Change Readiness and Adoption Record | `artifacts/stakeholders-communications/` | ✅ Built |
-| 🟡 13 | A30 | Knowledge and Lessons Management Record | `artifacts/knowledge/` | ✅ Built |
-| 🟡 14 | A24 | Closure and Benefits Transition Record | `artifacts/closure/` | ✅ Built (absorbs A41) |
-| 🟡 15 | A23 | PMO Improvement Backlog | `artifacts/pmo/` | ✅ Built |
-| 🟡 16 | A26 | Resource Capacity and Acquisition Record | `artifacts/resources/` | ✅ Built (canonical Batch-4 file) |
-| 🟡 17 | A32 | Supplier Evaluation and Award Decision Record | `artifacts/procurement/` | ✅ Built |
-| 🔵 18 | A33 | Supplier Change, Claim, and Compliance Record | `artifacts/extended-procurement/` | ✅ Built |
-| 🔵 19 | A34 | Information Retention and Records Control Record | `artifacts/governance/` | ✅ Built |
-| 🔵 20 | A35 | Governance and Decision Authority Record | `artifacts/governance/` | ✅ Built |
-| 🔵 21 | A36 | PMO Value, Maturity, and Improvement Record | `artifacts/pmo/` | ✅ Built (absorbs A40) |
-| 🔵 22 | A37 | AI, Data, and Privacy Control Record | `artifacts/governance/` | ✅ Built (absorbs A38) |
-| 🔵 23 | A38 | AI Risk Register | — | ✅ Consolidated into A37 |
-| 🔵 24 | A40 | OPM Maturity Assessment | — | ✅ Consolidated into A36 |
-
-**A26 duplicate fix:** `artifacts/resources/A26-Resource-Capacity-and-Acquisition-Record.md` (title-case variant, 7,069 bytes) deleted. Canonical: `A26-resource-capacity-acquisition-record.md`. Commit: `99afad5`.
+| A38 — AI Risk Register | **Consolidated into A37** (AI, Data, and Privacy Control Record) | v1.0.5 waste rule |
+| A40 — OPM Maturity Assessment | **Consolidated into A36** (PMO Value, Maturity, and Improvement Record) | v1.0.5 consolidation rule |
+| A41 — Benefits Realization Report | **Consolidated into A24 + A02** | v1.0.5 waste rule |
 
 ### 3.3 ⚠️ OPEN — Branch Protection
 
@@ -206,19 +148,33 @@ Verify `main` branch protection rules:
 
 ### 3.4 ✅ RESOLVED — CHANGELOG.md Created
 
-`CHANGELOG.md` created at root 2026-05-30. Covers v0.1.0 through v2.3.0. Commit: `848de34`. K2 resolved.
+`CHANGELOG.md` created at root 2026-05-30. Commit: `848de34`. K2 resolved.
 
 ### 3.5 ⚠️ PENDING — SKILL-REGISTRY.md Sync
 
 Verify `SKILL-REGISTRY.md` accurately reflects all 47 skills at v1.1.0 with correct YAML fields, artifact references, and status fields.
 
-### 3.6 ⚠️ PENDING — A05 Duplicate in governance/
+### 3.6 ✅ RESOLVED — A05 Duplicate in governance/
 
-Two A05 files exist in `artifacts/governance/`:
-- `A05-context-register-eef-opa.md` (9,133 bytes)
-- `A05-context-register.md` (11,437 bytes)
+Only `A05-context-register.md` (11,437 bytes) remains in `artifacts/governance/`. The narrower variant `A05-context-register-eef-opa.md` (9,133 bytes) was removed. One canonical A05 per v1.0.5 standard.
 
-Review both files. Delete the older or narrower variant and keep only one canonical A05 per v1.0.5 standard.
+### 3.7 ✅ RESOLVED — Stale Duplicate Definitions Deleted (2026-05-30)
+
+9 stale lowercase/shorter duplicate definition files were deleted. Each artifact now has exactly one canonical definition.
+
+| Deleted File | Folder | Size | Canonical Kept |
+|---|---|---|---|
+| `A14-integrated-project-management-plan.md` | `planning-and-baselines/` | 4,254b | `A14-Integrated-Project-Management-Plan.md` (7,327b) |
+| `A15-schedule-model.md` | `planning-and-baselines/` | 4,462b | `A15-Schedule-Model-and-Baseline-Record.md` (7,755b) |
+| `A16-financial-management-record.md` | `planning-and-baselines/` | 4,304b | `A16-Financial-Management-and-Cost-Baseline-Record.md` (8,384b) |
+| `A19-risk-management-record.md` | `planning-and-baselines/` | 5,082b | `A19-Risk-Management-Record.md` in `monitoring-and-decisions/` (8,592b) |
+| `A26-resource-management-record.md` | `planning-and-baselines/` | 4,408b | `A26-resource-capacity-acquisition-record.md` in `resources/` |
+| `A17-performance-report.md` | `monitoring-and-decisions/` | 6,079b | `A17-Integrated-Performance-Reporting-Record.md` (8,274b) |
+| `A18-issue-log.md` | `monitoring-and-decisions/` | 5,497b | `A18-Issue-Impediment-and-Action-Log.md` (5,848b) |
+| `A21-lessons-learned-record.md` | `closing/` | 5,114b | `A21-Lessons-Learned-Record.md` in `monitoring-and-decisions/` (6,120b) |
+| `A27-closure-record.md` | `closing/` | 5,888b | `A27-Project-Closure-Record.md` (9,370b) |
+
+Commit chain: `cdba9e3` → `32943b2` → `f7ef8c2` → `126d2c6` → `183789b` → `3181d2d` → `f058553` → `b5bdf14` → `00aed28`
 
 ---
 
@@ -241,11 +197,10 @@ Review both files. Delete the older or narrower variant and keep only one canoni
 ---
 
 ### Phase B — Complete Artifact Definitions Layer
-**Priority:** B1 ✅ Complete · B2/B3 next
+**Priority:** B1 ✅ Complete · B2 in progress · B3 not started
 
 #### B1 — Missing Artifact Definitions
 **Status:** ✅ COMPLETE — all 24 artifact definitions built and verified as of 2026-05-30.
-See Section 3.2 for full verification table and consolidation decisions.
 
 #### B2 — Artifact Templates (all confirmed definitions → template files)
 
@@ -255,12 +210,24 @@ For every artifact with a definition file, create `*-template.md`:
 - Content: fillable Markdown with `[FIELD: description]` placeholder syntax
 - Sections must match definition structure exactly
 
-**Priority order:** A04 → A07 → A06 → A14 → A15 → A16 → A17 → A19 → A08 → A12 → A21 → A27 → A28 → A31 → A02 → A03 → A18 → remaining
+**B2 progress as of v2.4.0:**
+
+| Artifact | Template File | Status |
+|---|---|---|
+| A04 — Project Charter | `artifacts/initiating/A04-project-charter-template.md` | ✅ Done |
+| A06 — Tailoring Decision Record | `artifacts/planning-and-baselines/A06-tailoring-decision-record-template.md` | ✅ Done |
+| A07 — Stakeholder Register | `artifacts/stakeholders/A07-stakeholder-register-template.md` | ✅ Done |
+| A14 — Integrated Project Management Plan | `artifacts/planning-and-baselines/A14-integrated-project-management-plan-template.md` | ✅ Done |
+| A15 — Schedule Model and Baseline Record | `artifacts/planning-and-baselines/A15-schedule-baseline-template.md` | ✅ Done |
+| A16 — Financial Management and Cost Baseline Record | `artifacts/planning-and-baselines/A16-financial-baseline-template.md` | ✅ Done |
+| A01, A02, A03, A05, A08–A13, A17–A13, A18–A39 remaining | — | ❌ Not yet built |
+
+**Priority order for remaining templates:** A17 → A19 → A08 → A12 → A21 → A27 → A28 → A31 → A02 → A03 → A18 → remaining
 
 #### B3 — Artifact Examples (top 10 most-referenced)
 
 Create `*-example.md` with realistic, anonymized project scenario for:
-A04 (Charter), A06 (PM Plan), A08 (Scope), A14 (WBS), A15 (Schedule), A16 (Budget), A17 (Performance Report), A19 (Risk Register), A21 (Lessons Learned), A27 (Closure Record)
+A04, A06, A08, A14, A15, A16, A17, A19, A21, A27
 
 ---
 
@@ -299,25 +266,20 @@ FA01–FA05 — each maps: skills in focus area · artifacts triggered · princi
 #### C4 — Process Records (40 files)
 Path: `reference/processes/`
 
-One file per PMBOK 8 process: name, process group, knowledge area, purpose, inputs, tools & techniques, outputs, PMBOK8 figure reference, skill cross-reference.
-
-**Build in batches:** Initiating (2) → Planning (24) → Executing (10) → M&C (12) → Closing (2)
+One file per PMBOK 8 process. Build in batches: Initiating (2) → Planning (24) → Executing (10) → M&C (12) → Closing (2)
 
 #### C5 — Registries
-- `reference/inputs-outputs/inputs-outputs-registry.md` — all 40 processes × I/O
-- `reference/tools-techniques/tools-techniques-registry.md` — all T&T indexed
+- `reference/inputs-outputs/inputs-outputs-registry.md`
+- `reference/tools-techniques/tools-techniques-registry.md`
 
 #### C6 — Appendices
-- `reference/appendices/X2-pmo.md` — prerequisite for Pack PMO
-- `reference/appendices/X3-ai.md` — prerequisite for Pack AI
+- `reference/appendices/X2-pmo.md`
+- `reference/appendices/X3-ai.md`
 - `reference/appendices/X4-procurement.md`
 - `reference/appendices/X5-evolution.md`
 
 #### C7 — Lexicon / Glossary
 Path: `reference/GLOSSARY.md`
-
-Maps every PMBOK 8 term in this repository to its PMI Lexicon definition:
-- Term · Definition (source: PMI Lexicon of Project Management Terms) · First used in (Skill or Artifact ID) · Related terms
 
 ---
 
@@ -325,8 +287,8 @@ Maps every PMBOK 8 term in this repository to its PMI Lexicon definition:
 **Priority:** 🟡 Medium · **Estimated effort:** Medium
 
 #### D1 — Routing Logic
-- `shared/routing/threshold-router.md` — T1–T4 decision routing with decision trees
-- `shared/routing/escalation-paths.md` — escalation path definitions per decision type
+- `shared/routing/threshold-router.md`
+- `shared/routing/escalation-paths.md`
 
 #### D2 — Validators
 - `shared/validators/artifact-completeness-checker.md`
@@ -335,7 +297,6 @@ Maps every PMBOK 8 term in this repository to its PMI Lexicon definition:
 
 #### D3 — Pack Readiness Checklists
 - One file per pack: `shared/checklists/pack-readiness/pack-0X-readiness.md`
-- Pre-gate: `shared/checklists/domain-checklists/closure-readiness.md`
 
 #### D4 — Reusable Field Components
 - `shared/components/field-blocks/id-formats.md`
@@ -349,20 +310,6 @@ Maps every PMBOK 8 term in this repository to its PMI Lexicon definition:
 
 #### E1 — Skill Test Files
 Target: 9 test cases per skill × 47 skills = **423 test case files**
-
-Schema per `tests/README.md`:
-```
-Test ID: T-PP-NN-##
-Skill: SKL-PP-NN
-Preconditions:
-Inputs:
-Expected Outputs:
-Pass Criteria:
-Failure Cases:
-Notes:
-```
-
-**Build order:** Pack 01 (3) → Pack 02 (2) → Pack 03 (17) → Pack 04 (9) → Pack 05 (9) → Pack 06 (3) → Pack 07 (4)
 
 #### E2 — Integration Test Files (7 files)
 
@@ -408,32 +355,7 @@ Notes:
 ### Phase G — MCP Server Design and Build
 **Priority:** 🟡 Medium · **Estimated effort:** High
 
-Create `mcp/` directory:
-
-```
-mcp/
-├── README.md
-├── architecture.md
-├── tool-schemas/
-│   ├── index.md
-│   ├── get-skill.md
-│   ├── get-artifact.md
-│   ├── get-process.md
-│   ├── list-skills-by-pack.md
-│   ├── validate-artifact.md
-│   └── route-decision.md
-├── resource-schemas/
-│   ├── index.md
-│   ├── skill-resource.md
-│   ├── artifact-resource.md
-│   └── reference-resource.md
-├── prompt-contracts/
-│   ├── index.md
-│   ├── execute-skill.md
-│   ├── generate-artifact.md
-│   └── plan-phase.md
-└── endpoints.md
-```
+Create `mcp/` directory with architecture, tool schemas, resource schemas, prompt contracts, and endpoints.
 
 Each tool schema must include: name, description, input schema, output schema, example request/response, error cases, auth requirements.
 
@@ -444,61 +366,18 @@ Each tool schema must include: name, description, input schema, output schema, e
 ### Phase H — AI Agent Design
 **Priority:** 🔵 Medium-Low · **Estimated effort:** High
 
-Create `agents/` directory:
+Create `agents/` directory with 5 agent definitions (PM-AGENT-01 through PM-AGENT-05) plus shared safety rules and schema template.
 
-```
-agents/
-├── README.md
-├── PM-AGENT-01-project-planner.md
-├── PM-AGENT-02-risk-manager.md
-├── PM-AGENT-03-change-controller.md
-├── PM-AGENT-04-stakeholder-manager.md
-├── PM-AGENT-05-pmo-advisor.md
-└── shared/
-    ├── agent-schema-template.md
-    └── safety-rules.md
-```
-
-Each agent definition must include: role definition · operating instructions · tool policy · memory policy · workflow · safety rules · escalation logic · evaluation criteria · sample prompts (3–5) · skill cross-references.
+Each agent definition must include: role definition · operating instructions · tool policy · memory policy · workflow · safety rules · escalation logic · evaluation criteria · sample prompts · skill cross-references.
 
 ---
 
 ### Phase I — Book Authoring Track
 **Priority:** 🔵 Medium-Low · **Estimated effort:** Very High
 
-Create `book/` directory:
+Create `book/` directory with 14 chapters, style guide, and editorial log.
 
-```
-book/
-├── README.md
-├── OUTLINE.md
-├── STYLE-GUIDE.md
-├── chapters/
-│   ├── 00-introduction.md
-│   ├── 01-pmbok8-overview.md
-│   ├── 02-principles.md
-│   ├── 03-performance-domains.md
-│   ├── 04-lifecycle-and-tailoring.md
-│   ├── 05-initiating.md
-│   ├── 06-planning.md
-│   ├── 07-executing.md
-│   ├── 08-monitoring-controlling.md
-│   ├── 09-closing.md
-│   ├── 10-adaptive-hybrid.md
-│   ├── 11-pmo.md
-│   ├── 12-ai-in-projects.md
-│   └── 13-artifacts-reference.md
-└── editorial/
-    ├── review-notes.md
-    └── revision-log.md
-```
-
-**Authoring rules:**
-- Every statement must cite a PMBOK 8 section or companion reference
-- No paraphrasing of PMI copyrighted content — synthesize and interpret
-- Use `artifacts/*/example.md` files as chapter figures
-- Every chapter must include a practical case study section
-- Terminology must match `reference/GLOSSARY.md` at all times
+**Authoring rules:** Every statement must cite a PMBOK 8 section or companion reference. No paraphrasing of PMI copyrighted content — synthesize and interpret. Terminology must match `reference/GLOSSARY.md` at all times.
 
 ---
 
@@ -518,15 +397,15 @@ Every skill file must pass:
 - [ ] `source_type` is one of: `PMI-derived`, `synthesis`, `organization-defined`
 
 #### K2 — CHANGELOG.md
-✅ **RESOLVED** — `CHANGELOG.md` created 2026-05-30. Covers v0.1.0 through v2.3.0. Commit: `848de34`.
+✅ **RESOLVED** — `CHANGELOG.md` created 2026-05-30. Commit: `848de34`.
 
 #### K3 — GitHub Actions CI
 
 Create `.github/workflows/`:
-- `validate-skill-frontmatter.yml` — checks YAML front matter in all skill files
-- `check-broken-links.yml` — validates internal cross-references
-- `lint-markdown.yml` — enforces markdown formatting
-- `registry-sync-check.yml` — verifies SKILL-REGISTRY.md matches actual skill files
+- `validate-skill-frontmatter.yml`
+- `check-broken-links.yml`
+- `lint-markdown.yml`
+- `registry-sync-check.yml`
 
 #### K4 — Versioning Policy
 
@@ -536,8 +415,8 @@ Create `.github/workflows/`:
 | Minor (x.N.0) | New skill(s), new artifact definition(s), new reference file(s) |
 | Major (N.0.0) | New pack, structural reorganization, breaking schema change |
 
-**Current version:** 2.3.0 (post Phase A + B1)
-**Next milestone:** 2.4.0 — Artifact templates complete (Phase B2 done)
+**Current version:** 2.4.0 (post Phase A + B1 + duplicate cleanup)
+**Next milestone:** 2.5.0 — B2 second batch templates complete
 **Target release:** 3.0.0 — All core layers complete (skills + artifacts + reference)
 
 ---
@@ -548,7 +427,7 @@ Create `.github/workflows/`:
 |---|---|---|---|---|
 | A | QA all 47 skills → v1.1.0 (YAML + Tests + Change Log) | Low–Medium | 🔴 Immediate | ✅ **Complete — 2026-05-30** |
 | B1 | Missing artifact definitions — all 24 built | High | 🔴 High | ✅ **Complete — 2026-05-30** |
-| B2 | Artifact templates (all confirmed definitions → templates) | Very High | 🟠 High | ❌ Not done — next |
+| B2 | Artifact templates (all confirmed definitions → templates) | Very High | 🟠 High | 🟡 6/41 done — in progress |
 | B3 | Artifact examples (top 10) | Medium | 🟡 Medium | ❌ Not done |
 | C1–C3 | Reference: 12 principles + 8 domains + 5 focus areas | High | 🟠 Medium-High | 🟡 Index only |
 | C4–C5 | Reference: 40 process records + I/O + T&T registries | Very High | 🟡 Medium | ❌ Not done |
@@ -564,22 +443,22 @@ Create `.github/workflows/`:
 | K | QA + CI/CD + CHANGELOG + registry + README (ongoing) | Ongoing | 🟡 Ongoing | 🟡 K2 done · K1/K3 pending |
 
 **Skills layer (Packs 01–07): ✅ 47/47 complete and QA'd at v1.1.0.**
-**Artifacts layer (B1): ✅ 41 definitions present (17 original + 24 B1 built). A38/A40/A41 consolidated.**
+**Artifacts layer (B1): ✅ 41 definitions present. A38/A40/A41 consolidated. All duplicates resolved.**
+**Artifacts layer (B2): 🟡 6 templates present (A04, A06, A07, A14, A15, A16). Remaining: ~35 templates pending.**
 
 ---
 
 ## 6. Recommended Session Order
 
-1. **Current session:** Resolve A05 duplicate in `artifacts/governance/` (Section 3.6)
-2. **Session +1:** Phase B2 — Artifact templates (A04, A07, A06, A14, A15, A16 first batch)
-3. **Session +2:** Phase B2 continued — A17, A19, A08, A12, A21, A27, A28, A31
-4. **Session +3:** Phase B2 continued — remaining artifact templates
-5. **Session +4:** Phase B3 — Artifact examples (top 10)
-6. **Session +5:** Phase C1–C3 — Principles files (12) + Domain files (8)
-7. **Session +6:** Phase C4–C5 — Process records (batch 10 at a time)
-8. **Session +7:** Phase C6–C7 — Appendices + GLOSSARY
-9. **Session +8:** Phase G — MCP server design documents
-10. **Sessions beyond:** Phase D + E, Phase F, Phase H, Phase I (book)
+1. **Next session:** Phase B2 continued — build templates for A17, A19, A08, A12, A21, A27, A28, A31
+2. **Session +2:** Phase B2 continued — A02, A03, A18, A20, A22, A23, A24, A25
+3. **Session +3:** Phase B2 final — remaining artifact templates
+4. **Session +4:** Phase B3 — Artifact examples (top 10)
+5. **Session +5:** Phase C1–C3 — Principles files (12) + Domain files (8)
+6. **Session +6:** Phase C4–C5 — Process records (batch 10 at a time)
+7. **Session +7:** Phase C6–C7 — Appendices + GLOSSARY
+8. **Session +8:** Phase G — MCP server design documents
+9. **Sessions beyond:** Phase D + E, Phase F, Phase H, Phase I (book)
 
 ---
 
@@ -591,11 +470,12 @@ Create `.github/workflows/`:
 | 2.0.0 | 2026-05-30 | Full rebuild: added MCP server (Phase G), AI agents (Phase H), book authoring (Phase I), CI/CD (Phase K), community standards, CHANGELOG, GLOSSARY, branch protection, extended packs F1/F2, artifact templates + examples |
 | 2.1.0 | 2026-05-30 | Correction: Skills inventory updated after direct repo verification. All 47 core skills confirmed present. Phase A revised to QA-only. Scorecard and session order revised. |
 | 2.2.0 | 2026-05-30 | Progress update: Phase A fully complete — all 47 skills upgraded to v1.1.0. Phase B1 marked In Progress. Artifact folder structure confirmed. 24 missing definitions listed with build order and folder assignments. |
-| 2.3.0 | 2026-05-30 | Phase B1 confirmed complete. Artifact table corrected to actual v1.0.5 folder layout. A38/A40/A41 consolidation decisions documented. A26 duplicate deleted (`99afad5`). CHANGELOG.md created (`848de34`). A05 duplicate flagged (Section 3.6). Scorecard updated. |
+| 2.3.0 | 2026-05-30 | Phase B1 confirmed complete. Artifact table corrected to actual v1.0.5 folder layout. A38/A40/A41 consolidation decisions documented. A26 duplicate deleted. CHANGELOG.md created (K2 resolved). A05 duplicate flagged. Scorecard updated. |
+| 2.4.0 | 2026-05-30 | 9 stale duplicate definition files deleted (see Section 3.7). A05 duplicate confirmed resolved. Artifact table updated to clean post-dedup state. B2 progress table added (6 templates confirmed). Scorecard and session order updated. |
 
 ---
 
 *Authority: PMBOK8 Guide Primary · PMI Companion References Secondary*
 *Repository: [https://github.com/fakhruldeen/PMOSkills](https://github.com/fakhruldeen/PMOSkills)*
 *Maintainer: @fakhruldeen*
-*Last Updated: 2026-05-30 21:00 EEST · Version 2.3.0*
+*Last Updated: 2026-05-30 · Version 2.4.0*
