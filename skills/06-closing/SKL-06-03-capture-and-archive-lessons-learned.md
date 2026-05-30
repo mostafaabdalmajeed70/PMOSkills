@@ -1,9 +1,34 @@
+---
+skill_id: SKL-06-03
+name: Capture and Archive Lessons Learned
+pack: "06 — Closing"
+version: 1.1.0
+status: "Draft · Untested"
+source_type: PMI-derived
+authority: PMI-derived
+pmbok8_anchor: "Guide §2.1.6.4 Manage Project Knowledge (closing activation)"
+performance_domains:
+  - Governance
+  - Team
+focus_area: Closing
+primary_artifact: "A21 — Lessons Learned Register (Final version)"
+artifacts_updated:
+  - "A05 — OPA"
+upstream_prerequisites:
+  - SKL-06-01
+  - SKL-06-02
+  - "SKL-07-03 (retrospective inputs, if applicable)"
+downstream_skills: []
+file_path: skills/06-closing/SKL-06-03-capture-and-archive-lessons-learned.md
+tests: 9
+---
+
 # SKL-06-03 — Capture and Archive Lessons Learned
 
 **Skill ID:** SKL-06-03  
 **Pack:** 06 — Closing  
-**Version:** 1.0.0  
-**Status:** Active  
+**Version:** 1.1.0  
+**Status:** Draft · Untested  
 **Authority:** PMI-derived  
 **Primary Reference:** Process-Groups §8.1 · PMBOK 8 — Close Project or Phase · Manage Project Knowledge  
 **Secondary References:** Artifacts-V-1.1.md (A21 — Lessons Learned Register · A05 — OPA)  
@@ -177,6 +202,22 @@ Use consistent tags for OPA retrievability:
 
 ---
 
+## Tests
+
+| Test ID | Test Description | Pass Condition | Fail Condition |
+|---|---|---|---|
+| T01 | All LL entries have LL-ID assigned | Every entry has a unique LL-[PROJ]-[NNN] identifier | Any entry without LL-ID |
+| T02 | Category tag present on every entry | Every entry has at least one category tag selected | Any entry with no category |
+| T03 | Root cause populated on every entry | Root Cause field is non-blank | Any root cause field blank |
+| T04 | All High-impact entries have OPA update recommendation | OPA Update = Yes with named target | High-impact entry with OPA Update = No or blank |
+| T05 | Final A21 reviewed by PM | PM Validation = Confirmed with date | PM Validation unchecked |
+| T06 | Sponsor acknowledged | Sponsor Awareness = Notified with date | Sponsor row blank |
+| T07 | PMO archive reference assigned | PMO Archived = Yes with archive reference | Archive reference blank |
+| T08 | Distribution copy sent | PMO, program manager, portfolio receipt confirmed | No distribution record |
+| T09 | OPA template/checklist updates submitted | OPA improvement requests filed for all flagged entries | Flagged entries with no follow-up |
+
+---
+
 ## Validation Criteria
 
 This skill output is valid when:
@@ -212,5 +253,14 @@ This skill output is valid when:
 
 ---
 
+## Change Log
+
+| Version | Date | Author | Change Description |
+|---|---|---|---|
+| 1.0.0 | 2026-05-29 | PMO Repository | Initial build |
+| 1.1.0 | 2026-05-30 | QA Phase A | Added YAML front matter, Tests table (T01–T09), Change Log |
+
+---
+
 *Authority: PMI-derived — Process-Groups §8.1 · PMBOK 8 · Manage Project Knowledge*  
-*PMO Skill Repository v1.0.0 · Pack 06 — Closing*
+*PMO Skill Repository v1.1.0 · Pack 06 — Closing*

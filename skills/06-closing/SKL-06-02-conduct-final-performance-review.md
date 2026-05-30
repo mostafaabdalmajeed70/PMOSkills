@@ -1,9 +1,33 @@
+---
+skill_id: SKL-06-02
+name: Conduct Final Performance Review
+pack: "06 — Closing"
+version: 1.1.0
+status: "Draft · Untested"
+source_type: PMI-derived
+authority: PMI-derived
+pmbok8_anchor: "Guide §2.4.2 · §2.3.2 · §2.7.2 (closing performance synthesis)"
+performance_domains:
+  - Measurement
+  - Governance
+focus_area: Closing
+primary_artifact: "A17 — Final Performance Report"
+artifacts_updated:
+  - "A27 — Closure Record (performance summary section)"
+upstream_prerequisites:
+  - SKL-06-01
+downstream_skills:
+  - SKL-06-03
+file_path: skills/06-closing/SKL-06-02-conduct-final-performance-review.md
+tests: 9
+---
+
 # SKL-06-02 — Conduct Final Performance Review
 
 **Skill ID:** SKL-06-02  
 **Pack:** 06 — Closing  
-**Version:** 1.0.0  
-**Status:** Active  
+**Version:** 1.1.0  
+**Status:** Draft · Untested  
 **Authority:** PMI-derived  
 **Primary Reference:** Process-Groups §8.1 · PMBOK 8 — Close Project or Phase · EVM reference  
 **Secondary References:** Artifacts-V-1.1.md (A17 — Project Performance Report)  
@@ -242,6 +266,22 @@ Activate this skill when:
 
 ---
 
+## Tests
+
+| Test ID | Test Description | Pass Condition | Fail Condition |
+|---|---|---|---|
+| T01 | All 10 performance sections populated in A17 | Sections 1–10 all contain data | Any section blank or missing |
+| T02 | EVM metrics computed from final actuals | CPI, SPI, EAC, VAC, TCPI all present with source reference | Any metric estimated, not actual |
+| T03 | Variance root causes documented | Root cause narrative present for all variances > threshold | Variances listed without explanation |
+| T04 | Lessons Learned summary references A21 | Section 10 contains explicit A21 reference | Section 10 absent or has no A21 reference |
+| T05 | Final Report approved by sponsor | Signature block in §12 has sponsor sign-off | Sponsor row blank |
+| T06 | Report archived to OPA before closure record signed | OPA archive reference on A17 | No archive reference |
+| T07 | Benefits realization owner named | Section 9 has named owner for post-project benefits | Section 9 blank or "TBD" |
+| T08 | Reserve utilization documented | Contingency and management reserve drawdown recorded | Reserve rows blank |
+| T09 | Procurement performance section complete | All contracts listed in §8 with final cost and variance | §8 blank or incomplete |
+
+---
+
 ## Validation Criteria
 
 This skill output is valid when:
@@ -279,5 +319,14 @@ This skill output is valid when:
 
 ---
 
+## Change Log
+
+| Version | Date | Author | Change Description |
+|---|---|---|---|
+| 1.0.0 | 2026-05-29 | PMO Repository | Initial build |
+| 1.1.0 | 2026-05-30 | QA Phase A | Added YAML front matter, Tests table (T01–T09), Change Log |
+
+---
+
 *Authority: PMI-derived — Process-Groups §8.1 · PMBOK 8 · EVM reference*  
-*PMO Skill Repository v1.0.0 · Pack 06 — Closing*
+*PMO Skill Repository v1.1.0 · Pack 06 — Closing*

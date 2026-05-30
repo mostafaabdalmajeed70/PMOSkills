@@ -1,9 +1,39 @@
+---
+skill_id: SKL-06-01
+name: Close Project or Phase
+pack: "06 — Closing"
+version: 1.1.0
+status: "Draft · Untested"
+source_type: PMI-derived
+authority: PMI-derived
+pmbok8_anchor: "Guide §2.1.6.7 Close Project or Phase · Figure 2-9"
+performance_domains:
+  - Governance
+  - Delivery
+  - Stakeholders
+focus_area: Closing
+primary_artifact: "A27 — Project Closure Record"
+artifacts_updated:
+  - A14
+  - A05
+  - A21
+upstream_prerequisites:
+  - SKL-05-01
+  - SKL-05-06
+  - "All deliverables accepted"
+downstream_skills:
+  - SKL-06-02
+  - SKL-06-03
+file_path: skills/06-closing/SKL-06-01-close-project-or-phase.md
+tests: 9
+---
+
 # SKL-06-01 — Close Project or Phase
 
 **Skill ID:** SKL-06-01  
 **Pack:** 06 — Closing  
-**Version:** 1.0.0  
-**Status:** Active  
+**Version:** 1.1.0  
+**Status:** Draft · Untested  
 **Authority:** PMI-derived  
 **Primary Reference:** Process-Groups §8.1 · PMBOK 8 — Close Project or Phase focus area  
 **Secondary References:** Forms-Book · Artifacts-V-1.1.md (A27 — Project Closure Record)  
@@ -241,6 +271,22 @@ When a project is terminated before completion, this skill governs documentation
 
 ---
 
+## Tests
+
+| Test ID | Test Description | Pass Condition | Fail Condition |
+|---|---|---|---|
+| T01 | All deliverables listed in Acceptance Register | Every deliverable has accepted-by name and date | Any row missing sign-off |
+| T02 | Issue Log fully resolved | All issues = Closed or Deferred with notation | Any open issue without deferral note |
+| T03 | All contracts confirmed closed | Procurement log shows Closed status for each contract | Any contract status = Active or Open |
+| T04 | Lessons Learned archived to OPA | A21 status = Archived; PMO archive reference present | A21 status = Draft at closure |
+| T05 | Final Report distributed | A17 distribution record exists | No distribution record |
+| T06 | Transition confirmed | Receiving entity sign-off present in A27 §10 | Section 10 blank |
+| T07 | Project Closure Record fully signed | All signature rows in §11 populated | Any signature row blank |
+| T08 | Early termination procedure followed (if applicable) | All 8 steps documented if closure type = Early Termination | Steps missing or incomplete |
+| T09 | OPA updates submitted | OPA update record filed with PMO | No OPA update record |
+
+---
+
 ## Validation Criteria
 
 This skill output is valid when:
@@ -279,5 +325,14 @@ This skill output is valid when:
 
 ---
 
+## Change Log
+
+| Version | Date | Author | Change Description |
+|---|---|---|---|
+| 1.0.0 | 2026-05-29 | PMO Repository | Initial build |
+| 1.1.0 | 2026-05-30 | QA Phase A | Added YAML front matter, Tests table (T01–T09), Change Log |
+
+---
+
 *Authority: PMI-derived — Process-Groups §8.1 · PMBOK 8 Close Project or Phase*  
-*PMO Skill Repository v1.0.0 · Pack 06 — Closing*
+*PMO Skill Repository v1.1.0 · Pack 06 — Closing*
