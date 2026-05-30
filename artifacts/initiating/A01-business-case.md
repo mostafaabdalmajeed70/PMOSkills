@@ -2,188 +2,171 @@
 artifact_id: A01
 name: Business Case
 version: 1.0.0
-status: "Definition · Active"
-category: Initiating
-authority: "PMBOK8 Guide §1.2 · Process Groups Practice Guide §3.1 · Standard §3 (Value Principle)"
+status: Active
+category: Authorization
+governance_layer: Portfolio / Project Governance
 source_type: PMI-derived
-pmbok8_anchor: "PMBOK8 Guide §1.2 · Figure 1-4"
+pmbok8_anchor: "PMBOK8 Guide §2.1.1 Governance Performance Domain; §4.5.1 Initiate Project or Phase"
+authority: PMI-derived
+performance_domains:
+  - Governance
+  - Finance
+  - Stakeholders
+focus_areas:
+  - Initiating
 required_by_skills:
   - SKL-02-01
-  - SKL-06-01
 created_by_skills:
   - SKL-02-01
-file_path: artifacts/initiating/A01-business-case.md
+linked_artifacts:
+  - A02
+  - A03
+  - A04
+  - A10
 ---
 
 # A01 — Business Case
+
 **Artifact ID:** A01  
-**Artifact Name:** Business Case  
+**Name:** Business Case  
 **Version:** 1.0.0  
-**Status:** Definition · Active  
-**Authority:** PMBOK8 Guide §1.2 · Process Groups Practice Guide §3.1 · Standard §3 (Value Principle)  
+**Status:** Active  
 **Source Type:** PMI-derived  
-**File Path:** `artifacts/initiating/A01-business-case.md`
+**Governance Layer:** Portfolio / Project Governance  
+**Authority:** PMBOK8 Guide §2.1.1 Governance Performance Domain; §4.5.1 Initiate Project or Phase  
 
 ---
 
-## Definition
+## 1. Purpose
 
-A01 is the pre-authorization document that provides the justification for undertaking a project. It analyzes the problem or opportunity, evaluates alternative solutions, and recommends the preferred option with its expected benefits, costs, and risks. It is the primary strategic input to the Project Charter (A04) and the Benefits Record (A02).
+The Business Case documents the justification for undertaking a project or program. It establishes the value rationale, aligns the proposed investment with organizational strategy, summarizes options considered, and provides the authorization basis for the portfolio or sponsoring authority to approve or reject the investment.
 
-**PMI Source:** PMBOK8 Guide §1.2 — Project Business Documents; Process Groups Practice Guide §3.1.
-
----
-
-## Artifact Type
-
-| Field | Value |
-|---|---|
-| **Category** | Initiating |
-| **Type** | Pre-authorization justification document |
-| **Lifecycle** | Created before project authorization · Referenced in Initiating · Reviewed at phase gates · Closed at project close |
-| **Baseline?** | Business case is baselined at authorization; changes require sponsor review |
-| **Ownership** | Sponsor / Portfolio / Business Owner |
+The business case answers the fundamental governance question: *Why should this project be undertaken, and is it the right use of organizational resources?* It remains a living reference throughout the project lifecycle — it is revalidated at major decision points to confirm the investment thesis still holds.
 
 ---
 
-## Purpose
-
-- Justify the investment of organizational resources in the project
-- Document the problem or opportunity being addressed
-- Evaluate alternative options including a "do nothing" baseline
-- Define expected benefits, costs, ROI, and payback period
-- Establish success criteria for benefits realization
-- Provide strategic alignment evidence (portfolio / program fit)
-- Serve as the authorization trigger for A04 Project Charter
-
----
-
-## Sections
-
-| Section | Content | Populated By |
-|---|---|---|
-| §1 Executive Summary | 1-page summary of problem, recommended solution, and key financials | Sponsor / Business Owner |
-| §2 Problem / Opportunity Statement | Clear definition of what business problem or opportunity the project addresses | Sponsor |
-| §3 Strategic Alignment | Link to organizational strategy, portfolio, or program | Sponsor / PMO |
-| §4 Options Analysis | ≥3 options evaluated: do nothing, minimum viable, preferred solution | PM / Business Analyst |
-| §5 Recommended Option | Detailed description of the recommended approach | PM / Sponsor |
-| §6 Benefits Analysis | Quantified benefits: financial (ROI, NPV, IRR, payback) and non-financial | PM / Finance |
-| §7 Cost Estimate | High-level cost estimate for recommended option (capital + operational) | PM / Finance |
-| §8 Risk Summary | Top risks to benefits realization (detailed in A19) | PM |
-| §9 Assumptions | Key assumptions on which benefits projections rest | PM / Sponsor |
-| §10 Benefits Realization Timeline | When benefits are expected to be realized (input to A02) | PM / Sponsor |
-| §11 Approval and Signatures | Business owner / sponsor authorization | Sponsor |
-
----
-
-## Required Fields
-
-| Field | Description | Required |
-|---|---|---|
-| Problem / Opportunity | Clear statement of what the project solves or captures | Mandatory |
-| Strategic Alignment | Link to strategic objective or portfolio goal | Mandatory |
-| Options Analyzed | ≥2 alternatives documented and compared | Mandatory |
-| Recommended Option | Single preferred solution with rationale | Mandatory |
-| Financial Metrics | At least one: ROI / NPV / IRR / payback period | Mandatory |
-| Expected Benefits | Quantified (financial and/or non-financial) | Mandatory |
-| Cost Estimate | Order-of-magnitude or preliminary estimate | Mandatory |
-| Approval Signature | Authorized sponsor signature | Mandatory |
-| Risk Summary | ≥1 top risk to benefits realization | Recommended |
-| Benefits Timeline | Expected benefit realization dates | Recommended |
-
----
-
-## Inputs
-
-| Input | Source | Notes |
-|---|---|---|
-| Strategic plan / portfolio registry | Portfolio / Exec | Strategic context and alignment evidence |
-| A05 — Context Register (EEF/OPA) | SKL-01-02 | Org policies, market data, historical costs |
-| Market / feasibility research | Business analyst | Problem / opportunity quantification |
-| Financial models | Finance / PMO | NPV, ROI, payback calculation |
-| Expert judgment | Sponsor, SMEs, PMO | Options evaluation |
-
----
-
-## Outputs / Produces
-
-| Output | Used By |
-|---|---|
-| Justification and strategic alignment | A04 — Project Charter |
-| Benefits metrics and timeline | A02 — Benefits Record |
-| Cost and risk summary | A04 §7 (Budget) · A19 (Risk Register) |
-| Approved investment decision | Portfolio / governance body |
-
----
-
-## Scope Boundaries
+## 2. Scope
 
 | In Scope | Out of Scope |
 |---|---|
-| Pre-authorization business justification | Detailed project scope definition (see A08) |
-| High-level options analysis | Technical design or architecture decisions |
-| Financial case for the project | Detailed cost estimates (see A16) |
-| Benefits expected from the project | Benefits measurement tracking (see A02) |
+| Strategic need or problem/opportunity statement | Detailed project management plan or execution approach |
+| Alignment with organizational strategy and objectives | Detailed requirements specifications |
+| Options considered and option selected | Detailed risk analysis or risk register |
+| Expected benefits and value outcomes | Procurement strategy or contract terms |
+| High-level financial analysis (costs, benefits, ROI, payback) | Stakeholder engagement strategy |
+| Major risks and assumptions at investment level | Technical design or architecture |
+| Recommendation to proceed, defer, or reject | Post-project benefits tracking (belongs in A02) |
+| Success criteria at investment level | Tailoring decisions |
+| Affordability summary and funding request | Detailed schedule or resource plan |
 
 ---
 
-## Financial Metrics Reference
+## 3. Trigger Conditions
 
-| Metric | Definition | Notes |
+The Business Case is created when:
+
+- A business need, problem, or opportunity has been identified that may require organizational investment.
+- A portfolio authority or sponsoring body requires a formal investment justification before authorizing work.
+- An existing initiative is undergoing major revalidation due to changed strategy, market conditions, or performance.
+
+The business case is updated or revalidated when:
+
+- A major phase gate or decision point requires re-confirmation that the investment case still holds.
+- Material changes to expected costs, benefits, or strategic alignment occur.
+- A change request proposes a scope or investment change that alters the original value rationale.
+- Project performance indicates that the expected benefits are no longer achievable.
+
+---
+
+## 4. Required Sections / Fields
+
+Every Business Case must include the following fields:
+
+| Field | Description | Required |
 |---|---|---|
-| **ROI** | (Net Benefit / Total Cost) × 100 | Simple return measure |
-| **NPV** | Sum of discounted future cash flows minus initial investment | Preferred for multi-year projects |
-| **IRR** | Discount rate at which NPV = 0 | Compare against cost of capital |
-| **Payback Period** | Time to recover initial investment from net cash flows | Simple liquidity measure |
-| **BCR** | Benefit-Cost Ratio = PV of benefits / PV of costs | BCR > 1 = viable |
+| Business need | The problem, opportunity, or regulatory driver that motivates the investment | Mandatory |
+| Strategic alignment | How the proposed project aligns with organizational strategy and objectives | Mandatory |
+| Options considered | At minimum two options, including the do-nothing option where applicable | Mandatory |
+| Recommended option | The option recommended for approval with rationale | Mandatory |
+| Expected benefits | Quantified or described benefits — financial and non-financial | Mandatory |
+| Major risks and assumptions | Investment-level risks and key assumptions that could invalidate the case | Mandatory |
+| Affordability summary | Indicative cost, funding source, and affordability conclusion | Mandatory |
+| Success criteria | How the investment will be recognized as successful | Mandatory |
+| Recommendation | Proceed, defer, or reject — with recommended next action | Mandatory |
+| Owner | Named individual responsible for the business case | Mandatory |
+| Constraints | Key constraints that bound the options or investment | Recommended |
+| Revalidation triggers | Conditions that require the case to be reviewed before the next phase gate | Recommended |
+
+**Format guidance:** Scale to context. A lightweight initiative may require only a one-page business case. Large or regulated investments may require a detailed structured document. The test is whether the business case answers the authorization question — not whether it meets a minimum page count.
 
 ---
 
-## Quality Criteria
+## 5. PMBOK 8 Authority
 
-- Business case exists and is approved before A04 Project Charter is signed
-- ≥2 alternatives evaluated including a "do nothing" option
-- Financial metrics are calculated (not estimated verbally)
-- Benefits are quantified — not described only qualitatively
-- Strategic alignment is traced to a named organizational objective
-- Risk summary identifies the top threats to benefits realization
-- Business case reviewed and confirmed still valid at each phase gate
+| Source | Section | Purpose of Citation |
+|---|---|---|
+| PMBOK8 Guide | §2.1.1 Governance Performance Domain | Establishes value rationale, authorization context, and alignment with project initiation |
+| PMBOK8 Guide | §4.5.1 Initiate Project or Phase | Confirms the business case as an input to the initiation process that leads to the Project Charter |
+| PMBOK8 Standard | The Standard for Project Management §2.1 | Links value delivery thinking to the authorization basis for projects |
+| PMO-Guide | PMO governance and project intake sections | Establishes the business case as the primary input to portfolio intake and prioritization |
+| PMI Lexicon | Business Case definition | Canonical PMI definition: a documented economic feasibility study used to establish validity of the benefits of a selected component lacking sufficient definition and that is used as a basis for the authorization of further project management activities |
 
 ---
 
-## Related Artifacts
+## 6. Used By (Skills That Consume This Artifact)
 
-| Artifact | Relationship |
+| Skill ID | Skill Name | How Used |
+|---|---|---|
+| SKL-02-01 | Initiate the Project | Business case is the primary input to project charter development |
+| SKL-03-02 | Develop Project Management Plan | Business case success criteria inform the planning baseline |
+| SKL-05-01 | Monitor and Control Project Work | Business case benefits and success criteria are referenced during performance monitoring |
+| SKL-06-01 | Close Project or Phase | Business case value expectations are validated during closure |
+| SKL-06-02 | Final Performance Review | Business case provides the original investment benchmark for final performance assessment |
+
+---
+
+## 7. Created By (Skills That Produce This Artifact)
+
+| Skill ID | Skill Name | How Produced |
+|---|---|---|
+| SKL-02-01 | Initiate the Project | Reviews, validates, or produces the business case as part of project initiation activities |
+
+---
+
+## 8. Linked Artifacts
+
+| Artifact ID | Artifact Name | Relationship |
+|---|---|---|
+| A02 | Benefits and Value Measurement Record | Business case is the source document for benefits identification — A02 tracks benefits realization post-authorization |
+| A03 | Feasibility and Viable Options Record | Feasibility analysis (A03) is a predecessor to or input into the business case options section |
+| A04 | Project Charter | Business case is the primary input to charter development — the charter formally authorizes what the business case recommends |
+| A10 | Intake and Prioritization Decision Record | Business case is the primary submission document for portfolio intake and prioritization |
+| A06 | Tailoring Decision Record | Business case complexity and risk profile inform tailoring decisions |
+| A16 | Financial Management and Cost Baseline Record | Business case affordability summary is the precursor to the detailed financial baseline |
+
+---
+
+## 9. Validation Criteria
+
+A Business Case is considered valid when it meets all of the following:
+
+| Check | Validation Rule |
 |---|---|
-| A04 — Project Charter | A01 is the primary authorization trigger for A04 |
-| A02 — Benefits Record | A01 §10 (Benefits Timeline) seeds A02 |
-| A05 — Context Register | EEF/OPA provide inputs to A01 options and cost analysis |
-| A19 — Risk Register | A01 risk summary seeds initial risk register |
-| A16 — Budget | A01 cost estimate is the pre-authorization funding reference |
-| A27 — Closure Record | Benefits realized vs. A01 projections reported at closure |
+| Strategic alignment stated | Explicit link to at least one organizational strategy objective or program goal |
+| Options analysis present | At least two options evaluated, including a do-nothing or defer option |
+| Benefits quantified or described | Expected benefits are stated with at minimum a qualitative description — financial benefits include a numeric estimate where applicable |
+| Risks and assumptions identified | At least three investment-level risks or assumptions that could invalidate the case are listed |
+| Recommendation present | A clear proceed, defer, or reject recommendation with rationale is included |
+| Approval evidence | An approval signature, electronic approval reference, or portfolio decision record is attached or referenced |
+| Revalidation plan | At minimum one revalidation trigger condition is identified |
+| Waste test pass | Passes waste test — repeated value statements are not restated in multiple downstream templates without adding a new decision |
+
+**Waste test:** Fail if the full business case content is duplicated inside the project charter. Fail if a benefits realization plan, strategic value tracker, and objective verification sheet all contain the same benefit statements without distinct decision value. Fail if the business case is never revalidated after material changes to scope, cost, or expected benefits.
 
 ---
 
-## PMBOK8 Anchors
-
-| Reference | Detail |
-|---|---|
-| PMBOK8 Guide §1.2 | Project Business Documents — Business Case |
-| PMBOK8 Guide §1.2.1 | Business case content and purpose |
-| Process Groups PG §3.1 | Develop Project Charter — Business Case as input |
-| PMBOK8 Standard §3 | Value principle — projects exist to deliver value |
-| PMI Lexicon | "Business Case" — documented economic feasibility study |
-
----
-
-## Change Log
+## 10. Change Log
 
 | Version | Date | Author | Change Description |
 |---|---|---|---|
-| 1.0.0 | 2026-05-30 | B1 Batch 1 | Initial definition — Phase B1 |
-
----
-
-*Owner: Business Owner / Sponsor*  
-*Change Control: Business case changes require sponsor and portfolio authorization (T3 per AUTHORITY-ROUTING.md)*  
-*Last Updated: 2026-05-30 · B1 Batch 1*
+| 1.0.0 | 2026-05-30 | @fakhruldeen | Initial definition — Phase B1 Priority 2 |
