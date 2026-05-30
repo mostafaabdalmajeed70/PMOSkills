@@ -1,16 +1,16 @@
 # PMOSkills Repository — Master Development Plan
-**Version:** 2.1.0
+**Version:** 2.2.0
 **Date:** 2026-05-30
 **Repository:** [https://github.com/fakhruldeen/PMOSkills](https://github.com/fakhruldeen/PMOSkills)
 **Authority:** PMBOK 8 Primary · PMI Companion References Secondary
 **Status:** Active roadmap — supersedes NEXT-STEPS-PLAN.md v1.0.0 (2026-05-29)
 **Supersedes:** `NEXT-STEPS-PLAN.md` v1.0.0
 
-> **v2.1.0 correction note:** Skills layer inventory corrected after direct repo verification. All 47 core skills across Packs 01–07 are confirmed present. Phases B1–B3 (previously marked ❌ Not done) are now marked ✅ Complete. Phase A repairs updated accordingly. Execution scorecard and session order revised.
+> **v2.2.0 update note:** Phase A fully complete — all 47 skills (Packs 01–07) upgraded to v1.1.0 with YAML front matter, Tests table (T01–T09), and Change Log in a single QA sweep. Pack 06 (3 skills) and Pack 07 (4 skills) fixed in session 2026-05-30. Phase B1 now in progress — artifact directory structure confirmed, 24 missing definitions identified and build order locked.
 
 ---
 
-## 1. Current State Assessment (as of 2026-05-30)
+## 1. Current State Assessment (as of 2026-05-30 18:00 EEST)
 
 ### 1.1 Repository Structure
 
@@ -28,54 +28,56 @@
 | `SECURITY.md` | ✅ Present | Secrets, PII, AI agent security |
 | `.github/ISSUE_TEMPLATE/` | ✅ Present | 3 templates: bug, content, improvement |
 | `.github/pull_request_template.md` | ✅ Present | Full PMBOK-quality PR checklist |
-| `MASTER-PLAN-V2.md` | ✅ Present | This document |
+| `MASTER-PLAN-V2.md` | ✅ v2.2.0 | This document — updated 2026-05-30 |
 | `LICENSE` | ✅ Present | |
 | `.gitignore` | ✅ Present | |
 
-### 1.2 Skills Layer — Verified from Repository (2026-05-30)
+### 1.2 Skills Layer — All 47 Complete and QA'd ✅
 
-> All file counts verified by direct directory inspection. No assumptions.
+> All 47 skills confirmed present and upgraded to v1.1.0 on 2026-05-30.
+> Every file now contains: YAML front matter · Tests table (T01–T09) · Change Log.
 
-| Pack | Folder | Skills Confirmed | Count | Status |
-|---|---|---|---|---|
-| Pack 01 — Org Setup | `skills/01-organizational-setup/` | SKL-01-01, 01-02, 01-03 | 3/3 | ✅ Complete |
-| Pack 02 — Initiating | `skills/02-initiating/` | SKL-02-01, 02-02 | 2/2 | ✅ Complete |
-| Pack 03 — Planning | `skills/03-planning/` | SKL-03-01 through 03-17 | 17/17 | ✅ Complete |
-| Pack 04 — Executing | `skills/04-executing/` | SKL-04-01 through 04-09 | 9/9 | ✅ Complete |
-| Pack 05 — Monitoring & Controlling | `skills/05-monitoring-controlling/` | SKL-05-01 through 05-09 | 9/9 | ✅ Complete |
-| Pack 06 — Closing | `skills/06-closing/` | SKL-06-01, 06-02, 06-03 | 3/3 | ✅ Complete |
-| Pack 07 — Adaptive & Hybrid | `skills/07-adaptive-hybrid/` | SKL-07-01 through 07-04 | 4/4 | ✅ Complete |
-| Pack PMO | `skills/08-pmo/` *(proposed)* | None | 0/6 | ❌ Not started |
-| Pack AI | `skills/09-ai/` *(proposed)* | None | 0/4 | ❌ Not started |
-| **TOTAL (core packs 01–07)** | | **All 47 confirmed** | **47/47** | ✅ **Skills layer complete** |
+| Pack | Folder | Skills | Count | Version | Status |
+|---|---|---|---|---|---|
+| Pack 01 — Org Setup | `skills/01-organizational-setup/` | SKL-01-01, 01-02, 01-03 | 3/3 | v1.1.0 | ✅ Complete + QA'd |
+| Pack 02 — Initiating | `skills/02-initiating/` | SKL-02-01, 02-02 | 2/2 | v1.1.0 | ✅ Complete + QA'd |
+| Pack 03 — Planning | `skills/03-planning/` | SKL-03-01 through 03-17 | 17/17 | v1.1.0 | ✅ Complete + QA'd |
+| Pack 04 — Executing | `skills/04-executing/` | SKL-04-01 through 04-09 | 9/9 | v1.1.0 | ✅ Complete + QA'd |
+| Pack 05 — M&C | `skills/05-monitoring-controlling/` | SKL-05-01 through 05-09 | 9/9 | v1.1.0 | ✅ Complete + QA'd |
+| Pack 06 — Closing | `skills/06-closing/` | SKL-06-01, 06-02, 06-03 | 3/3 | v1.1.0 | ✅ Complete + QA'd |
+| Pack 07 — Adaptive & Hybrid | `skills/07-adaptive-hybrid/` | SKL-07-01 through 07-04 | 4/4 | v1.1.0 | ✅ Complete + QA'd |
+| Pack PMO | `skills/08-pmo/` *(proposed)* | None | 0/6 | — | ❌ Not started |
+| Pack AI | `skills/09-ai/` *(proposed)* | None | 0/4 | — | ❌ Not started |
+| **TOTAL (core packs 01–07)** | | **All 47 confirmed** | **47/47** | **v1.1.0** | ✅ **Skills layer complete + QA'd** |
 
-**Pack 05 file list (confirmed):**
-
-| File | Size |
-|---|---|
-| `SKL-05-01-monitor-and-control-project-work.md` | 15,725 bytes |
-| `SKL-05-02-perform-integrated-change-control.md` | 16,892 bytes |
-| `SKL-05-03-control-scope.md` | 15,612 bytes |
-| `SKL-05-04-control-schedule.md` | 19,741 bytes |
-| `SKL-05-05-control-costs.md` | 19,072 bytes |
-| `SKL-05-06-monitor-risks.md` | 18,102 bytes |
-| `SKL-05-07-monitor-stakeholder-engagement.md` | 19,547 bytes |
-| `SKL-05-08-control-resources.md` | 17,383 bytes |
-| `SKL-05-09-monitor-communications.md` | 18,715 bytes |
+**QA standard applied to all 47 skills (Phase A):**
+- [x] YAML front matter — `skill_id`, `name`, `pack`, `version`, `status`, `source_type`, `authority`, `pmbok8_anchor`, `performance_domains`, `focus_area`, `primary_artifact`, `artifacts_updated`, `upstream_prerequisites`, `downstream_skills`, `file_path`, `tests`
+- [x] Tests table — T01–T09 with Pass Condition and Fail Condition per test
+- [x] Change Log — version history at bottom of every file
+- [x] Version bumped from 1.0.0 → 1.1.0
 
 ### 1.3 Artifact Definitions Layer
 
 | Subfolder | Files Present | Target | Status |
 |---|---|---|---|
-| `artifacts/planning-and-baselines/` | A06, A08, A14, A15, A16, A19, A26, A28 — 8 files | 8 definitions | ✅ Complete (definitions) |
-| `artifacts/monitoring-and-decisions/` | A12, A17, A18 — 3 files | 3 definitions | ✅ Complete (definitions) |
-| `artifacts/closing/` | A21, A27 — 2 files | 2 definitions | ✅ Complete (definitions) |
-| `artifacts/stakeholders/` | A02, A07 — 2 files | 2 definitions | ✅ Complete (definitions) |
-| `artifacts/resources/` | A03 — 1 file | 1 definition | ✅ Complete (definitions) |
-| `artifacts/procurement/` | A31 — 1 file | 1 definition | ✅ Complete (definitions) |
+| `artifacts/planning-and-baselines/` | A06, A08, A14, A15, A16, A19, A26, A28 — 8 files | 8 definitions | ✅ Present |
+| `artifacts/monitoring-and-decisions/` | A12, A17, A18 — 3 files | 3 definitions | ✅ Present |
+| `artifacts/closing/` | A21, A27 — 2 files | 2 definitions | ✅ Present |
+| `artifacts/stakeholders/` | A02, A07 — 2 files | 2 definitions | ✅ Present |
+| `artifacts/resources/` | A03 — 1 file | 1 definition | ✅ Present |
+| `artifacts/procurement/` | A31 — 1 file | 1 definition | ✅ Present |
+| `artifacts/initiating/` | ❌ 0 files | A01, A04 | ❌ Not yet written |
+| `artifacts/governance/` | ❌ 0 files | A05, A36, A39 | ❌ Not yet written |
+| `artifacts/quality/` | ❌ 0 files | A09, A13 | ❌ Not yet written |
+| `artifacts/communications/` | ❌ 0 files | A10, A29 | ❌ Not yet written |
+| `artifacts/extended-resources/` | ❌ 0 files | A20, A22, A25 | ❌ Not yet written |
+| `artifacts/extended-procurement/` | ❌ 0 files | A11, A23, A24, A32 | ❌ Not yet written |
+| `artifacts/extended-closing/` | ❌ 0 files | A30, A41 | ❌ Not yet written |
+| `artifacts/pmo/` | ❌ 0 files | A33–A36, A40 | ❌ Not yet written |
+| `artifacts/ai/` | ❌ 0 files | A37–A38 | ❌ Not yet written |
 | **Templates layer** | None | 17+ template files | ❌ 0 done |
 | **Examples layer** | None | 10+ example files | ❌ 0 done |
-| **Missing artifact definitions** | A01, A04, A05, A09–A11, A13, A20, A22–A25, A29–A30, A32–A41 | ~24 definitions | ❌ Not yet written |
+| **Missing artifact definitions** | 0 of 24 written | A01, A04, A05, A09–A11, A13, A20, A22–A25, A29–A30, A32–A41 | 🟡 In Progress — B1 active |
 
 ### 1.4 Reference / Shared / Tests Layer
 
@@ -102,22 +104,22 @@
 | Old Phase | What It Called For | Current Status |
 |---|---|---|
 | Phase 1 — Repair Pack 04 naming collision | Fix `SKL-04-01-implement-risk-responses.md` | ✅ No collision — Pack 04 is clean |
-| Phase 1 — Verify Pack 04 quality | Check all 9 files against template | ⚠️ Quality review still recommended (file sizes 7–14 KB vs Pack 03 max 49 KB) |
-| Phase 2.1 — Complete Pack 05 (8 skills) | Write SKL-05-02 through 05-09 | ✅ All 9 Pack 05 skills present |
-| Phase 2.2 — Create Pack 06 (3 skills) | Write SKL-06-01 through 06-03 | ✅ All 3 Pack 06 skills present |
-| Phase 2.3 — Create Pack 07 Adaptive (4 skills) | Write SKL-07-01 through 07-04 | ✅ All 4 Pack 07 skills present |
+| Phase 1 — Verify Pack 04 quality | Check all 9 files against template | ✅ Done — Pack 04 upgraded to v1.1.0 |
+| Phase 2.1 — Complete Pack 05 (8 skills) | Write SKL-05-02 through 05-09 | ✅ All 9 Pack 05 skills present + QA'd |
+| Phase 2.2 — Create Pack 06 (3 skills) | Write SKL-06-01 through 06-03 | ✅ All 3 Pack 06 skills present + QA'd |
+| Phase 2.3 — Create Pack 07 Adaptive (4 skills) | Write SKL-07-01 through 07-04 | ✅ All 4 Pack 07 skills present + QA'd |
 | Phase 2.4 — Confirm Pack 01 Pre-Sign | Verify `skills/01-pre-sign/` | ✅ Present as `01-organizational-setup/` — 3 skills confirmed |
-| Phase 3 — Artifact definitions + templates | Populate all A01–A41 definitions, templates, examples | 🟡 17 definitions done · templates and examples not started |
+| Phase 3 — Artifact definitions + templates | Populate all A01–A41 definitions, templates, examples | 🟡 17 definitions done · 24 missing · B1 in progress |
 | Phase 4 — Reference layer | Build `reference/` tree | 🟡 Seeded only |
 | Phase 5 — Shared + Tests | Build `shared/` and `tests/` | 🟡 Seeded only |
 | Phase 6 — PMO + AI packs | Design and write Pack PMO + Pack AI | ❌ Not started |
-| Phase 7 — QA sweep | Full quality pass + registry + README update | ❌ Not started |
+| Phase 7 — QA sweep | Full quality pass + registry + README update | ✅ Phase A complete |
 
 **New items added in v2.0.0 not in old plan:**
 - Community standards layer ✅ Done
-- Book authoring track (Phase J)
-- MCP server design and build track (Phase H)
-- AI agent design track (Phase I)
+- Book authoring track (Phase I)
+- MCP server design and build track (Phase G)
+- AI agent design track (Phase H)
 - GitHub Actions / CI validation (Phase K)
 - GLOSSARY.md / PMI Lexicon file
 - Artifact templates and examples (explicit plan)
@@ -128,25 +130,47 @@
 
 ## 3. Open Issues — Immediate Actions Required
 
-### 3.1 ⚠️ Pack 04 Quality Review (Recommended)
+### 3.1 ✅ RESOLVED — Phase A QA Complete
 
-No naming collision exists. However, Pack 04 files are significantly smaller than Pack 03 files. A quality review is recommended to confirm each file contains the full required template sections.
+All 47 skills upgraded to v1.1.0 on 2026-05-30. QA standard applied across all packs:
+- Pack 04 (9 skills) — v1.1.0 ✅
+- Pack 05 (9 skills) — v1.1.0 ✅
+- Pack 06 (3 skills) — v1.1.0 ✅
+- Pack 07 (4 skills) — v1.1.0 ✅
 
-| Skill | Size | Benchmark (Pack 03 avg) | Action |
-|---|---|---|---|
-| SKL-04-01 | 10,681 bytes | ~20,000 bytes | Review completeness |
-| SKL-04-02 | 13,858 bytes | ~20,000 bytes | Acceptable — verify sections |
-| SKL-04-03 | 7,411 bytes | ~20,000 bytes | ⚠️ Likely needs expansion |
-| SKL-04-04 | 8,019 bytes | ~20,000 bytes | ⚠️ Review |
-| SKL-04-05 | 7,582 bytes | ~20,000 bytes | ⚠️ Review |
-| SKL-04-06 | 7,547 bytes | ~20,000 bytes | ⚠️ Review |
-| SKL-04-07 | 7,401 bytes | ~20,000 bytes | ⚠️ Review |
-| SKL-04-08 | 7,685 bytes | ~20,000 bytes | ⚠️ Review |
-| SKL-04-09 | 9,251 bytes | ~20,000 bytes | ⚠️ Review |
+Commit refs:
+- Pack 06 + 07 QA: `b785ee6` (2026-05-30)
 
-### 3.2 ⚠️ Pack 05–07 Quality Review (Recommended)
+### 3.2 🟡 IN PROGRESS — Phase B1: Missing Artifact Definitions
 
-Pack 05 files are 15–20 KB each — reasonable depth. Pack 06 files are 8–10 KB — may need expansion. Pack 07 files are 9–11 KB — review recommended.
+24 artifact definitions to be built. Build order (by priority):
+
+| Priority | Artifact | Name | Folder | Status |
+|---|---|---|---|---|
+| 🔴 1 | A04 | Project Charter | `artifacts/initiating/` | ❌ Not built |
+| 🔴 2 | A01 | Business Case | `artifacts/initiating/` | ❌ Not built |
+| 🔴 3 | A05 | Context Register (EEF/OPA) | `artifacts/governance/` | ❌ Not built |
+| 🟠 4 | A09 | Quality Management Plan | `artifacts/quality/` | ❌ Not built |
+| 🟠 5 | A10 | Communications Management Plan | `artifacts/communications/` | ❌ Not built |
+| 🟠 6 | A11 | Procurement Management Plan | `artifacts/extended-procurement/` | ❌ Not built |
+| 🟠 7 | A13 | Requirements Traceability Matrix | `artifacts/quality/` | ❌ Not built |
+| 🟠 8 | A20 | Team Charter | `artifacts/extended-resources/` | ❌ Not built |
+| 🟠 9 | A39 | Change Management Plan | `artifacts/governance/` | ❌ Not built |
+| 🟡 10 | A25 | Resource Management Plan / RACI | `artifacts/extended-resources/` | ❌ Not built |
+| 🟡 11 | A22 | Resource Acquisition Record | `artifacts/extended-resources/` | ❌ Not built |
+| 🟡 12 | A29 | Meeting Records | `artifacts/communications/` | ❌ Not built |
+| 🟡 13 | A30 | Project Closure Report | `artifacts/extended-closing/` | ❌ Not built |
+| 🟡 14 | A41 | Benefits Realization Report | `artifacts/extended-closing/` | ❌ Not built |
+| 🟡 15 | A23 | Vendor Bid Documents | `artifacts/extended-procurement/` | ❌ Not built |
+| 🟡 16 | A24 | Source Selection Criteria | `artifacts/extended-procurement/` | ❌ Not built |
+| 🟡 17 | A32 | Procurement SOW | `artifacts/extended-procurement/` | ❌ Not built |
+| 🔵 18 | A33 | PMO Charter | `artifacts/pmo/` | ❌ Not built |
+| 🔵 19 | A34 | Portfolio Register | `artifacts/pmo/` | ❌ Not built |
+| 🔵 20 | A35 | Program Benefits Plan | `artifacts/pmo/` | ❌ Not built |
+| 🔵 21 | A36 | Governance Framework Record | `artifacts/pmo/` | ❌ Not built |
+| 🔵 22 | A37 | AI Project Readiness Assessment | `artifacts/ai/` | ❌ Not built |
+| 🔵 23 | A38 | AI Risk Register | `artifacts/ai/` | ❌ Not built |
+| 🔵 24 | A40 | OPM Maturity Assessment | `artifacts/pmo/` | ❌ Not built |
 
 ### 3.3 ⚠️ Branch Protection
 
@@ -162,63 +186,69 @@ Create `CHANGELOG.md` at root following Keep a Changelog format before next cont
 
 ### 3.5 ⚠️ SKILL-REGISTRY.md Sync
 
-Verify `SKILL-REGISTRY.md` accurately reflects all 47 skills with correct file paths, artifact references, and status fields for Packs 05–07 (newly confirmed complete).
+Verify `SKILL-REGISTRY.md` accurately reflects all 47 skills at v1.1.0 with correct YAML fields, artifact references, and status fields.
 
 ---
 
 ## 4. Master Build Roadmap — Phases and Tracks
 
 ### Phase A — Stabilize and QA
-**Priority:** 🔴 Immediate · **Estimated effort:** Low–Medium
+**Priority:** ✅ COMPLETE · **Completed:** 2026-05-30
 
-| Task | Action | Output |
-|---|---|---|
-| A1 | Quality review Pack 04 skills (9 files) — verify all required sections present | Confirmed quality or expansion list |
-| A2 | Quality review Pack 05 skills (9 files) — verify all required sections present | Confirmed quality or expansion list |
-| A3 | Quality review Pack 06 skills (3 files) — verify all required sections | Confirmed quality or expansion list |
-| A4 | Quality review Pack 07 skills (4 files) — verify all required sections | Confirmed quality or expansion list |
-| A5 | Sync `SKILL-REGISTRY.md` — confirm all 47 skills listed with correct paths and statuses | Registry accurate |
-| A6 | Enable GitHub branch protection on `main` | Governance enforced |
-| A7 | Create `CHANGELOG.md` at root | Version tracking active |
-| A8 | Update `README.md` — confirm skill count = 47, version reflects actual state | README accurate |
+| Task | Action | Output | Status |
+|---|---|---|---|
+| A1 | Quality review Pack 04 skills (9 files) — verify all required sections present | All 9 upgraded to v1.1.0 | ✅ Done |
+| A2 | Quality review Pack 05 skills (9 files) — verify all required sections present | All 9 upgraded to v1.1.0 | ✅ Done |
+| A3 | Quality review Pack 06 skills (3 files) — verify all required sections | All 3 upgraded to v1.1.0 | ✅ Done |
+| A4 | Quality review Pack 07 skills (4 files) — verify all required sections | All 4 upgraded to v1.1.0 | ✅ Done |
+| A5 | Sync `SKILL-REGISTRY.md` — confirm all 47 skills listed with correct paths and statuses | Registry review | ⚠️ Pending |
+| A6 | Enable GitHub branch protection on `main` | Governance enforced | ⚠️ Pending |
+| A7 | Create `CHANGELOG.md` at root | Version tracking active | ❌ Not done |
+| A8 | Update `README.md` — confirm skill count = 47, version reflects actual state | README accurate | ⚠️ Pending |
+
+**QA standard applied (all 47 skills):** YAML front matter · Tests T01–T09 · Change Log · version → v1.1.0
 
 ---
 
 ### Phase B — Complete Artifact Definitions Layer
-**Priority:** 🔴 High · **Estimated effort:** Very High
+**Priority:** 🔴 High · **Status:** 🟡 B1 In Progress
 
 #### B1 — Missing Artifact Definitions (~24 files)
+**Status:** 🟡 In Progress — 0/24 built so far
 
-These artifacts have no definition file yet and are required by existing skills:
+These artifacts have no definition file yet and are required by existing skills.
+See Section 3.2 for full build order and folder assignments.
 
-| Artifact | Name | Required by Skills | Priority |
-|---|---|---|---|
-| A01 | Business Case | SKL-02-01 | 🔴 High |
-| A04 | Project Charter | SKL-02-01 | 🔴 High |
-| A05 | Context Register (EEF/OPA) | SKL-06-03 | 🔴 High |
-| A09 | Quality Management Plan | SKL-03-09 | 🟠 Medium-High |
-| A10 | Communications Management Plan | SKL-03-08 | 🟠 Medium-High |
-| A11 | Procurement Management Plan | SKL-04-09 | 🟠 Medium-High |
-| A13 | Requirements Traceability Matrix | SKL-03-03 | 🟠 Medium-High |
-| A20 | Team Charter | SKL-04-04 | 🟠 Medium-High |
-| A22 | Resource Acquisition Record | SKL-04-03 | 🟡 Medium |
-| A23 | Vendor Bid Documents | SKL-04-09 | 🟡 Medium |
-| A24 | Source Selection Criteria | SKL-04-09 | 🟡 Medium |
-| A25 | Resource Management Plan / RACI | SKL-04-03, 04-04 | 🟡 Medium |
-| A29 | Meeting Records | SKL-04-07 | 🟡 Medium |
-| A30 | Project Closure Report | SKL-06-01 | 🟡 Medium |
-| A32 | Procurement SOW | SKL-04-09 | 🟡 Medium |
-| A33 | PMO Charter | Pack PMO | 🔵 Lower |
-| A34 | Portfolio Register | Pack PMO | 🔵 Lower |
-| A35 | Program Benefits Plan | Pack PMO | 🔵 Lower |
-| A36 | Governance Framework Record | Pack PMO | 🔵 Lower |
-| A37 | AI Project Readiness Assessment | Pack AI | 🔵 Lower |
-| A38 | AI Risk Register | Pack AI | 🔵 Lower |
-| A39 | Change Management Plan | SKL-05-02 | 🟡 Medium |
-| A40 | OPM Maturity Assessment | Pack PMO | 🔵 Lower |
-| A41 | Benefits Realization Report | SKL-06-01 | 🟡 Medium |
+**Artifact definition file standard:**
+```yaml
+---
+artifact_id: A##
+name: [Artifact Name]
+version: 1.0.0
+status: Active
+category: [category]
+pmbok8_anchor: [PMBOK8 section reference]
+authority: PMI-derived
+required_by_skills:
+  - SKL-XX-XX
+created_by_skills:
+  - SKL-XX-XX
+---
+```
 
-**Build order:** A04 → A01 → A05 → A09 → A10 → A11 → A13 → A20 → A39 → A25 → A22 → A29 → A30 → A41 → A23 → A24 → A32 → A33–A41
+Sections required in every definition file:
+1. Purpose
+2. Scope (In Scope / Out of Scope table)
+3. Trigger Conditions
+4. Required Sections / Fields
+5. PMBOK 8 Authority
+6. Used By (skills that consume)
+7. Created By (skills that produce)
+8. Linked Artifacts
+9. Validation Criteria
+10. Change Log
+
+**Build order:** A04 → A01 → A05 → A09 → A10 → A11 → A13 → A20 → A39 → A25 → A22 → A29 → A30 → A41 → A23 → A24 → A32 → A33 → A34 → A35 → A36 → A37 → A38 → A40
 
 #### B2 — Artifact Templates (all confirmed definitions → template files)
 
@@ -497,6 +527,11 @@ Create at root following [Keep a Changelog](https://keepachangelog.com) format. 
 ```
 ## [Unreleased]
 
+## [1.4.0] — 2026-05-30
+### Added
+- Phase A QA: All 47 skills upgraded to v1.1.0 (YAML front matter, Tests T01–T09, Change Log)
+- MASTER-PLAN-V2.md v2.2.0: Progress tracking updated
+
 ## [1.3.0] — 2026-05-30
 ### Added
 - Community standards: CODE_OF_CONDUCT, CONTRIBUTING, SECURITY, issue templates, PR template
@@ -504,12 +539,6 @@ Create at root following [Keep a Changelog](https://keepachangelog.com) format. 
 - Artifact definitions: A02, A03, A06, A07, A08, A12, A14–A19, A21, A26–A28, A31
 - Reference layer seeds: reference/, shared/, tests/ README files
 - Principles index: reference/principles/index.md
-
-## [1.2.0] — (date)
-### Added
-- Pack 05 skills: SKL-05-01 through 05-09
-- Pack 06 skills: SKL-06-01 through 06-03
-- Pack 07 skills: SKL-07-01 through 07-04
 ```
 
 #### K3 — GitHub Actions CI
@@ -528,8 +557,8 @@ Create `.github/workflows/`:
 | Minor (x.N.0) | New skill(s), new artifact definition(s), new reference file(s) |
 | Major (N.0.0) | New pack, structural reorganization, breaking schema change |
 
-**Current version:** 1.3.0
-**Next milestone:** 1.4.0 — Artifact definitions complete (Phase B1 done)
+**Current version:** 1.4.0 (post Phase A)
+**Next milestone:** 1.5.0 — Artifact definitions complete (Phase B1 done)
 **Target release:** 2.0.0 — All core layers complete (skills + artifacts + reference)
 
 ---
@@ -538,8 +567,8 @@ Create `.github/workflows/`:
 
 | Phase | Deliverable | Effort | Priority | Status |
 |---|---|---|---|---|
-| A | Stabilize: QA review Packs 04–07 · SKILL-REGISTRY sync · branch protection · CHANGELOG | Low–Medium | 🔴 Immediate | ❌ Not done |
-| B1 | Missing artifact definitions (A01, A04, A05, A09–A11, A13, A20, A22–A25, A29–A32, A39, A41) | High | 🔴 High | ❌ Not done |
+| A | QA all 47 skills → v1.1.0 (YAML + Tests + Change Log) | Low–Medium | 🔴 Immediate | ✅ **Complete — 2026-05-30** |
+| B1 | Missing artifact definitions: A01, A04, A05, A09–A11, A13, A20, A22–A25, A29–A32, A39, A41 | High | 🔴 High | 🟡 **In Progress — 0/24 built** |
 | B2 | Artifact templates (all confirmed definitions → templates) | Very High | 🟠 High | ❌ Not done |
 | B3 | Artifact examples (top 10) | Medium | 🟡 Medium | ❌ Not done |
 | C1–C3 | Reference: 12 principles + 8 domains + 5 focus areas | High | 🟠 Medium-High | 🟡 Index only |
@@ -555,22 +584,22 @@ Create `.github/workflows/`:
 | I | Book authoring track (14 chapters + editorial) | Very High | 🔵 Medium-Low | ❌ Not done |
 | K | QA + CI/CD + CHANGELOG + registry + README (ongoing) | Ongoing | 🟡 Ongoing | 🟡 Partial |
 
-**Skills layer (Packs 01–07): ✅ 47/47 complete — no longer a gap.**
+**Skills layer (Packs 01–07): ✅ 47/47 complete and QA'd at v1.1.0.**
 
 ---
 
 ## 6. Recommended Session Order
 
-1. **Session next:** Phase A — QA review Packs 04–07 + SKILL-REGISTRY sync + CHANGELOG.md
-2. **Session +1:** Phase B1 — Missing artifact definitions (A01, A04, A05 first)
-3. **Session +2:** Phase B1 continued — A09–A13, A20, A39, A41
-4. **Session +3:** Phase B2 — Artifact templates (priority 17 first)
-5. **Session +4:** Phase C1–C3 — Principles files (12) + Domain files (8)
-6. **Session +5:** Phase C4–C5 — Process records (batch 10 at a time)
-7. **Session +6:** Phase C6–C7 — Appendices + GLOSSARY
-8. **Session +7:** Phase G — MCP server design documents
-9. **Session +8:** Phase D + E — Shared validators + test cases
-10. **Sessions beyond:** Phase F (extended packs), Phase H (agents), Phase I (book)
+1. **Current session:** Phase B1 — Build missing artifact definitions (A04, A01, A05 first batch)
+2. **Session +1:** Phase B1 continued — A09–A13, A20, A39, A41 (second batch)
+3. **Session +2:** Phase B1 continued — A22–A25, A29–A32 (third batch)
+4. **Session +3:** Phase B1 continued — A33–A40 (PMO + AI batch)
+5. **Session +4:** Phase B2 — Artifact templates (priority 17 first)
+6. **Session +5:** Phase C1–C3 — Principles files (12) + Domain files (8)
+7. **Session +6:** Phase C4–C5 — Process records (batch 10 at a time)
+8. **Session +7:** Phase C6–C7 — Appendices + GLOSSARY
+9. **Session +8:** Phase G — MCP server design documents
+10. **Sessions beyond:** Phase D + E, Phase F, Phase H, Phase I (book)
 
 ---
 
@@ -580,11 +609,12 @@ Create `.github/workflows/`:
 |---|---|---|
 | 1.0.0 | 2026-05-29 | Initial plan — 7 phases · focused on skills + artifacts + reference layers |
 | 2.0.0 | 2026-05-30 | Full rebuild: added MCP server (Phase G), AI agents (Phase H), book authoring (Phase I), CI/CD (Phase K), community standards, CHANGELOG, GLOSSARY, branch protection, extended packs F1/F2, artifact templates + examples |
-| 2.1.0 | 2026-05-30 | **Correction:** Skills inventory updated after direct repo verification. All 47 core skills (Packs 01–07) confirmed present. Phases B1–B3 (skills completion) removed from roadmap — marked complete. Phase A revised to QA-only (no repairs needed). Scorecard and session order revised accordingly. |
+| 2.1.0 | 2026-05-30 | Correction: Skills inventory updated after direct repo verification. All 47 core skills confirmed present. Phase A revised to QA-only. Scorecard and session order revised. |
+| 2.2.0 | 2026-05-30 | **Progress update:** Phase A fully complete — all 47 skills upgraded to v1.1.0 (YAML front matter, Tests T01–T09, Change Log). Commit `b785ee6`. Phase B1 marked In Progress. Artifact folder structure confirmed. 24 missing definitions listed with build order and folder assignments. Section 3.2 expanded with per-artifact status tracking. |
 
 ---
 
 *Authority: PMBOK8 Guide Primary · PMI Companion References Secondary*
 *Repository: [https://github.com/fakhruldeen/PMOSkills](https://github.com/fakhruldeen/PMOSkills)*
 *Maintainer: @fakhruldeen*
-*Last Updated: 2026-05-30 · Version 2.1.0*
+*Last Updated: 2026-05-30 18:00 EEST · Version 2.2.0*
