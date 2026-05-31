@@ -6,6 +6,14 @@ Authority: PMBOK 8 Primary · PMI Companion References Secondary.
 
 ---
 
+## [2.8.0] — 2026-05-31
+
+### Changed
+- `MASTER-PLAN-V2.md` bumped to v2.8.0 — merged Plan v3.0.0 (uploaded 2026-05-31). Added: Phase 3 (47 full skill content files with standard YAML structure), Phase D (shared components + validators, 11 files), Phase E (test suite, 53 files), quality standards §2 (source traceability, artifact, skill, reference, docs, commit conventions), dependency map, completion metrics (~183 files remaining), updated session order. Phase C1 (12 principles) opened in this session.
+
+### Added — Phase C1 In Progress
+- `reference/principles/` — 13 files launched (P01–P12 + 00-index.md). Grounded in PMBOK8 Standard §3.1–§3.12. (SHAs recorded when committed.)
+
 ## [2.7.0] — 2026-05-31
 
 ### Added — Phase B2 Final Templates (Batches A–D, 14 templates)
