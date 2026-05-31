@@ -6,6 +6,33 @@ Authority: PMBOK 8 Primary · PMI Companion References Secondary.
 
 ---
 
+## [2.6.0] — 2026-05-31
+
+### Added — Phase 1 Documentation Layer (COMPLETE)
+- `docs/how-to-use-artifacts.md` — artifact vs template vs instance, [FIELD: ...] convention, 7-step lifecycle, folder map, worked example A04. SHA: 9987331c.
+- `docs/changelog-guide.md` — CHANGELOG format, semantic versioning triggers, 5-step write process, commit type table. SHA: 36b5aa8f.
+- `docs/faq.md` — 27 Q&A pairs across 6 groups (Repository, Skills, Artifacts, T1–T4, AI Agents, Contributing). SHA: 08b30c5c.
+- `docs/how-to-use-authority-routing.md` — T1–T4 model, 4 bands with 3 examples each, ASCII routing flowchart, 6-step application, 8 common scenarios, failure modes. SHA: d7ad07a5.
+- `docs/how-to-contribute.md` — contribution types, authority rule, 8-step workflow, naming conventions, quality checklist. SHA: 3d5b20bd.
+- `docs/glossary.md` — 108 PMI/PMBOK8 terms, alphabetically ordered, all 4 required fields (Definition, Source, Related artifact, Related skill), includes PMOSkills synthesis terms. SHA: 9199a797.
+
+### Added — Phase B2 Artifact Templates (Batch 3, continued)
+- `artifacts/stakeholders/A02-benefits-value-measurement-record-template.md` — 7 sections including Benefits Register (B-001–B-005), Value Measurement Plan, Benefits Realization Tracking, Post-Project Handoff. SHA: c6564959.
+- `artifacts/resources/A03-repository-tool-configuration-record-template.md` — 7 sections including Repository Structure, Version Control Configuration, Access Control Matrix (5 roles), Tool Integration Register, Environment Readiness Checklist (8 static items). SHA: d0808588.
+- `artifacts/communications/A10-communications-management-plan-template.md` — 9 sections including Communication Item Register (8 rows), Escalation Communications, Sensitive Information Handling. SHA: 7c4744c3.
+- `artifacts/monitoring-and-decisions/A18-issue-impediment-action-log-template.md` — 6 sections including 12-column active register (I-001–I-005), Escalation Register, static Operating Rules. SHA: 097212ea.
+- `artifacts/monitoring-and-decisions/A20-quantitative-risk-reserve-decision-record-template.md` — 9 sections including Risk Driver Inputs, P50–P90 confidence tables, Sensitivity Analysis, Decision Tree (conditional), Reserve Recommendation and Approval. SHA: c5ce085e.
+- `artifacts/closure/A24-closure-and-benefits-transition-record-template.md` — 10 sections including Deliverable Acceptance, Benefits Transition (with A02 linkage), Residual Risks, Resource Release, Financial Close, Closure Authorization. SHA: 879a191b.
+- `artifacts/resources/A25-team-operating-and-responsibility-record-template.md` — 8 sections including RACI Matrix (8 deliverables × 5 roles), Authority Levels (8 static types), Team Operating Norms (9 static areas), Escalation Path. SHA: d32576c4.
+- `artifacts/resources/A26-resource-capacity-acquisition-record-template.md` — 8 sections including Staffing Requirements, Shared Resource Conflict Register, Physical Resources, Acquisition Plan, Resource Release Schedule. SHA: fe478a8d.
+
+### Changed
+- `MASTER-PLAN-V2.md` bumped to v2.6.0 — Phase 1 marked COMPLETE, B2 template inventory updated to 24 templates, session order updated.
+
+### Confirmed Closed
+- **Phase 1 — Documentation Layer** — all 9 `docs/` files committed and verified. 2026-05-31.
+
+
 ## [2.5.0] — 2026-05-31
 
 ### Added
