@@ -1,81 +1,81 @@
----
-reference_type: Process
-reference_id: PR07
-name: Create WBS
-process_group: Planning
-knowledge_area: Project Scope Management
-version: "1.0.0"
-status: Active
-pmbok8_source: "Process Groups: A Practice Guide § 3.5 — Create WBS"
-authority: PMI-derived
----
-
 # PR07 — Create WBS
-**Type:** Process
-**Process Group:** Planning
-**Knowledge Area:** Project Scope Management
-**PMBOK8 Source:** Process Groups: A Practice Guide § 3.5
-**Version:** 1.0.0
+
+**Type:** Process Record  
+**Primary Source:** PMBOK 8 — Scope Performance Domain, 2.2.2.4 Develop Scope Structure  
+**Companion Source:** Process Groups: A Practice Guide — 5.5 Create WBS  
+**Process Group:** Planning  
+**Version:** 1.0.0  
+**Status:** Active
 
 ## Definition
-Create WBS is the process of subdividing project deliverables and project work into smaller, more manageable components (PG:APG § 3.5). The Work Breakdown Structure (WBS) organizes the total scope of the project into work packages — the lowest level of the WBS — which represent deliverable-oriented groupings of work. The WBS is the foundation for all subsequent planning: schedule, cost, resource, and risk all trace to WBS elements.
+
+Create WBS is the process of subdividing project deliverables and project work into smaller, more manageable components to establish the scope baseline.
 
 ## Purpose
-To decompose the full project scope into discrete, manageable work packages that can be estimated, assigned, scheduled, and controlled, providing the structural backbone for all other planning.
+
+This process produces a hierarchical decomposition of the total project scope into work packages that can be clearly assigned, estimated, tracked, and controlled. It creates the scope baseline — comprising the WBS, WBS dictionary, and project scope statement — which serves as the foundation for schedule, cost, quality, resource, and risk planning. In adaptive projects, this process corresponds to product backlog decomposition into epics, features, and user stories.
+
+## When Used
+
+This process follows Define Scope and is performed during Planning. For adaptive and rolling-wave projects, decomposition continues iteratively as more detail becomes available.
 
 ## Key Inputs
-| Input | Source |
-|---|---|
-| Project Management Plan (scope management plan) | PR04 |
-| Project documents (project scope statement, requirements documentation) | PR06/PR05 |
-| Enterprise Environmental Factors (EEFs) | Organization |
-| Organizational Process Assets (OPAs) | Organization |
+
+- Project management plan, specifically the scope management plan.
+- Project documents, including the project scope statement and requirements documentation (from PR05 and PR06).
+- Enterprise environmental factors.
+- Organizational process assets.
+- Approved changes.
 
 ## Key Tools and Techniques
-| Tool / Technique | Description |
-|---|---|
-| Expert judgment | Using decomposition experience to determine appropriate WBS depth |
-| Decomposition | Breaking down deliverables into progressively smaller components until work packages are reached |
+
+- Expert judgment.
+- Decomposition.
+- Brainstorming.
 
 ## Key Outputs
-| Output | Description |
-|---|---|
-| Scope Baseline | WBS + WBS Dictionary + Project Scope Statement (the full scope baseline) |
-| Project documents updates | Updates to assumption log and requirements documentation |
 
-## Key Characteristics
-- **Deliverable-oriented:** Every WBS element is a deliverable or component of a deliverable — not an activity or action; this distinguishes the WBS from a schedule activity list (PG:APG § 3.5, WBS-3E).
-- **100% rule:** The WBS must capture 100% of the work defined in the project scope statement — nothing more, nothing less (WBS-3E).
-- **Work package level:** Decomposition continues until work packages are small enough to be estimated, assigned, and controlled — typically 8–80 hours of effort (WBS-3E).
-- **WBS Dictionary:** Every WBS element has a corresponding WBS Dictionary entry describing the work, responsible party, milestones, quality requirements, and resource requirements (PG:APG § 3.5).
-- **Scope baseline:** The WBS, WBS Dictionary, and approved scope statement together constitute the scope baseline — the formal benchmark for scope control (PG:APG § 3.5).
+- Scope baseline, comprising:
+  - Work breakdown structure (WBS).
+  - WBS dictionary.
+  - Project scope statement (confirmed).
+- In adaptive projects: product backlog items decomposed into epics, features, and user stories.
 
 ## Relationship to Other Processes
-| Process | Relationship |
-|---|---|
-| PR06 — Define Scope | Scope statement is the primary input to WBS decomposition |
-| PR09 — Define Activities | Activities are defined by decomposing WBS work packages further into schedule activities |
-| PR14 — Estimate Costs | Cost estimates are developed at the work package level, rolling up through the WBS |
-| PR40 — Control Scope | Scope changes are assessed against the scope baseline (WBS + scope statement) |
+
+- Completes the scope baseline that starts with Plan Scope Management (PR04), Collect Requirements (PR05), and Define Scope (PR06).
+- Directly feeds Define Activities (PR09) by providing work packages that are decomposed further into schedule activities.
+- Provides cost estimation work packages for Plan Cost Management and Estimate Costs.
+- Informs quality and resource planning by making deliverable boundaries explicit.
+- Supports Monitor and Control Scope by providing the decomposed baseline against which scope changes are assessed.
 
 ## Artifact Connections
-| Artifact | Connection |
-|---|---|
-| A08 — Scope and Requirements Backlog | Requirements in this artifact map to WBS work packages via traceability |
-| A14 — Integrated Project Management Plan | Scope baseline (WBS + WBS Dictionary + scope statement) is a component of the PMP |
-| A15 — Schedule Baseline | Built from schedule activities decomposed from WBS work packages |
+
+- **A14 Integrated Project Management Plan:** receives the scope baseline as a controlled component.
+- **A08 Scope and Requirements Backlog:** adaptive equivalent of WBS decomposition output; connected to sprint and iteration planning.
+- **A13 Requirements Traceability Matrix:** WBS elements are connected back to requirements to maintain full traceability.
+- **A15 Schedule Baseline:** built on work packages decomposed here into activities in PR09 and sequenced in PR10.
+- **A16 Financial Baseline:** cost estimates roll up from work packages defined in the WBS.
+- **A05 Context Register:** constraints documented here bound how work is decomposed and packaged.
 
 ## Skill Connections
-| Skill ID | Skill Name | Connection |
-|---|---|---|
-| SKL-03-02 | Define and Manage Scope | The WBS is the primary deliverable of scope definition work |
-| SKL-03-04 | Build WBS and Schedule | This process is the PMBOK 8 anchor for WBS creation |
 
-## Questions to Ask in Practice
-1. Does every element in the WBS represent a deliverable, not a task or activity — and have activities been kept out of the WBS and reserved for schedule planning?
-2. Does the WBS account for 100% of the scope defined in the scope statement — including management work, quality activities, and integration work?
-3. Is the WBS Dictionary complete enough that a new team member could understand what work is required for any element without needing to ask the PM?
-4. Have work packages been decomposed to a level where reliable estimates can be produced, or are some work packages still too large to estimate confidently?
+- SKL-03-02 Plan Scope and Requirements.
+- SKL-03-04 Plan Schedule.
+- SKL-03-05 Plan Financial and Cost Baselines.
 
-*Authority: Process Groups: A Practice Guide § 3.5 · Practice Standard for Work Breakdown Structures (3rd Ed.) · Source type: PMI-derived*
-*Repository: https://github.com/fakhruldeen/PMOSkills*
+## Domain and Focus Area Links
+
+- Strongest PMBOK 8 alignment: Scope Performance Domain.
+- Secondary alignment: Schedule and Finance, because the WBS is the common structural foundation for time and cost planning.
+- Strongest focus area alignment: Planning.
+
+## Practitioner Questions
+
+- Does the WBS capture 100% of the project scope with no gaps or overlaps?
+- Are work packages sized appropriately to be estimated, assigned, and controlled as discrete units?
+- Is a WBS dictionary needed to clarify scope descriptions, milestones, owners, and acceptance criteria at the work package level?
+- How does the WBS connect to requirements documentation and the requirements traceability matrix?
+- In adaptive contexts, are epics and user stories decomposed to a level that supports sprint or iteration planning?
+
+*Authority: PMBOK 8 — 2.2.2.4 Develop Scope Structure; Process Groups: A Practice Guide — 5.5 Create WBS*

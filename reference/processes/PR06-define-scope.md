@@ -1,82 +1,79 @@
----
-reference_type: Process
-reference_id: PR06
-name: Define Scope
-process_group: Planning
-knowledge_area: Project Scope Management
-version: "1.0.0"
-status: Active
-pmbok8_source: "Process Groups: A Practice Guide § 3.4 — Define Scope"
-authority: PMI-derived
----
-
 # PR06 — Define Scope
-**Type:** Process
-**Process Group:** Planning
-**Knowledge Area:** Project Scope Management
-**PMBOK8 Source:** Process Groups: A Practice Guide § 3.4
-**Version:** 1.0.0
+
+**Type:** Process Record  
+**Primary Source:** PMBOK 8 — Scope Performance Domain, 2.2.2.3 Define Scope  
+**Companion Source:** Process Groups: A Practice Guide — 5.4 Define Scope  
+**Process Group:** Planning  
+**Version:** 1.0.0  
+**Status:** Active
 
 ## Definition
-Define Scope is the process of developing a detailed description of the project and product (PG:APG § 3.4). It selects the final requirements from requirements documentation and defines the project scope boundary — what is in scope and, critically, what is explicitly out of scope. The Project Scope Statement produced by this process is the baseline for all scope control decisions.
+
+Define Scope is the process of developing a detailed description of the project and product, including quality requirements and standards for deliverables.
 
 ## Purpose
-To produce a detailed, approved scope statement that defines project and product boundaries precisely enough to prevent scope creep and enable the creation of a decomposed WBS.
+
+This process converts high-level requirements and charter objectives into a clear, bounded description of what the project will deliver and, equally important, what it will not deliver. In predictive approaches this produces the project scope statement. In adaptive approaches, scope is defined at a high level through a product roadmap and is refined iteratively. This process also identifies quality requirements and determines how compliance will be demonstrated.
+
+## When Used
+
+This process is performed at the beginning of the project for predictive approaches or at the beginning of each iteration for adaptive and hybrid approaches. It relies on completed requirements documentation to be effective.
 
 ## Key Inputs
-| Input | Source |
-|---|---|
-| Project Charter | PR01 |
-| Project Management Plan (scope management plan) | PR04 |
-| Project documents (assumption log, requirements documentation, risk register) | Ongoing |
-| Enterprise Environmental Factors (EEFs) | Organization |
-| Organizational Process Assets (OPAs) | Organization |
+
+- Project charter.
+- Assumption log.
+- Project management plan.
+- Requirements documentation (from PR05).
+- Enterprise environmental factors.
+- Organizational process assets.
 
 ## Key Tools and Techniques
-| Tool / Technique | Description |
-|---|---|
-| Expert judgment | Domain expertise to define complete scope boundaries |
-| Data analysis (alternatives analysis) | Evaluating different approaches to defining scope |
-| Decision making (multicriteria decision analysis) | Selecting among scope alternatives |
-| Interpersonal and team skills (facilitation) | Achieving team and stakeholder agreement on scope boundaries |
-| Product analysis | Translating high-level product descriptions into detailed project deliverables |
+
+- Expert judgment.
+- Decision-making.
+- Data analysis.
+- Decomposition.
+- Interpersonal and team skills, including facilitation.
+- Product analysis.
 
 ## Key Outputs
-| Output | Description |
-|---|---|
-| Project Scope Statement | Detailed description of project and product scope, acceptance criteria, deliverables, exclusions, constraints, and assumptions |
-| Project documents updates | Updates to assumption log, requirements documentation, requirements traceability matrix, stakeholder register |
 
-## Key Characteristics
-- **Boundary definition:** The most important function of this process is defining exclusions — what the project will NOT deliver — as clearly as inclusions (PG:APG § 3.4).
-- **Acceptance criteria:** The scope statement must include measurable acceptance criteria for each deliverable; vague descriptions lead to disputed acceptance (PG:APG § 3.4).
-- **Scope baseline seed:** The scope statement is an input to WBS creation and becomes the scope baseline component of the PMP (PG:APG § 3.4).
-- **Not all requirements included:** Not every collected requirement enters the scope; Define Scope selects and prioritizes based on project objectives, constraints, and organizational decisions (PG:APG § 3.4).
+- Project scope statement.
+- Requirements documentation updates.
 
 ## Relationship to Other Processes
-| Process | Relationship |
-|---|---|
-| PR05 — Collect Requirements | Requirements documentation from PR05 is the primary input to this process |
-| PR07 — Create WBS | The Project Scope Statement is the primary input to WBS creation |
-| PR40 — Control Scope | The approved scope statement is the baseline for all scope change assessments |
-| PR39 — Validate Scope | Deliverables defined here are the items formally accepted by stakeholders |
+
+- Relies on Collect Requirements (PR05) for the documented stakeholder needs from which scope is derived.
+- Directly enables Create WBS / Develop Scope Structure (PR07) by providing the scope boundary and deliverable descriptions needed for decomposition.
+- Informs Plan Quality Management, Plan Risk Management, and Plan Schedule Management, all of which require clear scope to estimate effectively.
+- Feeds Monitor and Control Scope and Validate Scope as the authorized scope definition baseline.
 
 ## Artifact Connections
-| Artifact | Connection |
-|---|---|
-| A08 — Scope and Requirements Backlog | Scope statement is derived from requirements in this artifact; exclusions update the backlog |
-| A14 — Integrated Project Management Plan | Scope statement becomes a component of the PMP scope baseline |
+
+- **A08 Scope and Requirements Backlog:** refined and bounded in adaptive projects through scope definition activities.
+- **A13 Requirements Traceability Matrix:** updated as scope decisions are traced back to stakeholder requirements.
+- **A14 Integrated Project Management Plan:** scope statement becomes a component of the scope baseline housed in the plan.
+- **A05 Context Register:** constraints, assumptions, and exclusions that bound the defined scope.
+- **A04 Project Charter:** provides the high-level scope boundaries that Define Scope elaborates into detail.
 
 ## Skill Connections
-| Skill ID | Skill Name | Connection |
-|---|---|---|
-| SKL-03-02 | Define and Manage Scope | This process is the PMBOK 8 anchor for defining the scope baseline |
 
-## Questions to Ask in Practice
-1. Does the scope statement explicitly list deliverables that are out of scope — not just what is included?
-2. Are the acceptance criteria for each deliverable objective and testable, or are they subjective descriptions that could be interpreted differently by different stakeholders?
-3. Have all assumptions embedded in the scope definition been documented and validated?
-4. Has the scope statement been reviewed and formally accepted by the sponsor and key stakeholders?
+- SKL-03-02 Plan Scope and Requirements.
+- SKL-03-01 Build Integrated Project Management Plan.
 
-*Authority: Process Groups: A Practice Guide § 3.4 · Source type: PMI-derived*
-*Repository: https://github.com/fakhruldeen/PMOSkills*
+## Domain and Focus Area Links
+
+- Strongest PMBOK 8 alignment: Scope Performance Domain.
+- Secondary alignment: Governance, because formal scope boundaries are core to governance and change control integrity.
+- Strongest focus area alignment: Planning.
+
+## Practitioner Questions
+
+- Are deliverables described in sufficient detail to guide WBS decomposition and quality planning?
+- Are explicit exclusions documented so that scope boundaries are unambiguous to all stakeholders?
+- How are quality requirements and acceptance criteria captured in the scope definition?
+- Does the defined scope align with and fully trace back to the project charter and documented requirements?
+- In adaptive contexts, is the product roadmap and release-level scope definition sufficient to begin iteration planning?
+
+*Authority: PMBOK 8 — 2.2.2.3 Define Scope; Process Groups: A Practice Guide — 5.4 Define Scope*
