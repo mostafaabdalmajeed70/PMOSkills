@@ -1,12 +1,12 @@
 # PMOSkills Repository — Master Development Plan
-**Version:** 2.11.0
+**Version:** 2.12.0
 **Date:** 2026-05-31
 **Repository:** [https://github.com/fakhruldeen/PMOSkills](https://github.com/fakhruldeen/PMOSkills)
 **Authority:** PMBOK 8 Primary · PMI Companion References Secondary
 **Status:** Active roadmap — supersedes NEXT-STEPS-PLAN.md v1.0.0 (2026-05-29) and v3.0.0 (2026-05-31)
 **Supersedes:** `NEXT-STEPS-PLAN.md` v1.0.0 · `NEXT-STEPS-PLAN.md` v3.0.0
 
-> **v2.11.0 update note (2026-05-31):** Phase C4 Batch 1 COMPLETE — PR01–PR10 committed (10/40 process records). Batches 2–4 (PR11–PR40) remain.
+> **v2.12.0 update note (2026-05-31):** Path correction applied — canonical path for C4 processes is `reference/processes/` (not `reference/C4-Process-Records/`). PR11–PR40 exist at root `C4-Process-Records/` and at `reference/C4-Process-Records/` (wrong paths — migration in progress). PR01–PR10 confirmed missing — queued for rebuild. C5/C6/C7 legacy files exist at root and are queued for migration to `reference/`. Session order updated.
 
 ---
 
@@ -22,7 +22,7 @@ The plan is structured for AI agent execution. Each phase has:
 
 ---
 
-## 1. Current State Assessment (as of 2026-05-31)
+## 1. Current State Assessment (as of 2026-05-31 — v2.12.0)
 
 ### 1.1 Repository Structure
 
@@ -40,7 +40,7 @@ The plan is structured for AI agent execution. Each phase has:
 | `SECURITY.md` | ✅ Present | Secrets, PII, AI agent security |
 | `.github/ISSUE_TEMPLATE/` | ✅ Present | 3 templates: bug, content, improvement |
 | `.github/pull_request_template.md` | ✅ Present | Full PMBOK-quality PR checklist |
-| `MASTER-PLAN-V2.md` | ✅ v2.11.0 | This document — updated 2026-05-31 |
+| `MASTER-PLAN-V2.md` | ✅ v2.12.0 | This document — updated 2026-05-31 |
 | `CHANGELOG.md` | ✅ Present | Updated 2026-05-31 |
 | `LICENSE` | ✅ Present | |
 | `.gitignore` | ✅ Present | |
@@ -91,10 +91,22 @@ All 10 examples use the "Meridian CRM Modernization" scenario (Nexus Solutions L
 | C1 — 12 Principle files | `reference/principles/P01–P12.md` + `00-index.md` | ✅ COMPLETE — 2026-05-31 |
 | C2 — 8 Performance Domain files | `reference/performance-domains/PD01–PD08.md` + `00-index.md` | ✅ COMPLETE — 2026-05-31 |
 | C3 — 5 Focus Area files | `reference/focus-areas/FA01–FA05.md` | ✅ COMPLETE — 2026-05-31 |
-| C4 — 40 Process records | `reference/processes/` | 🟡 In progress — 10/40 done (Batch 1: PR01–PR10) |
-| C5 — I/O and T&T registries | `reference/` | ❌ Not started |
-| C6 — Appendices X2–X5 | `reference/appendices/` | ❌ Not started |
-| C7 — Reference GLOSSARY | `reference/GLOSSARY.md` | ❌ Not started |
+| C4 — 40 Process records | `reference/processes/PR01–PR40.md` + `00-index.md` | 🟡 Migration in progress — see §1.7.1 |
+| C5 — KA Cross-reference Index | `reference/KA-Crossref-Index.md` | 🟡 File exists at root `C5-KA-Crossref/` — migration queued |
+| C6 — T&T Taxonomy | `reference/TT-Taxonomy-Index.md` | 🟡 File exists at root `C6-TT-Taxonomy/` — migration queued |
+| C7 — I/O Registry | `reference/IO-Registry-Index.md` | 🟡 File exists at root `C7-IO-Registry/` — migration queued |
+| C8 — Appendices X2–X5 | `reference/appendices/` | ❌ Not started |
+| C9 — Reference GLOSSARY | `reference/GLOSSARY.md` | ❌ Not started |
+
+#### 1.7.1 C4 Process Records — Path Migration Status
+
+**Canonical path:** `reference/processes/` (per §3 target structure)
+
+| File Range | Current Location | Status |
+|---|---|---|
+| PR01–PR10 | ❌ Missing from repo | Rebuild required |
+| PR11–PR40 | `C4-Process-Records/` (root) | 🟡 Migration to `reference/processes/` queued |
+| PR11–PR40 | `reference/C4-Process-Records/` | ⚠️ Wrong path — delete after migration |
 
 ### 1.8 Shared Layer — Phase D Seeded 🟡
 
@@ -224,19 +236,16 @@ PMOSkills/
 │   ├── principles/                    ← ✅ COMPLETE (C1)
 │   ├── performance-domains/           ← ✅ COMPLETE (C2)
 │   ├── focus-areas/                   ← ✅ COMPLETE (C3)
-│   ├── processes/                     ← 🟡 IN PROGRESS (C4) — 10/40
+│   ├── processes/                     ← 🟡 IN PROGRESS (C4) — migration + PR01–PR10 rebuild
+│   │   ├── 00-index.md
 │   │   ├── PR01-develop-project-charter.md
 │   │   ├── PR02-identify-stakeholders.md
-│   │   ├── PR03-develop-project-management-plan.md
-│   │   ├── PR04-plan-scope-management.md
-│   │   ├── PR05-collect-requirements.md
-│   │   ├── PR06-define-scope.md
-│   │   ├── PR07-create-wbs.md
-│   │   ├── PR08-plan-schedule-management.md
-│   │   ├── PR09-define-activities.md
-│   │   ├── PR10-sequence-activities.md
-│   │   └── [PR11–PR40 remaining]
-│   └── appendices/                    ← ❌ NOT STARTED (C6)
+│   │   ├── ... PR03–PR40
+│   ├── KA-Crossref-Index.md           ← 🟡 Migration queued (C5)
+│   ├── TT-Taxonomy-Index.md           ← 🟡 Migration queued (C6)
+│   ├── IO-Registry-Index.md           ← 🟡 Migration queued (C7)
+│   ├── appendices/                    ← ❌ NOT STARTED (C8)
+│   └── GLOSSARY.md                    ← ❌ NOT STARTED (C9)
 │
 ├── shared/                            ← PHASE D TARGET
 └── tests/                             ← PHASE E TARGET
@@ -258,17 +267,19 @@ PMOSkills/
 ### Phase C — Reference Layer 🟡 IN PROGRESS
 
 **Entry condition:** Phase B complete ✅  
-**Exit quality gate:** All 12 principle files, 8 performance domain files, 5 focus area files, 40 process records, and 4 appendix files complete. Each sourced to a specific PMBOK 8 section.
+**Exit quality gate:** All 12 principle files, 8 performance domain files, 5 focus area files, 40 process records, KA cross-reference index, T&T taxonomy, I/O registry, and 4 appendix files complete. Each sourced to a specific PMBOK 8 section.
 
 | Sub-phase | Deliverables | Count | Status |
 |---|---|---|---|
 | C1 | `reference/principles/P01–P12.md` + `00-index.md` | 13 files | ✅ COMPLETE — 2026-05-31 |
 | C2 | `reference/performance-domains/PD01–PD08.md` + `00-index.md` | 9 files | ✅ COMPLETE — 2026-05-31 |
 | C3 | `reference/focus-areas/FA01–FA05.md` | 5 files | ✅ COMPLETE — 2026-05-31 |
-| C4 | `reference/processes/` (40 process files) | 40 files | 🟡 10/40 — Batch 1 done |
-| C5 | I/O and T&T registries | TBD | ❌ Not started |
-| C6 | `reference/appendices/X2–X5.md` | 4 files | ❌ Not started |
-| C7 | `reference/GLOSSARY.md` | 1 file | ❌ Not started |
+| C4 | `reference/processes/PR01–PR40.md` + `00-index.md` | 41 files | 🟡 PR11–PR40 migration + PR01–PR10 rebuild |
+| C5 | `reference/KA-Crossref-Index.md` | 1 file | 🟡 Migration queued |
+| C6 | `reference/TT-Taxonomy-Index.md` | 1 file | 🟡 Migration queued |
+| C7 | `reference/IO-Registry-Index.md` | 1 file | 🟡 Migration queued |
+| C8 | `reference/appendices/X2–X5.md` | 4 files | ❌ Not started |
+| C9 | `reference/GLOSSARY.md` | 1 file | ❌ Not started |
 
 ### Phase 3 — Build Full Skill Content (47 files) ❌ NOT STARTED
 
@@ -341,8 +352,11 @@ Phase 7 (quality audit)   ← Runs after EACH phase — continuous
 | C1 | Reference: 12 principles | 13 files | ✅ Complete — 2026-05-31 |
 | C2 | Reference: 8 performance domains | 9 files | ✅ Complete — 2026-05-31 |
 | C3 | Reference: 5 focus areas | 5 files | ✅ Complete — 2026-05-31 |
-| C4 | Reference: 40 processes | 40 files | 🟡 10/40 — Batch 1 complete |
-| C5–C7 | Reference: registries, appendices, glossary | TBD | ❌ |
+| C4 | Reference: 40 processes | 41 files | 🟡 PR11–PR40 migration + PR01–PR10 rebuild |
+| C5 | KA Cross-reference Index | 1 file | 🟡 Migration queued |
+| C6 | T&T Taxonomy Index | 1 file | 🟡 Migration queued |
+| C7 | I/O Registry Index | 1 file | 🟡 Migration queued |
+| C8–C9 | Appendices + GLOSSARY | 5 | ❌ |
 | Phase 3 | 47 full skill content files | 47 | ❌ |
 | Phase D | Shared components + validators | 11 | ❌ |
 | Phase E | Test suite | 53 | ❌ |
@@ -358,16 +372,14 @@ Phase 7 (quality audit)   ← Runs after EACH phase — continuous
 1. ~~Phase C1 — 12 principle files + index~~ ✅ COMPLETE
 2. ~~Phase C2 — 8 performance domain files + index~~ ✅ COMPLETE
 3. ~~Phase C3 — 5 focus area files~~ ✅ COMPLETE
-4. ~~Phase C4 Batch 1 — PR01–PR10 (Initiating + Scope chain + Schedule chain)~~ ✅ COMPLETE
-5. **Current:** Phase C4 Batch 2 — PR11–PR20 (Schedule continued + Finance + Quality + Resource planning)
-6. **Next:** Phase C4 Batch 3 — PR21–PR30 (Risk + Procurement + Comms + Stakeholder planning)
-7. **Session +2:** Phase C4 Batch 4 — PR31–PR40 (Executing + M&C + Closing processes)
-8. **Session +3:** Phase C5 + C7 — I/O registries + reference GLOSSARY
-9. **Session +4:** Phase C6 — 4 appendix files (X2–X5)
-10. **Session +5:** Phase 3 — Skill content Pack 01 + Pack 02 (5 skills)
-11. **Sessions +6–9:** Phase 3 — Remaining 42 skill files
-12. **Sessions +10–11:** Phase D (shared) + Phase E (tests)
-13. **Sessions beyond:** Phase F, G, H, I
+4. ~~Phase C4 Batch 1 — PR01–PR10 (Initiating + Scope chain + Schedule chain)~~ ✅ FILES LOST — rebuild queued
+5. **Current session:** C4 path fix — migrate PR11–PR40 to `reference/processes/`; migrate C5/C6/C7 to `reference/`; rebuild PR01–PR10; push `00-index.md`; delete old root directories
+6. **Session +1:** C8 — 4 appendix files (`reference/appendices/X2–X5.md`)
+7. **Session +2:** C9 — Reference GLOSSARY (`reference/GLOSSARY.md`)
+8. **Session +3:** Phase 3 — Skill content Pack 01 + Pack 02 (5 skills)
+9. **Sessions +4–7:** Phase 3 — Remaining 42 skill files
+10. **Sessions +8–9:** Phase D (shared) + Phase E (tests)
+11. **Sessions beyond:** Phase F, G, H, I
 
 ---
 
@@ -402,11 +414,12 @@ Phase 7 (quality audit)   ← Runs after EACH phase — continuous
 | 2.8.0 | 2026-05-31 | Merged Plan v3.0.0 — added Phase 3 (skills), Phase D (shared), Phase E (tests), quality standards §2, dependency map, completion metrics, session order; Phase C1 in progress |
 | 2.9.0 | 2026-05-31 | Phase C1 COMPLETE (13 files: P01–P12 + index) · Phase C2 + C3 in progress |
 | 2.10.0 | 2026-05-31 | Phase C2 COMPLETE (9 files: PD01–PD08 + index) · Phase C3 COMPLETE (5 files: FA01–FA05) · Phase C4 in progress |
-| 2.11.0 | 2026-05-31 | Phase C4 Batch 1 COMPLETE — PR01–PR10 committed (10/40 process records) · Session order updated |
+| 2.11.0 | 2026-05-31 | Phase C4 Batch 1 COMPLETE (PR01–PR10 committed — now confirmed missing; rebuild queued) · PR11–PR40 committed to wrong paths |
+| 2.12.0 | 2026-05-31 | Path correction — canonical C4 path = `reference/processes/` · C5/C6/C7 legacy files identified at root · PR01–PR10 confirmed missing · Full migration plan documented · Session order updated |
 
 ---
 
 *Authority: PMBOK8 Guide Primary · PMI Companion References Secondary*
 *Repository: [https://github.com/fakhruldeen/PMOSkills](https://github.com/fakhruldeen/PMOSkills)*
 *Maintainer: @fakhruldeen*
-*Last Updated: 2026-05-31 · Version 2.11.0*
+*Last Updated: 2026-05-31 · Version 2.12.0*
