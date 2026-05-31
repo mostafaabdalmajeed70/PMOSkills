@@ -1,12 +1,12 @@
 # PMOSkills Repository — Master Development Plan
-**Version:** 2.8.0
+**Version:** 2.9.0
 **Date:** 2026-05-31
 **Repository:** [https://github.com/fakhruldeen/PMOSkills](https://github.com/fakhruldeen/PMOSkills)
 **Authority:** PMBOK 8 Primary · PMI Companion References Secondary
 **Status:** Active roadmap — supersedes NEXT-STEPS-PLAN.md v1.0.0 (2026-05-29) and v3.0.0 (2026-05-31)
 **Supersedes:** `NEXT-STEPS-PLAN.md` v1.0.0 · `NEXT-STEPS-PLAN.md` v3.0.0
 
-> **v2.8.0 update note (2026-05-31):** Merged full roadmap from Plan v3.0.0 (uploaded 2026-05-31). Added Phase 3 (47 full skill content files), Phase 4 (reference layer — now renamed Phase C/C1–C7 in this plan), Phase 5 (shared components + validators), Phase 6 (test suite), Phase 7 (quality audit protocol), and updated completion metrics. Phase C1 (12 principle files) is now in progress.
+> **v2.9.0 update note (2026-05-31):** Phase C1 COMPLETE — all 13 principle files committed (P01–P12 + 00-index). Phase C2 (8 performance domain files) and Phase C3 (5 focus area files) now in progress in parallel.
 
 ---
 
@@ -142,9 +142,9 @@ All 10 examples use the "Meridian CRM Modernization" scenario (Nexus Solutions L
 
 | Sub-phase | Target | Status |
 |---|---|---|
-| C1 — 12 Principle files | `reference/principles/P01–P12.md` + `00-index.md` | 🟡 In progress |
-| C2 — 8 Performance Domain files | `reference/performance-domains/PD01–PD08.md` + `00-index.md` | ❌ Not started |
-| C3 — 5 Focus Area files | `reference/focus-areas/FA01–FA05.md` | ❌ Not started |
+| C1 — 12 Principle files | `reference/principles/P01–P12.md` + `00-index.md` | ✅ COMPLETE — 2026-05-31 |
+| C2 — 8 Performance Domain files | `reference/performance-domains/PD01–PD08.md` + `00-index.md` | 🟡 In progress |
+| C3 — 5 Focus Area files | `reference/focus-areas/FA01–FA05.md` | 🟡 In progress |
 | C4 — 40 Process records | `reference/processes/` | ❌ Not started |
 | C5 — I/O and T&T registries | `reference/` | ❌ Not started |
 | C6 — Appendices X2–X5 | `reference/appendices/` | ❌ Not started |
@@ -553,9 +553,9 @@ Phase 7 (quality audit)   ← Runs after EACH phase — continuous
 | B2 | Artifact templates | 38 | ✅ Complete — 2026-05-31 |
 | B3 | Artifact examples | 10 | ✅ Complete — 2026-05-31 |
 | Phase 1 | docs/ documentation | 9 | ✅ Complete — 2026-05-31 |
-| C1 | Reference: 12 principles | 13 files | 🟡 In progress |
-| C2 | Reference: 8 performance domains | 9 files | ❌ |
-| C3 | Reference: 5 focus areas | 5 files | ❌ |
+| C1 | Reference: 12 principles | 13 files | ✅ Complete — 2026-05-31 |
+| C2 | Reference: 8 performance domains | 9 files | 🟡 In progress |
+| C3 | Reference: 5 focus areas | 5 files | 🟡 In progress |
 | C4 | Reference: 40 processes | 40 files | ❌ |
 | C5–C7 | Reference: registries, appendices, glossary | TBD | ❌ |
 | Phase 3 | 47 full skill content files | 47 | ❌ |
@@ -629,10 +629,11 @@ Phase 7 (quality audit)   ← Runs after EACH phase — continuous
 | 2.6.0 | 2026-05-31 | Phase 1 COMPLETE · B2 expanded to 24 templates |
 | 2.7.0 | 2026-05-31 | Phase B2 COMPLETE (38/38) · Phase B3 COMPLETE (10/10) |
 | 2.8.0 | 2026-05-31 | Merged Plan v3.0.0 — added Phase 3 (skills), Phase D (shared), Phase E (tests), quality standards §2, dependency map, completion metrics, session order; Phase C1 in progress |
+| 2.9.0 | 2026-05-31 | Phase C1 COMPLETE (13 files: P01–P12 + index) · Phase C2 + C3 in progress |
 
 ---
 
 *Authority: PMBOK8 Guide Primary · PMI Companion References Secondary*
 *Repository: [https://github.com/fakhruldeen/PMOSkills](https://github.com/fakhruldeen/PMOSkills)*
 *Maintainer: @fakhruldeen*
-*Last Updated: 2026-05-31 · Version 2.8.0*
+*Last Updated: 2026-05-31 · Version 2.9.0*
