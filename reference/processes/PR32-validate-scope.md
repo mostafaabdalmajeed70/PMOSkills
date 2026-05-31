@@ -1,0 +1,64 @@
+# PR32 — Validate Scope
+
+## Process Identity
+| Field | Value |
+|---|---|
+| **Process ID** | PR32 |
+| **Process Name** | Validate Scope |
+| **Process Group** | Monitoring and Controlling |
+| **Knowledge Area** | Scope Management |
+| **PMBOK Source** | Process Groups: A Practice Guide §7.3 |
+
+---
+
+## Purpose
+Formalize acceptance of the completed project deliverables. Brings objectivity to the acceptance process and increases the probability of final product, service, or result acceptance by validating each deliverable.
+
+---
+
+## Inputs
+| Input | Description |
+|---|---|
+| Project management plan | Scope management plan, requirements management plan, scope baseline |
+| Project documents | Lessons learned register, quality reports, requirements documentation, requirements traceability matrix |
+| Verified deliverables | Output of Control Quality — confirmed correct and complete |
+| Work performance data | Raw data on deliverable completion status |
+
+---
+
+## Tools and Techniques
+| Tool / Technique | Notes |
+|---|---|
+| Inspection | Review/walkthrough of deliverable with customer or sponsor |
+| Decision making | Voting on acceptance |
+
+---
+
+## Outputs
+| Output | Description |
+|---|---|
+| Accepted deliverables | Deliverables formally signed off by customer or sponsor |
+| Work performance information | Processed data indicating acceptance status |
+| Change requests | If deliverables are not accepted, defect repair or re-work change requests |
+| Project documents updates | Lessons learned register, requirements documentation, requirements traceability matrix |
+
+---
+
+## Key Concepts
+- Concerned with **acceptance** of deliverables (customer/sponsor sign-off).
+- Distinct from **Control Quality**, which is concerned with **correctness** of deliverables.
+- Control Quality is generally performed **before** Validate Scope, though both may run in parallel.
+- Performed periodically throughout the project, not only at project closure.
+
+---
+
+## PMBOK 8 Alignment
+- Supported by the **Scope** performance domain (§2.2).
+- Accepted deliverables feed directly into **Close Project or Phase** (PR40).
+
+---
+
+## Related Processes
+- Depends on: PR37 (Control Quality) — verified deliverables
+- Feeds into: PR40 (Close Project or Phase)
+- Cross-links: PR31 (Perform Integrated Change Control) — for change requests on rejected deliverables
