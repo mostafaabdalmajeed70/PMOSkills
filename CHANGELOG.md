@@ -6,6 +6,19 @@ Authority: PMBOK 8 Primary · PMI Companion References Secondary.
 
 ---
 
+## [2.5.0] — 2026-05-31
+
+### Added
+- `docs/getting-started.md` — orientation guide for PMO practitioners, AI agents, and book authors. Includes repo overview, directory map, three-audience quickstart paths, skill-finding decision tree, key files index. Phase 1 doc layer.
+- `docs/how-to-use-skills.md` — complete guide to reading and executing a skill file. Covers skill file anatomy (all 13 YAML fields + named sections), 10-step execution sequence, pre-condition failure handling, T1–T4 routing pointer, worked example SKL-02-01. Phase 1 doc layer.
+- `docs/ai-agent-guide.md` — operating guide for AI agents and agent developers. Covers 7-step loading order, routing logic, programmatic skill execution, artifact output rules, T1–T4 escalation, failure handling, context budget management, output format rules, 3 sample prompts. Phase 1 doc layer.
+- `artifacts/governance/A05-context-register-template.md` — template for A05 Context Register. Sections: Project Reference, EEFs, OPAs, Assumptions Register, Constraints Register, Lessons Learned Pointers, Review Log. 20 `[FIELD: ...]` placeholders. Phase B2 Batch 3.
+- `artifacts/quality/A09-quality-management-plan-template.md` — template for A09 Quality Management Plan. Sections: Project Reference, Quality Standards and Objectives, Roles and Responsibilities, QA Activities, QC Activities, Quality Metrics, Acceptance Criteria Process, Non-Conformance Process, Continuous Improvement, Review Log. 52 `[FIELD: ...]` placeholders. Phase B2 Batch 3.
+
+### Changed
+- `MASTER-PLAN-V2.md` bumped to v2.5.0 — Phase 1 docs status table added, B2 template inventory corrected to 16 templates, session order updated, documentation layer section added.
+
+
 ## [2.3.0] — 2026-05-30
 
 ### Changed
