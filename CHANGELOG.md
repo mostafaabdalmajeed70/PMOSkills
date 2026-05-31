@@ -6,6 +6,36 @@ Authority: PMBOK 8 Primary · PMI Companion References Secondary.
 
 ---
 
+## [2.10.0] — 2026-05-31
+
+### Added — Phase C2: Reference Performance Domains Layer (COMPLETE)
+- `reference/performance-domains/00-index.md` — Full performance domains index: 8 domains, interdependency matrix, interaction diagram, artifact coverage, skill connections. SHA: b2cdd222.
+- `reference/performance-domains/PD01-stakeholders.md` — Stakeholder Performance Domain (PMBOK8 §4.1). SHA: 229de93c.
+- `reference/performance-domains/PD02-team.md` — Team Performance Domain (PMBOK8 §4.2). SHA: e67e0b17.
+- `reference/performance-domains/PD03-development-approach.md` — Development Approach and Life Cycle Performance Domain (PMBOK8 §4.3). SHA: c6e28640.
+- `reference/performance-domains/PD04-planning.md` — Planning Performance Domain (PMBOK8 §4.4). SHA: 1cbc7013.
+- `reference/performance-domains/PD05-project-work.md` — Project Work Performance Domain (PMBOK8 §4.5). SHA: d26bf832.
+- `reference/performance-domains/PD06-delivery.md` — Delivery Performance Domain (PMBOK8 §4.6). SHA: 8cf1706d.
+- `reference/performance-domains/PD07-measurement.md` — Measurement Performance Domain (PMBOK8 §4.7). SHA: c0f874d3.
+- `reference/performance-domains/PD08-uncertainty.md` — Uncertainty Performance Domain (PMBOK8 §4.8). SHA: 102bfb0e.
+
+### Added — Phase C3: Reference Focus Areas Layer (COMPLETE)
+- `reference/focus-areas/FA01-initiating.md` — Initiating Focus Area (Process Groups Practice Guide §4). SHA: bef503db.
+- `reference/focus-areas/FA02-planning.md` — Planning Focus Area (Process Groups Practice Guide §5). SHA: 316daf73.
+- `reference/focus-areas/FA03-executing.md` — Executing Focus Area (Process Groups Practice Guide §6). SHA: be012353.
+- `reference/focus-areas/FA04-monitoring-controlling.md` — Monitoring & Controlling Focus Area (Process Groups Practice Guide §7). SHA: c8f193da.
+- `reference/focus-areas/FA05-closing.md` — Closing Focus Area (Process Groups Practice Guide §8). SHA: 02f47fd3.
+
+Each performance domain file includes: YAML front matter, PMI-grounded definition, desired outcomes, key activities, interdependency tables, artifact connections, skill connections, and 5 practitioner questions.
+Each focus area file includes: YAML front matter, purpose, key processes list, inputs/outputs summary, artifact connections, skill connections, and practitioner questions.
+
+### Changed
+- `MASTER-PLAN-V2.md` bumped to v2.10.0 — Phase C2 and C3 marked COMPLETE; Phase C4 (40 process records) opened.
+
+---
+
+---
+
 ## [2.9.0] — 2026-05-31
 
 ### Added — Phase C1: Reference Principles Layer (COMPLETE)
