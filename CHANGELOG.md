@@ -6,6 +6,31 @@ Authority: PMBOK 8 Primary · PMI Companion References Secondary.
 
 ---
 
+## [2.9.0] — 2026-05-31
+
+### Added — Phase C1: Reference Principles Layer (COMPLETE)
+- `reference/principles/00-index.md` — Full principles index: 12 principles, §3.N references, interdependency map, artifact coverage summary (18 artifacts), usage guidance for practitioners/AI agents/auditors. SHA: 693364ac.
+- `reference/principles/P01-stewardship.md` — Be a Diligent, Respectful, and Caring Steward (PMBOK8 §3.1). SHA: 2ce6cfee.
+- `reference/principles/P02-team.md` — Create a Collaborative Project Team Environment (PMBOK8 §3.2). SHA: 7bd44d69.
+- `reference/principles/P03-stakeholders.md` — Effectively Engage with Stakeholders (PMBOK8 §3.3). SHA: c9fe6f0d.
+- `reference/principles/P04-value.md` — Focus on Value (PMBOK8 §3.4). SHA: 05699468.
+- `reference/principles/P05-systems-thinking.md` — Recognize, Evaluate, and Respond to System Interactions (PMBOK8 §3.5). SHA: 69372c50.
+- `reference/principles/P06-leadership.md` — Demonstrate Leadership Behaviors (PMBOK8 §3.6). SHA: e41019fe.
+- `reference/principles/P07-tailoring.md` — Tailor Based on Context (PMBOK8 §3.7). SHA: 072cef9c.
+- `reference/principles/P08-quality.md` — Build Quality into Processes and Deliverables (PMBOK8 §3.8). SHA: c30df61e.
+- `reference/principles/P09-complexity.md` — Navigate Complexity (PMBOK8 §3.9). SHA: f90ea7ab.
+- `reference/principles/P10-risk.md` — Optimize Risk Responses (PMBOK8 §3.10). SHA: 873e5a22.
+- `reference/principles/P11-adaptability.md` — Embrace Adaptability and Resiliency (PMBOK8 §3.11). SHA: 2e5e678b.
+- `reference/principles/P12-change.md` — Enable Change to Achieve the Envisioned Future State (PMBOK8 §3.12). SHA: d69ebaae.
+
+Each principle file includes: YAML front matter, PMI-grounded definition, 4–6 key characteristics, relationship to other principles table (3–4 rows), artifact connections (3–4 rows), skill connections (2–3 rows), and 5 practitioner questions.
+
+### Changed
+- `MASTER-PLAN-V2.md` bumped to v2.9.0 — Phase C1 marked COMPLETE, Phase C2 + C3 opened.
+
+### Confirmed Closed
+- **Phase C1 — Reference Principles** — all 13 files (P01–P12 + 00-index.md) committed. 2026-05-31.
+
 ## [2.8.0] — 2026-05-31
 
 ### Changed
