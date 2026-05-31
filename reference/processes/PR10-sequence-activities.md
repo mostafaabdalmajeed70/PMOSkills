@@ -1,81 +1,74 @@
----
-reference_type: Process
-reference_id: PR10
-name: Sequence Activities
-process_group: Planning
-knowledge_area: Project Schedule Management
-version: "1.0.0"
-status: Active
-pmbok8_source: "Process Groups: A Practice Guide § 3.8 — Sequence Activities"
-authority: PMI-derived
----
-
 # PR10 — Sequence Activities
-**Type:** Process
-**Process Group:** Planning
-**Knowledge Area:** Project Schedule Management
-**PMBOK8 Source:** Process Groups: A Practice Guide § 3.8
-**Version:** 1.0.0
+
+**Type:** Process Record  
+**Primary Source:** PMBOK 8 — Schedule Performance Domain  
+**Companion Source:** Process Groups: A Practice Guide — 5.8 Sequence Activities  
+**Process Group:** Planning  
+**Version:** 1.0.0  
+**Status:** Active
 
 ## Definition
-Sequence Activities is the process of identifying and documenting relationships among the project activities (PG:APG § 3.8). Every activity except the first and last must have at least one predecessor and one successor. The network diagram produced by this process models the logical flow of work and is the foundation for critical path analysis, schedule compression, and resource optimization.
+
+Sequence Activities is the process of identifying and documenting relationships among the project activities to establish the logical order in which activities will be performed.
 
 ## Purpose
-To establish the logical order of all project activities by defining their dependencies, enabling the development of a realistic, network-based project schedule that reflects how work actually must be sequenced.
+
+This process establishes the schedule network by defining the logical dependencies among activities. Every activity except the first and last should connect to at least one predecessor and one successor. The resulting project schedule network diagram provides the structural basis for critical path analysis, schedule compression, and resource optimization. These logical relationships directly affect the schedule baseline and execution sequencing.
+
+## When Used
+
+This process follows Define Activities (PR09) and is performed during Planning. It is repeated as needed when activities are added or changed, especially in rolling-wave and adaptive projects.
 
 ## Key Inputs
-| Input | Source |
-|---|---|
-| Project Management Plan (schedule management plan, scope baseline) | PR08, PR07 |
-| Project documents (activity attributes, activity list, assumption log, milestone list) | PR09 |
-| Enterprise Environmental Factors (EEFs) | Organization |
-| Organizational Process Assets (OPAs) | Organization |
+
+- Project management plan, especially the schedule management plan (from PR08) and scope baseline.
+- Project documents, including the activity list and attributes (from PR09), assumption log, milestone list, and risk register.
+- Enterprise environmental factors.
+- Organizational process assets.
 
 ## Key Tools and Techniques
-| Tool / Technique | Description |
-|---|---|
-| Precedence Diagramming Method (PDM) | Node-based network diagram using Finish-to-Start, Start-to-Start, Finish-to-Finish, Start-to-Finish relationships |
-| Dependency determination and integration | Classifying dependencies as mandatory (hard logic), discretionary (soft logic), external, or internal |
-| Leads and lags | Adjusting dependency timing — leads allow overlap, lags introduce waiting time |
-| Project Management Information System (PMIS) | Software tools for network diagram creation |
+
+- Precedence diagramming method (PDM).
+- Dependency determination and integration, distinguishing mandatory, discretionary, internal, and external dependencies.
+- Leads and lags.
+- Project management information system (PMIS).
 
 ## Key Outputs
-| Output | Description |
-|---|---|
-| Project Schedule Network Diagrams | Visual or data representations of activity sequences and logical relationships |
-| Project documents updates | Updates to activity attributes, activity list, assumption log, milestone list |
 
-## Key Characteristics
-- **Every activity must connect:** Except the start and end activities, every activity must have at least one predecessor and one successor — islands indicate planning gaps (PG:APG § 3.8).
-- **Four dependency types:** Finish-to-Start (FS), Start-to-Start (SS), Finish-to-Finish (FF), Start-to-Finish (SF) — FS is the most common; SF is rarely used (PG:APG § 3.8, PSS-3E).
-- **Dependency classification:** Mandatory dependencies (hard logic, physical or contractual) must be respected; discretionary dependencies (soft logic) represent best practices and can be changed to compress the schedule (PG:APG § 3.8).
-- **Critical path prerequisite:** The network diagram is the input required for critical path method analysis in PR12 (PG:APG § 3.8).
-- **Leads and lags with caution:** Excessive use of lags introduces schedule risk; leads that are unrealistic create false confidence in compressed timelines (PG:APG § 3.8).
+- Project schedule network diagram.
+- Project document updates, including activity list, activity attributes, assumption log, and milestone list updates.
 
 ## Relationship to Other Processes
-| Process | Relationship |
-|---|---|
-| PR09 — Define Activities | Activity list and attributes are the primary input to sequencing |
-| PR11 — Estimate Activity Durations | Duration estimates are applied to the sequenced network |
-| PR12 — Develop Schedule | Network diagrams are a primary input to schedule development and critical path analysis |
-| PR41 — Control Schedule | Network dependencies are referenced when assessing the impact of schedule changes |
+
+- Relies on Define Activities (PR09) for the complete activity list needed to establish relationships.
+- Directly feeds Estimate Activity Durations and Develop Schedule, which require a sequenced network to calculate the critical path and schedule baseline.
+- Informs risk identification and risk response planning, as network logic reveals critical dependencies and float sensitivity.
+- Supports Control Schedule, which monitors whether actual execution respects or deviates from planned sequencing.
 
 ## Artifact Connections
-| Artifact | Connection |
-|---|---|
-| A15 — Schedule Baseline | Network sequence logic is embedded in the schedule baseline |
-| A14 — Integrated Project Management Plan | Network structure informs the schedule management approach described in the PMP |
+
+- **A15 Schedule Baseline:** the schedule network diagram is the structural foundation from which the schedule baseline is developed through duration estimating and schedule compression.
+- **A14 Integrated Project Management Plan:** schedule management plan updates may reflect changes to dependency logic or scheduling methodology driven by sequencing analysis.
+- **A19 Risk Register / risk-related record:** critical path items and activities with high dependency concentration are risk candidates that should be logged and analyzed.
+- **A05 Context Register:** external dependency constraints and calendar assumptions that affect how activities can be logically ordered.
 
 ## Skill Connections
-| Skill ID | Skill Name | Connection |
-|---|---|---|
-| SKL-03-04 | Build WBS and Schedule | Activity sequencing is a core step in schedule construction |
 
-## Questions to Ask in Practice
-1. Are mandatory dependencies clearly distinguished from discretionary dependencies — and have the discretionary ones been challenged to explore schedule compression opportunities?
-2. Are there any activities in the network with no predecessor or successor (other than the start and end milestones) that might indicate sequencing gaps?
-3. Have leads and lags been used judiciously — are they realistic, or have they been used to force an unrealistically compressed schedule?
-4. Does the network diagram reflect how work will actually be sequenced by the team, or does it reflect an idealized sequence that the team won’t follow in practice?
+- SKL-03-04 Plan Schedule.
+- SKL-04-01 Control Schedule and Monitor Progress.
 
-*Authority: Process Groups: A Practice Guide § 3.8 · Practice Standard for Scheduling (3rd Ed.) · Source type: PMI-derived*
-*Repository: https://github.com/fakhruldeen/PMOSkills*
+## Domain and Focus Area Links
+
+- Strongest PMBOK 8 alignment: Schedule Performance Domain.
+- Secondary alignment: Risk, because critical path logic and dependency concentration are primary sources of schedule risk.
+- Strongest focus area alignment: Planning.
+
+## Practitioner Questions
+
+- Are all mandatory dependencies (hard logic) correctly identified and distinguished from discretionary ones (soft logic)?
+- Have external dependencies — supplier deliveries, regulatory approvals, or other project handoffs — been explicitly captured?
+- Are leads and lags applied judiciously and documented with justification?
+- Does the schedule network diagram reveal any loops, open ends, or illogical sequences?
+- Which activities lie on the critical path, and have those been flagged for risk and resource priority?
+
+*Authority: PMBOK 8 — Schedule Performance Domain; Process Groups: A Practice Guide — 5.8 Sequence Activities*
