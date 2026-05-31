@@ -1,89 +1,81 @@
----
-reference_type: Process
-reference_id: PR02
-name: Identify Stakeholders
-process_group: Initiating
-knowledge_area: Project Stakeholder Management
-version: "1.0.0"
-status: Active
-pmbok8_source: "Process Groups: A Practice Guide § 2.2 — Identify Stakeholders"
-authority: PMI-derived
----
-
 # PR02 — Identify Stakeholders
-**Type:** Process
-**Process Group:** Initiating
-**Knowledge Area:** Project Stakeholder Management
-**PMBOK8 Source:** Process Groups: A Practice Guide § 2.2
-**Version:** 1.0.0
+
+**Type:** Process Record  
+**Primary Source:** PMBOK 8 — Governance and Stakeholders Performance Domains  
+**Companion Source:** Process Groups: A Practice Guide — 4.2 Identify Stakeholders  
+**Process Group:** Initiating  
+**Version:** 1.0.0  
+**Status:** Active
 
 ## Definition
-Identify Stakeholders is the process of regularly identifying project stakeholders and analyzing and documenting relevant information regarding their interests, involvement, interdependencies, influence, and potential impact on project success (PG:APG § 2.2). This process is performed at project initiation and repeated throughout the project as the stakeholder landscape evolves. Early identification enables timely engagement and prevents critical stakeholders from being overlooked during planning.
+
+Identify Stakeholders is the process of identifying project stakeholders regularly and analyzing and documenting relevant information regarding their interests, involvement, interdependencies, influence, and potential impact on project success.
 
 ## Purpose
-To establish a comprehensive, living register of all individuals, groups, and organizations that may affect or be affected by the project, so that engagement strategies are informed by complete stakeholder intelligence from the outset.
+
+This process establishes who should be engaged, how they may affect or be affected by the project, and where management attention is needed. It enables the project team to determine the appropriate focus for engagement of each stakeholder or stakeholder group.
+
+## When Used
+
+This process often begins before or during charter development and is repeated as needed throughout the project. It should be revisited at the start of each phase and when major project or organizational changes occur.
 
 ## Key Inputs
-| Input | Source |
-|---|---|
-| Project Charter | Output of PR01 |
-| Business documents (Business Case) | Pre-project / Sponsor |
-| Project Management Plan (when updating during later phases) | PR03 output |
-| Project documents (issue log, requirements documentation) | Ongoing project work |
-| Agreements | Procurement or partnership documents |
-| Enterprise Environmental Factors (EEFs) | Organization |
-| Organizational Process Assets (OPAs) | Organization |
+
+- Project charter.
+- Business documents, especially the business case and benefits management plan.
+- Relevant project management plan components, especially communications management and stakeholder engagement planning inputs when available.
+- Project documents such as change log, issue log, and requirements documentation.
+- Agreements, enterprise environmental factors, and organizational process assets.
 
 ## Key Tools and Techniques
-| Tool / Technique | Description |
-|---|---|
-| Expert judgment | Using domain knowledge to identify all relevant stakeholder categories |
-| Data gathering (questionnaires, surveys, brainstorming) | Systematic collection of stakeholder information |
-| Data analysis (stakeholder analysis, document analysis) | Classifying stakeholders by power, interest, influence, and impact |
-| Data representation (stakeholder mapping, power/interest grid) | Visual tools for categorizing and prioritizing stakeholders |
-| Meetings | Working sessions to validate and expand the stakeholder list |
+
+- Expert judgment.
+- Data gathering, including questionnaires, surveys, and brainstorming.
+- Data analysis, especially stakeholder analysis and document analysis.
+- Data representation, especially stakeholder mapping.
+- Meetings.
 
 ## Key Outputs
-| Output | Description |
-|---|---|
-| Stakeholder Register | Documented list of identified stakeholders with analysis attributes |
-| Change Requests | If identification reveals scope or governance impacts (in later iterations) |
-| Project Management Plan updates | Updates to stakeholder engagement plan when process repeats |
 
-## Key Characteristics
-- **Iterative process:** Stakeholder identification is performed at initiation and repeated at every major phase gate and significant project event (PG:APG § 2.2).
-- **Analysis-driven:** Identification is not merely listing names; it requires systematic analysis of interests, influence levels, and potential impact (PG:APG § 2.2).
-- **Early is better:** Stakeholders identified late are harder to engage effectively and may require costly remediation of earlier decisions (PG:APG § 2.2).
-- **Bidirectional:** The process captures not only who stakeholders are but also their relationship to the project — supporters, resistors, neutral parties — to inform engagement strategy (PG:APG § 2.2).
-- **Foundation for engagement planning:** The Stakeholder Register produced here is the primary input for Plan Stakeholder Engagement (PR26) (PG:APG § 2.2).
+- Stakeholder register.
+- Change requests.
+- Project management plan updates, including requirements, communications, risk, and stakeholder engagement plans.
+- Project document updates, including assumption log, issue log, and risk register.
 
 ## Relationship to Other Processes
-| Process | Relationship |
-|---|---|
-| PR01 — Develop Project Charter | The charter is the primary input; the PM authority and project context it defines shapes who counts as a stakeholder |
-| PR26 — Plan Stakeholder Engagement | Directly consumes the Stakeholder Register to develop tailored engagement strategies |
-| PR36 — Manage Stakeholder Engagement | Executes engagement plans whose design depends on the quality of initial stakeholder identification |
-| PR48 — Monitor Stakeholder Engagement | Tracks whether identified stakeholders are engaged at the right levels over time |
+
+- Uses the charter (PR01) as its initial source of purpose, authority, and high-level stakeholder context.
+- Informs Collect Requirements (PR05), Plan Communications Management, Plan Risk Management, and Plan Stakeholder Engagement.
+- May trigger change requests when new or changed stakeholders affect the current planning basis.
 
 ## Artifact Connections
-| Artifact | Connection |
-|---|---|
-| A07 — Stakeholder Register | Direct output of this process; the artifact captures all identification and analysis data |
-| A04 — Project Charter | Key input; the charter identifies the sponsoring entity, initial key stakeholders, and authorization context |
-| A02 — Benefits and Value Measurement Record | Stakeholder interests and value expectations identified here inform how benefits are defined and measured |
+
+- **A04 Project Charter:** input context and authority source.
+- **A07 Stakeholder Register:** principal output.
+- **A10 Communications Management Plan:** updated or informed by stakeholder communication needs.
+- **A18 Issue Log:** updated when stakeholder-related issues emerge.
+- **A19 Risk Register / risk-related record:** updated when stakeholder conditions create risks.
+- **A29 Change Readiness and Adoption Record:** useful where stakeholder change impacts adoption and transition outcomes.
 
 ## Skill Connections
-| Skill ID | Skill Name | Connection |
-|---|---|---|
-| SKL-02-02 | Identify Stakeholders | This process is the PMBOK 8 authority anchor for the skill; the skill operationalizes all steps of PR02 |
-| SKL-03-14 | Plan Stakeholder Engagement | Depends on the Stakeholder Register produced by this process to develop engagement strategies |
 
-## Questions to Ask in Practice
-1. Have I identified stakeholders beyond the immediate project team and sponsor — including regulators, end users, affected communities, and future maintainers of the deliverable?
-2. Is the Stakeholder Register a living document with a defined update trigger, or will it become stale after initiation?
-3. Have I analyzed not just who stakeholders are but also their current engagement level versus the desired engagement level?
-4. Are there stakeholders with high influence and low interest who could become blockers if their concerns are not proactively managed?
-5. Have I considered that stakeholders may have conflicting interests — and do I have a plan for managing those conflicts before they escalate to issues?
+- SKL-02-03 Identify and Analyze Stakeholders.
+- SKL-03-03 Plan Communications.
+- SKL-03-08 Plan Stakeholder Engagement.
+- SKL-04-04 Manage Stakeholder Changes and Escalations.
 
-*Authority: Process Groups: A Practice Guide § 2.2 · Source type: PMI-derived*
-*Repository: https://github.com/fakhruldeen/PMOSkills*
+## Domain and Focus Area Links
+
+- Strongest PMBOK 8 alignment: Stakeholders Performance Domain.
+- Secondary alignment: Governance, because governance depends on involving the right stakeholders at the right time.
+- Strongest focus area alignment: Initiating, with continued relevance across Planning, Executing, and Monitoring and Controlling.
+
+## Practitioner Questions
+
+- Who can affect project decisions, outcomes, acceptance, or value realization?
+- Which stakeholders have high influence, high impact, or high interest and therefore require deliberate engagement?
+- Have external parties such as regulators, suppliers, affected communities, or customers been included?
+- What new risks or issues arise from stakeholder expectations, resistance, or dependency relationships?
+- When will the stakeholder analysis be refreshed during the life cycle?
+
+*Authority: PMBOK 8 — Governance and Stakeholders Performance Domains; Process Groups: A Practice Guide — 4.2 Identify Stakeholders*

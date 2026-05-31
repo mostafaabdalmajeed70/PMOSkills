@@ -1,85 +1,82 @@
----
-reference_type: Process
-reference_id: PR03
-name: Develop Project Management Plan
-process_group: Planning
-knowledge_area: Project Integration Management
-version: "1.0.0"
-status: Active
-pmbok8_source: "Process Groups: A Practice Guide § 3.1 — Develop Project Management Plan"
-authority: PMI-derived
----
-
 # PR03 — Develop Project Management Plan
-**Type:** Process
-**Process Group:** Planning
-**Knowledge Area:** Project Integration Management
-**PMBOK8 Source:** Process Groups: A Practice Guide § 3.1
-**Version:** 1.0.0
+
+**Type:** Process Record  
+**Primary Source:** PMBOK 8 — Governance Performance Domain, 2.1.6.2 Integrate and Align Project Plans  
+**Companion Source:** Process Groups: A Practice Guide — 5.1 Develop Project Management Plan  
+**Process Group:** Planning  
+**Version:** 1.0.0  
+**Status:** Active
 
 ## Definition
-Develop Project Management Plan is the process of defining, preparing, and coordinating all plan components and consolidating them into an integrated project management plan (PG:APG § 3.1). It produces the primary document that defines how the project will be executed, monitored, controlled, and closed. The integrated plan is not created in isolation — it is assembled from subsidiary plans produced by all other planning processes and iterated as the project evolves.
+
+Develop Project Management Plan is the process of defining, preparing, and coordinating all plan components and consolidating them into an integrated project management plan.
 
 ## Purpose
-To produce a single, coherent, approved document that integrates all subsidiary plans and baselines, establishing the performance baseline against which project work will be measured and controlled.
+
+This process creates the comprehensive management framework for how the project will be executed, monitored and controlled, and closed. It integrates subsidiary plans, baselines, and governance decisions into one aligned planning system.
+
+## When Used
+
+This process is performed once or at predefined points in the project. It is progressively elaborated as planning matures, but after baselining, changes should occur only through formal change control.
 
 ## Key Inputs
-| Input | Source |
-|---|---|
-| Project Charter | PR01 output |
-| Outputs from other planning processes | All PR04–PR26 outputs feed into this process |
-| Enterprise Environmental Factors (EEFs) | Organization |
-| Organizational Process Assets (OPAs) | Organization |
+
+- Project charter.
+- Outputs from other planning and initiating processes.
+- Enterprise environmental factors.
+- Organizational process assets.
 
 ## Key Tools and Techniques
-| Tool / Technique | Description |
-|---|---|
-| Expert judgment | Applying expertise to tailor plan content to project complexity and context |
-| Data gathering (brainstorming, checklists, focus groups, interviews) | Eliciting planning inputs from all relevant stakeholders |
-| Interpersonal and team skills (conflict management, facilitation, meeting management) | Building team alignment on plan content and approach |
-| Meetings | Planning workshops and plan review sessions |
+
+- Expert judgment.
+- Data gathering, including brainstorming, checklists, focus groups, and interviews.
+- Interpersonal and team skills, especially facilitation, conflict management, and meeting management.
+- Meetings.
 
 ## Key Outputs
-| Output | Description |
-|---|---|
-| Project Management Plan | Integrated document including all subsidiary plans and baselines |
 
-## Key Characteristics
-- **Integrating document:** The PMP consolidates all subsidiary plans (scope, schedule, cost, quality, resource, communications, risk, procurement, stakeholder) into one coherent framework (PG:APG § 3.1).
-- **Baseline container:** The PMP contains the approved scope, schedule, and cost baselines — the formal benchmarks for performance measurement (PG:APG § 3.1).
-- **Iterative development:** The PMP is progressively elaborated as subsidiary planning processes complete; it is not produced in a single session (PG:APG § 3.1).
-- **Change-controlled:** Once baselined, the PMP can only be changed through the formal change control process (PR38); unauthorized changes invalidate the performance baseline (PG:APG § 3.1).
-- **Tailored content:** The depth and formality of each subsidiary plan is determined through the tailoring process (P07) based on project complexity, organizational standards, and delivery approach (PG:APG § 3.1).
+- Project management plan.
 
 ## Relationship to Other Processes
-| Process | Relationship |
-|---|---|
-| PR01 — Develop Project Charter | Charter provides the authorization and high-level parameters that constrain and guide the PMP |
-| PR04–PR26 — All Planning processes | Each planning process contributes a subsidiary plan or baseline component to the integrated PMP |
-| PR38 — Perform Integrated Change Control | All changes to the PMP are processed through ICC; the PMP cannot be updated outside of this process after baselining |
-| PR37 — Monitor and Control Project Work | The PMP is the primary performance benchmark used to monitor and control work |
+
+- Integrates outputs from scope, schedule, cost/finance, quality, resource, communications, risk, procurement, and stakeholder planning.
+- Provides the baseline and governing structure for execution, monitoring and controlling, and closure.
+- Supplies the controlled management framework against which change requests and performance are assessed.
 
 ## Artifact Connections
-| Artifact | Connection |
-|---|---|
-| A14 — Integrated Project Management Plan | Direct output of this process; the artifact is the formal deliverable |
-| A04 — Project Charter | Primary input; scope, constraints, assumptions, and authority from the charter seed the PMP |
-| A15 — Schedule Baseline | Subsidiary baseline included within the PMP |
-| A16 — Financial Baseline | Subsidiary baseline included within the PMP |
-| A08 — Scope and Requirements Backlog | Scope baseline components feed into the PMP |
+
+- **A14 Integrated Project Management Plan:** principal output.
+- **A09 Quality Management Record:** subsidiary component connection.
+- **A10 Resource Management Record:** subsidiary component connection.
+- **A11 Communications Plan Subsidiary:** subsidiary component connection.
+- **A15 Schedule Baseline:** integrated baseline component.
+- **A16 Financial Baseline:** integrated baseline component.
+- **A13 Requirements Traceability Matrix:** alignment and control support.
+- **A05 Context Register:** tailoring and planning context input.
 
 ## Skill Connections
-| Skill ID | Skill Name | Connection |
-|---|---|---|
-| SKL-03-01 | Tailoring Decisions | Tailoring determines how each subsidiary plan is structured and how deep its content needs to be |
-| SKL-03-05 | Develop Integrated Project Management Plan | This process is the PMBOK 8 anchor for the skill; the skill operationalizes PR03 |
 
-## Questions to Ask in Practice
-1. Is the PMP a living document with a defined review and update cadence, or was it written at planning and never revisited?
-2. Have all subsidiary plans been formally integrated and cross-checked for internal consistency — for example, does the schedule align with the resource plan and budget?
-3. Is the performance baseline locked through formal change control, or can team members informally update the plan without governance oversight?
-4. Has the PMP been tailored to the project’s actual complexity and delivery approach, or is a standard template being applied without critical thinking?
-5. Do all key stakeholders understand and accept the PMP, or is it a document produced by the PM that no one else has read?
+- SKL-03-01 Build Integrated Project Management Plan.
+- SKL-03-02 Plan Scope and Requirements.
+- SKL-03-03 Plan Communications.
+- SKL-03-04 Plan Schedule.
+- SKL-03-05 Plan Financial and Cost Baselines.
+- SKL-03-06 Plan Quality.
+- SKL-03-07 Plan Resources.
+- SKL-03-08 Plan Stakeholder Engagement.
 
-*Authority: Process Groups: A Practice Guide § 3.1 · Source type: PMI-derived*
-*Repository: https://github.com/fakhruldeen/PMOSkills*
+## Domain and Focus Area Links
+
+- Strongest PMBOK 8 alignment: Governance Performance Domain.
+- Secondary alignment: all major performance domains, because the project management plan integrates planning decisions across them.
+- Strongest focus area alignment: Planning.
+
+## Practitioner Questions
+
+- Does the plan clearly describe how the project will be executed, monitored and controlled, and closed?
+- Are all relevant subsidiary plans and baselines aligned with one another and with the charter?
+- Has the project life cycle and development approach been explicitly selected and documented?
+- Is the plan detailed enough to guide delivery without adding unnecessary overhead?
+- Are baseline changes governed through the defined change control approach?
+
+*Authority: PMBOK 8 — 2.1.6.2 Integrate and Align Project Plans; Process Groups: A Practice Guide — 5.1 Develop Project Management Plan*
