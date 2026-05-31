@@ -6,6 +6,58 @@ Authority: PMBOK 8 Primary · PMI Companion References Secondary.
 
 ---
 
+## [2.7.0] — 2026-05-31
+
+### Added — Phase B2 Final Templates (Batches A–D, 14 templates)
+
+**Batch A:**
+- `artifacts/extended-procurement/A11-procurement-management-plan-template.md` — 12 sections: Make-or-Buy Decisions, Procurement Items Register, Contract Type Rationale, Supplier Selection Criteria, Roles and Responsibilities, Procurement Schedule, Contract Administration Approach, Organizational Constraints, Procurement Risk Summary. SHA: 38a7583d.
+- `artifacts/quality/A13-requirements-traceability-matrix-template.md` — 8 sections: RTM Control Information, Requirements Traceability Register (11-column), Requirements Status Summary, Traceability Rules, Open Traceability Issues. SHA: 2054e3a4.
+- `artifacts/portfolio/A22-portfolio-interdependency-record-template.md` — 8 sections: Dependency Register, Dependency Type Reference (static legend), Shared Capacity Conflicts, Escalation Log, Portfolio Coordination Actions. SHA: d32f1ba6.
+- `artifacts/pmo/A23-pmo-improvement-backlog-template.md` — 7 sections: Backlog Register (9-column), Category Reference (static legend), Backlog Summary, Governance Notes (static). SHA: cca91922.
+
+**Batch B:**
+- `artifacts/stakeholders-communications/A29-change-readiness-and-adoption-record-template.md` — 9 sections: Change Description, Stakeholder Readiness Assessment (ADKAR dimensions), Adoption Action Plan, Deployment Gate Readiness, Stakeholder Feedback Register, Adoption Metrics. SHA: 943759ee.
+- `artifacts/knowledge/A30-knowledge-and-lessons-management-record-template.md` — 8 sections: Lessons Register (11-column), Category Summary, OPA Contribution Queue, PMO Improvement Inputs, Capture Rules (static). SHA: 4f0c2f42.
+- `artifacts/procurement/A32-supplier-evaluation-and-award-decision-record-template.md` — 11 sections: Procurement Reference, Evaluation Criteria and Weighting, Supplier Evaluation Scores, Evaluation Narrative, Award Recommendation, Award Decision, Sole-Source Justification, Debrief Notes. SHA: 603a2dc9.
+- `artifacts/extended-procurement/A33-supplier-change-claim-compliance-record-template.md` — 9 sections: Event Register, Change Order Log, Claims and Disputes Log, Compliance Findings Log, Acceptance Findings Log, Contract Closeout Checklist (static items). SHA: 03c770bf.
+
+**Batch C:**
+- `artifacts/governance/A34-information-retention-records-control-record-template.md` — 8 sections: Retention Schedule (9-column), Active Records Inventory, Archival Actions Log, Compliance Obligations, Access Control Rules (static). SHA: 5ea220b4.
+- `artifacts/governance/A35-governance-decision-authority-record-template.md` — 9 sections: Governance Bodies, Decision Categories and Ownership, Authority Threshold Matrix (T1–T4 static legend), Delegated Authority Register, Governance Calendar, Escalation Log. SHA: c7ec841b.
+- `artifacts/pmo/A36-pmo-value-maturity-improvement-record-template.md` — 9 sections: Service Performance Themes, Stakeholder Feedback Themes, Maturity Assessment (Initial–Optimizing scale), Improvement Actions, Service Model Decisions, Governance Notes (static). SHA: 934971d4.
+- `artifacts/governance/A37-ai-data-privacy-control-record-template.md` — 9 sections: Applicability Gate, Use Case and Exposure Register (data classification + risk level), Control Requirements, Compliance Evidence Log, Exception and Escalation Register, AI Control Rules (static). SHA: e5af8b31.
+- `artifacts/governance/A39-change-management-plan-template.md` — 12 sections: Change Impact Assessment, Stakeholder Readiness Assessment (ADKAR), Change Adoption Strategy, Resistance Management, Change Champions Model, Training and Capability-Building Plan, Change Communications Approach, Adoption Metrics, Transition and Sustainment Plan. SHA: 53fe24af.
+
+**Batch D:**
+- `artifacts/initiating/A01-business-case-template.md` — 11 sections: Business Need and Strategic Alignment, Options Analysis (3-row table including Do Nothing), Recommended Option, Expected Benefits and Success Criteria, Financial Summary (cost + benefit tables + NPV/ROI/Payback/IRR), Major Risks and Assumptions, Recommendation, Approvals. SHA: 1eafd4fa.
+
+### Added — Phase B3 Artifact Examples (10 examples, Batches E–F)
+
+All examples use the "Meridian CRM Modernization" scenario — Nexus Solutions Ltd. (fictional, anonymized), PM: Jordan Patel, Sponsor: Alex Rivera, Budget: €2,400,000, Duration: 18 months Jan 2026 – Jun 2027.
+
+**Batch E:**
+- `artifacts/initiating/A04-project-charter-example.md` — Fully completed charter: 4 SMART objectives, 5 deliverables, 6 milestones, stakeholder table, 3 risks, authority delegation. SHA: 4e2c6db3.
+- `artifacts/planning-and-baselines/A06-tailoring-decision-record-example.md` — 8 tailoring decisions: hybrid delivery, lightweight change process, sprint retrospectives as lessons capture, GDPR-triggered A37 activation, etc. SHA: 7d02f536.
+- `artifacts/planning-and-baselines/A08-scope-requirements-backlog-example.md` — In/out scope, 12 requirements (functional, non-functional, compliance), WBS summary, assumptions and constraints. SHA: 32588336.
+- `artifacts/planning-and-baselines/A14-integrated-project-management-plan-example.md` — Subsidiary plans index (9 plans), baselines (3 approved), integrated change control summary (T1–T3), plan maintenance cadence. SHA: 08215302.
+
+**Batch F:**
+- `artifacts/planning-and-baselines/A15-schedule-baseline-example.md` — 9 milestones, 4-phase WBS summary, critical path narrative, float/buffer strategy, schedule assumptions and constraints, change history (v1.0 unchanged). SHA: 8577161f.
+- `artifacts/planning-and-baselines/A16-financial-baseline-example.md` — Full €2.4M breakdown by 8 cost categories and 4 phases, 18-month PV S-curve, full EVM table at Phase 2 close (CPI 0.97, EAC €2,397k), contingency drawdown log. SHA: b1cc07f7.
+- `artifacts/monitoring-and-decisions/A17-performance-reporting-record-example.md` — Monthly report Sep 2026: RAG status across 8 dimensions, complete EVM table, sprint velocity table, 3 active issues, 2 sponsor decisions required. SHA: 9d772a2b.
+- `artifacts/monitoring-and-decisions/A19-risk-management-record-example.md` — 8 risks (R-001 through R-008): data migration quality, user adoption, GDPR gap, vendor performance, contractor availability, ERP integration (realized), budget overrun (realized), sponsor change (watch). SHA: 3cc08272.
+- `artifacts/monitoring-and-decisions/A21-lessons-learned-record-example.md` — 8 lessons with root cause analysis, recommendations, OPA submission queue (2 approved: OPA-TEC-2026-004, OPA-GOV-2026-011), 6 action items. SHA: 53836dce.
+- `artifacts/closing/A27-project-closure-record-example.md` — Draft closure plan (projected Jun 2027): 14-deliverable register, financial closure (€2,420k vs €2,400k BAC, within contingency), 6 benefits for handover, team release plan, archive instructions. SHA: 19860c10.
+
+### Changed
+- `MASTER-PLAN-V2.md` bumped to v2.7.0 — Phase B2 marked COMPLETE (38/38), Phase B3 marked COMPLETE (10/10), scorecard and session order updated.
+
+### Confirmed Closed
+- **Phase B2 — Artifact Templates** — all 38 templates committed and verified. 2026-05-31.
+- **Phase B3 — Artifact Examples** — all 10 examples committed and verified. 2026-05-31.
+
+
 ## [2.6.0] — 2026-05-31
 
 ### Added — Phase 1 Documentation Layer (COMPLETE)
