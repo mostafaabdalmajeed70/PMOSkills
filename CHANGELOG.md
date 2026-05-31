@@ -6,6 +6,38 @@ Authority: PMBOK 8 Primary · PMI Companion References Secondary.
 
 ---
 
+## [2.11.0] — 2026-05-31
+
+### Added — Phase C4: Reference Process Records — Batch 1 (10/40 complete)
+
+**Commit 1 — PR01–PR03 (SHA: 0fff65c)**
+- `reference/processes/PR01-develop-project-charter.md` — Develop Project Charter. Process Group: Initiating. PMBOK 8: Governance PD, 2.1.6.1. Includes definition, purpose, when used, key inputs/T&T/outputs, process relationships, artifact connections (A01, A02, A04, A05, A14), skill connections (SKL-01-01, SKL-01-02, SKL-02-01, SKL-02-02), domain/focus-area links, practitioner questions.
+- `reference/processes/PR02-identify-stakeholders.md` — Identify Stakeholders. Process Group: Initiating. PMBOK 8: Governance and Stakeholders PDs. Includes full standard structure + artifact connections (A04, A07, A10, A18, A19, A29), skill connections (SKL-02-03, SKL-03-03, SKL-03-08, SKL-04-04).
+- `reference/processes/PR03-develop-project-management-plan.md` — Develop Project Management Plan. Process Group: Planning. PMBOK 8: Governance PD, 2.1.6.2. Includes full standard structure + artifact connections (A14, A09, A10, A11, A15, A16, A13, A05), skill connections (SKL-03-01 through SKL-03-08).
+
+**Commit 2 — PR04–PR07 (SHA: 25e87e4)**
+- `reference/processes/PR04-plan-scope-management.md` — Plan Scope Management. Process Group: Planning. PMBOK 8: Scope PD, 2.2.2.1. Artifact connections: A14, A08, A13, A04, A05.
+- `reference/processes/PR05-collect-requirements.md` — Collect Requirements. Process Group: Planning. PMBOK 8: Scope PD, 2.2.2.2. Artifact connections: A08, A13, A07, A04, A14.
+- `reference/processes/PR06-define-scope.md` — Define Scope. Process Group: Planning. PMBOK 8: Scope PD, 2.2.2.3. Artifact connections: A08, A13, A14, A05, A04.
+- `reference/processes/PR07-create-wbs.md` — Create WBS. Process Group: Planning. PMBOK 8: Scope PD, 2.2.2.4. Artifact connections: A14, A08, A13, A15, A16, A05.
+
+**Commit 3 — PR08–PR10 (SHA: 3d74bd0)**
+- `reference/processes/PR08-plan-schedule-management.md` — Plan Schedule Management. Process Group: Planning. PMBOK 8: Schedule PD. Artifact connections: A14, A15, A05.
+- `reference/processes/PR09-define-activities.md` — Define Activities. Process Group: Planning. PMBOK 8: Schedule PD. Artifact connections: A15, A14, A08, A05.
+- `reference/processes/PR10-sequence-activities.md` — Sequence Activities. Process Group: Planning. PMBOK 8: Schedule PD. Artifact connections: A15, A14, A19, A05.
+
+All 10 process records follow the standard structure: Type, Primary Source, Companion Source, Process Group, Version, Status, Definition, Purpose, When Used, Key Inputs, Key Tools and Techniques, Key Outputs, Relationship to Other Processes, Artifact Connections, Skill Connections, Domain and Focus Area Links, Practitioner Questions.
+
+### Changed
+- `MASTER-PLAN-V2.md` bumped to v2.11.0 — C4 Batch 1 (PR01–PR10) marked complete in scorecard and status table. Session order updated. Version history entry added.
+
+### Progress: Phase C4
+- **Completed:** PR01–PR10 (10/40 process records)
+- **Remaining:** PR11–PR40 (30 records across Batches 2–4)
+- **Next batch:** PR11–PR20 — Schedule (continued), Finance, Quality, Resource planning chain
+
+---
+
 ## [2.10.0] — 2026-05-31
 
 ### Added — Phase C2: Reference Performance Domains Layer (COMPLETE)
