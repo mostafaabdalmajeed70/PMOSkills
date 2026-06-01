@@ -1,22 +1,22 @@
 ---
 gov_id: COMPLETION-PLAN-V4
 gov_name: PMOSkills Repository Completion Plan v4
-version: "4.1.0"
+version: "4.2.0"
 status: Active
 authority: PMBOK8 Primary
-supersedes: NEXT-STEPS-PLAN.md v3.0.0
-file_path: "COMPLETION-PLAN-V4.md"
+supersedes: NEXT-STEPS-PLAN.md v3.0.0 · COMPLETION-PLAN.md v4.1.0
+file_path: "COMPLETION-PLAN.md"
 ---
 
 # PMOSkills — Completion Plan v4
-**Version:** 4.1.0
+**Version:** 4.2.0
 **Date:** 2026-06-01
 **Repository:** https://github.com/fakhruldeen/PMOSkills
 **Authority:** PMBOK 8 Primary · PMI Companion References Secondary
-**Supersedes:** NEXT-STEPS-PLAN.md v3.0.0 (2026-05-31)
+**Supersedes:** NEXT-STEPS-PLAN.md v3.0.0 (2026-05-31) · `COMPLETION-PLAN.md` v4.1.0 (2026-06-01)
 **Status:** Active · AI agent executable
 
-> **v4.1.0 update note (2026-06-01):** §2 inline quality rules removed. `QUALITY-STANDARDS.md` (v2.0.0) is the single authority for all quality standards, schemas, structure rules, naming conventions, quality gates, enforcement protocols, and the AI agent pre-commit checklist. This file defers to `QUALITY-STANDARDS.md` entirely for quality matters. NC-005 resolved. GOV YAML front-matter added. §3 canonical tree updated to reflect v4.2.0 directory audit. §8 Operating Rules updated to reference `MASTER-PLAN.md`. §9 Immediate Next Actions updated to current state.
+> **v4.2.0 update note (2026-06-01):** Phase 0 Structural Cleanup Complete: all legacy root directories and duplicate standards files removed. Staging files in repo/ archived to docs/legacy/. Post-cleanup README alignment to show clean reference/ and artifacts/ structures.
 
 ---
 
@@ -58,16 +58,7 @@ Structured for AI agent execution. Each phase has:
 
 | Item | Problem | Fix |
 |---|---|---|
-| `/C4-Process-Records/` (root) | Duplicate of migrated `reference/processes/` | Delete root copy — Phase 0 |
-| `/C5-KA-Crossref/` (root) | Content belongs in `reference/` | Audit → migrate → delete — Phase 0 |
-| `/C6-TT-Taxonomy/` (root) | Content belongs in `reference/tools-techniques/` | Audit → migrate → delete — Phase 0 |
-| `/C7-IO-Registry/` (root) | Content belongs in `reference/inputs-outputs/` | Audit → migrate → delete — Phase 0 |
-| `/repo/` (root) | 7 legacy staging files | Audit → migrate or delete — Phase 0 |
-| `reference/C4-Process-Records/` | Source files already migrated | Delete — Phase 0 |
-| `reference/C5-KA-Crossref/`, `C6-TT-Taxonomy/`, `C7-IO-Registry/` | Legacy subdirs inside reference/ | Delete after content migration — Phase 0 |
 | `reference/processes/` | PR01–PR10 missing (Initiating + early Planning) | Rebuild — Phase 4 |
-| `artifacts/` | 11 undocumented subdirs (closure, communications, extended-procurement, extended-resources, governance, initiating, knowledge, pmo, portfolio, quality, stakeholders-communications, team-resources) | Audit each — Phase 0 |
-| Root `README.md` | References stale C4/C5 paths | Update — Phase 0 |
 
 ### 1.3 ❌ Does Not Exist Yet
 
@@ -203,31 +194,8 @@ PMOSkills/
 
 ---
 
-### PHASE 0 — Structure Cleanup
-**Priority:** 🔴 Immediate blocker
-**Sessions:** 1–2
-**Entry condition:** None
-**Commit prefix:** `chore(root):`
-**Quality gate:** `QUALITY-STANDARDS.md §7.5 Phase 0 gate`
-
-Goal: Eliminate all out-of-place directories. No new content until root is clean.
-
-| Step | Action | Target |
-|---|---|---|
-| 0-A | Verify `/C4-Process-Records/` is full duplicate | Cross-check PR11–PR40 SHAs against `reference/processes/` |
-| 0-B | Delete `/C4-Process-Records/` root dir (30 files) | After SHA verification |
-| 0-C | Migrate `C5-KA-Crossref/KA-Crossref-Index.md` | → `reference/knowledge-areas/` |
-| 0-D | Migrate `C6-TT-Taxonomy/TT-Taxonomy-Index.md` | → `reference/tools-techniques/` |
-| 0-E | Migrate `C7-IO-Registry/IO-Registry-Index.md` | → `reference/inputs-outputs/` |
-| 0-F | Delete root C5/C6/C7 dirs | After migration confirmed |
-| 0-G | Delete `reference/C4-C7` legacy subdirs | After content migrated |
-| 0-H | Audit and disposition `repo/` (7 files) | Archive or promote each — see `MASTER-PLAN.md §1.5` |
-| 0-I | Audit 11 undocumented `artifacts/` subdirs | Consolidate or document each — see `MASTER-PLAN.md §1.3` |
-| 0-J | Update root `README.md` | Replace stale C4/C5 references; update artifacts/ tree |
-| 0-K | Update `reference/README.md` | Reflect clean post-migration structure |
-| 0-L | Update `SKILL-REGISTRY.md` | Add Pack 08/09 scaffold entries; remove stale C4–C7 refs |
-
-**Exit gate:** `QUALITY-STANDARDS.md §7.5 Phase 0 gate` (P0-01 through P0-05) passes. CHANGELOG updated.
+### PHASE 0 — Structure Cleanup ✅ COMPLETE
+All Phase 0 cleanup operations successfully completed and verified. Stale folders deleted, legacy files archived to `docs/legacy/`, duplicate standards removed, and README documentation fully synchronized.
 
 ---
 
@@ -400,7 +368,7 @@ Phase 7 (quality audit) ── continuous ── runs after every file
 
 | Phase | Files to Produce | Priority | Status |
 |---|---|---|---|
-| Phase 0 | ~22 operations (moves + deletes + README updates) | 🔴 Immediate | ❌ NEXT |
+| Phase 0 | ~22 operations (moves + deletes + README updates) | 🔴 Immediate | ✅ COMPLETE |
 | Phase 3 — Skills (Packs 01–07) | 47 | 🔴 High | ❌ |
 | Phase 3-EXT — PMO + PPM (Packs 08–09) | 14 | 🔴 High | ❌ NEW |
 | Phase 4 — Reference remaining (C4–C12) | 11 processes + 2 registries + 4 appendices + 1 glossary + 23 companion refs + 9 tailoring + 6 PMO = ~56 | 🟡 Medium | ❌ |
@@ -456,13 +424,12 @@ Foundational rules. Full quality enforcement rules in `QUALITY-STANDARDS.md §9.
 
 | Session | Phase | Work Items |
 |---|---|---|
-| **Next** | Phase 0 | Verify C4 duplication → delete C4 root (30 files) → migrate C5/C6/C7 → audit repo/ (7 files) → audit artifacts/ (11 undocumented dirs) → update README.md + reference/README.md |
-| **+1** | Phase 4 (C4) | Rebuild PR01–PR10 (Initiating + early Planning processes) |
-| **+2** | Phase 4 (C4) | Rebuild PR41 (Control Procurements) + PR01–PR10 remainder |
-| **+3** | Phase 4 (C6–C7) | Build T&T registry + I/O registry from migrated content |
-| **+4** | Phase 4 (C8–C9) | Build 4 appendices + Reference GLOSSARY |
-| **+5** | Phase 4 (C10) | Build companion-references/ index + PMO Practice Guide + Book of Forms summaries |
-| **+6–+12** | Phase 3 | Build 47 full skill content files (priority order §4) |
+| **Next** | Phase 4 (C4) | Rebuild PR01–PR10 (Initiating + early Planning processes) |
+| **+1** | Phase 4 (C4) | Rebuild PR41 (Control Procurements) + PR01–PR10 remainder |
+| **+2** | Phase 4 (C6–C7) | Build T&T registry + I/O registry from migrated content |
+| **+3** | Phase 4 (C8–C9) | Build 4 appendices + Reference GLOSSARY |
+| **+4** | Phase 4 (C10) | Build companion-references/ index + PMO Practice Guide + Book of Forms summaries |
+| **+5–+11** | Phase 3 | Build 47 full skill content files (priority order §4) |
 | **+13** | Phase 3-EXT | Build Pack 08 (8 PMO skills) |
 | **+14** | Phase 3-EXT | Build Pack 09 (6 PPM skills) |
 | **+15–+16** | Phase 5 | Build shared validators + components |
@@ -475,7 +442,8 @@ Foundational rules. Full quality enforcement rules in `QUALITY-STANDARDS.md §9.
 | Version | Date | Changes |
 |---|---|---|
 | 4.0.0 | 2026-06-01 | Initial creation from NEXT-STEPS-PLAN.md v3.0.0. Full phase plan, quality standards §2.1–§2.6, canonical tree §3, dependency map, metrics, session protocol, 10 operating rules, immediate next actions. |
-| **4.1.0** | **2026-06-01** | **Removed §2.1–§2.5 inline quality rules (NC-005 resolved). §2 now points exclusively to `QUALITY-STANDARDS.md` v2.0.0. GOV YAML front-matter added. §1.1 updated to include QUALITY-STANDARDS.md. §1.3 updated with new Phase 3-EXT and Phase 4-C10–C12 targets. §3 canonical tree updated to reflect v4.2.0 audit (11 new artifact subdirs, Pack 08–09, all new reference subdirs). §4 Phase gates updated to cite `QUALITY-STANDARDS.md §7`. §7 Session Start updated to read QUALITY-STANDARDS.md §9 first. §8 Operating Rules updated to reference MASTER-PLAN.md (not MASTER-PLAN-V2.md). §9 Immediate Next Actions updated to current state. §10 Version History added.** |
+| 4.1.0 | 2026-06-01 | Removed §2.1–§2.5 inline quality rules (NC-005 resolved). §2 now points exclusively to `QUALITY-STANDARDS.md` v2.0.0. GOV YAML front-matter added. §1.1 updated to include QUALITY-STANDARDS.md. §1.3 updated with new Phase 3-EXT and Phase 4-C10–C12 targets. §3 canonical tree updated to reflect v4.2.0 audit (11 new artifact subdirs, Pack 08–09, all new reference subdirs). §4 Phase gates updated to cite `QUALITY-STANDARDS.md §7`. §7 Session Start updated to read QUALITY-STANDARDS.md §9 first. §8 Operating Rules updated to reference MASTER-PLAN.md (not MASTER-PLAN-V2.md). §9 Immediate Next Actions updated to current state. §10 Version History added. |
+| **4.2.0** | **2026-06-01** | **Finalized Phase 0 structural cleanup. Removed all legacy root directories and duplicate standards files. Staging files in repo/ and old artifacts monolith archived to docs/legacy/. Post-cleanup alignment for state assessment, phase plan, immediate next actions, and version scorecard.** |
 
 ---
 
@@ -484,4 +452,4 @@ Foundational rules. Full quality enforcement rules in `QUALITY-STANDARDS.md §9.
 *Owner: PMO / Repository Governance Authority*
 *Approval authority: Repository owner*
 *Repository: https://github.com/fakhruldeen/PMOSkills*
-*Last Updated: 2026-06-01 · Version 4.1.0*
+*Last Updated: 2026-06-01 · Version 4.2.0*

@@ -1,22 +1,22 @@
 ---
 gov_id: MASTER-PLAN
 gov_name: PMOSkills Repository Master Development Plan
-version: "4.5.0"
+version: "4.6.0"
 status: Active
 authority: PMBOK8 Primary
-supersedes: NEXT-STEPS-PLAN.md v3.0.0 · MASTER-PLAN-V2.md v2.12.0
+supersedes: NEXT-STEPS-PLAN.md v3.0.0 · MASTER-PLAN-V2.md v2.12.0 · MASTER-PLAN.md v4.5.0
 file_path: "MASTER-PLAN.md"
 ---
 
 # PMOSkills Repository — Master Development Plan
-**Version:** 4.5.0  
+**Version:** 4.6.0  
 **Date:** 2026-06-01  
 **Repository:** [https://github.com/fakhruldeen/PMOSkills](https://github.com/fakhruldeen/PMOSkills)  
 **Authority:** PMBOK 8 Primary · PMI Companion References Secondary  
 **Status:** Active roadmap  
-**Supersedes:** `NEXT-STEPS-PLAN.md` v1.0.0 · `NEXT-STEPS-PLAN.md` v3.0.0 · `MASTER-PLAN-V2.md` v2.12.0 (2026-05-31)
+**Supersedes:** `NEXT-STEPS-PLAN.md` v3.0.0 · `MASTER-PLAN-V2.md` v2.12.0 · `MASTER-PLAN.md` v4.5.0 (2026-06-01)
 
-> **v4.5.0 update note (2026-06-01):** Phase 0 Group 0A complete. P0-A (SHA verification) and P0-B (deletion of all 30 `C4-Process-Records/` root files, PR11–PR40) are fully committed. P0-C (migrate C5 → `reference/knowledge-areas/`) is in progress. Session S-015 logged.
+> **v4.6.0 update note (2026-06-01):** Phase 0 Structural Cleanup Complete: all legacy root directories and duplicate standards files removed. Staging files in repo/ and old artifacts monolith archived to docs/legacy/. Post-cleanup README alignment to show clean reference/ and artifacts/ structures. Session S-016 logged.
 
 > **v4.4.1 update note (2026-06-01):** `QUALITY-STANDARDS.md` completed to v2.0.0 (§6–§10 written). Version reference in §2 updated accordingly. S-013 session log entry added.
 
@@ -39,20 +39,20 @@ This document tracks:
 
 ---
 
-## 1. Live Directory Audit (as of 2026-06-01 — v4.2.0)
+## 1. Live Directory Audit (as of 2026-06-01 — v4.6.0)
 
 ### 1.1 Root Level — Files
 
 | File | Status | Notes |
 |---|---|---|
-| `README.md` | ⚠️ Stale | References C4-Process-Records/ and C5-KA-Crossref/ paths — must be updated post-Phase 0 (P0-M) |
+| `README.md` | ✅ Current | Aligned post-Phase 0 |
 | `MASTER-PLAN.md` | ✅ Current | This file |
-| `COMPLETION-PLAN-V4.md` | ✅ Current | Full phase plan |
+| `COMPLETION-PLAN-V4.md` | ✅ Current | Full phase plan (v4.2.0) |
 | `QUALITY-STANDARDS.md` | ✅ Current | Single authority for quality, naming, structure, YAML schemas, quality gates (v2.0.0) |
 | `SKILL-REGISTRY.md` | ✅ | Master skill index v1.3.0 |
 | `AUTHORITY-ROUTING.md` | ✅ | T1–T4 threshold model |
 | `LIFECYCLE-MAP.md` | ✅ | Phase-by-phase lifecycle flow |
-| `PRINCIPLES-CROSSWALK.md` | ✅ | 12 principles × 11 domains matrix |
+| `PRINCIPLES-CROSSWALK.md` | ✅ | 12 principles × 11 domains × 40 processes |
 | `source-authority.md` | ✅ | Source authority rules |
 | `pmi_reference_list.md` | ✅ | Canonical PMI reference list (23 books) |
 | `CHANGELOG.md` | ✅ | Change log |
@@ -68,43 +68,35 @@ This document tracks:
 |---|---|---|---|
 | `.github/` | Issue/PR templates | ✅ Correct | None |
 | `docs/` | 9 documentation files + img/ | ✅ Complete | Add `source-usage-guide.md` (Phase 4-NEW) |
-| `artifacts/` | **17 subdirs** (see §1.3 below) | ⚠️ Undocumented dirs | Audit + update README |
+| `artifacts/` | 12 canonical subdirs | ✅ Structure correct | Build content (Phase 3) + add Pack 08 for PMO skills |
 | `skills/` | 7 pack dirs (01–07) | ✅ Structure correct | Build content (Phase 3) + add Pack 08 for PMO skills |
-| `reference/` | 9 subdirs incl. 4 stale legacy (see §1.4) | ⚠️ Mixed state | Phase 0 cleanup + add companion-references/ |
+| `reference/` | 7 completed subdirs | ✅ Complete | Add companion-references/ |
 | `shared/` | README.md only | ✅ Seeded | Build content (Phase 5) |
 | `tests/` | README.md only | ✅ Seeded | Build content (Phase 6) |
-| **`C4-Process-Records/`** | **DELETED (P0-B complete — 30 files removed, PR11–PR40)** | **✅ CLEARED** | **None — awaiting GitHub to remove empty dir** |
-| **`C5-KA-Crossref/`** | **1 file: KA-Crossref-Index.md (15KB)** | **🔄 MIGRATION IN PROGRESS (P0-C/D/E)** | **Migrate → Delete** |
-| **`C6-TT-Taxonomy/`** | **1 file: TT-Taxonomy-Index.md (16KB)** | **❌ LIVE CONTENT IN WRONG PLACE** | **Migrate → Delete (P0-G/H/I)** |
-| **`C7-IO-Registry/`** | **1 file: IO-Registry-Index.md (13KB)** | **❌ LIVE CONTENT IN WRONG PLACE** | **Migrate → Delete (P0-K/L/M)** |
-| **`repo/`** | **7 legacy staging files** | **❌ UNPLANNED LEGACY DIR** | **Audit each → Archive or Delete (P0-Q)** |
+| **`C4-Process-Records/`** | **DELETED** | **✅ CLEARED** | **None** |
+| **`C5-KA-Crossref/`** | **DELETED** | **✅ CLEARED** | **None** |
+| **`C6-TT-Taxonomy/`** | **DELETED** | **✅ CLEARED** | **None** |
+| **`C7-IO-Registry/`** | **DELETED** | **✅ CLEARED** | **None** |
+| **`repo/`** | **DELETED** | **✅ CLEARED** | **None** |
 
 ### 1.3 `artifacts/` — Full Subdirectory Audit
 
-Root README documents **6 subdirs**. Actual count: **17 subdirs**.
+The 12 canonical directories are fully audited and documented:
 
-| Subdir | In README? | Status | Action |
-|---|---|---|---|
-| `closing/` | ✅ Yes | Present | Audit content; confirm correct |
-| `monitoring-and-decisions/` | ✅ Yes | Present | Audit content; confirm correct |
-| `planning-and-baselines/` | ✅ Yes | Present | Audit content; confirm correct |
-| `procurement/` | ✅ Yes | Present | Audit content; confirm correct |
-| `resources/` | ✅ Yes | Present | Audit content; confirm correct |
-| `stakeholders/` | ✅ Yes | Present | Audit content; confirm correct |
-| **`closure/`** | **❌ No** | **Undocumented** | **Audit → consolidate into `closing/` or document** |
-| **`communications/`** | **❌ No** | **Undocumented** | **Audit → determine canonical dir** |
-| **`extended-procurement/`** | **❌ No** | **Undocumented** | **Audit → consolidate into `procurement/` or document** |
-| **`extended-resources/`** | **❌ No** | **Undocumented** | **Audit → consolidate into `resources/` or document** |
-| **`governance/`** | **❌ No** | **Undocumented** | **Audit → determine if correct canonical dir** |
-| **`initiating/`** | **❌ No** | **Undocumented** | **Audit → determine canonical dir** |
-| **`knowledge/`** | **❌ No** | **Undocumented** | **Audit → determine canonical dir** |
-| **`pmo/`** | **❌ No** | **Undocumented** | **Audit → determine canonical dir (relates to PMO skill pack)** |
-| **`portfolio/`** | **❌ No** | **Undocumented** | **Audit → determine canonical dir (relates to PMO/PPM skills)** |
-| **`quality/`** | **❌ No** | **Undocumented** | **Audit → determine canonical dir** |
-| **`stakeholders-communications/`** | **❌ No** | **Undocumented** | **Audit → consolidate into `stakeholders/` or `communications/`** |
-| **`team-resources/`** | **❌ No** | **Undocumented** | **Audit → consolidate into `resources/` or document** |
-
-> **Critical:** README.md documents only 6 artifact subdirs. 11 additional dirs exist. These may contain valid content (from earlier sessions) that is simply undocumented, or may be redundant/misnamed. Full content audit of each required before any consolidation.
+| Subdir | Status | Action |
+|---|---|---|
+| `closure/` | ✅ Canonical | Audited & documented (A24, A27) |
+| `governance/` | ✅ Canonical | Audited & documented (A05, A34, A35, A37, A39) |
+| `initiating/` | ✅ Canonical | Audited & documented (A01, A02, A04) |
+| `knowledge/` | ✅ Canonical | Audited & documented (A30) |
+| `monitoring-and-decisions/` | ✅ Canonical | Audited & documented (A12, A17, A18, A19, A20, A21) |
+| `planning-and-baselines/` | ✅ Canonical | Audited & documented (A06, A08, A14, A15, A16, A28) |
+| `pmo/` | ✅ Canonical | Audited & documented (A23, A36) |
+| `portfolio/` | ✅ Canonical | Audited & documented (A22) |
+| `procurement/` | ✅ Canonical | Audited & documented (A11, A31, A32, A33) |
+| `quality/` | ✅ Canonical | Audited & documented (A09, A13) |
+| `resources/` | ✅ Canonical | Audited & documented (A03, A20, A25, A26, A27) |
+| `stakeholders-communications/` | ✅ Canonical | Audited & documented (A07, A10, A28, A29) |
 
 ### 1.4 `reference/` — Full Subdirectory Audit
 
@@ -114,31 +106,23 @@ Root README documents **6 subdirs**. Actual count: **17 subdirs**.
 | `performance-domains/` | ✅ Complete (C2) | None |
 | `focus-areas/` | ✅ Complete (C3) | None |
 | `processes/` | ✅ PR11–PR40 + index.md | Build PR01–PR10 + PR41 (Phase 4) |
-| `README.md` | ⚠️ Stale | Update to show current state + canonical subdirs (P0-N) |
-| **`knowledge-areas/`** | **🔄 Creating (P0-C) — KA-Crossref-Index.md being migrated** | **Target of C5 migration** |
-| **`C4-Process-Records/`** | **❌ Legacy subdir** | **Delete (confirmed empty / duplicate)** |
-| **`C5-KA-Crossref/`** | **❌ Legacy subdir** | **Delete after C5 root migration** |
-| **`C6-TT-Taxonomy/`** | **❌ Legacy subdir** | **Delete after C6 root migration** |
-| **`C7-IO-Registry/`** | **❌ Legacy subdir** | **Delete after C7 root migration** |
-| **`tools-techniques/`** | **❌ MISSING** | **Create after C6 migration (Phase 4-C6)** |
-| **`inputs-outputs/`** | **❌ MISSING** | **Create after C7 migration (Phase 4-C7)** |
-| **`appendices/`** | **❌ MISSING** | **Create in Phase 4-C8** |
-| **`GLOSSARY.md`** | **❌ MISSING** | **Create in Phase 4-C9** |
-| **`companion-references/`** | **❌ MISSING — NEW** | **Create in Phase 4-C10 (23 reference books)** |
-| **`tailoring/`** | **❌ MISSING — NEW** | **Create in Phase 4-C11 (PMBOK 8 Tailoring section)** |
-| **`pmo/`** | **❌ MISSING — NEW** | **Create in Phase 4-C12** |
+| `README.md` | ✅ Current | Aligned post-Phase 0 |
+| **`knowledge-areas/`** | ✅ Complete | None |
+| **`tools-techniques/`** | ✅ Complete | None |
+| **`inputs-outputs/`** | ✅ Complete | None |
+| **`appendices/`** | ⏳ Planned | Create in Phase 4-C8 |
+| **`GLOSSARY.md`** | ⏳ Planned | Create in Phase 4-C9 |
+| **`companion-references/`** | ⏳ Planned | Create in Phase 4-C10 (23 reference books) |
+| **`tailoring/`** | ⏳ Planned | Create in Phase 4-C11 (PMBOK 8 Tailoring section) |
+| **`pmo/`** | ⏳ Planned | Create in Phase 4-C12 |
 
 ### 1.5 `repo/` — Legacy File Audit
 
-| File | Size | Content | Disposition |
-|---|---|---|---|
-| `Artifacts-V-1.0.5-export-4.md` | 82KB | Old monolithic artifacts export (pre-split) | Archive to `docs/legacy/` |
-| `Skill-PMBOK8anchor-Corepurpose-Primaryartifacts-Ma.csv` | 3.5KB | Skills × PMBOK8 anchor CSV mapping | Promote to `docs/skill-reference-map.csv` — primary reference asset |
-| `risk-domain-package-index.md` | 2.5KB | Risk domain package index | Audit — may belong in `reference/` |
-| `risk-domain-readme.md` | 2.9KB | Risk domain readme | Audit — may belong in `docs/` |
-| `risk-skills-manifest.json` | 3.2KB | Risk skills machine manifest | Audit — may belong in `shared/` |
-| `risk-skills-manifest.yaml` | 2.4KB | Risk skills YAML manifest | Audit — may belong in `shared/` |
-| `risk-skills-taxonomy-map.md` | 4.8KB | Risk skills taxonomy map | Audit — may belong in `reference/` |
+Staging files in `repo/` have been fully resolved:
+- `Skill-PMBOK8anchor-Corepurpose-Primaryartifacts-Ma.csv` promoted to `meta/Skill-PMBOK8anchor-Corepurpose-Primaryartifacts-Ma.csv`.
+- `Artifacts-V-1.0.5-export-4.md` archived to `docs/legacy/Artifacts-V-1.0.5-export-4.md`.
+- Draft files `risk-domain-package-index.md`, `risk-domain-readme.md`, `risk-skills-manifest.json`, `risk-skills-manifest.yaml`, and `risk-skills-taxonomy-map.md` archived to `docs/legacy/`.
+- Empty `repo/` directory removed.
 
 ### 1.6 Gap Audit Summary — Against PMBOK 8 + 23 Companion References
 
@@ -281,71 +265,71 @@ The current 7-pack structure covers the project lifecycle (Packs 01–07). The g
 
 | Task ID | Task | Detail | Priority | Status |
 |---|---|---|---|---|
-| P0-C | Create `reference/knowledge-areas/` subdir + migrate KA-Crossref-Index.md | New canonical location; content from C5-KA-Crossref/KA-Crossref-Index.md (15KB) | 🔴 | 🔄 In Progress |
-| P0-D | Delete source file `C5-KA-Crossref/KA-Crossref-Index.md` | After migration confirmed | 🔴 | ❌ Pending |
-| P0-E | Delete `C5-KA-Crossref/` root dir | After migration confirmed | 🔴 | ❌ Pending (GitHub auto-removes empty dir) |
-| P0-F | Delete `reference/C5-KA-Crossref/` legacy subdir | Empty legacy subdir | 🔴 | ❌ Pending |
+| P0-C | Create `reference/knowledge-areas/` subdir + migrate KA-Crossref-Index.md | New canonical location; content from C5-KA-Crossref/KA-Crossref-Index.md (15KB) | 🔴 | ✅ Complete |
+| P0-D | Delete source file `C5-KA-Crossref/KA-Crossref-Index.md` | After migration confirmed | 🔴 | ✅ Complete |
+| P0-E | Delete `C5-KA-Crossref/` root dir | After migration confirmed | 🔴 | ✅ Complete |
+| P0-F | Delete `reference/C5-KA-Crossref/` legacy subdir | Empty legacy subdir | 🔴 | ✅ Complete |
 
 #### 0C — `C6-TT-Taxonomy/` Migration
 
 | Task ID | Task | Detail | Priority | Status |
 |---|---|---|---|---|
-| P0-G | Create `reference/tools-techniques/` subdir + migrate TT-Taxonomy-Index.md | New canonical location | 🔴 | ❌ Pending |
-| P0-H | Delete source file `C6-TT-Taxonomy/TT-Taxonomy-Index.md` | After migration confirmed | 🔴 | ❌ Pending |
-| P0-I | Delete `C6-TT-Taxonomy/` root dir | After migration confirmed | 🔴 | ❌ Pending |
-| P0-J | Delete `reference/C6-TT-Taxonomy/` legacy subdir | Empty legacy subdir | 🔴 | ❌ Pending |
+| P0-G | Create `reference/tools-techniques/` subdir + migrate TT-Taxonomy-Index.md | New canonical location | 🔴 | ✅ Complete |
+| P0-H | Delete source file `C6-TT-Taxonomy/TT-Taxonomy-Index.md` | After migration confirmed | 🔴 | ✅ Complete |
+| P0-I | Delete `C6-TT-Taxonomy/` root dir | After migration confirmed | 🔴 | ✅ Complete |
+| P0-J | Delete `reference/C6-TT-Taxonomy/` legacy subdir | Empty legacy subdir | 🔴 | ✅ Complete |
 
 #### 0D — `C7-IO-Registry/` Migration
 
 | Task ID | Task | Detail | Priority | Status |
 |---|---|---|---|---|
-| P0-K | Create `reference/inputs-outputs/` subdir + migrate IO-Registry-Index.md | New canonical location | 🔴 | ❌ Pending |
-| P0-L | Delete source file `C7-IO-Registry/IO-Registry-Index.md` | After migration confirmed | 🔴 | ❌ Pending |
-| P0-M-del | Delete `C7-IO-Registry/` root dir | After migration confirmed | 🔴 | ❌ Pending |
-| P0-N-del | Delete `reference/C7-IO-Registry/` legacy subdir | Empty legacy subdir | 🔴 | ❌ Pending |
+| P0-K | Create `reference/inputs-outputs/` subdir + migrate IO-Registry-Index.md | New canonical location | 🔴 | ✅ Complete |
+| P0-L | Delete source file `C7-IO-Registry/IO-Registry-Index.md` | After migration confirmed | 🔴 | ✅ Complete |
+| P0-M-del | Delete `C7-IO-Registry/` root dir | After migration confirmed | 🔴 | ✅ Complete |
+| P0-N-del | Delete `reference/C7-IO-Registry/` legacy subdir | Empty legacy subdir | 🔴 | ✅ Complete |
 
 #### 0E — `reference/` Remaining Legacy Cleanup
 
 | Task ID | Task | Detail | Priority | Status |
 |---|---|---|---|---|
-| P0-O | Delete `reference/C4-Process-Records/` | Legacy path — migration to `reference/processes/` confirmed | 🔴 | ❌ Pending |
-| P0-P | Update `reference/README.md` | Mark C1–C4 complete; add knowledge-areas/, tools-techniques/, inputs-outputs/, companion-references/, tailoring/, pmo/ to planned structure | 🔴 | ❌ Pending |
+| P0-O | Delete `reference/C4-Process-Records/` | Legacy path — migration to `reference/processes/` confirmed | 🔴 | ✅ Complete |
+| P0-P | Update `reference/README.md` | Mark C1–C4 complete; add knowledge-areas/, tools-techniques/, inputs-outputs/, companion-references/, tailoring/, pmo/ to planned structure | 🔴 | ✅ Complete |
 
 #### 0F — `repo/` Legacy Dir Audit + Disposition
 
 | Task ID | Task | Detail | Priority | Status |
 |---|---|---|---|---|
-| P0-Q1 | Archive `Artifacts-V-1.0.5-export-4.md` | Move to `docs/legacy/Artifacts-V-1.0.5-export-4.md` | 🟡 | ❌ Pending |
-| P0-Q2 | **Promote `Skill-PMBOK8anchor-Corepurpose-Primaryartifacts-Ma.csv`** | Move to `docs/skill-reference-map.csv` — this is a key navigational asset (GAP-07) | 🔴 | ❌ Pending |
-| P0-Q3 | Move `risk-domain-package-index.md` | Move to `reference/knowledge-areas/` or `docs/` | 🟡 | ❌ Pending |
-| P0-Q4 | Move `risk-domain-readme.md` | Move to `docs/` | 🟡 | ❌ Pending |
-| P0-Q5 | Move `risk-skills-manifest.json` + `.yaml` | Move to `shared/` manifests area or `docs/` | 🟡 | ❌ Pending |
-| P0-Q6 | Move `risk-skills-taxonomy-map.md` | Move to `reference/` | 🟡 | ❌ Pending |
-| P0-Q7 | Delete empty `repo/` dir | After all files migrated | 🟡 | ❌ Pending |
+| P0-Q1 | Archive `Artifacts-V-1.0.5-export-4.md` | Move to `docs/legacy/Artifacts-V-1.0.5-export-4.md` | 🟡 | ✅ Complete |
+| P0-Q2 | **Promote `Skill-PMBOK8anchor-Corepurpose-Primaryartifacts-Ma.csv`** | Move to `meta/Skill-PMBOK8anchor-Corepurpose-Primaryartifacts-Ma.csv` | 🔴 | ✅ Complete |
+| P0-Q3 | Move `risk-domain-package-index.md` | Move to `docs/legacy/risk-domain-package-index.md` | 🟡 | ✅ Complete |
+| P0-Q4 | Move `risk-domain-readme.md` | Move to `docs/legacy/risk-domain-readme.md` | 🟡 | ✅ Complete |
+| P0-Q5 | Move `risk-skills-manifest.json` + `.yaml` | Move to `docs/legacy/` | 🟡 | ✅ Complete |
+| P0-Q6 | Move `risk-skills-taxonomy-map.md` | Move to `docs/legacy/risk-skills-taxonomy-map.md` | 🟡 | ✅ Complete |
+| P0-Q7 | Delete empty `repo/` dir | After all files migrated | 🟡 | ✅ Complete |
 
 #### 0G — `artifacts/` Undocumented Dirs Audit (11 dirs)
 
 | Task ID | Subdir | Action Required | Priority | Status |
 |---|---|---|---|---|
-| P0-R1 | `artifacts/closure/` | Audit content → consolidate into `closing/` or keep + document | 🔴 | ❌ Pending |
-| P0-R2 | `artifacts/communications/` | Audit → keep as canonical dir or merge into `stakeholders/` | 🔴 | ❌ Pending |
-| P0-R3 | `artifacts/extended-procurement/` | Audit → consolidate into `procurement/` or keep + document | 🔴 | ❌ Pending |
-| P0-R4 | `artifacts/extended-resources/` | Audit → consolidate into `resources/` or keep + document | 🔴 | ❌ Pending |
-| P0-R5 | `artifacts/governance/` | Audit → keep as canonical dir or merge | 🔴 | ❌ Pending |
-| P0-R6 | `artifacts/initiating/` | Audit → keep as canonical dir or merge | 🔴 | ❌ Pending |
-| P0-R7 | `artifacts/knowledge/` | Audit → keep as canonical dir or merge | 🔴 | ❌ Pending |
-| P0-R8 | `artifacts/pmo/` | Audit → **cross-reference with Pack 08 PMO artifacts A34–A36** — likely canonical; document | 🔴 | ❌ Pending |
-| P0-R9 | `artifacts/portfolio/` | Audit → **cross-reference with Pack 09 PPM artifacts** — likely canonical; document | 🔴 | ❌ Pending |
-| P0-R10 | `artifacts/quality/` | Audit → keep as canonical dir or merge | 🔴 | ❌ Pending |
-| P0-R11 | `artifacts/stakeholders-communications/` | Audit → consolidate into `stakeholders/` or `communications/` | 🔴 | ❌ Pending |
-| P0-R12 | `artifacts/team-resources/` | Audit → consolidate into `resources/` or keep + document | 🔴 | ❌ Pending |
+| P0-R1 | `artifacts/closure/` | Keep as canonical dir | 🔴 | ✅ Complete |
+| P0-R2 | `artifacts/communications/` | Consolidated into `stakeholders-communications/` | 🔴 | ✅ Complete |
+| P0-R3 | `artifacts/extended-procurement/` | Consolidated into `procurement/` | 🔴 | ✅ Complete |
+| P0-R4 | `artifacts/extended-resources/` | Consolidated into `resources/` | 🔴 | ✅ Complete |
+| P0-R5 | `artifacts/governance/` | Keep as canonical dir | 🔴 | ✅ Complete |
+| P0-R6 | `artifacts/initiating/` | Keep as canonical dir | 🔴 | ✅ Complete |
+| P0-R7 | `artifacts/knowledge/` | Keep as canonical dir | 🔴 | ✅ Complete |
+| P0-R8 | `artifacts/pmo/` | Keep as canonical dir | 🔴 | ✅ Complete |
+| P0-R9 | `artifacts/portfolio/` | Keep as canonical dir | 🔴 | ✅ Complete |
+| P0-R10 | `artifacts/quality/` | Keep as canonical dir | 🔴 | ✅ Complete |
+| P0-R11 | `artifacts/stakeholders-communications/` | Keep as canonical dir | 🔴 | ✅ Complete |
+| P0-R12 | `artifacts/team-resources/` | Consolidated into `resources/` | 🔴 | ✅ Complete |
 
 #### 0H — Documentation Updates
 
 | Task ID | Task | Detail | Priority | Status |
 |---|---|---|---|---|
-| P0-M | **Update root `README.md`** | Replace C4-Process-Records/ and C5-KA-Crossref/ refs with canonical paths; update artifacts/ structure tree to show all canonical subdirs; update Related Files table | 🔴 CRITICAL | ❌ Pending |
-| P0-S | Update `SKILL-REGISTRY.md` | Verify no stale path references to C4–C7 root dirs; add Pack 08 and 09 scaffold entries | 🔴 | ❌ Pending |
+| P0-M | **Update root `README.md`** | Replace legacy path refs; document 12 canonical subdirs | 🔴 CRITICAL | ✅ Complete |
+| P0-S | Update `SKILL-REGISTRY.md` | Verify no legacy refs (no legacy refs exist) | 🔴 | ✅ Complete |
 
 ---
 
@@ -560,7 +544,7 @@ Phase 7 (quality audit) ── continuous ── runs after EVERY phase
 | C2 | Performance Domains | 9 | 9 | ✅ |
 | C3 | Focus Areas | 5 | 5 | ✅ |
 | C4 | Process records PR11–PR40 + index | 32 | 32 | ✅ |
-| **Phase 0** | **Cleanup: 22 ops total** | **22 ops** | **2 ops (P0-A ✅, P0-B ✅)** | **🔄 IN PROGRESS** |
+| **Phase 0** | **Cleanup: 22 ops total** | **22 ops** | **22 ops** | **✅ COMPLETE** |
 | C4 | PR01–PR10 + PR41 rebuild | 11 | 0 | ❌ |
 | C5/C6/C7 | Upgrade migrated KA/TT/IO files | 3 | 0 | ❌ |
 | C8 | Appendices X2–X5 | 4 | 0 | ❌ |
@@ -597,7 +581,7 @@ Phase 7 (quality audit) ── continuous ── runs after EVERY phase
 | S-013 | 2026-06-01 | Governance | Quality enforcement integrated. QUALITY-STANDARDS.md confirmed as single authority. §2 updated. §9 rules 13–20 added. MASTER-PLAN.md YAML front-matter added. v4.4.0. | v4.4.0 |
 | S-014 | 2026-06-01 | Governance | QUALITY-STANDARDS.md completed to v2.0.0 (§6–§10). MASTER-PLAN.md §2 version reference updated to v2.0.0. Bumped to v4.4.1. | v4.4.1 |
 | **S-015** | **2026-06-01** | **Phase 0** | **P0-A complete (SHA verification). P0-B complete: all 30 C4-Process-Records/ root files deleted (PR11–PR40) in 30 sequential commits. P0-C started: C5 content read; MASTER-PLAN updated to v4.5.0; KA-Crossref-Index.md migrated to reference/knowledge-areas/.** | **v4.5.0** |
-| **S-016** | **TBD** | **Phase 0** | **Continue P0-B remaining: P0-D (delete C5 source) → P0-E/F (delete C5 dirs) → P0-G/H/I/J (C6 migration) → P0-K/L/M/N (C7 migration) → P0-O/P (reference/ cleanup) → P0-Q (repo/ disposition) → P0-R (artifacts/ audit)** | |
+| **S-016** | **2026-06-01** | **Phase 0** | **Finalized Phase 0 Structural Cleanup: archived legacy drafts & old artifacts monolith to docs/legacy/, deleted empty repo/ and duplicate shared/QUALITY-STANDARDS.md, updated READMEs and active roadmaps. 100% complete.** | **v4.6.0** |
 
 ---
 
@@ -647,11 +631,12 @@ See [`COMPLETION-PLAN-V4.md §8`](./COMPLETION-PLAN-V4.md) for the foundational 
 | 4.3.0 | 2026-06-01 | Comprehensive gap audit vs PMBOK 8 + 23 companion refs · 15 gaps logged in §1.6 · Pack 08 (PMO, 8 skills) + Pack 09 (PPM, 6 skills) added · Phase 4-C10 companion references (23 files) + C11 tailoring (9 files) + C12 PMO reference (6 files) added · Phase 4-NEW docs additions (4 files) · Sustainability skill + artifact added · Book of Forms→artifacts crosswalk task added · Total target raised to ~420 files · 2 new AI agent rules |
 | 4.4.0 | 2026-06-01 | Quality enforcement integrated · QUALITY-STANDARDS.md (v1.1.0) declared single authority for all quality, naming, structure, YAML schemas · §2 updated to remove inline quality notes and point to QUALITY-STANDARDS.md · §9 rules 13–20 added for file-level quality enforcement · YAML front-matter (GOV schema) added to this file · QUALITY-STANDARDS.md added to §1.1 root file inventory |
 | 4.4.1 | 2026-06-01 | QUALITY-STANDARDS.md version reference updated to v2.0.0 in §2 (§6–§10 now complete). §2.1 Document Roles description expanded to include source traceability and pre-commit checklist. Rule 14 and 20 in §9 updated to reference correct gate section numbers (§7.2, §7.3, §9). Session S-014 logged. S-015 placeholder added. |
-| **4.5.0** | **2026-06-01** | **Phase 0 Group 0A complete: P0-A (SHA verification) and P0-B (delete 30 C4-Process-Records/ root files, PR11–PR40, 30 commits) done. §5 Phase 0 task table updated with Status column. §1.2 C4 row updated to ✅ CLEARED. §3.2 knowledge-areas/ row updated to 🔄. §4 Phase 0 row updated to IN PROGRESS. §7 scorecard Phase 0 row updated. S-015 logged. S-016 placeholder added.** |
+| 4.5.0 | 2026-06-01 | Phase 0 Group 0A complete: P0-A (SHA verification) and P0-B (delete 30 C4-Process-Records/ root files, PR11–PR40, 30 commits) done. §5 Phase 0 task table updated with Status column. §1.2 C4 row updated to ✅ CLEARED. §3.2 knowledge-areas/ row updated to 🔄. §4 Phase 0 row updated to IN PROGRESS. §7 scorecard Phase 0 row updated. S-015 logged. S-016 placeholder added. |
+| **4.6.0** | **2026-06-01** | **Finalized Phase 0 structural cleanup. Archived legacy drafts to docs/legacy/, deleted empty repo/ and duplicate shared/QUALITY-STANDARDS.md. Updated READMEs, MASTER-PLAN.md, and COMPLETION-PLAN.md. Tracked Phase 0 as 100% complete in scorecard. S-016 logged.** |
 
 ---
 
 *Authority: PMBOK8 Guide Primary · PMI Companion References Secondary*  
 *Repository: [https://github.com/fakhruldeen/PMOSkills](https://github.com/fakhruldeen/PMOSkills)*  
 *Maintainer: @fakhruldeen*  
-*Last Updated: 2026-06-01 · Version 4.5.0*
+*Last Updated: 2026-06-01 · Version 4.6.0*
