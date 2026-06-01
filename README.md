@@ -1,17 +1,8 @@
 <p align="center">
-  <img src="docs/img/pmoskills.jpeg" alt="PMOSkills logo" width="360">
+  <img src="docs/img/pmoskills.jpeg" alt="PMOSkills logo" width="460">
 </p>
 
-```
-===================================================================
-      _____   __  __   ____     ____   _  __  _   _   _       ____  
-     |  __ \ |  \/  | / __ \   / ___| | |/ / | | | | | |     / ___| 
-     | |__) || \  / || |  | |  \___ \ | ' /  | | | | | |     \___ \ 
-     |  ___/ | |\/| || |  | |   ___) || . \  | | | | | |___   ___) |
-     |_|     |_|  |_| \____/   |____/ |_|\_\ |_| |_| |_____| |____/ 
-                                                                     
-========================= PMBOK 8 ALIGNED =========================
-```
+
 
 # PMO Skill Repository
 **Version:** 4.5.0
@@ -249,3 +240,16 @@ All artifacts are labeled: `PMI-derived` | `synthesis` | `organization-defined`
 
 *Authority: PMBOK 8 Primary · PMI Companion References Secondary · Organization-Defined Tertiary*
 *This repository is part of the PMI PMBOK 8 Knowledge Base Space.*
+
+---
+
+```
+===================================================================
+      _____   __  __   ____     ____   _  __  _   _   _       ____  
+     |  __ \ |  \/  | / __ \   / ___| | |/ / | | | | | |     / ___| 
+     | |__) || \  / || |  | |  \___ \ | ' /  | | | | | |     \___ \ 
+     |  ___/ | |\/| || |  | |   ___) || . \  | | | | | |___   ___) |
+     |_|     |_|  |_| \____/   |____/ |_|\_\ |_| |_| |_____| |____/ 
+                                                                     
+========================= PMBOK 8 ALIGNED =========================
+```
