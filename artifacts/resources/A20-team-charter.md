@@ -84,9 +84,9 @@ The charter is updated when:
 
 | Field | Description | Required |
 |---|---|---|
-| Team values | 3–7 shared values the team agrees to uphold | Mandatory |
+| Team values | 3–7 shared values or commitments the team agrees to uphold | Mandatory |
 | Communication norms | Preferred channels, response time expectations, meeting cadence | Mandatory |
-| Decision-making rules | What decisions the team makes autonomously vs. what requires escalation | Mandatory |
+| Decision-making rules | What decisions the team makes autonomously vs. requires escalation | Mandatory |
 | Meeting norms | Standing meetings, attendance expectations, facilitation approach | Mandatory |
 | Conflict resolution approach | How the team will surface and resolve disagreements constructively | Mandatory |
 | Definition of done | What done means for the team’s deliverables or work items | Mandatory |
@@ -100,10 +100,10 @@ The charter is updated when:
 
 | Source | Section | Purpose of Citation |
 |---|---|---|
-| PMBOK8 Guide | §2.6 Team Performance Domain | Grounds the Team Charter in shared values, culture, and norms |
+| PMBOK8 Guide | §2.6 Team Performance Domain | Grounds the charter in Team Performance Domain |
 | PMBOK8 Guide | Table 2-1 Develop Team | Confirms team charter creation as an activity within Develop Team |
-| PMBOK8 Guide | §2.6.3 Collaborative Team Culture | Links team charter to high-performing collaborative culture |
-| APG | Agile Practice Guide team agreements sections | Supports team charters in adaptive and hybrid contexts |
+| PMBOK8 Guide | §2.6.3 Collaborative Team Culture | Links charter to shared, high-performing collaborative culture |
+| APG | Agile Practice Guide team agreements sections | Supports use in adaptive and hybrid contexts |
 | PMI Lexicon | Team Charter definition | Canonical PMI definition |
 
 ---
@@ -112,10 +112,10 @@ The charter is updated when:
 
 | Skill ID | Skill Name | How Used |
 |---|---|---|
-| SKL-03-14 | Plan Resource Management | Team charter is established during resource planning |
-| SKL-04-04 | Develop Team | Team charter is used and reinforced during team development |
-| SKL-04-05 | Manage Team | Team charter provides the behavioral reference for conflict resolution |
-| SKL-07-03 | Facilitate Retrospectives | Team charter is reviewed and updated during retrospectives |
+| SKL-03-14 | Plan Resource Management | Charter established during resource planning |
+| SKL-04-04 | Develop Team | Charter used and reinforced during team development |
+| SKL-04-05 | Manage Team | Charter provides behavioral reference for performance management |
+| SKL-07-03 | Facilitate Retrospectives | Charter reviewed and updated during retrospectives |
 
 ---
 
@@ -124,7 +124,7 @@ The charter is updated when:
 | Skill ID | Skill Name | How Produced |
 |---|---|---|
 | SKL-03-14 | Plan Resource Management | Initial charter established during resource planning |
-| SKL-04-04 | Develop Team | Charter is co-created or refined during team development |
+| SKL-04-04 | Develop Team | Charter co-created or refined during team development |
 
 ---
 
@@ -132,11 +132,11 @@ The charter is updated when:
 
 | Artifact ID | Artifact Name | Relationship |
 |---|---|---|
-| A06 | Tailoring Decision Record | Project authority boundaries define limits within which team decisions operate |
-| A09 | Delivery Approach and Team Operating Agreement | A09 covers delivery cadence; A20 covers behavioral norms |
-| A14 | Integrated Project Management Plan | Team Charter is a referenced operating agreement |
+| A06 | Tailoring Decision Record | Project authority boundaries define team-level decision limits |
+| A09 | Delivery Approach and Team Operating Agreement | A09 covers delivery cadence and lifecycle; A20 covers behavioral norms |
+| A14 | Integrated Project Management Plan | Charter is a referenced operating agreement within A14 |
 | A25 | Team Operating and Responsibility Record | A25 defines formal roles; A20 defines how the team behaves within those roles |
-| A26 | Resource Capacity and Acquisition Record | A26 provides resource capacity context |
+| A26 | Resource Capacity and Acquisition Record | A26 provides resource capacity context for A20 norms |
 
 ---
 
@@ -144,14 +144,14 @@ The charter is updated when:
 
 | Check | Validation Rule |
 |---|---|
-| Co-created by team | Charter reflects team input, not PM dictation |
+| Co-created by team | Charter reflects team input, not just PM dictation |
 | Values present | At least three team values explicitly stated |
-| Decision rules defined | At least one explicit statement of what requires escalation |
-| Conflict resolution approach present | A constructive mechanism described |
-| Definition of done included | Team-level definition of done stated |
-| Not duplicating A25 | Role definitions and RACI not repeated |
-| Not duplicating A09 | Delivery cadence and lifecycle not re-stated |
-| Waste test pass | No separate team norms, working agreement canvas, and retrospective action log maintained independently |
+| Decision rules defined | At least one statement of what requires escalation vs. team authority |
+| Conflict resolution approach present | A constructive mechanism for surfacing disagreements is described |
+| Definition of done included | Team-level definition of done is stated |
+| Not duplicating A25 | Role definitions and RACI are not repeated — A25 holds that content |
+| Not duplicating A09 | Delivery cadence, ceremonies, and lifecycle are not re-stated — A09 holds that content |
+| Waste test pass | No separate team norms doc, working agreement canvas, and retrospective action log maintained as independent governance artifacts |
 
 ---
 
