@@ -1,12 +1,12 @@
 # PMOSkills — Quality Standards and Enforcement Rules
-**Version:** 1.0.0  
+**Version:** 1.1.0  
 **Date:** 2026-06-01  
 **Repository:** https://github.com/fakhruldeen/PMOSkills  
 **Authority:** PMBOK 8 Primary · PMI Companion References Secondary  
 **Status:** Active · Enforced from v4.4.0 of MASTER-PLAN  
 **Applies to:** Every file in this repository — past, present, and future
 
-> This document is the single authoritative source for quality standards, structural requirements, file naming rules, and quality gate enforcement for the PMOSkills repository. All other documents that reference quality standards defer to this file. When this document conflicts with `COMPLETION-PLAN-V4.md §2`, this document takes precedence.
+> This document is the **single authoritative source** for quality standards, structural requirements, file naming rules, and quality gate enforcement for the PMOSkills repository. All other documents that reference quality standards defer to this file. When this document conflicts with `COMPLETION-PLAN-V4.md §2`, this document takes precedence.
 
 ---
 
@@ -151,7 +151,7 @@ parent_template: "artifacts/category-name/ANN-kebab-name-template.md"  # require
 ---
 ```
 
-**Example scenario lock:** All artifact examples in this repository use the **Meridian CRM System Upgrade** scenario for cross-artifact consistency. No other scenario may be used without a governance decision logged in CHANGELOG.md.
+**Example scenario lock:** All artifact examples in this repository use the **Meridian CRM System Upgrade** scenario for cross-artifact consistency. No other scenario may be used without a governance decision logged in CHANGELOG.md and MASTER-PLAN.md.
 
 ---
 
@@ -196,7 +196,27 @@ file_path: "docs/kebab-name.md"             # required
 
 ---
 
-### 2.7 Test File (`TST`) — Required YAML
+### 2.7 Shared Component File (`SHR`) — Required YAML
+
+New in v1.1.0. Applies to all files under `shared/validators/`, `shared/checklists/`, `shared/components/`, and `shared/routing/`.
+
+```yaml
+---
+shared_id: SHR-{subtype}-NN                  # required · e.g. SHR-VAL-01, SHR-CL-03
+shared_name: [Full Component Name]           # required · title case
+shared_type: Validator|Checklist|Component|Routing  # required
+version: "1.0.0"                            # required
+status: Active                               # required
+applies_to:                                  # required · file type(s) this component is used for
+  - SKL
+  - ART-DEF
+file_path: "shared/subdir/kebab-name.md"    # required
+---
+```
+
+---
+
+### 2.8 Test File (`TST`) — Required YAML
 
 ```yaml
 ---
@@ -207,6 +227,24 @@ version: "1.0.0"                            # required
 status: Active                               # required
 test_case_count: 9                           # required · must match actual cases in file
 file_path: "tests/skill-tests/ST-SKL-NN-NN.md"  # required
+---
+```
+
+---
+
+### 2.9 Root Governance File (`GOV`) — Required YAML
+
+New in v1.1.0. Applies to all UPPER-KEBAB.md files at root level.
+
+```yaml
+---
+gov_id: [FILENAME without extension]         # required · e.g. MASTER-PLAN
+gov_name: [Full Document Name]               # required · title case
+version: "N.N.N"                            # required · semver
+status: Active                               # required
+authority: PMBOK8 Primary                   # required
+supersedes: [filename or "none"]            # required · traceability chain
+file_path: "[FILENAME].md"                  # required
 ---
 ```
 
@@ -223,7 +261,7 @@ Every full skill file must contain exactly these sections in this order. No sect
 
 # SKL-NN-NN — [Skill Name]            ← H1 heading · exact format
 
-**Skill ID:** SKL-NN-NN               ← metadata block (5 lines, bold labels)
+**Skill ID:** SKL-NN-NN               ← metadata block (bold labels)
 **Pack:** NN — Pack Name
 **Status:** [status]
 **Source type:** PMI-derived
@@ -249,9 +287,10 @@ Every full skill file must contain exactly these sections in this order. No sect
 ## Constraints                         ← §3.1.6 · bullet list of hard rules and limits
 
 ## Tailoring Guidance                  ← §3.1.7 · table: Approach | Adjustment
-                                         Rows: Simple | Large/multi-phase | Program | Regulated | Adaptive | Hybrid
+                                         Minimum 6 rows: Simple | Large/multi-phase | Program | Regulated | Adaptive | Hybrid
 
 ## Failure Cases                       ← §3.1.8 · table: Failure | Symptom | Resolution
+                                         Minimum 5 rows
 
 ## Tests                               ← §3.1.9 · table: Test ID | Description | Pass | Fail
                                          Minimum 9 test cases per skill
@@ -266,7 +305,11 @@ Every full skill file must contain exactly these sections in this order. No sect
 *Approval authority: [role]*
 ```
 
-**Minimum test case count:** 9 per skill file (matching `tests:` YAML field).
+**Minimums enforced:**
+- Test cases: ≥ 9 (matching `tests:` YAML field)
+- Tailoring rows: ≥ 6 approaches
+- Failure cases: ≥ 5 rows
+- Instructions: ≥ 4 named steps
 
 ---
 
@@ -313,6 +356,11 @@ Every full skill file must contain exactly these sections in this order. No sect
 *Owner: [role]*
 ```
 
+**Minimums enforced:**
+- Quality criteria: ≥ 5 rows
+- Waste test: exactly 5 yes/no questions
+- Related artifacts: ≥ 1 entry
+
 ---
 
 ### 3.3 Artifact Template File Structure (`ART-TPL`)
@@ -342,7 +390,7 @@ OR table rows with:
 *Do not pre-fill. Remove this note when completing.*
 ```
 
-**Enforcement:** No `[FIELD: ...]` placeholder may contain actual data. This is a critical failure.
+**Enforcement:** No `[FIELD: ...]` placeholder may contain actual data. This is a critical (L1) failure.
 
 ---
 
@@ -413,6 +461,11 @@ Applies to all files under `reference/` regardless of subdirectory.
 *Authority: PMBOK8 Guide §X.X.X*
 ```
 
+**Minimums enforced:**
+- Key characteristics: 4–8 bullets
+- Practitioner notes: 3–5 questions
+- Cross-references: ≥ 2 entries
+
 ---
 
 ### 3.6 Documentation File Structure (`DOC`)
@@ -446,7 +499,7 @@ Applies to all files under `reference/` regardless of subdirectory.
 ### 3.7 Test File Structure (`TST`)
 
 ```
-[YAML front-matter]                    ← required · per §2.7
+[YAML front-matter]                    ← required · per §2.8
 
 # ST-SKL-NN-NN — [Skill Name] — Test Cases
 
@@ -475,6 +528,82 @@ Applies to all files under `reference/` regardless of subdirectory.
 [How this skill connects to upstream/downstream in the lifecycle]
 
 ## Change Log
+```
+
+**Minimums enforced:**
+- Test cases: ≥ 9 per skill test file (must match `test_case_count:` in YAML)
+- Every test case must have all 6 fields: Scenario, Input, Expected output, Pass condition, Fail condition, Authority check
+
+---
+
+### 3.8 Shared Component File Structure (`SHR`) — New in v1.1.0
+
+Applies to all files under `shared/validators/`, `shared/checklists/`, `shared/components/`, `shared/routing/`.
+
+```
+[YAML front-matter]                    ← required · per §2.7
+
+# [Component Name]
+
+**Component ID:** SHR-{type}-NN  
+**Type:** Validator | Checklist | Component | Routing  
+**Applies to:** [file type(s)]  
+**Version:** 1.0.0  
+**Status:** Active
+
+---
+
+## Purpose                             ← what this component does and when to invoke it
+
+## Applies To                          ← which file types, phases, or contexts use this
+
+## Inputs                              ← what the component needs to operate
+
+## Instructions / Logic                ← numbered steps or decision table
+
+## Output / Result Format              ← what the component produces (PASS/FAIL/score/decision)
+
+## Failure Handling                    ← what to do when output is FAIL or BLOCK
+
+## Examples                            ← at least one worked example showing PASS and FAIL
+
+## Change Log                          ← table: Version | Date | Change
+```
+
+**Validator-specific rule:** Every validator must produce a binary or categorical output (PASS/FAIL/WARN) — it must not produce only narrative text. Narrative explanation may accompany the binary output but is not sufficient alone.
+
+---
+
+### 3.9 Root Governance File Structure (`GOV`) — New in v1.1.0
+
+Applies to all UPPER-KEBAB.md files at root.
+
+```
+[YAML front-matter]                    ← required · per §2.9
+
+# [Document Title]
+**Version:** N.N.N  
+**Date:** YYYY-MM-DD  
+**Repository:** [URL]  
+**Authority:** [primary authority]  
+**Status:** Active  
+**Supersedes:** [filename or "none"]
+
+> [One-line purpose statement or update note for this version]
+
+---
+
+[Document sections — H2/H3 as appropriate to document type]
+
+---
+
+## Version History (or Change Log)     ← table: Version | Date | Changes
+
+---
+*Authority: [source]*  
+*Repository: [URL]*  
+*Maintainer: @[handle]*  
+*Last Updated: YYYY-MM-DD · Version N.N.N*
 ```
 
 ---
@@ -518,15 +647,18 @@ SKL-1-1-governance.md                            ❌ missing leading zeros
 A06-project-management-plan.md                    ✅ definition
 A06-project-management-plan-template.md          ✅ template
 A06-project-management-plan-example.md           ✅ example
-A14-Integrated-Project-Management-Plan.md        ⚠️ capital letters — non-conformant (legacy)
+A14-Integrated-Project-Management-Plan.md        ⚠️ capital letters — non-conformant (legacy, NC-001)
 A14-integrated-project-management-plan.md        ✅ correct form
 ```
 
 - Artifact number: 2-digit zero-padded (`A01` through `A41`)
 - Every artifact **must** have all three files (definition + template + example) to be fully complete
-- Partial delivery (definition only, or definition + template only) is acceptable during build phases but must be flagged in scorecard
+- Partial delivery is acceptable during build phases but must be flagged in scorecard
 
-**Legacy non-conformance:** Files `A14-Integrated-Project-Management-Plan.md` and `A15-Schedule-Model-and-Baseline-Record.md` and `A16-Financial-Management-and-Cost-Baseline-Record.md` use title case — these are non-conformant and must be renamed in Phase 7 quality audit.
+**Legacy non-conformances (must fix in Phase 7):**
+- `A14-Integrated-Project-Management-Plan.md` → NC-001
+- `A15-Schedule-Model-and-Baseline-Record.md` → NC-002
+- `A16-Financial-Management-and-Cost-Baseline-Record.md` → NC-003
 
 ### 4.4 Reference Files
 
@@ -567,9 +699,25 @@ SKILL-REGISTRY.md       ✅
 AUTHORITY-ROUTING.md    ✅
 LIFECYCLE-MAP.md        ✅
 QUALITY-STANDARDS.md    ✅
+COMPLETION-PLAN-V4.md   ✅
 README.md               ✅
 CHANGELOG.md            ✅
 ```
+
+### 4.8 Prohibited Filename Patterns — New in v1.1.0
+
+The following filename patterns are **never permitted** and constitute an L1 or L2 failure:
+
+| Pattern | Example | Failure Level | Reason |
+|---|---|---|---|
+| Contains spaces | `my skill.md` | L1 | Breaks tooling and links |
+| Uses underscores | `SKL_01_01.md` | L2 | Not kebab-case standard |
+| Mixed case (non-root) | `ProjectCharter.md` | L2 | Not kebab-case standard |
+| No ID prefix (skills) | `governance-framework.md` in skills/ | L1 | Not traceable |
+| No ID prefix (artifacts) | `project-plan.md` in artifacts/ | L1 | Not traceable |
+| Generic names | `template.md`, `index2.md`, `test.md` | L2 | Not descriptive |
+| Version in filename | `SKL-01-01-v2.md` | L2 | Version belongs in YAML only |
+| Duplicate names in diff dirs | Same filename in two different subdirs | L2 | Creates ambiguity |
 
 ---
 
@@ -599,7 +747,7 @@ PMOSkills/
 │   ├── extended-resources/                      ← pending audit (P0-R4)
 │   ├── governance/                              ← pending audit (P0-R5)
 │   ├── initiating/                              ← pending audit (P0-R6)
-│   ├── knowledge/                              ← pending audit (P0-R7)
+│   ├── knowledge/                               ← pending audit (P0-R7)
 │   ├── monitoring-and-decisions/
 │   ├── planning-and-baselines/
 │   ├── pmo/                                     ← pending audit (P0-R8)
@@ -609,7 +757,6 @@ PMOSkills/
 │   ├── resources/
 │   ├── stakeholders/
 │   └── stakeholders-communications/             ← pending audit (P0-R11)
-│       [Note: closure/, team-resources/ pending consolidation decision]
 │
 ├── skills/                                      ← skill files only
 │   ├── 01-organizational-setup/
@@ -633,9 +780,9 @@ PMOSkills/
 │   ├── tools-techniques/                        ← pending Phase 0 migration from C6
 │   ├── inputs-outputs/                          ← pending Phase 0 migration from C7
 │   ├── appendices/                              ← Phase 4-C8
-│   ├── companion-references/                    ← Phase 4-C10 (NEW)
-│   ├── tailoring/                               ← Phase 4-C11 (NEW)
-│   └── pmo/                                     ← Phase 4-C12 (NEW)
+│   ├── companion-references/                    ← Phase 4-C10
+│   ├── tailoring/                               ← Phase 4-C11
+│   └── pmo/                                     ← Phase 4-C12
 │
 ├── shared/
 │   ├── README.md
@@ -653,11 +800,11 @@ PMOSkills/
 ### 5.2 Directory Rules
 
 1. **No files at root level except the canonical root governance files** listed in §4.7. Any other file at root is a structural violation.
-2. **No new top-level directories** may be created. `C4-Process-Records/`, `C5-KA-Crossref/`, `C6-TT-Taxonomy/`, `C7-IO-Registry/`, and `repo/` are structural violations awaiting Phase 0 cleanup.
+2. **No new top-level directories** may be created without a governance decision. `C4-Process-Records/`, `C5-KA-Crossref/`, `C6-TT-Taxonomy/`, `C7-IO-Registry/`, and `repo/` are current structural violations (NC-004) awaiting Phase 0 cleanup.
 3. **Every directory with 3+ files must have an `index.md`** that lists all files, their status, and their purpose.
-4. **No file may exist in a parent directory** if it belongs in a subdirectory. (e.g., a skill file cannot be placed in `skills/` directly — it must be in the correct pack subdirectory.)
-5. **Directory names use lowercase kebab-case** with numeric prefix for ordered packs: `01-organizational-setup/`, `03-planning/`.
-6. **The `docs/legacy/` subdirectory** is the only permitted archive location for superseded files. Files in legacy/ are never referenced by active content.
+4. **No file may exist in a parent directory** if it belongs in a subdirectory.
+5. **Directory names use lowercase kebab-case** with numeric prefix for ordered packs.
+6. **The `docs/legacy/` subdirectory** is the only permitted archive location for superseded files.
 
 ### 5.3 Index File Requirements
 
@@ -675,282 +822,22 @@ Every directory with 3+ content files must contain `index.md` with:
 | filename.md | ID | Name | Draft/Active | Phase N |
 ```
 
+### 5.4 New Directory Creation Governance Protocol — New in v1.1.0
+
+Before creating any directory not listed in §5.1:
+
+1. **Check §5.1** — confirm the directory does not already exist under another canonical name.
+2. **Log intent** in MASTER-PLAN.md under a new task entry.
+3. **Log decision** in CHANGELOG.md with `chore(root):` commit.
+4. **Update §5.1** in this file (QUALITY-STANDARDS.md) in the same commit.
+5. **Update reference/README.md or relevant parent README** if the new dir is inside `reference/`.
+
+Failure to follow this protocol = L2 non-conformance (NC entry required).
+
 ---
 
 ## 6. Source Traceability Rules
 
 ### 6.1 Citation Format
 
-Every substantive claim in every file must be traceable to a source. Use this format at the end of the relevant sentence or section:
-
-```
-*Authority: [Source] — [§Section or Chapter or Page]*
-```
-
-**Source short-codes (from `pmi_reference_list.md`):**
-
-| Short-code | Source |
-|---|---|
-| `PMBOK8-G` | PMBOK 8th Edition Guide |
-| `PMBOK8-S` | The Standard for Project Management (within PMBOK 8) |
-| `PMO-PG` | Project Management Offices: A Practice Guide |
-| `PROG-5E` | The Standard for Program Management, 5th Ed. |
-| `PORT-4E` | The Standard for Portfolio Management, 4th Ed. |
-| `PROC-PG` | Process Groups: A Practice Guide |
-| `WBS-3E` | Practice Standard for Work Breakdown Structures, 3rd Ed. |
-| `SCH-3E` | Practice Standard for Scheduling, 3rd Ed. |
-| `RISK-PG` | Risk Management in Portfolios, Programs, and Projects |
-| `REQ-PG` | Requirements Management: A Practice Guide |
-| `BA-PG` | PMI Guide to Business Analysis |
-| `EVM-PG` | Earned Value Management Practice Standard |
-| `GOV-PG` | Governance of Portfolios, Programs and Projects |
-| `CHG-PG` | Managing Change in Organizations: A Practice Guide |
-| `CMPLX-PG` | Navigating Complexity: A Practice Guide |
-| `AI-PG` | Guide to Leading and Managing AI Projects |
-| `AI-ORG` | Leading AI Transformation |
-| `DAD-2E` | Introduction to Disciplined Agile Delivery, 2nd Ed. |
-| `OPM-STD` | The Standard for Organizational Project Management |
-| `OPM-IMP` | Implementing Organizational Project Management |
-| `FORMS-3E` | Project Manager's Book of Forms, 3rd Ed. |
-| `LEXICON` | PMI Lexicon of Project Management Terms v4.0 |
-| `OPM-RISK` | Risk Management in Portfolios, Programs, and Projects |
-
-### 6.2 What Must Be Cited
-
-- Every definition or term from PMI sources
-- Every process, input, output, tool, or technique referenced
-- Every performance domain or principle referenced
-- Every prescriptive statement ("must", "shall", "required")
-- Every claim about what PMBOK 8 recommends or requires
-
-### 6.3 What Must NOT Be Done
-
-- **Never copy verbatim text** from PMI copyrighted materials
-- **Never cite without a section number** — `*Authority: PMBOK8-G*` alone is not valid
-- **Never use** "per PMI" or "according to PMBOK" without a specific section reference
-- **Never use** vague source labels like "best practice" or "industry standard" without a named source
-
----
-
-## 7. Quality Gate Checklists
-
-### 7.1 Pre-Commit Checklist (every file, every commit)
-
-```
-[ ] YAML front-matter present and all required fields populated
-[ ] File type matches YAML schema (§2)
-[ ] File structure matches type structure (§3)
-[ ] Filename matches naming convention (§4)
-[ ] File is in the correct directory (§5)
-[ ] Every substantive claim cites a source with section number (§6)
-[ ] No verbatim PMI text reproduced
-[ ] No [FIELD: ...] placeholders pre-filled in template files
-[ ] All artifact cross-references (ANN IDs) resolve to existing files
-[ ] All skill cross-references (SKL-NN-NN IDs) resolve to existing files
-[ ] version field is semver and matches YAML + metadata block
-[ ] Commit message follows §7.5 convention
-```
-
-### 7.2 Phase Exit Gate — Phase 0 (Structural Cleanup)
-
-```
-[ ] No C4/C5/C6/C7 directories exist at root level
-[ ] No repo/ directory exists at root level
-[ ] reference/ contains no legacy subdirectories (C4/C5/C6/C7)
-[ ] All live content from C5/C6/C7 migrated to canonical reference/ subdirs
-[ ] root README.md updated to reflect clean structure
-[ ] reference/README.md updated
-[ ] SKILL-REGISTRY.md has no stale path references
-[ ] All 11 undocumented artifacts/ subdirs audited and documented or consolidated
-[ ] docs/skill-reference-map.csv promoted from repo/
-```
-
-### 7.3 Phase Exit Gate — Phase 3 (Skills)
-
-```
-[ ] All 47 skill files (Packs 01–07) fully populated (no stub sections)
-[ ] Every skill has exactly the 10 sections in §3.1
-[ ] Every skill has ≥ 9 test cases in ## Tests section
-[ ] YAML tests: field matches actual test case count
-[ ] Every primary_artifact_output resolves to an existing ART-DEF file
-[ ] Every artifacts_updated entry resolves to an existing ART-DEF file
-[ ] Tailoring Guidance table present with ≥ 5 approach rows
-[ ] No skill references an artifact that does not exist
-[ ] SKILL-REGISTRY.md updated with all 47 skills at Active status
-```
-
-### 7.4 Phase Exit Gate — Phase 3-EXT (PMO + PPM Skills, Packs 08–09)
-
-```
-[ ] All 14 skill files (Pack 08: 8 files, Pack 09: 6 files) fully populated
-[ ] Pack 08 skills cite PMO Practice Guide by chapter and service number
-[ ] Pack 09 skills cite PMBOK8-S §2 or PMBOK8-G with specific section
-[ ] skills/08-pmo-operations/ directory exists with index.md
-[ ] skills/09-portfolio-program-management/ directory exists with index.md
-[ ] All referenced artifacts (A34–A36 and any new) exist in artifacts/
-[ ] SKILL-REGISTRY.md updated with Pack 08 and 09 entries
-```
-
-### 7.5 Phase Exit Gate — Phase 4 (Reference Layer)
-
-```
-[ ] PR01–PR10 + PR41 built in reference/processes/ (11 files)
-[ ] reference/GLOSSARY.md built (≥ 50 terms)
-[ ] reference/appendices/ contains X2, X3, X4, X5
-[ ] reference/companion-references/ contains index.md + 23 companion files
-[ ] reference/tailoring/ contains index.md + 8 domain tailoring files
-[ ] reference/pmo/ contains index.md + 5 PMO reference files
-[ ] Every reference file cites a specific PMBOK8 section (not chapter alone)
-[ ] reference/README.md reflects complete directory state
-[ ] All migrated C5/C6/C7 content upgraded to REF file structure (§3.5)
-```
-
-### 7.6 Phase Exit Gate — Phase 5 (Shared Components)
-
-```
-[ ] All validators produce deterministic pass/fail output (not narrative only)
-[ ] Waste test validator covers all 10 waste detection questions
-[ ] Skill quality checklist covers all 10 sections of §3.1
-[ ] Routing logic is machine-readable (table-based with explicit conditions)
-[ ] shared/ README.md updated with all file listings
-```
-
-### 7.7 Phase Exit Gate — Phase 6 (Tests)
-
-```
-[ ] Every skill (47 + 14 = 61 total) has a corresponding ST- test file
-[ ] Every ST- file has ≥ 9 test cases
-[ ] All 6 integration tests trace artifact flow end-to-end
-[ ] IT-01 covers organizational-setup → initiating flow
-[ ] IT-06 covers full lifecycle (setup through close)
-[ ] tests/skill-tests/index.md lists all 61 skill test files
-[ ] tests/integration-tests/index.md lists all 6 integration tests
-```
-
-### 7.8 Commit Message Convention
-
-```
-type(scope): short description (max 72 chars)
-
-Body: What changed and why. Reference any gap IDs or task IDs.
-Files: [list every file added/modified/deleted]
-Phase: [Phase N or Governance]
-```
-
-**Allowed types:** `feat` · `fix` · `docs` · `chore` · `refactor` · `test` · `style`  
-**Allowed scopes:** `skills` · `artifacts` · `docs` · `reference` · `shared` · `tests` · `root`  
-
-**Examples:**
-```
-feat(skills): add SKL-03-07 develop-risk-register full content
-
-Body: Full 10-section skill file. 9 test cases. Tailoring table for 6 approaches.
-Files: skills/03-planning/SKL-03-07-develop-risk-register.md
-Phase: Phase 3
-```
-
-```
-chore(root): delete C4-Process-Records/ root dir (Phase 0-B)
-
-Body: SHA verification confirmed all 30 files are exact duplicates of reference/processes/.
-Files: [30 files deleted from C4-Process-Records/]
-Phase: Phase 0
-```
-
----
-
-## 8. Enforcement and Failure Protocol
-
-### 8.1 Failure Severity Levels
-
-| Level | Label | Description | Action |
-|---|---|---|---|
-| **L1** | Critical | Missing YAML front-matter; wrong directory; pre-filled template placeholder; verbatim PMI copy | **Block commit. Do not proceed.** Fix immediately. |
-| **L2** | Major | Missing required section; citation without section number; artifact cross-ref does not resolve; test count mismatch | **Fix before phase exit gate.** Flag in CHANGELOG. |
-| **L3** | Minor | Non-conformant filename (legacy); missing index.md in dir with 3+ files; status vocabulary mismatch | **Fix in Phase 7 quality audit.** Log in MASTER-PLAN. |
-| **L4** | Advisory | Tailoring table has fewer than 6 rows; Failure Cases table has fewer than 5 rows; Change Log missing entry | **Note in PR/commit.** Resolve in next session. |
-
-### 8.2 Quality Audit Schedule
-
-| Trigger | Audit Scope | Logged In |
-|---|---|---|
-| After every Phase 0 operation | Migrated/deleted files + affected index.md | CHANGELOG.md |
-| After every Phase 3 skill file | Pre-commit checklist §7.1 + skill gate §7.3 | Commit message |
-| After completing each Pack (01–09) | Full pack review: YAML, structure, cross-refs, test counts | MASTER-PLAN §8 session log |
-| After Phase 4 sub-phase (C4–C12) | Reference structure + citation check | Commit message |
-| After Phase 5 completion | Validator determinism test | MASTER-PLAN §7 scorecard |
-| After Phase 6 completion | Full test coverage scan | MASTER-PLAN §7 scorecard |
-| Phase 7 — continuous | L3 legacy naming issues; cross-reference integrity | CHANGELOG.md v bump |
-
-### 8.3 Non-Conformance Register
-
-Known current non-conformances that must be resolved in Phase 7:
-
-| NC-ID | File | Issue | Severity | Phase |
-|---|---|---|---|---|
-| NC-001 | `artifacts/planning-and-baselines/A14-Integrated-Project-Management-Plan.md` | Title case filename — should be `a14-integrated-project-management-plan.md` | L3 | Phase 7 |
-| NC-002 | `artifacts/planning-and-baselines/A15-Schedule-Model-and-Baseline-Record.md` | Title case filename | L3 | Phase 7 |
-| NC-003 | `artifacts/planning-and-baselines/A16-Financial-Management-and-Cost-Baseline-Record.md` | Title case filename | L3 | Phase 7 |
-| NC-004 | All root-level stale dirs (C4–C7, repo/) | Structural violation — wrong location | L1 | Phase 0 |
-| NC-005 | `reference/README.md` | Stale — does not reflect current structure | L3 | Phase 0 |
-| NC-006 | Root `README.md` | References C4/C5 stale paths | L2 | Phase 0 |
-| NC-007 | `artifacts/` — 11 undocumented subdirs | Undocumented directories | L2 | Phase 0 |
-| NC-008 | `reference/` — missing `index.md` files in most subdirs | Missing index files | L3 | Phase 7 |
-
----
-
-## 9. AI Agent Pre-Commit Checklist
-
-Before committing **any** file, an AI agent must answer YES to every question below. A NO answer on any L1 or L2 item is a hard stop.
-
-```
-FILE IDENTITY
-[ ] Does the file have a YAML front-matter block as its first content?         [L1 if NO]
-[ ] Does the YAML match the schema for this file's type (§2)?                  [L1 if NO]
-[ ] Is the file type correct for its directory location (§5)?                  [L1 if NO]
-
-FILE NAMING
-[ ] Does the filename match the naming pattern for this type (§4)?             [L2 if NO]
-[ ] Is the filename all lowercase kebab (or UPPER-KEBAB for root governance)?  [L3 if NO]
-[ ] Is the filename under 80 characters?                                        [L4 if NO]
-
-FILE STRUCTURE
-[ ] Does the file contain all required sections for its type (§3)?             [L2 if NO]
-[ ] Are all sections in the correct order per §3?                              [L3 if NO]
-[ ] Does the ## Tests section (skills) have ≥ 9 test cases?                   [L2 if NO]
-[ ] Does the YAML tests: field match the actual test count?                    [L2 if NO]
-
-CROSS-REFERENCES
-[ ] Do all ANN artifact IDs referenced in this file exist in artifacts/?       [L2 if NO]
-[ ] Do all SKL-NN-NN skill IDs referenced in this file exist in skills/?       [L2 if NO]
-[ ] Do all ref IDs (PRnn, PDnn, Pnn, FAnn) exist in reference/?                [L2 if NO]
-
-SOURCE TRACEABILITY
-[ ] Does every substantive claim cite a source with a section number (§6)?    [L2 if NO]
-[ ] Is every citation using a recognized short-code from §6.1?                 [L3 if NO]
-[ ] Is there NO verbatim PMI text in the file?                                 [L1 if NO]
-
-TEMPLATE INTEGRITY
-[ ] If this is a template (ART-TPL), are ALL [FIELD: ...] placeholders intact? [L1 if NO]
-[ ] If this is an example (ART-EX), is the Meridian scenario used throughout?  [L2 if NO]
-
-COMMIT HYGIENE
-[ ] Does the commit message follow the §7.5 convention?                        [L3 if NO]
-[ ] Does the commit message include Files: and Phase: lines?                   [L3 if NO]
-[ ] Is this a single-file commit (preferred) or a justified multi-file commit? [L4 if NO]
-```
-
----
-
-## 10. Version History
-
-| Version | Date | Changes |
-|---|---|---|
-| 1.0.0 | 2026-06-01 | Initial build — derived from live repo audit of SKL-01-01, A06/A08/A14/A15/A16 triplets, PD/PR/FA reference files, COMPLETION-PLAN-V4 §2. Adds YAML schemas for all 7 file types, exact section structures for all types, naming regex patterns, canonical directory tree, source short-codes for all 23 companion refs, 8-level phase exit gate checklists, non-conformance register NC-001–NC-008, AI agent pre-commit checklist. |
-
----
-
-*Authority: PMBOK8 Guide Primary · PMI Companion References Secondary*  
-*Repository: https://github.com/fakhruldeen/PMOSkills*  
-*Maintainer: @fakhruldeen*  
-*Last Updated: 2026-06-01 · Version 1.0.0*
+Every substantive claim in every file must be traceable to a source. Use this format at the end of the
