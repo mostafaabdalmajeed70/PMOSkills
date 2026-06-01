@@ -106,9 +106,10 @@ The plan is updated when:
 | Source | Section | Purpose of Citation |
 |---|---|---|
 | PMBOK8 Guide | Appendix X4 Procurement | Provides the procurement process guidance anchoring this plan |
-| PMBOK8 Guide | Table 2-1 Plan Procurement Management | Confirms the Procurement Management Plan as process output |
-| PMBOK8 Guide | Table 2-1 Conduct Procurements | Links the plan to the execution process |
-| PMBOK8 Guide | Table 2-1 Control Procurements | Links the plan to the monitoring and control process |
+| PMBOK8 Guide | Table 2-1 Plan Procurement Management | Confirms the Procurement Management Plan as the output of the Plan Procurement Management process |
+| PMBOK8 Guide | Table 2-1 Conduct Procurements | Links the plan to the execution process for procurement |
+| PMBOK8 Guide | Table 2-1 Control Procurements | Links the plan to the monitoring and control process for active contracts |
+| Forms-Book | Procurement forms and templates | Supports procurement planning and administration using PMI-aligned templates |
 | PMI Lexicon | Procurement Management Plan definition | Canonical PMI definition |
 
 ---
@@ -120,7 +121,7 @@ The plan is updated when:
 | SKL-03-16 | Plan Procurement Management | Primary producing skill |
 | SKL-04-09 | Conduct Procurements | Executes sourcing and contract award activities |
 | SKL-05-01 | Monitor and Control Project Work | Procurement performance feeds integrated monitoring |
-| SKL-06-01 | Close Project or Phase | Contract closure governed by this plan |
+| SKL-06-01 | Close Project or Phase | Contract closure activities governed by this plan |
 
 ---
 
@@ -136,14 +137,14 @@ The plan is updated when:
 
 | Artifact ID | Artifact Name | Relationship |
 |---|---|---|
-| A05 | Context Register | OPAs and EEFs are primary inputs |
-| A06 | Tailoring Decision Record | Tailoring decisions affect procurement planning depth |
+| A05 | Context Register | OPAs and EEFs — primary inputs |
+| A06 | Tailoring Decision Record | Tailoring affects depth and formality |
 | A08 | Scope and Requirements Decision Record | Procurement scope derived from work packages |
-| A14 | Integrated Project Management Plan | Procurement Management Plan is a subsidiary plan |
-| A16 | Financial Management and Cost Baseline Record | Procurement costs are a major cost baseline component |
+| A14 | Integrated Project Management Plan | Procurement plan is a subsidiary plan within A14 |
+| A16 | Financial Management and Cost Baseline Record | Procurement costs are a major financial baseline component |
 | A19 | Risk Management Record | Procurement risks captured in A19 |
 | A31 | Procurement and Supplier Management Record | A31 is the living contract administration record |
-| A32 | Supplier Evaluation and Award Decision Record | Supplier selection criteria govern A32 evaluation |
+| A32 | Supplier Evaluation and Award Decision Record | Supplier selection criteria govern the A32 evaluation |
 
 ---
 
@@ -153,12 +154,12 @@ The plan is updated when:
 |---|---|
 | Make-or-buy decisions documented | At least one explicit make-or-buy decision with rationale |
 | Procurement items register present | All known procurement packages listed with contract type and estimated value |
-| Roles assigned | Procurement authority and contract administrator named |
-| Schedule milestones defined | RFP/RFQ issue date, award date, and contract start date planned |
-| Contract administration approach defined | Process for managing, changing, and closing contracts described |
+| Roles assigned | Procurement authority and contract administrator are named |
+| Schedule milestones defined | RFP/RFQ issue date, award date, and contract start date are planned |
+| Contract administration approach defined | Process for managing, changing, and closing contracts is described |
 | Linked to financial baseline | Procurement costs referenced in or linked to A16 |
 | Procurement risks captured | At least one procurement-specific risk referenced in A19 |
-| Waste test pass | No separate procurement strategy, sourcing strategy, and contract admin plans covering the same decisions |
+| Waste test pass | No separate procurement strategy, sourcing strategy, and contract administration mini-plans |
 
 ---
 

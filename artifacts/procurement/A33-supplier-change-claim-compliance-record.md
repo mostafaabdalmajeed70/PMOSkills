@@ -1,3 +1,28 @@
+---
+artifact_id: A33
+artifact_name: Supplier Change, Claim, and Compliance Record
+artifact_type: Supplier administration and exception artifact
+source_type: synthesis
+governance_layer: Project Governance
+version: "1.0.5"
+status: Active
+performance_domains:
+  - Governance
+  - Finance
+  - Risk
+  - Scope
+  - Schedule
+focus_areas:
+  - Monitoring and Controlling
+  - Closing
+linked_artifacts:
+  - A31
+  - A32
+  - A12
+  - A19
+file_path: "artifacts/procurement/A33-supplier-change-claim-compliance-record.md"
+---
+
 # A33 — Supplier Change, Claim, and Compliance Record
 
 ## Artifact Metadata
@@ -11,7 +36,6 @@
 | **Governance Layer** | Project Governance |
 | **Version** | 1.0.5 |
 | **Status** | Active |
-| **File Path** | `artifacts/procurement/A33-supplier-change-claim-compliance-record.md` |
 
 ---
 
@@ -102,7 +126,7 @@ Monitoring and Controlling · Closing
 
 ## Tailoring Guidance
 
-Use one record for supplier-side change, claim, and compliance history. Separate registers are justified only if legal or audit requirements specifically demand them. Most projects can operate with a single integrated log.
+Use one record for supplier-side change, claim, and compliance history. Separate registers are justified only if legal or audit requirements specifically demand them.
 
 ---
 
@@ -112,14 +136,27 @@ Use one record for supplier-side change, claim, and compliance history. Separate
 
 ---
 
+## Migration Map (v1.0.2 → v1.0.5)
+
+| Legacy Item | Legacy Name | Action |
+|---|---|---|
+| 237 | Procurement Change Order Tracking Ledger | MERGE TO A33 |
+| 238 | Vendor Claims, Disputes & Resolutions Log | MERGE TO A33 |
+| 239 | Supplier Release Cadence Quality Control Checklist | MERGE TO A33 |
+| 272 | Procurement Change Order Tracking Ledger (duplicate) | MERGE TO A33 |
+| 273 | Vendor Claims, Disputes & Resolutions Log (duplicate) | MERGE TO A33 |
+| 274 | Supplier Release Cadence Quality Control Checklist (duplicate) | MERGE TO A33 |
+
+---
+
 ## Related Artifacts
 
 | Artifact | Relationship |
 |---|---|
-| A31 | Planning and ongoing administration — A33 captures exceptions within that context |
-| A32 | Pre-award — A33 is post-award administration |
-| A12 | Project-level change log; supplier-specific events route to A33 |
-| A19 | Risk triggers may generate A33 entries and vice versa |
+| A31 Procurement and Supplier Management Record | Planning and ongoing administration — A33 captures exceptions |
+| A32 Supplier Evaluation and Award Decision Record | Pre-award — A33 is post-award administration |
+| A12 Change and Exception Decision Log | Project-level change log; supplier-specific events route to A33 |
+| A19 Risk Management Record | Risk triggers may generate A33 entries and vice versa |
 
 ---
 
@@ -127,5 +164,5 @@ Use one record for supplier-side change, claim, and compliance history. Separate
 
 | Version | Date | Change |
 |---|---|---|
-| 1.0.5 | 2026-05-xx | Original version in extended-procurement/ |
+| 1.0.5 | 2026-05-31 | Canonical definition |
 | 1.0.6 | 2026-06-01 | Migrated from artifacts/extended-procurement/ to artifacts/procurement/ (P0-0I) |

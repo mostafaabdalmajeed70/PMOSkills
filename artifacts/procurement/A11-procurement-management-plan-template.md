@@ -44,9 +44,8 @@ file_path: artifacts/procurement/A11-procurement-management-plan-template.md
 
 | Item ID | Description | Contract Type | Est. Value | Target Award Date | Responsible Buyer |
 |---|---|---|---|---|---|
-| [FIELD: e.g. PROC-001] | [FIELD: description] | [FIELD: FFP / FP-EPA / T&M / CPIF / CPFF / CPAF / IDIQ] | [FIELD: value] | [FIELD: YYYY-MM-DD] | [FIELD: buyer] |
-| [FIELD: item ID] | [FIELD: description] | [FIELD: contract type] | [FIELD: value] | [FIELD: YYYY-MM-DD] | [FIELD: buyer] |
-| [FIELD: item ID] | [FIELD: description] | [FIELD: contract type] | [FIELD: value] | [FIELD: YYYY-MM-DD] | [FIELD: buyer] |
+| [FIELD: e.g. PROC-001] | [FIELD: description] | [FIELD: FFP / FP-EPA / T&M / CPIF / CPFF / CPAF / IDIQ] | [FIELD: est. value] | [FIELD: YYYY-MM-DD] | [FIELD: buyer name or team] |
+| [FIELD: item ID] | [FIELD: description] | [FIELD: contract type] | [FIELD: est. value] | [FIELD: YYYY-MM-DD] | [FIELD: buyer] |
 
 ---
 
@@ -54,7 +53,7 @@ file_path: artifacts/procurement/A11-procurement-management-plan-template.md
 
 | Item ID | Contract Type | Rationale for Type Selection |
 |---|---|---|
-| [FIELD: item ID] | [FIELD: contract type] | [FIELD: rationale] |
+| [FIELD: item ID] | [FIELD: contract type] | [FIELD: explanation of why this contract type is appropriate] |
 | [FIELD: item ID] | [FIELD: contract type] | [FIELD: rationale] |
 
 ---
@@ -63,9 +62,8 @@ file_path: artifacts/procurement/A11-procurement-management-plan-template.md
 
 | Criterion | Weight % | Description | Evaluation Method |
 |---|---|---|---|
-| [FIELD: e.g. Technical Capability] | [FIELD: weight] | [FIELD: description] | [FIELD: Scored Proposal / Reference Check / Demo / Panel Review / Other] |
-| [FIELD: criterion] | [FIELD: weight] | [FIELD: description] | [FIELD: method] |
-| [FIELD: criterion] | [FIELD: weight] | [FIELD: description] | [FIELD: method] |
+| [FIELD: e.g. Technical Capability] | [FIELD: weight — all must total 100] | [FIELD: what is assessed] | [FIELD: Scored Proposal / Reference Check / Demo / Panel Review / Other] |
+| [FIELD: criterion] | [FIELD: weight %] | [FIELD: description] | [FIELD: method] |
 | **Total** | **[FIELD: must equal 100%]** | | |
 
 ---
@@ -74,8 +72,8 @@ file_path: artifacts/procurement/A11-procurement-management-plan-template.md
 
 | Role | Name / Position | Authority Level | Responsibilities |
 |---|---|---|---|
-| [FIELD: role] | [FIELD: name or position] | [FIELD: Full / Delegated / Advisory / None] | [FIELD: responsibilities] |
-| [FIELD: role] | [FIELD: name or position] | [FIELD: authority level] | [FIELD: responsibilities] |
+| [FIELD: role, e.g. Procurement Lead] | [FIELD: name or position] | [FIELD: Full / Delegated / Advisory / None] | [FIELD: responsibilities] |
+| [FIELD: role] | [FIELD: name] | [FIELD: authority] | [FIELD: responsibilities] |
 
 ---
 
@@ -83,7 +81,7 @@ file_path: artifacts/procurement/A11-procurement-management-plan-template.md
 
 | Milestone | Planned Date | Responsible | Dependencies |
 |---|---|---|---|
-| [FIELD: e.g. Issue RFP for PROC-001] | [FIELD: YYYY-MM-DD] | [FIELD: name or role] | [FIELD: dependencies] |
+| [FIELD: e.g. Issue RFP for PROC-001] | [FIELD: YYYY-MM-DD] | [FIELD: name or role] | [FIELD: predecessor milestones] |
 | [FIELD: milestone] | [FIELD: YYYY-MM-DD] | [FIELD: responsible] | [FIELD: dependencies] |
 
 ---
@@ -91,23 +89,23 @@ file_path: artifacts/procurement/A11-procurement-management-plan-template.md
 ## Section 8 — Contract Administration Approach
 
 **Performance Monitoring Approach**
-[FIELD: describe how contractor performance will be monitored]
+[FIELD: describe how contractor performance will be monitored, including frequency of reviews, KPIs tracked, and reporting requirements]
 
 **Change Order Process**
-[FIELD: describe the change order process including approval thresholds]
+[FIELD: describe the process for initiating, evaluating, approving, and documenting contract change orders, including approval thresholds and escalation path]
 
 **Payment Terms Approach**
-[FIELD: describe payment terms and milestone-based payment conditions]
+[FIELD: describe standard payment terms, milestone-based payment conditions, invoice review process, and payment authority]
 
 **Contract Closure Approach**
-[FIELD: describe the contract closeout process]
+[FIELD: describe the contract closeout process including deliverable acceptance, final payment, lessons learned capture, and contract file archiving]
 
 ---
 
 ## Section 9 — Organizational Constraints and Procurement Policies
 
 **Applicable Policies**
-[FIELD: list applicable policies, regulatory requirements, or standards]
+[FIELD: list applicable organizational procurement policies, regulatory requirements, or standards]
 
 **Spend Thresholds**
 
@@ -118,7 +116,7 @@ file_path: artifacts/procurement/A11-procurement-management-plan-template.md
 | [FIELD: High] | [FIELD: threshold] | [FIELD: approver role] |
 
 **Approved Supplier Lists**
-[FIELD: reference approved or preferred supplier lists]
+[FIELD: reference any approved or preferred supplier lists and how deviations are handled]
 
 ---
 
@@ -126,8 +124,8 @@ file_path: artifacts/procurement/A11-procurement-management-plan-template.md
 
 | Risk Description | Probability | Impact | Mitigation |
 |---|---|---|---|
-| [FIELD: procurement risk] | [FIELD: Low / Medium / High] | [FIELD: Low / Medium / High] | [FIELD: mitigation or A19 ref] |
-| [FIELD: risk] | [FIELD: L/M/H] | [FIELD: L/M/H] | [FIELD: mitigation] |
+| [FIELD: procurement risk] | [FIELD: Low / Medium / High] | [FIELD: Low / Medium / High] | [FIELD: mitigation or A19 reference] |
+| [FIELD: risk] | [FIELD: Low / Medium / High] | [FIELD: Low / Medium / High] | [FIELD: mitigation] |
 
 ---
 
@@ -138,10 +136,12 @@ file_path: artifacts/procurement/A11-procurement-management-plan-template.md
 - [ ] Supplier selection criteria are weighted and measurable.
 - [ ] Procurement roles and approval authorities are unambiguous.
 - [ ] The procurement schedule is integrated with the project schedule and WBS (A08).
-- [ ] Contract administration approach specifies WHO monitors performance and HOW OFTEN.
+- [ ] Contract administration specifies WHO monitors performance and HOW OFTEN.
 - [ ] Change order process has defined thresholds and escalation paths.
+- [ ] Payment terms align with organizational finance policy.
+- [ ] Organizational spend thresholds are correctly applied to all items.
 - [ ] Procurement risks are cross-referenced to A19.
-- [ ] The plan is proportionate to the complexity and value of the procurement activity.
+- [ ] The plan is proportionate to the complexity and value of procurement activity.
 
 ---
 
@@ -154,6 +154,6 @@ file_path: artifacts/procurement/A11-procurement-management-plan-template.md
 
 ---
 
-*Template for: Procurement Management Plan*
+*Template for: Procurement Management Plan (A11)*
 *Authority: PMBOK8 Guide Appendix X4 Procurement; Table 2-1 Plan Procurement Management*
 *See definition file: `artifacts/procurement/A11-procurement-management-plan.md`*
