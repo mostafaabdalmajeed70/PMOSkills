@@ -1,4 +1,34 @@
+---
+artifact_id: A07
+artifact_name: Stakeholder Register and Stakeholder Engagement and Action Map (SEAM)
+version: 1.0.0
+status: Definition · Active
+authority: "PMBOK8 Guide §2.5 · Standard §3 Principles · BAP-2E §4"
+source_type: PMI-derived
+category: Stakeholders
+performance_domains:
+  - Stakeholders
+  - Governance
+focus_areas:
+  - Initiating
+  - Planning
+  - Executing
+  - Monitoring and Controlling
+  - Closing
+linked_artifacts:
+  - A04
+  - A05
+  - A01
+  - A28
+  - A19
+  - A02
+  - A17
+  - A27
+file_path: "artifacts/stakeholders-communications/A07-stakeholder-register-seam.md"
+---
+
 # A07 — Stakeholder Register and Engagement Strategy
+
 **Artifact ID:** A07
 **Artifact Name:** Stakeholder Register and Stakeholder Engagement and Action Map (SEAM)
 **Version:** 1.0.0
@@ -20,7 +50,7 @@ A07 is the single artifact that consolidates the stakeholder register (identific
 ## Artifact Type
 
 | Field | Value |
-|-------|-------|
+|---|---|
 | **Category** | Stakeholders |
 | **Type** | Living stakeholder record + engagement strategy |
 | **Lifecycle** | Initiated in Initiating · Expanded in Planning · Used in Executing · Monitored in M&C · Closed in Closing |
@@ -43,7 +73,7 @@ A07 is the single artifact that consolidates the stakeholder register (identific
 ## Sections
 
 | Section | Content | Populated By |
-|---------|---------|-------------|
+|---|---|---|
 | §1 Stakeholder Register — Identification | All identified stakeholders using registration schema | SKL-02-02 |
 | §2 Stakeholder Analysis | Power/Interest grid, Salience Model, current vs. desired engagement level | SKL-02-02 · SKL-03-07 |
 | §3 Stakeholder Engagement and Action Map (SEAM) | Engagement strategy, target engagement level, specific actions, owner, timeline | SKL-03-07 |
@@ -55,9 +85,9 @@ A07 is the single artifact that consolidates the stakeholder register (identific
 ## Stakeholder Registration Schema (§1)
 
 | Field | Description |
-|-------|-------------|
+|---|---|
 | **Stakeholder ID** | Format: S-NNN |
-| **Name** | Full name (or role/group) |
+| **Name** | Full name (or role/group if individual not yet identified) |
 | **Organization / Role** | Organization and project role |
 | **Contact** | Primary contact method |
 | **Category** | Internal / External / Sponsor / Regulator / Customer / Supplier / Team |
@@ -72,7 +102,7 @@ A07 is the single artifact that consolidates the stakeholder register (identific
 ## Stakeholder Analysis Schema (§2)
 
 | Field | Description |
-|-------|-------------|
+|---|---|
 | **Power** | High / Medium / Low |
 | **Interest** | High / Medium / Low |
 | **Grid Quadrant** | Manage Closely / Keep Satisfied / Keep Informed / Monitor |
@@ -86,12 +116,12 @@ A07 is the single artifact that consolidates the stakeholder register (identific
 ## SEAM Entry Schema (§3)
 
 | Field | Description |
-|-------|-------------|
+|---|---|
 | **Stakeholder ID** | Reference to §1 |
 | **Engagement Objective** | What engagement outcome is needed |
-| **Strategy** | Approach (inform / consult / involve / collaborate / empower) |
-| **Specific Actions** | Concrete steps to move stakeholder to desired engagement level |
-| **Owner** | Person responsible |
+| **Strategy** | inform / consult / involve / collaborate / empower |
+| **Specific Actions** | Concrete steps to move stakeholder to desired level |
+| **Owner** | Person responsible for executing the engagement |
 | **Timeline** | Key dates or frequency |
 | **Communication Link** | Reference to A28 communication matrix row |
 
@@ -100,7 +130,7 @@ A07 is the single artifact that consolidates the stakeholder register (identific
 ## Engagement Level Definitions
 
 | Level | Description |
-|-------|-------------|
+|---|---|
 | **Unaware** | Not aware of the project or its potential impact |
 | **Resistant** | Aware but actively or passively opposing |
 | **Neutral** | Aware but neither supporting nor opposing |
@@ -112,7 +142,7 @@ A07 is the single artifact that consolidates the stakeholder register (identific
 ## Inputs
 
 | Input | Source |
-|-------|--------|
+|---|---|
 | A04 — Project Charter | SKL-02-01 |
 | A05 — Context Register | SKL-01-02 |
 | A01 — Business Case | Pre-authorization |
@@ -123,7 +153,7 @@ A07 is the single artifact that consolidates the stakeholder register (identific
 ## Outputs / Produces
 
 | Output | Used By |
-|--------|--------|
+|---|---|
 | Stakeholder register | A28 (Comms plan) · A19 (Risk identification) |
 | SEAM | SKL-04-06 · SKL-05-07 |
 | Monitoring log | A17 §7 (Performance Report) |
@@ -136,7 +166,7 @@ A07 is the single artifact that consolidates the stakeholder register (identific
 - All stakeholders with influence or interest identified by end of Initiating
 - Current vs. desired engagement gap documented for every key stakeholder
 - SEAM actions have named owners and timelines
-- A07 ↔ A28 consistency: every stakeholder in A07 has a corresponding entry in A28 communications matrix
+- A07 ↔ A28 consistency: every stakeholder in A07 has a corresponding entry in A28
 - Monitoring log updated at every status cycle
 - Re-identification run triggered at phase gates, major scope changes, or new stakeholder emergence
 
@@ -145,7 +175,7 @@ A07 is the single artifact that consolidates the stakeholder register (identific
 ## Related Artifacts
 
 | Artifact | Relationship |
-|----------|--------------|
+|---|---|
 | A04 — Project Charter | High-level stakeholder identification |
 | A28 — Comms Record | Communications plan derived from A07 SEAM |
 | A19 — Risk Record | Stakeholder risks identified from A07 analysis |
@@ -158,7 +188,7 @@ A07 is the single artifact that consolidates the stakeholder register (identific
 ## PMBOK8 Anchors
 
 | Reference | Detail |
-|-----------|--------|
+|---|---|
 | PMBOK8 Guide §2.5.2.1 | Identify Stakeholders · Figure 2-33 |
 | PMBOK8 Guide §2.5.2.3 | Plan Stakeholder Engagement · Figure 2-35 |
 | PMBOK8 Guide §2.5.2.5 | Manage Stakeholder Engagement · Figure 2-37 |
@@ -168,4 +198,13 @@ A07 is the single artifact that consolidates the stakeholder register (identific
 
 ---
 
-*Owner: Project Manager · Living record · Migrated from artifacts/stakeholders/ to artifacts/stakeholders-communications/ — P0-0I · 2026-06-01*
+## Change Log
+
+| Version | Date | Change |
+|---|---|---|
+| 1.0.0 | 2026-05-30 | Initial definition — Patch G |
+| 1.0.1 | 2026-06-01 | Migrated from artifacts/stakeholders/ to artifacts/stakeholders-communications/ (P0-0I) |
+
+---
+
+*Owner: Project Manager · Change Control: SEAM changes T1–T2 per AUTHORITY-ROUTING.md*

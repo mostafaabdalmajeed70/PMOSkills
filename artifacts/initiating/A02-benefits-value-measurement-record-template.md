@@ -3,7 +3,7 @@ artifact_id: A02
 name: Benefits and Value Measurement Record
 template_version: 1.0.0
 status: Template · Active
-category: Initiating
+category: Stakeholders
 authority: "PMBOK8 Guide §2.1.2 Value Delivery System; Standard §3 Principles"
 source_type: PMI-derived
 file_path: artifacts/initiating/A02-benefits-value-measurement-record-template.md
@@ -16,7 +16,7 @@ file_path: artifacts/initiating/A02-benefits-value-measurement-record-template.m
 **Authority:** PMBOK8 Guide §2.1.2 Value Delivery System; Standard §3 Principles; Program-5E §4
 **Owner:** Project Sponsor / Benefits Owner (post-project); PM (during project)
 
-> **Usage Note:** Initiate this record during project authorization (SKL-02-01) using benefit statements from the Business Case (A01). Update the benefits baseline when planning is complete. Update benefits realization tracking at every reporting cycle. Complete Section 6 (post-project handoff) before signing the Project Closure Record (A27). This record persists beyond project closure — hand it off to the named Benefits Owner.
+> **Usage Note:** Initiate this record during project authorization (SKL-02-01) using benefit statements from the Business Case (A01). Update the benefits baseline when planning is complete. Update benefits realization tracking at every reporting cycle. Complete the post-project handoff section (Section 6) before signing the Project Closure Record (A27). This record persists beyond project closure — hand it off to the named Benefits Owner.
 
 ---
 
@@ -27,10 +27,10 @@ file_path: artifacts/initiating/A02-benefits-value-measurement-record-template.m
 | Project Name | [FIELD: full project name] |
 | Project ID | [FIELD: unique project identifier] |
 | PM Name | [FIELD: name of the project manager] |
-| Sponsor / Initiating Authority | [FIELD: name of the project sponsor] |
-| Benefits Owner (post-project) | [FIELD: named individual responsible for benefits realization after closure] |
-| Record Version | [FIELD: e.g. 1.0] |
-| Last Updated | [FIELD: YYYY-MM-DD] |
+| Sponsor / Initiating Authority | [FIELD: name of the project sponsor or initiating authority] |
+| Benefits Owner (post-project) | [FIELD: named individual responsible for benefits realization after project closure] |
+| Record Version | [FIELD: version number, e.g., 1.0] |
+| Last Updated | [FIELD: date last updated] |
 
 ---
 
@@ -40,7 +40,7 @@ file_path: artifacts/initiating/A02-benefits-value-measurement-record-template.m
 |---|---|
 | Strategic Objective(s) Supported | [FIELD: which organizational strategic objectives does this project support?] |
 | Portfolio / Program Context | [FIELD: portfolio or program this project belongs to, if applicable] |
-| Value Case Reference | [FIELD: reference to A01 Business Case] |
+| Value Case Reference | [FIELD: reference to A01 Business Case — document name / version / location] |
 | Expected Organizational Outcome | [FIELD: high-level outcome the organization expects] |
 
 ---
@@ -52,11 +52,9 @@ file_path: artifacts/initiating/A02-benefits-value-measurement-record-template.m
 
 | ID | Benefit Name | Type | Description | Linked Deliverable(s) | Benefit Owner | KPI / Indicator | Baseline Value | Target Value | Measurement Method | Realization Timeframe | Status |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| B-001 | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] |
-| B-002 | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] |
-| B-003 | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] |
-| B-004 | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] |
-| B-005 | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] |
+| B-001 | [FIELD: name] | [FIELD: type] | [FIELD: description] | [FIELD: deliverable(s)] | [FIELD: owner] | [FIELD: KPI] | [FIELD: baseline] | [FIELD: target] | [FIELD: method] | [FIELD: timeframe] | [FIELD: status] |
+| B-002 | [FIELD: name] | [FIELD: type] | [FIELD: description] | [FIELD: deliverable(s)] | [FIELD: owner] | [FIELD: KPI] | [FIELD: baseline] | [FIELD: target] | [FIELD: method] | [FIELD: timeframe] | [FIELD: status] |
+| B-003 | [FIELD: name] | [FIELD: type] | [FIELD: description] | [FIELD: deliverable(s)] | [FIELD: owner] | [FIELD: KPI] | [FIELD: baseline] | [FIELD: target] | [FIELD: method] | [FIELD: timeframe] | [FIELD: status] |
 
 ---
 
@@ -64,29 +62,34 @@ file_path: artifacts/initiating/A02-benefits-value-measurement-record-template.m
 
 | Benefit ID | KPI | Data Source | Measurement Method | Measurement Frequency | Responsible Role | Reporting Destination |
 |---|---|---|---|---|---|---|
-| B-001 | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] |
-| B-002 | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] |
-| B-003 | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] |
+| B-001 | [FIELD: KPI name] | [FIELD: data source] | [FIELD: how measured] | [FIELD: frequency] | [FIELD: role] | [FIELD: where results are reported] |
+| B-002 | [FIELD: KPI name] | [FIELD: data source] | [FIELD: how measured] | [FIELD: frequency] | [FIELD: role] | [FIELD: where results reported] |
+| B-003 | [FIELD: KPI name] | [FIELD: data source] | [FIELD: how measured] | [FIELD: frequency] | [FIELD: role] | [FIELD: where results reported] |
 
 ---
 
 ## Section 5 — Benefits Realization Tracking
 
-| Benefit ID | Reporting Period | Actual Value | Target Value | Variance | Status | Notes / Actions |
+Update at every reporting cycle (A17) and at each phase gate.
+
+| Benefit ID | Reporting Period | Actual Value | Target Value | Variance | Status | Notes / Actions Required |
 |---|---|---|---|---|---|---|
+| [FIELD: B-NNN] | [FIELD: period] | [FIELD: actual] | [FIELD: target] | [FIELD: variance] | [FIELD: status] | [FIELD: notes or actions] |
 | [FIELD: B-NNN] | [FIELD: period] | [FIELD: actual] | [FIELD: target] | [FIELD: variance] | [FIELD: status] | [FIELD: notes] |
 
 ---
 
 ## Section 6 — Post-Project Benefits Handoff
 
+Complete before project closure. A27 cannot be signed until this section is complete.
+
 | Field | Value |
 |---|---|
 | Benefits Owner (post-project) | [FIELD: named individual, not a role] |
-| Handoff Date | [FIELD: YYYY-MM-DD] |
-| Benefits Remaining to Realize | [FIELD: list benefits not yet fully realized] |
-| Post-Project Tracking Plan | [FIELD: how, when, and by whom will unrealized benefits be tracked?] |
-| Governance Authority | [FIELD: who has authority over post-project benefits tracking?] |
+| Handoff Date | [FIELD: date of formal handoff] |
+| Benefits Remaining to Realize | [FIELD: list benefits not yet fully realized at closure] |
+| Post-Project Tracking Plan | [FIELD: how, when, and by whom will unrealized benefits be tracked post-closure?] |
+| Governance Authority | [FIELD: who has authority over benefit realization tracking post-project?] |
 | Acceptance by Benefits Owner | [FIELD: name · date · signature reference] |
 
 ---
@@ -95,11 +98,11 @@ file_path: artifacts/initiating/A02-benefits-value-measurement-record-template.m
 
 | Date | Updated By | Trigger | Key Changes |
 |---|---|---|---|
-| [FIELD] | [FIELD] | [FIELD] | [FIELD] |
+| [FIELD: date] | [FIELD: name] | [FIELD: trigger event] | [FIELD: summary of changes] |
 
 ---
 
-**Change Log**
+## Change Log
 
 | Version | Date | Event | Notes |
 |---|---|---|---|

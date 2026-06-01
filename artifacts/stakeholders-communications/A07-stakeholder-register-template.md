@@ -19,7 +19,7 @@ file_path: artifacts/stakeholders-communications/A07-stakeholder-register-templa
 **Source Type:** synthesis
 **File Path:** `artifacts/stakeholders-communications/A07-stakeholder-register-template.md`
 
-> **Usage note:** Initiate this register during chartering (SKL-02-01) and maintain it throughout the project. This single record replaces separate salience canvas, kickoff blueprint, and stakeholder engagement plan documents. Update whenever stakeholder interest, influence, or engagement level materially changes.
+> **Usage note:** Initiate this register during chartering (SKL-02-01) and maintain throughout the project. This single record replaces separate salience canvas, kickoff blueprint, and stakeholder engagement plan documents. Update whenever stakeholder interest, influence, or engagement level materially changes.
 
 ---
 
@@ -40,10 +40,15 @@ file_path: artifacts/stakeholders-communications/A07-stakeholder-register-templa
 | ID | Name / Group | Role / Organization | Interest in Project | Influence Level | Impact on Project | Current Engagement Level | Target Engagement Level |
 |---|---|---|---|---|---|---|---|
 | S01 | [FIELD: Name or group] | [FIELD: Role / org] | [FIELD: What they care about] | High / Medium / Low | High / Medium / Low | Unaware / Resistant / Neutral / Supportive / Leading | [FIELD: Target level] |
-| S02 | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] |
-| S03 | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] | [FIELD] |
+| S02 | [FIELD: Name or group] | [FIELD: Role / org] | [FIELD: What they care about] | [Level] | [Level] | [Current] | [Target] |
+| S03 | [FIELD: Name or group] | [FIELD: Role / org] | [FIELD: What they care about] | [Level] | [Level] | [Current] | [Target] |
 
-> **Engagement levels (PMBOK8 §2.5):** Unaware · Resistant · Neutral · Supportive · Leading
+> **Engagement level definitions (PMBOK8 §2.5):**
+> - **Unaware** — unaware of the project and potential impacts
+> - **Resistant** — aware but opposed
+> - **Neutral** — aware but neither supportive nor resistant
+> - **Supportive** — aware and supportive
+> - **Leading** — actively engaged and promoting the project
 
 ---
 
@@ -54,10 +59,10 @@ file_path: artifacts/stakeholders-communications/A07-stakeholder-register-templa
 | Field | Detail |
 |---|---|
 | **Primary concern** | [FIELD: What is most important to this stakeholder?] |
-| **Communication preference** | [FIELD: How, when, and how often?] |
-| **Engagement strategy** | [FIELD: Approach to move to target engagement level] |
-| **Potential risk or issue** | [FIELD: What could go wrong and the mitigation?] |
-| **Escalation trigger** | [FIELD: What should trigger escalation to sponsor?] |
+| **Communication preference** | [FIELD: How, when, and how often does this stakeholder want information?] |
+| **Engagement strategy** | [FIELD: Approach to move toward target engagement level?] |
+| **Potential risk or issue** | [FIELD: What could go wrong? Mitigation?] |
+| **Escalation trigger** | [FIELD: What event should trigger escalation to the sponsor?] |
 
 ### [S02 — Name / Group]
 
@@ -76,38 +81,39 @@ file_path: artifacts/stakeholders-communications/A07-stakeholder-register-templa
 ## Section 4 — Engagement Strategy Summary
 
 ### 4.1 Overall Engagement Approach
-
-[FIELD: Describe the general philosophy and rationale.]
+[FIELD: Describe the general philosophy and rationale given the project context.]
 
 ### 4.2 Key Engagement Activities
 
 | Activity | Stakeholder(s) | Frequency | Owner | Purpose |
 |---|---|---|---|---|
 | [FIELD: e.g. Steering committee review] | [FIELD: S01, S03] | [FIELD: Monthly] | [FIELD: PM] | [FIELD: Governance oversight] |
-| [FIELD: Status report] | [FIELD: All] | [FIELD: Fortnightly] | [FIELD: PM] | [FIELD: Transparency] |
+| [FIELD: Status report distribution] | [FIELD: All] | [FIELD: Fortnightly] | [FIELD: PM] | [FIELD: Transparency] |
+| [FIELD: Sponsor 1:1] | [FIELD: S01] | [FIELD: Weekly] | [FIELD: PM] | [FIELD: Early warning] |
 
 ### 4.3 Communication Channels
 
 | Channel | Used For | Audience | Frequency |
 |---|---|---|---|
-| [FIELD: e.g. Email] | [FIELD: Formal status updates] | [FIELD: All stakeholders] | [FIELD: Fortnightly] |
-| [FIELD: Project dashboard] | [FIELD: Progress tracking] | [FIELD: Steering group] | [FIELD: Real-time] |
+| [FIELD: e.g. Email] | [FIELD: Formal status updates] | [FIELD: All] | [FIELD: Fortnightly] |
+| [FIELD: e.g. Project dashboard] | [FIELD: Progress tracking] | [FIELD: Steering group] | [FIELD: Real-time] |
+| [FIELD: e.g. Workshops] | [FIELD: Requirements and decisions] | [FIELD: Core team] | [FIELD: As needed] |
 
 ---
 
 ## Section 5 — Sensitive Stakeholder Notes
 
-> **Access control:** This section may be restricted.
+> **Access control:** This section may be restricted. Consult the project manager before sharing.
 
-[FIELD: Record sensitive stakeholder information — political dynamics, conflicts of interest, confidentiality requirements, or relationship risks.]
+[FIELD: Record any sensitive stakeholder information — political dynamics, conflicts of interest, confidentiality requirements, or relationship risks.]
 
 ---
 
 ## Section 6 — Review and Update Log
 
-| Date | Updated By | Trigger | Key Changes |
+| Date | Updated By | Trigger for Update | Key Changes Made |
 |---|---|---|---|
-| [FIELD: YYYY-MM-DD] | [FIELD: Name] | [FIELD: trigger] | [FIELD: what changed] |
+| [FIELD: YYYY-MM-DD] | [FIELD: Name] | [FIELD: Phase gate / event / issue] | [FIELD: What changed] |
 
 ---
 
