@@ -1,3 +1,13 @@
+---
+ref_id: PR29
+ref_type: Process
+ref_name: "Manage Project Knowledge"
+version: "1.0.0"
+status: Active
+pmbok8_source: "PMBOK8 Guide §2.8"
+companion_ref_shortcode: PG-APG-6.2
+file_path: "reference/processes/PR29-manage-project-knowledge.md"
+---
 # PR29 — Manage Project Knowledge
 
 ## Classification

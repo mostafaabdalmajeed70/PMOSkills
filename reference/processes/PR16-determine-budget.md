@@ -1,3 +1,13 @@
+---
+ref_id: PR16
+ref_type: Process
+ref_name: "Determine Budget"
+version: "1.0.0"
+status: Active
+pmbok8_source: "PMBOK8 Guide §2.4"
+companion_ref_shortcode: PG-APG-5.13
+file_path: "reference/processes/PR16-determine-budget.md"
+---
 # PR16 — Determine Budget
 
 ## Classification

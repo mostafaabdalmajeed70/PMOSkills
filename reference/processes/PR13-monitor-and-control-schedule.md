@@ -1,3 +1,13 @@
+---
+ref_id: PR13
+ref_type: Process
+ref_name: "Monitor and Control Schedule"
+version: "1.0.0"
+status: Active
+pmbok8_source: "PMBOK8 Guide §2.3.2.3"
+companion_ref_shortcode: PG-APG-7.2
+file_path: "reference/processes/PR13-monitor-and-control-schedule.md"
+---
 # PR13 — Monitor and Control Schedule
 
 ## Classification

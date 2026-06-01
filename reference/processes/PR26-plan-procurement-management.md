@@ -1,3 +1,13 @@
+---
+ref_id: PR26
+ref_type: Process
+ref_name: "Plan Procurement Management"
+version: "1.0.0"
+status: Active
+pmbok8_source: "PMBOK8 Guide §2.6"
+companion_ref_shortcode: PG-APG-5.23
+file_path: "reference/processes/PR26-plan-procurement-management.md"
+---
 # PR26 — Plan Procurement Management
 
 ## Classification

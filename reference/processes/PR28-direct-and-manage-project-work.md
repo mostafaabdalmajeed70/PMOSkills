@@ -1,3 +1,13 @@
+---
+ref_id: PR28
+ref_type: Process
+ref_name: "Direct and Manage Project Work"
+version: "1.0.0"
+status: Active
+pmbok8_source: "PMBOK8 Guide §2.1"
+companion_ref_shortcode: PG-APG-6.1
+file_path: "reference/processes/PR28-direct-and-manage-project-work.md"
+---
 # PR28 — Direct and Manage Project Work
 
 ## Classification

@@ -1,3 +1,13 @@
+---
+ref_id: PR39
+ref_type: Process
+ref_name: "Monitor Risks"
+version: "1.0.0"
+status: Active
+pmbok8_source: "PMBOK8 Guide §2.1"
+companion_ref_shortcode: PG-APG
+file_path: "reference/processes/PR39-monitor-risks.md"
+---
 # PR39 — Monitor Risks
 
 ## Process Identity

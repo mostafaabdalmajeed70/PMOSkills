@@ -1,3 +1,13 @@
+---
+ref_id: PR30
+ref_type: Process
+ref_name: "Monitor and Control Project Work"
+version: "1.0.0"
+status: Active
+pmbok8_source: "PMBOK8 Guide §2.9"
+companion_ref_shortcode: PG-APG-7.1
+file_path: "reference/processes/PR30-monitor-and-control-project-work.md"
+---
 # PR30 — Monitor and Control Project Work
 
 ## Classification

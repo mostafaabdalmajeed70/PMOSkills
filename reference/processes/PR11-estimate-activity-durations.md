@@ -1,3 +1,13 @@
+---
+ref_id: PR11
+ref_type: Process
+ref_name: "Estimate Activity Durations"
+version: "1.0.0"
+status: Active
+pmbok8_source: "PMBOK8 Guide §2.3.2.2"
+companion_ref_shortcode: PG-APG-5.9
+file_path: "reference/processes/PR11-estimate-activity-durations.md"
+---
 # PR11 — Estimate Activity Durations
 
 ## Classification

@@ -1,3 +1,13 @@
+---
+ref_id: PR31
+ref_type: Process
+ref_name: "Perform Integrated Change Control"
+version: "1.0.0"
+status: Active
+pmbok8_source: "PMBOK8 Guide §2.1"
+companion_ref_shortcode: PG-APG
+file_path: "reference/processes/PR31-perform-integrated-change-control.md"
+---
 # PR31 — Perform Integrated Change Control
 
 ## Process Identity

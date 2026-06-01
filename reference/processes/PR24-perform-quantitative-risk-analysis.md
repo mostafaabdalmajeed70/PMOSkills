@@ -1,3 +1,13 @@
+---
+ref_id: PR24
+ref_type: Process
+ref_name: "Perform Quantitative Risk Analysis"
+version: "1.0.0"
+status: Active
+pmbok8_source: "PMBOK8 Guide §2.7.2.3"
+companion_ref_shortcode: PG-APG-5.21
+file_path: "reference/processes/PR24-perform-quantitative-risk-analysis.md"
+---
 # PR24 — Perform Quantitative Risk Analysis
 
 ## Classification

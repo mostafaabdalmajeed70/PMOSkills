@@ -1,3 +1,13 @@
+---
+ref_id: PR34
+ref_type: Process
+ref_name: "Control Schedule"
+version: "1.0.0"
+status: Active
+pmbok8_source: "PMBOK8 Guide §2.1"
+companion_ref_shortcode: PG-APG
+file_path: "reference/processes/PR34-control-schedule.md"
+---
 # PR34 — Control Schedule
 
 ## Process Identity

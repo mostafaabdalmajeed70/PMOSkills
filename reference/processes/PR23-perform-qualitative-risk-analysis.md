@@ -1,3 +1,13 @@
+---
+ref_id: PR23
+ref_type: Process
+ref_name: "Perform Qualitative Risk Analysis"
+version: "1.0.0"
+status: Active
+pmbok8_source: "PMBOK8 Guide §2.7.2.3"
+companion_ref_shortcode: PG-APG-5.20
+file_path: "reference/processes/PR23-perform-qualitative-risk-analysis.md"
+---
 # PR23 — Perform Qualitative Risk Analysis
 
 ## Classification

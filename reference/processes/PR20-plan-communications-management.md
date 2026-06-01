@@ -1,3 +1,13 @@
+---
+ref_id: PR20
+ref_type: Process
+ref_name: "Plan Communications Management"
+version: "1.0.0"
+status: Active
+pmbok8_source: "PMBOK8 Guide §2.5"
+companion_ref_shortcode: PG-APG-5.17
+file_path: "reference/processes/PR20-plan-communications-management.md"
+---
 # PR20 — Plan Communications Management
 
 ## Classification

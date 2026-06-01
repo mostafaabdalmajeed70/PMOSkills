@@ -1,3 +1,13 @@
+---
+ref_id: PR36
+ref_type: Process
+ref_name: "Monitor Communications"
+version: "1.0.0"
+status: Active
+pmbok8_source: "PMBOK8 Guide §2.1"
+companion_ref_shortcode: PG-APG
+file_path: "reference/processes/PR36-monitor-communications.md"
+---
 # PR36 — Monitor Communications
 
 ## Process Identity

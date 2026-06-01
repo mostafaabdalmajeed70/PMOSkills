@@ -1,3 +1,13 @@
+---
+ref_id: PR14
+ref_type: Process
+ref_name: "Plan Cost Management"
+version: "1.0.0"
+status: Active
+pmbok8_source: "PMBOK8 Guide §2.4"
+companion_ref_shortcode: PG-APG-5.11
+file_path: "reference/processes/PR14-plan-cost-management.md"
+---
 # PR14 — Plan Cost Management
 
 ## Classification

@@ -1,3 +1,13 @@
+---
+ref_id: PR17
+ref_type: Process
+ref_name: "Plan Quality Management"
+version: "1.0.0"
+status: Active
+pmbok8_source: "PMBOK8 Guide §2.2"
+companion_ref_shortcode: PG-APG-5.14
+file_path: "reference/processes/PR17-plan-quality-management.md"
+---
 # PR17 — Plan Quality Management
 
 ## Classification

@@ -1,3 +1,13 @@
+---
+ref_id: PR21
+ref_type: Process
+ref_name: "Plan Risk Management"
+version: "1.0.0"
+status: Active
+pmbok8_source: "PMBOK8 Guide §2.7.2.1"
+companion_ref_shortcode: PG-APG-5.18
+file_path: "reference/processes/PR21-plan-risk-management.md"
+---
 # PR21 — Plan Risk Management
 
 ## Classification

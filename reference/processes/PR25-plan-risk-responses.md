@@ -1,3 +1,13 @@
+---
+ref_id: PR25
+ref_type: Process
+ref_name: "Plan Risk Responses"
+version: "1.0.0"
+status: Active
+pmbok8_source: "PMBOK8 Guide §2.7.2.4"
+companion_ref_shortcode: PG-APG-5.22
+file_path: "reference/processes/PR25-plan-risk-responses.md"
+---
 # PR25 — Plan Risk Responses
 
 ## Classification

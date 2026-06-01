@@ -1,3 +1,13 @@
+---
+ref_id: PR15
+ref_type: Process
+ref_name: "Estimate Costs"
+version: "1.0.0"
+status: Active
+pmbok8_source: "PMBOK8 Guide §2.4"
+companion_ref_shortcode: PG-APG-5.12
+file_path: "reference/processes/PR15-estimate-costs.md"
+---
 # PR15 — Estimate Costs
 
 ## Classification

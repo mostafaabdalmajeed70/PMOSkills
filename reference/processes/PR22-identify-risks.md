@@ -1,3 +1,13 @@
+---
+ref_id: PR22
+ref_type: Process
+ref_name: "Identify Risks"
+version: "1.0.0"
+status: Active
+pmbok8_source: "PMBOK8 Guide §2.7.2.2"
+companion_ref_shortcode: PG-APG-5.19
+file_path: "reference/processes/PR22-identify-risks.md"
+---
 # PR22 — Identify Risks
 
 ## Classification

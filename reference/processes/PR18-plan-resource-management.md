@@ -1,3 +1,13 @@
+---
+ref_id: PR18
+ref_type: Process
+ref_name: "Plan Resource Management"
+version: "1.0.0"
+status: Active
+pmbok8_source: "PMBOK8 Guide §2.6"
+companion_ref_shortcode: PG-APG-5.15
+file_path: "reference/processes/PR18-plan-resource-management.md"
+---
 # PR18 — Plan Resource Management
 
 ## Classification

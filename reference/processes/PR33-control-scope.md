@@ -1,3 +1,13 @@
+---
+ref_id: PR33
+ref_type: Process
+ref_name: "Control Scope"
+version: "1.0.0"
+status: Active
+pmbok8_source: "PMBOK8 Guide §2.1"
+companion_ref_shortcode: PG-APG
+file_path: "reference/processes/PR33-control-scope.md"
+---
 # PR33 — Control Scope
 
 ## Process Identity
