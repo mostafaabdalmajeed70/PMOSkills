@@ -1,10 +1,22 @@
+---
+gov_id: MASTER-PLAN
+gov_name: PMOSkills Repository Master Development Plan
+version: "4.4.0"
+status: Active
+authority: PMBOK8 Primary
+supersedes: NEXT-STEPS-PLAN.md v3.0.0 · MASTER-PLAN-V2.md v2.12.0
+file_path: "MASTER-PLAN.md"
+---
+
 # PMOSkills Repository — Master Development Plan
-**Version:** 4.3.0
-**Date:** 2026-06-01
-**Repository:** [https://github.com/fakhruldeen/PMOSkills](https://github.com/fakhruldeen/PMOSkills)
-**Authority:** PMBOK 8 Primary · PMI Companion References Secondary
-**Status:** Active roadmap
+**Version:** 4.4.0  
+**Date:** 2026-06-01  
+**Repository:** [https://github.com/fakhruldeen/PMOSkills](https://github.com/fakhruldeen/PMOSkills)  
+**Authority:** PMBOK 8 Primary · PMI Companion References Secondary  
+**Status:** Active roadmap  
 **Supersedes:** `NEXT-STEPS-PLAN.md` v1.0.0 · `NEXT-STEPS-PLAN.md` v3.0.0 · `MASTER-PLAN-V2.md` v2.12.0 (2026-05-31)
+
+> **v4.4.0 update note (2026-06-01):** Quality enforcement integrated. `QUALITY-STANDARDS.md` is now the single authoritative source for all quality standards, file structures, naming conventions, YAML schemas, and quality gate checklists. `§2` of this file updated to point to `QUALITY-STANDARDS.md` — the inline quality summary previously here is removed to eliminate dual-source confusion. Six new AI agent operating rules (13–19) added in `§9` to enforce `QUALITY-STANDARDS.md` at the file level.
 
 > **v4.3.0 update note (2026-06-01):** Comprehensive gap audit completed. All Space files cross-referenced against current repo: PMBOK 8 Guide (8th Ed.), The Standard for Project Management, PMO Practice Guide, Project Manager's Book of Forms, and all 23 books in `pmi_reference_list.md`. Eight new task groups added: (1) PMO-specific skills missing entirely; (2) Portfolio and Program management skills missing; (3) No companion-references layer despite 23 uploaded books; (4) No tailoring guidance layer despite PMBOK 8 full Tailoring section; (5) Sustainability/ESG skills absent despite being a PMBOK 8 Standard principle; (6) Missing `docs/source-usage-guide.md`; (7) Skills × Reference Book mapping needs promotion from `repo/`; (8) PMO artifacts A34–A36 tracked in plan but missing from scorecard. Total target file count raised from ~350 to ~420 files.
 
@@ -32,6 +44,7 @@ This document tracks:
 | `README.md` | ⚠️ Stale | References C4-Process-Records/ and C5-KA-Crossref/ paths — must be updated post-Phase 0 (P0-M) |
 | `MASTER-PLAN.md` | ✅ Current | This file |
 | `COMPLETION-PLAN-V4.md` | ✅ Current | Full phase plan |
+| `QUALITY-STANDARDS.md` | ✅ Current | Single authority for quality, naming, structure, YAML schemas, quality gates |
 | `SKILL-REGISTRY.md` | ✅ | Master skill index v1.3.0 |
 | `AUTHORITY-ROUTING.md` | ✅ | T1–T4 threshold model |
 | `LIFECYCLE-MAP.md` | ✅ | Phase-by-phase lifecycle flow |
@@ -147,21 +160,50 @@ Root README documents **6 subdirs**. Actual count: **17 subdirs**.
 
 ## 2. Quality Standards
 
-See [`COMPLETION-PLAN-V4.md §2`](./COMPLETION-PLAN-V4.md) for full quality standards.
+> **Single authority: [`QUALITY-STANDARDS.md`](./QUALITY-STANDARDS.md)**
 
-Short reference:
-- **§2.1** Source traceability: every claim cites `*Authority: [Source] — [§X.X.X]*`
-- **§2.2** Artifact quality: artifact_id + purpose + inputs + outputs + waste test required
-- **§2.3** Skill quality: 14-section structure required for every full skill file
-- **§2.4** Reference file quality: type + PMBOK8 source + PMI definition + cross-refs required
-- **§2.5** Documentation quality: Purpose + Audience + Prerequisites + Related Files required
-- **§2.6** Commit convention: `type(scope): description` with Body + Files + Phase
+All quality standards, file structure requirements, YAML front-matter schemas, naming conventions, directory rules, quality gate checklists, and enforcement protocols are defined in **`QUALITY-STANDARDS.md`** (currently v1.1.0). That document supersedes any inline quality notes in this file or in `COMPLETION-PLAN-V4.md §2`.
+
+### 2.1 Document Roles
+
+| Document | Role | When to Read |
+|---|---|---|
+| **`QUALITY-STANDARDS.md`** | **Single authority** — all schemas, naming rules, structure standards, quality gates | Before creating or reviewing ANY file in this repo |
+| `MASTER-PLAN.md` (this file) | Active tracker — session log, scorecard, gap audit, task lists | Start of every session |
+| `COMPLETION-PLAN-V4.md` | Phase blueprint — entry conditions, deliverables, phase-level quality gates | When starting a new phase |
+
+### 2.2 Quick Reference — File Type → Quality Standard
+
+| File Type | Code | Quality Standard Section |
+|---|---|---|
+| Skill file | `SKL` | `QUALITY-STANDARDS.md §2.1` (YAML) · `§3.1` (structure) · `§4.2` (naming) |
+| Artifact definition | `ART-DEF` | `§2.2` · `§3.2` · `§4.3` |
+| Artifact template | `ART-TPL` | `§2.3` · `§3.3` · `§4.3` |
+| Artifact example | `ART-EX` | `§2.4` · `§3.4` · `§4.3` |
+| Reference file | `REF` | `§2.5` · `§3.5` · `§4.4` |
+| Documentation file | `DOC` | `§2.6` · `§3.6` · `§4.7` |
+| Shared component | `SHR` | `§2.7` · `§3.8` · `§4.6` |
+| Test file | `TST` | `§2.8` · `§3.7` · `§4.5` |
+| Root governance file | `GOV` | `§2.9` · `§3.9` · `§4.7` |
+
+### 2.3 Commit Convention (enforced)
+
+```
+type(scope): short description
+
+Body: what changed and why.
+Files: list of files added/modified/deleted.
+Phase: which plan phase this commit belongs to.
+```
+
+Types: `feat` · `fix` · `docs` · `chore` · `refactor` · `test`  
+Scopes: `skills` · `artifacts` · `docs` · `reference` · `shared` · `tests` · `root`
 
 ---
 
 ## 3. Canonical Target Structure
 
-The full annotated tree is in [`COMPLETION-PLAN-V4.md §3`](./COMPLETION-PLAN-V4.md).
+The full annotated tree is in [`COMPLETION-PLAN-V4.md §3`](./COMPLETION-PLAN-V4.md). The directory rule authority is [`QUALITY-STANDARDS.md §5`](./QUALITY-STANDARDS.md).
 
 ### 3.1 `skills/` — Planned Pack Additions (v4.3.0)
 
@@ -432,20 +474,32 @@ The current 7-pack structure covers the project lifecycle (Packs 01–07). The g
 ### PHASE 5 — Shared Components + Validators (25 files)
 
 **Priority 1 — Routing**
+
+| Task ID | File | Purpose |
+|---|---|---|
 | S5-R-00 | `shared/routing/index.md` | Routing logic catalog |
 | S5-R-01 | `shared/routing/threshold-router.md` | T1–T4 decision routing logic |
 | S5-R-02 | `shared/routing/escalation-paths.md` | Escalation path definitions |
 
 **Priority 2 — Validators**
+
+| Task ID | File | Purpose |
+|---|---|---|
 | S5-V-00 | `shared/validators/index.md` | Validator catalog |
 | S5-V-01 | `shared/validators/waste-test.md` | Waste detection routine |
 | S5-V-02 | `shared/validators/artifact-quality-check.md` | Artifact completeness validator |
 | S5-V-03 | `shared/validators/baseline-integrity-check.md` | Cross-baseline consistency checker |
 
 **Priority 3 — Checklists**
-| S5-CL-00 to S5-CL-11 | 12 checklist files in `shared/checklists/` | Pack readiness (7) + domain (4) + index (1) |
+
+| Task ID | Files | Purpose |
+|---|---|---|
+| S5-CL-00 to S5-CL-11 | 12 files in `shared/checklists/` | Pack readiness (7) + domain (4) + index (1) |
 
 **Priority 4 — Components**
+
+| Task ID | Files | Purpose |
+|---|---|---|
 | S5-C-00 to S5-C-06 | 7 files in `shared/components/` | Field blocks (3) + section patterns (3) + index (1) |
 
 ---
@@ -533,16 +587,18 @@ Phase 7 (quality audit) ── continuous ── runs after EVERY phase
 | S-009 | 2026-06-01 | Governance | COMPLETION-PLAN-V4.md created; MASTER-PLAN renamed | v4.0.1 |
 | S-010 | 2026-06-01 | Governance | README audit — tests/ + shared/ tasks added | v4.1.0 |
 | S-011 | 2026-06-01 | Governance | Full directory audit — all dirs crawled; 22 Phase 0 ops; artifacts/ 11 undocumented dirs; repo/ 7 legacy files identified | v4.2.0 |
-| **S-012** | **2026-06-01** | **Governance** | **Comprehensive gap audit vs PMBOK 8 + 23 companion refs. 15 gaps identified. Added: Pack 08–09 skills (14 files), C10–C12 reference layers (38 files), sustainability tasks, docs additions. Total target: ~420 files.** | **v4.3.0** |
-| **S-013** | **TBD** | **Phase 0** | **Start cleanup: verify C4 duplication → delete C4 root → migrate C5/C6/C7 → audit repo/ → audit artifacts/** | |
+| S-012 | 2026-06-01 | Governance | Comprehensive gap audit vs PMBOK 8 + 23 companion refs. 15 gaps identified. Added: Pack 08–09 skills (14 files), C10–C12 reference layers (38 files), sustainability tasks, docs additions. Total target: ~420 files. | v4.3.0 |
+| **S-013** | **2026-06-01** | **Governance** | **Quality enforcement integrated. QUALITY-STANDARDS.md confirmed as single authority. §2 updated. §9 rules 13–19 added. MASTER-PLAN.md YAML front-matter added. v4.4.0.** | **v4.4.0** |
+| **S-014** | **TBD** | **Phase 0** | **Start cleanup: verify C4 duplication → delete C4 root → migrate C5/C6/C7 → audit repo/ → audit artifacts/** | |
 
 ---
 
 ## 9. AI Agent Operating Rules
 
-See [`COMPLETION-PLAN-V4.md §8`](./COMPLETION-PLAN-V4.md) for full rules.
+See [`COMPLETION-PLAN-V4.md §8`](./COMPLETION-PLAN-V4.md) for the foundational rules. The rules below extend and enforce quality standards at the file level.
 
-Core rules:
+### Foundational Rules (from COMPLETION-PLAN-V4.md §8)
+
 1. Never modify an artifact definition without bumping version.
 2. Never create a skill that references an artifact that does not exist.
 3. Always check this file (`MASTER-PLAN.md`) before starting a session.
@@ -551,10 +607,21 @@ Core rules:
 6. Update this file and CHANGELOG.md at the end of every session.
 7. When building `shared/` files, follow the exact structure in `shared/README.md`.
 8. When building `tests/` files, follow the exact structure and 9-test-case schema in `tests/README.md`.
-9. **Never delete a directory with live content without first verifying migration is complete.**
-10. **Never consolidate two `artifacts/` subdirs without first auditing both for content conflicts.**
-11. **PMO skills (Pack 08) must cite PMO Practice Guide by chapter and service number.**
-12. **Every companion reference file in `reference/companion-references/` must include the short-code from `pmi_reference_list.md`.**
+9. Never delete a directory with live content without first verifying migration is complete.
+10. Never consolidate two `artifacts/` subdirs without first auditing both for content conflicts.
+11. PMO skills (Pack 08) must cite PMO Practice Guide by chapter and service number.
+12. Every companion reference file in `reference/companion-references/` must include the short-code from `pmi_reference_list.md`.
+
+### Quality Enforcement Rules (from QUALITY-STANDARDS.md — enforced v4.4.0)
+
+13. **Before creating any file, look up its file type code in `QUALITY-STANDARDS.md §1`.** Apply the correct YAML schema (§2), section structure (§3), and naming pattern (§4) for that type. Do not proceed without confirming all three.
+14. **Every skill file (`SKL`) must pass the 15-point pre-commit checklist in `QUALITY-STANDARDS.md §7.1` before commit.** A file that fails any L1 check must not be committed.
+15. **Every artifact definition (`ART-DEF`) must pass the artifact quality gate in `QUALITY-STANDARDS.md §7.2` before commit.** The waste test (5 binary questions) must return all YES.
+16. **Every artifact template (`ART-TPL`) must contain no pre-filled `[FIELD: ...]` placeholders.** Pre-filling a template placeholder is an L1 critical failure that blocks commit.
+17. **Every artifact example (`ART-EX`) must use the Meridian CRM System Upgrade scenario exclusively.** Any other scenario name is an L2 non-conformance (NC entry required in CHANGELOG).
+18. **Every reference file (`REF`) must include `pmbok8_source:` in YAML with a specific section number (e.g., `§2.3.4`), not just a chapter name.** Vague citations are an L2 non-conformance.
+19. **Any file placed in a directory not listed in `QUALITY-STANDARDS.md §5.1` is a structural violation (L1 or L2).** If a new directory is needed, follow the governance protocol in `QUALITY-STANDARDS.md §5.4` before creating it.
+20. **Run the applicable Phase 7 quality audit checklist (`QUALITY-STANDARDS.md §7`) on every file before committing it.** Phase 7 is not a final step — it runs after every individual file.
 
 ---
 
@@ -569,11 +636,12 @@ Core rules:
 | 4.0.1 | 2026-06-01 | Renamed MASTER-PLAN-V2.md → MASTER-PLAN.md |
 | 4.1.0 | 2026-06-01 | README audit · tests/ + shared/ tasks (56 + 26 files) added |
 | 4.2.0 | 2026-06-01 | Full directory crawl audit · artifacts/ 17 subdirs found (11 undocumented) · repo/ 7 legacy files identified · C5/C6/C7 confirmed as live content to migrate · Phase 0 expanded to 22 ops · 2 new AI agent rules |
-| **4.3.0** | **2026-06-01** | **Comprehensive gap audit vs PMBOK 8 + 23 companion refs · 15 gaps logged in §1.6 · Pack 08 (PMO, 8 skills) + Pack 09 (PPM, 6 skills) added · Phase 4-C10 companion references (23 files) + C11 tailoring (9 files) + C12 PMO reference (6 files) added · Phase 4-NEW docs additions (4 files) · Sustainability skill + artifact added · Book of Forms→artifacts crosswalk task added · Total target raised to ~420 files · 2 new AI agent rules** |
+| 4.3.0 | 2026-06-01 | Comprehensive gap audit vs PMBOK 8 + 23 companion refs · 15 gaps logged in §1.6 · Pack 08 (PMO, 8 skills) + Pack 09 (PPM, 6 skills) added · Phase 4-C10 companion references (23 files) + C11 tailoring (9 files) + C12 PMO reference (6 files) added · Phase 4-NEW docs additions (4 files) · Sustainability skill + artifact added · Book of Forms→artifacts crosswalk task added · Total target raised to ~420 files · 2 new AI agent rules |
+| **4.4.0** | **2026-06-01** | **Quality enforcement integrated · QUALITY-STANDARDS.md (v1.1.0) declared single authority for all quality, naming, structure, YAML schemas · §2 updated to remove inline quality notes and point to QUALITY-STANDARDS.md · §9 rules 13–20 added for file-level quality enforcement · YAML front-matter (GOV schema) added to this file · QUALITY-STANDARDS.md added to §1.1 root file inventory** |
 
 ---
 
-*Authority: PMBOK8 Guide Primary · PMI Companion References Secondary*
-*Repository: [https://github.com/fakhruldeen/PMOSkills](https://github.com/fakhruldeen/PMOSkills)*
-*Maintainer: @fakhruldeen*
-*Last Updated: 2026-06-01 · Version 4.3.0*
+*Authority: PMBOK8 Guide Primary · PMI Companion References Secondary*  
+*Repository: [https://github.com/fakhruldeen/PMOSkills](https://github.com/fakhruldeen/PMOSkills)*  
+*Maintainer: @fakhruldeen*  
+*Last Updated: 2026-06-01 · Version 4.4.0*
