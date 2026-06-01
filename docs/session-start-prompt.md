@@ -21,7 +21,7 @@ file_path: "docs/session-start-prompt.md"
 3. Paste into your AI agent session as the opening message.
 4. The agent must read the three authority files before doing any work.
 
-Update only the version numbers in the Authority Order block when `QUALITY-STANDARDS.md`, `MASTER-PLAN.md`, or `COMPLETION-PLAN-V4.md` are bumped.
+Update only the version numbers in the Authority Order block when `QUALITY-STANDARDS.md`, `MASTER-PLAN.md`, or `COMPLETION-PLAN.md` are bumped.
 
 ---
 
@@ -36,7 +36,7 @@ Update only the version numbers in the Authority Order block when `QUALITY-STAND
    enforcement protocol (L1/L2/L3), and the AI Agent Pre-Commit Checklist (§9).
 2. `MASTER-PLAN.md` (v4.4.1) — current state tracker: directory audit,
    gap audit, task lists, session log, scorecard.
-3. `COMPLETION-PLAN-V4.md` (v4.1.0) — phase blueprint: entry conditions,
+3. `COMPLETION-PLAN.md` (v4.1.0) — phase blueprint: entry conditions,
    deliverables, phase quality gates, dependency map, session protocol.
 
 ### Repository
@@ -69,7 +69,7 @@ Owner: fakhruldeen | Default branch: main
 ### Phase Entry Condition Check
 Before starting the session task, confirm:
 - [ ] Entry condition for the target phase is satisfied (per
-      `COMPLETION-PLAN-V4.md` §4)
+      `COMPLETION-PLAN.md` §4)
 - [ ] No L1 violations exist in files you will touch (per
       `QUALITY-STANDARDS.md` §8)
 - [ ] Task is not already marked complete in `MASTER-PLAN.md` §7 scorecard
@@ -167,7 +167,7 @@ the session. Log L2 violations and schedule resolution.
 |---|---|
 | [`QUALITY-STANDARDS.md`](../QUALITY-STANDARDS.md) | Single quality authority — read first every session |
 | [`MASTER-PLAN.md`](../MASTER-PLAN.md) | Current state tracker — session log, scorecard, task lists |
-| [`COMPLETION-PLAN-V4.md`](../COMPLETION-PLAN-V4.md) | Phase blueprint — entry conditions, deliverables, gates |
+| [`COMPLETION-PLAN.md`](../COMPLETION-PLAN.md) | Phase blueprint — entry conditions, deliverables, gates |
 | [`CHANGELOG.md`](../CHANGELOG.md) | Change log — update at session end |
 | [`pmi_reference_list.md`](../pmi_reference_list.md) | 23 companion references — short-codes for citation |
 
