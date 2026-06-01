@@ -1,71 +1,93 @@
+---
+ref_id: PR08
+ref_type: Process
+ref_name: "Plan Schedule Management"
+version: "1.0.0"
+status: Active
+pmbok8_source: "PMBOK8 Guide §2.3"
+companion_ref_shortcode: PG-APG-5.6
+related_skills:
+  - SKL-03-01
+  - SKL-03-04
+related_artifacts:
+  - A05
+  - A14
+  - A15
+file_path: "reference/processes/PR08-plan-schedule-management.md"
+---
+
 # PR08 — Plan Schedule Management
 
-**Type:** Process Record  
-**Primary Source:** PMBOK 8 — Schedule Performance Domain  
-**Companion Source:** Process Groups: A Practice Guide — 5.6 Plan Schedule Management  
-**Process Group:** Planning  
-**Version:** 1.0.0  
-**Status:** Active
+**Ref ID:** PR08
+**Type:** Process
+**PMBOK8 Source:** §2.3
+**Version:** 1.0.0
+
+---
 
 ## Definition
 
 Plan Schedule Management is the process of establishing the policies, procedures, and documentation for planning, developing, managing, executing, and controlling the project schedule.
 
-## Purpose
+## Key Characteristics
 
-This process defines the governance structure for schedule management throughout the project. It determines the scheduling methodology, scheduling tool, level of accuracy required, performance thresholds, and how schedule changes will be handled. PMBOK 8 frames the schedule not as a value deliverable in itself, but as the coordination mechanism that fosters stakeholder alignment around the timeline for delivering project value.
+- **Governance Blueprint:** Explicitly defines the policies, tools, and processes that will build and regulate the project schedule.
+- **Methodology Selection:** Formally decides the scheduling approach (Critical Path, Rolling Wave, Agile cadence, or Hybrid).
+- **Threshold Setting:** Establishes precise tolerance ranges (control thresholds) for schedule variance before escalation is required.
+- **Rules of Estimation:** Specifies units of measure (hours, days, weeks) and the expected degree of estimating accuracy.
+- **Integrated Foundation:** Directly influences resource scheduling, budget time-phasing, and cost planning.
 
-## When Used
+## PMBOK 8 Context
 
-This process is performed once or at predefined points in the project. It establishes the rules within which all subsequent schedule processes operate, including Define Activities, Sequence Activities, Estimate Activity Durations, and Develop Schedule.
+Under PMBOK 8, Plan Schedule Management resides in the **Schedule Performance Domain**. Rather than viewing the schedule as a standalone artifact, PMBOK 8 treats it as an essential coordination mechanism that aligns team collaboration, stakeholder expectations, and value delivery dates. It establishes the scheduling boundaries within which the project operates.
 
-## Key Inputs
+## Inputs
 
-- Project charter.
-- Project management plan, especially the scope management plan.
-- Enterprise environmental factors.
-- Organizational process assets.
+| Input | Description | Source |
+|---|---|---|
+| Project Charter | Provides high-level milestones, constraints, and release windows. | PR01 Develop Project Charter |
+| Project Management Plan | Provides scope and quality planning structures to align with the timeline. | PR03 Develop PMP |
+| Enterprise Environmental Factors | Corporate scheduling systems, working calendars, and geographic resource constraints. | Enterprise |
+| Organizational Process Assets | Scheduling templates, guidelines, and past lessons learned. | PMO Registry |
 
-## Key Tools and Techniques
+## Outputs
 
-- Expert judgment.
-- Data analysis, including alternatives analysis.
-- Meetings.
+| Output | Description | Destination |
+|---|---|---|
+| Schedule Management Plan | Subsidiary plan defining how schedule activities will be planned, structured, and controlled. | A14 Integrated Project Management Plan |
 
-## Key Outputs
+## Tools and Techniques
 
-- Project management plan updates:
-  - Schedule management plan.
+- **Expert Judgment:** Guidance on industry-specific scheduling software, estimation heuristics, and buffer management.
+- **Data Analysis:** Alternatives analysis to evaluate different tools, methodologies, and tracking frequencies.
+- **Meetings:** Integrated alignment sessions with project leads, schedulers, and resource managers.
 
-## Relationship to Other Processes
+## Cross-References
 
-- Directly governs Define Activities (PR09), Sequence Activities (PR10), Estimate Activity Durations, and Develop Schedule.
-- Informs Control Schedule, which uses the schedule management plan to assess deviations and thresholds.
-- Aligns with Plan Cost Management and Plan Resource Management, because scheduling decisions affect resource loading and cost time-phasing.
+| Related Item | Type | Relationship |
+|---|---|---|
+| A05 | Artifact | Supplying scheduling constraints, calendar assumptions, and limits |
+| A14 | Artifact | Principal destination for the Schedule Management Plan |
+| A15 | Artifact | The baseline schedule managed under this process's guidelines |
+| PR09 | Process | Governs the decomposition of work packages into schedule activities |
+| PR10 | Process | Governs the sequencing of derived schedule activities |
+| SKL-03-04 | Skill | Plan Schedule |
 
-## Artifact Connections
+## Practitioner Notes
 
-- **A14 Integrated Project Management Plan:** receives the schedule management plan as a subsidiary component.
-- **A15 Schedule Baseline:** the authorized schedule that will be governed by the rules established in this process.
-- **A05 Context Register:** scheduling constraints, calendar assumptions, and environmental factors relevant to schedule governance decisions.
+Practitioners executing this process should seek answers to the following vital questions:
+1. What specific scheduling methodology is most appropriate for this project's delivery approach (predictive critical path, adaptive sprints, or rolling wave)?
+2. What software scheduling tool and level of details will provide the best control without causing administrative drag?
+3. What are the acceptable variance thresholds for schedule performance before corrective actions must be triggered?
+4. How will schedule changes be formally requested, analyzed for impact, and routed for approval?
+5. Does the schedule management approach align with the resource availability, cost baseline, and risk management plan?
 
-## Skill Connections
+## Change Log
 
-- SKL-03-04 Plan Schedule.
-- SKL-03-01 Build Integrated Project Management Plan.
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.0 | 2026-06-02 | Rebuilt to align with canonical REF file structure and YAML front-matter | PMO Director |
 
-## Domain and Focus Area Links
+---
 
-- Strongest PMBOK 8 alignment: Schedule Performance Domain.
-- Secondary alignment: Governance, because schedule governance is part of the integrated project management governance structure.
-- Strongest focus area alignment: Planning.
-
-## Practitioner Questions
-
-- What scheduling methodology will be used — critical path, agile cadence, rolling wave, or a hybrid?
-- What scheduling tool and level of detail are appropriate for this project's complexity?
-- What are the acceptable thresholds for schedule variance before corrective action is required?
-- How will schedule changes be requested, assessed, and approved?
-- How does the schedule management plan align with the risk management approach and cost baseline?
-
-*Authority: PMBOK 8 — Schedule Performance Domain; Process Groups: A Practice Guide — 5.6 Plan Schedule Management*
+*Authority: PMBOK8 Guide §2.3; Process Groups Practice Guide §5.6*
