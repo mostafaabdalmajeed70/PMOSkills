@@ -1,99 +1,110 @@
 ---
-reference_type: Index
-reference_id: C4-INDEX
-name: PMBOK 8 Process Records Index
+ref_id: C4-INDEX
+ref_type: Index
+ref_name: "PMBOK 8 Process Records Index"
 version: "1.0.0"
 status: Active
-pmbok8_source: "Process Groups: A Practice Guide — Full process inventory"
-authority: PMI-derived
+pmbok8_source: "Process Groups: A Practice Guide"
+file_path: "reference/processes/00-index.md"
 ---
 
-# Process Records Index — reference/processes/
-**Type:** Index
-**PMBOK8 Source:** Process Groups: A Practice Guide (PG:APG)
-**Version:** 1.0.0
+# PMBOK 8 Process Records Index
 
-This index lists all 40 PMBOK 8 process records maintained in `reference/processes/`. Each file documents one process: its definition, inputs, tools and techniques, outputs, artifact connections, skill connections, and practitioner questions.
-
----
-
-## Process Group: Initiating (2 processes)
-
-| ID | Process Name | File | Status |
-|---|---|---|---|
-| PR01 | Develop Project Charter | `PR01-develop-project-charter.md` | ✅ |
-| PR02 | Identify Stakeholders | `PR02-identify-stakeholders.md` | ✅ |
-
-## Process Group: Planning (24 processes)
-
-| ID | Process Name | File | Status |
-|---|---|---|---|
-| PR03 | Develop Project Management Plan | `PR03-develop-project-management-plan.md` | ✅ |
-| PR04 | Plan Scope Management | `PR04-plan-scope-management.md` | ✅ |
-| PR05 | Collect Requirements | `PR05-collect-requirements.md` | ✅ |
-| PR06 | Define Scope | `PR06-define-scope.md` | ✅ |
-| PR07 | Create WBS | `PR07-create-wbs.md` | ✅ |
-| PR08 | Plan Schedule Management | `PR08-plan-schedule-management.md` | ✅ |
-| PR09 | Define Activities | `PR09-define-activities.md` | ✅ |
-| PR10 | Sequence Activities | `PR10-sequence-activities.md` | ✅ |
-| PR11 | Estimate Activity Durations | `PR11-estimate-activity-durations.md` | ❌ |
-| PR12 | Develop Schedule | `PR12-develop-schedule.md` | ❌ |
-| PR13 | Plan Cost Management | `PR13-plan-cost-management.md` | ❌ |
-| PR14 | Estimate Costs | `PR14-estimate-costs.md` | ❌ |
-| PR15 | Determine Budget | `PR15-determine-budget.md` | ❌ |
-| PR16 | Plan Quality Management | `PR16-plan-quality-management.md` | ❌ |
-| PR17 | Plan Resource Management | `PR17-plan-resource-management.md` | ❌ |
-| PR18 | Estimate Activity Resources | `PR18-estimate-activity-resources.md` | ❌ |
-| PR19 | Plan Communications Management | `PR19-plan-communications-management.md` | ❌ |
-| PR20 | Plan Risk Management | `PR20-plan-risk-management.md` | ❌ |
-| PR21 | Identify Risks | `PR21-identify-risks.md` | ❌ |
-| PR22 | Perform Qualitative Risk Analysis | `PR22-perform-qualitative-risk-analysis.md` | ❌ |
-| PR23 | Perform Quantitative Risk Analysis | `PR23-perform-quantitative-risk-analysis.md` | ❌ |
-| PR24 | Plan Risk Responses | `PR24-plan-risk-responses.md` | ❌ |
-| PR25 | Plan Procurement Management | `PR25-plan-procurement-management.md` | ❌ |
-| PR26 | Plan Stakeholder Engagement | `PR26-plan-stakeholder-engagement.md` | ❌ |
-
-## Process Group: Executing (10 processes)
-
-| ID | Process Name | File | Status |
-|---|---|---|---|
-| PR27 | Direct and Manage Project Work | `PR27-direct-and-manage-project-work.md` | ❌ |
-| PR28 | Manage Project Knowledge | `PR28-manage-project-knowledge.md` | ❌ |
-| PR29 | Manage Quality | `PR29-manage-quality.md` | ❌ |
-| PR30 | Acquire Resources | `PR30-acquire-resources.md` | ❌ |
-| PR31 | Develop Team | `PR31-develop-team.md` | ❌ |
-| PR32 | Manage Team | `PR32-manage-team.md` | ❌ |
-| PR33 | Manage Communications | `PR33-manage-communications.md` | ❌ |
-| PR34 | Implement Risk Responses | `PR34-implement-risk-responses.md` | ❌ |
-| PR35 | Conduct Procurements | `PR35-conduct-procurements.md` | ❌ |
-| PR36 | Manage Stakeholder Engagement | `PR36-manage-stakeholder-engagement.md` | ❌ |
-
-## Process Group: Monitoring and Controlling (12 processes)
-
-| ID | Process Name | File | Status |
-|---|---|---|---|
-| PR37 | Monitor and Control Project Work | `PR37-monitor-and-control-project-work.md` | ❌ |
-| PR38 | Perform Integrated Change Control | `PR38-perform-integrated-change-control.md` | ❌ |
-| PR39 | Validate Scope | `PR39-validate-scope.md` | ❌ |
-| PR40 | Control Scope | `PR40-control-scope.md` | ❌ |
-| PR41 | Control Schedule | `PR41-control-schedule.md` | ❌ |
-| PR42 | Control Costs | `PR42-control-costs.md` | ❌ |
-| PR43 | Control Quality | `PR43-control-quality.md` | ❌ |
-| PR44 | Control Resources | `PR44-control-resources.md` | ❌ |
-| PR45 | Monitor Communications | `PR45-monitor-communications.md` | ❌ |
-| PR46 | Monitor Risks | `PR46-monitor-risks.md` | ❌ |
-| PR47 | Control Procurements | `PR47-control-procurements.md` | ❌ |
-| PR48 | Monitor Stakeholder Engagement | `PR48-monitor-stakeholder-engagement.md` | ❌ |
-
-## Process Group: Closing (2 processes)
-
-| ID | Process Name | File | Status |
-|---|---|---|---|
-| PR49 | Close Project or Phase | `PR49-close-project-or-phase.md` | ❌ |
-| PR50 | Procure Project Closure | `PR50-procure-project-closure.md` | ❌ |
+**Ref ID:** C4-INDEX  
+**Type:** Index  
+**PMBOK8 Source:** Process Groups: A Practice Guide  
+**Version:** 1.0.0  
+**Status:** Active  
 
 ---
 
-*Authority: Process Groups: A Practice Guide (PG:APG) · PMBOK8 Guide Primary*
-*Repository: https://github.com/fakhruldeen/PMOSkills*
-*Last Updated: 2026-05-31 · Version 1.0.0*
+## Overview
+
+This index maintains the complete list of all **41 active process records** documented in `reference/processes/`. Each process record follows a structured schema: definition, inputs, tools & techniques, outputs, artifact connections, skill connections, and practitioner questions. All files are fully compliant with the PMOSkills `QUALITY-STANDARDS.md` reference schema.
+
+---
+
+## Process Groups at a Glance
+
+| Process Group | Count | Range | Status |
+|---|---|---|---|
+| Initiating | 2 | PR01–PR02 | ✅ Complete |
+| Planning | 25 | PR03–PR27 | ✅ Complete |
+| Executing | 2 | PR28–PR29 | ✅ Complete |
+| Monitoring & Controlling | 11 | PR30–PR39, PR41 | ✅ Complete |
+| Closing | 1 | PR40 | ✅ Complete |
+| **Total** | **41** | **PR01–PR41** | **✅ 100% Compliant** |
+
+---
+
+## Detailed Process Catalog
+
+### 1. Initiating Process Group (2 Processes)
+
+| ID | Process Name | Performance Domain | Primary Output | File Link |
+|---|---|---|---|---|
+| PR01 | Develop Project Charter | Governance | A04 Project Charter | [PR01-develop-project-charter.md](./PR01-develop-project-charter.md) |
+| PR02 | Identify Stakeholders | Stakeholders | A07 Stakeholder Register | [PR02-identify-stakeholders.md](./PR02-identify-stakeholders.md) |
+
+### 2. Planning Process Group (25 Processes)
+
+| ID | Process Name | Performance Domain | Primary Output | File Link |
+|---|---|---|---|---|
+| PR03 | Develop Project Management Plan | Governance | A14 Integrated PMP | [PR03-develop-project-management-plan.md](./PR03-develop-project-management-plan.md) |
+| PR04 | Plan Scope Management | Scope | Scope & Requirements Plans | [PR04-plan-scope-management.md](./PR04-plan-scope-management.md) |
+| PR05 | Collect Requirements | Scope | A13 Traceability Matrix | [PR05-collect-requirements.md](./PR05-collect-requirements.md) |
+| PR06 | Define Scope | Scope | Project Scope Statement | [PR06-define-scope.md](./PR06-define-scope.md) |
+| PR07 | Create WBS | Scope | Scope Baseline | [PR07-create-wbs.md](./PR07-create-wbs.md) |
+| PR08 | Plan Schedule Management | Schedule | Schedule Management Plan | [PR08-plan-schedule-management.md](./PR08-plan-schedule-management.md) |
+| PR09 | Define Activities | Schedule | Activity List & Milestones | [PR09-define-activities.md](./PR09-define-activities.md) |
+| PR10 | Sequence Activities | Schedule | Schedule Network Diagram | [PR10-sequence-activities.md](./PR10-sequence-activities.md) |
+| PR11 | Estimate Activity Durations | Schedule | Duration Estimates | [PR11-estimate-activity-durations.md](./PR11-estimate-activity-durations.md) |
+| PR12 | Develop Schedule | Schedule | A15 Schedule Baseline | [PR12-develop-schedule.md](./PR12-develop-schedule.md) |
+| PR13 | Monitor and Control Schedule | Schedule | Schedule Forecasts | [PR13-monitor-and-control-schedule.md](./PR13-monitor-and-control-schedule.md) |
+| PR14 | Plan Cost Management | Finance | Cost Management Plan | [PR14-plan-cost-management.md](./PR14-plan-cost-management.md) |
+| PR15 | Estimate Costs | Finance | Cost Estimates | [PR15-estimate-costs.md](./PR15-estimate-costs.md) |
+| PR16 | Determine Budget | Finance | A16 Cost Baseline | [PR16-determine-budget.md](./PR16-determine-budget.md) |
+| PR17 | Plan Quality Management | Scope / Quality | Quality Management Plan | [PR17-plan-quality-management.md](./PR17-plan-quality-management.md) |
+| PR18 | Plan Resource Management | Resources | Resource Management Plan | [PR18-plan-resource-management.md](./PR18-plan-resource-management.md) |
+| PR19 | Estimate Activity Resources | Resources | Resource Requirements | [PR19-estimate-activity-resources.md](./PR19-estimate-activity-resources.md) |
+| PR20 | Plan Communications Management | Stakeholders | Communications Plan | [PR20-plan-communications-management.md](./PR20-plan-communications-management.md) |
+| PR21 | Plan Risk Management | Risk | Risk Management Plan | [PR21-plan-risk-management.md](./PR21-plan-risk-management.md) |
+| PR22 | Identify Risks | Risk | A19 Risk Register | [PR22-identify-risks.md](./PR22-identify-risks.md) |
+| PR23 | Perform Qualitative Risk Analysis | Risk | Prioritized Risk Register | [PR23-perform-qualitative-risk-analysis.md](./PR23-perform-qualitative-risk-analysis.md) |
+| PR24 | Perform Quantitative Risk Analysis | Risk | Numerical Risk Exposure | [PR24-perform-quantitative-risk-analysis.md](./PR24-perform-quantitative-risk-analysis.md) |
+| PR25 | Plan Risk Responses | Risk | Risk Response Plan | [PR25-plan-risk-responses.md](./PR25-plan-risk-responses.md) |
+| PR26 | Plan Procurement Management | Resources | A11 Procurement Plan | [PR26-plan-procurement-management.md](./PR26-plan-procurement-management.md) |
+| PR27 | Plan Stakeholder Engagement | Stakeholders | Stakeholder Engagement Plan | [PR27-plan-stakeholder-engagement.md](./PR27-plan-stakeholder-engagement.md) |
+
+### 3. Executing Process Group (2 Processes)
+
+| ID | Process Name | Performance Domain | Primary Output | File Link |
+|---|---|---|---|---|
+| PR28 | Direct and Manage Project Work | Delivery | Deliverables, Work Perf Data | [PR28-direct-and-manage-project-work.md](./PR28-direct-and-manage-project-work.md) |
+| PR29 | Manage Project Knowledge | Team / Delivery | Lessons Learned Register | [PR29-manage-project-knowledge.md](./PR29-manage-project-knowledge.md) |
+
+### 4. Monitoring and Controlling Process Group (11 Processes)
+
+| ID | Process Name | Performance Domain | Primary Output | File Link |
+|---|---|---|---|---|
+| PR30 | Monitor and Control Project Work | Measurement | Work Performance Reports | [PR30-monitor-and-control-project-work.md](./PR30-monitor-and-control-project-work.md) |
+| PR31 | Perform Integrated Change Control | Governance | Approved Change Requests | [PR31-perform-integrated-change-control.md](./PR31-perform-integrated-change-control.md) |
+| PR32 | Validate Scope | Scope | Accepted Deliverables | [PR32-validate-scope.md](./PR32-validate-scope.md) |
+| PR33 | Control Scope | Scope | Work Performance Info | [PR33-control-scope.md](./PR33-control-scope.md) |
+| PR34 | Control Schedule | Schedule | Work Performance Info | [PR34-control-schedule.md](./PR34-control-schedule.md) |
+| PR35 | Control Costs | Finance | Cost Forecasts | [PR35-control-costs.md](./PR35-control-costs.md) |
+| PR36 | Monitor Communications | Stakeholders | Work Performance Info | [PR36-monitor-communications.md](./PR36-monitor-communications.md) |
+| PR37 | Control Quality | Scope / Quality | Verified Deliverables | [PR37-control-quality.md](./PR37-control-quality.md) |
+| PR38 | Control Resources | Resources | Work Performance Info | [PR38-control-resources.md](./PR38-control-resources.md) |
+| PR39 | Monitor Risks | Risk | Work Performance Info | [PR39-monitor-risks.md](./PR39-monitor-risks.md) |
+| PR41 | Control Procurements | Resources | Closed Procurements | [PR41-control-procurements.md](./PR41-control-procurements.md) |
+
+### 5. Closing Process Group (1 Process)
+
+| ID | Process Name | Performance Domain | Primary Output | File Link |
+|---|---|---|---|---|
+| PR40 | Close Project or Phase | Integration | Final Project Report | [PR40-close-project-or-phase.md](./PR40-close-project-or-phase.md) |
+
+---
+
+*Authority: PMBOK8 Guide §2.1–§2.8; Process Groups Practice Guide §4–§12*
