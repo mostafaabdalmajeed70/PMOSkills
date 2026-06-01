@@ -1,10 +1,22 @@
-# PMOSkills — Completion Plan v4.0
-**Version:** 4.0.0
+---
+gov_id: COMPLETION-PLAN-V4
+gov_name: PMOSkills Repository Completion Plan v4
+version: "4.1.0"
+status: Active
+authority: PMBOK8 Primary
+supersedes: NEXT-STEPS-PLAN.md v3.0.0
+file_path: "COMPLETION-PLAN-V4.md"
+---
+
+# PMOSkills — Completion Plan v4
+**Version:** 4.1.0
 **Date:** 2026-06-01
 **Repository:** https://github.com/fakhruldeen/PMOSkills
 **Authority:** PMBOK 8 Primary · PMI Companion References Secondary
 **Supersedes:** NEXT-STEPS-PLAN.md v3.0.0 (2026-05-31)
 **Status:** Active · AI agent executable
+
+> **v4.1.0 update note (2026-06-01):** §2 inline quality rules removed. `QUALITY-STANDARDS.md` (v2.0.0) is the single authority for all quality standards, schemas, structure rules, naming conventions, quality gates, enforcement protocols, and the AI agent pre-commit checklist. This file defers to `QUALITY-STANDARDS.md` entirely for quality matters. NC-005 resolved. GOV YAML front-matter added. §3 canonical tree updated to reflect v4.2.0 directory audit. §8 Operating Rules updated to reference `MASTER-PLAN.md`. §9 Immediate Next Actions updated to current state.
 
 ---
 
@@ -23,13 +35,13 @@ Structured for AI agent execution. Each phase has:
 
 ---
 
-## 1. Current State Assessment (as of 2026-06-01)
+## 1. Current State Assessment (as of 2026-06-01 — v4.1.0)
 
 ### 1.1 ✅ Complete
 
 | Layer | Item | Status |
 |---|---|---|
-| Root governance | README, SKILL-REGISTRY, AUTHORITY-ROUTING, LIFECYCLE-MAP, PRINCIPLES-CROSSWALK, source-authority, pmi_reference_list, MASTER-PLAN-V2, CHANGELOG | ✅ |
+| Root governance | README, SKILL-REGISTRY, AUTHORITY-ROUTING, LIFECYCLE-MAP, PRINCIPLES-CROSSWALK, source-authority, pmi_reference_list, MASTER-PLAN, COMPLETION-PLAN-V4, QUALITY-STANDARDS, CHANGELOG | ✅ |
 | Repo metadata | LICENSE, CONTRIBUTING, CODE_OF_CONDUCT, SECURITY, .github/ templates | ✅ |
 | `docs/` | 9 files: getting-started, how-to-use-skills, how-to-use-artifacts, how-to-use-authority-routing, how-to-contribute, glossary, faq, ai-agent-guide, changelog-guide | ✅ |
 | `artifacts/` definitions | A01–A39 canonical definition files | ✅ |
@@ -40,6 +52,7 @@ Structured for AI agent execution. Each phase has:
 | `reference/focus-areas/` | FA01–FA05 (C3 complete) | ✅ |
 | `reference/processes/` | PR11–PR40 + index.md (C4 migration complete) | ✅ |
 | Skills scaffolding | 47 skill stubs at v1.1.0 (Packs 01–07) | ✅ |
+| Quality standards | `QUALITY-STANDARDS.md` v2.0.0 — §1–§10 complete | ✅ |
 
 ### 1.2 ⚠️ Exists But Misplaced or Incomplete
 
@@ -49,10 +62,12 @@ Structured for AI agent execution. Each phase has:
 | `/C5-KA-Crossref/` (root) | Content belongs in `reference/` | Audit → migrate → delete — Phase 0 |
 | `/C6-TT-Taxonomy/` (root) | Content belongs in `reference/tools-techniques/` | Audit → migrate → delete — Phase 0 |
 | `/C7-IO-Registry/` (root) | Content belongs in `reference/inputs-outputs/` | Audit → migrate → delete — Phase 0 |
-| `/repo/` (root) | Unknown directory — purpose unclear | Audit → migrate or delete — Phase 0 |
+| `/repo/` (root) | 7 legacy staging files | Audit → migrate or delete — Phase 0 |
 | `reference/C4-Process-Records/` | Source files already migrated | Delete — Phase 0 |
 | `reference/C5-KA-Crossref/`, `C6-TT-Taxonomy/`, `C7-IO-Registry/` | Legacy subdirs inside reference/ | Delete after content migration — Phase 0 |
 | `reference/processes/` | PR01–PR10 missing (Initiating + early Planning) | Rebuild — Phase 4 |
+| `artifacts/` | 11 undocumented subdirs (closure, communications, extended-procurement, extended-resources, governance, initiating, knowledge, pmo, portfolio, quality, stakeholders-communications, team-resources) | Audit each — Phase 0 |
+| Root `README.md` | References stale C4/C5 paths | Update — Phase 0 |
 
 ### 1.3 ❌ Does Not Exist Yet
 
@@ -62,36 +77,43 @@ Structured for AI agent execution. Each phase has:
 | `reference/tools-techniques/tools-techniques-registry.md` | Phase 4 (C6) |
 | `reference/appendices/X2–X5.md` (4 files) | Phase 4 (C8) |
 | `reference/GLOSSARY.md` | Phase 4 (C9) |
+| `reference/companion-references/` (23 files) | Phase 4 (C10) — NEW |
+| `reference/tailoring/` (9 files) | Phase 4 (C11) — NEW |
+| `reference/pmo/` (6 files) | Phase 4 (C12) — NEW |
 | PR01–PR10 process records (10 files) | Phase 4 (C4) |
-| 47 full skill content files | Phase 3 |
-| `shared/` validators, components, routing, checklists (11 files) | Phase 5 |
-| `tests/` skill tests + integration tests (53 files) | Phase 6 |
+| 47 full skill content files (Packs 01–07) | Phase 3 |
+| Pack 08 — PMO Setup and Operations (8 skills) | Phase 3-EXT |
+| Pack 09 — Portfolio and Program Management (6 skills) | Phase 3-EXT |
+| `shared/` validators, components, routing, checklists (25 files) | Phase 5 |
+| `tests/` skill tests + integration tests (69 files) | Phase 6 |
+| `docs/source-usage-guide.md`, `audience-guide.md`, `sustainability-guide.md` | Phase 4-NEW |
 
 ---
 
 ## 2. Quality Standards
 
-### 2.1 Source Traceability
-Every claim must cite: `*Authority: [Source] — [Section/Chapter/Page]*`
-- PMBOK8 Guide: `§X.X.X`
-- PMBOK8 Standard: principle name
-- Companion references: short code (WBS-3E, PSS-3E, etc.)
-- Synthesis or org-defined: explicitly labeled
+> **Single authority: [`QUALITY-STANDARDS.md`](./QUALITY-STANDARDS.md) (v2.0.0)**
 
-### 2.2 Artifact Quality Standard
-Every artifact definition must include: `artifact_id`, `artifact_name`, `version`, `status`, `authority`, purpose, inputs, outputs, quality criteria, related artifacts, waste test, migration note.
-Every template must include: `[FIELD: description]` placeholders, usage note, parent definition reference.
+All quality standards for this repository — including YAML front-matter schemas, file structure standards, naming conventions, directory rules, source traceability rules, quality gate checklists (universal, per-file-type, and per-phase), enforcement protocols (L1/L2/L3), the NC register, and the AI agent pre-commit checklist — are defined exclusively in **`QUALITY-STANDARDS.md`**.
 
-### 2.3 Skill Quality Standard
-Every full skill file must include: ID/name/pack/version/status, Purpose, Scope (includes + excludes), Pre-conditions, numbered Instructions, Inputs table, Outputs table, Authority & Governance (T1–T4), Constraints, Failure Cases, Quality Checks, 2+ Test Cases, PMBOK8 anchor.
+This file (`COMPLETION-PLAN-V4.md`) does **not** define quality rules. Any apparent conflict between a quality rule in this file and `QUALITY-STANDARDS.md` is resolved in favour of `QUALITY-STANDARDS.md`.
 
-### 2.4 Reference File Standard
-Every `reference/` file must include: type declaration, PMBOK8 source section, PMI definition (cited), key characteristics, cross-reference table, artifact connections, skill connections, practitioner questions.
+### 2.1 Quick Reference — Where to Find Quality Rules
 
-### 2.5 Documentation Quality Standard
-Every `docs/` file must include: `## Purpose`, `## Audience`, `## Prerequisites`, numbered instructions, cross-references, `## Related Files` table.
+| Topic | Location in QUALITY-STANDARDS.md |
+|---|---|
+| File type codes | §1 File Type Registry |
+| YAML front-matter schemas (all 9 types) | §2.1–§2.9 |
+| Section structure standards (all 9 types) | §3.1–§3.9 |
+| File naming conventions | §4 |
+| Directory structure and governance | §5 |
+| Source traceability and citation rules | §6 |
+| Quality gates (universal + per-file-type + per-phase) | §7.1–§7.5 |
+| Enforcement protocol (L1/L2/L3) + NC register | §8 |
+| AI agent pre-commit checklist (run before every commit) | §9 |
 
-### 2.6 Commit Convention
+### 2.2 Commit Convention
+
 ```
 type(scope): short description
 
@@ -99,28 +121,26 @@ Body: what changed and why.
 Files: list of files added/modified/deleted.
 Phase: which plan phase this commit belongs to.
 ```
+
 Types: `feat` · `fix` · `docs` · `chore` · `refactor` · `test`
 Scopes: `skills` · `artifacts` · `docs` · `reference` · `shared` · `tests` · `root`
+
+Full convention authority: `QUALITY-STANDARDS.md §2.3` (in `MASTER-PLAN.md`).
 
 ---
 
 ## 3. Canonical Target Structure
 
+Directory rule authority: [`QUALITY-STANDARDS.md §5`](./QUALITY-STANDARDS.md). The tree below is the target state after all phases complete.
+
 ```
 PMOSkills/
-├── README.md
-├── SKILL-REGISTRY.md
-├── AUTHORITY-ROUTING.md
-├── LIFECYCLE-MAP.md
-├── PRINCIPLES-CROSSWALK.md
-├── MASTER-PLAN-V2.md
-├── COMPLETION-PLAN-V4.md          ← This file
-├── CHANGELOG.md
-├── source-authority.md
-├── pmi_reference_list.md
+├── [Root governance files — UPPER-KEBAB.md]           ← ✅ Active
+├── .github/
 │
-├── docs/                           ← ✅ COMPLETE (Phase 1)
-│   ├── img/pmoskills.jpg
+├── docs/                                               ← ✅ COMPLETE (Phase 1)
+│   ├── img/
+│   ├── legacy/                                         ← archive location
 │   ├── getting-started.md
 │   ├── how-to-use-skills.md
 │   ├── how-to-use-artifacts.md
@@ -129,58 +149,52 @@ PMOSkills/
 │   ├── glossary.md
 │   ├── faq.md
 │   ├── ai-agent-guide.md
-│   └── changelog-guide.md
+│   ├── changelog-guide.md
+│   ├── source-usage-guide.md                          ← ❌ Phase 4-NEW
+│   ├── audience-guide.md                              ← ❌ Phase 4-NEW
+│   ├── sustainability-guide.md                        ← ❌ Phase 4-NEW
+│   └── skill-reference-map.csv                        ← ❌ Phase 4-NEW (promote from repo/)
 │
-├── artifacts/                      ← ✅ COMPLETE (Phases B1+B2+B3)
-│   ├── initiation/
-│   ├── organizational-setup/
-│   ├── planning-and-baselines/
-│   ├── monitoring-and-decisions/
-│   ├── execution/
-│   ├── resources/
-│   ├── closing/
-│   ├── procurement/
-│   ├── adaptive-hybrid/
-│   └── organizational/
+├── artifacts/                                          ← ✅ COMPLETE (Phases B1+B2+B3)
+│   └── [canonical subdirs — see QUALITY-STANDARDS.md §5.1 + MASTER-PLAN.md §1.3]
 │
-├── skills/                         ← PHASE 3 TARGET
+├── skills/                                             ← ❌ PHASE 3 + 3-EXT TARGET
 │   ├── 01-organizational-setup/     (3 skills)
 │   ├── 02-initiating/               (2 skills)
 │   ├── 03-planning/                 (17 skills)
 │   ├── 04-executing/                (9 skills)
 │   ├── 05-monitoring-controlling/   (9 skills)
 │   ├── 06-closing/                  (3 skills)
-│   └── 07-adaptive-hybrid/          (4 skills)
+│   ├── 07-adaptive-hybrid/          (4 skills)
+│   ├── 08-pmo-setup-and-operations/ (8 skills — NEW)
+│   └── 09-portfolio-and-program/    (6 skills — NEW)
 │
-├── reference/                      ← PHASE 4 TARGET (C4–C9 remaining)
+├── reference/                                          ← ❌ PHASE 4 TARGET (C4–C12 remaining)
 │   ├── README.md
-│   ├── principles/                  ← ✅ COMPLETE (C1) — P01–P12 + 00-index
-│   ├── performance-domains/         ← ✅ COMPLETE (C2) — PD01–PD08 + 00-index
-│   ├── focus-areas/                 ← ✅ COMPLETE (C3) — FA01–FA05
-│   ├── processes/                   ← 🟡 PARTIAL (C4) — PR11–PR40 done; PR01–PR10 + PR41 needed
-│   │   ├── index.md
-│   │   ├── PR01–PR10.md              ← ❌ Rebuild needed
-│   │   └── PR11–PR40.md              ← ✅ Done
-│   ├── inputs-outputs/              ← ❌ NOT STARTED (C7)
-│   │   └── inputs-outputs-registry.md
-│   ├── tools-techniques/            ← ❌ NOT STARTED (C6)
-│   │   └── tools-techniques-registry.md
-│   ├── appendices/                  ← ❌ NOT STARTED (C8)
-│   │   ├── X2-pmo.md
-│   │   ├── X3-ai.md
-│   │   ├── X4-procurement.md
-│   │   └── X5-evolution.md
-│   └── GLOSSARY.md                  ← ❌ NOT STARTED (C9)
+│   ├── GLOSSARY.md                                    ← ❌ Phase 4-C9
+│   ├── principles/                                    ← ✅ COMPLETE (C1)
+│   ├── performance-domains/                           ← ✅ COMPLETE (C2)
+│   ├── focus-areas/                                   ← ✅ COMPLETE (C3)
+│   ├── processes/                                     ← 🟡 PARTIAL (C4): PR01–PR10 needed
+│   ├── knowledge-areas/                               ← ❌ Phase 0 migration + Phase 4-C5
+│   ├── tools-techniques/                              ← ❌ Phase 0 migration + Phase 4-C6
+│   ├── inputs-outputs/                                ← ❌ Phase 0 migration + Phase 4-C7
+│   ├── appendices/                                    ← ❌ Phase 4-C8
+│   ├── companion-references/                          ← ❌ Phase 4-C10 (23 files — NEW)
+│   ├── tailoring/                                     ← ❌ Phase 4-C11 (9 files — NEW)
+│   └── pmo/                                           ← ❌ Phase 4-C12 (6 files — NEW)
 │
-├── shared/                         ← PHASE 5 TARGET
+├── shared/                                             ← ❌ PHASE 5 TARGET (25 files)
+│   ├── README.md
 │   ├── validators/
+│   ├── checklists/
 │   ├── components/
-│   ├── routing/
-│   └── checklists/
+│   └── routing/
 │
-└── tests/                          ← PHASE 6 TARGET
-    ├── skill-tests/                 (47 files)
-    └── integration-tests/           (6 files)
+└── tests/                                              ← ❌ PHASE 6 TARGET (69 files)
+    ├── README.md
+    ├── skill-tests/                 (61 files: 47 + 14 new)
+    └── integration-tests/           (8 files: 6 original + IT-07 + index)
 ```
 
 ---
@@ -191,28 +205,29 @@ PMOSkills/
 
 ### PHASE 0 — Structure Cleanup
 **Priority:** 🔴 Immediate blocker
-**Sessions:** 1
+**Sessions:** 1–2
 **Entry condition:** None
 **Commit prefix:** `chore(root):`
+**Quality gate:** `QUALITY-STANDARDS.md §7.5 Phase 0 gate`
 
 Goal: Eliminate all out-of-place directories. No new content until root is clean.
 
 | Step | Action | Target |
 |---|---|---|
-| 0-A | Audit `/C4-Process-Records/` | Confirm duplicate of `reference/processes/` |
-| 0-B | Audit `/C5-KA-Crossref/` | Map files to `reference/` sub-dirs |
-| 0-C | Audit `/C6-TT-Taxonomy/` | Map to `reference/tools-techniques/` |
-| 0-D | Audit `/C7-IO-Registry/` | Map to `reference/inputs-outputs/` |
-| 0-E | Audit `/repo/` | Determine content and destination |
-| 0-F | Migrate C5 content | Copy to canonical paths under `reference/` |
-| 0-G | Migrate C6 content | Copy to `reference/tools-techniques/` |
-| 0-H | Migrate C7 content | Copy to `reference/inputs-outputs/` |
-| 0-I | Delete root stale dirs | `/C4-Process-Records/`, `/C5-KA-Crossref/`, `/C6-TT-Taxonomy/`, `/C7-IO-Registry/`, `/repo/` |
-| 0-J | Delete `reference/C4-Process-Records/` | Migration complete — remove legacy path |
-| 0-K | Delete `reference/C5-KA-Crossref/`, `C6-TT-Taxonomy/`, `C7-IO-Registry/` | After content migrated |
-| 0-L | Update `reference/README.md` | Reflect clean structure |
+| 0-A | Verify `/C4-Process-Records/` is full duplicate | Cross-check PR11–PR40 SHAs against `reference/processes/` |
+| 0-B | Delete `/C4-Process-Records/` root dir (30 files) | After SHA verification |
+| 0-C | Migrate `C5-KA-Crossref/KA-Crossref-Index.md` | → `reference/knowledge-areas/` |
+| 0-D | Migrate `C6-TT-Taxonomy/TT-Taxonomy-Index.md` | → `reference/tools-techniques/` |
+| 0-E | Migrate `C7-IO-Registry/IO-Registry-Index.md` | → `reference/inputs-outputs/` |
+| 0-F | Delete root C5/C6/C7 dirs | After migration confirmed |
+| 0-G | Delete `reference/C4-C7` legacy subdirs | After content migrated |
+| 0-H | Audit and disposition `repo/` (7 files) | Archive or promote each — see `MASTER-PLAN.md §1.5` |
+| 0-I | Audit 11 undocumented `artifacts/` subdirs | Consolidate or document each — see `MASTER-PLAN.md §1.3` |
+| 0-J | Update root `README.md` | Replace stale C4/C5 references; update artifacts/ tree |
+| 0-K | Update `reference/README.md` | Reflect clean post-migration structure |
+| 0-L | Update `SKILL-REGISTRY.md` | Add Pack 08/09 scaffold entries; remove stale C4–C7 refs |
 
-**Exit gate:** No C4/C5/C6/C7 dirs at root or inside `reference/`. All content in canonical paths.
+**Exit gate:** `QUALITY-STANDARDS.md §7.5 Phase 0 gate` (P0-01 through P0-05) passes. CHANGELOG updated.
 
 ---
 
@@ -226,43 +241,15 @@ B1 (39 definitions) + B2 (38 templates) + B3 (10 examples) committed 2026-05-31.
 
 ---
 
-### PHASE 3 — Build Full Skill Content (47 files)
+### PHASE 3 — Build Full Skill Content (47 files, Packs 01–07)
 **Priority:** 🔴 High
 **Sessions:** 6–8
 **Entry condition:** Phase 0 + Phase 2 complete
 **Commit prefix:** `feat(skills):`
+**Quality gate:** `QUALITY-STANDARDS.md §7.2` (skill file gate) + `§7.5 Phase 3 gate`
 
-#### Skill file required structure (every file must follow)
-```markdown
----
-skill_id: SKL-NN-NN
-skill_name: [Full skill name]
-pack: [Pack number and name]
-version: "1.0.0"
-status: Active
-pmbok8_anchor: "[Section reference]"
-focus_area: [Initiating / Planning / Executing / M&C / Closing / Adaptive]
-performance_domains: [List]
-artifacts_produced: [List of A-IDs]
-artifacts_consumed: [List of A-IDs]
-authority_threshold: [T1/T2/T3/T4]
----
-
-# SKL-NN-NN — [Skill Name]
-
-## Purpose
-## Scope
-## Pre-conditions
-## Instructions
-## Inputs
-## Outputs
-## Authority and Governance
-## Constraints
-## Failure Cases
-## Quality Checks
-## Test Cases
-## PMBOK8 Anchor
-```
+#### Skill file required structure
+See `QUALITY-STANDARDS.md §3.1` for the complete 10-section structure and `§2.1` for the required YAML front-matter. The YAML schema from this file's v4.0.0 is superseded by `QUALITY-STANDARDS.md §2.1`.
 
 #### Build order
 | Priority | Skills | Count |
@@ -276,50 +263,83 @@ authority_threshold: [T1/T2/T3/T4]
 | 7 | SKL-06-01 → SKL-06-03 | 3 |
 | 8 | SKL-07-01 → SKL-07-04 | 4 |
 
-**Exit gate:** 47/47 skill files fully populated. Every artifact cross-reference resolves to an existing file.
+**Exit gate:** 47/47 skill files fully populated. Every artifact cross-reference resolves. `QUALITY-STANDARDS.md §7.5 Phase 3 gate` passes (P3-01 through P3-04).
+
+---
+
+### PHASE 3-EXT — PMO + PPM Skill Packs (14 files) — NEW
+**Priority:** 🔴 High (follows Phase 3)
+**Entry condition:** Phase 3 complete
+**Commit prefix:** `feat(skills):`
+**Authority:** PMO Practice Guide · PMBOK 8 Standard §2 · PMBOK 8 Guide §2.5
+
+| Pack | Skills | Count |
+|---|---|---|
+| Pack 08 — PMO Setup and Operations | SKL-08-01 → SKL-08-08 | 8 |
+| Pack 09 — Portfolio and Program Management | SKL-09-01 → SKL-09-06 | 6 |
+
+Full skill definitions in `MASTER-PLAN.md §5 Phase 3-EXT`.
+
+**Exit gate:** 14/14 Pack 08–09 skill files fully populated. Every file passes `QUALITY-STANDARDS.md §7.2` gate.
 
 ---
 
 ### PHASE 4 — Complete Reference Layer
 **Priority:** 🟡 Medium
-**Sessions:** 3–4
+**Sessions:** 4–6
 **Entry condition:** Phase 0 complete (C5–C7 cleanup done)
 **Commit prefix:** `feat(reference):`
+**Quality gate:** `QUALITY-STANDARDS.md §7.4` (REF file gate) + `§7.5 Phase 4 gate`
 
 | Sub-phase | Files | Status |
 |---|---|---|
 | C4 — PR01–PR10 + PR41 | 11 process records | ❌ Rebuild needed |
-| C5 — KA Cross-reference | `reference/inputs-outputs/inputs-outputs-registry.md` | ⚠️ Content exists in C7 — migrate + restructure |
-| C6 — T&T Taxonomy | `reference/tools-techniques/tools-techniques-registry.md` | ⚠️ Content exists in C6 — migrate + restructure |
-| C7 — I/O Registry | `reference/inputs-outputs/inputs-outputs-registry.md` | ⚠️ Content exists in C7 — migrate + restructure |
+| C5 — KA Cross-reference | `reference/knowledge-areas/` (migrated from C5) | ⚠️ Migrate + enhance |
+| C6 — T&T Taxonomy | `reference/tools-techniques/tools-techniques-registry.md` | ⚠️ Migrate + enhance |
+| C7 — I/O Registry | `reference/inputs-outputs/inputs-outputs-registry.md` | ⚠️ Migrate + enhance |
 | C8 — Appendices | `reference/appendices/X2-pmo.md`, `X3-ai.md`, `X4-procurement.md`, `X5-evolution.md` | ❌ Not started |
 | C9 — Reference GLOSSARY | `reference/GLOSSARY.md` | ❌ Not started |
+| C10 — Companion References | 23 files in `reference/companion-references/` | ❌ Not started — NEW |
+| C11 — Tailoring Guidance | 9 files in `reference/tailoring/` | ❌ Not started — NEW |
+| C12 — PMO Reference Layer | 6 files in `reference/pmo/` | ❌ Not started — NEW |
 
-**Exit gate:** All 42 reference files complete. Every file cites a specific PMBOK 8 section. `reference/README.md` status = Active.
+**Exit gate:** All reference files complete. Every file passes `QUALITY-STANDARDS.md §7.4` gate. `reference/README.md` status = Active.
 
 ---
 
-### PHASE 5 — Shared Components & Validators
+### PHASE 4-NEW — `docs/` Additions
+**Priority:** 🔴 High (after Phase 0)
+**Commit prefix:** `docs(docs):`
+
+| File | Purpose |
+|---|---|
+| `docs/source-usage-guide.md` | How to use 23 companion references — short-codes, authority hierarchy, which books apply per phase |
+| `docs/skill-reference-map.csv` | Promoted from `repo/` — Skills × PMBOK8 anchor × companion ref mapping |
+| `docs/audience-guide.md` | Usage paths: PMO Director, PM, AI Agent, Book Author |
+| `docs/sustainability-guide.md` | ESG application within PMBOK 8 context |
+
+---
+
+### PHASE 5 — Shared Components and Validators
 **Priority:** 🟡 Medium
 **Sessions:** 2
 **Entry condition:** Phase 3 complete
 **Commit prefix:** `feat(shared):`
+**Quality gate:** `QUALITY-STANDARDS.md §7.5 Phase 5 gate`
 
-| File | Purpose |
-|---|---|
-| `shared/validators/artifact-waste-test.md` | 10-question universal waste test |
-| `shared/validators/skill-quality-check.md` | 15-point skill completeness validator |
-| `shared/validators/baseline-integrity-check.md` | Cross-artifact consistency checker |
-| `shared/components/field-blocks.md` | Reusable field patterns |
-| `shared/components/section-patterns.md` | Common section structures |
-| `shared/components/status-indicators.md` | Standard status/RAG values |
-| `shared/routing/t1-t4-routing-logic.md` | Machine-readable T1–T4 routing rules |
-| `shared/routing/escalation-matrix.md` | Full escalation decision matrix |
-| `shared/checklists/phase-entry-checklist.md` | Entry criteria per lifecycle phase |
-| `shared/checklists/phase-exit-checklist.md` | Exit criteria per lifecycle phase |
-| `shared/checklists/artifact-readiness-checklist.md` | Artifact approval readiness |
+| Priority | File | Purpose |
+|---|---|---|
+| 1 | `shared/routing/index.md` | Routing logic catalog |
+| 1 | `shared/routing/threshold-router.md` | T1–T4 decision routing logic |
+| 1 | `shared/routing/escalation-paths.md` | Escalation path definitions |
+| 2 | `shared/validators/index.md` | Validator catalog |
+| 2 | `shared/validators/waste-test.md` | Waste detection routine |
+| 2 | `shared/validators/artifact-quality-check.md` | Artifact completeness validator |
+| 2 | `shared/validators/baseline-integrity-check.md` | Cross-baseline consistency checker |
+| 3 | `shared/checklists/` (12 files) | Pack readiness (7) + domain (4) + index (1) |
+| 4 | `shared/components/` (7 files) | Field blocks (3) + section patterns (3) + index (1) |
 
-**Exit gate:** All validators produce deterministic pass/fail output.
+**Exit gate:** All validators produce deterministic PASS/FAIL/WARN output. Every file passes `QUALITY-STANDARDS.md §7.5 Phase 5 gate`.
 
 ---
 
@@ -328,45 +348,48 @@ authority_threshold: [T1/T2/T3/T4]
 **Sessions:** 2–3
 **Entry condition:** Phase 3 + Phase 5 complete
 **Commit prefix:** `test(tests):`
+**Quality gate:** `QUALITY-STANDARDS.md §7.5 Phase 6 gate`
 
 | File group | Count |
 |---|---|
-| `tests/skill-tests/ST-SKL-NN-NN.md` | 47 files (min 2 test cases each) |
+| `tests/skill-tests/ST-SKL-NN-NN.md` (Packs 01–07) | 47 files |
+| `tests/skill-tests/ST-SKL-NN-NN.md` (Packs 08–09) | 14 files — NEW |
 | `tests/integration-tests/IT-01` through `IT-06` | 6 files |
+| `tests/integration-tests/IT-07` | 1 file — NEW |
+| `tests/skill-tests/index.md` + `tests/integration-tests/index.md` | 2 files |
 
-Integration tests: setup→initiate, initiate→plan, plan→execute, execute→monitor, monitor→close, full lifecycle.
+Every skill test: ≥ 9 test cases (see `QUALITY-STANDARDS.md §7.5 Phase 6 gate`).
+Integration tests: trace artifact flow end-to-end across ≥ 2 lifecycle phases.
 
-**Exit gate:** Every skill has ≥2 test cases. All 6 integration tests trace artifact flow end-to-end.
+**Exit gate:** `QUALITY-STANDARDS.md §7.5 Phase 6 gate` (P6-01 through P6-05) passes.
 
 ---
 
 ### PHASE 7 — Quality Audit (continuous — after every phase)
-**Entry condition:** Completion of any phase
+**Entry condition:** Completion of any phase or file
+**Gate:** `QUALITY-STANDARDS.md §7.5 Phase 7 gate` (Q-01 through Q-06)
 
-For every file, verify:
-- [ ] YAML front matter complete and valid
-- [ ] No `[FIELD: ...]` placeholders accidentally pre-filled in templates
-- [ ] All cross-references (artifact IDs, skill IDs, process IDs) resolve to existing files
-- [ ] Every PMI citation includes a specific section number
-- [ ] No content copied verbatim from PMI copyrighted text
-- [ ] Commit message follows §2.6 convention
-- [ ] File is in the correct canonical path (§3)
-- [ ] Waste test passes for every artifact
+Run after every individual file committed, not only at phase end. Full checklist: `QUALITY-STANDARDS.md §9` (AI Agent Pre-Commit Checklist).
 
 ---
 
 ## 5. Dependency Map (Critical Path)
 
 ```
-Phase 0 (cleanup) ──┬──► Phase 1 (docs)       ✅ ALREADY COMPLETE
-                    │
-                    └──► Phase 2 (artifacts)  ✅ ALREADY COMPLETE
-                                  │
-                                  └──► Phase 3 (skills) ──┬──► Phase 4 (reference remaining)
-                                                         ├──► Phase 5 (shared)
-                                                         └──► Phase 6 (tests) ◄── Phase 5
+Phase 0 (cleanup: 22 ops)
+    │
+    ├──► Phase 3 (47 skills, Packs 01–07) ──┬──► Phase 5 (shared: 25 files)
+    │         │                            └──► Phase 6 (tests: 69 files) ◄─ Phase 5
+    │         └──► Phase 3-EXT (14 skills, Packs 08–09)
+    │                   └──► Phase 4-C12 (PMO reference layer)
+    │
+    ├──► Phase 4 (reference: C4–C12)
+    │         ├──► Phase 4-C10 (companion references: 23 files)
+    │         └──► Phase 4-C11 (tailoring: 9 files)
+    │
+    └──► Phase 4-NEW (source-usage-guide + skill-reference-map)
 
-Phase 7 (quality audit) ── runs after EVERY phase ── continuous
+Phase 7 (quality audit) ── continuous ── runs after every file
 ```
 
 **Immediate critical path:** Phase 0 → Phase 3 → Phase 4 → Phase 5 → Phase 6
@@ -377,65 +400,88 @@ Phase 7 (quality audit) ── runs after EVERY phase ── continuous
 
 | Phase | Files to Produce | Priority | Status |
 |---|---|---|---|
-| Phase 0 | ~40 file moves + ~15 deletes | 🔴 Immediate | ❌ |
-| Phase 3 — Skills | 47 | 🔴 High | ❌ |
-| Phase 4 — Reference remaining | 11 processes + 2 registries + 4 appendices + 1 glossary = ~18 | 🟡 Medium | ❌ |
-| Phase 5 — Shared | 11 | 🟡 Medium | ❌ |
-| Phase 6 — Tests | 53 | 🟢 Low-Medium | ❌ |
-| **Total remaining** | **~139 files** | | |
+| Phase 0 | ~22 operations (moves + deletes + README updates) | 🔴 Immediate | ❌ NEXT |
+| Phase 3 — Skills (Packs 01–07) | 47 | 🔴 High | ❌ |
+| Phase 3-EXT — PMO + PPM (Packs 08–09) | 14 | 🔴 High | ❌ NEW |
+| Phase 4 — Reference remaining (C4–C12) | 11 processes + 2 registries + 4 appendices + 1 glossary + 23 companion refs + 9 tailoring + 6 PMO = ~56 | 🟡 Medium | ❌ |
+| Phase 4-NEW — docs additions | 4 | 🔴 High | ❌ |
+| Phase 5 — Shared | 25 | 🟡 Medium | ❌ |
+| Phase 6 — Tests | 69 | 🟢 Low-Medium | ❌ |
+| **Total remaining** | **~215 files** | | |
 
 ---
 
 ## 7. Session Execution Protocol
 
 ### Session Start
-1. Read `MASTER-PLAN-V2.md` to determine current position
-2. Read `CHANGELOG.md` to confirm last committed version
-3. Identify the current phase and the next unfinished work item
-4. State: “Starting [Phase N], [Work Item], entry condition: [satisfied/not satisfied]”
+1. Read [`MASTER-PLAN.md`](./MASTER-PLAN.md) to determine current position.
+2. Read [`CHANGELOG.md`](./CHANGELOG.md) to confirm last committed version.
+3. Read [`QUALITY-STANDARDS.md`](./QUALITY-STANDARDS.md) §9 AI Agent Pre-Commit Checklist before creating any file.
+4. Identify the current phase and next unfinished work item.
+5. State: “Starting [Phase N], [Work Item], entry condition: [satisfied/not satisfied].”
 
 ### Session Work
-1. Work one file at a time
-2. After each file: run the applicable quality check (§2)
-3. Commit each file individually with a conformant message
-4. Never skip a quality check to save time
+1. Work one file at a time.
+2. After each file: run the full AI Agent Pre-Commit Checklist (`QUALITY-STANDARDS.md §9`).
+3. Commit each file individually with a conformant message.
+4. Never skip a quality check to save time.
 
 ### Session End
-1. Update `MASTER-PLAN-V2.md` with session summary and version bump
-2. Update `CHANGELOG.md`
-3. State which work items are complete and what the next session should start with
+1. Update `MASTER-PLAN.md` session log and bump version.
+2. Update `CHANGELOG.md`.
+3. State which work items are complete and what the next session should start with.
 
 ---
 
 ## 8. AI Agent Operating Rules
 
+Foundational rules. Full quality enforcement rules in `QUALITY-STANDARDS.md §9.1`.
+
 1. **Never modify a canonical artifact definition file without bumping its version.**
 2. **Never create a skill file that references an artifact that does not yet exist** — create the artifact first.
-3. **Always check `MASTER-PLAN-V2.md` before starting a session** to avoid duplicating completed work.
+3. **Always check [`MASTER-PLAN.md`](./MASTER-PLAN.md) before starting a session** to avoid duplicating completed work.
 4. **Always commit after each file** — not in large batches — to maintain traceability.
 5. **Treat every `[FIELD: ...]` placeholder as sacred** — never pre-fill with sample data.
 6. **Never cite PMBOK 8 without a section number.**
 7. **Apply the waste test to every artifact before committing it.**
 8. **When in doubt about scope, authority, or terminology, defer to PMBOK8 as primary source.**
-9. **Update `MASTER-PLAN-V2.md` and `CHANGELOG.md` at the end of every session — no exceptions.**
-10. **The quality audit checklist (Phase 7) applies to every file, every session.**
+9. **Update `MASTER-PLAN.md` and `CHANGELOG.md` at the end of every session — no exceptions.**
+10. **Run the AI Agent Pre-Commit Checklist (`QUALITY-STANDARDS.md §9`) on every file before every commit — no exceptions.**
+11. **PMO skills (Pack 08) must cite PMO Practice Guide by chapter and service number.**
+12. **Every companion reference file must include the short-code from `pmi_reference_list.md`.**
 
 ---
 
 ## 9. Immediate Next Actions
 
-| Session | Phase | Work items |
+| Session | Phase | Work Items |
 |---|---|---|
-| **Next** | Phase 0 | Audit C4–C7 + `/repo/` → migrate content → delete stale dirs |
+| **Next** | Phase 0 | Verify C4 duplication → delete C4 root (30 files) → migrate C5/C6/C7 → audit repo/ (7 files) → audit artifacts/ (11 undocumented dirs) → update README.md + reference/README.md |
 | **+1** | Phase 4 (C4) | Rebuild PR01–PR10 (Initiating + early Planning processes) |
-| **+2** | Phase 4 (C4) | Rebuild PR41 (Control Procurements) |
-| **+3** | Phase 4 (C6–C7) | Build T&T Taxonomy registry + I/O Registry from migrated C6/C7 content |
+| **+2** | Phase 4 (C4) | Rebuild PR41 (Control Procurements) + PR01–PR10 remainder |
+| **+3** | Phase 4 (C6–C7) | Build T&T registry + I/O registry from migrated content |
 | **+4** | Phase 4 (C8–C9) | Build 4 appendices + Reference GLOSSARY |
-| **+5–+11** | Phase 3 | Build 47 full skill content files (priority order §4) |
-| **+12–+13** | Phase 5 | Build shared validators + components |
-| **+14–+16** | Phase 6 | Build test suite (47 skill tests + 6 integration tests) |
+| **+5** | Phase 4 (C10) | Build companion-references/ index + PMO Practice Guide + Book of Forms summaries |
+| **+6–+12** | Phase 3 | Build 47 full skill content files (priority order §4) |
+| **+13** | Phase 3-EXT | Build Pack 08 (8 PMO skills) |
+| **+14** | Phase 3-EXT | Build Pack 09 (6 PPM skills) |
+| **+15–+16** | Phase 5 | Build shared validators + components |
+| **+17–+19** | Phase 6 | Build test suite (61 skill tests + 8 integration tests) |
 
 ---
 
-*Plan version: 4.0.0 · Date: 2026-06-01 · Authority: PMBOK8 Primary*
+## 10. Version History
+
+| Version | Date | Changes |
+|---|---|---|
+| 4.0.0 | 2026-06-01 | Initial creation from NEXT-STEPS-PLAN.md v3.0.0. Full phase plan, quality standards §2.1–§2.6, canonical tree §3, dependency map, metrics, session protocol, 10 operating rules, immediate next actions. |
+| **4.1.0** | **2026-06-01** | **Removed §2.1–§2.5 inline quality rules (NC-005 resolved). §2 now points exclusively to `QUALITY-STANDARDS.md` v2.0.0. GOV YAML front-matter added. §1.1 updated to include QUALITY-STANDARDS.md. §1.3 updated with new Phase 3-EXT and Phase 4-C10–C12 targets. §3 canonical tree updated to reflect v4.2.0 audit (11 new artifact subdirs, Pack 08–09, all new reference subdirs). §4 Phase gates updated to cite `QUALITY-STANDARDS.md §7`. §7 Session Start updated to read QUALITY-STANDARDS.md §9 first. §8 Operating Rules updated to reference MASTER-PLAN.md (not MASTER-PLAN-V2.md). §9 Immediate Next Actions updated to current state. §10 Version History added.** |
+
+---
+
+*Authority: PMBOK8 Guide Primary · PMI Companion References Secondary*
+*Source type: PMI-derived + Org-defined*
+*Owner: PMO / Repository Governance Authority*
+*Approval authority: Repository owner*
 *Repository: https://github.com/fakhruldeen/PMOSkills*
+*Last Updated: 2026-06-01 · Version 4.1.0*
