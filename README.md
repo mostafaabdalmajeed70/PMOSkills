@@ -9,12 +9,12 @@
      | |__) || \  / || |  | |  \___ \ | ' /  | | | | | |     \___ \ 
      |  ___/ | |\/| || |  | |   ___) || . \  | | | | | |___   ___) |
      |_|     |_|  |_| \____/   |____/ |_|\_\ |_| |_| |_____| |____/ 
-                                                                    
+                                                                     
 ========================= PMBOK 8 ALIGNED =========================
 ```
 
 # PMO Skill Repository
-**Version:** 1.4.0
+**Version:** 4.5.0
 **Authority:** PMBOK 8 (Primary) · PMI Companion References (Secondary) · Organization-Defined Methods (Tertiary)
 **Scope:** Organizational Setup through Project Closure — full project lifecycle PMO reference and point of truth
 **Status:** Active development
@@ -22,10 +22,7 @@
 ---
 
 ## Disclaimer
-This repository contains personal summaries, interpretations, and educational notes
-compiled from public project management frameworks. "PMBOK" and "PMI" are registered
-trademarks of the Project Management Institute, Inc. This project is independently
-developed and is not affiliated with, endorsed by, or sponsored by PMI.
+This repository contains personal summaries, interpretations, and educational notes compiled from public project management frameworks. "PMBOK" and "PMI" are registered trademarks of the Project Management Institute, Inc. This project is independently developed and is not affiliated with, endorsed by, or sponsored by PMI.
 
 ---
 
@@ -50,10 +47,10 @@ Every skill in this repository can:
 | **Skills Built** | **47 skills across 7 packs** (SKL-01-01 through SKL-07-04) — all packs complete |
 | **Performance Domains** | Governance · Scope · Schedule · Finance · Stakeholders · Resources · Risk · Team · Measurement · Delivery · Development Approach & Life Cycle |
 | **Principles** | All 12 PMBOK 8 Standard principles embedded in every skill |
-| **Processes** | All 40 PMBOK processes — fully documented in `/C4-Process-Records/` (PR01–PR40) |
+| **Processes** | All 40 PMBOK processes — fully documented in `reference/processes/` (PR01–PR40) |
 | **Appendices** | PMO (X2) · AI (X3) · Procurement (X4) · PMBOK Evolution (X5) |
 | **Governance Layers** | Organizational · OPM · PMO · Portfolio/Program/Project · Delivery Team |
-| **Artifacts** | A01–A41 (Artifacts-V-1.1.md) fully mapped to skills |
+| **Artifacts** | A01–A39 (Artifacts-V-1.1.md) fully mapped to skills |
 
 ---
 
@@ -68,75 +65,39 @@ pmo-skill-repo/
 ├── PRINCIPLES-CROSSWALK.md          ← 12 principles × 11 domains × 40 processes
 ├── source-authority.md              ← Source authority rules and reference list
 ├── pmi_reference_list.md            ← Canonical PMI reference list
+├── MASTER-PLAN.md                   ← Master tracking roadmap (v4.5.0)
+├── COMPLETION-PLAN.md               ← Phase-by-phase completion plan (v4.1.0)
+├── QUALITY-STANDARDS.md             ← Single source of truth for schemas & gates (v2.0.0)
 │
 ├── docs/
-│   └── img/
-│       └── pmoskills.jpg            ← Repository logo
+│   ├── image/
+│   │   └── pmoskills.jpeg           ← Repository logo
+│   └── legacy/                      ← Archived historical draft files and monolithic exports
 │
-├── C4-Process-Records/              ← ✅ All 40 PMBOK process records (PR01–PR40)
-│   ├── PR01-Develop-Project-Charter.md
-│   ├── PR02-Identify-Stakeholders.md
-│   ├── PR03-Develop-Project-Management-Plan.md
-│   ├── PR04-Plan-Scope-Management.md
-│   ├── PR05-Collect-Requirements.md
-│   ├── PR06-Define-Scope.md
-│   ├── PR07-Create-WBS.md
-│   ├── PR08-Plan-Schedule-Management.md
-│   ├── PR09-Define-Activities.md
-│   ├── PR10-Sequence-Activities.md
-│   ├── PR11-Estimate-Activity-Resources.md
-│   ├── PR12-Estimate-Activity-Durations.md
-│   ├── PR13-Develop-Schedule.md
-│   ├── PR14-Plan-Cost-Management.md
-│   ├── PR15-Estimate-Costs.md
-│   ├── PR16-Determine-Budget.md
-│   ├── PR17-Plan-Quality-Management.md
-│   ├── PR18-Plan-Resource-Management.md
-│   ├── PR19-Plan-Communications-Management.md
-│   ├── PR20-Plan-Risk-Management.md  [note: PR20=Plan-Risk listed; PR21 in files]
-│   ├── PR21-Plan-Risk-Management.md
-│   ├── PR22-Identify-Risks.md
-│   ├── PR23-Perform-Qualitative-Risk-Analysis.md
-│   ├── PR24-Perform-Quantitative-Risk-Analysis.md
-│   ├── PR25-Plan-Risk-Responses.md
-│   ├── PR26-Plan-Procurement-Management.md
-│   ├── PR27-Plan-Stakeholder-Engagement.md
-│   ├── PR28-Direct-and-Manage-Project-Work.md
-│   ├── PR29-Manage-Project-Knowledge.md
-│   ├── PR30-Monitor-and-Control-Project-Work.md
-│   ├── PR31-Perform-Integrated-Change-Control.md
-│   ├── PR32-Validate-Scope.md
-│   ├── PR33-Control-Scope.md
-│   ├── PR34-Control-Schedule.md
-│   ├── PR35-Control-Costs.md
-│   ├── PR36-Monitor-Communications.md
-│   ├── PR37-Control-Quality.md
-│   ├── PR38-Control-Resources.md
-│   ├── PR39-Monitor-Risks.md
-│   └── PR40-Close-Project-or-Phase.md
+├── reference/                       ← PMBOK 8 Reference Layer
+│   ├── README.md                    ← Reference structure explanation
+│   ├── principles/                  ← 12 PMBOK 8 principles (P01–P12 + index)
+│   ├── performance-domains/         ← 8 performance domains (PD01–PD08 + index)
+│   ├── focus-areas/                 ← 5 focus areas (FA01–FA05)
+│   ├── processes/                   ← 40 process records (PR01–PR40 + indices)
+│   ├── knowledge-areas/             ← Knowledge Area index (migrated from C5)
+│   ├── tools-techniques/            ← Tools & Techniques index (migrated from C6)
+│   ├── inputs-outputs/              ← Inputs & Outputs registry (migrated from C7)
+│   └── appendices/                  ← PMO, AI, Sourcing appendices [planned]
 │
-├── C5-KA-Crossref/                  ← ✅ Knowledge Area Cross-Reference Index
-│   └── KA-Crossref-Index.md
-│
-├── reference/                       ← [planned] PMBOK 8 reference layer
-│   ├── principles/                  ← [planned] 12 PMBOK 8 principles, detailed notes
-│   ├── performance-domains/         ← [planned] 11 domain summaries with process maps
-│   ├── focus-areas/                 ← [planned] 5 focus areas with artifact triggers
-│   ├── inputs-outputs/              ← [planned] inputs-outputs-registry.md (PMBOK 8 §4)
-│   ├── tools-techniques/            ← [planned] tools-techniques-registry.md (PMBOK 8 §5)
-│   └── appendices/
-│       ├── X2-pmo.md                ← [planned]
-│       ├── X3-ai.md                 ← [planned]
-│       ├── X4-procurement.md        ← [planned]
-│       └── X5-evolution.md          ← [planned]
-│
-├── artifacts/
-│   ├── closing/                     ← Closing artifacts (A21-final, A27)
-│   ├── monitoring-and-decisions/    ← M&C artifacts (A12, A17, A18)
-│   ├── planning-and-baselines/      ← Planning artifacts (A06, A08, A14, A15, A16, A19, A26, A28)
-│   ├── procurement/                 ← Procurement artifacts (A31)
-│   ├── resources/                   ← Resource artifacts (A03, A26-ext)
-│   └── stakeholders/                ← Stakeholder artifacts (A02, A07)
+├── artifacts/                       ← Lean and Audited Artifacts Catalog
+│   ├── initiating/                  ← Project startup records (A01, A02, A04)
+│   ├── planning-and-baselines/      ← Subsidiary management plans & models (A06, A08, A14, A15, A16, A28)
+│   ├── resources/                   ← Resource registries and team documents (A03, A20, A25, A26, A27)
+│   ├── stakeholders-communications/ ← Communication models (A07, A10, A28, A29)
+│   ├── procurement/                 ← Procurement & supplier records (A11, A31, A32, A33)
+│   ├── quality/                     ← Requirements traceability & quality (A09, A13)
+│   ├── knowledge/                   ← Lesson registries & data records (A30)
+│   ├── monitoring-and-decisions/    ← Controls (A12, A17, A18, A19, A20, A21)
+│   ├── closure/                     ← Realization & transition logs (A24, A27)
+│   ├── governance/                  ← Retention & privacy registers (A05, A34, A35, A37, A39)
+│   ├── pmo/                         ← PMO metrics & improvements (A23, A36)
+│   └── portfolio/                   ← Interdependency models (A22)
 │
 ├── skills/
 │   ├── 01-organizational-setup/     ← Governance, doc control, repo config (3 skills)
@@ -147,15 +108,17 @@ pmo-skill-repo/
 │   ├── 06-closing/                  ← Close Project or Phase focus area (3 skills)
 │   └── 07-adaptive-hybrid/          ← Adaptive & Hybrid lifecycle skills (4 skills)
 │
-├── shared/                          ← [planned] Reusable components and validators
-│   ├── components/                  ← [planned] Reusable field blocks and section patterns
-│   ├── validators/                  ← [planned] Waste-test and quality-check routines
-│   ├── routing/                     ← [planned] Authority routing logic per decision type
-│   └── checklists/                  ← [planned] Domain and phase readiness checklists
+├── shared/                          ← Reusable components and validators
+│   ├── README.md
+│   ├── components/                  ← Field blocks and section patterns [planned]
+│   ├── validators/                  ← Waste-test and quality-check routines [planned]
+│   ├── routing/                     ← Authority routing logic per decision type [planned]
+│   └── checklists/                  ← Domain and phase readiness checklists [planned]
 │
-└── tests/                           ← [planned] Skill and integration test cases
-    ├── skill-tests/                 ← [planned] Test cases per skill (inputs → expected outputs)
-    └── integration-tests/           ← [planned] Cross-skill flow tests (e.g., Setup → Close)
+└── tests/                           ← Skill and integration test cases
+    ├── README.md
+    ├── skill-tests/                 ← Test cases per skill [planned]
+    └── integration-tests/           ← Cross-skill flow tests (e.g., Setup → Close) [planned]
 ```
 
 ---
@@ -175,26 +138,26 @@ pmo-skill-repo/
 
 ---
 
-## Process Records Summary (C4)
+## Process Records Summary
 
 | Process Group | Count | PR Range | Status |
 |---|---|---|---|
-| Initiating | 2 | PR01–PR02 | ✅ |
-| Planning | 25 | PR03–PR27 | ✅ |
-| Executing | 3 | PR28–PR30 | ✅ |
-| Monitoring & Controlling | 9 | PR31–PR39 | ✅ |
-| Closing | 1 | PR40 | ✅ |
+| Initiating | 2 | PR01–PR02 | ✅ Complete |
+| Planning | 25 | PR03–PR27 | ✅ Complete |
+| Executing | 3 | PR28–PR30 | ✅ Complete |
+| Monitoring & Controlling | 9 | PR31–PR39 | ✅ Complete |
+| Closing | 1 | PR40 | ✅ Complete |
 | **TOTAL** | **40** | **PR01–PR40** | ✅ **Complete** |
 
 ---
 
-## Reference Indices Summary (C5)
+## Reference Indices Summary
 
-| Index | File | Status |
+| Index | Canonical Location | Status |
 |---|---|---|
-| Knowledge Area Cross-Reference | `C5-KA-Crossref/KA-Crossref-Index.md` | ✅ Complete |
-| Tools & Techniques Taxonomy | `C6-TT-Taxonomy/` | 🔜 Next |
-| Inputs/Outputs Master Registry | `C7-IO-Registry/` | 🔜 Planned |
+| Knowledge Area Cross-Reference | `reference/knowledge-areas/KA-Crossref-Index.md` | ✅ Complete |
+| Tools & Techniques Taxonomy | `reference/tools-techniques/TT-Taxonomy-Index.md` | ✅ Complete |
+| Inputs/Outputs Master Registry | `reference/inputs-outputs/IO-Registry-Index.md` | ✅ Complete |
 
 ---
 
@@ -247,8 +210,8 @@ All artifacts are labeled: `PMI-derived` | `synthesis` | `organization-defined`
 5. Route for approval per the T1–T4 threshold model
 
 ### As a Book Authoring Reference
-1. Use `C4-Process-Records/` for all 40 process records with full I/O/T&T detail
-2. Use `C5-KA-Crossref/` for Knowledge Area to process mapping
+1. Use `reference/processes/` for all 40 process records with full I/O/T&T detail
+2. Use `reference/knowledge-areas/KA-Crossref-Index.md` for Knowledge Area to process mapping
 3. Use `PRINCIPLES-CROSSWALK.md` for principle-to-domain mappings
 4. Use artifact definitions in `artifacts/` for structured chapter sections
 
@@ -264,8 +227,9 @@ All artifacts are labeled: `PMI-derived` | `synthesis` | `organization-defined`
 | `PRINCIPLES-CROSSWALK.md` | 12 principles × 11 domains matrix |
 | `source-authority.md` | Source authority rules, reference hierarchy |
 | `pmi_reference_list.md` | Canonical list of all PMI references used in this repo |
-| `C4-Process-Records/` | All 40 PMBOK process records (PR01–PR40) |
-| `C5-KA-Crossref/KA-Crossref-Index.md` | Knowledge Area × Process Group × PR number cross-reference |
+| `MASTER-PLAN.md` | Master development plan |
+| `COMPLETION-PLAN.md` | Phase-by-phase completion roadmap |
+| `QUALITY-STANDARDS.md` | Canonical quality gates, YAML schemas, and pre-commit checklists |
 
 ---
 
@@ -279,6 +243,7 @@ All artifacts are labeled: `PMI-derived` | `synthesis` | `organization-defined`
 | 1.3.0 | 2026-05-30 | Packs 05–07 complete (22 skills); all 47 skills built; SKILL-REGISTRY.md v1.3.0; README updated to reflect actual repo structure |
 | 1.3.1 | 2026-05-31 | Added logo reference (docs/img/pmoskills.jpg), ASCII art banner, and PMI disclaimer |
 | 1.4.0 | 2026-05-31 | C4 complete: all 40 process records (PR01–PR40) in C4-Process-Records/; C5 KA Cross-Reference Index added; README updated |
+| **4.5.0** | **2026-06-01** | **Phase 0 Cleanup Complete: all legacy root directories and duplicate standards files removed. Post-migration README alignment to show clean reference/ and artifacts/ structures.** |
 
 ---
 

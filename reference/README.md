@@ -1,10 +1,10 @@
 # reference/ — PMBOK 8 Reference Layer
 
-**Status:** Partially Built · In Active Development
-**Version:** 1.0.0
+**Status:** Fully Aligned · Core Reference Complete
+**Version:** 4.5.0
 **Authority:** PMBOK8 Primary · PMI Companion References Secondary
 **File Path:** `reference/README.md`
-**Last Updated:** 2026-06-01 · Phase 0 — Structural Cleanup
+**Last Updated:** 2026-06-01 · Phase 0 — Structural Cleanup Finalization
 
 ---
 
@@ -19,47 +19,35 @@ This directory contains the authoritative PMBOK 8 reference layer — structured
 ```
 reference/
 ├── README.md                                    ← This file
+│
 ├── processes/                                   ← ✅ COMPLETE (42 files)
 │   ├── 00-index.md                              ← Master index of all 40 processes
 │   ├── index.md                                 ← Navigation index
 │   └── PR01–PR40 *.md                           ← One file per PMBOK 8 process (40 files)
+│
+├── principles/                                  ← ✅ COMPLETE (14 files)
+│   ├── 00-index.md                              ← Master index of principles
+│   ├── index.md                                 ← Navigation index
+│   └── P01–P12 *.md                             ← One file per PMBOK 8 principle (12 files)
+│
+├── performance-domains/                         ← ✅ COMPLETE (10 files)
+│   ├── 00-index.md                              ← Master index of domains
+│   ├── index.md                                 ← Navigation index
+│   └── PD01–PD08 *.md                           ← One file per performance domain (8 files)
+│
+├── focus-areas/                                 ← ✅ COMPLETE (6 files)
+│   ├── index.md                                 ← Navigation index
+│   └── FA01–FA05 *.md                           ← One file per lifecycle focus area (5 files)
+│
 ├── knowledge-areas/                             ← ✅ COMPLETE (1 file)
-│   └── KA-Crossref-Index.md                     ← Knowledge Area cross-reference index
+│   └── KA-Crossref-Index.md                     ← Knowledge Area cross-reference index (migrated from C5)
+│
 ├── tools-techniques/                            ← ✅ COMPLETE (1 file)
-│   └── TT-Taxonomy-Index.md                     ← Tools & Techniques taxonomy
+│   └── TT-Taxonomy-Index.md                     ← Tools & Techniques taxonomy index (migrated from C6)
+│
 ├── inputs-outputs/                              ← ✅ COMPLETE (1 file)
-│   └── IO-Registry-Index.md                     ← Master I/O registry (73 artifacts, 40 processes)
-├── principles/                                  ← [planned]
-│   ├── index.md
-│   ├── P01-stewardship.md
-│   ├── P02-team.md
-│   ├── P03-stakeholders.md
-│   ├── P04-value.md
-│   ├── P05-systems-thinking.md
-│   ├── P06-leadership.md
-│   ├── P07-tailoring.md
-│   ├── P08-quality.md
-│   ├── P09-complexity.md
-│   ├── P10-risk.md
-│   ├── P11-adaptability.md
-│   └── P12-change.md
-├── performance-domains/                         ← [planned]
-│   ├── index.md
-│   ├── PD01-stakeholders.md
-│   ├── PD02-team.md
-│   ├── PD03-development-approach.md
-│   ├── PD04-planning.md
-│   ├── PD05-project-work.md
-│   ├── PD06-delivery.md
-│   ├── PD07-measurement.md
-│   └── PD08-uncertainty.md
-├── focus-areas/                                 ← [planned]
-│   ├── index.md
-│   ├── FA01-initiating.md
-│   ├── FA02-planning.md
-│   ├── FA03-executing.md
-│   ├── FA04-monitoring-controlling.md
-│   └── FA05-closing.md
+│   └── IO-Registry-Index.md                     ← Master I/O registry (73 artifacts, 40 processes) (migrated from C7)
+│
 └── appendices/                                  ← [planned]
     ├── X2-pmo.md
     ├── X3-ai.md
@@ -73,25 +61,24 @@ reference/
 
 | Directory | Status | Files | Notes |
 |---|---|---|---|
+| `principles/` | ✅ Complete | 14 | 12 principles + index + 00-index |
+| `performance-domains/` | ✅ Complete | 10 | 8 performance domains + index + 00-index |
+| `focus-areas/` | ✅ Complete | 6 | 5 focus areas + index |
 | `processes/` | ✅ Complete | 42 | PR01–PR40 + 2 index files |
 | `knowledge-areas/` | ✅ Complete | 1 | KA cross-reference index |
 | `tools-techniques/` | ✅ Complete | 1 | TT taxonomy index |
 | `inputs-outputs/` | ✅ Complete | 1 | IO master registry (73 artifacts) |
-| `principles/` | ⏳ Planned | 0 | 12 files + index |
-| `performance-domains/` | ⏳ Planned | 0 | 8 files + index |
-| `focus-areas/` | ⏳ Planned | 0 | 5 files + index |
 | `appendices/` | ⏳ Planned | 0 | 4 files |
 
 ---
 
-## Build Priority
+## Build Priority (Future Layers)
 
 | Priority | Directory | Rationale |
 |---|---|---|
-| 1 | `principles/` | Foundational — referenced by every skill |
-| 2 | `performance-domains/` | Core PMBOK 8 structure |
-| 3 | `focus-areas/` | Lifecycle navigation |
-| 4 | `appendices/` | Supplementary |
+| 1 | `appendices/` | Supplementary PMO, AI, Sourcing appendices |
+| 2 | `companion-references/` | Detailed mappings for 23 PMI references |
+| 3 | `tailoring/` | Tailoring heuristics per project profile |
 
 ---
 
@@ -99,6 +86,9 @@ reference/
 
 | File | Description |
 |---|---|
+| `principles/00-index.md` | Master index of all 12 PMBOK principles |
+| `performance-domains/00-index.md` | Master index of all 8 performance domains |
+| `focus-areas/index.md` | Lifecycle phase mappings |
 | `processes/00-index.md` | Master index of all 40 PMBOK processes |
 | `processes/PR01–PR40` | Individual process records with I/T&T/O |
 | `knowledge-areas/KA-Crossref-Index.md` | KA → Process cross-reference |
@@ -110,8 +100,8 @@ reference/
 ## Dependencies
 
 - `SKILL-REGISTRY.md` — skills reference process anchors defined in `processes/`
-- `PRINCIPLES-CROSSWALK.md` — will draw from `principles/` content when built
-- MCP server resource endpoints will serve content from this directory
+- `PRINCIPLES-CROSSWALK.md` — draws from `principles/` and `performance-domains/` content
+- MCP server resource endpoints serve content from this directory
 - Book authoring chapters draw source content from `processes/` and `principles/`
 
 ---
