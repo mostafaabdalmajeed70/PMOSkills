@@ -1,81 +1,106 @@
+---
+ref_id: PR02
+ref_type: Process
+ref_name: "Identify Stakeholders"
+version: "1.0.0"
+status: Active
+pmbok8_source: "PMBOK8 Guide §2.2"
+companion_ref_shortcode: PG-APG-4.2
+related_skills:
+  - SKL-02-03
+  - SKL-03-03
+  - SKL-03-08
+  - SKL-04-04
+related_artifacts:
+  - A04
+  - A07
+  - A10
+  - A18
+  - A19
+  - A29
+file_path: "reference/processes/PR02-identify-stakeholders.md"
+---
+
 # PR02 — Identify Stakeholders
 
-**Type:** Process Record  
-**Primary Source:** PMBOK 8 — Governance and Stakeholders Performance Domains  
-**Companion Source:** Process Groups: A Practice Guide — 4.2 Identify Stakeholders  
-**Process Group:** Initiating  
-**Version:** 1.0.0  
-**Status:** Active
+**Ref ID:** PR02
+**Type:** Process
+**PMBOK8 Source:** §2.2
+**Version:** 1.0.0
+
+---
 
 ## Definition
 
 Identify Stakeholders is the process of identifying project stakeholders regularly and analyzing and documenting relevant information regarding their interests, involvement, interdependencies, influence, and potential impact on project success.
 
-## Purpose
+## Key Characteristics
 
-This process establishes who should be engaged, how they may affect or be affected by the project, and where management attention is needed. It enables the project team to determine the appropriate focus for engagement of each stakeholder or stakeholder group.
+- **Continuous Execution:** Repeated regularly throughout the project lifecycle, starting before or during charter development.
+- **Systematic Analysis:** Assesses stakeholder power, interest, influence, and expectations to determine engagement priority.
+- **Inclusive Scope:** Identifies all potential internal and external individuals, groups, or organizations affected by or affecting the project.
+- **Central Documentation:** Consolidates stakeholder information in the Stakeholder Register for secure and controlled team reference.
+- **Engagement Grounding:** Directly informs communication planning, risk assessment, and stakeholder engagement strategies.
 
-## When Used
+## PMBOK 8 Context
 
-This process often begins before or during charter development and is repeated as needed throughout the project. It should be revisited at the start of each phase and when major project or organizational changes occur.
+Under PMBOK 8, Identify Stakeholders is a primary pillar of the **Stakeholders Performance Domain** and is closely linked with the **Governance Performance Domain**. Effective stakeholder identification ensures that project objectives align with stakeholder needs and that governance structures have the right representation. This process is revisited at the start of each phase and whenever major organizational changes occur.
 
-## Key Inputs
+## Inputs
 
-- Project charter.
-- Business documents, especially the business case and benefits management plan.
-- Relevant project management plan components, especially communications management and stakeholder engagement planning inputs when available.
-- Project documents such as change log, issue log, and requirements documentation.
-- Agreements, enterprise environmental factors, and organizational process assets.
+| Input | Description | Source |
+|---|---|---|
+| Project Charter | Provides initial high-level stakeholder context, project purpose, and sponsoring authority. | PR01 Develop Project Charter |
+| Business Documents | Business case and benefits management plan identifying early stakeholders and beneficiaries. | Sponsoring Organization |
+| Project Documents | Change log, issue log, and requirements documentation highlighting new stakeholder interactions. | Core Team |
+| Agreements | Contractual arrangements referencing suppliers, customers, and key legal contacts. | Procurement / Sourcing |
+| Factors & Assets | Enterprise environmental factors and organizational process assets (e.g. templates and directories). | Enterprise / PMO |
 
-## Key Tools and Techniques
+## Outputs
 
-- Expert judgment.
-- Data gathering, including questionnaires, surveys, and brainstorming.
-- Data analysis, especially stakeholder analysis and document analysis.
-- Data representation, especially stakeholder mapping.
-- Meetings.
+| Output | Description | Destination |
+|---|---|---|
+| Stakeholder Register | Comprehensive directory of identified stakeholders, categorization, and assessment details. | A07 Stakeholder Register |
+| Change Requests | Formally requested modifications to current planning basis triggered by stakeholder identification. | PR31 Integrated Change Control |
+| PMP Updates | Revisions to requirements, communications, risk, and stakeholder engagement plans. | PR03 Develop PMP |
+| Document Updates | Updates to assumption logs, issue logs, and risk registers. | Project Registry |
 
-## Key Outputs
+## Tools and Techniques
 
-- Stakeholder register.
-- Change requests.
-- Project management plan updates, including requirements, communications, risk, and stakeholder engagement plans.
-- Project document updates, including assumption log, issue log, and risk register.
+- **Expert Judgment:** Guidance from advisors with experience in organizational dynamics, regulatory landscapes, and stakeholder analysis.
+- **Data Gathering:** Brainstorming, questionnaires, and surveys to identify potential stakeholders.
+- **Data Analysis:** Stakeholder analysis and document analysis to understand power, interest, and influence.
+- **Data Representation:** Stakeholder mapping matrices (e.g. Power/Interest grid) and representation models.
+- **Meetings:** Alignment sessions and stakeholder workshops to discover and categorize project participants.
 
-## Relationship to Other Processes
+## Cross-References
 
-- Uses the charter (PR01) as its initial source of purpose, authority, and high-level stakeholder context.
-- Informs Collect Requirements (PR05), Plan Communications Management, Plan Risk Management, and Plan Stakeholder Engagement.
-- May trigger change requests when new or changed stakeholders affect the current planning basis.
+| Related Item | Type | Relationship |
+|---|---|---|
+| A04 | Artifact | Input context and authority source |
+| A07 | Artifact | Principal output of this process |
+| A10 | Artifact | Resources and communications planning component updated by stakeholder needs |
+| A18 | Artifact | Issues log updated when stakeholder challenges emerge |
+| A19 | Artifact | Risk register updated when stakeholder dynamics introduce threats or opportunities |
+| PR01 | Process | Supplying the authorizing charter and early high-level stakeholder frames |
+| SKL-02-03 | Skill | Identify and Analyze Stakeholders |
+| SKL-03-08 | Skill | Plan Stakeholder Engagement |
 
-## Artifact Connections
+## Practitioner Notes
 
-- **A04 Project Charter:** input context and authority source.
-- **A07 Stakeholder Register:** principal output.
-- **A10 Communications Management Plan:** updated or informed by stakeholder communication needs.
-- **A18 Issue Log:** updated when stakeholder-related issues emerge.
-- **A19 Risk Register / risk-related record:** updated when stakeholder conditions create risks.
-- **A29 Change Readiness and Adoption Record:** useful where stakeholder change impacts adoption and transition outcomes.
+Practitioners executing this process should seek answers to the following vital questions:
+1. Who can affect or be affected by project decisions, execution, outcomes, value realization, or phase completion?
+2. Which stakeholders possess high influence, high impact, or high interest and therefore require deliberate management?
+3. Have external parties such as regulatory bodies, suppliers, end-users, and local communities been systematically included?
+4. What specific risks or potential project issues arise from stakeholder expectations, resistance, or dependency networks?
+5. At what key project milestones or phase transitions will the stakeholder analysis be refreshed?
 
-## Skill Connections
+## Change Log
 
-- SKL-02-03 Identify and Analyze Stakeholders.
-- SKL-03-03 Plan Communications.
-- SKL-03-08 Plan Stakeholder Engagement.
-- SKL-04-04 Manage Stakeholder Changes and Escalations.
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.0 | 2026-06-02 | Rebuilt to align with canonical REF file structure and YAML front-matter | PMO Director |
 
-## Domain and Focus Area Links
+---
 
-- Strongest PMBOK 8 alignment: Stakeholders Performance Domain.
-- Secondary alignment: Governance, because governance depends on involving the right stakeholders at the right time.
-- Strongest focus area alignment: Initiating, with continued relevance across Planning, Executing, and Monitoring and Controlling.
-
-## Practitioner Questions
-
-- Who can affect project decisions, outcomes, acceptance, or value realization?
-- Which stakeholders have high influence, high impact, or high interest and therefore require deliberate engagement?
-- Have external parties such as regulators, suppliers, affected communities, or customers been included?
-- What new risks or issues arise from stakeholder expectations, resistance, or dependency relationships?
-- When will the stakeholder analysis be refreshed during the life cycle?
-
-*Authority: PMBOK 8 — Governance and Stakeholders Performance Domains; Process Groups: A Practice Guide — 4.2 Identify Stakeholders*
+*Authority: PMBOK8 Guide §2.2; Process Groups Practice Guide §4.2*

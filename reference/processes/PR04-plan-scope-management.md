@@ -1,76 +1,97 @@
+---
+ref_id: PR04
+ref_type: Process
+ref_name: "Plan Scope Management"
+version: "1.0.0"
+status: Active
+pmbok8_source: "PMBOK8 Guide §2.2.2"
+companion_ref_shortcode: PG-APG-5.2
+related_skills:
+  - SKL-03-01
+  - SKL-03-02
+related_artifacts:
+  - A04
+  - A05
+  - A08
+  - A13
+  - A14
+file_path: "reference/processes/PR04-plan-scope-management.md"
+---
+
 # PR04 — Plan Scope Management
 
-**Type:** Process Record  
-**Primary Source:** PMBOK 8 — Scope Performance Domain, 2.2.2.1 Plan Scope Management  
-**Companion Source:** Process Groups: A Practice Guide — 5.2 Plan Scope Management  
-**Process Group:** Planning  
-**Version:** 1.0.0  
-**Status:** Active
+**Ref ID:** PR04
+**Type:** Process
+**PMBOK8 Source:** §2.2.2
+**Version:** 1.0.0
+
+---
 
 ## Definition
 
 Plan Scope Management is the process of creating a scope management plan that documents how the project and product scope will be defined, validated, and controlled.
 
-## Purpose
+## Key Characteristics
 
-This process establishes the governance structure for scope throughout the project life cycle. It ensures that scope management activities — from initial definition through validation and change control — are planned deliberately and with consistent guidance. The key benefit is that it provides direction on how scope will be managed to ensure value is delivered to stakeholders.
+- **Governance Groundwork:** Establishes the clear rules of engagement for defining, detailing, and managing scope.
+- **Dual Outputs:** Produces both the Scope Management Plan and the Requirements Management Plan as vital PMP components.
+- **Life Cycle Tailoring:** Outlines how scope will be managed according to the chosen delivery model (WBS for predictive, Backlog for adaptive).
+- **Control Strategy:** Determines how change requests affecting the scope baseline or backlog will be formally requested and evaluated.
+- **Traceability Framing:** Sets the requirements for tracing and connecting deliverables directly to stakeholder expectations.
 
-## When Used
+## PMBOK 8 Context
 
-This process is performed once or at predefined points in the project. In adaptive or hybrid projects, scope governance is approached iteratively and collaboratively, but it still requires explicit planning at the outset or start of each major iteration boundary.
+Under PMBOK 8, Plan Scope Management resides in the **Scope Performance Domain** and links directly to project **Governance**. Defining the rules for scope validation and change control prevents scope creep and ensures value is delivered as intended. In adaptive or hybrid projects, scope planning is iterative, with backlog prioritization heuristics established in this process.
 
-## Key Inputs
+## Inputs
 
-- Project charter.
-- Project management plan (A14).
-- Project documents, including requirements documentation and risk register.
-- Stakeholder register.
-- Enterprise environmental factors.
-- Organizational process assets.
+| Input | Description | Source |
+|---|---|---|
+| Project Charter | Supplies the initial strategic context, high-level requirements, and product boundaries. | PR01 Develop Project Charter |
+| Project Management Plan | Provides the overarching lifecycle and developmental approach context. | PR03 Develop PMP |
+| Enterprise Environmental Factors | Infrastructure, corporate culture, standard practices, and industry regulations. | Enterprise |
+| Organizational Process Assets | Templates, historical lessons learned, and institutional policies. | PMO Registry |
 
-## Key Tools and Techniques
+## Outputs
 
-- Expert judgment.
-- Data gathering, including interviews, focus groups, and questionnaires.
-- Test and inspection planning.
+| Output | Description | Destination |
+|---|---|---|
+| Scope Management Plan | Documents how project scope will be defined, developed, monitored, controlled, and validated. | A14 Integrated Project Management Plan |
+| Requirements Management Plan | Documents how project and product requirements will be analyzed, documented, and managed. | A14 Integrated Project Management Plan |
 
-## Key Outputs
+## Tools and Techniques
 
-- Project management plan updates:
-  - Scope management plan.
-  - Requirements management plan.
+- **Expert Judgment:** Advice on scope strategies, estimation approaches, and software configuration tools.
+- **Data Analysis:** Alternatives analysis to evaluate different ways of defining, validating, and controlling scope.
+- **Meetings:** Alignment workshops with key stakeholders, business analysts, and core project team leaders.
 
-## Relationship to Other Processes
+## Cross-References
 
-- Directly enables Collect Requirements (PR05), Define Scope (PR06), and Create WBS / Develop Scope Structure (PR07).
-- Informs Monitor and Control Scope and Validate Scope later in the project life cycle.
-- The requirements management plan produced here governs how requirements are identified, traced, and managed throughout.
+| Related Item | Type | Relationship |
+|---|---|---|
+| A04 | Artifact | Input context providing high-level boundaries and strategic constraints |
+| A05 | Artifact | Supplying environmental assumptions and project constraints |
+| A08 | Artifact | Backlog governance basis in adaptive or hybrid environments |
+| A13 | Artifact | Traceability matrix managed under the requirements management plan guidelines |
+| A14 | Artifact | Principal destination for scope and requirements plans |
+| PR05 | Process | Downstream requirements collection process governed by this plan |
+| SKL-03-02 | Skill | Plan Scope and Requirements |
 
-## Artifact Connections
+## Practitioner Notes
 
-- **A14 Integrated Project Management Plan:** receives scope and requirements management plan updates as subsidiary components.
-- **A08 Scope and Requirements Backlog:** governance basis for backlog management in adaptive or hybrid projects.
-- **A13 Requirements Traceability Matrix:** requirements management plan determines how this artifact is built and maintained.
-- **A04 Project Charter:** input providing high-level scope boundaries and constraints.
-- **A05 Context Register:** environmental factors and assumptions relevant to scope governance decisions.
+Practitioners executing this process should seek answers to the following vital questions:
+1. How will scope be defined — through a detailed scope statement and WBS, through a dynamic backlog, or via a hybrid approach?
+2. What specific change control procedures will govern modifications to the scope baseline or product backlog?
+3. How will requirements be elicited, documented, prioritized, and systematically traced through delivery?
+4. How will formal scope validation and deliverable acceptance be performed and by whom?
+5. Does the chosen scope planning strategy align with the project's selected development life cycle (predictive, adaptive, or hybrid)?
 
-## Skill Connections
+## Change Log
 
-- SKL-03-02 Plan Scope and Requirements.
-- SKL-03-01 Build Integrated Project Management Plan.
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.0 | 2026-06-02 | Rebuilt to align with canonical REF file structure and YAML front-matter | PMO Director |
 
-## Domain and Focus Area Links
+---
 
-- Strongest PMBOK 8 alignment: Scope Performance Domain.
-- Secondary alignment: Governance, because scope governance is a critical sub-element of project governance.
-- Strongest focus area alignment: Planning.
-
-## Practitioner Questions
-
-- How will scope be defined — through a detailed scope statement and WBS, through a backlog, or through a hybrid approach?
-- What change control procedures will govern scope boundary changes?
-- How will requirements be elicited, documented, prioritized, and traced through delivery?
-- How will scope validation and formal deliverable acceptance be performed?
-- Does the approach account for the project's life cycle type (predictive, adaptive, or hybrid)?
-
-*Authority: PMBOK 8 — 2.2.2.1 Plan Scope Management; Process Groups: A Practice Guide — 5.2 Plan Scope Management*
+*Authority: PMBOK8 Guide §2.2.2; Process Groups Practice Guide §5.2*
