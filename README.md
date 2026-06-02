@@ -222,6 +222,7 @@ All artifacts are labeled: `PMI-derived` | `synthesis` | `organization-defined`
 | `source-authority.md` | Source authority rules, reference hierarchy |
 | `pmi_reference_list.md` | Canonical list of all PMI references used in this repo |
 | `MASTER-PLAN.md` | Master development plan and session log |
+| `docs/implementation-plan.md` | Approved Phase 8 next steps implementation plan |
 | `Archive/COMPLETION-PLAN.md` | Phase-by-phase completion roadmap (archived) |
 | `QUALITY-STANDARDS.md` | Canonical quality gates, YAML schemas, and pre-commit checklists |
 
