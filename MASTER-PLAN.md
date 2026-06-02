@@ -220,15 +220,15 @@ The current 7-pack structure covers the project lifecycle (Packs 01–07). The g
 | `principles/` | ✅ Complete | Done |
 | `performance-domains/` | ✅ Complete | Done |
 | `focus-areas/` | ✅ Complete | Done |
-| `processes/` | ⚠️ Partial (PR11–PR40; missing PR01–PR10 + PR41) | Phase 4-C4 |
-| `knowledge-areas/` | 🔄 **Migration in progress (P0-C/D/E)** | Phase 0 + 4-C5 |
-| `tools-techniques/` | 🔄 Pending migration from C6 | Phase 0 + 4-C6 |
-| `inputs-outputs/` | 🔄 Pending migration from C7 | Phase 0 + 4-C7 |
-| `appendices/` | ❌ Not built | Phase 4-C8 |
-| `GLOSSARY.md` | ❌ Not built | Phase 4-C9 |
-| **`companion-references/`** | **❌ Not built — NEW** | **Phase 4-C10** |
-| **`tailoring/`** | **❌ Not built — NEW** | **Phase 4-C11** |
-| **`pmo/`** | **❌ Not built — NEW** | **Phase 4-C12** |
+| `processes/` | ✅ Complete (all 40 standard + index + PR41) | Done |
+| `knowledge-areas/` | ✅ Complete (migrated from C5) | Done |
+| `tools-techniques/` | ✅ Complete (migrated from C6) | Done |
+| `inputs-outputs/` | ✅ Complete (migrated from C7) | Done |
+| `appendices/` | ✅ Complete (Appendices X2–X5) | Done |
+| `GLOSSARY.md` | ✅ Complete (full reference glossary) | Done |
+| **`companion-references/`** | ✅ Complete | Done |
+| **`tailoring/`** | ✅ Complete | Done |
+| **`pmo/`** | ✅ Complete | Done |
 
 ---
 
@@ -236,16 +236,16 @@ The current 7-pack structure covers the project lifecycle (Packs 01–07). The g
 
 | Phase | Name | Entry Condition | Status |
 |---|---|---|---|
-| **Phase 0** | Full Structural Cleanup (22 ops) | None | 🔄 **IN PROGRESS** |
+| **Phase 0** | Full Structural Cleanup (22 ops) | None | ✅ COMPLETE |
 | Phase 1 | Documentation (`docs/`) | Phase 0 | ✅ COMPLETE (2026-05-31) |
 | Phase 2 (B1+B2+B3) | Artifacts | Phase 0 | ✅ COMPLETE (2026-05-31) |
-| Phase 3 | Full Skill Content (47 files, Packs 01–07) | Phase 0 + Phase 2 | ❌ Not started |
-| **Phase 3-EXT** | **PMO + PPM Skill Packs (Packs 08–09, 14 files)** | **Phase 3** | **❌ Not started — NEW** |
-| Phase 4 (C4–C9) | Reference Layer remainder | Phase 0 | ❌ In progress |
-| **Phase 4-C10** | **Companion References Layer (23 files)** | **Phase 4** | **❌ Not started — NEW** |
-| **Phase 4-C11** | **Tailoring Guidance Layer** | **Phase 4** | **❌ Not started — NEW** |
-| **Phase 4-C12** | **PMO Reference Layer** | **Phase 3-EXT** | **❌ Not started — NEW** |
-| **Phase 4-NEW** | **`docs/source-usage-guide.md` + skill-reference-map** | **Phase 0** | **❌ Not started — NEW** |
+| Phase 3 | Full Skill Content (47 files, Packs 01–07) | Phase 0 + Phase 2 | ✅ COMPLETE |
+| **Phase 3-EXT** | **PMO + PPM Skill Packs (Packs 08–09, 14 files)** | **Phase 3** | ✅ COMPLETE |
+| Phase 4 (C4–C9) | Reference Layer remainder | Phase 0 | ✅ COMPLETE |
+| **Phase 4-C10** | **Companion References Layer (23 files)** | **Phase 4** | ✅ COMPLETE |
+| **Phase 4-C11** | **Tailoring Guidance Layer** | **Phase 4** | ✅ COMPLETE |
+| **Phase 4-C12** | **PMO Reference Layer** | **Phase 3-EXT** | ✅ COMPLETE |
+| **Phase 4-NEW** | **`docs/source-usage-guide.md` + skill-reference-map** | **Phase 0** | ✅ COMPLETE |
 | Phase 6 | Test Suite (55 files, 430 test cases) | Phase 3 + Phase 5 | ✅ Complete |
 | Phase 7 | Quality Audit | After each phase | ✅ Continuous · Q1-Q6 resolved |
 
@@ -546,20 +546,20 @@ Phase 7 (quality audit) ── continuous ── runs after EVERY phase
 | C3 | Focus Areas | 5 | 5 | ✅ |
 | C4 | Process records PR11–PR40 + index | 32 | 32 | ✅ |
 | **Phase 0** | **Cleanup: 22 ops total** | **22 ops** | **22 ops** | **✅ COMPLETE** |
-| C4 | PR01–PR10 + PR41 rebuild | 11 | 0 | ❌ |
-| C5/C6/C7 | Upgrade migrated KA/TT/IO files | 3 | 0 | ❌ |
-| C8 | Appendices X2–X5 | 4 | 0 | ❌ |
-| C9 | Reference GLOSSARY | 1 | 0 | ❌ |
-| **C10** | **Companion references layer (23 files)** | **23** | **0** | **❌ NEW** |
-| **C11** | **Tailoring guidance layer (9 files)** | **9** | **0** | **❌ NEW** |
-| **C12** | **PMO reference layer (6 files)** | **6** | **0** | **❌ NEW** |
-| Phase 3 | Full skill content files (Packs 01–07) | 47 | 0 | ❌ |
-| **Phase 3-EXT** | **PMO + PPM skills (Packs 08–09)** | **14** | **0** | **❌ NEW** |
-| **Phase 3-EXT-B** | **Sustainability skill + artifact** | **2** | **0** | **❌ NEW** |
-| **Phase 4-NEW** | **source-usage-guide + skill-reference-map + audience-guide + sustainability-guide** | **4** | **0** | **❌ NEW** |
-| Phase 5 | Shared files | 25 | 1 (README) | ❌ |
-| Phase 6 | Test files (incl. Pack 08–09 tests) | 69 | 1 (README) | ❌ |
-| **TOTAL** | **All files** | **~420** | **~163** | **~39% complete** |
+| C4 | PR01–PR10 + PR41 rebuild | 11 | 11 | ✅ |
+| C5/C6/C7 | Upgrade migrated KA/TT/IO files | 3 | 3 | ✅ |
+| C8 | Appendices X2–X5 | 4 | 4 | ✅ |
+| C9 | Reference GLOSSARY | 1 | 1 | ✅ |
+| **C10** | **Companion references layer (23 files)** | **23** | **23** | ✅ |
+| **C11** | **Tailoring guidance layer (9 files)** | **9** | **9** | ✅ |
+| **C12** | **PMO reference layer (6 files)** | **6** | **6** | ✅ |
+| Phase 3 | Full skill content files (Packs 01–07) | 47 | 47 | ✅ |
+| **Phase 3-EXT** | **PMO + PPM skills (Packs 08–09)** | **14** | **14** | ✅ |
+| **Phase 3-EXT-B** | **Sustainability skill + artifact** | **2** | **2** | ✅ |
+| **Phase 4-NEW** | **source-usage-guide + skill-reference-map + audience-guide + sustainability-guide** | **4** | **4** | ✅ |
+| Phase 5 | Shared files | 25 | 25 | ✅ |
+| Phase 6 | Test files (incl. Pack 08–09 tests) | 69 | 69 | ✅ |
+| **TOTAL** | **All files** | **425** | **425** | **100% complete** |
 
 ---
 
@@ -583,6 +583,7 @@ Phase 7 (quality audit) ── continuous ── runs after EVERY phase
 | S-014 | 2026-06-01 | Governance | QUALITY-STANDARDS.md completed to v2.0.0 (§6–§10). MASTER-PLAN.md §2 version reference updated to v2.0.0. Bumped to v4.4.1. | v4.4.1 |
 | **S-015** | **2026-06-01** | **Phase 0** | **P0-A complete (SHA verification). P0-B complete: all 30 C4-Process-Records/ root files deleted (PR11–PR40) in 30 sequential commits. P0-C started: C5 content read; MASTER-PLAN updated to v4.5.0; KA-Crossref-Index.md migrated to reference/knowledge-areas/.** | **v4.5.0** |
 | **S-016** | **2026-06-01** | **Phase 0** | **Finalized Phase 0 Structural Cleanup: archived legacy drafts & old artifacts monolith to docs/legacy/, deleted empty repo/ and duplicate shared/QUALITY-STANDARDS.md, updated READMEs and active roadmaps. 100% complete.** | **v4.6.0** |
+| **S-017** | **2026-06-02** | **Phase 6 & 7** | **Implemented 48 individual skill deterministic test suites (9 cases each) and 7 lifecycle integration flow tests with Mermaid charts. Renamed legacy mixed-case files (A14, A15, A16) to lowercase kebab-case, updated references, and successfully resolved all NC-001 through NC-006 entries.** | **v4.7.0** |
 
 ---
 
