@@ -49,12 +49,12 @@ Each skill entry contains the following fields:
 |------|------|-------------|----------------|-------|--------|
 | **01** | **Organizational Setup** | **3** | 0 | **3** | ✅ Complete |
 | **02** | **Initiating** | **2** | 0 | **2** | ✅ Complete |
-| **03** | **Planning** | **17** | 0 | **17** | ✅ Complete |
+| **03** | **Planning** | **18** | 0 | **18** | ✅ Complete |
 | **04** | **Executing** | **9** | 0 | **9** | ✅ Complete |
 | **05** | **Monitoring & Controlling** | **9** | 0 | **9** | ✅ Complete |
 | **06** | **Closing** | **3** | 0 | **3** | ✅ Complete |
 | **07** | **Adaptive & Hybrid** | **4** | 0 | **4** | ✅ Complete |
-| — | **TOTAL** | **47 built** | **0 planned** | **47** | ✅ **All built** |
+| — | **TOTAL** | **48 built** | **0 planned** | **48** | ✅ **All built** |
 
 ---
 
@@ -518,6 +518,25 @@ Each skill entry contains the following fields:
 | **Upstream Prerequisites** | SKL-03-16 |
 | **Downstream Skills** | SKL-04-03 |
 | **File Path** | `skills/03-planning/SKL-03-17-estimate-resources.md` |
+
+---
+
+### SKL-03-18 — Integrate Sustainability Into Project Planning
+
+| Field | Value |
+|-------|-------|
+| **Skill ID** | SKL-03-18 |
+| **Skill Name** | Integrate Sustainability Into Project Planning |
+| **Pack** | 03 — Planning |
+| **Status** | Draft · Untested |
+| **Source Type** | PMI-derived |
+| **Primary Artifact (Output)** | A-NEW-SUST — Sustainability Register |
+| **PMBOK8 Process Anchor** | Standard §3.6 · Guide §2.5.2 |
+| **Performance Domains** | Scope · Resources · Risk |
+| **Focus Area** | Planning |
+| **Upstream Prerequisites** | SKL-02-01 · SKL-02-02 · SKL-03-02 |
+| **Downstream Skills** | SKL-03-14 · SKL-04-09 · SKL-05-01 |
+| **File Path** | `skills/03-planning/SKL-03-18-integrate-sustainability-into-project-planning.md` |
 
 ---
 
@@ -1154,6 +1173,7 @@ SKL-02-01 ──▶ SKL-07-01 (Select Lifecycle Approach)
 | 03 | SKL-03-15 | Develop Budget | ✅ Draft · Untested |
 | 03 | SKL-03-16 | Plan Resource Management | ✅ Draft · Untested |
 | 03 | SKL-03-17 | Estimate Resources | ✅ Draft · Untested |
+| 03 | SKL-03-18 | Integrate Sustainability Into Project Planning | ✅ Draft · Untested |
 | 04 | SKL-04-01 | Direct and Manage Project Work | ✅ Draft · Untested |
 | 04 | SKL-04-02 | Manage Project Knowledge | ✅ Draft · Untested |
 | 04 | SKL-04-03 | Acquire Resources | ✅ Draft · Untested |
@@ -1180,9 +1200,9 @@ SKL-02-01 ──▶ SKL-07-01 (Select Lifecycle Approach)
 | 07 | SKL-07-03 | Facilitate Retrospectives and Continuous Improvement | ✅ Draft · Untested |
 | 07 | SKL-07-04 | Plan and Deliver Hybrid Projects | ✅ Draft · Untested |
 
-**Built:** 47 skills ✅  
+**Built:** 48 skills ✅  
 **Planned:** 0  
-**Total indexed:** 47 skills — All packs complete (Pack 01–07)
+**Total indexed:** 48 skills — All packs complete (Pack 01–07)
 
 ---
 
@@ -1208,6 +1228,7 @@ SKL-02-01 ──▶ SKL-07-01 (Select Lifecycle Approach)
 | A27 — Project Closure Record | SKL-06-01 | SKL-06-02 |
 | A28 — Communications and Reporting Record | SKL-03-08 | SKL-04-07 · SKL-05-09 |
 | A31 — Contract and Procurement Log | SKL-04-09 | SKL-04-09 (ongoing) |
+| A-NEW-SUST — Sustainability Register | SKL-03-18 | SKL-05-01 |
 
 ---
 
