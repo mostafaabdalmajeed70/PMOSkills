@@ -32,6 +32,9 @@ To help you get started, we have organized the entire documentation suite into *
 | 📁 **[SOP: How to Use Artifacts](human-practitioners/how-to-use-artifacts.md)** | Guidance on instantiating the 78 clean templates and case examples. | Core PMBOK 8 Deliverables |
 | ⚖️ **[SOP: Authority & T1-T4 Routing](human-practitioners/authority-routing.md)** | PMO escalation models, RACI charts, and decision matrices. | Portfolio & PMO Governance |
 | 👥 **[Audience & Role Guide](human-practitioners/audience-guide.md)** | Maps organizational roles (PM, PMO, Admin) to specific skills. | Stakeholder Performance Domain |
+| 📘 **[PM Handbook: Lifecycles SOP](human-practitioners/pm-handbook.md)** | Directives for Waterfall, Agile sprint iterations, and Hybrid loops. | Lifecycle Delivery Domain |
+| ✂️ **[Tailoring & Scaling Guide](human-practitioners/tailoring-guide.md)** | Tailoring parameters scaled across T1–T4 project complexity. | PMBOK 8 Tailoring Section |
+| ⚖️ **[Governance & RACI Guide](human-practitioners/governance-guide.md)** | OPM corporate-to-project mappings and core governance RACI parameters. | PMO Services governance |
 
 ---
 
@@ -42,6 +45,8 @@ To help you get started, we have organized the entire documentation suite into *
 |---|---|---|
 | 🤖 **[AI Agent Master Guide](ai-agents/ai-agent-guide.md)** | Master prompt injection templates, zero-shot loaders, and operational bounds. | Markdown + Prompts |
 | 📖 **[Source Reference Extraction Guide](ai-agents/source-usage-guide.md)** | Mappings to the 23 companion books, citation syntaxes, and authority levels. | PMBOK 8 Ontology |
+| 🧠 **[Knowledge Graph Ontology](ai-agents/ontology-specification.md)** | Directed relation schemas, edge classes, and metadata parsing rules. | AI Graph Traversal |
+| 🤖 **[System Prompts Library](ai-agents/system-prompts.md)** | Prompt library initializing PMO Orchestrator, Risk & Waste auditors. | Prompt Injection Templates |
 
 ---
 
@@ -52,6 +57,7 @@ To help you get started, we have organized the entire documentation suite into *
 |---|---|---|
 | 📋 **[Framework Changelog Guide](developer-tools/changelog-guide.md)** | Versioning thresholds, metadata change controls, and scorecard audits. | Governance Rules |
 | 📊 **[Skills-Reference CSV Map](developer-tools/skill-reference-map.csv)** | Programmatic skill-to-PMBOK8-process crosswalk. | CSV Dataset |
+| 🛠️ **[Automated Quality Gates](developer-tools/automated-validators.md)** | pre-commit hook hooks, CLI validation rules, and structural testing. | CLI Validator Handbooks |
 
 ---
 
@@ -64,6 +70,7 @@ To help you get started, we have organized the entire documentation suite into *
 | ❓ **[Frequently Asked Questions](general/faq.md)** | Standard repository operations, template copy rules, and troubleshooting. | PMO Helpdesk Support |
 | 🌱 **[Sustainability & ESG Guide](general/sustainability-guide.md)** | ESG principles and metrics mapped directly to Pack 03 skills. | Environmental Stewardship |
 | 🤝 **[How to Contribute](general/how-to-contribute.md)** | Coding conventions, validation rules, and pull request gates. | Open-Source Governance |
+
 
 ---
 

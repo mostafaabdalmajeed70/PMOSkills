@@ -71,4 +71,18 @@ Verify that your project satisfies PMBOK 8 sustainability standards during initi
 
 ---
 
+## 5. Integrated ESG-KPI Baseline Matrix
+
+To ensure ESG requirements are programmatically tracked and executed, use this standardized mapping index:
+
+| ESG Goal | Mandated Planning Skill | Target Artifact | Key Performance Indicator (KPI) | Target Value / Threshold |
+|---|---|---|---|---|
+| **E1: Carbon Reduction** | `SKL-03-05` (Schedule Planning) | Schedule Baseline (`A15`) | $CO_2e$ emissions per milestone | < 10 metric tons $CO_2e$ per sprint |
+| **E2: Material Circularity**| `SKL-03-09` (Quality Planning)  | Quality Management Plan (`A14`)| Recycled material content ratio | Minimum 75% circularity index |
+| **S1: Safety & Diversity** | `SKL-03-10` (Resource Planning) | Resource Management Record (`A07`) | Safety incidents & diversity index | Zero safety incidents; 50% diversity |
+| **G1: Vendor Auditing** | `SKL-03-11` (Procurement Planning)| Vendor Evaluation Record (`A17`)| Certified ESG supplier percentage | 100% of major tier-1 vendors |
+
+---
+
 *Authority: PMBOK8 Core Standard Principle 6 (§4.6) · PMOSkills Repository*
+
