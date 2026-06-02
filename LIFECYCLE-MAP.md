@@ -1,8 +1,22 @@
+---
+gov_id: LIFECYCLE-MAP
+gov_name: Project Lifecycle Map — Phases, Processes, Artifacts, and Skill Packs
+version: "1.0.1"
+status: Active
+authority: PMBOK8 Primary
+supersedes: none
+file_path: "LIFECYCLE-MAP.md"
+last_updated: "2026-06-03"
+---
+
 # LIFECYCLE-MAP.md
 **Repository:** PMO Skill Repository  
-**Version:** 1.0.0-draft  
-**Authority:** PMBOK8 — Guide §4 (Focus Areas) · Standard §4 (Project Life Cycle)  
+**Version:** 1.0.1  
+**Authority:** PMBOK8 — Standard §4.5 (Project Management Focus Areas) · Standard §4 (Project Life Cycle)  
 **Purpose:** End-to-end lifecycle flow — phases, PMBOK 8 processes, artifacts triggered, and skill packs activated at each stage.
+
+> **Change log v1.0.1 (2026-06-03):** Added GOV YAML front-matter. Corrected §Ref citation
+> from "Guide §4 (Focus Areas)" to "Standard §4.5 (Project Management Focus Areas)".
 
 ---
 
@@ -332,4 +346,4 @@ PMO skills are not bound to a single phase. They support all phases:
 
 ---
 
-*Authority: PMBOK8 §4 Focus Areas · §2.1–2.7 Performance Domain Processes · Standard §4 Life Cycle*
+*Authority: PMBOK8 — Standard §4.5 Focus Areas · §2.1–§2.7 Performance Domain Processes · Standard §4 Life Cycle*
