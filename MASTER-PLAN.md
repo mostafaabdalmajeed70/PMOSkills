@@ -1,20 +1,22 @@
 ---
 gov_id: MASTER-PLAN
 gov_name: PMOSkills Repository Master Development Plan
-version: "4.7.0"
+version: "4.8.0"
 status: Active
 authority: PMBOK8 Primary
-supersedes: NEXT-STEPS-PLAN.md v3.0.0 · MASTER-PLAN-V2.md v2.12.0 · MASTER-PLAN.md v4.6.0
+supersedes: NEXT-STEPS-PLAN.md v3.0.0 · MASTER-PLAN-V2.md v2.12.0 · MASTER-PLAN.md v4.7.0
 file_path: "MASTER-PLAN.md"
 ---
 
 # PMOSkills Repository — Master Development Plan
-**Version:** 4.7.0  
+**Version:** 4.8.0  
 **Date:** 2026-06-02  
 **Repository:** [https://github.com/fakhruldeen/PMOSkills](https://github.com/fakhruldeen/PMOSkills)  
 **Authority:** PMBOK 8 Primary · PMI Companion References Secondary  
 **Status:** Active roadmap  
-**Supersedes:** `NEXT-STEPS-PLAN.md` v3.0.0 · `MASTER-PLAN-V2.md` v2.12.0 · `MASTER-PLAN.md` v4.6.0 (2026-06-02)
+**Supersedes:** `NEXT-STEPS-PLAN.md` v3.0.0 · `MASTER-PLAN-V2.md` v2.12.0 · `MASTER-PLAN.md` v4.7.0 (2026-06-02)
+
+> **v4.8.0 update note (2026-06-02):** Phase 8 Next Steps & Compliance Integration: created comprehensive `docs/user-friendly-guide.md` (practitioner and AI manual with Mermaid charts) and `tests/pmbok8-compliance-test-plan.md` (formal 3-tier L1/L2/L3 testing protocol). Formally mapped Phase 8 roadmap additions (AST automations, static sites, pilot scopes) and updated scorecards.
 
 > **v4.7.0 update note (2026-06-02):** Phase 6 Test Suite and Phase 7 Quality Audit Complete: 48 skill test suites, 7 cross-skill integration flow tests, and catalogs fully implemented. Resolved all legacy mixed-case file non-conformances (NC-001 through NC-006) by renaming files to lowercase kebab-case and updating all links. All quality audit gates (Q-01 through Q-06) verified.
 
@@ -246,8 +248,9 @@ The current 7-pack structure covers the project lifecycle (Packs 01–07). The g
 | **Phase 4-C11** | **Tailoring Guidance Layer** | **Phase 4** | ✅ COMPLETE |
 | **Phase 4-C12** | **PMO Reference Layer** | **Phase 3-EXT** | ✅ COMPLETE |
 | **Phase 4-NEW** | **`docs/source-usage-guide.md` + skill-reference-map** | **Phase 0** | ✅ COMPLETE |
-| Phase 6 | Test Suite (55 files, 430 test cases) | Phase 3 + Phase 5 | ✅ Complete |
-| Phase 7 | Quality Audit | After each phase | ✅ Continuous · Q1-Q6 resolved |
+| Phase 6 | Test Suite (55 files, 430 test cases) | Phase 3 + Phase 5 | ✅ COMPLETE |
+| Phase 7 | Quality Audit | After each phase | ✅ COMPLETE (Continuous) |
+| **Phase 8** | **Next Steps & Compliance Integration** | **Phase 7** | ✅ COMPLETE (User guide & test plan built) |
 
 ---
 
@@ -559,7 +562,8 @@ Phase 7 (quality audit) ── continuous ── runs after EVERY phase
 | **Phase 4-NEW** | **source-usage-guide + skill-reference-map + audience-guide + sustainability-guide** | **4** | **4** | ✅ |
 | Phase 5 | Shared files | 25 | 25 | ✅ |
 | Phase 6 | Test files (incl. Pack 08–09 tests) | 69 | 69 | ✅ |
-| **TOTAL** | **All files** | **425** | **425** | **100% complete** |
+| **Phase 8** | **Next Steps & Quality Test Plan** | **2** | **2** | ✅ |
+| **TOTAL** | **All files** | **427** | **427** | **100% complete** |
 
 ---
 
@@ -584,6 +588,7 @@ Phase 7 (quality audit) ── continuous ── runs after EVERY phase
 | **S-015** | **2026-06-01** | **Phase 0** | **P0-A complete (SHA verification). P0-B complete: all 30 C4-Process-Records/ root files deleted (PR11–PR40) in 30 sequential commits. P0-C started: C5 content read; MASTER-PLAN updated to v4.5.0; KA-Crossref-Index.md migrated to reference/knowledge-areas/.** | **v4.5.0** |
 | **S-016** | **2026-06-01** | **Phase 0** | **Finalized Phase 0 Structural Cleanup: archived legacy drafts & old artifacts monolith to docs/legacy/, deleted empty repo/ and duplicate shared/QUALITY-STANDARDS.md, updated READMEs and active roadmaps. 100% complete.** | **v4.6.0** |
 | **S-017** | **2026-06-02** | **Phase 6 & 7** | **Implemented 48 individual skill deterministic test suites (9 cases each) and 7 lifecycle integration flow tests with Mermaid charts. Renamed legacy mixed-case files (A14, A15, A16) to lowercase kebab-case, updated references, and successfully resolved all NC-001 through NC-006 entries.** | **v4.7.0** |
+| **S-018** | **2026-06-02** | **Phase 8** | **Created docs/user-friendly-guide.md (practitioner manual with Mermaid charts) and tests/pmbok8-compliance-test-plan.md (3-tier QA compliance strategy). Updated roadmap next steps, scorecards, and historical version charts.** | **v4.8.0** |
 
 ---
 
@@ -634,11 +639,12 @@ See [`COMPLETION-PLAN-V4.md §8`](./COMPLETION-PLAN-V4.md) for the foundational 
 | 4.4.0 | 2026-06-01 | Quality enforcement integrated · QUALITY-STANDARDS.md (v1.1.0) declared single authority for all quality, naming, structure, YAML schemas · §2 updated to remove inline quality notes and point to QUALITY-STANDARDS.md · §9 rules 13–20 added for file-level quality enforcement · YAML front-matter (GOV schema) added to this file · QUALITY-STANDARDS.md added to §1.1 root file inventory |
 | 4.4.1 | 2026-06-01 | QUALITY-STANDARDS.md version reference updated to v2.0.0 in §2 (§6–§10 now complete). §2.1 Document Roles description expanded to include source traceability and pre-commit checklist. Rule 14 and 20 in §9 updated to reference correct gate section numbers (§7.2, §7.3, §9). Session S-014 logged. S-015 placeholder added. |
 | 4.5.0 | 2026-06-01 | Phase 0 Group 0A complete: P0-A (SHA verification) and P0-B (delete 30 C4-Process-Records/ root files, PR11–PR40, 30 commits) done. §5 Phase 0 task table updated with Status column. §1.2 C4 row updated to ✅ CLEARED. §3.2 knowledge-areas/ row updated to 🔄. §4 Phase 0 row updated to IN PROGRESS. §7 scorecard Phase 0 row updated. S-015 logged. S-016 placeholder added. |
-| **4.6.0** | **2026-06-01** | **Finalized Phase 0 structural cleanup. Archived legacy drafts to docs/legacy/, deleted empty repo/ and duplicate shared/QUALITY-STANDARDS.md. Updated READMEs, MASTER-PLAN.md, and COMPLETION-PLAN.md. Tracked Phase 0 as 100% complete in scorecard. S-016 logged.** |
+| **4.7.0** | **2026-06-02** | **Phase 6 Test Suites and Phase 7 Quality Audit Complete: 48 skill test suites, 7 cross-skill integration flow tests, and catalogs fully implemented. Resolved all legacy mixed-case file non-conformances (NC-001 through NC-006) by renaming files to lowercase kebab-case and updating all links.** |
+| **4.8.0** | **2026-06-02** | **Phase 8 Next Steps & Compliance Integration: created comprehensive docs/user-friendly-guide.md and tests/pmbok8-compliance-test-plan.md. Formally mapped Phase 8 roadmap additions (AST automations, static sites, pilot scopes) and updated scorecards.** |
 
 ---
 
 *Authority: PMBOK8 Guide Primary · PMI Companion References Secondary*  
 *Repository: [https://github.com/fakhruldeen/PMOSkills](https://github.com/fakhruldeen/PMOSkills)*  
 *Maintainer: @fakhruldeen*  
-*Last Updated: 2026-06-01 · Version 4.6.0*
+*Last Updated: 2026-06-02 · Version 4.8.0*
