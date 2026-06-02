@@ -1,20 +1,22 @@
 ---
 gov_id: MASTER-PLAN
 gov_name: PMOSkills Repository Master Development Plan
-version: "4.6.0"
+version: "4.7.0"
 status: Active
 authority: PMBOK8 Primary
-supersedes: NEXT-STEPS-PLAN.md v3.0.0 · MASTER-PLAN-V2.md v2.12.0 · MASTER-PLAN.md v4.5.0
+supersedes: NEXT-STEPS-PLAN.md v3.0.0 · MASTER-PLAN-V2.md v2.12.0 · MASTER-PLAN.md v4.6.0
 file_path: "MASTER-PLAN.md"
 ---
 
 # PMOSkills Repository — Master Development Plan
-**Version:** 4.6.0  
-**Date:** 2026-06-01  
+**Version:** 4.7.0  
+**Date:** 2026-06-02  
 **Repository:** [https://github.com/fakhruldeen/PMOSkills](https://github.com/fakhruldeen/PMOSkills)  
 **Authority:** PMBOK 8 Primary · PMI Companion References Secondary  
 **Status:** Active roadmap  
-**Supersedes:** `NEXT-STEPS-PLAN.md` v3.0.0 · `MASTER-PLAN-V2.md` v2.12.0 · `MASTER-PLAN.md` v4.5.0 (2026-06-01)
+**Supersedes:** `NEXT-STEPS-PLAN.md` v3.0.0 · `MASTER-PLAN-V2.md` v2.12.0 · `MASTER-PLAN.md` v4.6.0 (2026-06-02)
+
+> **v4.7.0 update note (2026-06-02):** Phase 6 Test Suite and Phase 7 Quality Audit Complete: 48 skill test suites, 7 cross-skill integration flow tests, and catalogs fully implemented. Resolved all legacy mixed-case file non-conformances (NC-001 through NC-006) by renaming files to lowercase kebab-case and updating all links. All quality audit gates (Q-01 through Q-06) verified.
 
 > **v4.6.0 update note (2026-06-01):** Phase 0 Structural Cleanup Complete: all legacy root directories and duplicate standards files removed. Staging files in repo/ and old artifacts monolith archived to docs/legacy/. Post-cleanup README alignment to show clean reference/ and artifacts/ structures. Session S-016 logged.
 
@@ -244,9 +246,8 @@ The current 7-pack structure covers the project lifecycle (Packs 01–07). The g
 | **Phase 4-C11** | **Tailoring Guidance Layer** | **Phase 4** | **❌ Not started — NEW** |
 | **Phase 4-C12** | **PMO Reference Layer** | **Phase 3-EXT** | **❌ Not started — NEW** |
 | **Phase 4-NEW** | **`docs/source-usage-guide.md` + skill-reference-map** | **Phase 0** | **❌ Not started — NEW** |
-| Phase 5 | Shared Components + Validators (25 files) | Phase 3 | ❌ Not started |
-| Phase 6 | Test Suite (55 files, 430 test cases) | Phase 3 + Phase 5 | ❌ Not started |
-| Phase 7 | Quality Audit | After each phase | ❌ Continuous |
+| Phase 6 | Test Suite (55 files, 430 test cases) | Phase 3 + Phase 5 | ✅ Complete |
+| Phase 7 | Quality Audit | After each phase | ✅ Continuous · Q1-Q6 resolved |
 
 ---
 
