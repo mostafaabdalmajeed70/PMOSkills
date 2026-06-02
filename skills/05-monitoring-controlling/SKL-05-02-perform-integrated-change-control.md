@@ -1,14 +1,42 @@
+---
+skill_id: SKL-05-02
+name: Perform Integrated Change Control
+pack: "05 — Monitoring and Controlling"
+version: 1.1.0
+status: "Draft · Untested"
+source_type: PMI-derived
+authority: PMI-derived
+pmbok8_anchor: "Process-Groups §7.2 · Figure 7-3 · Figure 7-4"
+performance_domains:
+  - Governance
+  - Uncertainty
+  - Planning
+focus_area: Monitoring and Controlling
+primary_artifact: "A12 — Change Log (decisions)"
+artifacts_updated:
+  - "A08 — Scope Baseline"
+  - "A15 — Schedule Baseline"
+  - "A16 — Cost Baseline"
+upstream_prerequisites:
+  - SKL-05-01
+downstream_skills:
+  - SKL-04-01
+file_path: skills/05-monitoring-controlling/SKL-05-02-perform-integrated-change-control.md
+tests: 5
+last_updated: "2026-06-03"
+---
+
 # SKL-05-02 — Perform Integrated Change Control
 
 **Skill ID:** SKL-05-02  
 **Canonical Title:** Perform Integrated Change Control  
 **Pack:** 05 — Monitoring and Controlling  
-**Version:** 1.0.0  
+**Version:** 1.1.0  
 **Status:** Draft · Untested  
 **Source Type:** PMI-derived  
 **File Path:** `skills/05-monitoring-controlling/SKL-05-02-perform-integrated-change-control.md`  
 **Authority:** Process Groups: A Practice Guide §7.2 · Figure 7-3 · Figure 7-4  
-**Last Updated:** 2026-05-30
+**Last Updated:** 2026-06-03
 
 ---
 
@@ -284,6 +312,15 @@ During execution, a critical system component fails, requiring immediate procure
 |-----------|-------|---------|---------|
 | Process Groups: A Practice Guide | Process-Groups | §7.2, Figure 7-3, Figure 7-4 | Core process definition, I/T/O, data flow |
 | PMBOK Guide, Eighth Edition | PMBOK8 | Governance domain · Uncertainty domain | Governance and change integration |
+
+---
+
+## Change Log
+
+| Version | Date | Author | Change Description |
+|---|---|---|---|
+| 1.0.0 | 2026-05-30 | PMO Repository | Initial build |
+| 1.1.0 | 2026-06-03 | Wave 1 QA | Added GOV YAML front-matter; updated Last Updated date |
 
 ---
 
