@@ -56,14 +56,17 @@ pmo-skill-repo/
 ├── PRINCIPLES-CROSSWALK.md          ← 12 principles × 11 domains × 40 processes
 ├── source-authority.md              ← Source authority rules and reference list
 ├── pmi_reference_list.md            ← Canonical PMI reference list
-├── MASTER-PLAN.md                   ← Master tracking roadmap (v4.5.0)
-├── COMPLETION-PLAN.md               ← Phase-by-phase completion plan (v4.1.0)
+├── MASTER-PLAN.md                   ← Master tracking roadmap (v4.7.0)
 ├── QUALITY-STANDARDS.md             ← Single source of truth for schemas & gates (v2.0.0)
 │
+├── Archive/                         ← Creation artifacts, old completion plans, and legacy drafts
+│   ├── COMPLETION-PLAN.md           ← Phase-by-phase completion plan (v4.1.0)
+│   ├── legacy/                      ← Archived historical draft files and monolithic exports
+│   └── meta/                        ← Skills generation metadata
+│
 ├── docs/
-│   ├── image/
-│   │   └── pmoskills.jpeg           ← Repository logo
-│   └── legacy/                      ← Archived historical draft files and monolithic exports
+│   └── image/
+│       └── pmoskills.jpeg           ← Repository logo
 │
 ├── reference/                       ← PMBOK 8 Reference Layer
 │   ├── README.md                    ← Reference structure explanation
@@ -218,8 +221,8 @@ All artifacts are labeled: `PMI-derived` | `synthesis` | `organization-defined`
 | `PRINCIPLES-CROSSWALK.md` | 12 principles × 11 domains matrix |
 | `source-authority.md` | Source authority rules, reference hierarchy |
 | `pmi_reference_list.md` | Canonical list of all PMI references used in this repo |
-| `MASTER-PLAN.md` | Master development plan |
-| `COMPLETION-PLAN.md` | Phase-by-phase completion roadmap |
+| `MASTER-PLAN.md` | Master development plan and session log |
+| `Archive/COMPLETION-PLAN.md` | Phase-by-phase completion roadmap (archived) |
 | `QUALITY-STANDARDS.md` | Canonical quality gates, YAML schemas, and pre-commit checklists |
 
 ---
@@ -235,6 +238,7 @@ All artifacts are labeled: `PMI-derived` | `synthesis` | `organization-defined`
 | 1.3.1 | 2026-05-31 | Added logo reference (docs/img/pmoskills.jpg), ASCII art banner, and PMI disclaimer |
 | 1.4.0 | 2026-05-31 | C4 complete: all 40 process records (PR01–PR40) in C4-Process-Records/; C5 KA Cross-Reference Index added; README updated |
 | **4.5.0** | **2026-06-01** | **Phase 0 Cleanup Complete: all legacy root directories and duplicate standards files removed. Post-migration README alignment to show clean reference/ and artifacts/ structures.** |
+| **4.7.0** | **2026-06-02** | **Phases 6 & 7 Complete: 48 skill test suites, 7 integration tests, naming normalization, and archiving of non-relevant development files.** |
 
 ---
 
