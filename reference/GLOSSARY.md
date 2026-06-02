@@ -2,11 +2,12 @@
 ref_id: GLOSSARY
 ref_type: Glossary
 ref_name: "PMOSkills Reference Glossary"
-version: "1.0.0"
+version: "1.0.1"
 status: Active
 pmbok8_source: "PMBOK8 Guide §Glossary · Process Groups: A Practice Guide §Glossary"
 companion_ref_shortcode: "PMI-GLOS"
 file_path: "reference/GLOSSARY.md"
+last_updated: "2026-06-03"
 ---
 
 # PMOSkills Reference Glossary
@@ -15,14 +16,18 @@ file_path: "reference/GLOSSARY.md"
 **Type:** Glossary  
 **PMBOK8 Source:** PMBOK 8th Edition Glossary · Process Groups: A Practice Guide Glossary  
 **Companion Reference:** PMI Standards Glossary (PMI-GLOS)  
-**Version:** 1.0.0  
+**Version:** 1.0.1  
 **Status:** Active  
+
+> **Change log v1.0.1 (2026-06-03):** Fixed process record count in Purpose from 41 to 40
+> (PMBOK 8 defines 40 nonprescriptive processes). Added legacy/compatibility note to
+> the Knowledge Area term (F-08).
 
 ---
 
 ## Purpose
 
-This glossary serves as the **unified terminology standard** for the PMOSkills repository. It defines essential acronyms, project management metrics, strategic baselines, and lifecycle frameworks utilized across the 41 process records (**PR01–PR41**) and associated performance domains.
+This glossary serves as the **unified terminology standard** for the PMOSkills repository. It defines essential acronyms, project management metrics, strategic baselines, and lifecycle frameworks utilized across the 40 process records (**PR01–PR40**) and associated performance domains.
 
 ---
 
@@ -73,7 +78,7 @@ A strategic value proposition that provides the commercial justification for ini
 A formally constituted group of key stakeholders responsible for reviewing, evaluating, approving, delaying, or rejecting proposed modifications to project baselines.
 
 #### Change Request
-A formal proposal to modify any project baseline, subsidiary plan, or process document. All change requests are logged and routed through *Perform Integrated Change Control (PR31)*.
+A formal proposal to modify any project baseline, subsidiary plan, or process document. All change requests are logged and routed through *Assess and Implement Changes (PMBOK8 §2.1.6.8)*.
 
 #### Cost Baseline (A16)
 The approved version of the time-phased project budget, excluding management reserves, against which cost variances are measured.
@@ -144,6 +149,15 @@ A living register used to capture, track, assign ownership to, and monitor the r
 #### Knowledge Area (KA)
 An identified domain of project management defined by its knowledge requirements and described in terms of its component processes, practices, and inputs/outputs.
 
+> ⚠️ **Legacy/Compatibility Note:** Knowledge Areas were the primary structural organizing
+> unit in PMBOK 6 and earlier (e.g., Integration Management, Scope Management, Schedule
+> Management). **PMBOK 7 replaced Knowledge Areas with Performance Domains**, and **PMBOK 8
+> retained and refined the seven Performance Domains** (Governance, Scope, Schedule,
+> Finance, Stakeholders, Resources, Risk). Knowledge Area terminology is retained here for
+> legacy compatibility and cross-edition traceability only. All primary references in this
+> repository use PMBOK 8 Performance Domain terminology. See `reference/performance-domains/`
+> for the active domain structure.
+
 ---
 
 ### L
@@ -174,6 +188,9 @@ Plans, templates, process guidelines, checklists, databases, and historical less
 
 #### Parametric Estimating
 An estimating technique that uses a statistical relationship between historical data and other variables (e.g., lines of code, square footage) to calculate estimates.
+
+#### Performance Domain
+One of the seven integrated areas of activity critical to project delivery, as defined in PMBOK 8 Guide §2: Governance, Scope, Schedule, Finance, Stakeholders, Resources, and Risk.
 
 #### Performance Measurement Baseline (PMB)
 An integrated baseline model formed by combining the Scope Baseline, Schedule Baseline, and Cost Baseline, used to measure holistic project execution.
