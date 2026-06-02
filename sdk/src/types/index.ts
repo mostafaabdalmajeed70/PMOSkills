@@ -38,9 +38,45 @@ export interface OntologySpec {
   content: string;
 }
 
+export interface ArtifactTemplate {
+  id: string;
+  title: string;
+  category: string;
+  version: string;
+  status: string;
+  rawContent: string;
+  [key: string]: any;
+}
+
+export interface ReferenceFile {
+  path: string;
+  title: string;
+  category: string;
+  rawContent: string;
+  [key: string]: any;
+}
+
+export interface SharedFile {
+  path: string;
+  fileName: string;
+  rawContent: string;
+}
+
+export interface TestFile {
+  id: string;
+  path: string;
+  title: string;
+  rawContent: string;
+  [key: string]: any;
+}
+
 export interface PMOSkillsStore {
   skills: Record<string, Skill>;
   processes: Record<string, ProcessRecord>;
+  artifacts: Record<string, ArtifactTemplate>;
+  reference: Record<string, ReferenceFile>;
+  shared: Record<string, SharedFile>;
+  tests: Record<string, TestFile>;
   systemPrompts: Record<string, SystemPrompt>;
   ontology: OntologySpec;
   version: string;

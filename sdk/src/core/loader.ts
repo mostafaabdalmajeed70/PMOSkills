@@ -1,4 +1,4 @@
-import { PMOSkillsStore, Skill, ProcessRecord, SystemPrompt, OntologySpec } from '../types';
+import { PMOSkillsStore, Skill, ProcessRecord, SystemPrompt, OntologySpec, ArtifactTemplate, ReferenceFile, SharedFile, TestFile } from '../types';
 import storeData from '../db/store.json';
 
 // Cast the imported JSON into our strict PMOSkillsStore type
@@ -41,6 +41,62 @@ export class PMOSkillsLoader {
    */
   public getProcesses(): ProcessRecord[] {
     return Object.values(store.processes);
+  }
+
+  /**
+   * Retrieves an artifact deliverable template by its ID (e.g., 'A01').
+   */
+  public getArtifact(id: string): ArtifactTemplate | undefined {
+    return store.artifacts[id] || Object.values(store.artifacts).find(a => a.id === id || a.title === id);
+  }
+
+  /**
+   * Returns all artifact deliverable templates.
+   */
+  public getArtifacts(): ArtifactTemplate[] {
+    return Object.values(store.artifacts);
+  }
+
+  /**
+   * Retrieves a specific reference file by its relative path.
+   */
+  public getReferenceFile(path: string): ReferenceFile | undefined {
+    return store.reference[path] || Object.values(store.reference).find(r => r.path === path || r.title === path);
+  }
+
+  /**
+   * Returns all reference files.
+   */
+  public getReferenceFiles(): ReferenceFile[] {
+    return Object.values(store.reference);
+  }
+
+  /**
+   * Retrieves a specific shared configuration file by its path.
+   */
+  public getSharedFile(path: string): SharedFile | undefined {
+    return store.shared[path] || Object.values(store.shared).find(s => s.path === path || s.fileName === path);
+  }
+
+  /**
+   * Returns all shared files.
+   */
+  public getSharedFiles(): SharedFile[] {
+    return Object.values(store.shared);
+  }
+
+  /**
+   * Retrieves a specific test file by ID (e.g. ST-SKL-01-01) or path.
+   */
+  public getTestFile(id: string): TestFile | undefined {
+    return store.tests[id] || Object.values(store.tests).find(t => t.id === id || t.path === id);
+  }
+
+  /**
+   * Returns all test files.
+   */
+  public getTestFiles(): TestFile[] {
+    return Object.values(store.tests);
   }
 
   /**

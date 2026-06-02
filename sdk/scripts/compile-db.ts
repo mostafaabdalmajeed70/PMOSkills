@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { PMOSkillsStore, Skill, ProcessRecord, SystemPrompt, OntologySpec } from '../src/types';
+import { PMOSkillsStore, Skill, ProcessRecord, SystemPrompt, OntologySpec, ArtifactTemplate, ReferenceFile, SharedFile, TestFile } from '../src/types';
 
 // Helper to parse simple YAML front-matter without dependencies
 function parseFrontMatter(content: string) {
@@ -56,6 +56,26 @@ function getFilesRecursively(dir: string, extension: string): string[] {
       results = results.concat(getFilesRecursively(filePath, extension));
     } else if (filePath.endsWith(extension)) {
       results.push(filePath);
+    }
+  }
+  return results;
+}
+
+// Recursively find files in a directory matching multiple extensions
+function getFilesRecursivelyMultiple(dir: string, extensions: string[]): string[] {
+  let results: string[] = [];
+  if (!fs.existsSync(dir)) return results;
+  const list = fs.readdirSync(dir);
+  for (const file of list) {
+    const filePath = path.resolve(dir, file);
+    const stat = fs.statSync(filePath);
+    if (stat && stat.isDirectory()) {
+      results = results.concat(getFilesRecursivelyMultiple(filePath, extensions));
+    } else {
+      const ext = path.extname(file);
+      if (extensions.includes(ext)) {
+        results.push(filePath);
+      }
     }
   }
   return results;
@@ -158,6 +178,10 @@ function main() {
   const store: PMOSkillsStore = {
     skills: {},
     processes: {},
+    artifacts: {},
+    reference: {},
+    shared: {},
+    tests: {},
     systemPrompts: {},
     ontology: {} as OntologySpec,
     version: '0.3.0',
@@ -174,7 +198,6 @@ function main() {
     const { metadata, body } = parseFrontMatter(raw);
     const id = metadata.skill_id || path.basename(file, '.md').split('-').slice(0, 3).join('-');
     
-    // Extract template (entire body below front matter is the prompt/execution manual template)
     store.skills[id] = {
       id,
       title: metadata.skill_name || id,
@@ -216,7 +239,108 @@ function main() {
     };
   }
 
-  // 3. Compile System Prompts
+  // 3. Compile Artifacts
+  const artifactsDir = path.resolve(rootDir, 'artifacts');
+  if (fs.existsSync(artifactsDir)) {
+    const artifactFiles = getFilesRecursively(artifactsDir, '.md');
+    console.log(`Found ${artifactFiles.length} artifact files to parse...`);
+    for (const file of artifactFiles) {
+      const raw = fs.readFileSync(file, 'utf-8');
+      const { metadata, body } = parseFrontMatter(raw);
+      const relativePath = path.relative(rootDir, file);
+      
+      // Match A01, A02, etc.
+      const idMatch = path.basename(file).match(/^A\d+/);
+      const id = metadata.artifact_id || (idMatch ? idMatch[0] : relativePath);
+      
+      // Skip duplicate entries if template vs instantiated is present, keeping template as primary
+      if (store.artifacts[id] && !file.includes('-template')) {
+        continue;
+      }
+
+      store.artifacts[id] = {
+        id,
+        title: metadata.name || metadata.artifact_name || metadata.title || (body.trim().split('\n')[0].replace(/^#+\s*/, '').trim()) || id,
+        category: metadata.category || path.basename(path.dirname(file)),
+        version: metadata.version || '1.0.0',
+        status: metadata.status || 'Active',
+        rawContent: raw,
+        ...metadata
+      };
+    }
+  }
+
+  // 4. Compile Reference Files (excluding processes/)
+  const referenceDir = path.resolve(rootDir, 'reference');
+  if (fs.existsSync(referenceDir)) {
+    const referenceFiles = getFilesRecursively(referenceDir, '.md');
+    console.log(`Found ${referenceFiles.length} reference files to parse...`);
+    for (const file of referenceFiles) {
+      // Skip processes directory
+      if (file.includes('/reference/processes/')) {
+        continue;
+      }
+      const raw = fs.readFileSync(file, 'utf-8');
+      const { metadata, body } = parseFrontMatter(raw);
+      const relativePath = path.relative(rootDir, file);
+      const category = path.basename(path.dirname(file));
+
+      store.reference[relativePath] = {
+        path: relativePath,
+        title: metadata.name || metadata.title || metadata.ref_name || (body.trim().split('\n')[0].replace(/^#+\s*/, '').trim()) || path.basename(file, '.md'),
+        category,
+        rawContent: raw,
+        ...metadata
+      };
+    }
+  }
+
+  // 5. Compile Shared Assets
+  const sharedDir = path.resolve(rootDir, 'shared');
+  if (fs.existsSync(sharedDir)) {
+    const sharedFiles = getFilesRecursivelyMultiple(sharedDir, ['.py', '.json', '.md']);
+    console.log(`Found ${sharedFiles.length} shared files to parse...`);
+    for (const file of sharedFiles) {
+      const raw = fs.readFileSync(file, 'utf-8');
+      const relativePath = path.relative(rootDir, file);
+      
+      store.shared[relativePath] = {
+        path: relativePath,
+        fileName: path.basename(file),
+        rawContent: raw
+      };
+    }
+  }
+
+  // 6. Compile Tests Assets
+  const testsDir = path.resolve(rootDir, 'tests');
+  if (fs.existsSync(testsDir)) {
+    const testFiles = getFilesRecursivelyMultiple(testsDir, ['.md', '.json', '.py']);
+    console.log(`Found ${testFiles.length} test files to parse...`);
+    for (const file of testFiles) {
+      // Don't bundle local vitest tests or sdk tests
+      if (file.includes('sdk/tests')) {
+        continue;
+      }
+      const raw = fs.readFileSync(file, 'utf-8');
+      const { metadata, body } = parseFrontMatter(raw);
+      const relativePath = path.relative(rootDir, file);
+      
+      // Look for ST-SKL-01-01 format
+      const idMatch = path.basename(file).match(/^ST-[A-Z0-9\-]+/i);
+      const id = metadata.test_id || (idMatch ? idMatch[0] : relativePath);
+
+      store.tests[id] = {
+        id,
+        path: relativePath,
+        title: metadata.name || metadata.title || metadata.test_description || (body.trim().split('\n')[0].replace(/^#+\s*/, '').trim()) || path.basename(file, '.md'),
+        rawContent: raw,
+        ...metadata
+      };
+    }
+  }
+
+  // 7. Compile System Prompts
   const promptsFile = path.resolve(rootDir, 'docs/ai-agents/system-prompts.md');
   if (fs.existsSync(promptsFile)) {
     const raw = fs.readFileSync(promptsFile, 'utf-8');
@@ -225,7 +349,7 @@ function main() {
     console.log(`Parsed ${Object.keys(store.systemPrompts).length} system prompts.`);
   }
 
-  // 4. Compile Ontology
+  // 8. Compile Ontology
   const ontologyFile = path.resolve(rootDir, 'docs/ai-agents/ontology-specification.md');
   if (fs.existsSync(ontologyFile)) {
     const raw = fs.readFileSync(ontologyFile, 'utf-8');

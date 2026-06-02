@@ -57,6 +57,62 @@ describe('PMOSkills SDK Test Suite', () => {
     });
   });
 
+  describe('Artifact Templates', () => {
+    it('should load all artifact deliverable templates', () => {
+      const artifacts = pmoskills.getArtifacts();
+      expect(artifacts.length).toBeGreaterThan(0);
+    });
+
+    it('should retrieve A01 template correctly', () => {
+      const a01 = pmoskills.getArtifact('A01');
+      expect(a01).toBeDefined();
+      expect(a01?.id).toBe('A01');
+      expect(a01?.title).toContain('Business Case');
+    });
+  });
+
+  describe('Reference Files', () => {
+    it('should load non-process reference files', () => {
+      const refFiles = pmoskills.getReferenceFiles();
+      expect(refFiles.length).toBeGreaterThan(0);
+      expect(refFiles.some(r => r.category === 'principles')).toBe(true);
+    });
+
+    it('should retrieve a principle by relative path', () => {
+      const p01 = pmoskills.getReferenceFile('reference/principles/P01-stewardship.md');
+      expect(p01).toBeDefined();
+      expect(p01?.title).toContain('Steward');
+    });
+  });
+
+  describe('Shared Assets', () => {
+    it('should load shared validation scripts and checklists', () => {
+      const sharedFiles = pmoskills.getSharedFiles();
+      expect(sharedFiles.length).toBeGreaterThan(0);
+      expect(sharedFiles.some(s => s.fileName === 'validate_structure.py')).toBe(true);
+    });
+
+    it('should retrieve validate_structure.py file content', () => {
+      const validator = pmoskills.getSharedFile('shared/validate_structure.py');
+      expect(validator).toBeDefined();
+      expect(validator?.rawContent).toContain('PMOSKILLS STRUCTURAL INTEGRITY VALIDATOR');
+    });
+  });
+
+  describe('Compliance and Skill Tests', () => {
+    it('should load all testing scenarios', () => {
+      const testFiles = pmoskills.getTestFiles();
+      expect(testFiles.length).toBeGreaterThan(0);
+    });
+
+    it('should retrieve ST-SKL-01-01 test scenario', () => {
+      const st01 = pmoskills.getTestFile('ST-SKL-01-01');
+      expect(st01).toBeDefined();
+      expect(st01?.id).toBe('ST-SKL-01-01');
+      expect(st01?.title).toContain('Establish PM Governance Framework');
+    });
+  });
+
   describe('Prompt Template Injector', () => {
     it('should inject variables into {{ brace }} format placeholders', () => {
       const template = 'Hello {{ name }}! Welcome to {{ projectName }}.';
