@@ -1,19 +1,27 @@
 ---
-file: source-authority.md
-version: "1.0.0"
+gov_id: SOURCE-AUTHORITY
+gov_name: Repository Source Authority Model
+version: "1.0.1"
 status: Active
-last_updated: "2026-05-29"
+authority: PMBOK8 Primary
+supersedes: "1.0.0"
+file_path: "source-authority.md"
+last_updated: "2026-06-03"
 owner: Repository Maintainer
 approval_authority: Repository Maintainer — structural changes require sponsor awareness
 ---
 
 # source-authority.md — Repository Source Authority Model
 
-**Version:** 1.0.0  
+**Version:** 1.0.1  
 **Status:** Active  
 **Authority:** PMBOK8 · Artifacts-V-1.0.5 · pmi_reference_list.md  
-**Last Updated:** 2026-05-29  
+**Last Updated:** 2026-06-03  
 **File Path:** `source-authority.md`
+
+> **Change log v1.0.1 (2026-06-03):** Corrected PMBOK 8 publication year to 2025 (ANSI/PMI 99-001-2025).
+> Corrected principle count from 12 to 6 and section reference from Section 2 to Section 3 (§3.3–§3.8).
+> Updated YAML block to canonical GOV schema.
 
 ---
 
@@ -42,20 +50,27 @@ between sources.
 |---|---|
 | Canonical alias | `PMBOK8` |
 | Document | *A Guide to the Project Management Body of Knowledge (PMBOK® Guide) — Eighth Edition* and *The Standard for Project Management* (published together) |
-| Publisher | Project Management Institute (PMI), 2021 |
+| Publisher | Project Management Institute (PMI), 2025 |
+| Standard designation | ANSI/PMI 99-001-2025 |
 | Canonical citation format | `PMBOK8 — Guide §[section number] [section title] · Figure [n]` |
 | Standard citation format | `PMBOK8 — Standard §[section number] [section title]` |
 | Vocabulary status | All PMBOK 8 terms are the default vocabulary of this repository |
 | Supersedes | PMBOK 7, PMBOK 6, and all earlier editions as the default reference |
 
 **What Tier 1 governs:**
-- All 12 PMI Principles (Standard, Section 2)
-- All 7 Performance Domains (Guide, Section 2)
+- All 6 PMI Principles (Standard, Section 3 — §3.3 through §3.8)
+- All 7 Performance Domains (Guide, Section 2 — Governance, Scope, Schedule, Finance, Stakeholders, Resources, Risk)
 - All 5 Focus Areas: Initiating, Planning, Executing, Monitoring and Controlling, Closing
 - All 40 nonprescriptive processes (Guide, Table 2-1)
 - Tailoring logic (Guide, Section 3)
 - Development approach and lifecycle (Guide, Section 2.3)
 - Artifact and governance pattern definitions
+
+> **Note on PMBOK 7 principle heritage:** PMBOK 8 Standard §3.1–§3.2 explains that the six current
+> principles were distilled from the twelve principles in PMBOK 7. The repository's
+> `reference/principles/P7-01` through `P7-12` files preserve those twelve principles
+> as historical reference and cross-edition traceability. They are labeled `edition: PMBOK7`
+> and must not be confused with the six active PMBOK 8 principles.
 
 ---
 
@@ -151,7 +166,7 @@ PMBOK8 — Guide §2.5.2.2 Plan Stakeholder Engagement · Figure 2-34
 
 ### Tier 1 — PMBOK 8 Standard principle reference
 ```
-PMBOK8 — Standard §2.3 Principle: Stakeholders
+PMBOK8 — Standard §3.4 Principle: Focus on Value
 ```
 
 ### Tier 2 — Companion standard reference
@@ -182,7 +197,7 @@ Source type: synthesis
 
 | ID | Description | Status | Owner |
 |---|---|---|---|
-| — | No open conflicts at v1.0.0 | — | — |
+| — | No open conflicts at v1.0.1 | — | — |
 
 ---
 
