@@ -200,6 +200,7 @@ To ensure clear accountability, PMOSkills employs a strict **T1 to T4 Decision T
 ## 🚀 Key Framework Documents
 
 * 🔍 [`SKILL-REGISTRY.md`](SKILL-REGISTRY.md) — Master index of all 48 skills, dependency chains, and primary outputs.
+* 🏷️ [`RELEASE-NOTES-v0.1.md`](RELEASE-NOTES-v0.1.md) — Release notes for stable v0.1 milestone.
 * ⚖️ [`AUTHORITY-ROUTING.md`](AUTHORITY-ROUTING.md) — RACI matrix and escalation protocols for T1–T4 decisions.
 * 📈 [`LIFECYCLE-MAP.md`](LIFECYCLE-MAP.md) — Linear and hybrid process and artifact flow diagrams.
 * 📋 [`QUALITY-STANDARDS.md`](QUALITY-STANDARDS.md) — The single source of truth for YAML front-matter schemas and quality validation gates.
@@ -209,6 +210,7 @@ To ensure clear accountability, PMOSkills employs a strict **T1 to T4 Decision T
 
 ## 📈 Version History
 
+* **`v0.1` (2026-06-02):** **First Stable Framework Release.** Promoted the audited PMOSkills repository (341 assets) under official git release tag `v0.1`. Indexed master checklists and release notes.
 * **`v4.8.0` (2026-06-02):** Phase 8 Next Steps & Compliance Integration. Introduced the master user onboarding guide (`docs/user-friendly-guide.md`) and the 3-tier test plan (`tests/pmbok8-compliance-test-plan.md`). Fully updated master scorecards and plan directories.
 * **`v4.7.0` (2026-06-02):** Phase 6 Test Suites and Phase 7 Quality Audit Complete. Implemented 48 skill test suites, 7 cross-skill integration flow tests, and cleaned mixed-case non-conformances.
 * **`v4.5.0` (2026-06-01):** Phase 0 Repository Consolidation. Cleared legacy folders, monolithic drafts, and compiled clean reference layers.
