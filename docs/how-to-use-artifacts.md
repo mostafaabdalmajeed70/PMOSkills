@@ -138,7 +138,7 @@ To baseline an artifact:
 1. Confirm the artifact has reached `Approved` status — the designated approval authority has signed off.
 2. Record the baseline date and version number in the artifact header table and YAML front matter (e.g., `status: Baselined · v1.0`).
 3. Commit the baselined file to version control with a commit message following the convention: `chore(artifacts): baseline [Artifact ID] [Artifact Name] at v[version]`.
-4. Update A14 (Integrated Project Management Plan) to reference this artifact as a baselined subsidiary plan or component. A14 is the parent artifact that baselines all subsidiary plans and integrates the full set of project baselines. See [`artifacts/planning-and-baselines/A14-Integrated-Project-Management-Plan.md`](../artifacts/planning-and-baselines/A14-Integrated-Project-Management-Plan.md).
+4. Update A14 (Integrated Project Management Plan) to reference this artifact as a baselined subsidiary plan or component. A14 is the parent artifact that baselines all subsidiary plans and integrates the full set of project baselines. See [`artifacts/planning-and-baselines/A14-integrated-project-management-plan.md`](../artifacts/planning-and-baselines/A14-integrated-project-management-plan.md).
 5. Update the project Change Log (A12) to record that the baseline was established.
 
 Any change to a baselined artifact requires raising a change request in A12 and routing it through the T1–T4 threshold model before the artifact may be edited. See [`AUTHORITY-ROUTING.md`](../AUTHORITY-ROUTING.md) for the routing rules and decision thresholds.
@@ -227,7 +227,7 @@ For the full skill-to-artifact dependency map, consult [`SKILL-REGISTRY.md`](../
 | `CONTRIBUTING.md` | File naming conventions, commit message format, quality standards | [`CONTRIBUTING.md`](../CONTRIBUTING.md) |
 | `artifacts/initiating/A04-project-charter.md` | Worked example — definition file for Project Charter | [`artifacts/initiating/A04-project-charter.md`](../artifacts/initiating/A04-project-charter.md) |
 | `artifacts/initiating/A04-project-charter-template.md` | Worked example — template file for Project Charter | [`artifacts/initiating/A04-project-charter-template.md`](../artifacts/initiating/A04-project-charter-template.md) |
-| `artifacts/planning-and-baselines/A14-Integrated-Project-Management-Plan.md` | Parent baseline artifact — integrates all subsidiary plans | [`artifacts/planning-and-baselines/A14-Integrated-Project-Management-Plan.md`](../artifacts/planning-and-baselines/A14-Integrated-Project-Management-Plan.md) |
+| `artifacts/planning-and-baselines/A14-integrated-project-management-plan.md` | Parent baseline artifact — integrates all subsidiary plans | [`artifacts/planning-and-baselines/A14-integrated-project-management-plan.md`](../artifacts/planning-and-baselines/A14-integrated-project-management-plan.md) |
 | `artifacts/monitoring-and-decisions/A12-change-log.md` | Change control record — required for all post-baseline changes | [`artifacts/monitoring-and-decisions/A12-change-log.md`](../artifacts/monitoring-and-decisions/A12-change-log.md) |
 
 ---

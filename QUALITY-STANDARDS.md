@@ -576,10 +576,10 @@ SKL-1-1-governance.md                            ❌ missing leading zeros
 
 Every artifact **must** have all three files to be fully complete. Partial delivery is acceptable during build phases but must be flagged in the MASTER-PLAN scorecard.
 
-**Legacy non-conformances (fix in Phase 7):**
-- `A14-Integrated-Project-Management-Plan.md` → NC-001
-- `A15-Schedule-Model-and-Baseline-Record.md` → NC-002
-- `A16-Financial-Management-and-Cost-Baseline-Record.md` → NC-003
+**Legacy non-conformances (fixed in Phase 7):**
+- `A14-integrated-project-management-plan.md` (resolved)
+- `A15-schedule-model-and-baseline-record.md` (resolved)
+- `A16-financial-management-and-cost-baseline-record.md` (resolved)
 
 ### 4.4 Reference Files
 
@@ -968,12 +968,12 @@ All known NCs for this repository. Update this table whenever a new NC is logged
 
 | NC-ID | File | Check | Description | Date Logged | Owner | Target Phase | Status |
 |---|---|---|---|---|---|---|---|
-| NC-001 | `artifacts/planning-and-baselines/A14-Integrated-Project-Management-Plan.md` | §4.3 | Mixed-case filename | 2026-06-01 | PMO | Phase 7 | Open |
-| NC-002 | `artifacts/planning-and-baselines/A15-Schedule-Model-and-Baseline-Record.md` | §4.3 | Mixed-case filename | 2026-06-01 | PMO | Phase 7 | Open |
-| NC-003 | `artifacts/planning-and-baselines/A16-Financial-Management-and-Cost-Baseline-Record.md` | §4.3 | Mixed-case filename | 2026-06-01 | PMO | Phase 7 | Open |
-| NC-004 | Root: `C4-Process-Records/`, `C5-KA-Crossref/`, `C6-TT-Taxonomy/`, `C7-IO-Registry/`, `repo/` | §5.2 | Stale directories at root — structural violation | 2026-06-01 | PMO | Phase 0 | Open |
-| NC-005 | `COMPLETION-PLAN-V4.md §2` | §1 (single authority) | Duplicate quality rules — conflicts with this file | 2026-06-01 | PMO | Step 4 | Open · Pending cleanup |
-| NC-006 | `MASTER-PLAN.md §2` (if present) | §1 (single authority) | Duplicate quality rules — conflicts with this file | 2026-06-01 | PMO | Step 3 | Open · Pending cleanup |
+| NC-001 | `artifacts/planning-and-baselines/A14-integrated-project-management-plan.md` | §4.3 | Mixed-case filename | 2026-06-01 | PMO | Phase 7 | Resolved |
+| NC-002 | `artifacts/planning-and-baselines/A15-schedule-model-and-baseline-record.md` | §4.3 | Mixed-case filename | 2026-06-01 | PMO | Phase 7 | Resolved |
+| NC-003 | `artifacts/planning-and-baselines/A16-financial-management-and-cost-baseline-record.md` | §4.3 | Mixed-case filename | 2026-06-01 | PMO | Phase 7 | Resolved |
+| NC-004 | Root: `C4-Process-Records/`, `C5-KA-Crossref/`, `C6-TT-Taxonomy/`, `C7-IO-Registry/`, `repo/` | §5.2 | Stale directories at root — structural violation | 2026-06-01 | PMO | Phase 0 | Resolved |
+| NC-005 | `COMPLETION-PLAN-V4.md §2` | §1 (single authority) | Duplicate quality rules — conflicts with this file | 2026-06-01 | PMO | Step 4 | Resolved |
+| NC-006 | `MASTER-PLAN.md §2` (if present) | §1 (single authority) | Duplicate quality rules — conflicts with this file | 2026-06-01 | PMO | Step 3 | Resolved |
 
 ### 8.4 Quality Failure Examples
 
