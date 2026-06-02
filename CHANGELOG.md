@@ -6,6 +6,25 @@ Authority: PMBOK 8 Primary · PMI Companion References Secondary.
 
 ---
 
+## [4.7.0] — 2026-06-02
+
+### Added
+- **Phase 6 Test Suites:**
+  - 48 individual skill-level deterministic test suites under `tests/skill-tests/` (each containing 9 machine-readable test cases covering happy path, prerequisites, thresholds, ESG, constraints, waste, etc.).
+  - 7 cross-skill integration flow test suites under `tests/integration-tests/` tracing artifact flows across at least two lifecycle phases.
+  - Interactive Mermaid-based lifecycle flow diagrams for all integration tests.
+  - Master catalogs `tests/skill-tests/index.md` and `tests/integration-tests/index.md`.
+- **Phase 7 Quality Audit:**
+  - Full quality review and validation of all 57 newly generated test files.
+  - Active status and actual flat file structure documented in `tests/README.md`.
+
+### Fixed
+- **NC-001, NC-002, NC-003 Resolved:** Renamed legacy mixed-case artifact files in `artifacts/planning-and-baselines/` to strict lowercase kebab-case (e.g., `A14-integrated-project-management-plan.md`, `A15-schedule-model-and-baseline-record.md`, `A16-financial-management-and-cost-baseline-record.md`).
+- **NC-004, NC-005, NC-006 Resolved:** Formally documented structural cleanups of root directories and duplicate plan standard files in `QUALITY-STANDARDS.md`.
+- Updated all cross-references and links to lowercase kebab-case in `docs/how-to-use-artifacts.md` and `QUALITY-STANDARDS.md`.
+
+---
+
 ## [2.12.0] — 2026-05-31
 
 ### Audit Findings — Phase C4 Path Correction
