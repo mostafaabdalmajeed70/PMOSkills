@@ -218,4 +218,4 @@ To ensure clear accountability, PMOSkills employs a strict **T1 to T4 Decision T
 
 *Authority: PMBOK 8 Primary · PMI Companion References Secondary · Organization-Defined Tertiary*  
 *Project: PMI PMBOK 8 Knowledge Base Repository Space*  
-*Maintainer:* **Mohamed Fakhruldeen [@github](https://github.com/fakhruldeen), [linkedin](https://www.linkedin.com/in/fakhruldeen), [website](https://fakhruldeen.github.io)**
+*Maintainer:* **Mohamed Fouad Fakhruldeen [@github](https://github.com/fakhruldeen), [linkedin](https://www.linkedin.com/in/fakhruldeen), [website](https://fakhruldeen.github.io)**
