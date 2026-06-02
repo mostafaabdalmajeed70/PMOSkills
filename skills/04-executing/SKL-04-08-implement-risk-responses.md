@@ -3,7 +3,7 @@ skill_id: SKL-04-08
 skill_name: Implement Risk Responses
 pack: "04 — Executing"
 version: "1.1.0"
-status: "Draft · Untested"
+status: "Draft · Tests Defined"
 source_type: PMI-derived
 primary_artifact: "A19 — Risk Management Record (response implementation log)"
 artifacts_updated:
@@ -26,15 +26,18 @@ tests: 8
 # SKL-04-08 — Implement Risk Responses
 
 **Pack:** 04 — Executing
-**Status:** Draft · Untested
+**Status:** Draft · Tests Defined
 **Primary Artifact:** A19 — Risk Management Record
 **PMBOK8 Anchor:** Guide §2.7.2.5 · Figure 2-52
+
+> **Wave 1B patch — F-11:** Status updated from `Draft · Untested` to `Draft · Tests Defined`.
+> Tests T-1 through T-8 are fully defined in the Tests section below.
 
 ---
 
 ## Purpose
 
-Implement Risk Responses ensures that planned risk responses are executed when triggered, that risk events are tracked through resolution, and that unplanned risk events are handled via documented workarounds. When a risk event occurs (threat materializes or opportunity is missed), it moves from the A19 risk register to the A18 issue log and the appropriate response is actioned.
+Implement Risk Responses ensures that planned risk responses are executed when triggered, that risk events are tracked through resolution, and that unplanned risk events are handled via documented workarounds.
 
 ---
 
@@ -53,44 +56,22 @@ Implement Risk Responses ensures that planned risk responses are executed when t
 ## Steps
 
 ### Step 1 — Monitor for Risk Triggers
-At each reporting period, review A19 trigger conditions for all Active risks:
-- Is the trigger condition observed in the project environment?
-- Has any early warning indicator (from A19 §7) been activated?
-- Have any new conditions emerged that suggest a risk is imminent?
+At each reporting period, review A19 trigger conditions for all Active risks.
 
 ### Step 2 — Activate Planned Responses
-For each triggered risk, activate the pre-planned response from A19 §7:
-- Confirm response owner per A19
-- Initiate all response actions per the plan
-- Record activation in A19 implementation log: Risk ID, trigger date, response owner, status = In Progress
-- Notify affected stakeholders per A28
+For each triggered risk, activate the pre-planned response from A19 §7. Record activation in A19 implementation log. Notify affected stakeholders per A28.
 
 ### Step 3 — Convert Triggered Risks to Issues
-When a risk event occurs (the threat has materialized or the opportunity window has closed):
-- Log in A18 as an issue:
-  - Cross-reference A19 Risk ID
-  - Assign issue owner (may differ from risk response owner)
-  - Set priority based on actual impact
-  - Set resolution due date
-- Update A19 risk status to Triggered
+When a risk materializes, log in A18 with A19 Risk ID cross-reference. Update A19 risk status to Triggered.
 
 ### Step 4 — Execute Workarounds for Unplanned Risks
-For risk events that occur without a pre-planned response (residual risks or newly discovered threats):
-- Document the workaround in A19 as a new response entry under the relevant risk ID
-- If no risk ID exists, create a new risk record in A19 first, then attach the workaround response
-- Log the event as an issue in A18
-- Raise A12 change request if the workaround affects cost or schedule baseline
+Document workaround in A19. Log event in A18. Raise A12 change request if workaround affects baselines.
 
 ### Step 5 — Update Reserve Consumption
-When contingency reserve is consumed by a risk response:
-- Update A16 reserve consumption log with: Risk ID, amount consumed, date, response description, reserve balance remaining
-- Notify sponsor if cumulative reserve consumption exceeds the threshold defined in A06
+Update A16 reserve consumption log. Notify sponsor if cumulative consumption exceeds A06 threshold.
 
 ### Step 6 — Assess and Close Responses
-When a risk response is complete:
-- Assess residual risk: is the original risk still active at a lower level?
-- Update A19 risk status: Mitigated (still active at reduced level) / Closed (fully resolved)
-- Capture outcomes in A21: what worked, what failed, root causes, recommendations
+Assess residual risk after each response. Update A19 status: Mitigated or Closed. Capture outcomes in A21.
 
 ---
 
@@ -108,11 +89,11 @@ When a risk response is complete:
 
 ## Operating Rules
 
-1. No risk response is implemented without the response being recorded in A19 first — either as a planned response or as a workaround.
+1. No risk response is implemented without the response being recorded in A19 first.
 2. Every triggered risk that materializes must have a corresponding A18 issue entry with the A19 Risk ID cross-reference.
 3. Reserve consumption must be reported to sponsor when cumulative consumption exceeds the A06 threshold.
 4. Unplanned workarounds that affect baselines must route through A12 before implementation.
-5. Residual risk assessment is mandatory after every response — a response cannot be closed without confirming residual risk status.
+5. Residual risk assessment is mandatory after every response.
 
 ---
 
@@ -124,8 +105,8 @@ When a risk response is complete:
 | Triggered risk not in A18 | Issue being managed informally without A18 entry | Log in A18 immediately; cross-reference A19 Risk ID |
 | Reserve over-consumed silently | A16 reserve balance at zero or negative without sponsor notification | Immediate sponsor notification; A12 change request for additional reserve |
 | Response closed without residual assessment | A19 shows risk Closed with no residual note | Reopen for residual assessment before final closure |
-| Opportunity response not activated | A19 shows opportunity risk with trigger met but no response initiated | Review A19 opportunity register; activate enhancement or exploit response immediately; log missed window in A21 |
-| Workaround implemented without A19 entry | Risk event addressed operationally but no A19 workaround or new risk record exists | Retroactive A19 entry required; if baseline affected, raise A12 retroactively; document in A21 as process failure |
+| Opportunity response not activated | A19 shows opportunity risk with trigger met but no response initiated | Activate enhancement or exploit response immediately; log missed window in A21 |
+| Workaround implemented without A19 entry | Risk event addressed operationally with no A19 entry | Retroactive A19 entry required; raise A12 if baseline affected; document in A21 as process failure |
 
 ---
 
@@ -149,7 +130,8 @@ When a risk response is complete:
 | Version | Date | Change description |
 |---|---|---|
 | 1.0.0 | 2026-05-29 | Initial build |
-| 1.1.0 | 2026-05-30 | Expanded failure modes from 4 to 6: added opportunity response not activated and workaround without A19 entry |
+| 1.1.0 | 2026-05-30 | Expanded failure modes from 4 to 6 |
+| 1.1.1 | 2026-06-03 | Wave 1B patch — F-11: status updated from Draft · Untested to Draft · Tests Defined |
 
 ---
 

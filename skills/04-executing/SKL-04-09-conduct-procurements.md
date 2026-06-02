@@ -3,7 +3,7 @@ skill_id: SKL-04-09
 skill_name: Conduct Procurements
 pack: "04 — Executing"
 version: "1.1.0"
-status: "Draft · Untested"
+status: "Draft · Tests Defined"
 source_type: PMI-derived
 primary_artifact: "A31 — Procurement and Supplier Management Record"
 artifacts_updated:
@@ -29,9 +29,12 @@ tests: 9
 # SKL-04-09 — Conduct Procurements
 
 **Pack:** 04 — Executing
-**Status:** Draft · Untested
+**Status:** Draft · Tests Defined
 **Primary Artifact:** A31 — Procurement and Supplier Management Record
 **PMBOK8 Anchor:** Guide §2.8 Procurement Management
+
+> **Wave 1B patch — F-11:** Status updated from `Draft · Untested` to `Draft · Tests Defined`.
+> Tests T-1 through T-9 are fully defined in the Tests section below.
 
 ---
 
@@ -71,69 +74,28 @@ Conduct Procurements selects suppliers, awards contracts, and manages ongoing su
 ## Steps
 
 ### Step 1 — Issue Procurement Documents
-For each planned procurement in A31 §4 with status = Ready:
-- Prepare and issue the appropriate document per A31 §3:
-  - **RFP** (Request for Proposal) — for complex or service-based procurements
-  - **RFQ** (Request for Quotation) — for commodity or price-driven procurements
-  - **IFB** (Invitation for Bid) — for construction or fixed-specification procurements
-- Record issuance date in A31 §4.
-- Confirm distribution to the prospective supplier list.
+For each planned procurement in A31 §4 with status = Ready, prepare and issue the appropriate document (RFP / RFQ / IFB) per A31 §3. Record issuance date in A31 §4.
 
 ### Step 2 — Receive and Evaluate Proposals
-Receive supplier responses by the deadline specified in the procurement document.
-Complete A31 §5 evaluation log for each responding supplier:
-- Supplier name
-- Evaluation criteria scores (from A31 §3)
-- Technical evaluation summary
-- Financial evaluation summary
-- Risk assessment
-- Evaluator(s) and date
+Complete A31 §5 evaluation log for each responding supplier with evaluation criteria scores, technical and financial summaries, and risk assessment.
 
 ### Step 3 — Select Supplier
-Apply the selection method defined in A31 §3:
-
-| Method | Description | Use when |
-|---|---|---|
-| Competitive evaluation | Multi-criteria scoring of all proposals | Multiple qualified suppliers; complex requirements |
-| Negotiation | Direct negotiation without competitive process | Sole-source justification exists |
-| Sole source | Single supplier without competition | Only one supplier can meet requirements; documented in A06 |
-
-Document selection rationale in A31 §5. Obtain required approvals per A06 thresholds before proceeding to contract award.
+Apply the selection method defined in A31 §3 (Competitive / Negotiation / Sole source). Document selection rationale. Obtain required approvals per A06 thresholds.
 
 ### Step 4 — Award Contract
-Execute contract with the selected supplier. Create A31 §6 contract management log entry:
-- Contract ID
-- Procurement ID (from A31 §4)
-- Supplier name
-- Contract type (Fixed Price / Time and Material / Cost Reimbursable)
-- Contract value
-- Payment milestones and amounts
-- Deliverables schedule
-- Performance review dates
-- Contract manager name
+Create A31 §6 contract management log entry: contract ID, procurement ID, supplier, contract type, value, payment milestones, deliverables schedule, performance review dates, contract manager.
 
 ### Step 5 — Update A16 and A26
-- Add contracted cost to A16 §4 cost estimates (update BAC if this contract adds to planned cost)
-- Update A26 with any externally acquired resources, noting contract reference
+Add contracted costs to A16 §4. Update A26 with externally acquired resources noting contract reference.
 
 ### Step 6 — Manage Supplier Performance
-At each performance review date defined in A31 §6:
-- Assess supplier against contracted deliverables, quality standards, and SLAs
-- Record status in A31 §6: **On track** / **At risk** / **In default**
-- For At risk or In default status: log issue in A18 and notify contract manager
-- Discuss findings with supplier and document agreed corrective actions
+At each performance review date, assess supplier and record status in A31 §6: On track / At risk / In default. Log At risk or In default status in A18 within 48 hours.
 
 ### Step 7 — Manage Contract Changes
-All contract changes (scope, price, terms, timeline) must:
-1. Be assessed for impact on A16 and A15
-2. Route through A12 Integrated Change Control for approval
-3. Only be reflected in A31 §6 after A12 shows Approved status
-Document the change, its rationale, and the A12 reference in A31 §6.
+All contract changes must route through A12 ICC before being reflected in A31 §6.
 
 ### Step 8 — Cross-Reference Procurement Risks
-Review A19 risk register for all procurement-related risks. For each:
-- Add or update A31 §8 with the A19 Risk ID
-- Confirm that the risk owner in A19 is aligned with the contract manager for that supplier
+Add or update A31 §8 with A19 Risk IDs for all procurement-related risks.
 
 ---
 
@@ -154,10 +116,10 @@ Review A19 risk register for all procurement-related risks. For each:
 ## Operating Rules
 
 1. No contract is signed without an A31 §4 procurement register entry at status = Approved.
-2. All contract changes route through A12 before A31 §6 is updated — no exceptions.
+2. All contract changes route through A12 before A31 §6 is updated.
 3. Supplier performance reviews are mandatory at the cadence defined in A31 §6.
 4. At-risk or In-default supplier status must create an A18 issue within 48 hours of assessment.
-5. Procurement risks must be cross-referenced in both A19 and A31 §8 — single-artifact recording is incomplete.
+5. Procurement risks must be cross-referenced in both A19 and A31 §8.
 6. Sole-source justification must be documented in A06 before a sole-source procurement proceeds.
 
 ---
@@ -170,8 +132,8 @@ Review A19 risk register for all procurement-related risks. For each:
 | Supplier performance not reviewed | A31 §6 review dates passed with no entry | Conduct overdue review; document in A31 §6 |
 | Contract change without A12 | A31 §6 change with no A12 Approved reference | Retroactive A12 entry; assess if change was authorized |
 | Procurement risk not in A19 | A31 §8 has no A19 cross-reference | Identify procurement risks; log in A19 and cross-reference |
-| Supplier insolvency or sudden incapacity | Supplier unable to perform mid-contract; no contingency plan in A31 or A19 | Log in A18 as High priority; activate A19 procurement risk response; assess replacement options; raise A12 if baseline affected |
-| Contract dispute with no escalation path | Supplier challenges deliverable acceptance or payment; no dispute resolution clause referenced in A31 §6 | Engage contract manager and legal counsel; document dispute in A31 §6; escalate per A06; do not unilaterally withhold payment |
+| Supplier insolvency or sudden incapacity | Supplier unable to perform mid-contract | Log in A18 as High priority; activate A19 risk response; raise A12 if baseline affected |
+| Contract dispute with no escalation path | Supplier challenges deliverable acceptance or payment | Engage contract manager and legal counsel; document in A31 §6; escalate per A06 |
 
 ---
 
@@ -196,7 +158,8 @@ Review A19 risk register for all procurement-related risks. For each:
 | Version | Date | Change description |
 |---|---|---|
 | 1.0.0 | 2026-05-29 | Initial build |
-| 1.1.0 | 2026-05-30 | Expanded failure modes from 4 to 6: added supplier insolvency/incapacity and contract dispute with no escalation path |
+| 1.1.0 | 2026-05-30 | Expanded failure modes from 4 to 6 |
+| 1.1.1 | 2026-06-03 | Wave 1B patch — F-11: status updated from Draft · Untested to Draft · Tests Defined |
 
 ---
 

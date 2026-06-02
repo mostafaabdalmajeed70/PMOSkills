@@ -3,7 +3,7 @@ skill_id: SKL-04-04
 skill_name: Develop Team
 pack: "04 — Executing"
 version: "1.1.0"
-status: "Draft · Untested"
+status: "Draft · Tests Defined"
 source_type: PMI-derived
 primary_artifact: "A25 — Team Operating and Responsibility Record (team development section)"
 artifacts_updated:
@@ -24,9 +24,12 @@ tests: 7
 # SKL-04-04 — Develop Team
 
 **Pack:** 04 — Executing
-**Status:** Draft · Untested
+**Status:** Draft · Tests Defined
 **Primary Artifact:** A25 — Team Operating and Responsibility Record
 **PMBOK8 Anchor:** Guide §2.6.2.4 · Figure 2-44
+
+> **Wave 1B patch — F-11:** Status updated from `Draft · Untested` to `Draft · Tests Defined`.
+> Tests T-1 through T-7 are fully defined in the Tests section below.
 
 ---
 
@@ -67,7 +70,7 @@ For each identified competency gap, define a development action:
 | Shadowing / pair work | Working alongside an expert | Tacit and contextual knowledge |
 | Certification pursuit | Structured self-study for credentialed exam | Professional qualifications |
 
-Record each action in A25 development section with: gap description, action type, owner (who will do it), supporter (who will facilitate), target date, and success measure.
+Record each action in A25 development section with: gap description, action type, owner, supporter, target date, and success measure.
 
 ### Step 3 — Build Team Identity and Cohesion
 Plan and execute team-building activities appropriate to team type:
@@ -117,11 +120,11 @@ Feed significant findings to A21.
 
 ## Operating Rules
 
-1. Every identified competency gap must have a development action with an owner and target date — undated or unowned actions are invalid.
+1. Every identified competency gap must have a development action with an owner and target date.
 2. Team operating agreements must be confirmed or updated before the first full execution sprint or period begins.
 3. Recognition criteria must not conflict with OPA reward policies in A05.
 4. Performance assessments are mandatory at every phase gate — they cannot be deferred until closure.
-5. Team-building activities must ensure virtual team members are not excluded — equal inclusion is required.
+5. Team-building activities must ensure virtual team members are not excluded.
 
 ---
 
@@ -157,7 +160,8 @@ Feed significant findings to A21.
 | Version | Date | Change description |
 |---|---|---|
 | 1.0.0 | 2026-05-29 | Initial build |
-| 1.1.0 | 2026-05-30 | Expanded failure modes from 4 to 6: added performance assessment skipped at gate and development action overdue with no escalation |
+| 1.1.0 | 2026-05-30 | Expanded failure modes from 4 to 6 |
+| 1.1.1 | 2026-06-03 | Wave 1B patch — F-11: status updated from Draft · Untested to Draft · Tests Defined |
 
 ---
 

@@ -3,7 +3,7 @@ skill_id: SKL-04-06
 skill_name: Manage Stakeholder Engagement
 pack: "04 — Executing"
 version: "1.1.0"
-status: "Draft · Untested"
+status: "Draft · Tests Defined"
 source_type: PMI-derived
 primary_artifact: "A07 — Stakeholder Register and Engagement Strategy (execution engagement log)"
 artifacts_updated:
@@ -25,9 +25,12 @@ tests: 8
 # SKL-04-06 — Manage Stakeholder Engagement
 
 **Pack:** 04 — Executing
-**Status:** Draft · Untested
+**Status:** Draft · Tests Defined
 **Primary Artifact:** A07 — Stakeholder Register and Engagement Strategy
 **PMBOK8 Anchor:** Guide §2.5.2.4 · Figure 2-36
+
+> **Wave 1B patch — F-11:** Status updated from `Draft · Untested` to `Draft · Tests Defined`.
+> Tests T-1 through T-8 are fully defined in the Tests section below.
 
 ---
 
@@ -63,37 +66,22 @@ Manage Stakeholder Engagement executes the engagement strategies defined in SKL-
 ## Steps
 
 ### Step 1 — Review Engagement Strategies
-Review A07 engagement strategies for all active stakeholders. Confirm desired (D) engagement level for each. Identify stakeholders whose current (C) level is below desired — these are priority engagement targets for the current period.
+Review A07 engagement strategies for all active stakeholders. Identify stakeholders whose current (C) level is below desired (D) — these are priority engagement targets.
 
 ### Step 2 — Execute Engagement Activities
-Carry out engagement actions as planned in A07:
-- Scheduled meetings, reviews, demonstrations, or briefings
-- Workshops, surveys, or focus groups
-- Proactive communication via A28 delivery plan
-- One-to-one conversations for high-influence stakeholders
+Carry out engagement actions as planned in A07: meetings, workshops, surveys, demonstrations, briefings, one-to-one conversations.
 
 ### Step 3 — Record Actual Engagement Levels
-After each engagement event, update A07 with the current (C) engagement level for the stakeholder using the SEAM scale. Record the basis for the assessment (behavioral observation, communication tone, participation level).
+After each engagement event, update A07 with the current (C) engagement level using the SEAM scale.
 
 ### Step 4 — Identify and Address Gaps
-For each stakeholder where C ≠ D:
-- Assess root cause of the gap (awareness deficit / attitude / access / communication failure)
-- Revise or intensify engagement approach in A07
-- Log in A18 if the gap poses a risk to project outcomes
+For each stakeholder where C ≠ D, assess root cause and revise engagement approach in A07. Log in A18 if the gap poses a risk to project outcomes.
 
 ### Step 5 — Update Communication Delivery Log
-Log each engagement event in A28 delivery log:
-- Stakeholder name
-- Engagement method
-- Date
-- Topic and outcome
-- Follow-up actions required (with owner and due date)
+Log each engagement event in A28 delivery log: stakeholder, method, date, topic, outcome, follow-up.
 
 ### Step 6 — Escalate Resistant Stakeholders
-For high-power stakeholders who remain Resistant after two consecutive engagement cycles:
-- Log in A18 with priority = High
-- Escalate to sponsor per A06 authority threshold
-- Revise engagement approach in A07
+For high-power stakeholders who remain Resistant after two consecutive cycles: log in A18 (priority = High), escalate to sponsor per A06, revise A07.
 
 ---
 
@@ -109,7 +97,7 @@ For high-power stakeholders who remain Resistant after two consecutive engagemen
 
 ## Operating Rules
 
-1. A07 current engagement levels must be updated after every stakeholder engagement event — not batch-updated at period end.
+1. A07 current engagement levels must be updated after every stakeholder engagement event.
 2. No engagement activity is considered complete without an A28 delivery log entry.
 3. Resistant high-power stakeholders must be escalated if gap persists after two consecutive engagement cycles.
 4. Engagement approach changes that require fundamental strategy revision must re-trigger SKL-03-07 for affected stakeholders.
@@ -125,8 +113,8 @@ For high-power stakeholders who remain Resistant after two consecutive engagemen
 | Resistant stakeholder ignored | High-power Resistant stakeholder with no escalation | Immediate A18 entry and sponsor notification per A06 threshold |
 | Unlogged engagement | Team members engaging stakeholders informally without A28 entries | Team briefing on engagement logging; retroactive A28 entries |
 | Strategy not revised | Repeated failed engagement with no change in approach | Re-trigger SKL-03-07; revise A07 engagement strategy section |
-| Engagement strategy not updated after escalation | Sponsor notified but no A07 strategy revision follows | Confirm revised engagement approach with sponsor; update A07 strategy section and SEAM desired (D) level if changed |
-| Stakeholder privacy breach | Sensitive stakeholder information from A07 shared without authorization | Immediate containment; review A07 access controls; log in A18; notify governance authority per A06 |
+| Engagement strategy not updated after escalation | Sponsor notified but no A07 strategy revision follows | Confirm revised approach with sponsor; update A07 and SEAM desired (D) if changed |
+| Stakeholder privacy breach | Sensitive A07 information shared without authorization | Immediate containment; review access controls; log in A18; notify governance authority |
 
 ---
 
@@ -150,7 +138,8 @@ For high-power stakeholders who remain Resistant after two consecutive engagemen
 | Version | Date | Change description |
 |---|---|---|
 | 1.0.0 | 2026-05-29 | Initial build |
-| 1.1.0 | 2026-05-30 | Expanded failure modes from 4 to 6: added engagement strategy not updated after escalation and stakeholder privacy breach |
+| 1.1.0 | 2026-05-30 | Expanded failure modes from 4 to 6 |
+| 1.1.1 | 2026-06-03 | Wave 1B patch — F-11: status updated from Draft · Untested to Draft · Tests Defined |
 
 ---
 

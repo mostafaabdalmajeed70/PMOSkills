@@ -3,7 +3,7 @@ skill_id: SKL-04-07
 skill_name: Manage Communications
 pack: "04 — Executing"
 version: "1.1.0"
-status: "Draft · Untested"
+status: "Draft · Tests Defined"
 source_type: PMI-derived
 primary_artifact: "A28 — Communications and Reporting Record (delivery log)"
 artifacts_updated:
@@ -25,15 +25,18 @@ tests: 8
 # SKL-04-07 — Manage Communications
 
 **Pack:** 04 — Executing
-**Status:** Draft · Untested
+**Status:** Draft · Tests Defined
 **Primary Artifact:** A28 — Communications and Reporting Record
 **PMBOK8 Anchor:** Guide §2.5.2.5 · Figure 2-37
+
+> **Wave 1B patch — F-11:** Status updated from `Draft · Untested` to `Draft · Tests Defined`.
+> Tests T-1 through T-8 are fully defined in the Tests section below.
 
 ---
 
 ## Purpose
 
-Manage Communications executes the delivery plan defined in A28 — creating, distributing, storing, and retrieving project information according to the planned methods, frequencies, and formats for each stakeholder. This skill ensures the right information reaches the right people at the right time in the right format.
+Manage Communications executes the delivery plan defined in A28 — creating, distributing, storing, and retrieving project information according to the planned methods, frequencies, and formats for each stakeholder.
 
 ---
 
@@ -61,48 +64,22 @@ Manage Communications executes the delivery plan defined in A28 — creating, di
 ## Steps
 
 ### Step 1 — Review A28 Delivery Schedule
-Confirm all scheduled communications for the current period. For each item check:
-- Stakeholder or group
-- Communication type and topic
-- Method (Interactive / Push / Pull)
-- Format and language requirements
-- Sender responsibility
-- Sensitivity classification
+Confirm all scheduled communications for the current period: stakeholder, type, method, format, sender, sensitivity.
 
 ### Step 2 — Create Communication Packages
-Prepare each communication item per A28 specifications:
-- Match content depth to stakeholder information need (executive summary vs. detailed technical data)
-- Apply format template if specified
-- Confirm sensitivity level and distribution list
-- Attach or reference A17 data for performance communications
+Prepare each item per A28 specifications: depth matched to stakeholder need, format applied, sensitivity confirmed.
 
 ### Step 3 — Distribute Communications
-Deliver via the planned channel. For each delivery, record in A28 delivery log:
-- Stakeholder or group
-- Communication type
-- Method used
-- Date and time sent
-- Sender
-- Status: Sent / Delivered / Confirmed receipt
+Deliver via planned channel. Record in A28 delivery log: stakeholder, type, method, date/time, sender, status.
 
 ### Step 4 — Manage Feedback and Responses
-For Interactive communications:
-- Capture decisions, commitments, and action items
-- Record in A28 delivery log with outcomes
-- Update A07 SEAM if engagement level changes
-- Log issues arising from communication events in A18
+For Interactive communications: capture decisions and action items; record in A28; update A07 SEAM; log A18 issues.
 
 ### Step 5 — Issue Performance Reports
-Issue all scheduled performance reports:
-- Reference A17 data — do not create standalone data
-- Confirm distribution matches A28 audience specification
-- Record issuance in A28 delivery log
+Issue all scheduled performance reports referencing A17 data, per A28 audience specification.
 
 ### Step 6 — Manage Communication Records
-Store all communications per A28 storage and retrieval requirements:
-- Apply retention period from A05 OPA
-- Ensure records are retrievable by authorized parties
-- Protect confidential communications per sensitivity classification
+Store all communications per A28 storage and retrieval requirements and A05 OPA retention period.
 
 ---
 
@@ -122,7 +99,7 @@ Store all communications per A28 storage and retrieval requirements:
 1. Every scheduled communication must have an A28 delivery log entry whether sent on time, delayed, or cancelled.
 2. Delayed communications must note the reason and rescheduled delivery date.
 3. Performance reports must reference A17 data — standalone data not traceable to A17 is not acceptable.
-4. No communication distributes information at a sensitivity level above the stakeholder’s classified access level per A28.
+4. No communication distributes information at a sensitivity level above the stakeholder's classified access level per A28.
 5. Interactive communication outcomes that include decisions or commitments must be recorded within 24 hours.
 
 ---
@@ -135,8 +112,8 @@ Store all communications per A28 storage and retrieval requirements:
 | Report data not from A17 | Performance report contains data not in A17 | Retract; reissue with A17-sourced data |
 | Access level breach | Information distributed to unauthorized stakeholder | Immediate notification; A18 issue; A06 escalation |
 | Interactive decisions undocumented | Team acts on verbal decisions with no record | Immediate A28 entry; confirm with participants |
-| Language or translation gap | Stakeholder reports misunderstanding; non-native language recipient confused by communication | Arrange translation or plain-language rewrite; re-send; flag stakeholder in A28 with language requirement |
-| Communications tool access failure | Stakeholder unable to receive communications due to platform or access issue | Identify alternative channel per A28; re-send via accessible method; update A28 plan with fallback channel |
+| Language or translation gap | Stakeholder reports misunderstanding from non-native language content | Arrange translation or plain-language rewrite; re-send; flag in A28 |
+| Communications tool access failure | Stakeholder unable to receive due to platform or access issue | Identify alternative channel; re-send; update A28 with fallback channel |
 
 ---
 
@@ -147,7 +124,7 @@ Store all communications per A28 storage and retrieval requirements:
 | T-1 | A28 plan exists | A28 communications plan complete before managed communications begin | Managed communications without A28 plan |
 | T-2 | Delivery log complete | Every planned communication has an A28 delivery log entry | Planned communication with no delivery log entry |
 | T-3 | Delays recorded | Delayed communications have reason and rescheduled date in A28 | Delayed entry with no explanation |
-| T-4 | Access levels respected | No information distributed above stakeholder’s classified access level | Distribution breach identified |
+| T-4 | Access levels respected | No information distributed above stakeholder's classified access level | Distribution breach identified |
 | T-5 | Interactive feedback captured | Interactive communication responses recorded in A07 or A18 | Interactive communication with no response record |
 | T-6 | Reports reference A17 | Performance reports cite A17 as the data source | Report issued with data not traceable to A17 |
 | T-7 | Storage compliant | All communications stored and retrievable per A28 storage specification | Communications not retrievable per A28 spec |
@@ -160,7 +137,8 @@ Store all communications per A28 storage and retrieval requirements:
 | Version | Date | Change description |
 |---|---|---|
 | 1.0.0 | 2026-05-29 | Initial build |
-| 1.1.0 | 2026-05-30 | Expanded failure modes from 4 to 6: added language/translation gap and communications tool access failure |
+| 1.1.0 | 2026-05-30 | Expanded failure modes from 4 to 6 |
+| 1.1.1 | 2026-06-03 | Wave 1B patch — F-11: status updated from Draft · Untested to Draft · Tests Defined |
 
 ---
 

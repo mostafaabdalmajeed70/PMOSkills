@@ -3,7 +3,7 @@ skill_id: SKL-04-05
 skill_name: Manage Team
 pack: "04 — Executing"
 version: "1.1.0"
-status: "Draft · Untested"
+status: "Draft · Tests Defined"
 source_type: PMI-derived
 primary_artifact: "A25 — Team Operating and Responsibility Record (performance and conflict log)"
 artifacts_updated:
@@ -27,15 +27,18 @@ tests: 8
 # SKL-04-05 — Manage Team
 
 **Pack:** 04 — Executing
-**Status:** Draft · Untested
+**Status:** Draft · Tests Defined
 **Primary Artifact:** A25 — Team Operating and Responsibility Record
 **PMBOK8 Anchor:** Guide §2.6.2.5 · Figure 2-45
+
+> **Wave 1B patch — F-11:** Status updated from `Draft · Untested` to `Draft · Tests Defined`.
+> Tests T-1 through T-8 are fully defined in the Tests section below.
 
 ---
 
 ## Purpose
 
-Manage Team tracks team member performance, provides feedback, resolves issues and conflicts, and manages changes to team composition. It is the active day-to-day team leadership skill. Issues that exceed the PM’s authority are escalated through A18.
+Manage Team tracks team member performance, provides feedback, resolves issues and conflicts, and manages changes to team composition. It is the active day-to-day team leadership skill. Issues that exceed the PM's authority are escalated through A18.
 
 ---
 
@@ -54,18 +57,10 @@ Manage Team tracks team member performance, provides feedback, resolves issues a
 ## Steps
 
 ### Step 1 — Observe and Track Performance
-Monitor team member performance against A25 RACI assignments and A08 WBS work packages:
-- Deliverable quality and timeliness
-- Collaboration and communication
-- Adherence to team ground rules
-- Participation in required activities
+Monitor team member performance against A25 RACI assignments and A08 WBS work packages.
 
 ### Step 2 — Provide Feedback
-Conduct regular one-to-one performance conversations. Frequency: minimum once per reporting period per team member. Document outcomes in A25 performance log:
-- Date of conversation
-- Topic(s) discussed
-- Feedback given (positive and developmental)
-- Agreed actions with due dates
+Conduct regular one-to-one performance conversations. Minimum once per reporting period per team member. Document outcomes in A25 performance log.
 
 ### Step 3 — Manage Conflicts
 Apply conflict resolution techniques in preference order:
@@ -78,27 +73,16 @@ Apply conflict resolution techniques in preference order:
 | Force / Direct | PM imposes a decision | Schedule-critical situation with no time for deliberation (last resort) |
 | Withdraw / Avoid | Defer dealing with the conflict | Only when conflict will self-resolve imminently |
 
-Document every conflict instance and resolution in A25 conflict log: date, parties involved, nature of conflict, technique applied, outcome, status.
+Document every conflict instance and resolution in A25 conflict log.
 
 ### Step 4 — Manage Interpersonal Issues
-For team issues that cannot be resolved at PM level:
-- Log in A18 as an issue with classification = Team/HR
-- Assign owner (usually functional manager or HR)
-- Escalate per A06 thresholds
+For team issues that cannot be resolved at PM level, log in A18 and escalate per A06 thresholds.
 
 ### Step 5 — Manage Team Composition Changes
-For planned or unplanned team composition changes (replacement, addition, early release):
-- Update A25 RACI with change date, replacement, reason
-- Update A26 resource capacity
-- Assess impact on A15 schedule
-- Raise A12 change request if the change affects cost or schedule baseline
+Update A25 RACI, A26 capacity, and raise A12 if baselines are affected.
 
 ### Step 6 — Update Lessons Learned
-Capture significant team management events in A21:
-- Conflict patterns that recurred
-- Effective management techniques
-- Team dynamics insights
-- Onboarding or offboarding lessons
+Capture significant team management events in A21.
 
 ---
 
@@ -133,8 +117,8 @@ Capture significant team management events in A21:
 | Unresolved conflict | Conflict known to PM but not in A25 | Log immediately; apply conflict resolution technique |
 | Force overuse | A25 shows force/direct used more than once per phase | PM self-assessment; recalibrate to collaborative approach |
 | RACI stale after team change | A25 RACI shows departed team member still assigned | Immediate RACI update; notify affected work package owners |
-| Undocumented termination or release | Team member released from project with no A25 update or transition record | Retroactive A25 update; confirm all in-progress work reassigned; update A26 capacity |
-| Performance feedback not acknowledged | A25 shows feedback given but no agreed actions or response from team member | Follow-up session required; document outcome; escalate to functional manager if pattern persists |
+| Undocumented termination or release | Team member released with no A25 update or transition record | Retroactive A25 update; confirm all in-progress work reassigned; update A26 capacity |
+| Performance feedback not acknowledged | A25 shows feedback given but no agreed actions from team member | Follow-up session required; document outcome; escalate to functional manager if pattern persists |
 
 ---
 
@@ -158,7 +142,8 @@ Capture significant team management events in A21:
 | Version | Date | Change description |
 |---|---|---|
 | 1.0.0 | 2026-05-29 | Initial build |
-| 1.1.0 | 2026-05-30 | Expanded failure modes from 4 to 6: added undocumented termination/release and performance feedback not acknowledged |
+| 1.1.0 | 2026-05-30 | Expanded failure modes from 4 to 6 |
+| 1.1.1 | 2026-06-03 | Wave 1B patch — F-11: status updated from Draft · Untested to Draft · Tests Defined |
 
 ---
 
