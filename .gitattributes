@@ -1,1 +1,61 @@
+# ===================================================================
+# PMOSkills — GitHub Repository Attributes & Linguist Configuration
+# Aligned with PMI PMBOK 8th Edition — The Executable PMO Framework
+# Designed for Human Project Managers & Autonomous AI Agent Orchestration
+# ===================================================================
+
+# -------------------------------------------------------------------
+# 1. Primary Language Overrides (Linguist Configuration)
+# By default, GitHub excludes Markdown from the language statistics bar.
+# The following overrides force Linguist to detect Markdown as program code
+# and display it as the primary codebase language.
+# -------------------------------------------------------------------
+
 *.md linguist-language=Markdown
+*.md linguist-detectable=true
+*.md linguist-documentation=false
+
+# Treat structural configuration files as data/code
+*.yml linguist-detectable=true
+*.yaml linguist-detectable=true
+
+# Keep helper python validators and tests identified correctly
+shared/**/*.py linguist-language=Python
+tests/**/*.py linguist-language=Python
+
+# -------------------------------------------------------------------
+# 2. AI Skill & PMO Architecture Mappings
+# Custom git attributes defining semantic layers for AI agents and builders
+# -------------------------------------------------------------------
+
+# Core Executable Skills (AI-Agent instructions and zero-shot SOPs)
+skills/**/*.md pmo-layer=executable-ai-skill
+skills/**/*.md pmo-agent-parsable=true
+
+# Artifact Templates & Baselines
+artifacts/**/*.md pmo-layer=artifact-template
+artifacts/**/*.md pmo-placeholder-validated=true
+
+# Reference Layer
+reference/**/*.md pmo-layer=pmbok8-reference-ontology
+reference/**/*.md pmo-citation-verified=true
+
+# -------------------------------------------------------------------
+# 3. Standard Git Behavioral Controls
+# -------------------------------------------------------------------
+
+# Force LF line endings for all text files (ensures shell scripts and tests compile cleanly across systems)
+* text=auto eol=lf
+
+# Explicitly treat markdown and configuration files as text
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+
+# Standard binary designations (avoids git delta issues on media assets)
+*.jpeg binary
+*.jpg binary
+*.png binary
+*.gif binary
+*.ico binary
