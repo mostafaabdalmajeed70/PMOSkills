@@ -1,6 +1,6 @@
 {
   "name": "pmoskills",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "An executable skill system & PMO reference architecture built on PMI PMBOK® 8th Edition",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
