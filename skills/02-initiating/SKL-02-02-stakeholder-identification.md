@@ -1,143 +1,49 @@
 ---
 skill_id: SKL-02-02
-skill_name: "Stakeholder Identification"
+skill_name: Stakeholder Identification
 pack: "02 — Initiating"
-status: "Draft · Untested"
+version: "1.0.0"
+status: "Draft · Tests Defined"
 source_type: PMI-derived
-primary_artifact_output: "A07 — Stakeholder Register and Engagement Strategy (Identification section)"
+primary_artifact_output: "A07 — Stakeholder Register"
 artifacts_updated:
-  - "A05 — Context Register (Assumption Log)"
-  - "A19 — Risk Management Record (engagement gap risks)"
-pmbok8_process_anchor: "Guide §2.5.2.1 Identify Stakeholders · Figure 2-33"
+  - "A04 — Project Charter (initial stakeholder list update)"
+  - "A05 — Context Register (stakeholder context notes)"
+pmbok8_process_anchor: "Guide §2.5.6.1 Identify Stakeholders · Guide §2.5 Stakeholders Domain · Standard §3.8 Build an Empowered Culture"
 performance_domains:
   - Stakeholders
-  - Governance
 focus_area: Initiating
 upstream_prerequisites:
-  - "SKL-02-01 — Project Charter (A04) must be signed"
+  - "SKL-02-01 — A04 Project Charter must be baselined"
 downstream_skills:
-  - SKL-03-07
-  - SKL-03-08
+  - "SKL-03-07 — Plan Stakeholder Engagement"
+  - "SKL-03-08 — Plan Communications Management"
+  - "SKL-04-06 — Manage Stakeholder Engagement"
+  - "SKL-05-07 — Monitor Stakeholder Engagement"
 file_path: "skills/02-initiating/SKL-02-02-stakeholder-identification.md"
-tests: 7
-version: "1.1.0"
+tests: 10
 ---
 
 # SKL-02-02 — Stakeholder Identification
+
 **Skill ID:** SKL-02-02  
-**Skill Name:** Stakeholder Identification  
-**Version:** 1.1.0  
-**Lifecycle Pack:** 02 — Initiating  
-**Status:** Draft · Untested  
-**Source Type:** PMI-derived  
-**File Path:** `skills/02-initiating/SKL-02-02-stakeholder-identification.md`
+**Pack:** 02 — Initiating  
+**Status:** Draft · Tests Defined  
+**Source type:** PMI-derived  
+**PMBOK8 anchor:** Guide §2.5.6.1 Identify Stakeholders · Guide §2.5 Stakeholders Domain · Standard §3.8 Build an Empowered Culture  
+**File path:** `skills/02-initiating/SKL-02-02-stakeholder-identification.md`
 
 ---
 
 ## Purpose
 
-Identify all individuals, groups, and organizations that have a stake in the project, and document their interests, involvement, influence, interdependencies, and potential impact on project success into **A07 — Stakeholder Register and Engagement Strategy**. This skill produces the foundational stakeholder view that drives requirements elicitation, communications planning, and engagement throughout the project lifecycle.
-
-This skill is first executed during **initiation**, immediately after the Project Charter (A04) is approved. It is then **re-executed periodically** throughout the project as the environment evolves, new stakeholders emerge, or existing stakeholder dynamics shift.
+Identify, categorize, and document all individuals, groups, and organizations that may affect, be affected by, or perceive themselves to be affected by the project. The output is a baselined Stakeholder Register (A07) that provides the foundation for stakeholder engagement planning, communications management, and ongoing engagement monitoring throughout the project lifecycle.
 
 ---
 
 ## Scope
 
-**In scope:**
-- Identifying all internal and external stakeholders
-- Documenting stakeholder interests, influence, impact, and interdependencies
-- Producing the initial Stakeholder Register and Engagement Strategy (A07)
-- Assigning an initial engagement level classification (Unaware → Leading)
-- Triggering downstream engagement and communications planning skills
-
-**Out of scope:**
-- Developing detailed engagement plans → use SKL-03-07 (Plan Stakeholder Engagement)
-- Planning communications channels and cadence → use SKL-03-08 (Plan Communications Management)
-- Active stakeholder management and communications execution → Planning and Executing pack skills
-- Monitoring and adjusting engagement → Monitoring and Controlling pack skills
-
----
-
-## Authority and Governance
-
-| Field | Value |
-|-------|-------|
-| **Primary PMI Source** | PMBOK8 |
-| **Exact Section** | Guide §2.5.2.1 Identify Stakeholders · Guide Figure 2-33 · Guide §2.5.1 Key Concepts |
-| **Purpose of Citation** | Establish stakeholder identification as a continuing, iterative project management process within the Stakeholders Performance Domain |
-| **Source Type** | PMI-derived |
-| **Governance Layer** | Project Governance |
-| **Artifact Produced** | A07 — Stakeholder Register and Engagement Strategy |
-| **Owner** | Project Manager |
-| **Approval Authority** | Sponsor (initial strategic alignment); ongoing updates managed by PM |
-| **Threshold Band** | T2 — changes affecting key sponsor or governance-body stakeholder classification require sponsor awareness |
-| **Escalate When** | New stakeholders emerge who hold decision or veto authority affecting scope, budget, or delivery approach |
-
----
-
-## Performance Domains and Principles
-
-**Performance Domains:** Stakeholders · Governance  
-**Focus Areas:** Initiating · Planning · Executing · Monitoring and Controlling
-
-| Principle | Application in This Skill |
-|-----------|--------------------------|
-| P1 Adopt a Holistic View | Stakeholder identification must capture internal and external stakeholders, supportive and resistant parties, and those impacted regardless of their visibility |
-| P2 Focus on Value | Stakeholder identification anchors value delivery — the right stakeholders must be known before scope, requirements, and success criteria can be validated |
-| P5 Engage Stakeholders | Active, ongoing identification is the prerequisite for any engagement; missing a key stakeholder is a project risk |
-| P7 Embrace Adaptability | Re-run this skill when the project environment changes; the register is never a static snapshot |
-
----
-
-## PMBOK 8 Process: Identify Stakeholders
-
-### Inputs (per PMBOK8 Guide Figure 2-33)
-
-| Input | Artifact / Source | Mandatory? | Notes |
-|-------|------------------|-----------|-------|
-| Project charter | A04 | Yes | Primary trigger and source of initial named stakeholders: sponsor, PM, key parties |
-| Business case | A01 | Yes | Identifies business owners, benefit recipients, impacted business functions |
-| Benefits management plan | A02 | Recommended | Identifies benefit owners and their organizational context |
-| Communications management plan | A28 | Conditional | Available on re-runs; existing comm plan informs stakeholder re-analysis |
-| Stakeholder engagement plan | A07 (prior version) | Conditional | Available on re-runs; prior engagement strategy reviewed before update |
-| Change log | A12 | Conditional | Re-runs triggered by change events may surface new or altered stakeholder positions |
-| Issue log | A18 | Conditional | Active issues often reveal previously hidden or under-weighted stakeholders |
-| Requirements documentation | A08 | Conditional | Planning-phase re-runs use scope and requirements as a stakeholder discovery lens |
-| Agreements | Pre-existing contracts/MOUs | Conditional | Supplier, partner, or regulatory agreements identify additional external stakeholders |
-| Enterprise environmental factors (EEFs) | A05 — Context Register | Yes | Organizational culture, industry context, regulatory environment, market factors |
-| Organizational process assets (OPAs) | A05 — Context Register | Yes | Templates, historical stakeholder registers, lessons, communication standards |
-
-### Tools and Techniques (per PMBOK8 Guide Figure 2-33)
-
-| Tool / Technique | When to Use | Key Output |
-|-----------------|------------|-----------|
-| Expert judgment | Always — PM, sponsor, and domain experts name stakeholders from organizational knowledge | Initial stakeholder candidates |
-| Data gathering — Questionnaires and surveys | When large or distributed organizations require structured input | Consolidated stakeholder nominations |
-| Data gathering — Brainstorming | When starting a new project with unclear stakeholder boundaries | Broad candidate list for filtering |
-| Data analysis — Stakeholder analysis | Always — assess each stakeholder's interests, influence, power, and engagement level | Populated A07 fields |
-| Data analysis — Document analysis | Always — mine charter, business case, agreements, and prior records for named parties | Stakeholder candidate list |
-| Data representation — Stakeholder mapping/representation | When visualizing power/interest or salience is needed to communicate the engagement picture | Stakeholder grid or salience model |
-| Meetings | Initial identification session with sponsor; re-runs as part of status or governance reviews | Validated stakeholder list |
-
-#### Stakeholder Analysis Models (data representation options)
-
-| Model | Use Case |
-|-------|----------|
-| **Power/Interest Grid** | Classic two-axis map; classify by power to influence and interest in outcomes |
-| **Power/Influence Grid** | Substitutes active involvement for interest where behavioral engagement matters more |
-| **Influence/Impact Grid** | Focuses on who can change outcomes and who is most affected |
-| **Salience Model** | Three-attribute model: Power, Legitimacy, Urgency — used for complex stakeholder landscapes |
-| **Directions of Influence** | Maps upward (governing bodies), downward (team), outward (suppliers), and sideward (peers) |
-
-### Outputs (per PMBOK8 Guide Figure 2-33)
-
-| Output | Artifact ID | Description |
-|--------|------------|-------------|
-| **Stakeholder register** | A07 | Primary output — stakeholder identities, attributes, interests, influence, and initial engagement classification |
-| **Change requests** | A12 | When identification reveals scope, risk, or plan impacts requiring formal change |
-| **Project management plan updates** | — | Requirements management plan, communications management plan, risk management plan, and stakeholder engagement plan may all require updates |
-| **Project document updates** | — | Assumption log (A05), issue log (A18), risk register (A19) updated when identification reveals new issues or risks |
+This skill covers the identification and initial classification of stakeholders only. It does not plan stakeholder engagement strategies (SKL-03-07), develop the communications management plan (SKL-03-08), or execute stakeholder engagement activities (SKL-04-06). Stakeholder identification is an iterative process — new stakeholders may be added as the project evolves.
 
 ---
 
@@ -145,300 +51,160 @@ This skill is first executed during **initiation**, immediately after the Projec
 
 | Input | Source | Mandatory? |
 |---|---|---|
-| Project Charter | A04 | Yes |
-| Business Case | A01 | Yes |
-| Context Register (EEFs and OPAs) | A05 | Yes |
-| Prior A07 version | A07 | Yes (re-runs only) |
-| Change log, issue log, requirements | A12, A18, A08 | Conditional |
+| A04 — Project Charter (baselined) | SKL-02-01 output | Yes |
+| Organizational charts and structure | EEF | Yes |
+| Existing stakeholder registers (similar projects) | OPA | If available |
+| Industry/regulatory stakeholder lists | EEF (regulatory) | If applicable |
+| Contract documents | EEF (procurement) | If applicable |
+| A05 — Context Register (environmental context) | SKL-01-01 output | Yes |
 
-**Gate check:** A04 must be signed before this skill executes. On re-runs, always update from the prior A07 state — never start from blank.
+**Gate check:** A04 must be baselined before this skill runs.
 
 ---
 
 ## Instructions
 
-Execute this skill in the following sequence. On first execution, the PM leads the identification session with sponsor input. On re-runs, the PM reviews and updates A07 using all available inputs.
+### Step 1 — Conduct Stakeholder Discovery
+1. Review A04 (Project Charter) for the initial stakeholder list from Step 7 of SKL-02-01.
+2. Expand the list using the following discovery methods:
+   - **Organizational chart analysis:** Identify all departments, business units, and roles impacted by the project scope.
+   - **Process flow analysis:** Map business processes that the project will change; identify every role in those processes.
+   - **Regulatory and legal review:** Identify all regulatory bodies, compliance authorities, and legal entities with oversight.
+   - **Supply chain analysis:** Identify vendors, contractors, partners, and third-party organizations involved in or affected by the project.
+   - **End-user analysis:** Identify groups of users who will use, operate, or be affected by the project outputs.
+   - **Interviews and workshops:** Conduct structured interviews with the sponsor and key known stakeholders to identify additional parties.
+3. Document every identified stakeholder (individual or group) in the A07 discovery draft.
 
-### Step 1 — Confirm Prerequisites
+### Step 2 — Classify Stakeholders
+1. For each identified stakeholder, assign the following classification attributes:
+   - **Type:** Internal, External, Regulatory, Contractual, End User, Beneficiary, Opposition
+   - **Role:** Sponsor, Governance Body, PM Team, SME, Supplier, Customer, Regulator, Affected Party
+   - **Interest level (1–5):** How much does this stakeholder care about the project outcome?
+   - **Influence level (1–5):** How much can this stakeholder affect project decisions or execution?
+   - **Impact level (1–5):** How significantly will the project affect this stakeholder?
+2. Calculate a composite priority score: `Priority = (Interest + Influence + Impact) / 3`
+3. Assign a priority tier based on score:
+   - **Tier 1 (High):** Score 4.0–5.0 — require active management
+   - **Tier 2 (Medium):** Score 2.5–3.9 — require regular monitoring
+   - **Tier 3 (Low):** Score 1.0–2.4 — require periodic awareness checks
+4. Record all classification data in A07.
 
-Before starting, verify:
+### Step 3 — Assess Stakeholder Stance
+1. For each Tier 1 stakeholder, assess their current stance toward the project:
+   - **Unaware:** Not yet informed about the project
+   - **Resistant:** Aware but opposed to the project
+   - **Neutral:** Aware but neither supportive nor resistant
+   - **Supportive:** Aware and in favor of the project
+   - **Leading:** Actively championing the project
+2. Record current stance in A07.
+3. Define the desired stance for each Tier 1 stakeholder (what stance do we need them to have by key project milestones?).
+4. Calculate the stance gap (current vs. desired) — this will drive engagement strategy in SKL-03-07.
 
-- [ ] Project Charter (A04) has been signed and approved
-- [ ] Business Case (A01) is accessible
-- [ ] Context Register (A05) is available (EEFs and OPAs)
-- [ ] On re-runs: prior A07 version is the starting point, not a blank slate
+### Step 4 — Identify Stakeholder Interests and Concerns
+1. For each Tier 1 and Tier 2 stakeholder, document:
+   - **Primary interest:** What does this stakeholder want from the project?
+   - **Primary concern:** What is this stakeholder worried about or opposed to?
+   - **Success criteria:** How will this stakeholder judge project success?
+   - **Key risk to stakeholder:** What project risk most affects this stakeholder?
+2. Record interests and concerns in A07.
 
-If A04 is not signed, **do not proceed**. Return to SKL-02-01.
+### Step 5 — Map Stakeholder Relationships
+1. Identify key relationships between stakeholders:
+   - Who influences whom? (Power networks)
+   - Who has conflicting interests with whom? (Tension points)
+   - Who are the informal leaders or opinion influencers?
+2. Create a simple relationship map (table or diagram) showing key influence relationships.
+3. Record the relationship map or description in A07.
 
-### Step 2 — Generate the Initial Candidate List
+### Step 6 — Assign Preliminary Engagement Roles
+1. For each Tier 1 stakeholder, assign a preliminary engagement role to the project team:
+   - **PM:** Owns primary relationship
+   - **Sponsor:** Handles peer-level or executive-level engagement
+   - **SME / Team lead:** Handles technical or functional engagement
+2. This is a preliminary assignment — full engagement planning is done in SKL-03-07.
+3. Record preliminary engagement roles in A07.
 
-Use document analysis and expert judgment to extract stakeholder candidates from all available inputs. Start with the charter — it names the sponsor, PM, and key parties by definition. Then extend outward:
-
-**Internal stakeholder categories to consider:**
-- Sponsor(s) and steering committee members
-- Project manager and project management team
-- Project team members and functional contributors
-- PMO leads (where engaged)
-- Business owners, process owners, and benefit owners
-- Senior management affected by project outcomes
-- Internal audit, legal, and compliance functions (where relevant)
-- Finance and procurement functions (where relevant)
-
-**External stakeholder categories to consider:**
-- Customers and end users
-- Suppliers, vendors, and contractors
-- Regulatory bodies and government agencies
-- Partner organizations and joint venture parties
-- Industry groups, standard-setting bodies
-- Community groups, affected public (for infrastructure and public-sector projects)
-- Media (for high-visibility or public-interest projects)
-
-> Apply the holistic view principle (P1): include stakeholders who are neutral or resistant, not only those who are supportive. Missing a resistant stakeholder is a project risk.
-
-### Step 3 — Apply Stakeholder Analysis
-
-For each identified stakeholder or stakeholder group, complete the following analysis fields for A07:
-
-| Analysis Field | Description | Source |
-|---------------|-------------|--------|
-| Stakeholder identity | Name, role, organization, contact | Charter, document analysis |
-| Interest / stake | What outcome, deliverable, or decision affects them | Expert judgment, document analysis |
-| Power / influence level | Ability to affect project decisions, resources, or outcomes | Stakeholder analysis |
-| Impact level | Degree to which project outcomes affect the stakeholder | Stakeholder analysis |
-| Current engagement level | Unaware / Resistant / Neutral / Supportive / Leading | Stakeholder analysis |
-| Target engagement level | Where the PM needs engagement to be for project success | Expert judgment |
-| Engagement gap | Difference between current and target — drives engagement strategy | Derived |
-| Communication needs | Frequency, format, level of detail required | Stakeholder analysis, document analysis |
-| Interdependencies | Other stakeholders this party is connected to or influenced by | Stakeholder mapping |
-| Risk flag | Yes/No — does the gap or position create a project risk? | Stakeholder analysis |
-
-#### Engagement Level Definitions (PMI-aligned)
-
-| Level | Description |
-|-------|-------------|
-| **Unaware** | Not aware of the project or its potential impacts |
-| **Resistant** | Aware but opposed to the project or its outcomes |
-| **Neutral** | Aware but neither supportive nor resistant |
-| **Supportive** | Aware of the project and supportive of its outcomes |
-| **Leading** | Actively engaged and helping drive project success |
-
-### Step 4 — Apply a Stakeholder Mapping Model
-
-Select one mapping model appropriate to the project's complexity. For most projects, the **Power/Interest Grid** is sufficient. For complex stakeholder landscapes (large transformation projects, regulated industries, multi-organizational programs), consider the **Salience Model**.
-
-Record the selected model and the resulting classification in A07. The mapping model output does not need to be a separate document — embed the classification result in A07 as an engagement context note.
-
-**Do not maintain a separate salience canvas or stakeholder mapping worksheet if it only duplicates A07 fields.** (Waste Rule — A05 v1.0.3 §3.2)
-
-### Step 5 — Populate A07 — Stakeholder Register and Engagement Strategy
-
-Complete all mandatory fields of A07 using the analysis output from Steps 2–4. Refer to the **Core Fields** section below.
-
-Apply the following constraint: A07 is a **living record**, not a point-in-time report. Build it for updatability — structured so that re-runs in Steps 6–8 are incremental updates, not rewrites.
-
-### Step 6 — Identify Downstream Impacts
-
-After completing A07, scan for items that require other project artifacts to be updated or created:
-
-| Trigger | Action |
-|---------|--------|
-| New stakeholder reveals an unrecorded assumption | Update A05 Assumption Log |
-| New stakeholder introduces a project risk | Add entry to A19 Risk Management Record |
-| Engagement gap is significant and creates delivery risk | Raise a risk flag in A19 |
-| Identification reveals a scope boundary issue | Raise a change request (A12) |
-| Communications planning needs to be revised | Flag for A28 update |
-| Stakeholder has regulatory or compliance authority | Escalate to sponsor and update A06 Tailoring Decision Record if governance implications exist |
-
-### Step 7 — Present Initial A07 to Sponsor
-
-On first execution, present the initial A07 to the sponsor for strategic alignment review. The sponsor confirms:
-
-- Named stakeholders at the executive and governance level are correct
-- Engagement approach for high-power stakeholders is appropriate
-- No critical stakeholders have been omitted
-
-This does **not** require formal approval for every re-run. Routine updates managed by the PM.
-
-### Step 8 — Trigger Downstream Skills
-
-Once A07 is baselined, immediately trigger:
-
-| Skill | What It Does |
-|-------|-------------|
-| SKL-03-07 | Plan Stakeholder Engagement — develops detailed strategies for each engagement gap |
-| SKL-03-08 | Plan Communications Management — translates stakeholder information needs into a communications record |
-| SKL-02-03 | Create Context Register (A05) — if not yet initiated, stakeholder data feeds EEF and OPA compilation |
-
----
-
-## Core Fields — A07 Stakeholder Register and Engagement Strategy
-
-| Field | Mandatory? | Guidance |
-|-------|-----------|---------|
-| **Stakeholder identity** | Yes | Name or group name, role, organization, contact method |
-| **Stake / interest** | Yes | What the stakeholder cares about: outcomes, deliverables, decisions, timing |
-| **Influence level** | Yes | High / Medium / Low — ability to affect project direction, funding, or team |
-| **Impact level** | Yes | High / Medium / Low — degree the project affects the stakeholder |
-| **Current engagement level** | Yes | Unaware / Resistant / Neutral / Supportive / Leading |
-| **Target engagement level** | Yes | Where engagement needs to be for the project to succeed |
-| **Engagement gap** | Yes | Derived from current vs. target — drives strategy |
-| **Engagement approach** | Yes | Key actions: inform, consult, involve, collaborate, empower |
-| **Communication needs** | Yes | Frequency, channel, format, and level of detail for this stakeholder |
-| **Interdependencies** | Recommended | Other stakeholders who influence or are influenced by this party |
-| **Risk flag** | Recommended | Flag when the gap or resistance level creates a project risk |
-| **Last reviewed date** | Yes | Tracks currency of the record — required for audit and re-run control |
+### Step 7 — Baseline A07 and Update Downstream Artifacts
+1. Review the completed A07 with the project sponsor and PMO.
+2. Obtain baseline approval from the sponsor or PMO lead.
+3. Record version, baseline date, and approver in A07.
+4. Update A04 (Project Charter) — replace the preliminary stakeholder list with a reference to A07.
+5. Update A05 (Context Register) — add relevant stakeholder context notes.
+6. Distribute A07 to project team leads (note: restrict sensitive stakeholder information to authorized roles per A05 governance).
+7. Update SKILL-REGISTRY.md — mark SKL-02-02 as complete.
 
 ---
 
 ## Outputs
 
-| Output | Artifact | Section |
+| Output | Artifact | Section | Notes |
 |---|---|---|
-| Stakeholder Register and Engagement Strategy | A07 | Complete record — Identification section |
-| Risk register updates | A19 | Engagement gap risk entries |
-| Assumption log updates | A05 | New assumptions surfaced during identification |
+| Stakeholder Register | A07 | Full document | All stakeholders, classifications, stances, interests, relationship map |
+| A04 Charter update | A04 | Stakeholder list section | Reference pointer to A07 |
+| A05 Context update | A05 | Stakeholder context notes | Environmental context for key stakeholders |
 
 ---
 
 ## Constraints
 
-- A04 must be signed before this skill executes — do not run without an approved charter.
-- A07 is a living record — always update from the prior state; never blank-slate on re-runs.
-- Do not maintain a separate salience canvas if it duplicates A07 fields — merge content and retire the duplicate (waste rule).
-- Sponsor review is mandatory for initial release of A07 — PM self-approval is not permitted for first execution.
-- Engagement gaps with risk implications must be logged in A19 — not left as unrecorded observations.
+- Every identified stakeholder must have at minimum: name/group, type, role, interest, influence, and impact scores recorded.
+- Tier 1 stakeholders must have stance assessment and interests/concerns documented before A07 is baselined.
+- Sensitive stakeholder information (e.g., resistance assessment, internal politics) must be access-controlled per A05 governance.
+- A07 is a living document — it must be updated at each phase gate and whenever significant new stakeholders are identified.
 
 ---
 
 ## Tailoring Guidance
 
-| Context | Tailoring Decision |
-|---------|-------------------|
-| Small, low-risk internal project | A07 may be a simple table in the project charter or a lightweight register; full salience analysis is optional |
-| Agile/adaptive project | A07 is still required — identify stakeholders before the first sprint; re-run each iteration as needed; product owner is a primary stakeholder interface |
-| Large transformation or regulatory project | Full stakeholder analysis with salience model; separate engagement strategies per group; sponsor review of A07 is mandatory |
-| External contract project | Include contractual parties (client, sub-contractors, oversight bodies) as named stakeholders; legal and compliance functions flagged explicitly |
-| Multi-phase predictive project | Re-run this skill at each phase gate; A07 must be updated before planning for the new phase begins |
-| Public-sector or community-impact project | External community groups, advocacy organizations, and elected representatives must be explicitly identified |
-
-**Do not tailor away:**
-- Stakeholder identification itself (P5 — mandatory for any project)
-- Sponsor identification and engagement classification (governance anchor — non-negotiable)
-- Re-run cadence at phase transitions (P7 — required for adaptability)
+| Approach | Adjustment |
+|---|---|
+| Small / internal project | Simple list with interest/influence matrix. No formal scoring. PM manages all relationships. |
+| Large / complex project | Full discovery with interviews and workshops. Formal scoring model. Relationship map required. Restricted access tier for sensitive data. |
+| Agile / adaptive project | Stakeholders identified at program increment level. Register updated every sprint review. Product Owner manages primary stakeholder relationships. |
+| Regulatory / compliance project | Regulatory bodies as mandatory Tier 1. Stance assessment mandatory for all regulators. Legal/compliance review before baselining. |
+| Program or portfolio | Stakeholder register covers program-level and project-level stakeholders. Cross-project stakeholder coordination noted. |
 
 ---
 
 ## Failure Cases
 
-| Failure | Indicator | Corrective Action |
-|---------|-----------|-----------------|
-| Charter not approved before execution | A07 drafted without a signed A04 | Halt; return to SKL-02-01 |
-| Only supportive stakeholders identified | Register contains no Neutral or Resistant entries on a complex change project | Conduct facilitated stakeholder discovery session; include explicit "who might oppose or be affected negatively?" question |
-| A07 never re-run after initial creation | Register is dated from initiation, project is mid-execution | Schedule immediate re-run; flag as a governance gap |
-| Salience canvas and A07 maintained separately with duplicate content | Two artifacts contain the same stakeholder rows | Merge into A07; retire the canvas (waste rule) |
-| Key regulatory or compliance stakeholder missing | Regulatory body or audit function not listed | Add immediately; assess if a change request or governance escalation is needed |
-| Engagement gaps not acted upon | High-influence, Resistant stakeholders with no engagement action | Raise risk flag in A19; escalate engagement gap to sponsor |
-| A07 approval routed to PM instead of sponsor | PM self-approves initial strategic classification | Sponsor review is mandatory for initial release |
-
----
-
-## Re-Run Schedule
-
-| Trigger | Re-Run Type |
-|---------|------------|
-| End of each project phase (predictive) | Full re-run; update all fields |
-| Start of each sprint or iteration (adaptive) | Lightweight re-run; confirm no new stakeholders; update engagement levels if changed |
-| Major change request approved (A12) | Targeted re-run; assess whether the change introduces or affects stakeholders |
-| New agreement or supplier engaged | Targeted re-run; add external stakeholders from the agreement |
-| Significant stakeholder behavior change observed | Immediate targeted update; reassess current engagement level |
-| Project enters deployment or transition phase | Full re-run; end-user and operational stakeholders become primary |
+| Failure | Symptom | Resolution |
+|---|---|---|
+| Key stakeholder not identified | Resistance or conflict surfaces late in execution | Re-run stakeholder discovery; add missing stakeholders; update A07 |
+| Stance not assessed for Tier 1 | Engagement planning based on assumptions | Run structured interviews; update A07 before engagement planning |
+| Conflicting stakeholder interests not mapped | Unresolved conflicts escalate to sponsor | Map conflicts in A07; design engagement to address conflicts proactively |
+| Sensitive data not access-controlled | Stakeholder resistance assessment shared inappropriately | Apply access controls per A05 governance; review distribution list |
+| A07 not updated after phase gate | Outdated stakeholder data drives poor engagement decisions | Schedule A07 review at every phase gate; assign ownership for updates |
+| Engagement role not assigned for Tier 1 stakeholder | No one owns the relationship; stakeholder feels ignored | Assign engagement role in A07; confirm with team lead |
 
 ---
 
 ## Tests
 
 | Test ID | Test description | Pass condition | Fail condition |
-|---|---|---|---|
-| T-1 | Minimum valid A07 at initiation | A07 contains sponsor, PM, and ≥3 other named groups; all mandatory fields populated; engagement levels assigned; last reviewed date recorded | Any mandatory field missing |
-| T-2 | Missing charter prerequisite | Skill halts; returns "Return to SKL-02-01" | Skill proceeds without signed A04 |
-| T-3 | Only supportive stakeholders | Skill flags identification gap; prompts facilitated discovery session | Gap not flagged on complex change project |
-| T-4 | Re-run at phase gate | A07 updated with last reviewed date; new phase stakeholders assessed; engagement levels revised | A07 not updated at phase gate |
-| T-5 | Engagement gap risk flag | Risk entry created in A19 referencing engagement gap; owner assigned; action documented | Gap noted in A07 but not logged in A19 |
-| T-6 | Waste rule — duplicate salience canvas | Skill flags duplicate; recommends merge into A07 and retirement of canvas | Duplicate maintained without flag |
-| T-7 | Adaptive project re-run | A07 confirms no new external stakeholders; product owner and key user engagement levels confirmed or updated; last reviewed date updated | A07 not updated after sprint |
-
----
-
-## Examples
-
-### Example A — Internal IT System Migration (Predictive, Medium Complexity)
-
-Initial A07 identifies the following stakeholder groups:
-
-| Stakeholder | Interest | Influence | Impact | Current | Target |
-|------------|---------|----------|--------|---------|--------|
-| VP Operations (Sponsor) | Project success, cost adherence | High | High | Leading | Leading |
-| IT Director | Technical delivery, team capacity | High | High | Supportive | Leading |
-| Finance Team Lead | Data integrity in migration | Medium | High | Neutral | Supportive |
-| End Users — Operations Staff | Minimal disruption to daily work | Low | High | Resistant | Neutral |
-| Procurement Manager | Vendor contracts and SLAs | Medium | Medium | Neutral | Supportive |
-| Compliance Officer | Data privacy and audit trail | High | Medium | Unaware | Supportive |
-
-> Note: End Users (Resistant) and Compliance Officer (Unaware) are flagged as engagement risks → entries added to A19.
-
-### Example B — Adaptive Software Product (Scrum, 3 Sprints Completed)
-
-Re-run after Sprint 3 reveals:
-
-- A new product compliance requirement from a regulatory team not previously identified → added to A07 as Neutral (target: Supportive) → risk flag raised in A19
-- Product Owner engagement remains Leading → confirmed, no change
-- Two end-user groups have shifted from Neutral to Supportive after demo → A07 updated; risk flag closed
-
----
-
-## Integration Points
-
-| Connected Artifact or Skill | Relationship |
-|----------------------------|-------------|
-| A04 Project Charter | Input — primary trigger; charter names the sponsor, PM, and key parties |
-| A01 Business Case | Input — identifies business owners and benefit recipients |
-| A02 Benefits Record | Input — identifies benefit owners |
-| A05 Context Register | Bidirectional — EEFs and OPAs feed identification; new assumptions feed back to A05 |
-| A12 Change and Exception Decision Log | Conditional input on re-runs; output when identification triggers a change |
-| A18 Issue, Impediment, and Action Log | Conditional input on re-runs; issues often reveal hidden stakeholders |
-| A19 Risk Management Record | Output — engagement gaps with risk implications are logged here |
-| A28 Communications and Reporting Record | Downstream — stakeholder communication needs from A07 feed A28 |
-| A07 (itself — prior version) | Input on all re-runs — always update from the prior state, never blank-slate |
-| SKL-02-01 | Upstream prerequisite — charter must be signed before this skill runs |
-| SKL-03-07 | Downstream — Plan Stakeholder Engagement consumes A07 as its primary input |
-| SKL-03-08 | Downstream — Plan Communications Management uses A07 stakeholder information needs |
-
----
-
-## Companion References
-
-| Alias | Source | Relevant Section |
-|-------|--------|-----------------|
-| PMBOK8 | PMBOK Guide 8th Edition | §2.5 Stakeholders Performance Domain · §2.5.1 Key Concepts · §2.5.2.1 Identify Stakeholders · Figure 2-33 |
-| PMBOK8 | The Standard for Project Management | §3.7 P5 Engage Stakeholders · §3.1 P1 Holistic View · §3.9 P7 Embrace Adaptability |
-| Process-Groups | Process Groups Practice Guide | Initiating Process Group · Identify Stakeholders |
-| PMI-BA | Business Analysis Practice Guide | Stakeholder identification and analysis |
-| Forms-Book | PMI Practice Standard Forms | Stakeholder register template reference |
+|---|---|---|
+| T-1 | A04 charter gate check | A04 is baselined before this skill runs | A04 in draft or unsigned |
+| T-2 | Full stakeholder discovery completed | All six discovery methods (org chart, process flow, regulatory, supply chain, end-user, interviews) attempted and documented | Any method skipped without documented rationale |
+| T-3 | All stakeholders classified | Every stakeholder has type, role, interest, influence, and impact scores recorded | Any stakeholder with incomplete classification |
+| T-4 | Priority tier assigned to all stakeholders | Priority score calculated and tier assigned for all stakeholders | Any stakeholder without a tier |
+| T-5 | Stance assessed for all Tier 1 stakeholders | Current and desired stance recorded for every Tier 1 stakeholder | Any Tier 1 stakeholder without stance assessment |
+| T-6 | Interests and concerns documented for Tier 1 and 2 | Primary interest, primary concern, success criteria, and key risk recorded for all Tier 1 and 2 stakeholders | Any Tier 1 or 2 stakeholder missing interests/concerns |
+| T-7 | Relationship map created | Key influence relationships and conflict points documented or diagrammed | Relationship map absent |
+| T-8 | Engagement roles assigned for Tier 1 | Every Tier 1 stakeholder has an assigned engagement owner | Any Tier 1 stakeholder without engagement role |
+| T-9 | A04 and A05 updated | A04 stakeholder section references A07; A05 has stakeholder context notes | A04 or A05 not updated |
+| T-10 | A07 baselined and distributed | Version, baseline date, approver recorded; access controls applied; distributed to authorized team leads | A07 in draft, unsigned, or distributed without access controls |
 
 ---
 
 ## Change Log
 
-| Version | Date | Description |
+| Version | Date | Change description |
 |---|---|---|
-| 1.0.0 | 2026-05-29 | Initial build — full skill file with Purpose, Scope, Authority, PMBOK8 ITT, Instructions (8 steps), Core Fields, Tailoring, Failure Cases, Re-Run Schedule, Tests (7), Examples, Integration Points |
-| 1.1.0 | 2026-05-30 | Canonical patch — added YAML frontmatter; added Inputs Required table with gate check; added Outputs table; added Constraints section; normalized Tests to table format; updated version reference |
+| 1.0.0 | 2026-05-30 | Initial build |
 
 ---
 
-*Source Type: PMI-derived*  
-*Governance Layer: Project Governance*  
-*Authority: PMBOK8 §2.5.2.1 · Figure 2-33 · Standard §3.7 P5*  
-*Linked Artifact: A07 — Stakeholder Register and Engagement Strategy*  
-*Related Skills: SKL-02-01 · SKL-03-07 · SKL-03-08*  
-*Re-run: Yes — periodic throughout project lifecycle*
+*Authority: PMBOK8 Guide §2.5.6.1 Identify Stakeholders · Guide §2.5 Stakeholders Domain · Standard §3.8 Build an Empowered Culture*  
+*Source type: PMI-derived*  
+*Owner: Project Manager*  
+*Approval authority: Project Sponsor or PMO lead*

@@ -2,122 +2,47 @@
 skill_id: SKL-02-01
 skill_name: "Project Charter Creation"
 pack: "02 — Initiating"
-status: "Draft · Untested"
+status: "Draft · Tests Defined"
 source_type: PMI-derived
 primary_artifact_output: "A04 — Project Charter"
 artifacts_updated:
   - "A05 — Context Register (Assumption Log)"
-pmbok8_process_anchor: "Guide §2.1.6.1 Initiate Project or Phase · Figure 2-3"
+pmbok8_process_anchor: "Guide §2.1.6.1 Initiate Project or Phase · Guide §2.1 Governance Domain · Standard §3.6 Be an Accountable Leader"
+version: "1.0.0"
 performance_domains:
   - Governance
-  - Stakeholders
 focus_area: Initiating
 upstream_prerequisites:
-  - "A01 — Business Case must be approved"
-  - "Pack 01 complete (governance, doc control, repository configured)"
+  - "SKL-01-01 — A05 Governance section must be baselined"
+  - "SKL-01-02 — Document Control Standards must be baselined"
+  - "SKL-01-03 — Repository configured"
 downstream_skills:
-  - SKL-02-02
-  - SKL-03-01
+  - "SKL-02-02 — Stakeholder Identification"
+  - "SKL-03-01 — Integrate and Align Project Plans"
 file_path: "skills/02-initiating/SKL-02-01-project-charter.md"
-tests: 5
-version: "1.1.0"
+tests: 10
 ---
 
 # SKL-02-01 — Project Charter Creation
+
 **Skill ID:** SKL-02-01  
-**Skill Name:** Project Charter Creation  
-**Version:** 1.1.0  
-**Lifecycle Pack:** 02 — Initiating  
-**Status:** Draft · Untested  
-**Source Type:** PMI-derived  
-**File Path:** `skills/02-initiating/SKL-02-01-project-charter.md`
+**Pack:** 02 — Initiating  
+**Status:** Draft · Tests Defined  
+**Source type:** PMI-derived  
+**PMBOK8 anchor:** Guide §2.1.6.1 Initiate Project or Phase · Guide §2.1 Governance Domain  
+**File path:** `skills/02-initiating/SKL-02-01-project-charter.md`
 
 ---
 
 ## Purpose
 
-Produce a formally authorized Project Charter (A04) that grants the project its official existence, names the project manager with delegated authority, establishes the high-level scope boundary, and enables the project to consume organizational resources.
-
-This skill must be executed **once per project** — and once per phase in multi-phase predictive projects — before planning work begins.
+Formally authorize the project by creating, reviewing, and obtaining sponsor approval for the Project Charter (A04). The charter establishes the project's existence, defines the PM's authority, confirms strategic alignment, records key constraints and assumptions, and provides the authorization foundation for all subsequent planning and execution.
 
 ---
 
 ## Scope
 
-**In scope:**
-- Drafting the Project Charter from required inputs
-- Validating that the charter contains all mandatory fields
-- Routing the draft for sponsor approval
-- Linking the charter to its source business case and feasibility record
-
-**Out of scope:**
-- Business case creation → use SKL-01-02
-- Detailed planning → use SKL-03-01
-- Stakeholder identification → use SKL-02-02 (triggered by this skill's output)
-- Governance structure → use SKL-02-04 (triggered by this skill's output)
-
----
-
-## Authority and Governance
-
-| Field | Value |
-|-------|-------|
-| **Primary PMI Source** | PMBOK8 |
-| **Exact Section** | Guide §2.1.6.1 Initiate Project or Phase · Guide Figure 2-3 · Guide §4.5.1 |
-| **Purpose of Citation** | Establish the charter as the formal authorization record for the project |
-| **Source Type** | PMI-derived |
-| **Governance Layer** | Project Governance |
-| **Artifact Produced** | A04 — Project Charter |
-| **Owner** | Sponsor (prepares with PM input) |
-| **Approval Authority** | Sponsor or designated project initiating authority |
-| **Threshold Band** | T3 — changes to authority boundaries, major funding, or initiation basis |
-| **Escalate When** | Enterprise-level commitment or regulatory exposure involved |
-
----
-
-## Performance Domains and Principles
-
-**Performance Domains:** Governance · Stakeholders  
-**Focus Area:** Initiating
-
-| Principle | Application in This Skill |
-|-----------|--------------------------|
-| P1 Adopt a Holistic View | Charter must reflect full project context: organizational, strategic, environmental, and stakeholder dimensions |
-| P2 Focus on Value | Charter anchors the project to the business case value rationale and defines success criteria |
-| P4 Be an Accountable Leader | Charter formally assigns the PM with named authority — accountability starts here |
-
----
-
-## PMBOK 8 Process: Initiate Project or Phase
-
-### Inputs (per PMBOK8 Guide Figure 2-3)
-
-| Input | Source | Mandatory? | Notes |
-|-------|--------|-----------|-------|
-| Business case | A01 — Business Case | Yes | Provides the value rationale, strategic alignment, and economic feasibility |
-| Benefits management plan | A02 — Benefits and Value Measurement Record | Recommended | Benefits baseline established prior to or alongside the charter |
-| Agreements | Pre-existing contracts or MOUs | Conditional | Required when the project is triggered by an external contract or agreement |
-| Enterprise environmental factors (EEFs) | A05 — Context Register (or org systems) | Yes | Regulatory constraints, organizational culture, market conditions |
-| Organizational process assets (OPAs) | A05 — Context Register (or org systems) | Yes | Templates, policies, past lessons, standards |
-| Feasibility and viable options record | A03 | Recommended | Provides the selected option basis for the charter |
-| Intake and prioritization decision record | A10 | Conditional | Required for portfolio-governed projects |
-
-### Tools and Techniques (per PMBOK8 Guide Figure 2-3)
-
-| Tool / Technique | When to Use |
-|-----------------|------------|
-| Expert judgment | Always — PM, sponsor, and key stakeholders apply domain knowledge |
-| Data gathering — Brainstorming | When project purpose or scope boundary needs refinement with key parties |
-| Data gathering — Focus groups | When multiple stakeholders have competing priorities that must be reconciled |
-| Interpersonal and team skills — Conflict management | When disagreements about scope, authority, or success criteria arise during drafting |
-| Meetings | Kickoff meeting or charter review session with sponsor and key parties |
-
-### Outputs (per PMBOK8 Guide Figure 2-3)
-
-| Output | Artifact ID | Description |
-|--------|------------|-------------|
-| **Project charter** | A04 | The formal authorization document — primary output of this skill |
-| **Assumption log** | Part of A05 | Initial assumptions captured during charter development |
+This skill covers the creation, review, and baselining of A04 (Project Charter) only. It does not create the full Project Management Plan (SKL-03-01), identify all stakeholders beyond initial identification (SKL-02-02), or develop the scope baseline (SKL-03-04). It runs once per project initiation or phase gate.
 
 ---
 
@@ -125,146 +50,143 @@ This skill must be executed **once per project** — and once per phase in multi
 
 | Input | Source | Mandatory? |
 |---|---|---|
-| Approved business case | A01 | Yes |
-| Benefits management plan | A02 | Recommended |
-| Feasibility record | A03 | Recommended |
-| EEFs and OPAs | A05 | Yes |
-| Intake / prioritization record | A10 | Conditional |
+| Business case or project mandate | Sponsor / Portfolio / Program | Yes |
+| Benefits Management Plan (A02) or equivalent | Portfolio / Program / Sponsor | If available |
+| Organizational governance standards | EEF / OPA (A05 Governance section) | Yes |
+| PM assignment confirmation | PMO / Sponsor | Yes |
+| Preliminary scope description | Sponsor / Business Owner | Yes |
+| Preliminary stakeholder map | Sponsor (informal list) | Yes |
+| Regulatory or contractual constraints | EEF / Legal | If applicable |
+| Relevant historical OPA (similar past projects) | OPA (A05 or organizational records) | If available |
 
-**Gate check:** A01 must be approved before this skill executes. Pack 01 (governance, doc control, repository) must be complete.
+**Gate check:** A05 Governance, Document Control, and Repository Configuration (SKL-01-01 through SKL-01-03) must be complete before this skill runs.
 
 ---
 
 ## Instructions
 
-Execute this skill in the following sequence. The PM typically drafts the charter; the sponsor owns and approves it.
+### Step 1 — Confirm PM Authority and Assignment
+1. Confirm in writing that the PM is formally assigned to this project.
+2. Confirm the PM's authority level as defined in A05 governance (Tier 1 authority scope).
+3. If the PM's authority has not been explicitly defined, escalate to sponsor to confirm before proceeding.
+4. Record PM assignment and authority confirmation in A04.
 
-### Step 1 — Confirm Prerequisites
+### Step 2 — Establish Strategic Alignment
+1. Review the Business Case or project mandate.
+2. Identify which organizational strategic objective(s) this project serves.
+3. Identify the sponsoring business unit or program.
+4. Confirm that the project is still strategically aligned (if there is a gap between Business Case date and charter creation date, re-validate alignment with sponsor).
+5. Record strategic alignment in A04.
 
-Before drafting, verify all of the following:
+### Step 3 — Define the Project Purpose and Objectives
+1. Write a clear, one-paragraph project purpose statement (what the project will achieve, for whom, and why now).
+2. Define 3–7 SMART project objectives:
+   - Each objective must be: Specific, Measurable, Achievable, Relevant, Time-bound
+   - Each objective must align to at least one strategic goal
+   - Each objective must be testable at project closure
+3. Record purpose and objectives in A04.
 
-- [ ] Business case (A01) has been reviewed and approved
-- [ ] Authorization decision has been made (approve / proceed)
-- [ ] A project manager has been nominated
-- [ ] At least one sponsor has been identified
-- [ ] EEFs and OPAs are accessible (A05 or equivalent)
+### Step 4 — Define High-Level Scope and Exclusions
+1. Write a preliminary scope statement describing:
+   - What the project will produce (key deliverables at a high level)
+   - What the project will NOT produce (explicit exclusions)
+2. This is NOT the full scope baseline — that comes in SKL-03-04. This is a high-level boundary statement for governance purposes.
+3. Record high-level scope and exclusions in A04.
 
-If any item is missing, **do not proceed**. Return to SKL-01-02 (Business Case) or SKL-01-01 (Intake Decision) as appropriate.
+### Step 5 — Identify Key Milestones and Constraints
+1. Identify 3–7 key milestones for the project:
+   - Phase completion dates
+   - Critical external dependency dates (regulatory approvals, seasonal windows)
+   - Contractual delivery commitments
+2. Identify and record all known constraints:
+   - **Schedule constraints:** fixed completion dates, regulatory deadlines
+   - **Budget constraints:** approved budget ceiling, contingency reserve status
+   - **Resource constraints:** key resource availability, vendor lead times
+   - **Scope constraints:** regulatory requirements that define scope boundaries
+   - **Quality constraints:** compliance standards, acceptance criteria thresholds
+3. Record milestones and constraints in A04.
 
-### Step 2 — Populate the Charter Fields
+### Step 6 — Document Assumptions and Initial Risks
+1. List all significant planning assumptions:
+   - Technology availability
+   - Regulatory approval timelines
+   - Stakeholder cooperation
+   - Resource availability
+   - External dependency delivery
+2. For each assumption, note what happens if the assumption proves false.
+3. List the 3–5 highest-priority initial risks (detail will come in SKL-03-09 and SKL-03-10).
+4. Record assumptions in A05 Assumption Log section and summarize in A04.
+5. Record initial risks in A04 (full risk management comes in Pack 03).
 
-Complete all mandatory fields. Refer to the **Core Fields** section below for the complete field list with guidance on each.
+### Step 7 — Identify Initial Stakeholders
+1. List the key stakeholders identified at this stage:
+   - Project Sponsor
+   - Key business owners / beneficiaries
+   - PMO representative
+   - Known external stakeholders (regulators, major vendors)
+2. This is the seed list for SKL-02-02 (Stakeholder Identification). It does not replace the full stakeholder register.
+3. Record initial stakeholders in A04.
 
-Apply the following constraints:
-- Keep the charter **concise** — it is an authorization record, not a plan
-- Do **not** reproduce the full business case inside the charter
-- Do **not** include detailed scope, WBS, or schedule — those are planning outputs
-- Include only enough scope boundary to establish what the project is and what it is not
-- Name the PM explicitly with the extent of their delegated authority
+### Step 8 — Define Budget Authority and Financial Boundaries
+1. Record the approved project budget (or budget ceiling if formal approval is pending).
+2. Confirm the PM's budget authority threshold (from A05 governance Tier 1).
+3. Confirm the sponsor's budget authority threshold (from A05 governance Tier 2).
+4. Record financial boundaries in A04.
 
-### Step 3 — Apply the Waste Test
-
-Before routing for approval, check:
-
-- [ ] Does this charter add a unique authorization record beyond what is in the business case?
-- [ ] Does it avoid duplicating detailed planning content?
-- [ ] Is it shorter than the business case?
-- [ ] Does it name the PM and sponsor explicitly?
-
-**If the charter repeats the complete business case and full plan set → FAIL.** Simplify before routing.
-
-### Step 4 — Route for Approval
-
-| Situation | Authority |
-|-----------|-----------|
-| Standard project | Sponsor |
-| Regulated or enterprise-scale project | Sponsor + designated governing body |
-| Program-initiated project | Program governance board |
-| Externally contracted project | Sponsor + contract authority |
-
-Record the approval in the charter itself or in A35 (Governance and Decision Authority Record).
-
-### Step 5 — Trigger Downstream Skills
-
-Once the charter is signed, immediately trigger:
-
-| Skill | What It Does |
-|-------|-------------|
-| SKL-02-02 | Identify Stakeholders — uses charter as primary input |
-| SKL-02-03 | Create Context Register — consolidates EEFs and OPAs |
-| SKL-02-04 | Set Up Governance — uses charter authority model |
-| SKL-02-05 | Make Initial Tailoring Decision — uses charter complexity factors |
-
----
-
-## Core Fields — Project Charter (A04)
-
-| Field | Mandatory? | Guidance |
-|-------|-----------|---------|
-| **Project title** | Yes | Unique, unambiguous name |
-| **Project purpose and business need** | Yes | 1–3 sentences linking to the business case value rationale |
-| **Strategic alignment** | Yes | Reference to the strategic objective or portfolio item this project serves |
-| **High-level scope boundary** | Yes | What is in scope and what is explicitly out of scope; not a WBS |
-| **High-level milestones** | Yes | 3–6 major milestones only; not a full schedule |
-| **Budget boundary or range** | Yes | Approved funding ceiling or indicative range from the business case |
-| **Named sponsor** | Yes | Full name and role; may be multiple sponsors for large projects |
-| **Named project manager** | Yes | Full name, role, and explicit statement of delegated authority |
-| **PM authority limits** | Yes | What the PM can and cannot decide without escalation |
-| **Initial success criteria** | Yes | How the project will be judged successful; linked to the business case |
-| **Key stakeholders** | Recommended | Names or groups of high-influence stakeholders; full register is A07 |
-| **Known constraints** | Recommended | Budget cap, regulatory deadline, technical limitations |
-| **Known assumptions** | Recommended | Captured here and transferred to A05 Assumption Log |
-| **Approval signature** | Yes | Sponsor signature (wet or digital) and date |
+### Step 9 — Review, Obtain Sign-off, and Baseline A04
+1. Circulate draft A04 to:
+   - Project Sponsor (must sign off)
+   - PMO lead (if applicable)
+   - Key senior stakeholders (Consulted per RACI)
+2. Incorporate review feedback.
+3. Obtain formal sponsor sign-off.
+4. Record version, baseline date, and approver in A04.
+5. Distribute A04 to all project team leads and governance participants.
+6. Update SKILL-REGISTRY.md — mark SKL-02-01 as complete.
 
 ---
 
 ## Outputs
 
-| Output | Artifact | Section |
-|---|---|---|
-| Signed Project Charter | A04 | Complete document |
-| Assumption Log entries | A05 | Context Register — Assumption Log section |
-| Downstream skill trigger list | Internal record | SKL-02-02 and subsequent Pack 02 skills |
+| Output | Artifact | Section | Notes |
+|---|---|---|---|
+| Project Charter | A04 | Full document | Baselined after sponsor sign-off |
+| Assumption log entries | A05 | Assumption Log section | From Step 6 |
 
 ---
 
 ## Constraints
 
-- Charter must not reproduce the full business case — cite A01 by reference only.
-- PM authority limits must be explicitly stated — no implied authority.
-- Sponsor signature is mandatory — PM self-approval is not permitted.
-- Charter must not contain WBS, detailed schedule, or risk register content — those belong in Pack 03 outputs.
-- Phase re-authorization charters must reference the prior charter and the gate decision record.
+- A04 must have exactly one Accountable approver (the project sponsor or designated authority).
+- The charter must be baselined before any planning skill (Pack 03) runs.
+- High-level scope in A04 is not the scope baseline — do not treat it as such.
+- Budget figures in A04 must match the approved Business Case or be confirmed by the sponsor if there is a variance.
 
 ---
 
 ## Tailoring Guidance
 
-| Context | Tailoring Decision |
-|---------|-------------------|
-| Small, low-risk internal project | Single-page charter with all mandatory fields; merge with a brief feasibility note |
-| Agile or adaptive project | Charter remains mandatory but may be intentionally brief; governance may shift toward self-governance per PMBOK8 §2.1.7 |
-| Multi-phase predictive project | Issue a new charter at each major phase gate, or re-authorize via A35 gate record |
-| Externally contracted project | Charter must align with contractual scope boundary; legal review may be required |
-| Regulated environment | Charter may need compliance sign-off beyond sponsor approval; record in A06 Tailoring Decision Record |
-
-**Do not tailor away:**
-- PM authority statement (P4 — non-negotiable for accountability)
-- Sponsor identification and signature
-- Link to business case and success criteria (P2)
+| Approach | Adjustment |
+|---|---|
+| Small / single-phase project | Simplified one-page charter. Combine purpose, scope, and milestones in one table. |
+| Large / multi-phase project | Phase-gated charter with phase objectives. Separate charter per phase or charter addendum per phase gate. |
+| Agile / adaptive project | Charter authorizes the program increment or release train, not a fixed scope. Objectives are outcome-based. |
+| Hybrid project | Charter covers predictive phases; product backlog items are noted as TBD pending sprint planning. |
+| Program or portfolio | Charter links to program or portfolio charter. Dependency on program-level approval noted. |
+| Externally funded / contractual | Charter references contract number and obligations. Budget authority defined by contract terms. |
 
 ---
 
 ## Failure Cases
 
-| Failure | Indicator | Corrective Action |
-|---------|-----------|-----------------|
-| Charter drafted without approved business case | Business case pending or not found | Stop; return to SKL-01-02 |
-| Charter contains full plan content | Document exceeds 5–6 pages and includes WBS, schedule, or risk register | Remove planning content; route those to Pack 03 skills |
-| PM authority not stated | PM named but no scope of authority documented | Clarify with sponsor and restate explicitly |
-| Sponsor not identified or not signing | Charter approved by PM or delegated to PM | Escalate; sponsor signature is mandatory |
-| Charter replicates the business case verbatim | Same narrative text appears in both documents | Summarize business case rationale in 2–3 sentences; cite A01 by reference |
-| Phase gate charter not issued in multi-phase project | Phase 2 starts without re-authorization | Issue phase charter or use A35 gate record with formal proceed decision |
+| Failure | Symptom | Resolution |
+|---|---|---|
+| No sponsor sign-off | A04 not baselined; planning cannot start | Escalate to PMO; do not begin planning until charter is signed |
+| Strategic alignment not confirmed | Project may be cancelled at next portfolio review | Re-confirm with sponsor and portfolio manager before proceeding |
+| Scope too vague | Planning team cannot estimate or define WBS | Return to sponsor for scope clarification; update charter before proceeding |
+| Assumptions not recorded | Planning assumptions fail silently during execution | Audit A05 Assumption Log; add all known assumptions before planning |
+| Budget not confirmed | PM cannot authorize any expenditure | Escalate to sponsor for budget confirmation; do not proceed without budget authorization |
+| PM authority not confirmed | Decisions escalate unnecessarily; team confusion | Confirm PM authority level in A05; communicate to team |
 
 ---
 
@@ -272,78 +194,28 @@ Once the charter is signed, immediately trigger:
 
 | Test ID | Test description | Pass condition | Fail condition |
 |---|---|---|---|
-| T-1 | Minimum valid charter — all 9 mandatory fields present, sponsor-signed | All mandatory fields populated; sponsor signature present; no full plan content | Any mandatory field missing or PM self-approved |
-| T-2 | Waste test — charter does not reproduce full business case | Charter ≤ 6 pages; no WBS, schedule, or risk register content | Charter reproduces full business case or contains plan-level detail |
-| T-3 | Missing business case prerequisite | Skill halts; returns "Return to SKL-01-02" | Skill proceeds without approved A01 |
-| T-4 | Adaptive tailoring applied | Charter includes PM authority, sponsor, and success criteria; detailed milestones omitted appropriately | Adaptive charter missing sponsor or PM authority |
-| T-5 | Multi-phase gate charter issued | Phase charter references prior charter and gate decision (A35); new phase scope boundary stated | Phase 2 starts without re-authorization |
-
----
-
-## Examples
-
-### Example A — Internal IT Project (Predictive, Low Risk)
-
-> **Project Title:** Customer Data Migration — Phase 1  
-> **Purpose:** Migrate legacy customer records to the new CRM platform to eliminate data duplication and improve service response times, as justified in Business Case A01-2026-017.  
-> **Scope Boundary:** In scope — migration of records from System A and System B. Out of scope — CRM user training and reporting module configuration.  
-> **Budget Boundary:** Not to exceed USD 120,000 without sponsor re-authorization.  
-> **Named Sponsor:** [Name], VP Operations  
-> **Named PM:** [Name], authority to approve changes within 10% of baseline cost and 5-day schedule variance without escalation.  
-> **Success Criteria:** 100% of records migrated with zero data loss; system go-live by Q3 2026.  
-> **Approved:** [Sponsor Signature] [Date]
-
-### Example B — Adaptive Software Product
-
-> **Project Title:** Mobile Loyalty App — MVP Release  
-> **Purpose:** Deliver a minimum viable product loyalty application to capture early market share per strategic initiative S-2026-04.  
-> **Scope Boundary:** In scope — core loyalty points, redemption flow, and user account. Out of scope — partner integrations and analytics dashboard (future releases).  
-> **Budget Boundary:** Sprint funding approved for 3 months at USD 45,000/month; continuation subject to sprint review outcomes.  
-> **Named Sponsor:** [Name], Chief Digital Officer  
-> **Named PM / Product Lead:** [Name], authority to reprioritize backlog items within approved release scope without escalation.  
-> **Success Criteria:** App live in app stores with 500 active users within 60 days of launch; NPS ≥ 35.  
-> **Approved:** [Sponsor Signature] [Date]
-
----
-
-## Integration Points
-
-| Connected Artifact or Skill | Relationship |
-|----------------------------|-------------|
-| A01 Business Case | Input — charter derives authority from the approved business case |
-| A02 Benefits Record | Input — charter references success criteria and benefit measures |
-| A03 Feasibility Record | Input — charter reflects the selected option from feasibility analysis |
-| A05 Context Register | Bidirectional — EEFs and OPAs feed the charter; assumptions from the charter feed A05 |
-| A06 Tailoring Decision Record | Downstream — charter triggers the initial tailoring assessment |
-| A07 Stakeholder Register | Downstream — charter provides the initial stakeholder list for A07 |
-| A35 Governance Record | Downstream — charter authority model feeds the governance setup |
-| A14 Integrated Plan | Downstream — all planning builds on the charter as its foundation |
-
----
-
-## Companion References
-
-| Alias | Source | Relevant Section |
-|-------|--------|-----------------|
-| PMBOK8 | PMBOK Guide 8th Edition | §2.1.6.1 Initiate Project or Phase · Figure 2-3 |
-| PMBOK8 | The Standard for Project Management | §3.5 P4 Be an Accountable Leader · §3.3 P2 Focus on Value |
-| Process-Groups | Process Groups Practice Guide | Initiating Process Group |
-| PMI-BA | Business Analysis Practice Guide | Project initiation and needs analysis |
-| Forms-Book | PMI Practice Standard Forms | Project Charter template reference |
+| T-1 | PM assignment confirmed | PM name and authority level recorded in A04 | PM field blank or authority undefined |
+| T-2 | Strategic alignment documented | At least one organizational strategic objective linked to project purpose | Strategic alignment field blank |
+| T-3 | SMART objectives defined | 3–7 objectives, each with measurable success criteria and time bound | Any objective vague, unmeasurable, or without time bound |
+| T-4 | High-level scope and exclusions defined | Scope statement includes what is IN and what is explicitly OUT | Exclusions section blank |
+| T-5 | Key milestones identified | 3–7 milestones with target dates | Milestones section blank or dates missing |
+| T-6 | Constraints documented | All five constraint types (schedule, budget, resource, scope, quality) addressed | Any constraint type missing |
+| T-7 | Assumptions recorded in A05 | A05 Assumption Log has at least 3 entries from this skill | Assumption Log empty |
+| T-8 | Initial risk list included | 3–5 initial risks noted in A04 | Initial risks section blank |
+| T-9 | Budget authority defined | PM and sponsor authority thresholds recorded in A04 | Budget authority blank or "TBD" |
+| T-10 | A04 baselined and distributed | Sponsor sign-off, version, baseline date recorded; distributed to team leads | A04 in draft or unsigned |
 
 ---
 
 ## Change Log
 
-| Version | Date | Description |
+| Version | Date | Change description |
 |---|---|---|
-| 1.0.0 | 2026-05-29 | Initial build — full skill file with Purpose, Scope, Authority, Instructions, Core Fields, Tailoring, Failure Cases, Tests, Examples |
-| 1.1.0 | 2026-05-30 | Canonical patch — added YAML frontmatter; added Inputs Required table with gate check; normalized Outputs table; added Constraints section; normalized Tests to table format; updated version reference |
+| 1.0.0 | 2026-05-30 | Initial build |
 
 ---
 
-*Source Type: PMI-derived*  
-*Governance Layer: Project Governance*  
-*Authority: PMBOK8 §2.1.6.1 · Figure 2-3 · Standard §3.5*  
-*Linked Artifact: A04 — Project Charter*  
-*Related Skills: SKL-01-02 · SKL-02-02 · SKL-02-03 · SKL-02-04 · SKL-02-05*
+*Authority: PMBOK8 Guide §2.1.6.1 Initiate Project or Phase · Guide §2.1 Governance Domain*  
+*Source type: PMI-derived*  
+*Owner: Project Manager*  
+*Approval authority: Project Sponsor*
