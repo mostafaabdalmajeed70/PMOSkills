@@ -1,0 +1,39 @@
+Skill ID,Skill Name,Pack,PMBOK8 Anchor,Performance Domain,Companion Reference
+SKL-01-01,Establish PM Governance Framework,01 — Organizational Setup,PMBOK8 Standard §3 Principles,Governance · Stakeholders,PMO-PG · GOV-PG
+SKL-01-02,Define Artifact and Document Control Standards,01 — Organizational Setup,PMBOK8 Guide §2.1.6.4 Manage Project Knowledge,Governance · Delivery,PMBOK8-GUIDE
+SKL-01-03,Configure Project Repository and Tool Environment,01 — Organizational Setup,PMBOK8 Guide §2.1.6.4 Manage Project Knowledge,Governance · Resources,PMBOK8-GUIDE
+SKL-02-01,Initiate Project or Phase,02 — Initiating,PMBOK8 Guide §2.1.6.1 Initiate Project or Phase,Governance · Stakeholders,PMBOK8-GUIDE
+SKL-02-02,Identify Stakeholders,02 — Initiating,PMBOK8 Guide §2.5.2.1 Identify Stakeholders,Stakeholders · Governance,PMBOK8-GUIDE
+SKL-03-01,Integrate and Align Project Plans,03 — Planning,PMBOK8 Guide §2.1.6.2 Develop Project Management Plan,Governance · All domains,PMBOK8-GUIDE
+SKL-03-02,Plan Scope Management,03 — Planning,PMBOK8 Guide §2.2.2.1 Plan Scope Management,Scope · Governance,PMBOK8-GUIDE
+SKL-03-03,Elicit and Analyze Requirements,03 — Planning,PMBOK8 Guide §2.2.2.2 Collect Requirements,Scope · Stakeholders,PMBOK8-GUIDE
+SKL-03-04,Define Scope,03 — Planning,PMBOK8 Guide §2.2.2.3 Define Scope,Scope · Governance,PMBOK8-GUIDE
+SKL-03-05,Develop Scope Structure,03 — Planning,PMBOK8 Guide §2.2.2.4 Create WBS,Scope · Schedule,WBS-PS
+SKL-03-06,Plan Schedule Management,03 — Planning,PMBOK8 Guide §2.3.2.1 Plan Schedule Management,Schedule · Governance,SCHED-PS
+SKL-03-07,Plan Stakeholder Engagement,03 — Planning,PMBOK8 Guide §2.5.2.2 Plan Stakeholder Engagement,Stakeholders · Governance,PMBOK8-GUIDE
+SKL-03-08,Plan Communications Management,03 — Planning,PMBOK8 Guide §2.5.2.3 Plan Communications Management,Stakeholders · Governance,PMBOK8-GUIDE
+SKL-03-09,Plan Risk Management,03 — Planning,PMBOK8 Guide §2.7.2.1 Plan Risk Management,Risk · Governance,RISK-PS
+SKL-03-10,Identify Risks,03 — Planning,PMBOK8 Guide §2.7.2.2 Identify Risks,Risk · Scope · Schedule,RISK-PS
+SKL-03-11,Perform Risk Analysis,03 — Planning,PMBOK8 Guide §2.7.2.3 Perform Qualitative/Quantitative Analysis,Risk · Finance,RISK-PS
+SKL-03-12,Plan Risk Responses,03 — Planning,PMBOK8 Guide §2.7.2.4 Plan Risk Responses,Risk · Finance,RISK-PS
+SKL-03-13,Plan Financial Management,03 — Planning,PMBOK8 Guide §2.4.2.1 Plan Cost Management,Finance · Governance,PMBOK8-GUIDE
+SKL-03-14,Estimate Costs,03 — Planning,PMBOK8 Guide §2.4.2.2 Estimate Costs,Finance · Risk,EST-PS
+SKL-03-15,Develop Budget,03 — Planning,PMBOK8 Guide §2.4.2.3 Determine Budget,Finance · Governance,PMBOK8-GUIDE
+SKL-03-16,Plan Resource Management,03 — Planning,PMBOK8 Guide §2.6.2.1 Plan Resource Management,Resources · Governance,PMBOK8-GUIDE
+SKL-03-17,Estimate Resources,03 — Planning,PMBOK8 Guide §2.6.2.2 Estimate Activity Resources,Resources · Schedule,EST-PS
+SKL-04-01,Direct and Manage Project Work,04 — Executing,PMBOK8 Guide §2.1.6.3 Direct and Manage Work,Delivery · Governance,PMBOK8-GUIDE
+SKL-04-02,Manage Project Knowledge,04 — Executing,PMBOK8 Guide §2.1.6.4 Manage Project Knowledge,Governance · Team,PMBOK8-GUIDE
+SKL-04-03,Acquire Resources,04 — Executing,PMBOK8 Guide §2.6.2.3 Acquire Resources,Resources · Governance,PMBOK8-GUIDE
+SKL-04-04,Develop Team,04 — Executing,PMBOK8 Guide §2.6.2.4 Develop Team,Resources · Team,PMBOK8-GUIDE
+SKL-04-05,Manage Team,04 — Executing,PMBOK8 Guide §2.6.2.5 Lead the Team,Resources · Team,PMBOK8-GUIDE
+SKL-04-06,Manage Stakeholder Engagement,04 — Executing,PMBOK8 Guide §2.5.2.4 Manage Stakeholder Engagement,Stakeholders · Governance,PMBOK8-GUIDE
+SKL-04-07,Manage Communications,04 — Executing,PMBOK8 Guide §2.5.2.5 Manage Communications,Stakeholders · Delivery,PMBOK8-GUIDE
+SKL-04-08,Implement Risk Responses,04 — Executing,PMBOK8 Guide §2.7.2.5 Implement Risk Responses,Risk · Delivery,RISK-PS
+SKL-04-09,Conduct Procurements,04 — Executing,PMBOK8 Guide §2.8.2.2 Conduct Procurements,Governance · Delivery,PROCURE-PS
+SKL-05-01,Monitor and Control Project Work,05 — Monitoring & Controlling,PMBOK8 Guide §2.1.6.5 Monitor and Control Work,Measurement · Governance,PMBOK8-GUIDE
+SKL-05-02,Perform Integrated Change Control,05 — Monitoring & Controlling,PMBOK8 Guide §2.1.6.6 Assess and Implement Changes,Governance · Measurement,PMBOK8-GUIDE
+SKL-05-03,Control Scope,05 — Monitoring & Controlling,PMBOK8 Guide §2.2.2.5 Control Scope,Scope · Measurement,WBS-PS
+SKL-05-04,Control Schedule,05 — Monitoring & Controlling,PMBOK8 Guide §2.3.2.5 Control Schedule,Schedule · Measurement,SCHED-PS
+SKL-05-05,Control Costs,05 — Monitoring & Controlling,PMBOK8 Guide §2.4.2.4 Control Costs,Finance · Measurement,EV-PS
+SKL-06-01,Close Project or Phase,06 — Closing,PMBOK8 Guide §2.1.6.7 Close Project or Phase,Governance · Delivery,PMBOK8-GUIDE
+SKL-07-01,Tailor Governance & Lifecycle,07 — Adaptive & Hybrid,PMBOK8 Guide §3 Tailoring,Governance · Lifecycle,AGILE-PG
