@@ -650,8 +650,11 @@ PMOSkills/
 │
 ├── docs/
 │   ├── img/
-│   ├── user-friendly-guide.md       ← Phase 8 practitioner manual
-│   └── [other DOC files: kebab-name.md]
+│   ├── user-friendly-guide.md       ← Master Onboarding Handbook (Multi-Audience Hub)
+│   ├── human-practitioners/         ← Track 1: PM handbook, authority routing, and PMO guides
+│   ├── ai-agents/                   ← Track 2: Onboarding guides & prompt specs
+│   ├── developer-tools/             ← Track 3: Tooling, automation, and validators
+│   └── general/                     ← Track 4: Glossary, FAQ, and sustainability guides
 │
 ├── artifacts/
 │   ├── closing/

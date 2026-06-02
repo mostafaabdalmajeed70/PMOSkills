@@ -112,10 +112,13 @@ PMOSkills/
 │   ├── legacy/
 │   └── meta/
 │
-├── docs/                            ← Premium manuals and user handbooks
-│   ├── img/                         ← Images and logos
-│   ├── user-friendly-guide.md       ← Master Onboarding Handbook (Human + AI)
-│   └── [custom guides: kebab-case.md]
+├── docs/                            ← Premium multi-audience manuals and user handbooks
+│   ├── img/                         ← Images, logos, and visual assets
+│   ├── user-friendly-guide.md       ← Master Onboarding Handbook (Multi-Audience Hub)
+│   ├── human-practitioners/         ← Track 1: Handbook and execution guides for PMs/PMOs
+│   ├── ai-agents/                   ← Track 2: Prompting directives, specifications, schemas
+│   ├── developer-tools/             ← Track 3: Tooling, automation, validator specs
+│   └── general/                     ← Track 4: Glossary, FAQ, ESG sustainability guides
 │
 ├── reference/                       ← The Core PMBOK 8 Reference Layer (115 files)
 │   ├── README.md                    ← Reference layer catalog and rules

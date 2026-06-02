@@ -3,7 +3,7 @@
 **Repository:** PMOSkills  
 **Version:** 1.0.0  
 **Authority:** PMBOK8 Primary · PMI Companion References Secondary  
-**File Path:** `docs/getting-started.md`
+**File Path:** `docs/human-practitioners/getting-started.md`
 
 ---
 
@@ -36,7 +36,7 @@ Before using this repository, confirm the following:
 - You have access to *A Guide to the Project Management Body of Knowledge (PMBOK® Guide) — Eighth Edition* and *The Standard for Project Management* (published together by PMI, 2021). PMBOK 8 is the primary authority for all terminology, processes, and governance patterns used in this repository.
 - You understand the distinction between **PMI-derived** content (traced to PMI sources), **synthesis** content (structured interpretations combining multiple PMI references), and **organization-defined** content (locally applicable operational guidance). Every skill file carries a `source_type` field indicating which category applies.
 - You have read the repository `README.md` for a high-level orientation.
-- For AI agents: your runtime can read Markdown files and parse YAML front matter. The skill execution model is documented in `docs/how-to-use-skills.md`.
+- For AI agents: your runtime can read Markdown files and parse YAML front matter. The skill execution model is documented in `docs/human-practitioners/how-to-use-skills.md`.
 - For book authors: review `source-authority.md` and `pmi_reference_list.md` before citing any content from this repository.
 
 ---
@@ -111,7 +111,7 @@ PMOSkills uses a three-layer model:
 
 **Layer 3 — Templates** are the starter-state versions of artifact files (suffixed `-template.md` in the `artifacts/` directory). Templates provide the field structure and guidance text that a skill populates during execution. When a skill completes, the output is a populated artifact — not a template. Templates are never submitted or approved; only completed artifacts are.
 
-The relationship is linear: **a skill consumes inputs → executes steps → populates a template → produces an artifact → routes the artifact for approval**. Governance routing decisions follow the T1–T4 model defined in `AUTHORITY-ROUTING.md`. See `docs/how-to-use-skills.md` for the full execution sequence, and `docs/how-to-use-artifacts.md` for artifact versioning and control rules.
+The relationship is linear: **a skill consumes inputs → executes steps → populates a template → produces an artifact → routes the artifact for approval**. Governance routing decisions follow the T1–T4 model defined in `AUTHORITY-ROUTING.md`. See `docs/human-practitioners/how-to-use-skills.md` for the full execution sequence, and `docs/human-practitioners/how-to-use-artifacts.md` for artifact versioning and control rules.
 
 ---
 
@@ -121,7 +121,7 @@ The relationship is linear: **a skill consumes inputs → executes steps → pop
 
 Follow these steps to start using PMOSkills for a live project:
 
-1. **Read this file** (`docs/getting-started.md`) to orient yourself to the repository structure and authority model.
+1. **Read this file** (`docs/human-practitioners/getting-started.md`) to orient yourself to the repository structure and authority model.
 2. **Open `SKILL-REGISTRY.md`** and identify the lifecycle stage your project is currently in (Organizational Setup, Initiating, Planning, Executing, Monitoring & Controlling, Closing, or Adaptive/Hybrid).
 3. **Identify the relevant skill** for your current task. Use the registry's pack index to navigate to the correct skill ID (e.g., `SKL-02-01` for Project Charter Creation).
 4. **Open the skill file** in `skills/` and read the Prerequisites, Inputs, and Failure Cases sections before doing anything else. Confirm all upstream prerequisites are satisfied.
@@ -139,7 +139,7 @@ Follow these steps to integrate PMOSkills into an agent or automated workflow:
 4. **Read the matched skill file** to extract: YAML front matter fields, mandatory inputs, pre-conditions, step sequence, output schema, quality checks, and failure cases.
 5. **Verify pre-conditions** before executing. If any mandatory upstream artifact is missing, halt and return the pre-condition failure message defined in the skill's Failure Cases section. Do not proceed past a pre-condition failure.
 6. **Execute the skill steps** in sequence. Populate the output artifact using the template structure in `artifacts/`. Apply all quality checks defined in the skill file before declaring the output complete.
-7. **Apply the T1–T4 routing model** to determine the correct approval authority for the produced artifact. Log the routing decision. Trigger downstream skills as specified in the skill file. See `docs/ai-agent-guide.md` for agent-specific operating rules.
+7. **Apply the T1–T4 routing model** to determine the correct approval authority for the produced artifact. Log the routing decision. Trigger downstream skills as specified in the skill file. See `docs/ai-agents/ai-agent-guide.md` for agent-specific operating rules.
 
 ### Path 3 — Book Author
 
@@ -151,7 +151,7 @@ Follow these steps to use PMOSkills as a structured, citation-ready source for P
 4. **Identify the artifact or process** you need to write about. Navigate to the matching skill file in `skills/` to find the PMBOK8 process anchor, authority citation, performance domains, and principle applications — all pre-structured for citation.
 5. **Cross-reference `SKILL-REGISTRY.md`** to confirm the canonical skill ID, source type (`PMI-derived`, `synthesis`, or `organization-defined`), and PMBOK 8 anchor section before quoting or paraphrasing.
 6. **Verify citations** against `pmi_reference_list.md` to confirm the correct alias, title, publisher, and section reference for each PMI source used. Follow the canonical citation format: `PMBOK8 — Guide §[section] [title]`.
-7. **Check `docs/how-to-use-artifacts.md`** to understand the A01–A41 artifact structure. Artifact definitions provide structured, field-level content suitable for book appendices, forms, or reference sections.
+7. **Check `docs/human-practitioners/how-to-use-artifacts.md`** to understand the A01–A41 artifact structure. Artifact definitions provide structured, field-level content suitable for book appendices, forms, or reference sections.
 
 ---
 
@@ -225,10 +225,10 @@ START: What do I need to do?
 | `PRINCIPLES-CROSSWALK.md` | 12 PMBOK 8 principles mapped across 11 performance domains and 40 processes |
 | `source-authority.md` | Three-tier authority hierarchy definition with citation format rules |
 | `pmi_reference_list.md` | Canonical list of all PMI references used in this repository with aliases and usage notes |
-| `docs/getting-started.md` | This file — entry point for all audiences |
-| `docs/how-to-use-skills.md` | How to read and execute a skill file, including the T1–T4 routing model |
-| `docs/how-to-use-artifacts.md` | How to produce, version, and control an artifact |
-| `docs/ai-agent-guide.md` | Agent-specific operating instructions, tool policy, and execution safety rules |
+| `docs/human-practitioners/getting-started.md` | This file — entry point for all audiences |
+| `docs/human-practitioners/how-to-use-skills.md` | How to read and execute a skill file, including the T1–T4 routing model |
+| `docs/human-practitioners/how-to-use-artifacts.md` | How to produce, version, and control an artifact |
+| `docs/ai-agents/ai-agent-guide.md` | Agent-specific operating instructions, tool policy, and execution safety rules |
 | `skills/02-initiating/SKL-02-01-project-charter.md` | Project Charter Creation — canonical example of a complete skill file |
 | `artifacts/initiating/A04-project-charter.md` | Project Charter — canonical example of a completed artifact |
 | `artifacts/initiating/A04-project-charter-template.md` | Project Charter template — starter state for charter production |
@@ -239,9 +239,9 @@ START: What do I need to do?
 
 | File | Relationship |
 |------|-------------|
-| `docs/how-to-use-skills.md` | Detailed skill execution guide — read after this file before executing any skill |
-| `docs/how-to-use-artifacts.md` | Artifact production and version control guide |
-| `docs/ai-agent-guide.md` | Agent operating instructions, tool policy, and safety rules |
+| `docs/human-practitioners/how-to-use-skills.md` | Detailed skill execution guide — read after this file before executing any skill |
+| `docs/human-practitioners/how-to-use-artifacts.md` | Artifact production and version control guide |
+| `docs/ai-agents/ai-agent-guide.md` | Agent operating instructions, tool policy, and safety rules |
 | `AUTHORITY-ROUTING.md` | T1–T4 decision model — referenced throughout skill execution |
 | `SKILL-REGISTRY.md` | Primary navigation index — use alongside this guide |
 | `source-authority.md` | Authority tier definitions — required reading for book authors |

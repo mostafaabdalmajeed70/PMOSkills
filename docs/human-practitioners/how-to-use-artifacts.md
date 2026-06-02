@@ -3,7 +3,7 @@
 **Repository:** PMOSkills  
 **Version:** 1.0.0  
 **Authority:** PMBOK8 Primary · PMI Companion References Secondary  
-**File Path:** `docs/how-to-use-artifacts.md`
+**File Path:** `docs/human-practitioners/how-to-use-artifacts.md`
 
 ---
 
@@ -21,7 +21,7 @@ This guide is for project managers, PMO analysts, governance leads, and project 
 
 ### AI Agents
 
-This guide provides the artifact execution contract that governs how an agent must identify the correct artifact file, parse its structure, populate its template fields, and commit the result. Cross-reference `docs/ai-agent-guide.md` for agent-specific operating rules, tool policy, and output format constraints.
+This guide provides the artifact execution contract that governs how an agent must identify the correct artifact file, parse its structure, populate its template fields, and commit the result. Cross-reference `docs/ai-agents/ai-agent-guide.md` for agent-specific operating rules, tool policy, and output format constraints.
 
 ### Book Authors
 
@@ -31,7 +31,7 @@ This guide identifies which artifact files carry authoritative PMI-derived conte
 
 ## Prerequisites
 
-- You have read `docs/getting-started.md` and understand the repository structure and the three-tier authority model.
+- You have read `docs/human-practitioners/getting-started.md` and understand the repository structure and the three-tier authority model.
 - You have identified the artifact you need using `SKILL-REGISTRY.md` (column: Primary Artifact Output) or the folder index in this guide.
 - You have access to *A Guide to the Project Management Body of Knowledge (PMBOK® Guide) — Eighth Edition* and *The Standard for Project Management* (PMI, 2021) as the primary authority for any governance or terminology claim.
 - For AI agents: your runtime can parse YAML front matter and Markdown tables. You must be able to halt on a missing mandatory input and report the gap rather than proceeding with an empty field.
@@ -218,9 +218,9 @@ For the full skill-to-artifact dependency map, consult [`SKILL-REGISTRY.md`](../
 
 | File | Purpose | Location |
 |------|---------|----------|
-| `docs/getting-started.md` | Repository entry point — structure, audiences, directory map | [`docs/getting-started.md`](getting-started.md) |
-| `docs/how-to-use-skills.md` | How to read and execute a skill file | [`docs/how-to-use-skills.md`](how-to-use-skills.md) |
-| `docs/ai-agent-guide.md` | AI agent operating contract for this repository | [`docs/ai-agent-guide.md`](ai-agent-guide.md) |
+| `docs/human-practitioners/getting-started.md` | Repository entry point — structure, audiences, directory map | [`docs/human-practitioners/getting-started.md`](getting-started.md) |
+| `docs/human-practitioners/how-to-use-skills.md` | How to read and execute a skill file | [`docs/human-practitioners/how-to-use-skills.md`](how-to-use-skills.md) |
+| `docs/ai-agents/ai-agent-guide.md` | AI agent operating contract for this repository | [`docs/ai-agents/ai-agent-guide.md`](ai-agent-guide.md) |
 | `SKILL-REGISTRY.md` | Master index of all 47 skills and their primary artifact outputs | [`SKILL-REGISTRY.md`](../SKILL-REGISTRY.md) |
 | `AUTHORITY-ROUTING.md` | T1–T4 decision threshold model and artifact approval authority table | [`AUTHORITY-ROUTING.md`](../AUTHORITY-ROUTING.md) |
 | `LIFECYCLE-MAP.md` | Phase-by-phase artifact and process flow | [`LIFECYCLE-MAP.md`](../LIFECYCLE-MAP.md) |

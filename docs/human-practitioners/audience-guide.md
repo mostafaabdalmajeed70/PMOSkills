@@ -48,9 +48,9 @@ graph TD
 ### 2.3 AI Agents & Automated Coding Assistants
 * **Objective:** Parse process records, invoke correct structural templates, and generate standardized code or documentation with 100% schema compliance.
 * **Primary Navigation Path:**
-  1. Start with the [AI Agent Guide](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/docs/ai-agent-guide.md).
+  1. Start with the [AI Agent Guide](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/docs/ai-agents/ai-agent-guide.md).
   2. Parse [QUALITY-STANDARDS.md](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/QUALITY-STANDARDS.md) to understand validation rules.
-  3. Load the [Companion Source Usage Guide](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/docs/source-usage-guide.md) to ensure proper metadata citation.
+  3. Load the [Companion Source Usage Guide](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/docs/ai-agents/source-usage-guide.md) to ensure proper metadata citation.
 * **AI Agent Checklist:**
   - [ ] Confirm all generated front-matter matches the canonical `REF` or `PR` YAML schema.
   - [ ] Run [validate_structure.py](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/shared/validate_structure.py) after making batch edits.

@@ -3,7 +3,7 @@
 **Repository:** PMOSkills  
 **Version:** 1.0.0  
 **Authority:** PMBOK8 Primary · PMI Companion References Secondary  
-**File Path:** `docs/how-to-use-skills.md`
+**File Path:** `docs/human-practitioners/how-to-use-skills.md`
 
 ---
 
@@ -21,13 +21,13 @@ This guide is for project managers, PMO analysts, governance leads, and project 
 
 ### AI Agents
 
-This guide provides the execution contract that governs how an agent must process a skill file. It defines the YAML front matter fields your parser must read, the pre-condition logic your execution engine must enforce, the output schema your artifact writer must populate, and the quality check conditions your validator must satisfy before committing a result. Cross-reference `docs/ai-agent-guide.md` for agent-specific operating rules and tool policy.
+This guide provides the execution contract that governs how an agent must process a skill file. It defines the YAML front matter fields your parser must read, the pre-condition logic your execution engine must enforce, the output schema your artifact writer must populate, and the quality check conditions your validator must satisfy before committing a result. Cross-reference `docs/ai-agents/ai-agent-guide.md` for agent-specific operating rules and tool policy.
 
 ---
 
 ## Prerequisites
 
-- You have read `docs/getting-started.md` and understand the repository structure and authority model.
+- You have read `docs/human-practitioners/getting-started.md` and understand the repository structure and authority model.
 - You have identified the correct skill for your task using `SKILL-REGISTRY.md`.
 - You have access to PMBOK 8 (*A Guide to the Project Management Body of Knowledge — Eighth Edition* and *The Standard for Project Management*, PMI, 2021) as the primary authority for any PMI claim in or about a skill file.
 - For AI agents: your runtime can parse YAML front matter, read Markdown sections, and produce Markdown output. Your execution engine must be able to halt on pre-condition failure without proceeding.
@@ -266,9 +266,9 @@ All quality checks passed. Artifact committed to repository. Downstream skills t
 
 | File | Relationship |
 |------|-------------|
-| `docs/getting-started.md` | Entry-point guide — read before this file if you have not already |
-| `docs/how-to-use-artifacts.md` | Companion guide — explains artifact versioning, status lifecycle, and control rules |
-| `docs/ai-agent-guide.md` | Agent-specific operating instructions, tool policy, and safety rules |
+| `docs/human-practitioners/getting-started.md` | Entry-point guide — read before this file if you have not already |
+| `docs/human-practitioners/how-to-use-artifacts.md` | Companion guide — explains artifact versioning, status lifecycle, and control rules |
+| `docs/ai-agents/ai-agent-guide.md` | Agent-specific operating instructions, tool policy, and safety rules |
 | `AUTHORITY-ROUTING.md` | T1–T4 model, artifact authority table (A01–A41), escalation rules — referenced throughout skill execution |
 | `SKILL-REGISTRY.md` | Master skill index — use to identify the correct skill and confirm upstream prerequisites |
 | `skills/02-initiating/SKL-02-01-project-charter.md` | The skill file used in the worked example above |

@@ -11,7 +11,7 @@ approval_authority: Repository Maintainer
 
 **Version:** 1.0.0  
 **Status:** Active  
-**File Path:** `docs/how-to-use-authority-routing.md`  
+**File Path:** `docs/human-practitioners/authority-routing.md`  
 **Authority:** AUTHORITY-ROUTING.md · PMBOK8 Guide §2.1 Governance Performance Domain
 
 ---
@@ -199,9 +199,9 @@ Use **A12 — Integrated Change Decision Record** to document the retroactive de
 |------|---------|
 | [`AUTHORITY-ROUTING.md`](../AUTHORITY-ROUTING.md) | Primary reference — full T1–T4 model, governance layers, artifact authority rows, escalation path rules, and RACI defaults |
 | [`source-authority.md`](../source-authority.md) | Repository source authority model — defines the three-tier authority hierarchy (PMBOK8, PMI companions, organization-defined) |
-| [`docs/getting-started.md`](getting-started.md) | Onboarding guide for new repository users |
-| [`docs/how-to-use-skills.md`](how-to-use-skills.md) | Guide to using and authoring skills in the repository |
-| [`docs/how-to-contribute.md`](how-to-contribute.md) | Contribution workflow, file naming, and quality standards |
+| [`docs/human-practitioners/getting-started.md`](getting-started.md) | Onboarding guide for new repository users |
+| [`docs/human-practitioners/how-to-use-skills.md`](how-to-use-skills.md) | Guide to using and authoring skills in the repository |
+| [`docs/general/how-to-contribute.md`](how-to-contribute.md) | Contribution workflow, file naming, and quality standards |
 | [`CONTRIBUTING.md`](../CONTRIBUTING.md) | Root-level contribution rules — authority, workflow, commit convention |
 | [`SKILL-REGISTRY.md`](../SKILL-REGISTRY.md) | Current registry of all skills and their status |
 

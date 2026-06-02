@@ -21,7 +21,7 @@ Authority: PMBOK 8 Primary · PMI Companion References Secondary.
 ### Fixed
 - **NC-001, NC-002, NC-003 Resolved:** Renamed legacy mixed-case artifact files in `artifacts/planning-and-baselines/` to strict lowercase kebab-case (e.g., `A14-integrated-project-management-plan.md`, `A15-schedule-model-and-baseline-record.md`, `A16-financial-management-and-cost-baseline-record.md`).
 - **NC-004, NC-005, NC-006 Resolved:** Formally documented structural cleanups of root directories and duplicate plan standard files in `QUALITY-STANDARDS.md`.
-- Updated all cross-references and links to lowercase kebab-case in `docs/how-to-use-artifacts.md` and `QUALITY-STANDARDS.md`.
+- Updated all cross-references and links to lowercase kebab-case in `docs/human-practitioners/how-to-use-artifacts.md` and `QUALITY-STANDARDS.md`.
 
 ---
 
@@ -172,7 +172,7 @@ See v2.7.0 entry above for full detail on 14 templates (Batches A–D) and 10 ex
 ## [2.5.0] — 2026-05-31
 
 ### Added
-- `docs/getting-started.md`, `docs/how-to-use-skills.md`, `docs/ai-agent-guide.md`
+- `docs/human-practitioners/getting-started.md`, `docs/human-practitioners/how-to-use-skills.md`, `docs/ai-agents/ai-agent-guide.md`
 - `artifacts/governance/A05-context-register-template.md`
 - `artifacts/quality/A09-quality-management-plan-template.md`
 

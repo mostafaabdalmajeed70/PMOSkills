@@ -77,7 +77,7 @@ Structured for AI agent execution. Each phase has:
 | Pack 09 — Portfolio and Program Management (6 skills) | Phase 3-EXT |
 | `shared/` validators, components, routing, checklists (25 files) | Phase 5 |
 | `tests/` skill tests + integration tests (69 files) | Phase 6 |
-| `docs/source-usage-guide.md`, `audience-guide.md`, `sustainability-guide.md` | Phase 4-NEW |
+| `docs/ai-agents/source-usage-guide.md`, `audience-guide.md`, `sustainability-guide.md` | Phase 4-NEW |
 
 ---
 
@@ -281,10 +281,10 @@ Full skill definitions in `MASTER-PLAN.md §5 Phase 3-EXT`.
 
 | File | Purpose |
 |---|---|
-| `docs/source-usage-guide.md` | How to use 23 companion references — short-codes, authority hierarchy, which books apply per phase |
+| `docs/ai-agents/source-usage-guide.md` | How to use 23 companion references — short-codes, authority hierarchy, which books apply per phase |
 | `docs/skill-reference-map.csv` | Promoted from `repo/` — Skills × PMBOK8 anchor × companion ref mapping |
-| `docs/audience-guide.md` | Usage paths: PMO Director, PM, AI Agent, Book Author |
-| `docs/sustainability-guide.md` | ESG application within PMBOK 8 context |
+| `docs/human-practitioners/audience-guide.md` | Usage paths: PMO Director, PM, AI Agent, Book Author |
+| `docs/general/sustainability-guide.md` | ESG application within PMBOK 8 context |
 
 ---
 

@@ -39,7 +39,7 @@ A: PMBOK 8th Edition is the primary authority. Companion references (WBS Practic
 
 **Q: Who is this for?**
 
-A: Three main audiences: (1) PMO practitioners who want a structured, traceable framework for managing projects; (2) AI agents that need a machine-readable, executable skills library; (3) Book authors and trainers who need authoritative, cited content. See `docs/getting-started.md` for quickstart paths per audience.
+A: Three main audiences: (1) PMO practitioners who want a structured, traceable framework for managing projects; (2) AI agents that need a machine-readable, executable skills library; (3) Book authors and trainers who need authoritative, cited content. See `docs/human-practitioners/getting-started.md` for quickstart paths per audience.
 
 ---
 
@@ -149,7 +149,7 @@ A: Yes — T1 decisions are within the PM's delegated tolerances and are fully r
 
 **Q: Can an AI agent execute skills directly?**
 
-A: Yes — that is a primary design intent. The skill files are structured as executable instruction sets. See `docs/ai-agent-guide.md` for the loading order, routing logic, failure handling, and output format rules an AI agent should follow.
+A: Yes — that is a primary design intent. The skill files are structured as executable instruction sets. See `docs/ai-agents/ai-agent-guide.md` for the loading order, routing logic, failure handling, and output format rules an AI agent should follow.
 
 ---
 
@@ -175,7 +175,7 @@ A: No. AI agents operate at T1 by default and may recommend at T2. T3 and T4 dec
 
 **Q: How do I contribute a new skill or artifact?**
 
-A: Open a GitHub Issue using the `content_addition.md` template, fork the repository, create a branch (`feat/` prefix), write the file following the schema in the relevant docs, and submit a PR. See `docs/how-to-contribute.md` for the full workflow.
+A: Open a GitHub Issue using the `content_addition.md` template, fork the repository, create a branch (`feat/` prefix), write the file following the schema in the relevant docs, and submit a PR. See `docs/general/how-to-contribute.md` for the full workflow.
 
 ---
 
@@ -198,9 +198,9 @@ A: It will be rejected unless it is explicitly labeled as `source_type: synthesi
 | `SKILL-REGISTRY.md` | Master index of all 47 skills — start here to find a skill |
 | `AUTHORITY-ROUTING.md` | T1–T4 decision routing model and Artifact Authority Quick Reference |
 | `LIFECYCLE-MAP.md` | Phase and lifecycle navigation map for skill selection |
-| `docs/getting-started.md` | Quickstart paths for each audience (practitioners, AI agents, authors) |
-| `docs/ai-agent-guide.md` | Loading order, routing logic, and output format rules for AI agents |
-| `docs/how-to-contribute.md` | Full contribution workflow — issues, branching, schema, and PR process |
+| `docs/human-practitioners/getting-started.md` | Quickstart paths for each audience (practitioners, AI agents, authors) |
+| `docs/ai-agents/ai-agent-guide.md` | Loading order, routing logic, and output format rules for AI agents |
+| `docs/general/how-to-contribute.md` | Full contribution workflow — issues, branching, schema, and PR process |
 | `artifacts/` | All artifact definition files (A01–A39) |
 | `templates/` | All artifact template files with `[FIELD: ...]` placeholders |
 | `skills/` | All 47 skill files organized by lifecycle pack |

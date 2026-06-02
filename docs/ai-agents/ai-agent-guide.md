@@ -1,6 +1,6 @@
 # AI Agent Guide — PMOSkills Repository
 
-**File Path:** `docs/ai-agent-guide.md`
+**File Path:** `docs/ai-agents/ai-agent-guide.md`
 **Repository:** PMOSkills
 **Version:** 1.0.0
 **Status:** Draft

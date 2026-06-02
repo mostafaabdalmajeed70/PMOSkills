@@ -3,7 +3,7 @@
 **Repository:** PMOSkills  
 **Version:** 1.0.0  
 **Authority:** PMBOK8 Primary · PMI Companion References Secondary  
-**File Path:** `docs/changelog-guide.md`
+**File Path:** `docs/developer-tools/changelog-guide.md`
 
 ---
 
@@ -28,8 +28,8 @@ This guide defines the changelog update contract for agents performing automated
 ## Prerequisites
 
 - You have read `CONTRIBUTING.md` and understand the contribution workflow, file naming conventions, and quality standards.
-- You have read `docs/getting-started.md` and can navigate the repository structure.
-- You understand the difference between a skill file, an artifact definition file, a template file, and a reference file — see `docs/how-to-use-artifacts.md` and `docs/how-to-use-skills.md`.
+- You have read `docs/human-practitioners/getting-started.md` and can navigate the repository structure.
+- You understand the difference between a skill file, an artifact definition file, a template file, and a reference file — see `docs/human-practitioners/how-to-use-artifacts.md` and `docs/human-practitioners/how-to-use-skills.md`.
 - You have access to the current `CHANGELOG.md` at the root of the repository.
 
 ---
@@ -70,7 +70,7 @@ Not every subsection must appear in every entry — include only the subsections
 ## [2.5.0] — 2026-05-31
 
 ### Added
-- `docs/getting-started.md` — orientation guide for PMO practitioners, AI agents,
+- `docs/human-practitioners/getting-started.md` — orientation guide for PMO practitioners, AI agents,
   and book authors. Includes repo overview, directory map, three-audience quickstart
   paths, skill-finding decision tree, key files index. Phase 1 doc layer.
 - `artifacts/governance/A05-context-register-template.md` — template for A05 Context
@@ -189,8 +189,8 @@ Phase: A QA sweep
 ```
 chore(root): update CHANGELOG.md for v2.5.0
 
-Body: Records addition of docs/getting-started.md, docs/how-to-use-skills.md,
-docs/ai-agent-guide.md, and two artifact templates from Phase B2 Batch 3.
+Body: Records addition of docs/human-practitioners/getting-started.md, docs/human-practitioners/how-to-use-skills.md,
+docs/ai-agents/ai-agent-guide.md, and two artifact templates from Phase B2 Batch 3.
 Files: CHANGELOG.md, MASTER-PLAN-V2.md
 Phase: Phase 1 docs layer
 ```
@@ -225,10 +225,10 @@ Phase: Phase 1 docs layer
 | `CONTRIBUTING.md` | Full contribution workflow, commit convention, quality standards | [`CONTRIBUTING.md`](../CONTRIBUTING.md) |
 | `MASTER-PLAN-V2.md` | Phase-by-phase build plan — updated when major phases complete | [`MASTER-PLAN-V2.md`](../MASTER-PLAN-V2.md) |
 | `SKILL-REGISTRY.md` | Master skill index — updated whenever a skill is added or changed | [`SKILL-REGISTRY.md`](../SKILL-REGISTRY.md) |
-| `docs/getting-started.md` | Repository orientation — entry point for all audiences | [`docs/getting-started.md`](getting-started.md) |
-| `docs/how-to-use-skills.md` | How to read and execute a skill file | [`docs/how-to-use-skills.md`](how-to-use-skills.md) |
-| `docs/how-to-use-artifacts.md` | How to produce, baseline, and version an artifact | [`docs/how-to-use-artifacts.md`](how-to-use-artifacts.md) |
-| `docs/ai-agent-guide.md` | AI agent operating contract for this repository | [`docs/ai-agent-guide.md`](ai-agent-guide.md) |
+| `docs/human-practitioners/getting-started.md` | Repository orientation — entry point for all audiences | [`docs/human-practitioners/getting-started.md`](getting-started.md) |
+| `docs/human-practitioners/how-to-use-skills.md` | How to read and execute a skill file | [`docs/human-practitioners/how-to-use-skills.md`](how-to-use-skills.md) |
+| `docs/human-practitioners/how-to-use-artifacts.md` | How to produce, baseline, and version an artifact | [`docs/human-practitioners/how-to-use-artifacts.md`](how-to-use-artifacts.md) |
+| `docs/ai-agents/ai-agent-guide.md` | AI agent operating contract for this repository | [`docs/ai-agents/ai-agent-guide.md`](ai-agent-guide.md) |
 
 ---
 

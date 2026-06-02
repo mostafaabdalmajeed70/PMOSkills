@@ -26,7 +26,7 @@ file_path: "MASTER-PLAN.md"
 
 > **v4.4.0 update note (2026-06-01):** Quality enforcement integrated. `QUALITY-STANDARDS.md` is now the single authoritative source for all quality standards, file structures, naming conventions, YAML schemas, and quality gate checklists. `§2` of this file updated to point to `QUALITY-STANDARDS.md` — the inline quality summary previously here is removed to eliminate dual-source confusion. Six new AI agent operating rules (13–19) added in `§9` to enforce `QUALITY-STANDARDS.md` at the file level.
 
-> **v4.3.0 update note (2026-06-01):** Comprehensive gap audit completed. All Space files cross-referenced against current repo: PMBOK 8 Guide (8th Ed.), The Standard for Project Management, PMO Practice Guide, Project Manager's Book of Forms, and all 23 books in `pmi_reference_list.md`. Eight new task groups added: (1) PMO-specific skills missing entirely; (2) Portfolio and Program management skills missing; (3) No companion-references layer despite 23 uploaded books; (4) No tailoring guidance layer despite PMBOK 8 full Tailoring section; (5) Sustainability/ESG skills absent despite being a PMBOK 8 Standard principle; (6) Missing `docs/source-usage-guide.md`; (7) Skills × Reference Book mapping needs promotion from `repo/`; (8) PMO artifacts A34–A36 tracked in plan but missing from scorecard. Total target file count raised from ~350 to ~420 files.
+> **v4.3.0 update note (2026-06-01):** Comprehensive gap audit completed. All Space files cross-referenced against current repo: PMBOK 8 Guide (8th Ed.), The Standard for Project Management, PMO Practice Guide, Project Manager's Book of Forms, and all 23 books in `pmi_reference_list.md`. Eight new task groups added: (1) PMO-specific skills missing entirely; (2) Portfolio and Program management skills missing; (3) No companion-references layer despite 23 uploaded books; (4) No tailoring guidance layer despite PMBOK 8 full Tailoring section; (5) Sustainability/ESG skills absent despite being a PMBOK 8 Standard principle; (6) Missing `docs/ai-agents/source-usage-guide.md`; (7) Skills × Reference Book mapping needs promotion from `repo/`; (8) PMO artifacts A34–A36 tracked in plan but missing from scorecard. Total target file count raised from ~350 to ~420 files.
 
 > **v4.2.0 update note (2026-06-01):** Full repository directory audit completed. Every directory crawled and compared against the canonical intended structure. Critical new findings: (1) `artifacts/` has 17 subdirs vs 6 documented — 11 undocumented dirs need audit and README update; (2) `repo/` contains 7 identifiable legacy files that need audit and archival/deletion; (3) `C4-Process-Records/` root contains 30 old pre-migration PR files (PR11–PR40) confirmed as duplicates of `reference/processes/`; (4) C5/C6/C7 all contain live content that must be migrated before deletion; (5) `reference/` has 4 stale legacy subdirs still present; (6) `reference/` is missing `tools-techniques/`, `inputs-outputs/`, and `appendices/` subdirs. All findings added as critical Phase 0 tasks. Phase 0 now has 22 distinct operations.
 
@@ -68,7 +68,7 @@ This document tracks:
 |---|---|---|---|
 | `.github/` | Issue/PR templates + relocated policies | ✅ Correct | None (CODE_OF_CONDUCT.md, CONTRIBUTING.md, and SECURITY.md relocated here) |
 | `Archive/` | Superseded creation documents & drafts | ✅ Correct | None (COMPLETION-PLAN.md, legacy/ drafts, and meta/ generators relocated here) |
-| `docs/` | Guide maps, manuals, and custom guides | ✅ Complete | None (includes `user-friendly-guide.md` practitioner handbook) |
+| `docs/` | Multi-audience subfolder handbook (practitioners, AI agents, dev tools) | ✅ Complete | None (fully restructured into human-practitioners/, ai-agents/, developer-tools/, general/ tracks) |
 | `artifacts/` | 12 canonical folders containing 38 baselines | ✅ Complete | None (contains all PMBOK 8 initiated/planned/executed templates) |
 | `skills/` | 7 pack directories containing 48 skills | ✅ Complete | None (fully built and structured per quality standards) |
 | `reference/` | Principles, domains, companion refs, pmo | ✅ Complete | None (fully synchronized with PMBOK 8 + 23 companion books) |
@@ -131,11 +131,11 @@ Staging files in `repo/` have been fully resolved:
 | GAP-03 | **No `reference/companion-references/` layer** | `pmi_reference_list.md` (23 books) | 🔴 Critical |
 | GAP-04 | **No Tailoring guidance layer** | PMBOK 8 Guide — Tailoring section | 🔴 Critical |
 | GAP-05 | **Zero Sustainability / ESG skills or artifacts** | PMBOK 8 Standard — Principle 6: Integrate Sustainability | 🟠 High |
-| GAP-06 | **Missing `docs/source-usage-guide.md`** | `pmi_reference_list.md` + Space instructions | 🟠 High |
+| GAP-06 | **Missing `docs/ai-agents/source-usage-guide.md`** | `pmi_reference_list.md` + Space instructions | 🟠 High |
 | GAP-07 | **Skills × Reference Book mapping not promoted** | `repo/Skill-PMBOK8anchor-...csv` (exists but buried) | 🟠 High |
 | GAP-08 | **PMO artifacts A34–A36 in plan but not in scorecard** | `COMPLETION-PLAN-V4.md` / PMBOK 8 Guide | 🟡 Medium |
 | GAP-09 | **No `reference/` index for 7 PMBOK 8 performance domains as knowledge content** | PMBOK 8 Guide §2 (Governance, Scope, Schedule, Finance, Stakeholders, Resources, Risk) | 🟡 Medium |
-| GAP-10 | **No `docs/audience-guide.md`** — no explicit path for PMO Director vs PM vs AI agent | NEXT-STEPS-PLAN audience requirement | 🟡 Medium |
+| GAP-10 | **No `docs/human-practitioners/audience-guide.md`** — no explicit path for PMO Director vs PM vs AI agent | NEXT-STEPS-PLAN audience requirement | 🟡 Medium |
 | GAP-11 | **No PMO Type mapping skill** — the PMO Practice Guide defines 20+ PMO types; no skill routes practitioners to correct PMO model | PMO Practice Guide Ch. 3 | 🟡 Medium |
 | GAP-12 | **No PMO Maturity Assessment skill** — PMO Practice Guide Appendix X3 has 26-service maturity model | PMO Practice Guide Appendix X3 | 🟡 Medium |
 | GAP-13 | **No `reference/pmo/`** subdir for PMO service definitions, PMO competency domains, PMO types | PMO Practice Guide | 🟡 Medium |
@@ -239,7 +239,7 @@ The current 7-pack structure covers the project lifecycle (Packs 01–07). The g
 | **Phase 4-C10** | **Companion References Layer (23 files)** | **Phase 4** | ✅ COMPLETE |
 | **Phase 4-C11** | **Tailoring Guidance Layer** | **Phase 4** | ✅ COMPLETE |
 | **Phase 4-C12** | **PMO Reference Layer** | **Phase 3-EXT** | ✅ COMPLETE |
-| **Phase 4-NEW** | **`docs/source-usage-guide.md` + skill-reference-map** | **Phase 0** | ✅ COMPLETE |
+| **Phase 4-NEW** | **`docs/ai-agents/source-usage-guide.md` + skill-reference-map** | **Phase 0** | ✅ COMPLETE |
 | Phase 6 | Test Suite (55 files, 430 test cases) | Phase 3 + Phase 5 | ✅ COMPLETE |
 | Phase 7 | Quality Audit | After each phase | ✅ COMPLETE (Continuous) |
 | **Phase 8** | **Next Steps & Compliance Integration** | **Phase 7** | ✅ COMPLETE (User guide & test plan built) |
@@ -437,10 +437,10 @@ The current 7-pack structure covers the project lifecycle (Packs 01–07). The g
 
 | Task ID | File | Description | Priority |
 |---|---|---|---|
-| P4-NEW-01 | `docs/source-usage-guide.md` | How to use the 23 companion reference books: short-codes, authority hierarchy, how to cite in skills/artifacts, which books apply to which phases | 🔴 |
+| P4-NEW-01 | `docs/ai-agents/source-usage-guide.md` | How to use the 23 companion reference books: short-codes, authority hierarchy, how to cite in skills/artifacts, which books apply to which phases | 🔴 |
 | P4-NEW-02 | `docs/skill-reference-map.csv` | Promoted from `repo/` — Skills × PMBOK8 anchor × companion reference mapping | 🔴 |
-| P4-NEW-03 | `docs/audience-guide.md` | Usage paths per audience: PMO Director, Project Manager, AI Agent, Book Author (GAP-10) | 🟡 |
-| P4-NEW-04 | `docs/sustainability-guide.md` | Sustainability and ESG application guide within PMBOK 8 context — links to Pack 03 skills and principles | 🟡 |
+| P4-NEW-03 | `docs/human-practitioners/audience-guide.md` | Usage paths per audience: PMO Director, Project Manager, AI Agent, Book Author (GAP-10) | 🟡 |
+| P4-NEW-04 | `docs/general/sustainability-guide.md` | Sustainability and ESG application guide within PMBOK 8 context — links to Pack 03 skills and principles | 🟡 |
 
 ---
 

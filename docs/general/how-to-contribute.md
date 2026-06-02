@@ -11,7 +11,7 @@ approval_authority: Repository Maintainer
 
 **Version:** 1.0.0  
 **Status:** Active  
-**File Path:** `docs/how-to-contribute.md`  
+**File Path:** `docs/general/how-to-contribute.md`  
 **Authority:** PMBOK8 Primary · PMI Companion References Secondary
 
 ---
@@ -201,8 +201,8 @@ docs(reference): add P04-value principle file
 | [`source-authority.md`](../source-authority.md) | Repository source authority model — three-tier authority hierarchy |
 | [`SKILL-REGISTRY.md`](../SKILL-REGISTRY.md) | Current registry of all skills — check before adding new content |
 | [`pmi_reference_list.md`](../pmi_reference_list.md) | Full list of PMI companion references approved for citation |
-| [`docs/how-to-use-authority-routing.md`](how-to-use-authority-routing.md) | Step-by-step guide to applying the T1–T4 decision model |
-| [`docs/getting-started.md`](getting-started.md) | Onboarding guide for new repository users |
+| [`docs/human-practitioners/authority-routing.md`](how-to-use-authority-routing.md) | Step-by-step guide to applying the T1–T4 decision model |
+| [`docs/human-practitioners/getting-started.md`](getting-started.md) | Onboarding guide for new repository users |
 
 ---
 

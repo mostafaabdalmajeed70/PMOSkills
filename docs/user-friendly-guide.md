@@ -1,144 +1,97 @@
----
-doc_id: DOC-USER-GUIDE
-doc_name: PMOSkills Repository Master Handbook
-version: "1.0.0"
-status: Active
-authority: PMBOK8 Primary · PMI Companion References Secondary
-file_path: "docs/user-friendly-guide.md"
----
+# 📚 PMOSkills Onboarding Handbook — Multi-Audience Portal
 
-# PMOSkills Repository — Master Handbook & User Guide
+Welcome to the official **PMOSkills Onboarding Handbook and Master Portal**! PMOSkills is a state-of-the-art, executable PMO reference architecture built strictly upon the **PMI PMBOK® 8th Edition** (Primary Authority) and **23 secondary companion standards** (Secondary Authority).
 
-Welcome to the **PMOSkills Repository**, the premier open-source, enterprise-grade project management validation and execution framework. Grounded in the **PMBOK® Guide – Eighth Edition** (Primary Authority) and aligned with the **23 PMI Companion References** (Secondary Authority), this repository serves as a dual-purpose system:
-1. **A Practitioner's Manual:** Real-world templates, standard operating procedures, and skill checklists.
-2. **An AI-Agent Knowledge Base:** Machine-readable structures, deterministic schemas, and test runners that enable autonomous project execution and validation.
+This repository is uniquely engineered as a **dual-purpose operating system** designed to serve both **Human Practitioners** and **Autonomous AI Agents / Developer Tools** with equal fidelity and deterministic precision.
+
+To help you get started, we have organized the entire documentation suite into **four specialized, high-impact tracks**:
 
 ---
 
-## 1. Repository Architecture & The Three Layers
+## 🗺️ Select Your Onboarding Track
 
-The repository is built around a highly structured, interconnected, three-layer architecture:
-
-```mermaid
-graph TD
-    subgraph Reference Layer
-        A[12 Principles] --> B[8 Performance Domains]
-        B --> C[5 Focus Areas]
-        C --> D[41 Standard Processes]
-    end
-
-    subgraph Skills Layer
-        D --> E[61 Project Skills]
-        E --> F[Professional Competencies]
-    end
-
-    subgraph Artifacts Layer
-        E --> G[38 Deliverable Templates]
-        G --> H[Meridian CRM Pilot Example]
-    end
-
-    style Reference Layer fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#f8fafc
-    style Skills Layer fill:#0f172a,stroke:#10b981,stroke-width:2px,color:#f8fafc
-    style Artifacts Layer fill:#111827,stroke:#f59e0b,stroke-width:2px,color:#f8fafc
+```
+   ┌─────────────────────────────────────────────────────────────┐
+   │             PMOSkills Master Onboarding Handbook            │
+   └──────────────────────────────┬──────────────────────────────┘
+                                  │
+         ┌────────────────────────┼────────────────────────┐
+         ▼                        ▼                        ▼
+ 👔 Track 1: Human        🤖 Track 2: AI           🛠️ Track 3: Tool
+  Practitioners            Agents & Prompts         Builders & QA
+ (PMs & PMO Directors)    (LLMs & Co-pilots)       (ASTs & Integrators)
 ```
 
-### 1.1 The Reference Layer (`reference/`)
-* **Purpose:** The formal knowledge foundation mapping the PMBOK 8 standard.
-* **Principles (`reference/principles/`):** Core philosophy (P01–P12) guiding all project decisions (e.g., Stewardship, Leadership, Quality).
-* **Performance Domains (`reference/performance-domains/`):** Operational spheres of project work (PD01–PD08) (e.g., Stakeholders, Planning, Uncertainty).
-* **Focus Areas (`reference/focus-areas/`):** The project phase groups (FA01–FA05) mapping Initiating, Planning, Executing, Monitoring & Controlling, and Closing.
-* **Process Records (`reference/processes/`):** 41 granular project management processes detailing step-by-step inputs, tools, techniques, and outputs (PR01–PR41).
-* **Companion References (`reference/companion-references/`):** Short-code references and index maps mapping secondary literature (e.g., Agile Practice Guide, Risk Management Standard).
+### 👔 Track 1: Human Project Managers & PMO Directors
+*For project managers, PMO directors, scrum masters, and business analysts seeking to instantiate standards and run active projects.*
 
-### 1.2 The Skills Layer (`skills/`)
-* **Purpose:** The human-capability and procedural checklists.
-* **Organization:** Divided into 7 structured packs mapping organizational setup, initiating, planning, executing, monitoring, closing, and hybrid environments (Packs 01–07).
-* **Skills (SKL-XX-YY):** 61 atomic skill manuals defining exact standard operating procedures, mandatory checklists, inputs, outputs, thresholds, and change logs.
-
-### 1.3 The Artifacts Layer (`artifacts/`)
-* **Purpose:** The tangible deliverables of a PMO.
-* **Templates (`*-template.md`):** 38 fully audited, placeholder-driven, machine-validatable corporate document templates (e.g., Business Case, Project Charter, WBS, Risk Register).
-* **Examples (`*-example.md`):** Real-world instantiations of the templates, utilizing the **Meridian CRM System Upgrade** case study (providing a consistent, cross-referencing predictive-to-adaptive scenario).
+| Document | Purpose | Core Standard Coverage |
+|---|---|---|
+| 📘 **[Getting Started Guide](human-practitioners/getting-started.md)** | Initialize workspace, establish directory control, and start execution. | PMO Services, Infrastructure |
+| ⚙️ **[SOP: How to Use Skills](human-practitioners/how-to-use-skills.md)** | Dynamic instructions on using the 48 atomic skills (Packs 01–07). | Executable PM checklists |
+| 📁 **[SOP: How to Use Artifacts](human-practitioners/how-to-use-artifacts.md)** | Guidance on instantiating the 78 clean templates and case examples. | Core PMBOK 8 Deliverables |
+| ⚖️ **[SOP: Authority & T1-T4 Routing](human-practitioners/authority-routing.md)** | PMO escalation models, RACI charts, and decision matrices. | Portfolio & PMO Governance |
+| 👥 **[Audience & Role Guide](human-practitioners/audience-guide.md)** | Maps organizational roles (PM, PMO, Admin) to specific skills. | Stakeholder Performance Domain |
 
 ---
 
-## 2. Standard Operating Procedures (SOPs) per Lifecycle
+### 🤖 Track 2: AI Agents & Autonomous LLM Co-Pilots
+*For LLM prompt engineers, GPT developers, and autonomous agent frameworks interacting programmatically with the repository.*
 
-Depending on your organization's delivery model, follow the mapped navigation paths below to execute your project flawlessly.
-
-### 2.1 Predictive Lifecycle (Waterfall / Plan-Driven)
-When scope and requirements are stable, and predictability is paramount:
-
-```
-[Start Setup] ➔ [Initiate Project] ➔ [Develop Baselines] ➔ [Execute & Control] ➔ [Formal Closure]
-```
-
-1. **Step 1: Setup Governance**
-   * Review [`SKL-01-01`](../skills/01-organizational-setup/SKL-01-01-establish-pm-governance-framework.md) to establish your governance framework.
-   * Instantiate [`A05-context-register-template.md`](../artifacts/governance/A05-context-register-template.md) to record your organizational standards.
-2. **Step 2: Initiate**
-   * Follow processes [`PR01`](../reference/processes/PR01-develop-project-charter.md) and [`PR02`](../reference/processes/PR02-identify-stakeholders.md).
-   * Instantiate [`A01-business-case-template.md`](../artifacts/initiating/A01-business-case-template.md) and [`A04-project-charter-template.md`](../artifacts/initiating/A04-project-charter-template.md).
-3. **Step 3: Plan & Baseline**
-   * Walk through skills in **Pack 03 (Planning)**.
-   * Complete the triple constraints baselines: Scope ([`A13`](../artifacts/quality/A13-requirements-traceability-matrix-template.md)), Schedule ([`A15`](../artifacts/planning-and-baselines/A15-schedule-model-and-baseline-record.md)), and Cost ([`A16`](../artifacts/planning-and-baselines/A16-financial-management-and-cost-baseline-record.md)), culminating in the master Integrated Project Management Plan ([`A14`](../artifacts/planning-and-baselines/A14-integrated-project-management-plan.md)).
-4. **Step 4: Execute & Control**
-   * Use [`A18-issue-impediment-action-log-template.md`](../artifacts/monitoring-and-decisions/A18-issue-impediment-action-log-template.md) and [`A19-risk-management-record-template.md`](../artifacts/monitoring-and-decisions/A19-risk-management-record-template.md) to maintain log integrity.
-   * Run decision thresholds via the [`threshold-router.md`](../shared/routing/threshold-router.md).
-5. **Step 5: Close**
-   * Execute closure routines using [`A24-closure-and-benefits-transition-record-template.md`](../artifacts/closure/A24-closure-and-benefits-transition-record-template.md) and record lessons learned in [`A21`](../artifacts/monitoring-and-decisions/A21-lessons-learned-record-template.md).
-
-### 2.2 Adaptive Lifecycle (Agile / Change-Driven)
-When requirements are highly volatile, and value must be delivered incrementally:
-
-```
-[Define Vision] ➔ [Release Planning] ➔ [Iterative Sprints] ➔ [Demo & Retrospective] ➔ [Value Transfer]
-```
-
-1. **Step 1: Scoping & Visioning**
-   * Utilize adaptive skills in **Pack 07 (Adaptive/Hybrid)**.
-   * Instantiate [`A28-agile-product-backlog-and-vision-record-template.md`](../artifacts/agile-and-adaptive/A28-agile-product-backlog-and-vision-record-template.md) to define product vision and initial Epic list.
-2. **Step 2: Roadmapping & Release Planning**
-   * Map dependencies via [`A22-portfolio-interdependency-record-template.md`](../artifacts/portfolio/A22-portfolio-interdependency-record-template.md).
-   * Plan releases using story mapping techniques documented in [`SKL-07-02`](../skills/07-adaptive-hybrid/SKL-07-02-facilitate-collaborative-story-mapping.md).
-3. **Step 3: Sprint Execution**
-   * Run iterative cycles using sprint backlogs, daily standups, and Kanban boards as described in [`SKL-07-03`](../skills/07-adaptive-hybrid/SKL-07-03-manage-sprint-execution-and-kanban-flow.md).
-   * Monitor velocity and burn-down charts via [`A30-agile-sprint-backlog-and-burndown-record-template.md`](../artifacts/agile-and-adaptive/A30-agile-sprint-backlog-and-burndown-record-template.md).
-4. **Step 4: Continuous Quality Assurance**
-   * Run the Waste Test validator [`waste-test.md`](../shared/validators/waste-test.md) at the end of each sprint to detect TIMWOODS waste in administrative and developer processes.
-5. **Step 5: Release & Retro**
-   * Close sprints using retrospectives and transition value via [`A24`](../artifacts/closure/A24-closure-and-benefits-transition-record-template.md).
+| Document | Purpose | Format |
+|---|---|---|
+| 🤖 **[AI Agent Master Guide](ai-agents/ai-agent-guide.md)** | Master prompt injection templates, zero-shot loaders, and operational bounds. | Markdown + Prompts |
+| 📖 **[Source Reference Extraction Guide](ai-agents/source-usage-guide.md)** | Mappings to the 23 companion books, citation syntaxes, and authority levels. | PMBOK 8 Ontology |
 
 ---
 
-## 3. How to Instantiate Templates
+### 🛠️ Track 3: Developer Tools & Integration QA
+*For systems developers, tool integrations, AST builders, and continuous integration validation engineers.*
 
-All corporate document templates in `artifacts/` follow a standardized formatting convention. To instantiate them in your PMO:
-
-1. **Copy the Template:** Copy the `*-template.md` file to your active project workspace.
-2. **Preserve Front-Matter:** Ensure the YAML front-matter block remains intact, updating the `status` from `Template` to `Active`, and providing your specific `project_id`.
-3. **Input Data Fields:** Replace all descriptive blocks (e.g. `[FIELD: Cost Baseline Description]`) with your project's actual data.
-4. **DO NOT PRE-FILL:** Never leave placeholders in a finalized project record. Ensure all inputs are concrete and complete.
-5. **Validate Integrity:** Run the shared quality checker `shared/validators/artifact-quality-check.md` to ensure that no placeholder tags remain in the instantiated document.
+| Document | Purpose | Format |
+|---|---|---|
+| 📋 **[Framework Changelog Guide](developer-tools/changelog-guide.md)** | Versioning thresholds, metadata change controls, and scorecard audits. | Governance Rules |
+| 📊 **[Skills-Reference CSV Map](developer-tools/skill-reference-map.csv)** | Programmatic skill-to-PMBOK8-process crosswalk. | CSV Dataset |
 
 ---
 
-## 4. AI-Agent Orchestration & Automation
+### 🌱 Track 4: General References & Open-Source Library
+*Core glossary definitions, frequently asked questions, sustainability (ESG) indices, and open-source contribution guidelines.*
 
-This repository is designed to be fully machine-readable. AI agent co-pilots can read, write, audit, and refactor files by adhering to these guidelines:
+| Document | Purpose | Core Standard Coverage |
+|---|---|---|
+| 📖 **[Glossary of PM Terms](general/glossary.md)** | Standard definitions for PMBOK 8th Edition terminologies. | Lexicon standard alignment |
+| ❓ **[Frequently Asked Questions](general/faq.md)** | Standard repository operations, template copy rules, and troubleshooting. | PMO Helpdesk Support |
+| 🌱 **[Sustainability & ESG Guide](general/sustainability-guide.md)** | ESG principles and metrics mapped directly to Pack 03 skills. | Environmental Stewardship |
+| 🤝 **[How to Contribute](general/how-to-contribute.md)** | Coding conventions, validation rules, and pull request gates. | Open-Source Governance |
 
-### 4.1 System Context Injection
-When starting an LLM session, paste the contents of [`Archive/session-start-prompt.md`](../Archive/session-start-prompt.md) to ground the agent in the project's authority routing, file naming standards, and task scopes.
+---
 
-### 4.2 Automated Quality Gates
-All files created or modified by AI agents must strictly pass the quality checklist defined in [`QUALITY-STANDARDS.md §9`](../QUALITY-STANDARDS.md#9-ai-agent-pre-commit-checklist). The system enforces:
-* **L1 (Structural Gates):** YAML front-matter compliance, unique IDs, header hierarchy, and link validation.
-* **L2 (Content Gates):** Specific field compliance, zero placeholder retention, and PMBOK 8 section citation integrity.
-* **L3 (System Integration Gates):** Cross-link checks between related reference, skill, and test suites.
+## 🎨 Unified Project Lifecycle SOP Mappings
 
-### 4.3 Running Validation Scripts
-Run structural validation tests using the terminal command:
-```bash
-python3 shared/validate_structure.py
+Depending on your delivery framework, you can follow standard operational routes mapping through our Executable Skills (`skills/`) and Templates (`artifacts/`):
+
+### 1. Predictive (Waterfall) Lifecycle Routing
 ```
-This script audits the repository folders, confirms the absence of duplicate files, and ensures that file permissions and structures match the canonical roadmap.
+[Setup Governance] ➔ [Project Initiating] ➔ [Triple-Constraints Baselines] ➔ [Monitoring & Gate Reviews] ➔ [Closure & Transitions]
+```
+1. **Setup:** Consult **[Establishing Governance](human-practitioners/authority-routing.md)** and skill `SKL-01-01`.
+2. **Initiate:** Follow processes `PR01`/`PR02`, instantiating business cases and project charters (`A01` / `A04`).
+3. **Plan:** Execute Pack 03 skills, developing the integrated Project Management Plan (`A14`) including Schedule (`A15`) and Budget (`A16`).
+4. **Monitor & Control:** Track thresholds using `threshold-router.md` and manage change control issues via `A18` / `A19`.
+5. **Close:** Execute administrative archivals via `A24` and lessons learned records (`A21`).
+
+### 2. Adaptive (Agile) Lifecycle Routing
+```
+[Define Vision] ➔ [Collaborative Story Mapping] ➔ [Sprint Planning & Execution] ➔ [continuous Waste Auditing] ➔ [Value Transition]
+```
+1. **Vision:** Define vision and product backlogs using template `A28`.
+2. **Story Mapping:** Plan releases using story mapping practices outlined in skill `SKL-07-02`.
+3. **Sprint Run:** Manage Kanban boards and burn-down analytics via `SKL-07-03` and sprint backlogs (`A30`).
+4. **Waste Testing:** Eliminate overhead using the programmatic waste auditor `shared/validators/waste-test.md` at sprint boundaries.
+5. **Release:** Transition features to benefits realization via `A24`.
+
+---
+
+*Authority: PMBOK 8 Core Standard · PMI Companion References Secondary · PMO Shared Governance Board*  
+*Contact & Lead Architect:* **Mohamed Fouad Fakhruldeen** ([fakhruldeen.me](https://fakhruldeen.me))
