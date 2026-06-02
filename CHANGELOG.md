@@ -6,6 +6,16 @@ Authority: PMBOK 8 Primary · PMI Companion References Secondary.
 
 ---
 
+## [5.1.0] — 2026-06-02
+
+### Added
+- **v0.3 Release Integration:**
+  - Authoring `RELEASE-NOTES-v0.3.md` detailing metrics sync and documents integration.
+  - Refactoring scorecard counts in `README.md` to catalog all 19 expanded documentation guides.
+  - Syncing framework metrics to cover 354 total verified assets.
+
+---
+
 ## [5.0.0] — 2026-06-02
 
 ### Added
