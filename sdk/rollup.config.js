@@ -25,6 +25,8 @@ export default {
     typescript({
       tsconfig: './tsconfig.json',
       compilerOptions: {
+        module: 'ESNext',
+        moduleResolution: 'Node',
         declaration: true,
         declarationDir: './dist'
       }
