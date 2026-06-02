@@ -1,0 +1,250 @@
+import * as fs from 'fs';
+import * as path from 'path';
+import { PMOSkillsStore, Skill, ProcessRecord, SystemPrompt, OntologySpec } from '../src/types';
+
+// Helper to parse simple YAML front-matter without dependencies
+function parseFrontMatter(content: string) {
+  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
+  if (!match) return { metadata: {} as Record<string, any>, body: content };
+  const yamlStr = match[1];
+  const body = match[2];
+  const metadata: Record<string, any> = {};
+  const lines = yamlStr.split(/\r?\n/);
+  let currentKey: string | null = null;
+
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed) continue;
+    if (trimmed.startsWith('-')) {
+      if (currentKey && Array.isArray(metadata[currentKey])) {
+        const val = trimmed.substring(1).trim().replace(/^['"]|['"]$/g, '');
+        metadata[currentKey].push(val);
+      }
+    } else {
+      const colonIdx = trimmed.indexOf(':');
+      if (colonIdx !== -1) {
+        const key = trimmed.substring(0, colonIdx).trim();
+        let val = trimmed.substring(colonIdx + 1).trim();
+        val = val.replace(/^['"]|['"]$/g, '');
+        if (val === '[]' || val === '') {
+          metadata[key] = [];
+          currentKey = key;
+        } else if (val.startsWith('[') && val.endsWith(']')) {
+          metadata[key] = val.substring(1, val.length - 1)
+            .split(',')
+            .map(s => s.trim().replace(/^['"]|['"]$/g, ''));
+          currentKey = key;
+        } else {
+          metadata[key] = val;
+          currentKey = key;
+        }
+      }
+    }
+  }
+  return { metadata, body };
+}
+
+// Recursively find files in a directory matching a pattern
+function getFilesRecursively(dir: string, extension: string): string[] {
+  let results: string[] = [];
+  if (!fs.existsSync(dir)) return results;
+  const list = fs.readdirSync(dir);
+  for (const file of list) {
+    const filePath = path.resolve(dir, file);
+    const stat = fs.statSync(filePath);
+    if (stat && stat.isDirectory()) {
+      results = results.concat(getFilesRecursively(filePath, extension));
+    } else if (filePath.endsWith(extension)) {
+      results.push(filePath);
+    }
+  }
+  return results;
+}
+
+// Extract inputs, tools, outputs from process record body
+function parseProcessDetails(body: string) {
+  const inputs: string[] = [];
+  const tools: string[] = [];
+  const outputs: string[] = [];
+
+  // Parse Inputs Table
+  const inputsMatch = body.match(/## Inputs\r?\n\r?\n\|([\s\S]*?)(?=\n\r?\n##|\n\r?\n---|$)/);
+  if (inputsMatch) {
+    const rows = inputsMatch[1].split(/\r?\n/).slice(2);
+    for (const row of rows) {
+      const cols = row.split('|').map(s => s.trim());
+      if (cols.length > 2 && cols[1]) {
+        inputs.push(cols[1]);
+      }
+    }
+  }
+
+  // Parse Outputs Table
+  const outputsMatch = body.match(/## Outputs\r?\n\r?\n\|([\s\S]*?)(?=\n\r?\n##|\n\r?\n---|$)/);
+  if (outputsMatch) {
+    const rows = outputsMatch[1].split(/\r?\n/).slice(2);
+    for (const row of rows) {
+      const cols = row.split('|').map(s => s.trim());
+      if (cols.length > 2 && cols[1]) {
+        outputs.push(cols[1]);
+      }
+    }
+  }
+
+  // Parse Tools and Techniques
+  const toolsMatch = body.match(/## Tools (?:and|&) Techniques\r?\n\r?\n([\s\S]*?)(?=\n\r?\n##|\n\r?\n---|$)/);
+  if (toolsMatch) {
+    const lines = toolsMatch[1].split(/\r?\n/);
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (trimmed.startsWith('-')) {
+        let toolName = trimmed.substring(1).trim();
+        // Strip markdown bold and colons cleanly
+        toolName = toolName.replace(/^\*\*|\*\*/g, '').trim();
+        const colonIdx = toolName.indexOf(':');
+        if (colonIdx !== -1) {
+          toolName = toolName.substring(0, colonIdx).trim();
+        }
+        toolName = toolName.replace(/^[:\s\-]+|[:\s\-]+$/g, '').trim();
+        if (toolName) {
+          tools.push(toolName);
+        }
+      }
+    }
+  }
+
+  return { inputs, tools, outputs };
+}
+
+// Split and parse system prompts file
+function parseSystemPrompts(content: string): Record<string, SystemPrompt> {
+  const prompts: Record<string, SystemPrompt> = {};
+  const sections = content.split(/## \d+\. /);
+
+  for (const section of sections) {
+    const trimmed = section.trim();
+    if (!trimmed) continue;
+    
+    const lines = trimmed.split(/\r?\n/);
+    const titleLine = lines[0].trim();
+    let id = '';
+    if (titleLine.toLowerCase().includes('orchestrator')) {
+      id = 'pmo-orchestrator';
+    } else if (titleLine.toLowerCase().includes('risk')) {
+      id = 'risk-compliance-audit';
+    } else if (titleLine.toLowerCase().includes('waste')) {
+      id = 'waste-performance-auditor';
+    } else {
+      id = titleLine.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    }
+
+    const codeBlockMatch = trimmed.match(/```markdown\r?\n([\s\S]*?)\r?\n```/);
+    const promptText = codeBlockMatch ? codeBlockMatch[1].trim() : trimmed;
+
+    prompts[id] = {
+      id,
+      title: titleLine.replace(/\s+Prompt$/, ''),
+      prompt: promptText
+    };
+  }
+
+  return prompts;
+}
+
+function main() {
+  const rootDir = path.resolve(__dirname, '../../');
+  console.log(`Starting compile-db in root: ${rootDir}`);
+
+  const store: PMOSkillsStore = {
+    skills: {},
+    processes: {},
+    systemPrompts: {},
+    ontology: {} as OntologySpec,
+    version: '0.3.0',
+    compiledAt: new Date().toISOString()
+  };
+
+  // 1. Compile Skills
+  const skillsDir = path.resolve(rootDir, 'skills');
+  const skillFiles = getFilesRecursively(skillsDir, '.md');
+  console.log(`Found ${skillFiles.length} skill files to parse...`);
+
+  for (const file of skillFiles) {
+    const raw = fs.readFileSync(file, 'utf-8');
+    const { metadata, body } = parseFrontMatter(raw);
+    const id = metadata.skill_id || path.basename(file, '.md').split('-').slice(0, 3).join('-');
+    
+    // Extract template (entire body below front matter is the prompt/execution manual template)
+    store.skills[id] = {
+      id,
+      title: metadata.skill_name || id,
+      metadata: {
+        id,
+        title: metadata.skill_name || id,
+        domain: Array.isArray(metadata.performance_domains) ? metadata.performance_domains[0] : (metadata.performance_domains || 'Default'),
+        phase: metadata.focus_area || 'Execution',
+        lifecycle: metadata.pack || 'Default',
+        citations: metadata.pmbok8_process_anchor ? [metadata.pmbok8_process_anchor] : [],
+        ...metadata
+      },
+      template: body.trim(),
+      rawContent: raw
+    };
+  }
+
+  // 2. Compile Processes
+  const processesDir = path.resolve(rootDir, 'reference/processes');
+  const processFiles = fs.readdirSync(processesDir)
+    .filter(f => f.startsWith('PR') && f.endsWith('.md'))
+    .map(f => path.resolve(processesDir, f));
+  console.log(`Found ${processFiles.length} process records to parse...`);
+
+  for (const file of processFiles) {
+    const raw = fs.readFileSync(file, 'utf-8');
+    const { metadata, body } = parseFrontMatter(raw);
+    const id = metadata.ref_id || path.basename(file, '.md').split('-')[0];
+    const { inputs, tools, outputs } = parseProcessDetails(body);
+
+    store.processes[id] = {
+      id,
+      title: metadata.ref_name || id,
+      inputs,
+      tools,
+      outputs,
+      citations: metadata.pmbok8_source ? [metadata.pmbok8_source] : [],
+      rawContent: raw
+    };
+  }
+
+  // 3. Compile System Prompts
+  const promptsFile = path.resolve(rootDir, 'docs/ai-agents/system-prompts.md');
+  if (fs.existsSync(promptsFile)) {
+    const raw = fs.readFileSync(promptsFile, 'utf-8');
+    const { body } = parseFrontMatter(raw);
+    store.systemPrompts = parseSystemPrompts(body);
+    console.log(`Parsed ${Object.keys(store.systemPrompts).length} system prompts.`);
+  }
+
+  // 4. Compile Ontology
+  const ontologyFile = path.resolve(rootDir, 'docs/ai-agents/ontology-specification.md');
+  if (fs.existsSync(ontologyFile)) {
+    const raw = fs.readFileSync(ontologyFile, 'utf-8');
+    const { metadata, body } = parseFrontMatter(raw);
+    store.ontology = {
+      id: 'pmoskills-ontology',
+      title: metadata.doc_name || 'PMOSkills Ontology Specification',
+      content: body.trim()
+    };
+    console.log('Parsed Ontology Specification.');
+  }
+
+  // Write store
+  const dbDir = path.resolve(__dirname, '../src/db');
+  if (!fs.existsSync(dbDir)) {
+    fs.mkdirSync(dbDir, { recursive: true });
+  }
+  fs.writeFileSync(path.resolve(dbDir, 'store.json'), JSON.stringify(store, null, 2), 'utf-8');
+  console.log(`SUCCESS: store.json compiled at ${path.resolve(dbDir, 'store.json')} (${(fs.statSync(path.resolve(dbDir, 'store.json')).size / 1024).toFixed(1)} KB)`);
+}
+
+main();
