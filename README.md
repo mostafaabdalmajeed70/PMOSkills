@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/badge/AI--Agent-Ready-orange?style=for-the-badge&logo=openai&logoColor=white&color=ff8800" alt="AI Agent Ready">
   <img src="https://img.shields.io/badge/3--Tier--Testing-Passed-green?style=for-the-badge&logo=github-actions&logoColor=white&color=2eb82e" alt="3-Tier Testing Passed">
   <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge&color=888888" alt="License MIT">
-  <a href="https://doi.org/10.5281/zenodo.20510541"><img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20510541-blue?style=for-the-badge" alt="DOI"></a>
+  <a href="https://doi.org/10.5281/zenodo.20510540"><img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20510540-blue?style=for-the-badge" alt="DOI"></a>
 </p>
 
 ---
@@ -242,12 +242,12 @@ If you use this repository or framework in your academic research, PMO governanc
   year         = 2026,
   publisher    = {Zenodo},
   version      = {v0.3},
-  doi          = {10.5281/zenodo.20510541},
-  url          = {https://doi.org/10.5281/zenodo.20510541}
+  doi          = {10.5281/zenodo.20510540},
+  url          = {https://doi.org/10.5281/zenodo.20510540}
 }
 ```
 
-> Fakhruldeen, M. F. (2026). *PMOSkills: An Executable Skill System & PMO Reference Architecture built on PMI PMBOK® 8th Edition* (Version v0.3). Zenodo. https://doi.org/10.5281/zenodo.20510541
+> Fakhruldeen, M. F. (2026). *PMOSkills: An Executable Skill System & PMO Reference Architecture built on PMI PMBOK® 8th Edition* (Version v0.3). Zenodo. https://doi.org/10.5281/zenodo.20510540
 
 ---
 
