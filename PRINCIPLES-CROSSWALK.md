@@ -1,8 +1,23 @@
+---
+gov_id: PRINCIPLES-CROSSWALK
+gov_name: PMBOK 8 Principles to Performance Domains and Skills Crosswalk
+version: "1.0.1"
+status: Active
+authority: PMBOK8 Primary
+supersedes: none
+file_path: "PRINCIPLES-CROSSWALK.md"
+last_updated: "2026-06-03"
+---
+
 # PRINCIPLES-CROSSWALK.md
 **Repository:** PMO Skill Repository  
-**Version:** 1.0.0-draft  
+**Version:** 1.0.1  
 **Authority:** PMBOK8 — The Standard for Project Management §3 (Principles) · PMBOK Guide §2 (Performance Domains)  
 **Purpose:** Map all 6 PMBOK 8 principles to the 7 performance domains, 5 focus areas, and key skills.
+
+> **Change log v1.0.1 (2026-06-03):** Added GOV YAML front-matter. Corrected all six §Ref numbers
+> by +1 (§3.2–§3.7 → §3.3–§3.8). PMBOK 8 Standard §3.1 = The Project Management Mindset;
+> §3.2 = Principles and Performance Domains. The principles themselves begin at §3.3.
 
 ---
 
@@ -10,12 +25,12 @@
 
 | Code | Principle | Standard §Ref |
 |------|-----------|--------------|
-| P1 | Adopt a Holistic View | §3.2 |
-| P2 | Focus on Value | §3.3 |
-| P3 | Embed Quality Into Processes and Deliverables | §3.4 |
-| P4 | Be an Accountable Leader | §3.5 |
-| P5 | Integrate Sustainability Within All Project Areas | §3.6 |
-| P6 | Build an Empowered Culture | §3.7 |
+| P1 | Adopt a Holistic View | §3.3 |
+| P2 | Focus on Value | §3.4 |
+| P3 | Embed Quality Into Processes and Deliverables | §3.5 |
+| P4 | Be an Accountable Leader | §3.6 |
+| P5 | Integrate Sustainability Within All Project Areas | §3.7 |
+| P6 | Build an Empowered Culture | §3.8 |
 
 ---
 
@@ -53,7 +68,7 @@
 | P2 Focus on Value | SKL-01-02 (Business Case) · SKL-01-04 (Benefits Baseline) · SKL-03-07 (Financial Baseline) · SKL-06-03 (Benefits Transition) · SKL-06-09 (Final Report) |
 | P3 Quality | SKL-04-02 (Quality Assurance) · SKL-05-09 (Quality Control) · SKL-03-04 (Requirements) · SKL-05-03 (Scope Validation) |
 | P4 Accountable Leader | SKL-02-01 (Charter) · SKL-02-04 (Governance Setup) · SKL-00-02 (Authority Routing) · SKL-05-02 (Change Assessment) · SKL-06-10 (Closure Authorization) |
-| P5 Sustainability | SKL-01-04 (Benefits Baseline) · SKL-08-03 (Data/Privacy) · SKL-03-07 (Financial Baseline: lifecycle cost) · SKL-06-03 (Benefits Transition: long-term impact) |
+| P5 Sustainability | SKL-01-04 (Benefits Baseline) · SKL-08-03 (Data/Privacy) · SKL-03-07 (Financial Baseline: lifecycle cost) · SKL-06-03 (Benefits Transition: long-term impact) · SKL-03-18 (Integrate Sustainability Into Project Planning) |
 | P6 Empowered Culture | SKL-03-13 (Team Agreement) · SKL-04-07 (Team Leadership) · SKL-04-03 (Knowledge Management) · SKL-06-05 (Lessons Learned) |
 
 ---
@@ -62,13 +77,13 @@
 
 | Principle | Standard In-Action §Ref | Key Message |
 |-----------|------------------------|-------------|
-| P1 Adopt a Holistic View | §3.2.2 | Projects exist within systems; decisions have cascading effects |
-| P2 Focus on Value | §3.3.2 | Value must be defined, measured, and protected throughout |
-| P3 Embed Quality | §3.4.2 | Quality is built in, not inspected in; cost of quality matters |
-| P4 Accountable Leader | §3.5.2 | Authority and accountability must be explicit and matched |
-| P5 Sustainability | §3.6.2 | Projects should consider social, environmental, and economic sustainability dimensions |
-| P6 Empowered Culture | §3.7.2 | Empowerment requires trust, clarity of boundaries, and psychological safety |
+| P1 Adopt a Holistic View | §3.3.2 | Projects exist within systems; decisions have cascading effects |
+| P2 Focus on Value | §3.4.2 | Value must be defined, measured, and protected throughout |
+| P3 Embed Quality | §3.5.2 | Quality is built in, not inspected in; cost of quality matters |
+| P4 Accountable Leader | §3.6.2 | Authority and accountability must be explicit and matched |
+| P5 Sustainability | §3.7.2 | Projects should consider social, environmental, and economic sustainability dimensions |
+| P6 Empowered Culture | §3.8.2 | Empowerment requires trust, clarity of boundaries, and psychological safety |
 
 ---
 
-*Authority: PMBOK8 — The Standard for Project Management §3 · PMBOK Guide §2.1–2.7*
+*Authority: PMBOK8 — The Standard for Project Management §3.3–§3.8 · PMBOK Guide §2.1–§2.7*
