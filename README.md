@@ -3,11 +3,11 @@
 </p>
 
 <p align="center">
+  <a href="https://doi.org/10.5281/zenodo.20510541"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.20510541.svg" alt="DOI"></a>
   <img src="https://img.shields.io/badge/PMBOK--8th--Edition-Compliant-vibrantgreen?style=for-the-badge&logo=pmi&logoColor=white&color=0073e6" alt="PMBOK 8th Edition Compliant">
   <img src="https://img.shields.io/badge/AI--Agent-Ready-orange?style=for-the-badge&logo=openai&logoColor=white&color=ff8800" alt="AI Agent Ready">
   <img src="https://img.shields.io/badge/3--Tier--Testing-Passed-green?style=for-the-badge&logo=github-actions&logoColor=white&color=2eb82e" alt="3-Tier Testing Passed">
   <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge&color=888888" alt="License MIT">
-  <a href="https://doi.org/10.5281/zenodo.20510540"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.20510540.svg" alt="DOI"></a>
 </p>
 
 ---
