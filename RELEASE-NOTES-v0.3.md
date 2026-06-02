@@ -13,7 +13,7 @@ Following the massive documentation expansion in v0.2, version **v0.3** locks do
 * **Primary Authority:** PMI PMBOK® 8th Edition Compliant
 * **Secondary Authority:** 23 Companion Reference Manuals (OPM, GPPP, BA, Risk-PPP, etc.)
 * **Total Assets Audited:** **354 production-ready, verified files**
-* **Zenodo DOI:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20510540.svg)](https://doi.org/10.5281/zenodo.20510540) (`10.5281/zenodo.20510540`)
+* **Zenodo DOI:** [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20510541-blue?style=for-the-badge)](https://doi.org/10.5281/zenodo.20510541) (`10.5281/zenodo.20510541`)
 
 ---
 
