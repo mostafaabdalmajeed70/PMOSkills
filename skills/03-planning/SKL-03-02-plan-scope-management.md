@@ -2,47 +2,46 @@
 skill_id: SKL-03-02
 skill_name: Plan Scope Management
 pack: "03 — Planning"
-status: "Draft · Untested"
+version: "1.0.0"
+status: "Draft · Tests Defined"
 source_type: PMI-derived
-primary_artifact_output: "A08 — Scope and Requirements Decision Record (Scope Management Plan section)"
+primary_artifact_output: "A06 — Project Management Plan (Scope Management section)"
 artifacts_updated:
-  - "A14 — Integrated PM Plan (subsidiary reference)"
-pmbok8_process_anchor: "Guide §2.2.2.1 Plan Scope Management · Figure 2-14"
+  - "A06 — Project Management Plan (Scope Management Plan section)"
+pmbok8_process_anchor: "Guide §2.2.6.1 Plan Scope Management · Guide §2.2 Scope Domain"
 performance_domains:
   - Scope
-  - Governance
 focus_area: Planning
 upstream_prerequisites:
-  - "SKL-02-01 — A04 must be baselined"
-  - "SKL-02-02 — A07 Identification section must exist"
+  - "SKL-02-01 — A04 Project Charter must be baselined"
 downstream_skills:
   - "SKL-03-03 — Elicit and Analyze Requirements"
   - "SKL-03-04 — Define Scope"
+  - "SKL-03-05 — Develop Scope Structure"
 file_path: "skills/03-planning/SKL-03-02-plan-scope-management.md"
-tests: 8
-version: "1.0.0"
+tests: 7
 ---
 
 # SKL-03-02 — Plan Scope Management
 
 **Skill ID:** SKL-03-02  
 **Pack:** 03 — Planning  
-**Status:** Draft · Untested  
+**Status:** Draft · Tests Defined  
 **Source type:** PMI-derived  
-**PMBOK8 anchor:** Guide §2.2.2.1 Plan Scope Management · Figure 2-14  
+**PMBOK8 anchor:** Guide §2.2.6.1 Plan Scope Management · Guide §2.2 Scope Domain  
 **File path:** `skills/03-planning/SKL-03-02-plan-scope-management.md`
 
 ---
 
 ## Purpose
 
-Establish the scope management approach for the project — defining how scope will be defined, validated, and controlled — and record it in the Scope Management Plan section of A08 (Scope and Requirements Decision Record).
+Define how project scope will be defined, validated, and controlled throughout the project lifecycle. The output is the Scope Management section of A06 (Project Management Plan), which governs all subsequent scope-related activities.
 
 ---
 
 ## Scope
 
-This skill covers the Plan Scope Management process only. It does not elicit requirements (SKL-03-03), define scope (SKL-03-04), or develop the scope structure/WBS (SKL-03-05). Its output is the Scope Management Plan section of A08 and a subsidiary reference in A14.
+This skill produces the Scope Management Plan section of A06 only. It does not create the scope baseline (SKL-03-04) or the WBS (SKL-03-05). It provides the governance rules that those skills must follow.
 
 ---
 
@@ -50,56 +49,47 @@ This skill covers the Plan Scope Management process only. It does not elicit req
 
 | Input | Source | Mandatory? |
 |---|---|---|
-| Project Charter | A04 | Yes |
-| Context Register (EEF/OPA) | A05 | Yes |
-| Tailoring Decision Record | A06 | Yes |
-| Stakeholder Register (Identification section) | A07 | Yes |
-| Delivery approach and lifecycle decision | A09 / A13 | Yes |
-
-**Gate check:** A04 must be approved and baselined before this skill runs. If A04 is not baselined, stop and complete SKL-02-01.
+| A04 — Project Charter (baselined) | SKL-02-01 | Yes |
+| A05 — Context Register (EEF/OPA) | SKL-01-01 | Yes |
+| A07 — Stakeholder Register | SKL-02-02 | Yes |
 
 ---
 
 ## Instructions
 
-### Step 1 — Review charter and context
-1. Read A04 to extract the authorized scope boundary, high-level deliverables, and stated constraints.
-2. Read A05 for organizational standards, templates, and precedents that govern scope management.
-3. Read A06 for tailoring decisions that affect how formal or lightweight the scope approach should be.
+### Step 1 — Define Scope Statement Process
+1. Define who creates the scope statement (PM, Business Analyst, or joint).
+2. Define who approves the scope statement (Sponsor, governance body).
+3. Define the scope statement format (narrative, tabular, or both).
+4. Record in A06 Scope Management section.
 
-### Step 2 — Select scope definition approach
-1. Determine whether a predictive (WBS-driven), adaptive (backlog-driven), or hybrid scope approach applies based on A09/A13.
-2. For predictive: plan for a formal scope baseline using a WBS and project scope statement.
-3. For adaptive: plan for a prioritized backlog with defined acceptance criteria per item.
-4. For hybrid: identify which components are predictive and which are adaptive; document the boundary.
+### Step 2 — Define Requirements Collection Process
+1. Define the methods used to collect requirements (interviews, workshops, surveys, document analysis).
+2. Define the level of detail required for requirements (functional, non-functional, constraints).
+3. Define who approves requirements (business owner, sponsor).
+4. Record in A06 Scope Management section.
 
-### Step 3 — Define scope validation approach
-1. Determine who validates and accepts deliverables (customer, sponsor, product owner, or designated authority).
-2. Define when validation occurs (at phase gates, sprint reviews, milestone completions, or continuous).
-3. Define acceptance criteria standards — what constitutes a formally accepted deliverable.
-4. Record the validation authority in A07 if not already captured.
+### Step 3 — Define WBS Creation Rules
+1. Define the WBS decomposition approach (deliverable-based or phase-based).
+2. Define the WBS dictionary requirements (what each work package entry must contain).
+3. Define the WBS approval authority.
+4. Record in A06 Scope Management section.
 
-### Step 4 — Define scope control approach
-1. Determine the scope change process: who can request, who assesses, who approves.
-2. Confirm that scope changes route through A12 (Change and Exception Decision Log).
-3. Define the re-baseline trigger: what level of scope change requires a formal baseline update to A08.
-4. Confirm alignment with A06 thresholds.
+### Step 4 — Define Scope Validation Process
+1. Define how completed deliverables will be formally accepted (walkthrough, testing, sign-off).
+2. Define who can formally accept deliverables (customer, sponsor, business owner).
+3. Define what happens to rejected deliverables (rework, escalation).
+4. Record in A06 Scope Management section.
 
-### Step 5 — Define requirements management linkage
-1. Confirm that requirements will be elicited and documented in A08 by SKL-03-03.
-2. Confirm that requirements traceability will be maintained within A08.
-3. Identify any regulatory or contractual requirements that impose specific requirements management obligations.
+### Step 5 — Define Scope Change Control
+1. Define what constitutes a scope change (any addition, removal, or modification to agreed scope).
+2. Define the change request process (A12 Change and Exception Decision Log).
+3. Define the change approval authority per A05 governance tiers.
+4. Record in A06 Scope Management section.
 
-### Step 6 — Write the Scope Management Plan section of A08
-Populate the Scope Management Plan section of A08 with:
-- Scope definition approach (predictive / adaptive / hybrid)
-- Scope validation approach (who, when, acceptance criteria standard)
-- Scope control approach (change process, re-baseline triggers)
-- Requirements management linkage
-- Tailoring rationale (reference A06)
-
-### Step 7 — Register A08 as subsidiary in A14
-Add or confirm A08 reference in the A14 Subsidiary Plan Index.
+### Step 6 — Baseline Scope Management Section
+1. Review with sponsor or PMO lead.
+2. Record version, date, and approval.
 
 ---
 
@@ -107,38 +97,14 @@ Add or confirm A08 reference in the A14 Subsidiary Plan Index.
 
 | Output | Artifact | Section |
 |---|---|---|
-| Scope Management Plan | A08 | Scope Management Plan section |
-| Subsidiary reference | A14 | Subsidiary Plan Index |
+| Scope Management Plan | A06 | Scope Management section |
 
 ---
 
 ## Constraints
 
-- Do not combine scope definition, requirements elicitation, or WBS development in this skill — those are SKL-03-03, SKL-03-04, and SKL-03-05.
-- The scope management approach must be consistent with the lifecycle approach in A09/A13.
-- Scope change routing must reference A12 — do not design a parallel change process.
-
----
-
-## Tailoring Guidance
-
-| Approach | Adjustment |
-|---|---|
-| Simple / low-risk | One-paragraph scope management note in A08 is sufficient; skip formal plan structure |
-| Predictive | Full scope management plan with WBS, formal validation, and change control |
-| Adaptive | Backlog management rules, definition of ready, definition of done, sprint review as validation |
-| Hybrid | Map which components use each approach; document at the component level |
-
----
-
-## Failure Cases
-
-| Failure | Symptom | Resolution |
-|---|---|---|
-| Charter not baselined | A04 missing or draft | Stop; complete SKL-02-01 first |
-| Lifecycle approach not decided | A09/A13 empty | Resolve delivery approach before planning scope |
-| Scope management approach contradicts A06 | Overly heavyweight for tailored project | Align with A06 tailoring decision |
-| Validation authority not named | A07 has no acceptance authority identified | Update A07 stakeholder register |
+- This skill must complete before SKL-03-03, SKL-03-04, and SKL-03-05 run.
+- All scope-related decisions must follow the rules defined here.
 
 ---
 
@@ -146,18 +112,23 @@ Add or confirm A08 reference in the A14 Subsidiary Plan Index.
 
 | Test ID | Test description | Pass condition | Fail condition |
 |---|---|---|---|
-| T-1 | Gate check — A04 baselined | A04 status = Approved | A04 in Draft status |
-| T-2 | Lifecycle approach resolved | A09 or A13 confirms predictive/adaptive/hybrid | Approach field empty |
-| T-3 | Scope Management Plan section populated in A08 | All six fields in Step 6 present | Any field blank without tailoring justification |
-| T-4 | Scope definition approach matches lifecycle | Predictive → WBS planned; Adaptive → backlog planned | Mismatch with no documented rationale |
-| T-5 | Validation authority named | A07 or A08 identifies acceptance authority | No named authority |
-| T-6 | Scope change routing references A12 | A12 named as the change decision vehicle | Parallel or undefined change process |
-| T-7 | Re-baseline trigger defined | Explicit trigger condition documented | Trigger absent or vague |
-| T-8 | A08 referenced in A14 subsidiary index | A14 Subsidiary Plan Index row for A08 present | A14 not updated |
+| T-1 | Scope statement process defined | Author, approver, and format documented | Any field blank |
+| T-2 | Requirements collection methods defined | At least two methods documented | Section blank |
+| T-3 | WBS rules defined | Decomposition approach and dictionary requirements documented | WBS rules absent |
+| T-4 | Scope validation process defined | Acceptance criteria and approver documented | Validation process absent |
+| T-5 | Scope change control defined | A12 process and approval authority referenced | Change control absent |
+| T-6 | Scope Management section in A06 | Section present and populated | Section missing from A06 |
+| T-7 | Sponsor/PMO sign-off | Sign-off recorded in A06 | Section unsigned |
 
 ---
 
-*Authority: PMBOK8 — Guide §2.2.2.1 Plan Scope Management · Figure 2-14*  
-*Source type: PMI-derived*  
-*Owner: Project manager*  
-*Approval authority: Project manager within thresholds*
+## Change Log
+
+| Version | Date | Change description |
+|---|---|---|
+| 1.0.0 | 2026-05-30 | Initial build |
+
+---
+
+*Authority: PMBOK8 Guide §2.2.6.1 Plan Scope Management*  
+*Source type: PMI-derived*

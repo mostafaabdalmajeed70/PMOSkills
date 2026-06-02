@@ -2,45 +2,44 @@
 skill_id: SKL-03-04
 skill_name: Define Scope
 pack: "03 — Planning"
-status: "Draft · Untested"
+version: "1.0.0"
+status: "Draft · Tests Defined"
 source_type: PMI-derived
-primary_artifact_output: "A08 — Scope and Requirements Decision Record (Project Scope Statement section)"
+primary_artifact_output: "A10 — Project Scope Statement"
 artifacts_updated:
-  - "A06 — Tailoring Decision Record (scope-driven tailoring updates)"
-pmbok8_process_anchor: "Guide §2.2.2.3 Define Scope · Figure 2-16"
+  - "A06 — Project Management Plan (Scope Baseline section)"
+pmbok8_process_anchor: "Guide §2.2.6.3 Define Scope · Guide §2.2 Scope Domain"
 performance_domains:
   - Scope
-  - Governance
 focus_area: Planning
 upstream_prerequisites:
-  - "SKL-03-03 — Requirements baseline in A08 must be approved"
+  - "SKL-03-03 — A08 Requirements Documentation must be baselined"
 downstream_skills:
   - "SKL-03-05 — Develop Scope Structure (WBS)"
 file_path: "skills/03-planning/SKL-03-04-define-scope.md"
-tests: 8
-version: "1.0.0"
+tests: 7
 ---
 
 # SKL-03-04 — Define Scope
 
 **Skill ID:** SKL-03-04  
 **Pack:** 03 — Planning  
-**Status:** Draft · Untested  
+**Status:** Draft · Tests Defined  
 **Source type:** PMI-derived  
-**PMBOK8 anchor:** Guide §2.2.2.3 Define Scope · Figure 2-16  
+**PMBOK8 anchor:** Guide §2.2.6.3 Define Scope · Guide §2.2 Scope Domain  
 **File path:** `skills/03-planning/SKL-03-04-define-scope.md`
 
 ---
 
 ## Purpose
 
-Produce a detailed project scope statement that describes in-scope deliverables, out-of-scope exclusions, assumptions, constraints, and acceptance criteria — serving as the authoritative scope boundary for all downstream planning and control.
+Create the detailed project scope statement (A10) that defines what the project will and will not produce. A10 is the authoritative scope boundary document for the project and the foundation for the WBS.
 
 ---
 
 ## Scope
 
-This skill covers scope statement definition only. Requirements elicitation was completed in SKL-03-03. WBS decomposition follows in SKL-03-05. Scope baseline (scope statement + WBS + WBS dictionary) is completed when SKL-03-05 is done.
+This skill produces A10 (Project Scope Statement) only. It does not create the WBS (SKL-03-05) but directly feeds it. It translates approved requirements from A08 into a structured scope statement with explicit inclusions and exclusions.
 
 ---
 
@@ -48,93 +47,64 @@ This skill covers scope statement definition only. Requirements elicitation was 
 
 | Input | Source | Mandatory? |
 |---|---|---|
-| Approved requirements baseline | A08 | Yes |
-| Project Charter | A04 | Yes |
-| Context Register | A05 | Yes |
-| Tailoring Decision Record | A06 | Yes |
-| Feasibility and Viable Options Record | A03 | If exists |
-
-**Gate check:** Requirements in A08 must be approved before scope is defined. Defining scope before requirements approval produces an ungrounded scope statement.
+| A04 — Project Charter | SKL-02-01 | Yes |
+| A08 — Requirements Documentation | SKL-03-03 | Yes |
+| A06 — Scope Management Plan section | SKL-03-02 | Yes |
 
 ---
 
 ## Instructions
 
-### Step 1 — Review approved requirements
-1. Read the approved requirements baseline in A08.
-2. Group requirements by deliverable or product component to identify logical scope boundaries.
-3. Identify any requirements flagged as deferred or out of scope in SKL-03-03 — these become candidates for the out-of-scope exclusions list.
+### Step 1 — Write the Project Description
+1. Describe the project in terms of what it will produce (product/service/result).
+2. Include key characteristics and attributes of the final deliverable.
+3. Record in A10.
 
-### Step 2 — Draft in-scope deliverables
-1. List each major deliverable or product component explicitly.
-2. For each deliverable, write a clear description sufficient for a stakeholder to confirm whether it is included.
-3. Reference the requirement ID(s) that each deliverable satisfies.
-4. For adaptive approaches, the in-scope section describes the product vision and high-level capability set; detailed features remain in the backlog.
+### Step 2 — Define Deliverables
+1. List all major deliverables the project must produce.
+2. For each deliverable, define:
+   - Name and description
+   - Acceptance criteria (specific, measurable)
+   - Source requirement reference (A08/A09 ID)
+3. Record in A10.
 
-### Step 3 — Define explicit exclusions
-1. List items that are explicitly out of scope — do not assume exclusions are implied.
-2. Include items that stakeholders may assume are in scope unless excluded (common scope creep sources).
-3. Reference any requirements that were deferred and the reason for deferral.
+### Step 3 — Define Acceptance Criteria
+1. Confirm acceptance criteria for each deliverable.
+2. Ensure criteria are objective and testable.
+3. Confirm who will perform acceptance (from A05 governance RACI).
+4. Record in A10.
 
-### Step 4 — Document assumptions and constraints
-1. List planning assumptions that the scope statement depends on (resource availability, technology readiness, regulatory timeline, etc.).
-2. List constraints that limit scope definition options (budget ceiling, regulatory mandates, technology standards, contractual obligations).
-3. Cross-reference A05 (Context Register) — do not duplicate entries; reference instead.
+### Step 4 — Define Explicit Exclusions
+1. List what the project will NOT produce (items that stakeholders might assume are in scope).
+2. Reference the source requirement if a request was formally deferred or rejected (A09 status: Deferred/Rejected).
+3. Record in A10.
 
-### Step 5 — Define acceptance criteria
-1. For each major deliverable, specify the minimum criteria that must be met for the deliverable to be formally accepted.
-2. Acceptance criteria must be measurable — avoid subjective language ("good quality", "user-friendly").
-3. Name the acceptance authority for each deliverable (consistent with A08 scope management plan).
+### Step 5 — Define Constraints and Assumptions
+1. List all project constraints (schedule, budget, resource, regulatory).
+2. List all planning assumptions not already in A05.
+3. Record in A10 and cross-reference to A05 Assumption Log.
 
-### Step 6 — Validate scope statement against requirements
-1. Verify every approved requirement is traceable to at least one in-scope deliverable.
-2. Verify no deliverable is included that has no requirement source — remove or raise as a change.
-3. Confirm exclusions do not contradict charter commitments (A04).
-
-### Step 7 — Obtain approval and update A06 if needed
-1. Present scope statement to sponsor or designated approval authority.
-2. If the scope statement reveals complexity or tailoring decisions not captured in A06, update A06 before approval.
-3. Record approval authority name and date in A08 Project Scope Statement section.
+### Step 6 — Baseline A10
+1. Obtain sponsor and business owner approval.
+2. Record version, date, and approver in A10.
+3. Update A06 Scope Baseline section to reference A10.
 
 ---
 
 ## Outputs
 
-| Output | Artifact | Section |
+| Output | Artifact | Notes |
 |---|---|---|
-| Project Scope Statement | A08 | Project Scope Statement section |
-| Tailoring updates (if triggered) | A06 | Tailoring Decision Record |
+| Project Scope Statement | A10 | Deliverables, exclusions, acceptance criteria, constraints |
+| Scope Baseline reference | A06 | Pointer to A10 in A06 Scope Baseline section |
 
 ---
 
 ## Constraints
 
-- Do not proceed to WBS development (SKL-03-05) without an approved scope statement.
-- Acceptance criteria must be measurable — reject vague criteria before approval.
-- Do not add deliverables with no requirement source without raising a change through A12.
-
----
-
-## Tailoring Guidance
-
-| Approach | Adjustment |
-|---|---|
-| Simple / internal | One-page scope statement with bullet list of deliverables and exclusions is sufficient |
-| Predictive / formal | Structured scope statement with full acceptance criteria and explicit assumption/constraint list |
-| Adaptive | Product goal + high-level capability set; individual acceptance criteria live at backlog item level |
-| Regulatory / contractual | Scope statement must reference specific contractual clauses; acceptance criteria must match contract terms |
-
----
-
-## Failure Cases
-
-| Failure | Symptom | Resolution |
-|---|---|---|
-| Requirements not approved | Scope written before requirements approval | Stop; complete SKL-03-03 approval step first |
-| Deliverable without requirement source | Extra deliverable added without a requirement | Remove or raise as change through A12 |
-| Requirement not traceable to deliverable | Approved requirement has no corresponding deliverable | Add deliverable or reclassify requirement as out of scope |
-| Vague acceptance criteria | "System shall perform well" | Replace with measurable criteria before approval |
-| Exclusions not explicit | Out-of-scope items assumed rather than stated | List all material exclusions explicitly |
+- Exclusions must be explicit — "not in scope" sections cannot be blank.
+- Every deliverable must have at least one acceptance criterion.
+- Post-baseline scope changes require A12 entry and re-approval.
 
 ---
 
@@ -142,18 +112,23 @@ This skill covers scope statement definition only. Requirements elicitation was 
 
 | Test ID | Test description | Pass condition | Fail condition |
 |---|---|---|---|
-| T-1 | Gate check — requirements approved | A08 requirements section status = Approved | Requirements in Draft |
-| T-2 | In-scope deliverables listed | At least one explicit deliverable per major requirement group | Scope statement contains only vague product description |
-| T-3 | Explicit exclusions documented | Out-of-scope list present with at least one entry | No exclusions section or "N/A" without rationale |
-| T-4 | Every deliverable traces to a requirement | Each deliverable has at least one A08 requirement ID reference | Deliverable with no requirement source |
-| T-5 | Every approved requirement traces to a deliverable | No orphan approved requirements | Requirement with no deliverable mapping |
-| T-6 | Acceptance criteria are measurable | All acceptance criteria use quantifiable or verifiable language | Any criterion uses subjective language |
-| T-7 | Assumptions and constraints documented | At least one assumption and one constraint listed, or explicit statement that none apply | Section blank |
-| T-8 | Approval documented | Approval authority name and date in A08 | Scope statement unapproved |
+| T-1 | Project description present | Clear description of final product/service/result in A10 | Description blank |
+| T-2 | All major deliverables listed | Every deliverable from A08 is listed in A10 | Any deliverable missing |
+| T-3 | Acceptance criteria defined | Every deliverable has at least one measurable acceptance criterion | Any deliverable without criteria |
+| T-4 | Exclusions documented | At least one explicit exclusion recorded | Exclusions section blank |
+| T-5 | Constraints and assumptions | All known constraints and assumptions recorded | Either section blank |
+| T-6 | A10 baselined | Version, date, approver recorded | A10 unsigned |
+| T-7 | A06 updated | A06 Scope Baseline section references A10 | A06 not updated |
 
 ---
 
-*Authority: PMBOK8 — Guide §2.2.2.3 Define Scope · Figure 2-16*  
-*Source type: PMI-derived*  
-*Owner: Project manager*  
-*Approval authority: Sponsor, product owner, or customer representative*
+## Change Log
+
+| Version | Date | Change description |
+|---|---|---|
+| 1.0.0 | 2026-05-30 | Initial build |
+
+---
+
+*Authority: PMBOK8 Guide §2.2.6.3 Define Scope*  
+*Source type: PMI-derived*

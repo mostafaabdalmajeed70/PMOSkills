@@ -1,143 +1,120 @@
 ---
 skill_id: SKL-03-01
-skill_name: Integrate and Align Project Plans
+skill_name: "Integrate and Align Project Plans"
 pack: "03 — Planning"
-status: "Draft · Untested"
+version: "1.0.0"
+status: "Draft · Tests Defined"
 source_type: PMI-derived
-primary_artifact_output: "A14 — Integrated Project Management Plan"
+primary_artifact_output: "A06 — Project Management Plan"
 artifacts_updated:
-  - "All subsidiary planning records (cross-referenced and confirmed)"
-pmbok8_process_anchor: "Guide §2.1.6.2 Integrate and Align Project Plans · Figure 2-4"
+  - "A06 — Project Management Plan"
+pmbok8_process_anchor: "Guide §2.3.6.1 Develop Project Management Plan · Guide §2.3 Schedule Domain · Standard §3.2 Focus on Value"
 performance_domains:
   - Governance
-  - All domains (integrative)
+  - Scope
+  - Schedule
+  - Finance
+  - Stakeholders
+  - Resources
+  - Risk
 focus_area: Planning
 upstream_prerequisites:
-  - "SKL-02-01 — A04 baselined"
-  - "SKL-02-02 — A07 identification complete"
-  - "SKL-03-02 through SKL-03-17 — All applicable subsidiary planning skills complete"
+  - "SKL-02-01 — A04 Project Charter must be baselined"
+  - "SKL-02-02 — A07 Stakeholder Register must be baselined"
 downstream_skills:
-  - "SKL-04-xx — Manage Project Execution (primary input)"
-  - "All Pack 05 monitoring skills"
+  - "SKL-03-02 through SKL-03-18 — All planning sub-skills feed into A06"
+  - "SKL-04-01 — Direct and Manage Project Work"
 file_path: "skills/03-planning/SKL-03-01-integrate-align-project-plans.md"
-tests: 10
-version: "1.0.0"
+tests: 8
 ---
 
 # SKL-03-01 — Integrate and Align Project Plans
 
 **Skill ID:** SKL-03-01  
 **Pack:** 03 — Planning  
-**Status:** Draft · Untested  
+**Status:** Draft · Tests Defined  
 **Source type:** PMI-derived  
-**PMBOK8 anchor:** Guide §2.1.6.2 Integrate and Align Project Plans · Figure 2-4  
+**PMBOK8 anchor:** Guide §2.3.6.1 Develop Project Management Plan · Guide §2.3 Schedule Domain  
 **File path:** `skills/03-planning/SKL-03-01-integrate-align-project-plans.md`
 
 ---
 
 ## Purpose
 
-Assemble all approved subsidiary planning records into a coherent, internally consistent Integrated Project Management Plan (A14) — verifying alignment across scope, schedule, finance, risk, resources, stakeholders, and communications before authorizing the transition to execution.
+Develop, integrate, and baseline the Project Management Plan (A06) by aligning all subsidiary plans into a single coherent governance document. A06 is the master plan that defines how the project will be executed, monitored, controlled, and closed. It is the authority document referenced by all execution and monitoring skills.
 
 ---
 
 ## Scope
 
-This is the final Pack 03 skill. It does not produce subsidiary plan content — all subsidiary records must be complete before this skill runs. Its sole output is a baselined A14 that references all applicable subsidiary records and confirms their alignment.
+This skill orchestrates the creation of A06. It does not directly produce the subsidiary plans — those are created by SKL-03-02 through SKL-03-18. This skill integrates them, checks for internal consistency, resolves conflicts, obtains sponsor approval, and baselines A06. It runs after all subsidiary plans are at least in advanced draft.
 
 ---
 
 ## Inputs Required
 
-| Input | Artifact | Status required |
+| Input | Artifact | Mandatory? |
 |---|---|---|
-| Project Charter | A04 | Approved |
-| Tailoring Decision Record | A06 | Approved |
-| Stakeholder Register and Engagement Strategy | A07 | Baselined |
-| Scope and Requirements Decision Record | A08 | Baselined (scope baseline complete) |
-| Delivery Approach and Team Operating Agreement | A09 | Approved |
-| Development Approach and Lifecycle Decision Record | A13 | Approved |
-| Schedule Model and Baseline Record | A15 | Baselined |
-| Financial Management and Cost Baseline Record | A16 | Baselined (BAC approved) |
-| Risk Management Record | A19 | Active (responses planned) |
-| Resource Capacity and Acquisition Record | A26 | Approved |
-| Team Operating and Responsibility Record | A25 | Approved |
-| Communications and Reporting Record | A28 | Approved |
-
-**Gate check:** Every applicable subsidiary record in the table above must be in the required status before A14 can be baselined. Any record in Draft status must be resolved before this skill proceeds.
+| Project Charter | A04 (baselined) | Yes |
+| Stakeholder Register | A07 (baselined) | Yes |
+| All subsidiary plan drafts | A06 sections from SKL-03-02 to SKL-03-18 | Yes |
+| Governance framework | A05 (Governance section) | Yes |
+| OPA and EEF | A05 | If available |
 
 ---
 
 ## Instructions
 
-### Step 1 — Confirm all subsidiary records are in required status
-1. Review every subsidiary record in the input table above.
-2. For any record not in required status, stop and resolve before proceeding.
-3. Document which subsidiary plans are applicable for this project (some may be waived per A06 tailoring).
+### Step 1 — Collect All Subsidiary Plan Drafts
+1. Confirm that all subsidiary plans (scope, schedule, cost, resource, risk, stakeholder, communications) are in advanced draft.
+2. Collect all drafts into A06 working document.
+3. Identify any missing sections.
 
-### Step 2 — Populate the A14 Subsidiary Plan Index
-1. Add or confirm every applicable subsidiary record in A14 Section 3 (Subsidiary Plan Index).
-2. Record artifact ID, file location, version, status, and owner for each entry.
-3. For any subsidiary plan waived by A06 tailoring, record the waiver rationale in the Notes column.
+### Step 2 — Check Internal Consistency
+1. Verify that the schedule baseline is consistent with the resource plan (resources available when needed).
+2. Verify that the cost baseline matches the resource plan costs.
+3. Verify that the risk reserve is reflected in the cost baseline.
+4. Verify that the stakeholder engagement plan aligns with the communications plan.
+5. Verify that quality requirements are embedded in the scope baseline and schedule.
+6. Document all consistency issues found.
 
-### Step 3 — Validate internal consistency across plans
-Check alignment across the following pairs:
+### Step 3 — Resolve Conflicts
+1. For each consistency issue, determine the resolution:
+   - Adjust the subsidiary plan to align with the constraint (most common)
+   - Escalate to sponsor if resolution requires a change to charter constraints
+2. Update affected subsidiary plans.
+3. Re-check consistency after updates.
 
-| Check | Plan A | Plan B | Alignment test |
-|---|---|---|---|
-| Scope ↔ Schedule | A08 WBS work packages | A15 activity list | Every WBS work package has activities in A15 |
-| Schedule ↔ Finance | A15 time-phased schedule | A16 time-phased budget | Cost allocation periods match schedule periods |
-| Finance ↔ Risk | A16 contingency reserve | A19 risk analysis | Reserve is consistent with A19/A20 risk justification |
-| Risk ↔ Schedule | A19 risk responses | A15 schedule buffers | Schedule buffers reference A19 risk IDs |
-| Resources ↔ Schedule | A26 resource availability | A15 resource assignments | Resource assignments do not exceed A26 availability |
-| Stakeholders ↔ Communications | A07 engagement strategies | A28 communication entries | Every A07 stakeholder has at least one A28 entry |
-| Governance ↔ Tailoring | A14 control thresholds | A06 governance thresholds | A14 thresholds match A06 — no independent limits |
+### Step 4 — Define Change Control Rules for A06
+1. Confirm that any change to A06 baselines requires an A12 Change and Exception Decision Log entry.
+2. Confirm the change control authority per A05 governance.
+3. Record change control rules in A06 Introduction section.
 
-For each check, document: Aligned / Gap found / Gap resolved.
+### Step 5 — Review and Obtain Sponsor Approval
+1. Circulate A06 to: Sponsor, PMO, key team leads.
+2. Incorporate feedback.
+3. Obtain sponsor sign-off.
 
-### Step 4 — Populate A14 Baseline Summary
-1. Record scope baseline reference (A08 version and date).
-2. Record schedule baseline reference (A15 BAC-equivalent: planned dates and milestones).
-3. Record cost baseline reference (A16 BAC amount and date).
-4. Record benefits baseline reference (A02 if applicable).
-
-### Step 5 — Populate A14 Control Thresholds
-1. Transfer approved variance thresholds from A06 into A14 Section 6.
-2. Confirm every domain (scope, schedule, finance, risk, resources) has a threshold entry.
-3. No threshold in A14 may differ from A06 without a documented rationale.
-
-### Step 6 — Populate A14 Governance Calendar
-1. Define the governance and review event schedule for the project lifecycle.
-2. Confirm that reporting cadence in A14 Section 7 matches A28 communication plan entries.
-
-### Step 7 — Obtain A14 approval
-1. Present A14 to the sponsor or designated approval authority for formal approval.
-2. Record approval authority, date, and any conditions in A14.
-3. Mark A14 status as Approved / Baselined.
-
-### Step 8 — Declare Pack 03 complete
-1. Update SKILL-REGISTRY.md — mark SKL-03-01 as Draft · Untested.
-2. Confirm Pack 03 completion criteria are met: A14 baselined with all applicable subsidiary references.
-3. Pack 04 (Executing) skills may now begin.
+### Step 6 — Baseline A06
+1. Record version (1.0.0), baseline date, and approver in A06 YAML and Change Log.
+2. Distribute to all project team leads.
+3. Update SKILL-REGISTRY.md — mark SKL-03-01 as Draft · Untested.
 
 ---
 
 ## Outputs
 
-| Output | Artifact | Section |
+| Output | Artifact | Notes |
 |---|---|---|
-| Integrated Project Management Plan (baselined) | A14 | All sections |
-| Pack 03 completion declaration | SKILL-REGISTRY.md | Pack 03 status |
+| Project Management Plan | A06 | Integrated, consistent, baselined |
 
 ---
 
 ## Constraints
 
-- This skill cannot run until all applicable subsidiary planning skills are complete — it assembles, it does not create.
-- A14 must not re-state content from subsidiary records — it indexes and references only.
-- Every gap found in Step 3 must be resolved before A14 is approved — do not baseline with open alignment gaps.
-- Thresholds in A14 must match A06 exactly — no independent limits.
-- Pack 04 may not begin until A14 is approved.
+- A06 cannot be baselined until all subsidiary plans are at least approved drafts.
+- Any post-baseline change to A06 requires A12 entry and re-approval.
+- A06 is the authority for all execution and monitoring decisions.
 
 ---
 
@@ -145,10 +122,9 @@ For each check, document: Aligned / Gap found / Gap resolved.
 
 | Approach | Adjustment |
 |---|---|
-| Simple / small | A14 may be a one-page plan index with key decisions summarized — subsidiary records remain the source of truth |
-| Complex / large | Full A14 with all sections populated; formal sponsor sign-off; gate review required |
-| Adaptive | A14 references the product backlog, release roadmap, and team operating agreement as primary planning artifacts |
-| Regulatory | A14 may require external approval or audit review before execution authorization |
+| Simple project | Single-page plan; combine scope, schedule, cost in one table |
+| Complex project | Full subsidiary plan set; formal CCB for changes |
+| Agile | A06 covers governance and lifecycle approach; detailed plans are per sprint |
 
 ---
 
@@ -156,11 +132,9 @@ For each check, document: Aligned / Gap found / Gap resolved.
 
 | Failure | Symptom | Resolution |
 |---|---|---|
-| Subsidiary records in Draft status | Cannot baseline A14 | Resolve all draft subsidiary records first |
-| Alignment gaps not resolved | Conflicting data across plans | Resolve each gap; document resolution |
-| A14 re-states subsidiary content | A14 becomes a duplicate planning document | Remove duplicated content; reference instead |
-| Control thresholds differ from A06 | A14 has independent limits | Align with A06 — update A14 |
-| Pack 04 started before A14 approved | Execution without an integrated plan | Stop execution activities; complete A14 approval |
+| Subsidiary plans not ready | A06 has gaps | Complete outstanding subsidiary plans before integrating |
+| Consistency conflicts not resolved | Execution errors during Pack 04 | Re-run Step 3; re-baseline affected plans |
+| No sponsor sign-off | A06 not authoritative | Do not begin execution; obtain sign-off first |
 
 ---
 
@@ -168,20 +142,26 @@ For each check, document: Aligned / Gap found / Gap resolved.
 
 | Test ID | Test description | Pass condition | Fail condition |
 |---|---|---|---|
-| T-1 | Gate check — all applicable subsidiary records in required status | All records in Approved or Baselined status | Any record in Draft |
-| T-2 | Subsidiary Plan Index complete | All applicable records listed in A14 Section 3 with file, version, status, owner | Any applicable record missing |
-| T-3 | Scope ↔ Schedule alignment confirmed | Every WBS work package has A15 activities | Orphan WBS elements with no activities |
-| T-4 | Schedule ↔ Finance alignment confirmed | Cost allocation periods consistent with A15 schedule periods | Misaligned time-phasing |
-| T-5 | Finance ↔ Risk alignment confirmed | A16 contingency reserve consistent with A19/A20 justification | Reserve with no risk basis |
-| T-6 | Resources ↔ Schedule alignment confirmed | A26 availability consistent with A15 resource assignments | Over-allocation not flagged |
-| T-7 | Stakeholders ↔ Communications alignment confirmed | Every A07 stakeholder has at least one A28 entry | Orphan stakeholders |
-| T-8 | A14 thresholds match A06 | Every A14 threshold matches its A06 equivalent | Any discrepancy without documented rationale |
-| T-9 | A14 approved by correct authority | Approval authority, name, and date recorded | A14 unapproved or self-approved by PM |
-| T-10 | A14 does not re-state subsidiary content | A14 references records; no duplicated fields | A14 contains plan content that belongs in subsidiary records |
+| T-1 | All subsidiary plans present | All required A06 sections populated | Any section missing |
+| T-2 | Schedule-resource consistency | Schedule dates align with resource availability | Any resource gap on critical path |
+| T-3 | Cost-resource consistency | Cost baseline matches resource plan costs | Cost baseline and resource costs diverge |
+| T-4 | Risk reserve in cost baseline | Contingency reserve line item present in cost baseline | Reserve not visible |
+| T-5 | Stakeholder-comms alignment | Engagement frequency in A06 matches comms plan | Frequency mismatch |
+| T-6 | Change control rules defined | A06 Introduction defines change control authority and A12 requirement | Change control rules absent |
+| T-7 | Sponsor sign-off obtained | Sign-off recorded with date and name | A06 unsigned |
+| T-8 | A06 distributed | Distribution list confirmed | A06 baselined but not distributed |
 
 ---
 
-*Authority: PMBOK8 — Guide §2.1.6.2 Integrate and Align Project Plans · Figure 2-4*  
+## Change Log
+
+| Version | Date | Change description |
+|---|---|---|
+| 1.0.0 | 2026-05-30 | Initial build |
+
+---
+
+*Authority: PMBOK8 Guide §2.3.6.1 Develop Project Management Plan*  
 *Source type: PMI-derived*  
-*Owner: Project manager*  
-*Approval authority: Sponsor or designated project governing body*
+*Owner: Project Manager*  
+*Approval authority: Project Sponsor*

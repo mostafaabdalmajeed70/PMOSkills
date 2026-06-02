@@ -1,50 +1,48 @@
 ---
 skill_id: SKL-03-05
-skill_name: Develop Scope Structure
+skill_name: Develop Scope Structure (WBS)
 pack: "03 — Planning"
-status: "Draft · Untested"
+version: "1.0.0"
+status: "Draft · Tests Defined"
 source_type: PMI-derived
-primary_artifact_output: "A08 — Scope and Requirements Decision Record (WBS / Scope Structure section)"
+primary_artifact_output: "A11 — Work Breakdown Structure"
 artifacts_updated:
-  - "A15 — Schedule Model (work packages feed activity decomposition)"
-  - "A16 — Financial Management and Cost Baseline Record (work packages feed cost estimates)"
-pmbok8_process_anchor: "Guide §2.2.2.4 Develop Scope Structure · Figure 2-17"
+  - "A06 — Project Management Plan (Scope Baseline section)"
+  - "A09 — Requirements Traceability Matrix (WBS linkage)"
+pmbok8_process_anchor: "Guide §2.2.6.4 Create WBS · Guide §2.2 Scope Domain"
 performance_domains:
   - Scope
-  - Schedule
-  - Finance
 focus_area: Planning
 upstream_prerequisites:
-  - "SKL-03-04 — Project Scope Statement in A08 must be approved"
+  - "SKL-03-04 — A10 Scope Statement must be baselined"
 downstream_skills:
   - "SKL-03-06 — Plan Schedule Management"
-  - "SKL-03-13 — Plan Financial Management"
-  - "SKL-03-16 — Plan Resource Management"
+  - "SKL-03-14 — Estimate Costs"
+  - "SKL-03-17 — Estimate Resources"
 file_path: "skills/03-planning/SKL-03-05-develop-scope-structure.md"
-tests: 8
-version: "1.0.0"
+tests: 7
 ---
 
-# SKL-03-05 — Develop Scope Structure
+# SKL-03-05 — Develop Scope Structure (WBS)
 
 **Skill ID:** SKL-03-05  
 **Pack:** 03 — Planning  
-**Status:** Draft · Untested  
+**Status:** Draft · Tests Defined  
 **Source type:** PMI-derived  
-**PMBOK8 anchor:** Guide §2.2.2.4 Develop Scope Structure · Figure 2-17  
+**PMBOK8 anchor:** Guide §2.2.6.4 Create WBS · Guide §2.2 Scope Domain  
 **File path:** `skills/03-planning/SKL-03-05-develop-scope-structure.md`
 
 ---
 
 ## Purpose
 
-Decompose the approved project scope statement into a hierarchical scope structure (WBS) with work packages that serve as the basis for schedule, cost, and resource planning. Complete the scope baseline by combining the approved scope statement, WBS, and WBS dictionary.
+Decompose the project scope into a hierarchical Work Breakdown Structure (A11 — WBS) with a WBS Dictionary that defines each work package in sufficient detail for scheduling, costing, and resource assignment. A11 is the scope decomposition baseline that all downstream planning tools depend on.
 
 ---
 
 ## Scope
 
-This skill covers WBS decomposition and scope baseline completion. Scope statement was approved in SKL-03-04. Schedule planning (SKL-03-06), cost estimation (SKL-03-13), and resource estimation (SKL-03-16) all depend on this skill's output.
+This skill produces A11 (WBS + WBS Dictionary) only. It feeds SKL-03-06 (schedule), SKL-03-14 (cost estimates), and SKL-03-17 (resource estimates). It does not create those downstream plans.
 
 ---
 
@@ -52,103 +50,67 @@ This skill covers WBS decomposition and scope baseline completion. Scope stateme
 
 | Input | Source | Mandatory? |
 |---|---|---|
-| Approved Project Scope Statement | A08 | Yes |
-| Approved Requirements baseline | A08 | Yes |
-| Project Charter | A04 | Yes |
-| Tailoring Decision Record | A06 | Yes |
-| Organizational WBS templates / OPA | A05 | If available |
-
-**Gate check:** Project Scope Statement in A08 must be approved before WBS decomposition begins.
+| A10 — Project Scope Statement | SKL-03-04 | Yes |
+| A08 — Requirements Documentation | SKL-03-03 | Yes |
+| A09 — Requirements Traceability Matrix | SKL-03-03 | Yes |
+| A06 — Scope Management section | SKL-03-02 | Yes |
 
 ---
 
 ## Instructions
 
-### Step 1 — Select decomposition approach
-1. Review A06 and A09/A13 to confirm whether a predictive WBS, an adaptive release/feature structure, or a hybrid structure applies.
-2. For predictive: decompose to work package level (lowest level planned and estimated).
-3. For adaptive: develop a feature/capability hierarchy or product backlog structure organized by theme and epic; do not force a traditional WBS.
-4. For hybrid: apply WBS to fixed-scope components; apply backlog structure to adaptive components.
+### Step 1 — Choose Decomposition Approach
+1. Confirm decomposition approach per A06 Scope Management Plan (deliverable-based or phase-based).
+2. For most projects: use deliverable-based decomposition.
+3. For lifecycle-phased projects: use phase as the top level, then deliverables within each phase.
 
-### Step 2 — Build the hierarchical structure
-1. Start with the project (Level 1).
-2. Decompose into major deliverables or phases (Level 2).
-3. Decompose each Level 2 element into sub-deliverables or work packages (Level 3+) until each work package is:
-   - Assignable to one responsible party
-   - Estimable for cost and duration
-   - Completable within a single reporting period (or manageable sub-period)
-4. Assign a unique WBS code to every element (e.g., 1.0, 1.1, 1.1.1).
+### Step 2 — Build the WBS Hierarchy
+1. Level 1: Project name (single node).
+2. Level 2: Major deliverables or project phases (from A10).
+3. Level 3 and below: Sub-deliverables and work packages.
+4. Rule: Decompose until each work package meets the 8/80 rule (no less than 8 hours, no more than 80 hours of effort).
+5. Assign a unique WBS code to every node (e.g., 1.0, 1.1, 1.1.1).
 
-### Step 3 — Create the WBS dictionary
-For each work package, document:
-- WBS code
-- Description of work
-- Acceptance criteria (reference A08 scope statement)
-- Responsible party (to be confirmed in A25/A26)
-- Estimated duration range (input to A15)
-- Estimated cost range (input to A16)
-- Dependencies (input to A15)
-- Assumptions and constraints specific to this work package
+### Step 3 — Create the WBS Dictionary
+1. For each work package (lowest-level WBS node), create a dictionary entry with:
+   - WBS ID and name
+   - Description of work
+   - Acceptance criteria (from A10)
+   - Responsible party (role)
+   - Estimated effort (hours) — preliminary; refined in SKL-03-14 and SKL-03-17
+   - Dependencies (predecessor and successor WBS elements)
+   - Required resources (type and quantity)
+   - Quality requirements
+2. Record all dictionary entries in A11.
 
-### Step 4 — Validate completeness (100% rule)
-1. Every deliverable in the approved scope statement must appear as a WBS element.
-2. No work package should appear in the WBS without a traceable scope statement deliverable.
-3. The sum of all work packages must equal 100% of the project scope — no more, no less.
-4. Verify that out-of-scope items from A08 are not present anywhere in the WBS.
+### Step 4 — Link Requirements to WBS (Update A09)
+1. For every work package in A11, identify the source requirement(s) from A08/A09.
+2. Update A09 with the WBS element reference for each requirement.
+3. Confirm 100% requirements coverage — every approved requirement must link to at least one WBS element.
 
-### Step 5 — Complete the scope baseline
-The scope baseline = Approved Scope Statement + WBS + WBS Dictionary.
-1. Mark the WBS section of A08 as baselined.
-2. Record baseline date and approval authority.
-3. Note: any future change to any element of the scope baseline requires A12 (change control).
-
-### Step 6 — Feed downstream artifacts
-1. Export work packages and dependency information to A15 (Schedule Model) as activity inputs.
-2. Export work packages and cost range estimates to A16 (Financial Management Record) as estimation inputs.
-3. Export work package responsibility assignments as inputs to A26 (Resource Capacity and Acquisition).
+### Step 5 — Baseline A11
+1. Review with PM, scope lead, and sponsor.
+2. Record version, date, and approver.
+3. Update A06 Scope Baseline section to reference A11.
+4. Update A09 with WBS linkages.
 
 ---
 
 ## Outputs
 
-| Output | Artifact | Section |
+| Output | Artifact | Notes |
 |---|---|---|
-| WBS and WBS Dictionary | A08 | WBS / Scope Structure section |
-| Scope baseline (complete) | A08 | Scope Statement + WBS + WBS Dictionary |
-| Work package inputs | A15 | Activity list inputs |
-| Cost range inputs | A16 | Cost estimate inputs |
+| Work Breakdown Structure + Dictionary | A11 | Full hierarchical decomposition with dictionary entries |
+| Scope Baseline update | A06 | A06 Scope Baseline references A10 + A11 |
+| RTM update | A09 | WBS element column populated |
 
 ---
 
 ## Constraints
 
-- The 100% rule is mandatory — the WBS must contain all scope, no more and no less.
-- Work packages must be estimable and assignable — do not create work packages too large to plan.
-- Scope baseline changes after this step require A12 entries.
-- Do not decompose to activity level here — activities are decomposed in A15 (SKL-03-06 onward).
-
----
-
-## Tailoring Guidance
-
-| Approach | Adjustment |
-|---|---|
-| Simple / internal | Two-level WBS (deliverable → work package) is sufficient |
-| Complex / large | Three or four levels with full WBS dictionary |
-| Adaptive | Feature hierarchy / backlog structure replaces WBS; acceptance criteria at backlog item level |
-| Regulatory | WBS must align with contract deliverable structure and reporting requirements |
-
----
-
-## Failure Cases
-
-| Failure | Symptom | Resolution |
-|---|---|---|
-| Scope statement not approved | WBS built on draft scope | Stop; complete SKL-03-04 approval step |
-| 100% rule violated | WBS missing a scope statement deliverable | Add missing element; re-validate |
-| Work packages too large | Elements span multiple reporting periods without decomposition | Decompose further |
-| Out-of-scope items in WBS | Item appears in WBS but not in scope statement | Remove or raise as change through A12 |
-| WBS dictionary incomplete | Work packages lack descriptions or acceptance criteria | Complete dictionary before baselining |
+- 100% rule: the WBS must include ALL project work — nothing done on the project should be outside the WBS.
+- Work packages must not overlap.
+- Every work package must have an owner (responsible party).
 
 ---
 
@@ -156,18 +118,23 @@ The scope baseline = Approved Scope Statement + WBS + WBS Dictionary.
 
 | Test ID | Test description | Pass condition | Fail condition |
 |---|---|---|---|
-| T-1 | Gate check — scope statement approved | A08 Project Scope Statement status = Approved | Status = Draft |
-| T-2 | 100% rule — all scope statement deliverables present in WBS | Every deliverable has a WBS element | Missing deliverable |
-| T-3 | 100% rule — no WBS element without scope statement source | Every WBS element traces to an approved deliverable | Orphan WBS element |
-| T-4 | WBS codes assigned | Every element has a unique hierarchical code | Any element missing a code |
-| T-5 | WBS dictionary complete | Every work package has: description, acceptance criteria reference, responsible party placeholder, estimate range | Any work package missing required fields |
-| T-6 | Out-of-scope items absent | No WBS element matches an excluded item in A08 | Excluded item found in WBS |
-| T-7 | Scope baseline dated and approved | A08 WBS section has baseline date and authority | Baseline date missing |
-| T-8 | Work packages exported to A15 and A16 | A15 activity list and A16 cost inputs reference WBS work packages | Downstream artifacts not updated |
+| T-1 | All A10 deliverables in WBS | Every deliverable from A10 has a WBS branch | Any A10 deliverable missing from WBS |
+| T-2 | 8/80 rule applied | All work packages are 8–80 hours | Any work package outside range without justification |
+| T-3 | WBS codes assigned | Every node has a unique WBS code | Any node without a code |
+| T-4 | WBS Dictionary complete | Every work package has a dictionary entry with all required fields | Any work package with incomplete dictionary entry |
+| T-5 | 100% requirements coverage | Every approved A09 requirement links to at least one WBS element | Any requirement without WBS linkage |
+| T-6 | A11 baselined | Version, date, approver recorded | A11 unsigned |
+| T-7 | A06 and A09 updated | A06 Scope Baseline references A11; A09 WBS column populated | Either artifact not updated |
 
 ---
 
-*Authority: PMBOK8 — Guide §2.2.2.4 Develop Scope Structure · Figure 2-17*  
-*Source type: PMI-derived*  
-*Owner: Project manager*  
-*Approval authority: Sponsor or designated scope authority*
+## Change Log
+
+| Version | Date | Change description |
+|---|---|---|
+| 1.0.0 | 2026-05-30 | Initial build |
+
+---
+
+*Authority: PMBOK8 Guide §2.2.6.4 Create WBS*  
+*Source type: PMI-derived*
