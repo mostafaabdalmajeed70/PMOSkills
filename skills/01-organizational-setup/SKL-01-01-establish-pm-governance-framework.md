@@ -3,19 +3,16 @@ skill_id: SKL-01-01
 skill_name: Establish PM Governance Framework
 pack: "01 — Organizational Setup"
 version: "1.0.0"
-status: "Draft · Untested"
+status: "Draft · Tests Defined"
 source_type: PMI-derived
 primary_artifact_output: "A05 — Context Register (Governance section)"
 artifacts_updated:
   - "A06 — Project Management Plan (governance reference)"
-  - "A04 — Project Charter (authority thresholds reference)"
-pmbok8_process_anchor: "PMBOK8 Standard §3 Principles · Guide §2.1 Project Integration Management · AUTHORITY-ROUTING.md"
+pmbok8_process_anchor: "PMBOK8 Standard §3.6 Be an Accountable Leader · Guide §2.1 Governance Domain · Guide §4.5.2 Governance structures"
 performance_domains:
   - Governance
-  - Stakeholders
 focus_area: Organizational Setup
-upstream_prerequisites:
-  - "A01 — Business Case or equivalent authorization trigger must exist"
+upstream_prerequisites: []
 downstream_skills:
   - "SKL-01-02 — Define Artifact and Document Control Standards"
   - "SKL-01-03 — Configure Project Repository and Tool Environment"
@@ -28,22 +25,22 @@ tests: 9
 
 **Skill ID:** SKL-01-01  
 **Pack:** 01 — Organizational Setup  
-**Status:** Draft · Untested  
+**Status:** Draft · Tests Defined  
 **Source type:** PMI-derived  
-**PMBOK8 anchor:** PMBOK8 Standard §3 Principles · Guide §2.1 · AUTHORITY-ROUTING.md  
+**PMBOK8 anchor:** Standard §3.6 Be an Accountable Leader · Guide §2.1 Governance Domain · Guide §4.5.2  
 **File path:** `skills/01-organizational-setup/SKL-01-01-establish-pm-governance-framework.md`
 
 ---
 
 ## Purpose
 
-Establish the governance framework that will govern all project activity in this repository — defining authority levels, decision rights, escalation thresholds, role accountability, and the operating rules that all downstream skills and artifacts must respect. The output is the Governance section of A05 (Context Register), which becomes the single authority reference for all project governance decisions.
+Establish, document, and baseline the governance framework that will govern all project decisions, authority, escalation paths, and accountability structures for this project. The output is the Governance section of A05 (Context Register / OPA), which becomes the authority record for who decides what, at what threshold, and through which process.
 
 ---
 
 ## Scope
 
-This skill covers organizational-level governance setup only. It does not initiate a specific project (SKL-02-01), define scope (SKL-03-02 through SKL-03-05), or configure tooling (SKL-01-03). It runs once per organizational setup or when a significant governance restructuring occurs. It may be re-run at program level or for projects with unique governance requirements.
+This skill covers the initial establishment of the project governance framework only. It does not create the full project management plan (SKL-03-01), manage stakeholder engagement (SKL-04-06), or configure the repository (SKL-01-03). It must run first — before any other skill — because all downstream skills depend on governance authority to baseline outputs.
 
 ---
 
@@ -51,81 +48,72 @@ This skill covers organizational-level governance setup only. It does not initia
 
 | Input | Source | Mandatory? |
 |---|---|---|
-| Business case or authorization trigger | A01 | Yes |
-| Organizational structure information | EEF (Enterprise Environmental Factors) | Yes |
-| PMI PMBOK8 Standard — Governance Principles | PMBOK8 Standard §3.8 | Yes |
-| Authority Routing reference | AUTHORITY-ROUTING.md | Yes |
-| Existing OPA (policies, templates, standards) | A05 prior version or organizational source | If available |
+| Project mandate or sponsorship confirmation | Sponsor / Business case | Yes |
+| Organizational governance standards | EEF / OPA | If available |
+| Stakeholder authority map (preliminary) | Sponsor / PMO | Yes |
+| Regulatory or compliance requirements | EEF (legal/regulatory) | If applicable |
+| Repository operating rules | repo/ folder | Yes |
 
-**Gate check:** A01 (Business Case) or equivalent authorization trigger must exist before this skill runs. If no authorization exists, stop and obtain organizational or sponsor authorization.
+**Gate check:** No other skill may run until this skill outputs a baselined A05 Governance section.
 
 ---
 
 ## Instructions
 
-### Step 1 — Identify Governance Stakeholders
-1. Identify the sponsor, governing body, PMO (if applicable), and key decision-making authorities.
-2. Confirm who holds ultimate project authorization authority (charter sign-off).
-3. Confirm who holds authority to approve scope changes, budget changes, schedule changes, and exceptions.
-4. Confirm who holds authority to close the project or phase.
-5. Document all identified authorities in A05 Governance section.
+### Step 1 — Identify the Governance Context
+1. Confirm the project sponsor and their authority level (what decisions can the sponsor make unilaterally?).
+2. Identify the governance body (PMO, Steering Committee, Board, or equivalent) that oversees this project.
+3. Confirm whether this project is part of a program or portfolio — if so, document the parent governance structure and any authority it reserves.
+4. Identify applicable organizational policies, regulatory requirements, or contractual governance obligations.
+5. Record all context findings in A05 Governance section (initial draft).
 
-### Step 2 — Define Authority Thresholds
-1. Open AUTHORITY-ROUTING.md and extract the authority threshold matrix.
-2. For each decision type (scope change, cost change, schedule change, risk acceptance, contract award, exception), assign:
-   - **PM authority level** — decisions the PM can make independently
-   - **Sponsor authority level** — decisions requiring sponsor approval
-   - **Governing body / steering committee level** — decisions requiring escalation beyond sponsor
-3. Express thresholds in measurable terms where possible (e.g., cost variance >10% BAC requires sponsor approval).
-4. Record all thresholds in A05 Governance section.
+### Step 2 — Define Decision Authority Levels
+1. Define at least three authority tiers for project decisions:
+   - **Tier 1 (PM authority):** Decisions the PM can make autonomously within approved baselines (e.g., minor schedule adjustments within float, resource reassignment within approved team, risk response activation within approved reserves).
+   - **Tier 2 (Sponsor authority):** Decisions requiring sponsor approval (e.g., scope additions above a defined threshold, budget increases within a defined band, milestone date changes).
+   - **Tier 3 (Governance body authority):** Decisions requiring steering committee or board approval (e.g., major scope changes, budget increases above sponsor threshold, project termination, contract awards above defined value).
+2. Define the specific thresholds for each tier (cost, schedule, scope, risk, procurement).
+3. Record the authority tiers and thresholds in A05.
 
-### Step 3 — Define Decision Rights and RACI for Governance
-1. For each governance decision type, define who is:
-   - **Responsible** — prepares the decision package
-   - **Accountable** — makes the final call
-   - **Consulted** — must be consulted before decision
-   - **Informed** — notified after decision
-2. Align RACI assignments with authority thresholds from Step 2.
-3. Record governance RACI in A05 Governance section.
+### Step 3 — Define the RACI for Key Governance Roles
+1. For each major governance activity (scope approval, budget approval, risk escalation, change control, quality review, stakeholder escalation, contract award, project closure), define:
+   - **R (Responsible):** Who does the work
+   - **A (Accountable):** Who signs off — must be one person
+   - **C (Consulted):** Who must be consulted before decision
+   - **I (Informed):** Who must be notified after decision
+2. Resolve any RACI conflicts (two people accountable for the same decision) before baselining.
+3. Record the RACI in A05.
 
-### Step 4 — Define Escalation Path
-1. Map the escalation path for each decision type:
-   - Level 1: PM resolves independently
-   - Level 2: PM escalates to sponsor
-   - Level 3: Sponsor escalates to steering committee or governing body
-   - Level 4: Program-level or organizational executive escalation
-2. Define escalation triggers — what conditions require moving from Level N to Level N+1.
-3. Define escalation timeframe — maximum hours/days before escalation is mandatory.
-4. Document the escalation path in A05 Governance section.
+### Step 4 — Define Escalation Paths
+1. Define the escalation path for each issue type:
+   - **Schedule variance:** PM → Sponsor → Steering Committee
+   - **Budget variance:** PM → Sponsor → Steering Committee → Board (if applicable)
+   - **Scope change:** PM → Sponsor (or CCB) → Steering Committee
+   - **Risk escalation:** PM → Sponsor → Steering Committee
+   - **Stakeholder conflict:** PM → Sponsor → Steering Committee
+   - **Legal/regulatory issue:** PM → Sponsor → Legal/Compliance → Board
+2. Define escalation response time expectations at each level.
+3. Record escalation paths in A05.
 
-### Step 5 — Define Governance Meeting Cadence
-1. Identify governance review touchpoints:
-   - Project status reviews (frequency, attendees, format)
-   - Phase gate reviews (entry/exit criteria, decision authority)
-   - Exception reviews (trigger, timing, participants)
-   - Steering committee or board reviews (if applicable)
-2. Document cadence, participants, and decision scope for each meeting type in A05.
+### Step 5 — Define Governance Cadence
+1. Define the recurring governance touchpoints:
+   - **Steering Committee review frequency** (monthly, quarterly, milestone-based)
+   - **Sponsor review frequency** (weekly, bi-weekly, or on-demand)
+   - **PMO reporting cadence** (weekly status, monthly performance review)
+   - **Change Control Board (CCB) meeting frequency** (weekly, bi-weekly, or triggered)
+2. Define the reporting artefacts for each governance touchpoint (status report, dashboard, performance report).
+3. Record governance cadence in A05.
 
-### Step 6 — Define Compliance and Audit Requirements
-1. Identify any regulatory, legal, contractual, or organizational compliance obligations that apply to project governance.
-2. Define audit or review obligations (internal audit, PMO review, external compliance check).
-3. Record compliance requirements and their governance implications in A05.
+### Step 6 — Define Project Closure Authority
+1. Confirm who has authority to formally close the project (approve the Final Project Report and sign off on closure).
+2. Confirm what conditions must be met before closure is authorized (acceptance of deliverables, benefit realization confirmation, lessons learned archived).
+3. Record closure authority in A05.
 
-### Step 7 — Align with PMBOK8 Governance Principles
-1. Confirm that the established governance framework is consistent with PMBOK8 Standard §3 Principles, specifically:
-   - Principle 3: Effectively engage with stakeholders
-   - Principle 4: Focus on value
-   - Principle 8: Navigate complexity
-   - Principle 9: Optimize risk responses
-   - Principle 11: Embrace adaptability and resiliency
-   - Principle 12: Enable change to achieve the envisioned future state
-2. Note any deliberate deviations with rationale in A05.
-
-### Step 8 — Finalize and Baseline A05 Governance Section
-1. Review the complete Governance section of A05 with the sponsor and key governance stakeholders.
-2. Obtain formal sign-off or acknowledgment.
-3. Record the baseline date and version in A05.
-4. Distribute to all project managers and team leads who will operate under this framework.
+### Step 7 — Baseline A05 Governance Section
+1. Review the completed Governance section with the project sponsor.
+2. Obtain formal sign-off from the sponsor or designated authority.
+3. Record the version, baseline date, and approver in A05.
+4. Distribute to all project team leads and governance participants.
 
 ---
 
@@ -133,19 +121,17 @@ This skill covers organizational-level governance setup only. It does not initia
 
 | Output | Artifact | Section | Notes |
 |---|---|---|---|
-| Governance framework | A05 | Governance section | Authority thresholds, decision rights, escalation path, cadence, compliance |
-| Authority reference | AUTHORITY-ROUTING.md | Full document | Pre-existing — confirm alignment, update if needed |
-| Governance reference | A06 | Governance reference section | Subsidiary pointer only — A05 is the authority |
+| Governance framework | A05 | Governance section | Authority levels, RACI, escalation paths, cadence, closure authority |
+| Governance reference | A06 | Governance section | Subsidiary reference to A05 — not a duplicate |
 
 ---
 
 ## Constraints
 
-- Authority thresholds must be measurable — vague statements like "significant changes" are not acceptable.
-- All downstream skills must reference A05 for authority and escalation decisions — no parallel governance documents.
-- This skill does not define project-specific scope, schedule, or cost — those are Planning skills.
-- Governance RACI must not conflict with the project-level RACI in A25.
-- Compliance obligations must be stated explicitly — they cannot be implied.
+- The governance framework must be baselined (formal approval documented) before any other skill in this repository runs.
+- No skill may bypass the authority levels defined here — all decisions above PM authority must follow the escalation path.
+- RACI must have exactly one Accountable (A) per activity — split accountability is not permitted.
+- Governance thresholds must be specific (numeric, not vague) — "significant changes" is not a valid threshold.
 
 ---
 
@@ -153,12 +139,11 @@ This skill covers organizational-level governance setup only. It does not initia
 
 | Approach | Adjustment |
 |---|---|
-| Simple / single-PM project | Streamlined governance: two authority levels (PM and sponsor). Single escalation path. Minimal cadence. |
-| Large / multi-phase project | Full four-level authority matrix. Formal phase gate governance. Steering committee cadence. |
-| Program-level setup | Add program governance layer above project sponsor. Define inter-project authority and conflict resolution rules. |
-| Regulated environment | Add compliance section with specific regulatory references, audit schedule, and sign-off requirements. |
-| Adaptive / agile project | Governance adapts: product owner holds acceptance authority; sprint reviews serve as governance touchpoints. |
-| Hybrid project | Split governance: predictive components use threshold-based escalation; adaptive components use product owner authority. |
+| Small / simple project | Simplified RACI (PM + Sponsor only). Minimal escalation tiers. Combined A05/A06 governance reference. |
+| Large / multi-stakeholder project | Full three-tier authority model. Formal CCB. Steering committee with formal TOR. Program-level governance integration. |
+| Agile / adaptive project | Product Owner replaces Sponsor for scope authority. Sprint Review replaces formal governance touchpoints. Escalation path to PO then PMO. |
+| Regulated / compliance project | Add regulatory body to RACI. Mandatory audit trail for all Tier 2+ decisions. Legal/compliance review before closure. |
+| PMO portfolio project | Align authority thresholds with portfolio governance standards. PMO retains Tier 3 authority. Reporting to portfolio dashboard. |
 
 ---
 
@@ -166,13 +151,12 @@ This skill covers organizational-level governance setup only. It does not initia
 
 | Failure | Symptom | Resolution |
 |---|---|---|
-| No authorization trigger | No A01 or equivalent — governance built in a vacuum | Stop; obtain organizational authorization before proceeding |
-| Thresholds are vague | "Significant changes" — no measurable definition | Rewrite all thresholds with numeric or categorical precision |
-| RACI conflicts with A25 | PM is Accountable in governance but not in team RACI | Reconcile A05 governance RACI with A25 team RACI |
-| Escalation path not defined | Disputes held at PM level beyond PM authority | Add escalation path with explicit triggers and timeframes |
-| Compliance obligations not identified | Regulatory requirement discovered mid-project | Re-run Step 6; update A05; assess downstream impact |
-| Governance framework not distributed | Project team unaware of authority thresholds | Distribute A05 to all PMs and team leads; confirm receipt |
-| Authority thresholds not aligned with AUTHORITY-ROUTING.md | Conflicting decision rules in two documents | Reconcile; A05 governs project; AUTHORITY-ROUTING.md governs repo |
+| No sponsor confirmed | Governance section cannot be baselined | Stop; escalate to PMO to confirm sponsor before proceeding |
+| Conflicting RACI (two Accountable) | Governance disputes during execution | Resolve conflict before baselining; confirm with both parties |
+| Thresholds not defined | PM escalates every minor decision | Define specific numeric thresholds; confirm with sponsor |
+| Governance section not baselined | Downstream skills run without authority anchor | Stop downstream work; baseline A05 before continuing |
+| Escalation paths not communicated | Team members escalate to wrong person | Distribute A05 governance section; run governance orientation |
+| Sponsor unavailable for sign-off | A05 cannot be baselined | Escalate to PMO or delegate authority in writing from sponsor |
 
 ---
 
@@ -180,15 +164,15 @@ This skill covers organizational-level governance setup only. It does not initia
 
 | Test ID | Test description | Pass condition | Fail condition |
 |---|---|---|---|
-| T-1 | Authorization trigger exists | A01 or equivalent exists and is accessible | No authorization trigger; governance built without mandate |
-| T-2 | Authority thresholds defined and measurable | All decision types have numeric or categorical thresholds | Any threshold is vague or missing |
-| T-3 | Governance RACI complete | Every governance decision type has R, A, C, I assigned | Any decision type with no RACI entry |
-| T-4 | Escalation path documented | All four escalation levels defined with triggers and timeframes | Escalation path absent or incomplete |
-| T-5 | Governance cadence documented | All meeting types have frequency, participants, and decision scope | Any meeting type with no documented cadence |
-| T-6 | PMBOK8 principles alignment confirmed | Step 7 review completed; deviations documented | Principles alignment check skipped |
-| T-7 | A05 Governance section baselined | A05 has version, baseline date, and sign-off | A05 Governance section in draft without sign-off |
-| T-8 | No conflict with AUTHORITY-ROUTING.md | A05 thresholds consistent with repo-level routing rules | Conflicting authority statements in two documents |
-| T-9 | Framework distributed | All PMs and team leads have received A05 Governance section | Framework exists but not distributed |
+| T-1 | Sponsor confirmed | Named sponsor with confirmed authority level recorded in A05 | Sponsor field blank or "TBD" |
+| T-2 | Three authority tiers defined | Tiers 1, 2, and 3 defined with specific thresholds | Any tier missing or threshold vague |
+| T-3 | RACI complete for all governance activities | Every governance activity has R, A, C, I assigned with exactly one A | Any activity with no A or multiple A |
+| T-4 | Escalation paths defined for all issue types | All six issue type escalation paths documented | Any issue type without a documented path |
+| T-5 | Governance cadence defined | All four cadence items (Steering, Sponsor, PMO, CCB) have frequency and reporting artifact | Any cadence item undefined |
+| T-6 | Closure authority defined | Named role and conditions for closure sign-off recorded | Closure authority blank or "TBD" |
+| T-7 | A05 Governance section baselined | Version, baseline date, and approver recorded | A05 in draft or unsigned |
+| T-8 | A06 governance reference updated | A06 contains pointer to A05 governance section | A06 not updated |
+| T-9 | Governance framework distributed | All project team leads and governance participants have received A05 | Document baselined but not distributed |
 
 ---
 
@@ -200,7 +184,7 @@ This skill covers organizational-level governance setup only. It does not initia
 
 ---
 
-*Authority: PMBOK8 Standard §3 Principles · Guide §2.1 Project Integration Management · AUTHORITY-ROUTING.md*  
+*Authority: PMBOK8 Standard §3.6 Be an Accountable Leader · Guide §2.1 Governance Domain · Guide §4.5.2*  
 *Source type: PMI-derived*  
-*Owner: PMO / Organizational governance authority*  
-*Approval authority: Sponsor or governing body*
+*Owner: PMO / Project Sponsor*  
+*Approval authority: Project Sponsor or PMO lead*

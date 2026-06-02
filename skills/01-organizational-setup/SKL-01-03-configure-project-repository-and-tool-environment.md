@@ -3,7 +3,7 @@ skill_id: SKL-01-03
 skill_name: Configure Project Repository and Tool Environment
 pack: "01 — Organizational Setup"
 version: "1.0.0"
-status: "Draft · Untested"
+status: "Draft · Tests Defined"
 source_type: PMI-derived
 primary_artifact_output: "A03 — Repository and Tool Configuration Record"
 artifacts_updated:
@@ -29,7 +29,7 @@ tests: 9
 
 **Skill ID:** SKL-01-03  
 **Pack:** 01 — Organizational Setup  
-**Status:** Draft · Untested  
+**Status:** Draft · Tests Defined  
 **Source type:** PMI-derived  
 **PMBOK8 anchor:** Guide §2.1.6.4 Manage Project Knowledge · Guide §2.6 Resource Management  
 **File path:** `skills/01-organizational-setup/SKL-01-03-configure-project-repository-and-tool-environment.md`

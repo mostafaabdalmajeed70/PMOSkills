@@ -3,7 +3,7 @@ skill_id: SKL-01-02
 skill_name: Define Artifact and Document Control Standards
 pack: "01 — Organizational Setup"
 version: "1.0.0"
-status: "Draft · Untested"
+status: "Draft · Tests Defined"
 source_type: PMI-derived
 primary_artifact_output: "A05 — Context Register (OPA / Document Control Standards section)"
 artifacts_updated:
@@ -27,7 +27,7 @@ tests: 9
 
 **Skill ID:** SKL-01-02  
 **Pack:** 01 — Organizational Setup  
-**Status:** Draft · Untested  
+**Status:** Draft · Tests Defined  
 **Source type:** PMI-derived  
 **PMBOK8 anchor:** Guide §2.1.6.4 Manage Project Knowledge · Artifacts-V-1.1  
 **File path:** `skills/01-organizational-setup/SKL-01-02-define-artifact-and-document-control-standards.md`
