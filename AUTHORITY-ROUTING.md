@@ -1,6 +1,17 @@
+---
+gov_id: AUTHORITY-ROUTING
+gov_name: Authority Routing and Decision Threshold Model
+version: "1.0.1"
+status: Active
+authority: PMBOK8 Primary
+supersedes: none
+file_path: "AUTHORITY-ROUTING.md"
+last_updated: "2026-06-03"
+---
+
 # AUTHORITY-ROUTING.md
 **Repository:** PMO Skill Repository  
-**Version:** 1.0.0-draft  
+**Version:** 1.0.1  
 **Authority:** Artifacts-Authorities-V-1.1.md · PMBOK8 Governance Performance Domain §2.1  
 **Purpose:** Single reference for decision routing. Use this file in any skill, agent, or MCP tool that needs to route a decision to the correct approval authority.
 
