@@ -1,14 +1,42 @@
+---
+skill_id: SKL-05-08
+name: Control Resources
+pack: "05 — Monitoring and Controlling"
+version: 1.1.0
+status: "Draft · Untested"
+source_type: PMI-derived
+authority: PMI-derived
+pmbok8_anchor: "Process-Groups §7.8 · Figure 7-15 · Figure 7-16"
+performance_domains:
+  - Delivery
+  - Measurement
+focus_area: Monitoring and Controlling
+primary_artifact: "A17 — Work Performance Information (resource section)"
+artifacts_updated:
+  - "A12 — Change Requests"
+  - "A18 — Issue Log"
+  - "A19 — Risk Register"
+  - "A21 — Lessons Learned Register"
+upstream_prerequisites:
+  - SKL-04-03
+downstream_skills:
+  - SKL-05-02
+file_path: skills/05-monitoring-controlling/SKL-05-08-control-resources.md
+tests: 5
+last_updated: "2026-06-03"
+---
+
 # SKL-05-08 — Control Resources
 
 **Skill ID:** SKL-05-08  
 **Canonical Title:** Control Resources  
 **Pack:** 05 — Monitoring and Controlling  
-**Version:** 1.0.0  
+**Version:** 1.1.0  
 **Status:** Draft · Untested  
 **Source Type:** PMI-derived  
 **File Path:** `skills/05-monitoring-controlling/SKL-05-08-control-resources.md`  
 **Authority:** Process Groups: A Practice Guide §7.8 · Figure 7-15 · Figure 7-16  
-**Last Updated:** 2026-05-30
+**Last Updated:** 2026-06-03
 
 ---
 
@@ -302,6 +330,15 @@ At month 3 of a facilities project, trend analysis shows that the primary excava
 |-----------|-------|---------|---------|
 | Process Groups: A Practice Guide | Process-Groups | §7.8, Figure 7-15, Figure 7-16 | Core process definition, I/T/O, data flow, scope of physical resources |
 | PMBOK Guide, Eighth Edition | PMBOK8 | Delivery domain · Measurement domain | Resource control principles, tailoring |
+
+---
+
+## Change Log
+
+| Version | Date | Author | Change Description |
+|---|---|---|---|
+| 1.0.0 | 2026-05-30 | PMO Repository | Initial build |
+| 1.1.0 | 2026-06-03 | Wave 1 QA | Added GOV YAML front-matter; updated Last Updated date |
 
 ---
 

@@ -1,14 +1,45 @@
+---
+skill_id: SKL-05-09
+name: Monitor Communications
+pack: "05 — Monitoring and Controlling"
+version: 1.1.0
+status: "Draft · Untested"
+source_type: PMI-derived
+authority: PMI-derived
+pmbok8_anchor: "Process-Groups §7.9 · Figure 7-17 · Figure 7-18"
+performance_domains:
+  - Stakeholders
+  - Measurement
+focus_area: Monitoring and Controlling
+primary_artifact: "A17 — Work Performance Information (communications section)"
+artifacts_updated:
+  - "A28 — Communications Management Plan"
+  - "A07 — Stakeholder Engagement Plan"
+  - "A12 — Change Requests"
+  - "A18 — Issue Log"
+  - "A21 — Lessons Learned Register"
+upstream_prerequisites:
+  - SKL-04-07
+downstream_skills:
+  - SKL-05-02
+  - SKL-03-11
+  - SKL-04-07
+file_path: skills/05-monitoring-controlling/SKL-05-09-monitor-communications.md
+tests: 5
+last_updated: "2026-06-03"
+---
+
 # SKL-05-09 — Monitor Communications
 
 **Skill ID:** SKL-05-09  
 **Canonical Title:** Monitor Communications  
 **Pack:** 05 — Monitoring and Controlling  
-**Version:** 1.0.0  
+**Version:** 1.1.0  
 **Status:** Draft · Untested  
 **Source Type:** PMI-derived  
 **File Path:** `skills/05-monitoring-controlling/SKL-05-09-monitor-communications.md`  
 **Authority:** Process Groups: A Practice Guide §7.9 · Figure 7-17 · Figure 7-18  
-**Last Updated:** 2026-05-30
+**Last Updated:** 2026-06-03
 
 ---
 
@@ -308,6 +339,15 @@ At week 9, a key technical stakeholder raises a formal objection to a design dec
 |-----------|-------|---------|---------|
 | Process Groups: A Practice Guide | Process-Groups | §7.9, Figure 7-17, Figure 7-18 | Core process definition, I/T/O, data flow, iteration trigger logic |
 | PMBOK Guide, Eighth Edition | PMBOK8 | Stakeholders domain · Measurement domain | Communications monitoring principles, tailoring |
+
+---
+
+## Change Log
+
+| Version | Date | Author | Change Description |
+|---|---|---|---|
+| 1.0.0 | 2026-05-30 | PMO Repository | Initial build |
+| 1.1.0 | 2026-06-03 | Wave 1 QA | Added GOV YAML front-matter; updated Last Updated date |
 
 ---
 

@@ -1,14 +1,48 @@
+---
+skill_id: SKL-05-01
+name: Monitor and Control Project Work
+pack: "05 — Monitoring and Controlling"
+version: 1.1.0
+status: "Draft · Untested"
+source_type: PMI-derived
+authority: PMI-derived
+pmbok8_anchor: "Process-Groups §7.1 · Figure 7-1 · Figure 7-2"
+performance_domains:
+  - Measurement
+  - Governance
+  - Delivery
+focus_area: Monitoring and Controlling
+primary_artifact: "A17 — Work Performance Reports"
+artifacts_updated:
+  - "A12 — Change Requests"
+  - "A16 — Cost Forecasts"
+  - "A18 — Issue Log"
+  - "A19 — Risk Register"
+  - "A21 — Lessons Learned Register"
+upstream_prerequisites:
+  - SKL-04-01
+downstream_skills:
+  - SKL-05-02
+  - SKL-05-03
+  - SKL-05-04
+  - SKL-05-05
+  - SKL-05-06
+file_path: skills/05-monitoring-controlling/SKL-05-01-monitor-and-control-project-work.md
+tests: 5
+last_updated: "2026-06-03"
+---
+
 # SKL-05-01 — Monitor and Control Project Work
 
 **Skill ID:** SKL-05-01  
 **Canonical Title:** Monitor and Control Project Work  
 **Pack:** 05 — Monitoring and Controlling  
-**Version:** 1.0.0  
+**Version:** 1.1.0  
 **Status:** Draft · Untested  
 **Source Type:** PMI-derived  
 **File Path:** `skills/05-monitoring-controlling/SKL-05-01-monitor-and-control-project-work.md`  
 **Authority:** Process Groups: A Practice Guide §7.1 · Figure 7-1 · Figure 7-2  
-**Last Updated:** 2026-05-30
+**Last Updated:** 2026-06-03
 
 ---
 
@@ -267,6 +301,15 @@ At the end of sprint 6 in a hybrid project, velocity is tracking at 38 story poi
 |-----------|-------|---------|---------|
 | Process Groups: A Practice Guide | Process-Groups | §7.1, Figure 7-1, Figure 7-2 | Core process definition, I/T/O, data flow |
 | PMBOK Guide, Eighth Edition | PMBOK8 | Measurement domain · Governance domain | Performance domain alignment, EVM guidance |
+
+---
+
+## Change Log
+
+| Version | Date | Author | Change Description |
+|---|---|---|---|
+| 1.0.0 | 2026-05-30 | PMO Repository | Initial build |
+| 1.1.0 | 2026-06-03 | Wave 1 QA | Added GOV YAML front-matter; updated Last Updated date |
 
 ---
 

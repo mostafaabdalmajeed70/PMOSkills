@@ -1,14 +1,44 @@
+---
+skill_id: SKL-05-07
+name: Monitor Stakeholder Engagement
+pack: "05 — Monitoring and Controlling"
+version: 1.1.0
+status: "Draft · Untested"
+source_type: PMI-derived
+authority: PMI-derived
+pmbok8_anchor: "Process-Groups §7.12 · Figure 7-23 · Figure 7-24"
+performance_domains:
+  - Stakeholders
+  - Measurement
+focus_area: Monitoring and Controlling
+primary_artifact: "A17 — Work Performance Information (stakeholder section)"
+artifacts_updated:
+  - "A03 — Stakeholder Register"
+  - "A07 — Stakeholder Engagement Plan"
+  - "A12 — Change Requests"
+  - "A18 — Issue Log"
+  - "A19 — Risk Register"
+  - "A21 — Lessons Learned Register"
+upstream_prerequisites:
+  - SKL-04-06
+downstream_skills:
+  - SKL-05-02
+file_path: skills/05-monitoring-controlling/SKL-05-07-monitor-stakeholder-engagement.md
+tests: 6
+last_updated: "2026-06-03"
+---
+
 # SKL-05-07 — Monitor Stakeholder Engagement
 
 **Skill ID:** SKL-05-07  
 **Canonical Title:** Monitor Stakeholder Engagement  
 **Pack:** 05 — Monitoring and Controlling  
-**Version:** 1.0.0  
+**Version:** 1.1.0  
 **Status:** Draft · Untested  
 **Source Type:** PMI-derived  
 **File Path:** `skills/05-monitoring-controlling/SKL-05-07-monitor-stakeholder-engagement.md`  
 **Authority:** Process Groups: A Practice Guide §7.12 · Figure 7-23 · Figure 7-24  
-**Last Updated:** 2026-05-30
+**Last Updated:** 2026-06-03
 
 ---
 
@@ -322,6 +352,15 @@ At month 3, the project manager learns through a team member that a regional ope
 |-----------|-------|---------|---------|
 | Process Groups: A Practice Guide | Process-Groups | §7.12, Figure 7-23, Figure 7-24 | Core process definition, I/T/O, data flow |
 | PMBOK Guide, Eighth Edition | PMBOK8 | Stakeholders domain · Measurement domain | Engagement principles, SEAM, tailoring |
+
+---
+
+## Change Log
+
+| Version | Date | Author | Change Description |
+|---|---|---|---|
+| 1.0.0 | 2026-05-30 | PMO Repository | Initial build |
+| 1.1.0 | 2026-06-03 | Wave 1 QA | Added GOV YAML front-matter; updated Last Updated date |
 
 ---
 
