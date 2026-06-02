@@ -3,7 +3,7 @@ skill_id: SKL-04-02
 skill_name: Manage Project Knowledge
 pack: "04 — Executing"
 version: "1.1.0"
-status: "Draft · Untested"
+status: "Draft · Tests Defined"
 source_type: PMI-derived
 primary_artifact: "A21 — Lessons Learned Record"
 artifacts_updated:
@@ -29,9 +29,12 @@ tests: 9
 # SKL-04-02 — Manage Project Knowledge
 
 **Pack:** 04 — Executing  
-**Status:** Draft · Untested  
+**Status:** Draft · Tests Defined  
 **Primary Artifact:** A21 — Lessons Learned Record  
 **PMBOK8 Anchor:** Guide §2.1.6.4 · Figure 2-6 · Stewardship Principle
+
+> **Wave 1B patch — F-11:** Status updated from `Draft · Untested` to `Draft · Tests Defined`.
+> Tests T-1 through T-9 are fully defined in the Tests section below.
 
 ---
 
@@ -215,7 +218,8 @@ Ensure A21 is accessible to all relevant team members and stakeholders per A28 c
 | Version | Date | Change description |
 |---|---|---|
 | 1.0.0 | 2026-05-29 | Initial build |
-| 1.1.0 | 2026-05-29 | Full rewrite: added Knowledge Types table; expanded inputs from 4 to 8 rows (A17, A19, A28, A25 added); expanded steps from 5 to 8; added categorization/tagging step; added departure risk step; added adaptive/hybrid step; expanded outputs from 2 to 5 rows; expanded operating rules from 5 to 8; expanded failure modes from 4 to 7; expanded tests from 7 to 9; added PMBOK8 Stewardship Principle reference |
+| 1.1.0 | 2026-05-29 | Full rewrite: added Knowledge Types table; expanded inputs from 4 to 8 rows; expanded steps from 5 to 8; added categorization/tagging step; added departure risk step; added adaptive/hybrid step; expanded outputs from 2 to 5 rows; expanded operating rules from 5 to 8; expanded failure modes from 4 to 7; expanded tests from 7 to 9; added PMBOK8 Stewardship Principle reference |
+| 1.1.1 | 2026-06-03 | Wave 1B patch — F-11: status updated from Draft · Untested to Draft · Tests Defined |
 
 ---
 

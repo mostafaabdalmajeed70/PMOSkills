@@ -3,7 +3,7 @@ skill_id: SKL-04-01
 skill_name: Direct and Manage Project Work
 pack: "04 — Executing"
 version: "1.1.0"
-status: "Draft · Untested"
+status: "Draft · Tests Defined"
 source_type: PMI-derived
 primary_artifact: "A18 — Issue, Impediment and Action Log"
 artifacts_updated:
@@ -26,9 +26,12 @@ tests: 9
 # SKL-04-01 — Direct and Manage Project Work
 
 **Pack:** 04 — Executing  
-**Status:** Draft · Untested  
+**Status:** Draft · Tests Defined  
 **Primary Artifact:** A18 — Issue, Impediment and Action Log  
 **PMBOK8 Anchor:** Guide §2.1.6.3 · Figure 2-5
+
+> **Wave 1B patch — F-11:** Status updated from `Draft · Untested` to `Draft · Tests Defined`.
+> Tests T-1 through T-9 are fully defined in the Tests section below.
 
 ---
 
@@ -177,6 +180,7 @@ Compile all data collected in Step 3 into a structured package for input to SKL-
 |---|---|---|
 | 1.0.0 | 2026-05-29 | Initial build |
 | 1.1.0 | 2026-05-29 | Expanded: added A28 and Quality inputs; added 8-domain WPD data table in Step 3; added issue classification sub-table in Step 4; added quality check Step 6; expanded outputs from 4 to 6 rows; expanded operating rules from 6 to 8; expanded failure modes from 4 to 7; expanded tests from 8 to 9 (T-9 quality gate added); added change notification rule |
+| 1.1.1 | 2026-06-03 | Wave 1B patch — F-11: status updated from Draft · Untested to Draft · Tests Defined |
 
 ---
 

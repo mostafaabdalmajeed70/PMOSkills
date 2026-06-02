@@ -3,7 +3,7 @@ skill_id: SKL-04-03
 skill_name: Acquire Resources
 pack: "04 — Executing"
 version: "1.1.0"
-status: "Draft · Untested"
+status: "Draft · Tests Defined"
 source_type: PMI-derived
 primary_artifact: "A25 — Team Operating and Responsibility Record"
 artifacts_updated:
@@ -27,9 +27,12 @@ tests: 8
 # SKL-04-03 — Acquire Resources
 
 **Pack:** 04 — Executing
-**Status:** Draft · Untested
+**Status:** Draft · Tests Defined
 **Primary Artifact:** A25 — Team Operating and Responsibility Record
 **PMBOK8 Anchor:** Guide §2.6.2.3 · Figure 2-43
+
+> **Wave 1B patch — F-11:** Status updated from `Draft · Untested` to `Draft · Tests Defined`.
+> Tests T-1 through T-8 are fully defined in the Tests section below.
 
 ---
 
@@ -157,6 +160,7 @@ If a required resource cannot be acquired within acceptable constraints:
 |---|---|---|
 | 1.0.0 | 2026-05-29 | Initial build |
 | 1.1.0 | 2026-05-30 | Expanded failure modes from 4 to 6: added resource skill mismatch and physical resource acquisition omission |
+| 1.1.1 | 2026-06-03 | Wave 1B patch — F-11: status updated from Draft · Untested to Draft · Tests Defined |
 
 ---
 
