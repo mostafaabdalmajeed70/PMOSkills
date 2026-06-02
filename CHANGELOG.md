@@ -6,6 +6,26 @@ Authority: PMBOK 8 Primary · PMI Companion References Secondary.
 
 ---
 
+## [5.0.0] — 2026-06-02
+
+### Added
+- **Track 1 Expansion (Human PMs & PMOs):**
+  - Authoring `pm-handbook.md` (Waterfall, Agile, and Hybrid delivery SOPs).
+  - Authoring `tailoring-guide.md` (4-step PMBOK 8 tailoring scaled T1-T4).
+  - Authoring `governance-guide.md` (OPM mapping, PMO RACI, escalation thresholds).
+- **Track 2 Expansion (AI Agents):**
+  - Authoring `ontology-specification.md` (relational graph ontology and YAML schemas).
+  - Authoring `system-prompts.md` (injectable prompt library for PMO Orchestrator, Risk, and Waste auditors).
+- **Track 3 Expansion (Developer Tools):**
+  - Authoring `automated-validators.md` (3-tier QA gates, pre-commit configuration).
+- **Track 4 Expansion (General & ESG):**
+  - Standardized ESG-KPI Baseline Matrix added to `sustainability-guide.md`.
+- **Portal Index Updates:**
+  - Multi-audience track directory `docs/user-friendly-guide.md` updated to map all 6 new guides.
+  - Scorecard metrics updated in `README.md` to cover 19 documentation guides and 354 total verified assets.
+
+---
+
 ## [4.7.0] — 2026-06-02
 
 ### Added
