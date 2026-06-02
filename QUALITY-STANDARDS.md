@@ -638,12 +638,20 @@ PMOSkills/
 ├── [Root governance files — UPPER-KEBAB.md]
 │
 ├── .github/
-│   └── [templates]
+│   ├── CODE_OF_CONDUCT.md
+│   ├── CONTRIBUTING.md
+│   ├── SECURITY.md
+│   └── [PR/issue templates]
+│
+├── Archive/                         ← archived creation files and legacy drafts
+│   ├── COMPLETION-PLAN.md
+│   ├── legacy/
+│   └── meta/
 │
 ├── docs/
 │   ├── img/
-│   ├── legacy/                              ← archived superseded files only
-│   └── [DOC files: kebab-name.md]
+│   ├── user-friendly-guide.md       ← Phase 8 practitioner manual
+│   └── [other DOC files: kebab-name.md]
 │
 ├── artifacts/
 │   ├── closing/
@@ -669,10 +677,13 @@ PMOSkills/
 │   ├── principles/                          ← ✅ complete
 │   ├── performance-domains/                 ← ✅ complete
 │   ├── focus-areas/                         ← ✅ complete
-│   ├── processes/                           ← partial: PR01–PR10 needed
-│   ├── tools-techniques/                    ← pending Phase 0 migration
-│   ├── inputs-outputs/                      ← pending Phase 0 migration
-│   └── appendices/                          ← Phase 4-C8
+│   ├── processes/                           ← ✅ complete (PR01–PR41)
+│   ├── tools-techniques/                    ← ✅ complete (registry format)
+│   ├── inputs-outputs/                      ← ✅ complete (registry format)
+│   ├── companion-references/                ← ✅ complete (Phase 4-C10)
+│   ├── tailoring/                           ← ✅ complete (Phase 4-C11)
+│   ├── pmo/                                 ← ✅ complete (Phase 4-C12)
+│   └── appendices/                          ← ✅ complete (Phase 4-C8)
 │
 ├── shared/
 │   ├── README.md
@@ -683,6 +694,7 @@ PMOSkills/
 │
 └── tests/
     ├── README.md
+    ├── pmbok8-compliance-test-plan.md      ← Phase 8 compliance testing framework
     ├── skill-tests/
     └── integration-tests/
 ```

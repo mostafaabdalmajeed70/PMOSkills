@@ -43,45 +43,37 @@ This document tracks:
 
 ---
 
-## 1. Live Directory Audit (as of 2026-06-01 — v4.6.0)
+## 1. Live Directory Audit (as of 2026-06-02 — v4.8.0)
 
 ### 1.1 Root Level — Files
 
 | File | Status | Notes |
 |---|---|---|
-| `README.md` | ✅ Current | Aligned post-Phase 0 |
-| `MASTER-PLAN.md` | ✅ Current | This file |
-| `COMPLETION-PLAN-V4.md` | ✅ Current | Full phase plan (v4.2.0) |
-| `QUALITY-STANDARDS.md` | ✅ Current | Single authority for quality, naming, structure, YAML schemas, quality gates (v2.0.0) |
-| `SKILL-REGISTRY.md` | ✅ | Master skill index v1.3.0 |
-| `AUTHORITY-ROUTING.md` | ✅ | T1–T4 threshold model |
-| `LIFECYCLE-MAP.md` | ✅ | Phase-by-phase lifecycle flow |
-| `PRINCIPLES-CROSSWALK.md` | ✅ | 12 principles × 11 domains × 40 processes |
-| `source-authority.md` | ✅ | Source authority rules |
-| `pmi_reference_list.md` | ✅ | Canonical PMI reference list (23 books) |
-| `CHANGELOG.md` | ✅ | Change log |
-| `CONTRIBUTING.md` | ✅ | Contribution rules |
-| `CODE_OF_CONDUCT.md` | ✅ | Code of conduct |
-| `SECURITY.md` | ✅ | Security policy |
-| `LICENSE` | ✅ | License |
-| `.gitignore` | ✅ | Git ignore rules |
+| `README.md` | ✅ Current | Core entry point and repository overview |
+| `MASTER-PLAN.md` | ✅ Current | This file — single source of truth for governance and roadmaps |
+| `QUALITY-STANDARDS.md` | ✅ Current | Single authority for quality gates, YAML schemas, and directory rules |
+| `SKILL-REGISTRY.md` | ✅ Current | Master skill index (48 skills indexed) |
+| `AUTHORITY-ROUTING.md` | ✅ Current | T1–T4 threshold model and RACI matrix |
+| `LIFECYCLE-MAP.md` | ✅ Current | Phase-by-phase process and artifact flow |
+| `PRINCIPLES-CROSSWALK.md` | ✅ Current | 12 principles × 11 domains × 40 processes |
+| `source-authority.md` | ✅ Current | Source authority rules and reference hierarchy |
+| `pmi_reference_list.md` | ✅ Current | Canonical PMI reference list (23 books) |
+| `CHANGELOG.md` | ✅ Current | Historical changelog of repository versions |
+| `LICENSE` | ✅ Current | MIT License |
+| `.gitignore` | ✅ Current | Git ignore rules |
 
 ### 1.2 Root Level — Directories
 
 | Directory | Actual Contents | Status | Action Required |
 |---|---|---|---|
-| `.github/` | Issue/PR templates | ✅ Correct | None |
-| `docs/` | 9 documentation files + img/ | ✅ Complete | Add `source-usage-guide.md` (Phase 4-NEW) |
-| `artifacts/` | 12 canonical subdirs | ✅ Structure correct | Build content (Phase 3) + add Pack 08 for PMO skills |
-| `skills/` | 7 pack dirs (01–07) | ✅ Structure correct | Build content (Phase 3) + add Pack 08 for PMO skills |
-| `reference/` | 7 completed subdirs | ✅ Complete | Add companion-references/ |
-| `shared/` | README.md only | ✅ Seeded | Build content (Phase 5) |
-| `tests/` | README.md only | ✅ Seeded | Build content (Phase 6) |
-| **`C4-Process-Records/`** | **DELETED** | **✅ CLEARED** | **None** |
-| **`C5-KA-Crossref/`** | **DELETED** | **✅ CLEARED** | **None** |
-| **`C6-TT-Taxonomy/`** | **DELETED** | **✅ CLEARED** | **None** |
-| **`C7-IO-Registry/`** | **DELETED** | **✅ CLEARED** | **None** |
-| **`repo/`** | **DELETED** | **✅ CLEARED** | **None** |
+| `.github/` | Issue/PR templates + relocated policies | ✅ Correct | None (CODE_OF_CONDUCT.md, CONTRIBUTING.md, and SECURITY.md relocated here) |
+| `Archive/` | Superseded creation documents & drafts | ✅ Correct | None (COMPLETION-PLAN.md, legacy/ drafts, and meta/ generators relocated here) |
+| `docs/` | Guide maps, manuals, and custom guides | ✅ Complete | None (includes `user-friendly-guide.md` practitioner handbook) |
+| `artifacts/` | 12 canonical folders containing 38 baselines | ✅ Complete | None (contains all PMBOK 8 initiated/planned/executed templates) |
+| `skills/` | 7 pack directories containing 48 skills | ✅ Complete | None (fully built and structured per quality standards) |
+| `reference/` | Principles, domains, companion refs, pmo | ✅ Complete | None (fully synchronized with PMBOK 8 + 23 companion books) |
+| `shared/` | Routing logic, validators, and checklists | ✅ Complete | None (contains active program validators and components) |
+| `tests/` | Unit, integration, and compliance test suite | ✅ Complete | None (includes `pmbok8-compliance-test-plan.md` QA gate system) |
 
 ### 1.3 `artifacts/` — Full Subdirectory Audit
 
@@ -513,6 +505,19 @@ The current 7-pack structure covers the project lifecycle (Packs 01–07). The g
 
 ---
 
+### PHASE 8 — Next Steps & Compliance Integration (Approved Plan)
+
+This phase formalizes the future continuous quality assurance epochs and implements robust practitioner onboarding manuals and testing plans.
+
+| Task ID | Task / Deliverable | Target File | Status |
+|---|---|---|---|
+| P8-A | Define L2/L3 Quality Gates | `QUALITY-STANDARDS.md` | ✅ Complete |
+| P8-B | Create User-Friendly Guide | `docs/user-friendly-guide.md` | ✅ Complete |
+| P8-C | Create Compliance Test Plan | `tests/pmbok8-compliance-test-plan.md` | ✅ Complete |
+| P8-D | Save Implementation Plan to Master | `MASTER-PLAN.md` (Section 11) | ✅ Complete |
+
+---
+
 ## 6. Dependency Map
 
 ```
@@ -531,6 +536,8 @@ Phase 0 (22 ops: cleanup + artifacts audit + repo/ cleanup + README updates)
     └──► Phase 4-NEW (source-usage-guide + skill-reference-map)
 
 Phase 7 (quality audit) ── continuous ── runs after EVERY phase
+    │
+    └──► Phase 8 (Continuous QA & Next Steps Integration) ◄── Phase 7 Complete
 ```
 
 ---
@@ -641,6 +648,29 @@ See [`COMPLETION-PLAN-V4.md §8`](./COMPLETION-PLAN-V4.md) for the foundational 
 | 4.5.0 | 2026-06-01 | Phase 0 Group 0A complete: P0-A (SHA verification) and P0-B (delete 30 C4-Process-Records/ root files, PR11–PR40, 30 commits) done. §5 Phase 0 task table updated with Status column. §1.2 C4 row updated to ✅ CLEARED. §3.2 knowledge-areas/ row updated to 🔄. §4 Phase 0 row updated to IN PROGRESS. §7 scorecard Phase 0 row updated. S-015 logged. S-016 placeholder added. |
 | **4.7.0** | **2026-06-02** | **Phase 6 Test Suites and Phase 7 Quality Audit Complete: 48 skill test suites, 7 cross-skill integration flow tests, and catalogs fully implemented. Resolved all legacy mixed-case file non-conformances (NC-001 through NC-006) by renaming files to lowercase kebab-case and updating all links.** |
 | **4.8.0** | **2026-06-02** | **Phase 8 Next Steps & Compliance Integration: created comprehensive docs/user-friendly-guide.md and tests/pmbok8-compliance-test-plan.md. Formally mapped Phase 8 roadmap additions (AST automations, static sites, pilot scopes) and updated scorecards.** |
+
+---
+
+## 11. Approved Phase 8 Implementation Plan
+
+This section preserves the technical specifications and targets approved for the implementation of Phase 8.
+
+### 11.1 Key Targets & Scope
+* **Phase 8-A: Advanced Automated Quality Gates (L2 & L3)**
+  - Integrate AST parsers for programmatic validation of repository rules.
+  - Implement JSON-schema validators for automated configuration verification.
+  - Setup pre-commit Git hooks enforcing structure gates.
+* **Phase 8-B: Interactive GUI Dashboard**
+  - Scaffold static website models (Vite/React) enabling interactive skill/artifact graph navigation.
+  - Map dynamic process linkages in a user-friendly browser canvas.
+* **Phase 8-C: Real-world Pilot Implementations**
+  - Scenario coverage for Space Tech (satellite deployment), Energy (grid transitions), and Healthcare (system integrations).
+  - Draft authentic project logs verifying waterfall/agile/hybrid standard templates.
+
+### 11.2 3-Tier Testing Gates
+1. **L1 (Structural):** YAML schemas, kebab-case file paths, and relative markdown link validations.
+2. **L2 (Content & Citation):** Core citation verification mapping to PMBOK 8th Edition performance domains.
+3. **L3 (Integration & Flow):** End-to-end process transitions ensuring zero broken handoffs between phases.
 
 ---
 

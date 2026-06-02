@@ -73,11 +73,14 @@ pmo-skill-repo/
 │   ├── principles/                  ← 12 PMBOK 8 principles (P01–P12 + index)
 │   ├── performance-domains/         ← 8 performance domains (PD01–PD08 + index)
 │   ├── focus-areas/                 ← 5 focus areas (FA01–FA05)
-│   ├── processes/                   ← 40 process records (PR01–PR40 + indices)
+│   ├── processes/                   ← 41 process records (PR01–PR41 + indices)
 │   ├── knowledge-areas/             ← Knowledge Area index (migrated from C5)
 │   ├── tools-techniques/            ← Tools & Techniques index (migrated from C6)
 │   ├── inputs-outputs/              ← Inputs & Outputs registry (migrated from C7)
-│   └── appendices/                  ← PMO, AI, Sourcing appendices [planned]
+│   ├── companion-references/        ← 23 canonical companion guides (Phase 4-C10)
+│   ├── tailoring/                   ← Tailoring guidelines layer (Phase 4-C11)
+│   ├── pmo/                         ← PMO governance & service models (Phase 4-C12)
+│   └── appendices/                  ← PMO, AI, Sourcing, Evolution appendices (X2–X5)
 │
 ├── artifacts/                       ← Lean and Audited Artifacts Catalog
 │   ├── initiating/                  ← Project startup records (A01, A02, A04)
@@ -96,7 +99,7 @@ pmo-skill-repo/
 ├── skills/
 │   ├── 01-organizational-setup/     ← Governance, doc control, repo config (3 skills)
 │   ├── 02-initiating/               ← Initiate Project or Phase focus area (2 skills)
-│   ├── 03-planning/                 ← Planning focus area (17 skills)
+│   ├── 03-planning/                 ← Planning focus area (18 skills)
 │   ├── 04-executing/                ← Executing focus area (9 skills)
 │   ├── 05-monitoring-controlling/   ← Monitor and Control focus area (9 skills)
 │   ├── 06-closing/                  ← Close Project or Phase focus area (3 skills)
@@ -104,15 +107,16 @@ pmo-skill-repo/
 │
 ├── shared/                          ← Reusable components and validators
 │   ├── README.md
-│   ├── components/                  ← Field blocks and section patterns [planned]
-│   ├── validators/                  ← Waste-test and quality-check routines [planned]
-│   ├── routing/                     ← Authority routing logic per decision type [planned]
-│   └── checklists/                  ← Domain and phase readiness checklists [planned]
+│   ├── components/                  ← Field blocks and section patterns
+│   ├── validators/                  ← Waste-test and quality-check routines
+│   ├── routing/                     ← Authority routing logic per decision type
+│   └── checklists/                  ← Domain and phase readiness checklists
 │
 └── tests/                           ← Skill and integration test cases
     ├── README.md
-    ├── skill-tests/                 ← Test cases per skill [planned]
-    └── integration-tests/           ← Cross-skill flow tests (e.g., Setup → Close) [planned]
+    ├── pmbok8-compliance-test-plan.md ← Phase 8 compliance testing framework
+    ├── skill-tests/                 ← Test cases per skill
+    └── integration-tests/           ← Cross-skill flow tests (e.g., Setup → Close)
 ```
 
 ---
@@ -222,7 +226,6 @@ All artifacts are labeled: `PMI-derived` | `synthesis` | `organization-defined`
 | `source-authority.md` | Source authority rules, reference hierarchy |
 | `pmi_reference_list.md` | Canonical list of all PMI references used in this repo |
 | `MASTER-PLAN.md` | Master development plan and session log |
-| `docs/implementation-plan.md` | Approved Phase 8 next steps implementation plan |
 | `Archive/COMPLETION-PLAN.md` | Phase-by-phase completion roadmap (archived) |
 | `QUALITY-STANDARDS.md` | Canonical quality gates, YAML schemas, and pre-commit checklists |
 
