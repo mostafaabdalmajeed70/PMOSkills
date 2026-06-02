@@ -182,8 +182,8 @@ PMOSkills/
 | **Artifacts Layer (Templates and examples)** | 78 | 78 | 100% ✅ |
 | **Shared Components (Validators and checklists)** | 25 | 25 | 100% ✅ |
 | **Test Suite (Skill + integration scenario tests)** | 69 | 69 | 100% ✅ |
-| **Documentation & Framework Guides** | 6 | 6 | 100% ✅ |
-| **Total Verified Assets** | **341** | **341** | **100% PRODUCTION READY** |
+| **Documentation & Expanded Framework Guides** | 19 | 19 | 100% ✅ |
+| **Total Verified Assets** | **354** | **354** | **100% PRODUCTION READY** |
 
 ---
 
@@ -202,6 +202,10 @@ To ensure clear accountability, PMOSkills employs a strict **T1 to T4 Decision T
 
 ## 🚀 Key Framework Documents
 
+* 📘 [`docs/user-friendly-guide.md`](docs/user-friendly-guide.md) — **Master Onboarding Onramps & Multi-Audience Hub.**
+* 👔 [`docs/human-practitioners/pm-handbook.md`](docs/human-practitioners/pm-handbook.md) — Predictive, Agile, and Hybrid delivery SOPs.
+* 🧠 [`docs/ai-agents/ontology-specification.md`](docs/ai-agents/ontology-specification.md) — Directed relation schemas, edge classes, and semantic rules.
+* 🛠 [`docs/developer-tools/automated-validators.md`](docs/developer-tools/automated-validators.md) — 3-tier testing QA gates, Git hook setups, and validator commands.
 * 🔍 [`SKILL-REGISTRY.md`](SKILL-REGISTRY.md) — Master index of all 48 skills, dependency chains, and primary outputs.
 * 🏷️ [`RELEASE-NOTES-v0.1.md`](RELEASE-NOTES-v0.1.md) — Release notes for stable v0.1 milestone.
 * ⚖️ [`AUTHORITY-ROUTING.md`](AUTHORITY-ROUTING.md) — RACI matrix and escalation protocols for T1–T4 decisions.
