@@ -6,6 +6,11 @@ version: "1.0.0"
 status: Active
 pmbok8_source: "PMBOK8 Guide §2.7.2.3"
 companion_ref_shortcode: PG-APG-5.21
+related_skills:
+  - SKL-03-12
+related_artifacts:
+  - A19
+  - A20
 file_path: "reference/processes/PR24-perform-quantitative-risk-analysis.md"
 ---
 # PR24 — Perform Quantitative Risk Analysis

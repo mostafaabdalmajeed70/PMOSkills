@@ -6,6 +6,10 @@ version: "1.0.0"
 status: Active
 pmbok8_source: "PMBOK8 Guide §2.7.2.4"
 companion_ref_shortcode: PG-APG-5.22
+related_skills:
+  - SKL-03-12
+related_artifacts:
+  - A19
 file_path: "reference/processes/PR25-plan-risk-responses.md"
 ---
 # PR25 — Plan Risk Responses

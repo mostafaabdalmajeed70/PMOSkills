@@ -6,6 +6,10 @@ version: "1.0.0"
 status: Active
 pmbok8_source: "PMBOK8 Guide §2.8"
 companion_ref_shortcode: PG-APG-6.2
+related_skills:
+  - SKL-04-03
+related_artifacts:
+  - A30
 file_path: "reference/processes/PR29-manage-project-knowledge.md"
 ---
 # PR29 — Manage Project Knowledge

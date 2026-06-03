@@ -6,6 +6,10 @@ version: "1.0.0"
 status: Active
 pmbok8_source: "PMBOK8 Guide §2.5"
 companion_ref_shortcode: PG-APG-5.24
+related_skills:
+  - SKL-03-08
+related_artifacts:
+  - A07
 file_path: "reference/processes/PR27-plan-stakeholder-engagement.md"
 ---
 # PR27 — Plan Stakeholder Engagement

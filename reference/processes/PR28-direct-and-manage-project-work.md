@@ -6,6 +6,11 @@ version: "1.0.0"
 status: Active
 pmbok8_source: "PMBOK8 Guide §2.1"
 companion_ref_shortcode: PG-APG-6.1
+related_skills:
+  - SKL-04-01
+related_artifacts:
+  - A18
+  - A14
 file_path: "reference/processes/PR28-direct-and-manage-project-work.md"
 ---
 # PR28 — Direct and Manage Project Work

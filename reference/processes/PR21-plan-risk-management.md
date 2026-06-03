@@ -6,6 +6,10 @@ version: "1.0.0"
 status: Active
 pmbok8_source: "PMBOK8 Guide §2.7.2.1"
 companion_ref_shortcode: PG-APG-5.18
+related_skills:
+  - SKL-03-11
+related_artifacts:
+  - A19
 file_path: "reference/processes/PR21-plan-risk-management.md"
 ---
 # PR21 — Plan Risk Management

@@ -6,6 +6,10 @@ version: "1.0.0"
 status: Active
 pmbok8_source: "PMBOK8 Guide §2.7.2.2"
 companion_ref_shortcode: PG-APG-5.19
+related_skills:
+  - SKL-03-11
+related_artifacts:
+  - A19
 file_path: "reference/processes/PR22-identify-risks.md"
 ---
 # PR22 — Identify Risks

@@ -6,6 +6,11 @@ version: "1.0.0"
 status: Active
 pmbok8_source: "PMBOK8 Guide §2.9"
 companion_ref_shortcode: PG-APG-7.1
+related_skills:
+  - SKL-05-01
+related_artifacts:
+  - A17
+  - A18
 file_path: "reference/processes/PR30-monitor-and-control-project-work.md"
 ---
 # PR30 — Monitor and Control Project Work
