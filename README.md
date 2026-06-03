@@ -307,10 +307,10 @@ To ensure clear accountability, PMOSkills employs a strict **T1 to T4 Decision T
 * **`v0.3` (2026-06-02):** **Release v0.3: Metrics & Onboarding Portal Integration.** Synchronized documentation indexes, README scorecards, changelogs, and release tag paths.
 * **`v0.2` (2026-06-02):** **Release v0.2: Ultimate Documentation Expansion.** Six new master manuals covering handbooks, tailoring, RACIs, ontologies, prompt libraries, and automation gates.
 * **`v0.1` (2026-06-02):** **First Stable Framework Release.** Promoted audited PMOSkills repository (341 assets) under official git release tag `v0.1`.
-* **`v4.8.0` (2026-06-02):** Phase 8 Next Steps & Compliance Integration. Introduced the master user onboarding guide (`docs/user-friendly-guide.md`) and the 3-tier test plan (`tests/pmbok8-compliance-test-plan.md`). Fully updated master scorecards and plan directories.
-* **`v4.7.0` (2026-06-02):** Phase 6 Test Suites and Phase 7 Quality Audit Complete. Implemented 48 skill test suites, 7 cross-skill integration flow tests, and cleaned mixed-case non-conformances.
-* **`v4.5.0` (2026-06-01):** Phase 0 Repository Consolidation. Cleared legacy folders, monolithic drafts, and compiled clean reference layers.
-* **`v1.3.0` (2026-05-30):** Full Skill catalog deployment. Standardized Packs 01 through 07 (48 skills).
+* **`v0.0.4.8.0` (2026-06-02):** Phase 8 Next Steps & Compliance Integration. Introduced the master user onboarding guide (`docs/user-friendly-guide.md`) and the 3-tier test plan (`tests/pmbok8-compliance-test-plan.md`). Fully updated master scorecards and plan directories.
+* **`v0.0.4.7.0` (2026-06-02):** Phase 6 Test Suites and Phase 7 Quality Audit Complete. Implemented 48 skill test suites, 7 cross-skill integration flow tests, and cleaned mixed-case non-conformances.
+* **`v0.0.4.5.0` (2026-06-01):** Phase 0 Repository Consolidation. Cleared legacy folders, monolithic drafts, and compiled clean reference layers.
+* **`v0.0.1.3.0` (2026-05-30):** Full Skill catalog deployment. Standardized Packs 01 through 07 (48 skills).
 
 ---
 
