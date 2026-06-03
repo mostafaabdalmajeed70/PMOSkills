@@ -60,3 +60,27 @@ Plan Risk Management is the process of defining how to conduct risk management a
 ## Source Traceability
 - PMBOK 8: Section 2.7.2.1
 - Process Groups Practice Guide: Section 5.18
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A19 | Artifact | Primary artifact produced or updated by this process |
+| SKL-03-11 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Is the risk management plan tailored to project complexity and organizational risk appetite?
+2. Are risk categories defined in a risk breakdown structure (RBS)?
+3. Are roles, responsibilities, and authority levels for risk decisions documented?
+4. Are risk thresholds and tolerance levels explicitly stated?
+5. Is the risk management plan integrated with the contingency reserve strategy?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

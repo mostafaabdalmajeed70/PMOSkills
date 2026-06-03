@@ -62,3 +62,28 @@ Perform Quantitative Risk Analysis is the process of numerically analyzing the c
 ## Source Traceability
 - PMBOK 8: Section 2.7.2.3
 - Process Groups Practice Guide: Section 5.21
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A19 | Artifact | Primary artifact produced or updated by this process |
+| A20 | Artifact | Primary artifact produced or updated by this process |
+| SKL-03-12 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Is quantitative analysis applied only where sufficient data and model reliability exist?
+2. Are Monte Carlo simulation parameters documented and justified?
+3. Is the confidence interval for project completion dates and costs reported?
+4. Are key risk drivers identified and communicated to decision-makers?
+5. Are reserve estimates derived from quantitative outputs rather than approximations?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

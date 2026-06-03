@@ -67,3 +67,27 @@ Plan Communications Management is the process of developing an appropriate appro
 ## Source Traceability
 - PMBOK 8: Section 2.5 (Stakeholders Performance Domain)
 - Process Groups Practice Guide: Section 9 (Communications Management Plan artifact)
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A28 | Artifact | Primary artifact produced or updated by this process |
+| SKL-03-09 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Are communication needs for all stakeholder groups explicitly defined?
+2. Are communication frequency, format, and channel decisions documented?
+3. Is the communications management plan integrated with the stakeholder engagement plan?
+4. Are escalation and feedback mechanisms defined?
+5. Are information security and confidentiality requirements addressed?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

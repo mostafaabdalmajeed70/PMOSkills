@@ -91,3 +91,28 @@ Review all change requests; approve changes and manage changes to deliverables, 
 - Feeds from: PR30 (Monitor and Control Project Work), PR37 (Control Quality)
 - Feeds into: PR28 (Direct and Manage Project Work) — for approved change requests
 - Cross-links: PR32 (Validate Scope), PR33 (Control Scope), PR34 (Control Schedule), PR35 (Control Costs)
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A12 | Artifact | Primary artifact produced or updated by this process |
+| A14 | Artifact | Primary artifact produced or updated by this process |
+| SKL-05-02 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Is the change control board (CCB) composition and authority documented?
+2. Are all change requests formally logged before assessment begins?
+3. Are impacts on scope, schedule, cost, quality, and risk assessed for each change?
+4. Are approved changes reflected in updated baselines and management plans?
+5. Are rejected changes documented with rationale?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

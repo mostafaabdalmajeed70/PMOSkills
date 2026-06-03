@@ -63,3 +63,27 @@ Perform Qualitative Risk Analysis is the process of prioritizing individual proj
 ## Source Traceability
 - PMBOK 8: Section 2.7.2.3
 - Process Groups Practice Guide: Section 5.20
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A19 | Artifact | Primary artifact produced or updated by this process |
+| SKL-03-11 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Are probability and impact scales calibrated to the project context?
+2. Is the risk probability-impact matrix documented and approved?
+3. Are risks prioritized and grouped for efficient response planning?
+4. Are data quality assessments performed on risk inputs?
+5. Are urgent risks requiring immediate attention separately flagged?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

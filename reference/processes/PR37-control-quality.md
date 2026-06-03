@@ -86,3 +86,28 @@ Monitor and record results of quality management activities to assess performanc
 ## Related Processes
 - Feeds into: PR32 (Validate Scope)
 - Cross-links: PR31 (Perform Integrated Change Control), PR30 (Monitor and Control Project Work)
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A38 | Artifact | Primary artifact produced or updated by this process |
+| A17 | Artifact | Primary artifact produced or updated by this process |
+| SKL-05-09 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Are quality control measurements compared against quality standards?
+2. Are defects and non-conformances formally logged and root-caused?
+3. Are corrective actions for quality failures tracked to closure?
+4. Is rework authorized through the change control process?
+5. Are quality trends reported as part of integrated performance reporting?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

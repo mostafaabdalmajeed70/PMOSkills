@@ -80,3 +80,28 @@ Ensure the information needs of the project and its stakeholders are met. Optimi
 - Depends on: PR28 (Direct and Manage Project Work) — project communications output
 - Feeds into: PR31 (Perform Integrated Change Control)
 - Cross-links: PR40 (Monitor Stakeholder Engagement)
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A28 | Artifact | Primary artifact produced or updated by this process |
+| A17 | Artifact | Primary artifact produced or updated by this process |
+| SKL-05-09 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Are communication effectiveness assessments performed at defined intervals?
+2. Are communication gaps or failures documented and resolved?
+3. Is stakeholder feedback on communication quality captured?
+4. Are communication channels and frequencies adjusted based on monitoring results?
+5. Are information distribution records maintained for audit purposes?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

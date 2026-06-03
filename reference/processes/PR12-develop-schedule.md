@@ -10,18 +10,6 @@ related_skills:
   - SKL-03-06
 related_artifacts:
   - A15
-related_skills:
-  - SKL-03-06
-related_artifacts:
-  - A15
-related_skills:
-  - SKL-03-06
-related_artifacts:
-  - A15
-related_skills:
-  - SKL-03-06
-related_artifacts:
-  - A15
 file_path: "reference/processes/PR12-develop-schedule.md"
 ---
 # PR12 — Develop Schedule
@@ -90,3 +78,27 @@ Develop Schedule is the process of analyzing activity sequences, durations, reso
 ## Source Traceability
 - PMBOK 8: Section 2.3.2.2
 - Process Groups Practice Guide: Section 5.10
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A15 | Artifact | Primary artifact produced or updated by this process |
+| SKL-03-06 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Is the critical path identified and documented with float analysis?
+2. Have schedule compression techniques (crashing, fast-tracking) been evaluated?
+3. Are resource constraints and calendars fully reflected in the schedule model?
+4. Is the schedule baseline formally approved before execution begins?
+5. Are schedule reserves (buffer) documented and linked to specific risks?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

@@ -85,3 +85,28 @@ Monitor Risks determines whether:
 - Depends on: PR26 (Implement Risk Responses)
 - Feeds into: PR31 (Perform Integrated Change Control)
 - Cross-links: PR30 (Monitor and Control Project Work)
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A19 | Artifact | Primary artifact produced or updated by this process |
+| A20 | Artifact | Primary artifact produced or updated by this process |
+| SKL-05-06 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Are risk triggers monitored and documented during execution?
+2. Are risk response effectiveness assessments performed regularly?
+3. Are new risks identified during monitoring added to the risk register?
+4. Are risk reserve consumption levels reported and within approved thresholds?
+5. Are residual and secondary risks reassessed as the project progresses?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

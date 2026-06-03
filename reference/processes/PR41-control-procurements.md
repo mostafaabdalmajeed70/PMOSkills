@@ -12,12 +12,6 @@ related_artifacts:
   - A11
   - A31
   - A33
-related_skills:
-  - SKL-04-09
-  - SKL-05-08
-related_artifacts:
-  - A31
-  - A33
 file_path: "reference/processes/PR41-control-procurements.md"
 ---
 

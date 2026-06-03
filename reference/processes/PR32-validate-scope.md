@@ -77,3 +77,28 @@ Formalize acceptance of the completed project deliverables. Brings objectivity t
 - Depends on: PR37 (Control Quality) — verified deliverables
 - Feeds into: PR40 (Close Project or Phase)
 - Cross-links: PR31 (Perform Integrated Change Control) — for change requests on rejected deliverables
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A08 | Artifact | Primary artifact produced or updated by this process |
+| A17 | Artifact | Primary artifact produced or updated by this process |
+| SKL-05-03 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Are acceptance criteria formally defined before validation begins?
+2. Is stakeholder sign-off documented for each validated deliverable?
+3. Are partially accepted deliverables and conditions of acceptance documented?
+4. Is scope validation integrated with quality control activities?
+5. Are validated deliverables formally linked to requirements traceability?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

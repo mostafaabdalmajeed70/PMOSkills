@@ -66,3 +66,27 @@ Estimate Activity Resources is the process of estimating team resources and the 
 ## Source Traceability
 - PMBOK 8: Section 2.6 (Resources Performance Domain — Key Concepts)
 - Process Groups Practice Guide: Section 5.16 (Estimate Activity Resources)
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A26 | Artifact | Primary artifact produced or updated by this process |
+| SKL-03-17 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Are resource estimates based on current availability calendars and skill profiles?
+2. Have multiple estimation techniques been applied and documented?
+3. Are resource constraints and dependencies across activities identified?
+4. Is the basis of resource estimates documented for audit purposes?
+5. Are resource leveling implications assessed in relation to the schedule?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

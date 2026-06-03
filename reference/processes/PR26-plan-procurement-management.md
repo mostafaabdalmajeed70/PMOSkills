@@ -71,3 +71,27 @@ Plan Procurement Management is the process of documenting project procurement de
 ## Source Traceability
 - PMBOK 8: Section 2.6 (sourcing strategy)
 - Process Groups Practice Guide: Section 5.23
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A31 | Artifact | Primary artifact produced or updated by this process |
+| SKL-03-15 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Are make-or-buy decisions documented with supporting rationale?
+2. Are procurement risk and contract type decisions aligned?
+3. Are source selection criteria defined before solicitation begins?
+4. Is the procurement management plan integrated with the risk and schedule plans?
+5. Are supplier pre-qualification standards documented?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

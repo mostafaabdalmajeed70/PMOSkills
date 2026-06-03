@@ -10,14 +10,6 @@ related_skills:
   - SKL-03-06
 related_artifacts:
   - A15
-related_skills:
-  - SKL-03-06
-related_artifacts:
-  - A15
-related_skills:
-  - SKL-03-06
-related_artifacts:
-  - A15
 file_path: "reference/processes/PR11-estimate-activity-durations.md"
 ---
 # PR11 — Estimate Activity Durations
@@ -80,3 +72,27 @@ Estimate Activity Durations is the process of estimating the number of work peri
 ## Source Traceability
 - PMBOK 8: Section 2.3.2.2 (Steps for Developing the Schedule — Step 3)
 - Process Groups Practice Guide: Section 5.9
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A15 | Artifact | Primary artifact produced or updated by this process |
+| SKL-03-06 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Are estimates based on validated activity attributes and a current resource calendar?
+2. Have analogous, parametric, and three-point methods been considered and documented?
+3. Are cognitive biases (Parkinson's Law, Student Syndrome, planning fallacy) explicitly mitigated?
+4. Is the basis of estimates documented for future audit and replanning?
+5. Have adaptive velocity or story-point data been incorporated where applicable?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

@@ -67,3 +67,27 @@ Identify Risks is the process of identifying individual project risks as well as
 ## Source Traceability
 - PMBOK 8: Section 2.7.2.2
 - Process Groups Practice Guide: Section 5.19
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A19 | Artifact | Primary artifact produced or updated by this process |
+| SKL-03-11 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Have multiple risk identification techniques been applied (brainstorming, interviews, checklists)?
+2. Are both threats and opportunities captured in the risk register?
+3. Are risk owners assigned for each identified risk?
+4. Are assumptions tested as part of the risk identification process?
+5. Is the risk register reviewed and updated at defined intervals?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

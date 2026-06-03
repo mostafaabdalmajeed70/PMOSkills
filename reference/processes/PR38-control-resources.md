@@ -79,3 +79,28 @@ Ensure that physical resources assigned and allocated to the project are availab
 ## Related Processes
 - Cross-links: PR34 (Control Schedule), PR35 (Control Costs)
 - Feeds into: PR31 (Perform Integrated Change Control)
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A26 | Artifact | Primary artifact produced or updated by this process |
+| A17 | Artifact | Primary artifact produced or updated by this process |
+| SKL-05-08 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Are resource utilization rates monitored against the resource management plan?
+2. Are team performance assessments conducted at defined intervals?
+3. Are resource conflicts escalated and resolved through defined channels?
+4. Is the resource breakdown structure updated to reflect actuals?
+5. Are lessons learned on resource management captured during execution?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

@@ -89,3 +89,28 @@ Monitor the status of the project to update project costs and manage changes to 
 ## Related Processes
 - Feeds into: PR31 (Perform Integrated Change Control)
 - Cross-links: PR34 (Control Schedule), PR38 (Control Resources)
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A16 | Artifact | Primary artifact produced or updated by this process |
+| A17 | Artifact | Primary artifact produced or updated by this process |
+| SKL-05-05 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Are cost variance (CV) and CPI calculated and reported regularly?
+2. Are earned value forecasts (EAC, TCPI) communicated to stakeholders?
+3. Are funding limit reconciliation checks performed?
+4. Are corrective actions for cost overruns documented and approved?
+5. Is the cost baseline updated only through formal change control?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

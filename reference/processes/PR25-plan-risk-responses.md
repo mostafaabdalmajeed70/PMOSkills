@@ -66,3 +66,27 @@ Plan Risk Responses is the process of developing options, selecting strategies, 
 ## Source Traceability
 - PMBOK 8: Section 2.7.2.4
 - Process Groups Practice Guide: Section 5.22
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A19 | Artifact | Primary artifact produced or updated by this process |
+| SKL-03-12 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Are risk responses matched to the risk type (threat vs opportunity)?
+2. Are residual and secondary risks identified for each response?
+3. Are response owners and trigger conditions documented?
+4. Is the cost and schedule impact of each response reflected in baselines?
+5. Are contingency plans documented for high-priority risks?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

@@ -66,3 +66,28 @@ Direct and Manage Project Work is the process of leading and performing the work
 ## Source Traceability
 - PMBOK 8: Section 2.1 (Delivery Performance Domain)
 - Process Groups Practice Guide: Section 6.1
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A18 | Artifact | Primary artifact produced or updated by this process |
+| A14 | Artifact | Primary artifact produced or updated by this process |
+| SKL-04-01 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Are work authorization systems in place to control when and how work begins?
+2. Are issues, impediments, and action items tracked and resolved systematically?
+3. Are approved change requests implemented and reflected in updated documents?
+4. Is project work progress compared to the approved management plan regularly?
+5. Are resource assignments and team performance monitored against the plan?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

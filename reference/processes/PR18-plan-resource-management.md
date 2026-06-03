@@ -64,3 +64,28 @@ Plan Resource Management is the process of defining how to estimate, acquire, ma
 ## Source Traceability
 - PMBOK 8: Section 2.6 (Resources Performance Domain)
 - Process Groups Practice Guide: Section 5.15 (Plan Resource Management)
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A25 | Artifact | Primary artifact produced or updated by this process |
+| A26 | Artifact | Primary artifact produced or updated by this process |
+| SKL-03-10 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Are resource roles, skills, and quantities defined for each work package?
+2. Is the resource breakdown structure (RBS) aligned with the WBS?
+3. Are resource acquisition strategies (hire, contract, train) explicitly documented?
+4. Are team development and performance management approaches defined?
+5. Is the resource management plan integrated with cost and schedule plans?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

@@ -111,3 +111,31 @@ Finalize all activities for the project, phase, or contract. Project or phase in
 - Depends on: PR32 (Validate Scope) — accepted deliverables
 - Depends on: PR41 (Control Procurements) — closed procurements
 - Terminal process: no downstream project processes
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A24 | Artifact | Primary artifact produced or updated by this process |
+| A30 | Artifact | Primary artifact produced or updated by this process |
+| A34 | Artifact | Primary artifact produced or updated by this process |
+| SKL-06-01 | Skill | Skill that executes this process |
+| SKL-06-09 | Skill | Skill that executes this process |
+| SKL-06-10 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Is formal stakeholder acceptance obtained for all deliverables before closure?
+2. Are lessons learned finalized, reviewed, and archived in the organizational knowledge base?
+3. Are all contracts and procurement activities formally closed?
+4. Is the benefits transition plan executed and benefits ownership confirmed?
+5. Are all resources formally released and records archived per retention policy?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

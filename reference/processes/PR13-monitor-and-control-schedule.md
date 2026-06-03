@@ -70,3 +70,28 @@ Monitor and Control Schedule is the process of monitoring the status of the proj
 ## Source Traceability
 - PMBOK 8: Section 2.3.2.3
 - Process Groups Practice Guide: Section 7 (Monitor and Control Schedule)
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A15 | Artifact | Primary artifact produced or updated by this process |
+| A17 | Artifact | Primary artifact produced or updated by this process |
+| SKL-05-04 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Is variance analysis performed against the approved schedule baseline?
+2. Are corrective and preventive actions documented and traceable to root causes?
+3. Is the Schedule Performance Index (SPI) calculated and reported?
+4. Are forecast completion dates updated and communicated to stakeholders?
+5. Are approved schedule changes reflected in an updated baseline?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

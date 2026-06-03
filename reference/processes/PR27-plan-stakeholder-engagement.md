@@ -64,3 +64,27 @@ Plan Stakeholder Engagement is the process of developing approaches to involve p
 ## Source Traceability
 - PMBOK 8: Section 2.5
 - Process Groups Practice Guide: Section 5.24
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A07 | Artifact | Primary artifact produced or updated by this process |
+| SKL-03-08 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Are stakeholder engagement strategies tailored to each stakeholder's influence and interest?
+2. Are desired vs current engagement levels documented for each key stakeholder?
+3. Is the engagement plan integrated with the communications management plan?
+4. Are escalation paths for disengaged or resistant stakeholders defined?
+5. Is the plan reviewed and updated at major lifecycle gates?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

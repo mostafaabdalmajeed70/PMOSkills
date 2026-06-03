@@ -67,3 +67,28 @@ Plan Quality Management is the process of identifying quality requirements and/o
 ## Source Traceability
 - PMBOK 8: Section 2.2.2.3 (Define Scope includes quality management plan)
 - Process Groups Practice Guide: Section 5.14
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A09 | Artifact | Primary artifact produced or updated by this process |
+| A38 | Artifact | Primary artifact produced or updated by this process |
+| SKL-04-02 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Are quality standards and metrics defined before execution begins?
+2. Is the cost of quality (CoQ) analysis documented in the plan?
+3. Are quality assurance and quality control activities clearly differentiated?
+4. Are quality roles, responsibilities, and escalation paths defined?
+5. Is the quality management plan integrated with the risk and scope management plans?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

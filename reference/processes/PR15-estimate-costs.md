@@ -66,3 +66,27 @@ Estimate Costs is the process of developing an approximation of the cost of reso
 ## Source Traceability
 - PMBOK 8: Section 2.4
 - Process Groups Practice Guide: Section 5.12
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A16 | Artifact | Primary artifact produced or updated by this process |
+| SKL-03-14 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Are cost estimates developed using at least two estimation techniques for cross-validation?
+2. Are resource rates and quantities validated against current market or organizational data?
+3. Is the basis of estimates documented for each cost component?
+4. Are cost reserves distinguished from management reserves in the estimate?
+5. Have analogous or parametric benchmarks been applied where historical data is available?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

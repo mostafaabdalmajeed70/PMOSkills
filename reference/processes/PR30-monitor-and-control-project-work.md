@@ -66,3 +66,28 @@ Monitor and Control Project Work is the process of tracking, reviewing, and repo
 ## Source Traceability
 - PMBOK 8: Section 2.9 (Measurement Performance Domain)
 - Process Groups Practice Guide: Section 7.1
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A17 | Artifact | Primary artifact produced or updated by this process |
+| A18 | Artifact | Primary artifact produced or updated by this process |
+| SKL-05-01 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Are performance metrics collected consistently against the approved baselines?
+2. Are earned value metrics (CPI, SPI) calculated and reported?
+3. Are forecasts (EAC, ETC) updated and communicated to stakeholders?
+4. Are issues and risks identified during monitoring escalated through defined channels?
+5. Are corrective and preventive actions tracked to closure?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

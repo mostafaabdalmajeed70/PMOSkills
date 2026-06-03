@@ -66,3 +66,27 @@ Determine Budget is the process of aggregating the estimated costs of individual
 ## Source Traceability
 - PMBOK 8: Section 2.4 (Key Concepts — cost baseline, reserves)
 - Process Groups Practice Guide: Section 5.13
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A16 | Artifact | Primary artifact produced or updated by this process |
+| SKL-03-07 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Does the budget reflect phased funding aligned to the project lifecycle?
+2. Is the cost performance baseline (PMB) formally approved and baselined?
+3. Are contingency reserves explicitly identified and linked to risk register entries?
+4. Are funding limits reconciled with the schedule to avoid cash flow issues?
+5. Is the budget integrated with the benefits management plan?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

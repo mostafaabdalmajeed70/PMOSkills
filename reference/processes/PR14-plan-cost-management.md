@@ -58,3 +58,27 @@ Plan Cost Management is the process of defining how the project costs will be es
 ## Source Traceability
 - PMBOK 8: Section 2.4
 - Process Groups Practice Guide: Section 5.11
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A16 | Artifact | Primary artifact produced or updated by this process |
+| SKL-03-07 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Are cost management policies aligned with organizational financial governance?
+2. Is the cost measurement baseline (EVM) approach documented?
+3. Are funding constraints and financing structures reflected in the plan?
+4. Are cost reporting thresholds and escalation triggers defined?
+5. Is the cost management plan integrated with the schedule and risk management plans?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |

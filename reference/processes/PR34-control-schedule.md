@@ -81,3 +81,28 @@ Monitor the status of the project to update the project schedule and manage chan
 ## Related Processes
 - Feeds into: PR31 (Perform Integrated Change Control)
 - Cross-links: PR35 (Control Costs), PR38 (Control Resources)
+
+---
+
+## Cross-References
+
+| Related Item | Type | Relationship |
+|---|---|---|
+| A15 | Artifact | Primary artifact produced or updated by this process |
+| A17 | Artifact | Primary artifact produced or updated by this process |
+| SKL-05-04 | Skill | Skill that executes this process |
+
+## Practitioner Notes
+
+Practitioners executing this process should seek answers to the following questions:
+1. Is schedule variance (SV) and SPI calculated and reported regularly?
+2. Are schedule compression options evaluated before corrective action is taken?
+3. Are forecast dates (EF) communicated to stakeholders?
+4. Are resource reallocation decisions documented and approved?
+5. Is the schedule baseline updated only through formal change control?
+
+## Change Log
+
+| Version | Date | Description | Author |
+|---|---|---|---|
+| 1.0.1 | 2026-06-03 | Added Cross-References, Practitioner Notes, and Change Log sections (F-12 Batch 4) | PMO Director |
