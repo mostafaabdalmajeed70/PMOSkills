@@ -6,6 +6,22 @@ version: "1.0.0"
 status: Active
 pmbok8_source: "PMBOK8 Guide §2.3.2.2"
 companion_ref_shortcode: PG-APG-5.10
+related_skills:
+  - SKL-03-06
+related_artifacts:
+  - A15
+related_skills:
+  - SKL-03-06
+related_artifacts:
+  - A15
+related_skills:
+  - SKL-03-06
+related_artifacts:
+  - A15
+related_skills:
+  - SKL-03-06
+related_artifacts:
+  - A15
 file_path: "reference/processes/PR12-develop-schedule.md"
 ---
 # PR12 — Develop Schedule

@@ -6,6 +6,11 @@ version: "1.0.0"
 status: Active
 pmbok8_source: "PMBOK8 Guide §2.2"
 companion_ref_shortcode: PG-APG-5.14
+related_skills:
+  - SKL-04-02
+related_artifacts:
+  - A09
+  - A38
 file_path: "reference/processes/PR17-plan-quality-management.md"
 ---
 # PR17 — Plan Quality Management

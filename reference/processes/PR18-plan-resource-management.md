@@ -6,6 +6,11 @@ version: "1.0.0"
 status: Active
 pmbok8_source: "PMBOK8 Guide §2.6"
 companion_ref_shortcode: PG-APG-5.15
+related_skills:
+  - SKL-03-10
+related_artifacts:
+  - A25
+  - A26
 file_path: "reference/processes/PR18-plan-resource-management.md"
 ---
 # PR18 — Plan Resource Management

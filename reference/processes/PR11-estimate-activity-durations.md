@@ -6,6 +6,18 @@ version: "1.0.0"
 status: Active
 pmbok8_source: "PMBOK8 Guide §2.3.2.2"
 companion_ref_shortcode: PG-APG-5.9
+related_skills:
+  - SKL-03-06
+related_artifacts:
+  - A15
+related_skills:
+  - SKL-03-06
+related_artifacts:
+  - A15
+related_skills:
+  - SKL-03-06
+related_artifacts:
+  - A15
 file_path: "reference/processes/PR11-estimate-activity-durations.md"
 ---
 # PR11 — Estimate Activity Durations

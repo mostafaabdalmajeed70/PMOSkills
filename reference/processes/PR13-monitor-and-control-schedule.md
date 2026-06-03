@@ -6,6 +6,11 @@ version: "1.0.0"
 status: Active
 pmbok8_source: "PMBOK8 Guide §2.3.2.3"
 companion_ref_shortcode: PG-APG-7.2
+related_skills:
+  - SKL-05-04
+related_artifacts:
+  - A15
+  - A17
 file_path: "reference/processes/PR13-monitor-and-control-schedule.md"
 ---
 # PR13 — Monitor and Control Schedule

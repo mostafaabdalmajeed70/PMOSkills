@@ -6,6 +6,10 @@ version: "1.0.0"
 status: Active
 pmbok8_source: "PMBOK8 Guide §2.5"
 companion_ref_shortcode: PG-APG-5.17
+related_skills:
+  - SKL-03-09
+related_artifacts:
+  - A28
 file_path: "reference/processes/PR20-plan-communications-management.md"
 ---
 # PR20 — Plan Communications Management
