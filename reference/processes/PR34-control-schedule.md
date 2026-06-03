@@ -6,6 +6,11 @@ version: "1.0.0"
 status: Active
 pmbok8_source: "PMBOK8 Guide §2.1"
 companion_ref_shortcode: PG-APG
+related_skills:
+  - SKL-05-04
+related_artifacts:
+  - A15
+  - A17
 file_path: "reference/processes/PR34-control-schedule.md"
 ---
 # PR34 — Control Schedule

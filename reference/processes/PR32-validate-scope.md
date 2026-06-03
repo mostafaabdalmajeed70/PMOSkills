@@ -6,6 +6,11 @@ version: "1.0.0"
 status: Active
 pmbok8_source: "PMBOK8 Guide §2.1"
 companion_ref_shortcode: PG-APG
+related_skills:
+  - SKL-05-03
+related_artifacts:
+  - A08
+  - A17
 file_path: "reference/processes/PR32-validate-scope.md"
 ---
 # PR32 — Validate Scope

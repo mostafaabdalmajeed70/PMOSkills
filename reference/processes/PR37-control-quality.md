@@ -6,6 +6,11 @@ version: "1.0.0"
 status: Active
 pmbok8_source: "PMBOK8 Guide §2.1"
 companion_ref_shortcode: PG-APG
+related_skills:
+  - SKL-05-09
+related_artifacts:
+  - A38
+  - A17
 file_path: "reference/processes/PR37-control-quality.md"
 ---
 # PR37 — Control Quality

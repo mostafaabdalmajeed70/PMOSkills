@@ -6,6 +6,14 @@ version: "1.0.0"
 status: Active
 pmbok8_source: "PMBOK8 Guide §2.1"
 companion_ref_shortcode: PG-APG
+related_skills:
+  - SKL-06-01
+  - SKL-06-09
+  - SKL-06-10
+related_artifacts:
+  - A24
+  - A30
+  - A34
 file_path: "reference/processes/PR40-close-project-or-phase.md"
 ---
 # PR40 — Close Project or Phase
