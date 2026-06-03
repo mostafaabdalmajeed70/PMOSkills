@@ -98,7 +98,7 @@ This skill orchestrates the creation of A06. It does not directly produce the su
 ### Step 6 — Baseline A06
 1. Record version (1.0.0), baseline date, and approver in A06 YAML and Change Log.
 2. Distribute to all project team leads.
-3. Update SKILL-REGISTRY.md — mark SKL-03-01 as Draft · Untested.
+3. Update SKILL-REGISTRY.md — mark SKL-03-01 as Active · Tested.
 
 ---
 
