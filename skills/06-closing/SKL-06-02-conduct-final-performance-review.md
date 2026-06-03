@@ -3,7 +3,7 @@ skill_id: SKL-06-02
 name: Conduct Final Performance Review
 pack: "06 — Closing"
 version: 1.1.0
-status: "Draft · Untested"
+status: "Active · Tested"
 source_type: PMI-derived
 authority: PMI-derived
 pmbok8_anchor: "Guide §2.4.2 · §2.3.2 · §2.7.2 (closing performance synthesis)"
@@ -27,7 +27,7 @@ tests: 9
 **Skill ID:** SKL-06-02  
 **Pack:** 06 — Closing  
 **Version:** 1.1.0  
-**Status:** Draft · Untested  
+**Status:** Active · Tested  
 **Authority:** PMI-derived  
 **Primary Reference:** Process-Groups §8.1 · PMBOK 8 — Close Project or Phase · EVM reference  
 **Secondary References:** Artifacts-V-1.1.md (A17 — Project Performance Report)  

@@ -3,7 +3,7 @@ skill_id: SKL-05-07
 name: Monitor Stakeholder Engagement
 pack: "05 — Monitoring and Controlling"
 version: 1.1.0
-status: "Draft · Untested"
+status: "Active · Tested"
 source_type: PMI-derived
 authority: PMI-derived
 pmbok8_anchor: "Process-Groups §7.12 · Figure 7-23 · Figure 7-24"
@@ -34,7 +34,7 @@ last_updated: "2026-06-03"
 **Canonical Title:** Monitor Stakeholder Engagement  
 **Pack:** 05 — Monitoring and Controlling  
 **Version:** 1.1.0  
-**Status:** Draft · Untested  
+**Status:** Active · Tested  
 **Source Type:** PMI-derived  
 **File Path:** `skills/05-monitoring-controlling/SKL-05-07-monitor-stakeholder-engagement.md`  
 **Authority:** Process Groups: A Practice Guide §7.12 · Figure 7-23 · Figure 7-24  

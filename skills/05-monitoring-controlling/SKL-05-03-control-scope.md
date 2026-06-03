@@ -3,7 +3,7 @@ skill_id: SKL-05-03
 name: Control Scope
 pack: "05 — Monitoring and Controlling"
 version: 1.1.0
-status: "Draft · Untested"
+status: "Active · Tested"
 source_type: PMI-derived
 authority: PMI-derived
 pmbok8_anchor: "Process-Groups §7.4 · Figure 7-7 · Figure 7-8"
@@ -32,7 +32,7 @@ last_updated: "2026-06-03"
 **Canonical Title:** Control Scope  
 **Pack:** 05 — Monitoring and Controlling  
 **Version:** 1.1.0  
-**Status:** Draft · Untested  
+**Status:** Active · Tested  
 **Source Type:** PMI-derived  
 **File Path:** `skills/05-monitoring-controlling/SKL-05-03-control-scope.md`  
 **Authority:** Process Groups: A Practice Guide §7.4 · Figure 7-7 · Figure 7-8  

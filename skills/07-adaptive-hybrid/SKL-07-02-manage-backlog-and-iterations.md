@@ -3,7 +3,7 @@ skill_id: SKL-07-02
 name: Manage Backlog and Iterations
 pack: "07 — Adaptive & Hybrid"
 version: 1.1.0
-status: "Draft · Untested"
+status: "Active · Tested"
 source_type: PMI-derived
 authority: PMI-derived
 pmbok8_anchor: "APG §5 · PMBOK8 Guide §2.3 (Development Approach and Life Cycle)"
@@ -32,7 +32,7 @@ tests: 9
 **Skill ID:** SKL-07-02  
 **Pack:** 07 — Adaptive & Hybrid  
 **Version:** 1.1.0  
-**Status:** Draft · Untested  
+**Status:** Active · Tested  
 **Authority:** PMI-derived  
 **Primary Reference:** APG §5 (Delivering in an Agile Environment) · PMBOK 8 Guide §2.3 (Development Approach and Life Cycle)  
 **Secondary References:** APG §3.1.4 (Agile Life Cycles) · APG §3.2 (Mixing Agile Approaches) · Artifacts-V-1.1.md (A08 — Backlog)  

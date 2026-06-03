@@ -3,7 +3,7 @@ skill_id: SKL-01-01
 skill_name: Establish PM Governance Framework
 pack: "01 — Organizational Setup"
 version: "1.0.0"
-status: "Draft · Tests Defined"
+status: "Active · Tested"
 source_type: PMI-derived
 primary_artifact_output: "A05 — Context Register (Governance section)"
 artifacts_updated:
@@ -25,7 +25,7 @@ tests: 9
 
 **Skill ID:** SKL-01-01  
 **Pack:** 01 — Organizational Setup  
-**Status:** Draft · Tests Defined  
+**Status:** Active · Tested  
 **Source type:** PMI-derived  
 **PMBOK8 anchor:** Standard §3.6 Be an Accountable Leader · Guide §2.1 Governance Domain · Guide §4.5.2  
 **File path:** `skills/01-organizational-setup/SKL-01-01-establish-pm-governance-framework.md`

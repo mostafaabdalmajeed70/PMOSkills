@@ -3,7 +3,7 @@
 **Skill ID:** SKL-03-10  
 **Pack:** 03 — Planning  
 **Version:** 1.0.0-draft  
-**Status:** Draft · Tests Defined  
+**Status:** Active · Tested  
 **Source Type:** PMI-derived  
 **File Path:** `skills/03-planning/SKL-03-10-identify-risks.md`  
 **Authority:** PMBOK8 Guide §2.7.2.2 · Figure 2-49 · §2.7.1 Key Concepts · A19 Risk Management Record (Artifacts-V-1.0.5)  

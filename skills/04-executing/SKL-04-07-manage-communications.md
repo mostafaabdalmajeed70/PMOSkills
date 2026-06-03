@@ -3,7 +3,7 @@ skill_id: SKL-04-07
 skill_name: Manage Communications
 pack: "04 — Executing"
 version: "1.1.0"
-status: "Draft · Tests Defined"
+status: "Active · Tested"
 source_type: PMI-derived
 primary_artifact: "A28 — Communications and Reporting Record (delivery log)"
 artifacts_updated:
@@ -25,7 +25,7 @@ tests: 8
 # SKL-04-07 — Manage Communications
 
 **Pack:** 04 — Executing
-**Status:** Draft · Tests Defined
+**Status:** Active · Tested
 **Primary Artifact:** A28 — Communications and Reporting Record
 **PMBOK8 Anchor:** Guide §2.5.2.5 · Figure 2-37
 

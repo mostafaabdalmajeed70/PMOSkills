@@ -3,7 +3,7 @@ skill_id: SKL-04-03
 skill_name: Acquire Resources
 pack: "04 — Executing"
 version: "1.1.0"
-status: "Draft · Tests Defined"
+status: "Active · Tested"
 source_type: PMI-derived
 primary_artifact: "A25 — Team Operating and Responsibility Record"
 artifacts_updated:
@@ -27,7 +27,7 @@ tests: 8
 # SKL-04-03 — Acquire Resources
 
 **Pack:** 04 — Executing
-**Status:** Draft · Tests Defined
+**Status:** Active · Tested
 **Primary Artifact:** A25 — Team Operating and Responsibility Record
 **PMBOK8 Anchor:** Guide §2.6.2.3 · Figure 2-43
 

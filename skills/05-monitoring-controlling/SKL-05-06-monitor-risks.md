@@ -3,7 +3,7 @@ skill_id: SKL-05-06
 name: Monitor Risks
 pack: "05 — Monitoring and Controlling"
 version: 1.1.0
-status: "Draft · Untested"
+status: "Active · Tested"
 source_type: PMI-derived
 authority: PMI-derived
 pmbok8_anchor: "Process-Groups §7.10 · Figure 7-19 · Figure 7-20"
@@ -31,7 +31,7 @@ last_updated: "2026-06-03"
 **Canonical Title:** Monitor Risks  
 **Pack:** 05 — Monitoring and Controlling  
 **Version:** 1.1.0  
-**Status:** Draft · Untested  
+**Status:** Active · Tested  
 **Source Type:** PMI-derived  
 **File Path:** `skills/05-monitoring-controlling/SKL-05-06-monitor-risks.md`  
 **Authority:** Process Groups: A Practice Guide §7.10 · Figure 7-19 · Figure 7-20  

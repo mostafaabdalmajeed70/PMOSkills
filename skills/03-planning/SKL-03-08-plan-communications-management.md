@@ -2,7 +2,7 @@
 
 **Skill ID:** SKL-03-08  
 **Pack:** 03 — Planning  
-**Status:** Draft · Tests Defined  
+**Status:** Active · Tested  
 **Source type:** PMI-derived  
 **PMBOK8 anchor:** Guide §2.4.6.1 Plan Communications Management · Guide §2.4 Resources Domain (Comms)  
 **File path:** `skills/03-planning/SKL-03-08-plan-communications-management.md`

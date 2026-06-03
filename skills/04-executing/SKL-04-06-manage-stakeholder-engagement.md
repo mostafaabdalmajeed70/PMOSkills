@@ -3,7 +3,7 @@ skill_id: SKL-04-06
 skill_name: Manage Stakeholder Engagement
 pack: "04 — Executing"
 version: "1.1.0"
-status: "Draft · Tests Defined"
+status: "Active · Tested"
 source_type: PMI-derived
 primary_artifact: "A07 — Stakeholder Register and Engagement Strategy (execution engagement log)"
 artifacts_updated:
@@ -25,7 +25,7 @@ tests: 8
 # SKL-04-06 — Manage Stakeholder Engagement
 
 **Pack:** 04 — Executing
-**Status:** Draft · Tests Defined
+**Status:** Active · Tested
 **Primary Artifact:** A07 — Stakeholder Register and Engagement Strategy
 **PMBOK8 Anchor:** Guide §2.5.2.4 · Figure 2-36
 

@@ -3,7 +3,7 @@ skill_id: SKL-04-01
 skill_name: Direct and Manage Project Work
 pack: "04 — Executing"
 version: "1.1.0"
-status: "Draft · Tests Defined"
+status: "Active · Tested"
 source_type: PMI-derived
 primary_artifact: "A18 — Issue, Impediment and Action Log"
 artifacts_updated:
@@ -26,7 +26,7 @@ tests: 9
 # SKL-04-01 — Direct and Manage Project Work
 
 **Pack:** 04 — Executing  
-**Status:** Draft · Tests Defined  
+**Status:** Active · Tested  
 **Primary Artifact:** A18 — Issue, Impediment and Action Log  
 **PMBOK8 Anchor:** Guide §2.1.6.3 · Figure 2-5
 

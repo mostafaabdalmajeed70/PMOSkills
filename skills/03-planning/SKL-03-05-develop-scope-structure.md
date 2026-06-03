@@ -3,7 +3,7 @@ skill_id: SKL-03-05
 skill_name: Develop Scope Structure (WBS)
 pack: "03 — Planning"
 version: "1.0.0"
-status: "Draft · Tests Defined"
+status: "Active · Tested"
 source_type: PMI-derived
 primary_artifact_output: "A11 — Work Breakdown Structure"
 artifacts_updated:
@@ -27,7 +27,7 @@ tests: 7
 
 **Skill ID:** SKL-03-05  
 **Pack:** 03 — Planning  
-**Status:** Draft · Tests Defined  
+**Status:** Active · Tested  
 **Source type:** PMI-derived  
 **PMBOK8 anchor:** Guide §2.2.6.4 Create WBS · Guide §2.2 Scope Domain  
 **File path:** `skills/03-planning/SKL-03-05-develop-scope-structure.md`

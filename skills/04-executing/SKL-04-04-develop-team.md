@@ -3,7 +3,7 @@ skill_id: SKL-04-04
 skill_name: Develop Team
 pack: "04 — Executing"
 version: "1.1.0"
-status: "Draft · Tests Defined"
+status: "Active · Tested"
 source_type: PMI-derived
 primary_artifact: "A25 — Team Operating and Responsibility Record (team development section)"
 artifacts_updated:
@@ -24,7 +24,7 @@ tests: 7
 # SKL-04-04 — Develop Team
 
 **Pack:** 04 — Executing
-**Status:** Draft · Tests Defined
+**Status:** Active · Tested
 **Primary Artifact:** A25 — Team Operating and Responsibility Record
 **PMBOK8 Anchor:** Guide §2.6.2.4 · Figure 2-44
 

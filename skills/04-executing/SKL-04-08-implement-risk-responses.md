@@ -3,7 +3,7 @@ skill_id: SKL-04-08
 skill_name: Implement Risk Responses
 pack: "04 — Executing"
 version: "1.1.0"
-status: "Draft · Tests Defined"
+status: "Active · Tested"
 source_type: PMI-derived
 primary_artifact: "A19 — Risk Management Record (response implementation log)"
 artifacts_updated:
@@ -26,7 +26,7 @@ tests: 8
 # SKL-04-08 — Implement Risk Responses
 
 **Pack:** 04 — Executing
-**Status:** Draft · Tests Defined
+**Status:** Active · Tested
 **Primary Artifact:** A19 — Risk Management Record
 **PMBOK8 Anchor:** Guide §2.7.2.5 · Figure 2-52
 

@@ -3,7 +3,7 @@
 **Skill ID:** SKL-03-12  
 **Pack:** 03 — Planning  
 **Version:** 1.0.0-draft  
-**Status:** Draft · Tests Defined  
+**Status:** Active · Tested  
 **Source Type:** PMI-derived  
 **File Path:** `skills/03-planning/SKL-03-12-plan-risk-responses.md`  
 **Authority:** PMBOK8 Guide §2.7.2.4 · Figure 2-51 · §2.7.1 Key Concepts · §5 (Strategies for Threats, Strategies for Opportunities, Contingent Response Strategies, Strategies for Overall Project Risk) · A19 Risk Management Record · A20 Quantitative Risk and Reserve Decision Record · A16 Financial Management and Cost Baseline Record (Artifacts-V-1.0.5)  

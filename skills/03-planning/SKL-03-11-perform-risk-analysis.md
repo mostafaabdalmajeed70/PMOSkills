@@ -3,7 +3,7 @@
 **Skill ID:** SKL-03-11  
 **Pack:** 03 — Planning  
 **Version:** 1.0.0-draft  
-**Status:** Draft · Tests Defined  
+**Status:** Active · Tested  
 **Source Type:** PMI-derived  
 **File Path:** `skills/03-planning/SKL-03-11-perform-risk-analysis.md`  
 **Authority:** PMBOK8 Guide §2.7.2.3 · Figure 2-50 · §2.7.1 Key Concepts · Figure 5-14 (P×I Matrix with Scoring) · Tools and Techniques §5 · A19 Risk Management Record · A20 Quantitative Risk and Reserve Decision Record (Artifacts-V-1.0.5)  

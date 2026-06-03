@@ -3,7 +3,7 @@ skill_id: SKL-06-03
 name: Capture and Archive Lessons Learned
 pack: "06 — Closing"
 version: 1.1.0
-status: "Draft · Untested"
+status: "Active · Tested"
 source_type: PMI-derived
 authority: PMI-derived
 pmbok8_anchor: "Guide §2.1.6.4 Manage Project Knowledge (closing activation)"
@@ -28,7 +28,7 @@ tests: 9
 **Skill ID:** SKL-06-03  
 **Pack:** 06 — Closing  
 **Version:** 1.1.0  
-**Status:** Draft · Untested  
+**Status:** Active · Tested  
 **Authority:** PMI-derived  
 **Primary Reference:** Process-Groups §8.1 · PMBOK 8 — Close Project or Phase · Manage Project Knowledge  
 **Secondary References:** Artifacts-V-1.1.md (A21 — Lessons Learned Register · A05 — OPA)  

@@ -2,7 +2,7 @@
 skill_id: SKL-02-01
 skill_name: "Project Charter Creation"
 pack: "02 — Initiating"
-status: "Draft · Tests Defined"
+status: "Active · Tested"
 source_type: PMI-derived
 primary_artifact_output: "A04 — Project Charter"
 artifacts_updated:
@@ -27,7 +27,7 @@ tests: 10
 
 **Skill ID:** SKL-02-01  
 **Pack:** 02 — Initiating  
-**Status:** Draft · Tests Defined  
+**Status:** Active · Tested  
 **Source type:** PMI-derived  
 **PMBOK8 anchor:** Guide §2.1.6.1 Initiate Project or Phase · Guide §2.1 Governance Domain  
 **File path:** `skills/02-initiating/SKL-02-01-project-charter.md`

@@ -3,7 +3,7 @@ skill_id: SKL-03-01
 skill_name: "Integrate and Align Project Plans"
 pack: "03 — Planning"
 version: "1.0.0"
-status: "Draft · Tests Defined"
+status: "Active · Tested"
 source_type: PMI-derived
 primary_artifact_output: "A06 — Project Management Plan"
 artifacts_updated:
@@ -32,7 +32,7 @@ tests: 8
 
 **Skill ID:** SKL-03-01  
 **Pack:** 03 — Planning  
-**Status:** Draft · Tests Defined  
+**Status:** Active · Tested  
 **Source type:** PMI-derived  
 **PMBOK8 anchor:** Guide §2.3.6.1 Develop Project Management Plan · Guide §2.3 Schedule Domain  
 **File path:** `skills/03-planning/SKL-03-01-integrate-align-project-plans.md`

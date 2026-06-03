@@ -3,7 +3,7 @@ skill_id: SKL-07-01
 name: Select and Tailor Lifecycle Approach
 pack: "07 — Adaptive & Hybrid"
 version: 1.1.0
-status: "Draft · Untested"
+status: "Active · Tested"
 source_type: PMI-derived
 authority: PMI-derived
 pmbok8_anchor: "PMBOK8 Standard §4.2–4.3 · Guide §2.3 (Development Approach and Life Cycle Performance Domain)"
@@ -30,7 +30,7 @@ tests: 9
 **Skill ID:** SKL-07-01  
 **Pack:** 07 — Adaptive & Hybrid  
 **Version:** 1.1.0  
-**Status:** Draft · Untested  
+**Status:** Active · Tested  
 **Authority:** PMI-derived  
 **Primary Reference:** PMBOK 8 Standard §4.2–4.3 · PMBOK 8 Guide §2.3 (Development Approach and Life Cycle Performance Domain)  
 **Secondary References:** APG §3 (Life Cycle Selection) · APG §3.3 (Project Factors That Influence Tailoring) · DA Toolkit (Hybrid Levels 1–3)  

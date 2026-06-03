@@ -3,7 +3,7 @@ skill_id: SKL-03-16
 skill_name: Plan Resource Management
 pack: "03 — Planning"
 version: "1.0.0"
-status: "Draft · Tests Defined"
+status: "Active · Tested"
 source_type: PMI-derived
 primary_artifact_output: "A06 — Project Management Plan (Resource Management section)"
 artifacts_updated:
@@ -27,7 +27,7 @@ tests: 7
 
 **Skill ID:** SKL-03-16  
 **Pack:** 03 — Planning  
-**Status:** Draft · Tests Defined  
+**Status:** Active · Tested  
 **Source type:** PMI-derived  
 **PMBOK8 anchor:** Guide §2.6.6.1 Plan Resource Management · Guide §2.6 Resources Domain  
 **File path:** `skills/03-planning/SKL-03-16-plan-resource-management.md`

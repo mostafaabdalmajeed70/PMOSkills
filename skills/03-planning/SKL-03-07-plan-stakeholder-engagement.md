@@ -1,7 +1,7 @@
 # SKL-03-07 — Plan Stakeholder Engagement
 **Skill ID:** SKL-03-07  
 **Pack:** 03 — Planning  
-**Status:** Draft · Tests Defined  
+**Status:** Active · Tested  
 **Source type:** PMI-derived  
 **PMBOK8 anchor:** Guide §2.5.6.2 Plan Stakeholder Engagement · Guide §2.5 Stakeholders Domain  
 **File path:** `skills/03-planning/SKL-03-07-plan-stakeholder-engagement.md`

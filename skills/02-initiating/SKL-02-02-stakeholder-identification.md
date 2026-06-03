@@ -3,7 +3,7 @@ skill_id: SKL-02-02
 skill_name: Stakeholder Identification
 pack: "02 — Initiating"
 version: "1.0.0"
-status: "Draft · Tests Defined"
+status: "Active · Tested"
 source_type: PMI-derived
 primary_artifact_output: "A07 — Stakeholder Register"
 artifacts_updated:
@@ -28,7 +28,7 @@ tests: 10
 
 **Skill ID:** SKL-02-02  
 **Pack:** 02 — Initiating  
-**Status:** Draft · Tests Defined  
+**Status:** Active · Tested  
 **Source type:** PMI-derived  
 **PMBOK8 anchor:** Guide §2.5.6.1 Identify Stakeholders · Guide §2.5 Stakeholders Domain · Standard §3.8 Build an Empowered Culture  
 **File path:** `skills/02-initiating/SKL-02-02-stakeholder-identification.md`

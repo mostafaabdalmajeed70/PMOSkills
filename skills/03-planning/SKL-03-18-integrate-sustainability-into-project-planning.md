@@ -3,7 +3,7 @@ skill_id: SKL-03-18
 skill_name: Integrate Sustainability into Project Planning
 pack: "03 — Planning"
 version: "1.0.0"
-status: "Draft · Tests Defined"
+status: "Active · Tested"
 source_type: PMI-derived
 primary_artifact_output: "A06 — Project Management Plan (Sustainability section)"
 artifacts_updated:
@@ -27,7 +27,7 @@ tests: 6
 
 **Skill ID:** SKL-03-18  
 **Pack:** 03 — Planning  
-**Status:** Draft · Tests Defined  
+**Status:** Active · Tested  
 **Source type:** PMI-derived  
 **PMBOK8 anchor:** Standard §3.7 Integrate Sustainability Within All Project Areas · Guide §2.1.6.5  
 **File path:** `skills/03-planning/SKL-03-18-integrate-sustainability-into-project-planning.md`

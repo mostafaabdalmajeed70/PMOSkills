@@ -3,7 +3,7 @@ skill_id: SKL-07-03
 name: Facilitate Retrospectives and Continuous Improvement
 pack: "07 — Adaptive & Hybrid"
 version: 1.1.0
-status: "Draft · Untested"
+status: "Active · Tested"
 source_type: PMI-derived
 authority: PMI-derived
 pmbok8_anchor: "PMBOK8 Standard Principle 12 · APG §5 · APG §3.3 Table 3-2"
@@ -30,7 +30,7 @@ tests: 9
 **Skill ID:** SKL-07-03  
 **Pack:** 07 — Adaptive & Hybrid  
 **Version:** 1.1.0  
-**Status:** Draft · Untested  
+**Status:** Active · Tested  
 **Authority:** PMI-derived  
 **Primary Reference:** APG §5 (Delivering in an Agile Environment) · PMBOK 8 Standard Principle 12 (continuous improvement) · PMBOK 8 Guide §2.3  
 **Secondary References:** APG §3.3 Table 3-2 (Tailoring options) · Artifacts-V-1.0.2.md (Item 29 — Continuous Adaptation Tracking Loop) · Artifacts-V-1.1.md (A21 — Lessons Learned Register)  

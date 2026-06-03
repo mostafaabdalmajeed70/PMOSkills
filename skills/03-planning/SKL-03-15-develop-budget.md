@@ -3,7 +3,7 @@ skill_id: SKL-03-15
 skill_name: Develop Budget
 pack: "03 — Planning"
 version: "1.0.0"
-status: "Draft · Tests Defined"
+status: "Active · Tested"
 source_type: PMI-derived
 primary_artifact_output: "A16 — Cost Baseline"
 artifacts_updated:
@@ -25,7 +25,7 @@ tests: 7
 
 **Skill ID:** SKL-03-15  
 **Pack:** 03 — Planning  
-**Status:** Draft · Tests Defined  
+**Status:** Active · Tested  
 **Source type:** PMI-derived  
 **PMBOK8 anchor:** Guide §2.4.6.3 Determine Budget · Guide §2.4 Finance Domain  
 **File path:** `skills/03-planning/SKL-03-15-develop-budget.md`

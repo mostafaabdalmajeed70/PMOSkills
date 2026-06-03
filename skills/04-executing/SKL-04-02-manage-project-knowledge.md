@@ -3,7 +3,7 @@ skill_id: SKL-04-02
 skill_name: Manage Project Knowledge
 pack: "04 — Executing"
 version: "1.1.0"
-status: "Draft · Tests Defined"
+status: "Active · Tested"
 source_type: PMI-derived
 primary_artifact: "A21 — Lessons Learned Record"
 artifacts_updated:
@@ -29,7 +29,7 @@ tests: 9
 # SKL-04-02 — Manage Project Knowledge
 
 **Pack:** 04 — Executing  
-**Status:** Draft · Tests Defined  
+**Status:** Active · Tested  
 **Primary Artifact:** A21 — Lessons Learned Record  
 **PMBOK8 Anchor:** Guide §2.1.6.4 · Figure 2-6 · Stewardship Principle
 

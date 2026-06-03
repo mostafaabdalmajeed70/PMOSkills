@@ -3,7 +3,7 @@ skill_id: SKL-04-09
 skill_name: Conduct Procurements
 pack: "04 — Executing"
 version: "1.1.0"
-status: "Draft · Tests Defined"
+status: "Active · Tested"
 source_type: PMI-derived
 primary_artifact: "A31 — Procurement and Supplier Management Record"
 artifacts_updated:
@@ -29,7 +29,7 @@ tests: 9
 # SKL-04-09 — Conduct Procurements
 
 **Pack:** 04 — Executing
-**Status:** Draft · Tests Defined
+**Status:** Active · Tested
 **Primary Artifact:** A31 — Procurement and Supplier Management Record
 **PMBOK8 Anchor:** Guide §2.8 Procurement Management
 

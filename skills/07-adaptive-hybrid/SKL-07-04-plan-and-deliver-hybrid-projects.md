@@ -3,7 +3,7 @@ skill_id: SKL-07-04
 name: Plan and Deliver Hybrid Projects
 pack: "07 — Adaptive & Hybrid"
 version: 1.1.0
-status: "Draft · Untested"
+status: "Active · Tested"
 source_type: PMI-derived
 authority: PMI-derived
 pmbok8_anchor: "PMBOK8 Standard §4.2.3 · APG §3.1.6–3.1.11 · DA Hybrid Levels 1–3"
@@ -33,7 +33,7 @@ tests: 9
 **Skill ID:** SKL-07-04  
 **Pack:** 07 — Adaptive & Hybrid  
 **Version:** 1.1.0  
-**Status:** Draft · Untested  
+**Status:** Active · Tested  
 **Authority:** PMI-derived  
 **Primary Reference:** PMBOK 8 Standard §4.2.3 (Hybrid Approaches) · PMBOK 8 Guide §2.3 · APG §3.1.6–3.1.11  
 **Secondary References:** APG §3.1.7–3.1.10 (Hybrid Patterns) · DA Toolkit (Hybrid Levels 1–3) · Artifacts-V-1.0.2.md (Item 75 — Approach-Tailored Scope Structure Elaboration Blueprint)  

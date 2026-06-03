@@ -3,7 +3,7 @@ skill_id: SKL-05-01
 name: Monitor and Control Project Work
 pack: "05 — Monitoring and Controlling"
 version: 1.1.0
-status: "Draft · Untested"
+status: "Active · Tested"
 source_type: PMI-derived
 authority: PMI-derived
 pmbok8_anchor: "Process-Groups §7.1 · Figure 7-1 · Figure 7-2"
@@ -38,7 +38,7 @@ last_updated: "2026-06-03"
 **Canonical Title:** Monitor and Control Project Work  
 **Pack:** 05 — Monitoring and Controlling  
 **Version:** 1.1.0  
-**Status:** Draft · Untested  
+**Status:** Active · Tested  
 **Source Type:** PMI-derived  
 **File Path:** `skills/05-monitoring-controlling/SKL-05-01-monitor-and-control-project-work.md`  
 **Authority:** Process Groups: A Practice Guide §7.1 · Figure 7-1 · Figure 7-2  

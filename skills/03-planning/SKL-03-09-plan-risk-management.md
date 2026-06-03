@@ -2,7 +2,7 @@
 
 **Skill ID:** SKL-03-09  
 **Pack:** 03 — Planning  
-**Status:** Draft · Tests Defined  
+**Status:** Active · Tested  
 **Source type:** PMI-derived  
 **PMBOK8 anchor:** Guide §2.7.6.1 Plan Risk Management · Guide §2.7 Risk Domain  
 **File path:** `skills/03-planning/SKL-03-09-plan-risk-management.md`
