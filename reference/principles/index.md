@@ -7,7 +7,7 @@ status: Active
 edition: PMBOK8
 pmbok8_source: "PMBOK8 Standard §3 — Project Management Principles"
 authority: PMI-derived
-file_path: "reference/principles/00-index.md"
+file_path: "reference/principles/index.md"
 last_updated: "2026-06-03"
 ---
 

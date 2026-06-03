@@ -5,7 +5,7 @@ ref_name: "PMBOK 8 Process Records Index"
 version: "1.0.0"
 status: Active
 pmbok8_source: "Process Groups: A Practice Guide"
-file_path: "reference/processes/00-index.md"
+file_path: "reference/processes/index.md"
 ---
 
 # PMBOK 8 Process Records Index

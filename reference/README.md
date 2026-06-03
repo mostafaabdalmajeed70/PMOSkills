@@ -21,17 +21,17 @@ reference/
 ├── README.md                                    ← This file
 │
 ├── processes/                                   ← ✅ COMPLETE (42 files)
-│   ├── 00-index.md                              ← Master index of all 40 processes
+│   ├── index.md                              ← Master index of all 40 processes
 │   ├── index.md                                 ← Navigation index
 │   └── PR01–PR40 *.md                           ← One file per PMBOK 8 process (40 files)
 │
 ├── principles/                                  ← ✅ COMPLETE (14 files)
-│   ├── 00-index.md                              ← Master index of principles
+│   ├── index.md                              ← Master index of principles
 │   ├── index.md                                 ← Navigation index
 │   └── P01–P12 *.md                             ← One file per PMBOK 8 principle (12 files)
 │
 ├── performance-domains/                         ← ✅ COMPLETE (10 files)
-│   ├── 00-index.md                              ← Master index of domains
+│   ├── index.md                              ← Master index of domains
 │   ├── index.md                                 ← Navigation index
 │   └── PD01–PD08 *.md                           ← One file per performance domain (8 files)
 │
@@ -86,10 +86,10 @@ reference/
 
 | File | Description |
 |---|---|
-| `principles/00-index.md` | Master index of all 12 PMBOK principles |
-| `performance-domains/00-index.md` | Master index of all 8 performance domains |
+| `principles/index.md` | Master index of all 12 PMBOK principles |
+| `performance-domains/index.md` | Master index of all 8 performance domains |
 | `focus-areas/index.md` | Lifecycle phase mappings |
-| `processes/00-index.md` | Master index of all 40 PMBOK processes |
+| `processes/index.md` | Master index of all 40 PMBOK processes |
 | `processes/PR01–PR40` | Individual process records with I/T&T/O |
 | `knowledge-areas/KA-Crossref-Index.md` | KA → Process cross-reference |
 | `tools-techniques/TT-Taxonomy-Index.md` | Full TT taxonomy (PMBOK 8) |
