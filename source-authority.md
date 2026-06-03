@@ -42,6 +42,9 @@ between sources.
 
 ### Tier 1 — Primary Authority: PMI Standards and PMBOK 8
 
+- 40 nonprescriptive processes from PMBOK 8 Guide Table 2-1 (PR01–PR40 map directly).
+- PR41 is a synthesis/reference process maintained by the repository and is not a PMI-defined process.
+
 > **Default source of truth for all terminology, concepts, processes, performance
 > domains, focus areas, principles, governance, planning, delivery, stakeholder
 > engagement, risk, value, and lifecycle thinking.**
