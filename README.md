@@ -219,7 +219,7 @@ PMOSkills/
 │   ├── 06-closing/                  ← Transition, archivals, reviews (3 skills)
 │   └── 07-adaptive-hybrid/          ← Backlogs, iterations, hybrids (4 skills)
 │
-├── artifacts/                       ← Lean and Audited Artifacts Catalog (78 templates)
+├── artifacts/                       ← Lean and Audited Artifacts Catalog (38 artifact IDs · 92 physical files)
 │   ├── initiating/                  ← Project startup baselines (A01, A02, A04)
 │   ├── planning-and-baselines/      ← Subsidiary management plans (A06, A08, A14, A15, A16, A28)
 │   ├── resources/                   ← Resource registries and team documents (A03, A20, A25, A26, A27)
@@ -261,7 +261,7 @@ PMOSkills/
 |---|:---:|:---:|:---:|
 | **Reference Layer (Principles, Domains, Indices)** | 115 | 115 | 100% ✅ |
 | **Skills Layer (48 skills across 7 packs)** | 48 | 48 | 100% ✅ |
-| **Artifacts Layer (Templates and examples)** | 92 | 92 | 100% ✅ |
+| **Artifacts Layer (38 IDs · 92 physical files)** | 92 | 92 | 100% ✅ |
 | **Shared Components (Validators and checklists)** | 28 | 28 | 100% ✅ |
 | **Test Suite (Skill + integration scenario tests)** | 59 | 59 | 100% ✅ |
 | **Documentation & Expanded Framework Guides** | 19 | 19 | 100% ✅ |
