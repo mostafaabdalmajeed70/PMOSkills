@@ -65,10 +65,10 @@ last_updated: "2026-06-03"
 | Principle | Highest-Impact Skills |
 |-----------|----------------------|
 | P1 Holistic View | SKL-00-05 (Quality Checklist) · SKL-03-01 (Integrated Plan) · SKL-05-01 (Performance Report) · SKL-06-01 (Closure Readiness) |
-| P2 Focus on Value | SKL-01-02 (Business Case) · SKL-01-04 (Benefits Baseline) · SKL-03-07 (Financial Baseline) · SKL-06-03 (Benefits Transition) · SKL-06-09 (Final Report) |
+| P2 Focus on Value | SKL-01-02 (Business Case) · SKL-03-07 (Financial Baseline) · SKL-06-03 (Benefits Transition) · SKL-06-09 (Final Report) |
 | P3 Quality | SKL-04-02 (Quality Assurance) · SKL-05-09 (Quality Control) · SKL-03-04 (Requirements) · SKL-05-03 (Scope Validation) |
 | P4 Accountable Leader | SKL-02-01 (Charter) · SKL-02-04 (Governance Setup) · SKL-00-02 (Authority Routing) · SKL-05-02 (Change Assessment) · SKL-06-10 (Closure Authorization) |
-| P5 Sustainability | SKL-01-04 (Benefits Baseline) · SKL-08-03 (Data/Privacy) · SKL-03-07 (Financial Baseline: lifecycle cost) · SKL-06-03 (Benefits Transition: long-term impact) · SKL-03-18 (Integrate Sustainability Into Project Planning) |
+| P5 Sustainability | SKL-08-03 (Data/Privacy) · SKL-03-07 (Financial Baseline: lifecycle cost) · SKL-06-03 (Benefits Transition: long-term impact) · SKL-03-18 (Integrate Sustainability Into Project Planning) |
 | P6 Empowered Culture | SKL-03-13 (Team Agreement) · SKL-04-07 (Team Leadership) · SKL-04-03 (Knowledge Management) · SKL-06-05 (Lessons Learned) |
 
 ---
