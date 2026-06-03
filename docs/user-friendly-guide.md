@@ -98,6 +98,14 @@ Depending on your delivery framework, you can follow standard operational routes
 4. **Waste Testing:** Eliminate overhead using the programmatic waste auditor `shared/validators/waste-test.md` at sprint boundaries.
 5. **Release:** Transition features to benefits realization via `A24`.
 
+### 📦 Programmatic Distribution Channels (SDKs)
+
+For developers and integration engineers building autonomous agents or automated tooling, the PMOSkills corpus is published as zero-dependency packages:
+- **NPM Package (TypeScript / Node.js / Edge):** `npm install pmoskills`
+- **PyPI Package (Python / AI Orchestrators):** `pip install pmoskills`
+
+These packages embed all 369+ Markdown definitions, templates, reference documents, checklist rules, and validation tests in a highly optimized, single-JSON database structure for fast, zero-filesystem in-memory lookup.
+
 ---
 
 *Authority: PMBOK 8 Core Standard · PMI Companion References Secondary · PMO Shared Governance Board*  

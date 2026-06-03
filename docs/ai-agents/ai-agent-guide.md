@@ -386,6 +386,50 @@ For PMI sources, always cite a specific section number. Examples:
 
 ---
 
+## Programmatic SDK Integration (NPM & PyPI)
+
+Instead of clone-and-parse file operations on the raw repository, AI agents and developer tool integrations can load, query, and inject template data from PMOSkills using official zero-dependency packages:
+- **TypeScript/JavaScript (NPM):** `pmoskills`
+- **Python (PyPI):** `pmoskills`
+
+All 369+ repository files (including reference guides, executable skills, checklists, templates, and compliance tests) are pre-compiled into a single embedded JSON database store, avoiding the need for runtime filesystem access.
+
+### TypeScript / JavaScript (Node.js, Edge, Browser)
+
+```typescript
+import { pmoskills, inject } from 'pmoskills';
+
+// Query the PMOSkills corpus in-memory
+const skill = pmoskills.getSkill('SKL-02-01');
+const template = pmoskills.getArtifact('A04');
+
+// Inject parameters into templates programmatically
+const prompt = inject(skill.prompt, {
+  projectName: 'Apex Initiative',
+  authorityThreshold: '$100,000'
+});
+```
+
+### Python (AI Frameworks, LangChain, LangGraph)
+
+```python
+from pmoskills import pmoskills, inject
+
+# Query the PMOSkills corpus in-memory
+skill = pmoskills.get_skill('SKL-02-01')
+template = pmoskills.get_artifact('A04')
+
+# Inject parameters into templates programmatically
+prompt = inject(skill['prompt'], {
+  'projectName': 'Apex Initiative',
+  'authorityThreshold': '$100,000'
+})
+```
+
+This programmatic integration is highly recommended when embedding PMOSkills into orchestrator agents, tool-calling pipelines, or remote microservices.
+
+---
+
 ## Related Files
 
 | File | Path | Purpose | Load Priority |
