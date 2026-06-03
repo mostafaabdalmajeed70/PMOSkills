@@ -172,7 +172,7 @@ function parseSystemPrompts(content: string): Record<string, SystemPrompt> {
 }
 
 function main() {
-  const rootDir = path.resolve(__dirname, '../../');
+  const rootDir = path.resolve(__dirname, '../../../');
   console.log(`Starting compile-db in root: ${rootDir}`);
 
   const store: PMOSkillsStore = {
@@ -369,6 +369,13 @@ function main() {
   }
   fs.writeFileSync(path.resolve(dbDir, 'store.json'), JSON.stringify(store, null, 2), 'utf-8');
   console.log(`SUCCESS: store.json compiled at ${path.resolve(dbDir, 'store.json')} (${(fs.statSync(path.resolve(dbDir, 'store.json')).size / 1024).toFixed(1)} KB)`);
+
+  // Write store to PyPI SDK if directory exists
+  const pypiDbDir = path.resolve(rootDir, 'sdk/pypi/pmoskills/data');
+  if (fs.existsSync(pypiDbDir)) {
+    fs.writeFileSync(path.resolve(pypiDbDir, 'store.json'), JSON.stringify(store, null, 2), 'utf-8');
+    console.log(`SUCCESS: store.json copied to PyPI SDK at ${path.resolve(pypiDbDir, 'store.json')}`);
+  }
 }
 
 main();

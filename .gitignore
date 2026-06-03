@@ -58,6 +58,8 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyp
+*.egg-info/
+.pytest_cache/
 vendor/
 
 # Local Databases & Indexes
