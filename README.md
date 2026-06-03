@@ -10,6 +10,8 @@
   <a href="https://doi.org/10.5281/zenodo.20510540"><img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20510540-blue?style=for-the-badge" alt="DOI"></a>
   <a href="https://www.npmjs.com/package/pmoskills"><img src="https://img.shields.io/npm/v/pmoskills?style=for-the-badge&logo=npm&logoColor=white&color=cb0000" alt="npm version"></a>
   <a href="https://www.npmjs.com/package/pmoskills"><img src="https://img.shields.io/npm/dm/pmoskills?style=for-the-badge&logo=npm&logoColor=white&color=cb0000" alt="npm downloads"></a>
+  <a href="https://pypi.org/project/pmoskills/"><img src="https://img.shields.io/pypi/v/pmoskills?style=for-the-badge&logo=python&logoColor=white&color=3776ab" alt="PyPI version"></a>
+  <a href="https://pypi.org/project/pmoskills/"><img src="https://img.shields.io/pypi/dm/pmoskills?style=for-the-badge&logo=python&logoColor=white&color=3776ab" alt="PyPI downloads"></a>
 </p>
 
 ---
@@ -98,17 +100,19 @@ For AI Engineers, LLM prompt designers, and autonomous agent frameworks, this re
 
 ---
 
-## 📦 JS/TS NPM SDK — `pmoskills`
+## 📦 Programmatic SDKs — `pmoskills`
 
-The entire knowledge corpus is also distributed as a **zero-dependency, type-safe NPM package** that works in Node.js, Edge (Cloudflare Workers, Vercel Edge), and Browser environments. All markdown files, YAML front-matter, skill definitions, artifact templates, and test scenarios are pre-compiled at build time into a single embedded JSON store — no file-system access required at runtime.
+The entire PMOSkills knowledge corpus is compiled and distributed as zero-dependency packages for both the **TypeScript/JavaScript** and **Python** ecosystems. All markdown files, YAML front-matter, skill definitions, artifact templates, and test scenarios are pre-compiled at build time into a single embedded JSON store — no file-system access required at runtime, making them fully compatible with serverless, edge, browser, and autonomous agentic workflows.
 
-### Installation
+### 📦 TypeScript/JavaScript (NPM)
+
+#### Installation
 
 ```bash
 npm install pmoskills
 ```
 
-### API Reference
+#### API Reference
 
 ```typescript
 import { pmoskills, inject } from 'pmoskills';
@@ -125,13 +129,10 @@ const proc   = pmoskills.getProcess('PR01');             // by ID
 // ── Artifact Deliverable Templates ────────────────────────────────
 const arts   = pmoskills.getArtifacts();                 // all 92 templates
 const biz    = pmoskills.getArtifact('A01');             // Business Case
-console.log(biz.title);    // → "Business Case"
-console.log(biz.category); // → "Authorization"
 
 // ── Reference Files (Principles, Domains, Focus Areas…) ───────────
 const refs   = pmoskills.getReferenceFiles();            // all 97 files
 const p01    = pmoskills.getReferenceFile('reference/principles/P01-stewardship.md');
-console.log(p01.title); // → "Be a Diligent, Respectful, and Caring Steward"
 
 // ── Shared Validators & Checklists ────────────────────────────────
 const shared = pmoskills.getSharedFiles();               // all 28 shared assets
@@ -152,22 +153,71 @@ const output = inject(skill.prompt, {
 });
 ```
 
+### 🐍 Python (PyPI)
+
+#### Installation
+
+```bash
+pip install pmoskills
+```
+
+#### API Reference
+
+```python
+from pmoskills import pmoskills, inject
+
+# ── Executable Skills ──────────────────────────────────────────────
+skills = pmoskills.get_skills()                          # all 48 skills
+skill  = pmoskills.get_skill('SKL-01-01')                # by ID
+gov    = pmoskills.get_skills_by_domain('Governance')    # filtered
+
+# ── PMBOK 8 Process Records ────────────────────────────────────────
+procs  = pmoskills.get_processes()                       # all 41 records
+proc   = pmoskills.get_process('PR01')                   # by ID
+
+# ── Artifact Deliverable Templates ────────────────────────────────
+arts   = pmoskills.get_artifacts()                       # all 92 templates
+biz    = pmoskills.get_artifact('A01')                   # Business Case
+
+# ── Reference Files (Principles, Domains, Focus Areas…) ───────────
+refs   = pmoskills.get_reference_files()                 # all 97 files
+p01    = pmoskills.get_reference_file('reference/principles/P01-stewardship.md')
+
+# ── Shared Validators & Checklists ────────────────────────────────
+shared = pmoskills.get_shared_files()                    # all 28 shared assets
+val    = pmoskills.get_shared_file('shared/validate_structure.py')
+
+# ── Compliance & Skill Tests ───────────────────────────────────────
+tests  = pmoskills.get_test_files()                      # all 59 test plans
+st01   = pmoskills.get_test_file('ST-SKL-01-01')          # 9 deterministic cases
+
+# ── System Prompts & Ontology ──────────────────────────────────────
+orch   = pmoskills.get_system_prompt('pmo-orchestrator')
+onto   = pmoskills.get_ontology()
+
+# ── Prompt Template Injector ──────────────────────────────────────
+output = inject(skill['prompt'], {
+  'projectName':        'Apex Initiative',
+  'authorityThreshold': '$100,000'
+})
+```
+
 ### SDK Corpus Summary
 
-| Collection | Count | Getter |
-|---|:---:|---|
-| Executable Skills | 48 | `getSkills()` / `getSkill(id)` |
-| PMBOK 8 Process Records | 41 | `getProcesses()` / `getProcess(id)` |
-| Artifact Templates | 92 | `getArtifacts()` / `getArtifact(id)` |
-| Reference Files | 97 | `getReferenceFiles()` / `getReferenceFile(path)` |
-| Shared Validators & Checklists | 28 | `getSharedFiles()` / `getSharedFile(path)` |
-| Compliance Test Scenarios | 59 | `getTestFiles()` / `getTestFile(id)` |
-| System Prompts | 4 | `getSystemPrompt(key)` |
-| **Total Corpus Items** | **369+** | |
+| Collection | Count | JS/TS Getter | Python Getter |
+|---|:---:|---|---|
+| Executable Skills | 48 | `getSkills()` / `getSkill(id)` | `get_skills()` / `get_skill(id)` |
+| PMBOK 8 Process Records | 41 | `getProcesses()` / `getProcess(id)` | `get_processes()` / `get_process(id)` |
+| Artifact Templates | 92 | `getArtifacts()` / `getArtifact(id)` | `get_artifacts()` / `get_artifact(id)` |
+| Reference Files | 97 | `getReferenceFiles()` / `getReferenceFile(path)` | `get_reference_files()` / `get_reference_file(path)` |
+| Shared Validators & Checklists | 28 | `getSharedFiles()` / `getSharedFile(path)` | `get_shared_files()` / `get_shared_file(path)` |
+| Compliance Test Scenarios | 59 | `getTestFiles()` / `getTestFile(id)` | `get_test_files()` / `get_test_file(id)` |
+| System Prompts | 4 | `getSystemPrompt(key)` | `get_system_prompt(key)` |
+| **Total Corpus Items** | **369+** | | |
 
 > **Zero-FS Architecture:** All data is pre-compiled at build time. Compatible with Serverless, Edge, and Browser environments with no runtime file-system dependency.
 
-📦 **[View on NPM →](https://www.npmjs.com/package/pmoskills)**
+📦 **[View on NPM →](https://www.npmjs.com/package/pmoskills)** &nbsp;|&nbsp; 🐍 **[View on PyPI →](https://pypi.org/project/pmoskills/)**
 
 ---
 
@@ -246,11 +296,17 @@ PMOSkills/
 │   ├── skill-tests/                 ← 49 automated skill test suites (ST-SKL-*)
 │   └── integration-tests/           ← End-to-end integration scenario scripts
 │
-└── sdk/                             ← JS/TS NPM Package (`pmoskills`)
-    ├── src/                         ← TypeScript source (loader, injector, types)
-    ├── scripts/compile-db.ts        ← Build-time corpus compiler → store.json
-    ├── dist/                        ← Bundled CJS + ESM outputs (zero dependencies)
-    └── tests/                       ← Vitest unit test suite (18 tests, 100% pass)
+└── sdk/                             ← Programmatic SDKs
+    ├── npm/                         ← TypeScript NPM package (`pmoskills`)
+    │   ├── src/                     ← TS source (loader, injector, types)
+    │   ├── scripts/compile-db.ts    ← Database compiler
+    │   ├── dist/                    ← ESM & CJS bundled builds
+    │   └── tests/                   ← Vitest unit tests
+    │
+    └── pypi/                        ← Python PyPI package (`pmoskills`)
+        ├── pmoskills/               ← Python package source & data
+        ├── tests/                   ← Unit test suite (unittest / pytest)
+        └── pyproject.toml           ← Setuptools config
 ```
 
 ---
@@ -265,7 +321,7 @@ PMOSkills/
 | **Shared Components (Validators and checklists)** | 28 | 28 | 100% ✅ |
 | **Test Suite (Skill + integration scenario tests)** | 59 | 59 | 100% ✅ |
 | **Documentation & Expanded Framework Guides** | 19 | 19 | 100% ✅ |
-| **NPM SDK Corpus Items (pmoskills package)** | 369+ | 369+ | 100% ✅ |
+| **SDK Corpus Items (NPM & PyPI packages)** | 369+ | 369+ | 100% ✅ |
 | **Total Verified Assets** | **361+** | **361+** | **100% PRODUCTION READY** |
 
 ---
@@ -292,6 +348,7 @@ To ensure clear accountability, PMOSkills employs a strict **T1 to T4 Decision T
 * 🔍 [`SKILL-REGISTRY.md`](SKILL-REGISTRY.md) — Master index of all 48 skills, dependency chains, and primary outputs.
 * 🤝 [`.github/CONTRIBUTING.md`](.github/CONTRIBUTING.md) — Contribution guidelines, authority rules, branch conventions, and PR checklist.
 * 📦 **[npmjs.com/package/pmoskills](https://www.npmjs.com/package/pmoskills)** — Published NPM package v0.5.0 (zero dependencies, ESM + CJS).
+* 🐍 **[pypi.org/project/pmoskills](https://pypi.org/project/pmoskills/)** — Published PyPI package v0.5.0 (zero dependencies, source + wheel).
 * 🏷️ [`RELEASE-NOTES.md`](RELEASE-NOTES.md) — Unified release notes for all versions (v0.1 – v0.5).
 * ⚖️ [`AUTHORITY-ROUTING.md`](AUTHORITY-ROUTING.md) — RACI matrix and escalation protocols for T1–T4 decisions.
 * 📈 [`LIFECYCLE-MAP.md`](LIFECYCLE-MAP.md) — Linear and hybrid process and artifact flow diagrams.
@@ -302,7 +359,7 @@ To ensure clear accountability, PMOSkills employs a strict **T1 to T4 Decision T
 
 ## 📈 Version History
 
-* **`v0.5` (2026-06-03):** **Release v0.5: PMBOK 8 Audit Completion & Reference Enrichment.** Closed all 28 audit findings, certified all 48 skills as Active · Tested, enriched 24 companion references, cross-referenced 30 process files, corrected principles architecture, and hardened repository hygiene.
+* **`v0.5` (2026-06-03):** **Release v0.5: PMBOK 8 Audit Completion & Cross-Language SDK Launch.** Closed all 28 audit findings, certified all 48 skills as Active · Tested, enriched 24 companion references, cross-referenced 30 process files, corrected principles architecture, restructured SDK directory structure, and published `pmoskills` packages to NPM (v0.5.0) and PyPI (v0.5.0).
 * **`v0.4` (2026-06-02):** **Release v0.4: NPM SDK Publication.** Published `pmoskills` NPM package (v0.3.0) with zero dependencies. Full corpus compiler, dual ESM/CJS output, TypeScript declarations, 18/18 unit tests. Available at [npmjs.com/package/pmoskills](https://www.npmjs.com/package/pmoskills).
 * **`v0.3` (2026-06-02):** **Release v0.3: Metrics & Onboarding Portal Integration.** Synchronized documentation indexes, README scorecards, changelogs, and release tag paths.
 * **`v0.2` (2026-06-02):** **Release v0.2: Ultimate Documentation Expansion.** Six new master manuals covering handbooks, tailoring, RACIs, ontologies, prompt libraries, and automation gates.

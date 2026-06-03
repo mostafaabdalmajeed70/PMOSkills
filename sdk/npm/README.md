@@ -135,7 +135,7 @@ inject(template, vars);   // {{ var }}, [FIELD: var], [var]
 ## Architecture
 
 ```
-sdk/
+sdk/npm/
 ├── src/
 │   ├── index.ts              ← Public API surface
 │   ├── core/
@@ -192,7 +192,7 @@ npm test
   month     = jun,
   year      = 2026,
   publisher = {Zenodo},
-  version   = {v0.4},
+  version   = {v0.5},
   doi       = {10.5281/zenodo.20510540},
   url       = {https://doi.org/10.5281/zenodo.20510540}
 }

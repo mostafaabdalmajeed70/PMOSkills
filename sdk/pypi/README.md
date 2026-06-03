@@ -41,31 +41,57 @@ print(injected)
 ## API Reference
 
 ### Executable Skills
-- `pmoskills.get_skills()`: Returns a dict of all skills.
+- `pmoskills.get_skills()`: Returns a list of all skills.
 - `pmoskills.get_skill(id)`: Retrieves a specific skill by its ID (e.g., `SKL-01-01`).
 - `pmoskills.get_skills_by_domain(domain)`: Returns all skills in a specific Performance Domain (e.g., `Planning`).
 
 ### Processes
-- `pmoskills.get_processes()`: Returns a dict of all PMBOK 8 processes.
+- `pmoskills.get_processes()`: Returns a list of all PMBOK 8 processes.
 - `pmoskills.get_process(id)`: Retrieves a specific process by its ID (e.g., `PR01`).
 
 ### Artifacts
-- `pmoskills.get_artifacts()`: Returns a dict of all artifacts.
+- `pmoskills.get_artifacts()`: Returns a list of all artifacts.
 - `pmoskills.get_artifact(id)`: Retrieves a specific artifact by its ID (e.g., `A01`).
 
 ### References
-- `pmoskills.get_reference_files()`: Returns a dict of reference documents.
+- `pmoskills.get_reference_files()`: Returns a list of reference documents.
 - `pmoskills.get_reference_file(path)`: Retrieves a specific reference file content by its relative path.
 
 ### Shared Assets
-- `pmoskills.get_shared_files()`: Returns a dict of shared assets.
+- `pmoskills.get_shared_files()`: Returns a list of shared assets.
 - `pmoskills.get_shared_file(path)`: Retrieves a specific shared file by its relative path.
 
 ### Compliance Tests
-- `pmoskills.get_test_files()`: Returns a dict of compliance test assets.
+- `pmoskills.get_test_files()`: Returns a list of compliance test assets.
 - `pmoskills.get_test_file(id)`: Retrieves a test asset by its ID.
 
 ### Ontology & System Prompts
-- `pmoskills.get_system_prompts()`: Returns a dict of system role prompts.
+- `pmoskills.get_system_prompts()`: Returns a list of system role prompts.
 - `pmoskills.get_system_prompt(id)`: Retrieves a specific system prompt (e.g., `pmo-orchestrator`).
 - `pmoskills.get_ontology()`: Retrieves the PMOSkills ontology specification.
+
+---
+
+## Citation
+
+```bibtex
+@misc{pmoskills2026,
+  author    = {Fakhruldeen, Mohamed Fouad},
+  title     = {{PMOSkills: An Executable Skill System \& PMO Reference Architecture
+                built on PMI PMBOK® 8th Edition}},
+  month     = jun,
+  year      = 2026,
+  publisher = {Zenodo},
+  version   = {v0.5},
+  doi       = {10.5281/zenodo.20510540},
+  url       = {https://doi.org/10.5281/zenodo.20510540}
+}
+```
+
+---
+
+## License
+
+MIT © [Mohamed Fouad Fakhruldeen](https://fakhruldeen.me)
+
+*PMBOK® is a registered trademark of the Project Management Institute, Inc. This project is independently developed and is not affiliated with or endorsed by PMI.*
