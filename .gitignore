@@ -7,6 +7,8 @@ Thumbs.db
 *.log
 *.tmp
 *.bak
+*.bak.*
+*.bak.F*
 *.swp
 *~
 
@@ -84,4 +86,3 @@ target/
 .metadata/
 
 # Git specific
-
