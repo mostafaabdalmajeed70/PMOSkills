@@ -290,6 +290,7 @@ To ensure clear accountability, PMOSkills employs a strict **T1 to T4 Decision T
 * 🧠 [`docs/ai-agents/ontology-specification.md`](docs/ai-agents/ontology-specification.md) — Directed relation schemas, edge classes, and semantic rules.
 * 🛠 [`docs/developer-tools/automated-validators.md`](docs/developer-tools/automated-validators.md) — 3-tier testing QA gates, Git hook setups, and validator commands.
 * 🔍 [`SKILL-REGISTRY.md`](SKILL-REGISTRY.md) — Master index of all 48 skills, dependency chains, and primary outputs.
+* 🤝 [`.github/CONTRIBUTING.md`](.github/CONTRIBUTING.md) — Contribution guidelines, authority rules, branch conventions, and PR checklist.
 * 📦 **[npmjs.com/package/pmoskills](https://www.npmjs.com/package/pmoskills)** — Published NPM package v0.3.0 (zero dependencies, ESM + CJS).
 * 🏷️ [`RELEASE-NOTES-v0.4.md`](RELEASE-NOTES-v0.4.md) — Release notes for v0.4 milestone (NPM SDK Publication).
 * 🏷️ [`RELEASE-NOTES-v0.3.md`](RELEASE-NOTES-v0.3.md) — Release notes for stable v0.3 milestone (Metrics Sync).
