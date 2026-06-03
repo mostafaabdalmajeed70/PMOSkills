@@ -37,7 +37,7 @@ flowchart TD
     subgraph RefLayer ["1. Reference Layer (PMBOK 8 Core)"]
         direction LR
         P8[PMBOK 8 Standards] --> PR[41 Process Records]
-        CR[23 Companion Refs] --> TL[Tailoring & PMO Refs]
+        CR[24 Companion Refs] --> TL[Tailoring & PMO Refs]
     end
 
     %% Skills Layer
@@ -198,14 +198,14 @@ PMOSkills/
 │
 ├── reference/                       ← The Core PMBOK 8 Reference Layer (115 files)
 │   ├── README.md                    ← Reference layer catalog and rules
-│   ├── principles/                  ← 12 PMBOK 8 principles (P01–P12 + index)
+│   ├── principles/                  ← 6 PMBOK 8 principles (P01–P06 + index)
 │   ├── performance-domains/         ← 8 performance domains (PD01–PD08 + index)
 │   ├── focus-areas/                 ← 5 focus areas (FA01–FA05)
 │   ├── processes/                   ← 41 process records (PR01–PR41 + indices)
 │   ├── knowledge-areas/             ← Knowledge Area index
 │   ├── tools-techniques/            ← Tools & Techniques taxonomy index
 │   ├── inputs-outputs/              ← Inputs & Outputs registry index
-│   ├── companion-references/        ← 23 canonical companion reference manuals
+│   ├── companion-references/        ← 24 canonical companion reference manuals
 │   ├── tailoring/                   ← Tailoring guidelines layer
 │   ├── pmo/                         ← PMO governance & service models
 │   └── appendices/                  ← PMO, AI, Sourcing, Evolution appendices (X2–X5)
