@@ -20,7 +20,7 @@ file_path: "reference/companion-references/index.md"
 
 ## Purpose
 
-This index serves as the **central directory mapping the 24 PMI companion references** to the core PMBOK 8th Edition Performance Domains and the skill layers in the PMOSkills repository. It enables practitioners to easily navigate the secondary literature and practice standards recommended by PMI for advanced project management execution.
+This index serves as the **central directory mapping the 24 official PMI companion references** to the core PMBOK 8th Edition Performance Domains and the skill layers in the PMOSkills repository. It enables practitioners to easily navigate the secondary literature and practice standards recommended by PMI for advanced project management execution.
 
 ---
 
@@ -102,5 +102,3 @@ Each companion reference is mapped to a core domain in the PMBOK 8th Edition eco
 ---
 
 *Authority: PMBOK8 Core Standard · PMI Official Reference List*
-
-> NOTE: This index is intentionally maintained as a single file. Per-book companion reference pages will be added later where deeper implementation guidance is needed, after the Wave-based cleanup is complete.

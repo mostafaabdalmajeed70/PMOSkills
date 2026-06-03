@@ -78,4 +78,12 @@ This catalog lists all **48 skill test suite files** implemented to validate the
 
 ---
 
+### Roadmap — Future Test Suites
+
+Packs 08 (PMO Governance) and 09 (Portfolio & Program) are not yet implemented as SKL-08-xx / SKL-09-xx skills and therefore do not have test suites. When these skills are added, corresponding ST-SKL-08-xx and ST-SKL-09-xx test files will be introduced under this directory.
+
+**note:** Packs 08/09 skills and tests are planned; current automated tests cover 100% of existing skills (Packs 01–07).
+---
+
+
 *Authority: PMBOK8 Core Standard & PMO Governance Board*
