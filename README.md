@@ -291,11 +291,8 @@ To ensure clear accountability, PMOSkills employs a strict **T1 to T4 Decision T
 * 🛠 [`docs/developer-tools/automated-validators.md`](docs/developer-tools/automated-validators.md) — 3-tier testing QA gates, Git hook setups, and validator commands.
 * 🔍 [`SKILL-REGISTRY.md`](SKILL-REGISTRY.md) — Master index of all 48 skills, dependency chains, and primary outputs.
 * 🤝 [`.github/CONTRIBUTING.md`](.github/CONTRIBUTING.md) — Contribution guidelines, authority rules, branch conventions, and PR checklist.
-* 📦 **[npmjs.com/package/pmoskills](https://www.npmjs.com/package/pmoskills)** — Published NPM package v0.3.0 (zero dependencies, ESM + CJS).
-* 🏷️ [`RELEASE-NOTES-v0.4.md`](RELEASE-NOTES-v0.4.md) — Release notes for v0.4 milestone (NPM SDK Publication).
-* 🏷️ [`RELEASE-NOTES-v0.3.md`](RELEASE-NOTES-v0.3.md) — Release notes for stable v0.3 milestone (Metrics Sync).
-* 🏷️ [`RELEASE-NOTES-v0.2.md`](RELEASE-NOTES-v0.2.md) — Release notes for stable v0.2 milestone (Ultimate Docs).
-* 🏷️ [`RELEASE-NOTES-v0.1.md`](RELEASE-NOTES-v0.1.md) — Release notes for stable v0.1 milestone.
+* 📦 **[npmjs.com/package/pmoskills](https://www.npmjs.com/package/pmoskills)** — Published NPM package v0.5.0 (zero dependencies, ESM + CJS).
+* 🏷️ [`RELEASE-NOTES.md`](RELEASE-NOTES.md) — Unified release notes for all versions (v0.1 – v0.5).
 * ⚖️ [`AUTHORITY-ROUTING.md`](AUTHORITY-ROUTING.md) — RACI matrix and escalation protocols for T1–T4 decisions.
 * 📈 [`LIFECYCLE-MAP.md`](LIFECYCLE-MAP.md) — Linear and hybrid process and artifact flow diagrams.
 * 📋 [`QUALITY-STANDARDS.md`](QUALITY-STANDARDS.md) — The single source of truth for YAML front-matter schemas and quality validation gates.
@@ -305,10 +302,11 @@ To ensure clear accountability, PMOSkills employs a strict **T1 to T4 Decision T
 
 ## 📈 Version History
 
-* **`v0.4` (2026-06-02):** **Release v0.4: NPM SDK Publication.** Engineered and published the `pmoskills` NPM package (v0.3.0) with zero production dependencies. Full corpus compiler bundles all 369+ items (skills, processes, artifacts, reference, shared, tests) into a single embedded JSON store. Dual ESM/CJS output with TypeScript declarations. 18/18 unit tests passing. Available at [npmjs.com/package/pmoskills](https://www.npmjs.com/package/pmoskills).
-* **`v0.3` (2026-06-02):** **Release v0.3: Metrics & Onboarding Portal Integration.** Synchronized all markdown documentation indexes, README scorecards, unified changelogs, and release tag paths.
-* **`v0.2` (2026-06-02):** **Release v0.2: Ultimate Documentation Expansion.** Authored six new master manuals covering handbooks, tailoring, RACIs, ontologies, prompt libraries, and automation gates.
-* **`v0.1` (2026-06-02):** **First Stable Framework Release.** Promoted the audited PMOSkills repository (341 assets) under official git release tag `v0.1`. Indexed master checklists and release notes.
+* **`v0.5` (2026-06-03):** **Release v0.5: PMBOK 8 Audit Completion & Reference Enrichment.** Closed all 28 audit findings, certified all 48 skills as Active · Tested, enriched 24 companion references, cross-referenced 30 process files, corrected principles architecture, and hardened repository hygiene.
+* **`v0.4` (2026-06-02):** **Release v0.4: NPM SDK Publication.** Published `pmoskills` NPM package (v0.3.0) with zero dependencies. Full corpus compiler, dual ESM/CJS output, TypeScript declarations, 18/18 unit tests. Available at [npmjs.com/package/pmoskills](https://www.npmjs.com/package/pmoskills).
+* **`v0.3` (2026-06-02):** **Release v0.3: Metrics & Onboarding Portal Integration.** Synchronized documentation indexes, README scorecards, changelogs, and release tag paths.
+* **`v0.2` (2026-06-02):** **Release v0.2: Ultimate Documentation Expansion.** Six new master manuals covering handbooks, tailoring, RACIs, ontologies, prompt libraries, and automation gates.
+* **`v0.1` (2026-06-02):** **First Stable Framework Release.** Promoted audited PMOSkills repository (341 assets) under official git release tag `v0.1`.
 * **`v4.8.0` (2026-06-02):** Phase 8 Next Steps & Compliance Integration. Introduced the master user onboarding guide (`docs/user-friendly-guide.md`) and the 3-tier test plan (`tests/pmbok8-compliance-test-plan.md`). Fully updated master scorecards and plan directories.
 * **`v4.7.0` (2026-06-02):** Phase 6 Test Suites and Phase 7 Quality Audit Complete. Implemented 48 skill test suites, 7 cross-skill integration flow tests, and cleaned mixed-case non-conformances.
 * **`v4.5.0` (2026-06-01):** Phase 0 Repository Consolidation. Cleared legacy folders, monolithic drafts, and compiled clean reference layers.
@@ -327,13 +325,13 @@ If you use this repository or framework in your academic research, PMO governanc
   month        = jun,
   year         = 2026,
   publisher    = {Zenodo},
-  version      = {v0.3},
+  version      = {v0.5},
   doi          = {10.5281/zenodo.20510540},
   url          = {https://doi.org/10.5281/zenodo.20510540}
 }
 ```
 
-> Fakhruldeen, M. F. (2026). *PMOSkills: An Executable Skill System & PMO Reference Architecture built on PMI PMBOK® 8th Edition* (Version v0.3). Zenodo. https://doi.org/10.5281/zenodo.20510540
+> Fakhruldeen, M. F. (2026). *PMOSkills: An Executable Skill System & PMO Reference Architecture built on PMI PMBOK® 8th Edition* (Version v0.5). Zenodo. https://doi.org/10.5281/zenodo.20510540
 
 ---
 
