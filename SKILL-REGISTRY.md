@@ -1,8 +1,8 @@
 # SKILL-REGISTRY.md — Project Management Skills Repository
-**Version:** 1.3.0  
+**Version:** 1.3.1  
 **Status:** Active · Maintained  
 **Authority:** PMBOK8 · Artifacts-V-1.1 · Repository Operating Rules  
-**Last Updated:** 2026-05-30  
+**Last Updated:** 2026-06-03  
 **File Path:** `SKILL-REGISTRY.md`
 
 ---
@@ -1258,4 +1258,4 @@ SKL-02-01 ──▶ SKL-07-01 (Select Lifecycle Approach)
 
 *Authority: PMBOK8 · Artifacts-V-1.1 · Repository Operating Rules §3.2 Consolidation Rule*  
 *Owner: Repository Maintainer*  
-*Version: 1.3.0 — Updated 2026-05-30 — Pack 01 Organizational Setup (3 skills) added; total built = 47/47; all packs complete*
+*Version: 1.3.1 — Updated 2026-06-03 — Wave 1 audit fixes applied (F-23); total built = 48/48; all packs complete*
