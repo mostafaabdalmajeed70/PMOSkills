@@ -57,11 +57,11 @@ PMO and AI/Procurement skills (Packs 07–08) operate **cross-lifecycle** and ar
 | Artifact | ID | Skill |
 |---------|----|-------|
 | Business Case | A01 | SKL-01-02 |
-| Benefits and Value Measurement Record | A02 | SKL-01-04 |
-| Feasibility and Viable Options Record | A03 | SKL-01-05 |
+| Benefits and Value Measurement Record | A02 | Reference |
+| Feasibility and Viable Options Record | A03 | Reference |
 | Intake and Prioritization Decision Record | A10 | SKL-01-01 |
-| PMO Service Engagement Record | A11 | SKL-01-06 |
-| Portfolio Interdependency Record | A22 | SKL-01-07 |
+| PMO Service Engagement Record | A11 | Reference |
+| Portfolio Interdependency Record | A22 | Reference |
 
 ### Entry Gate
 - Strategic need or opportunity identified
@@ -97,13 +97,13 @@ PMO and AI/Procurement skills (Packs 07–08) operate **cross-lifecycle** and ar
 | Artifact | ID | Skill |
 |---------|----|-------|
 | Project Charter | A04 | SKL-02-01 |
-| Context Register | A05 | SKL-02-03 |
-| Tailoring Decision Record | A06 | SKL-02-05 |
+| Context Register | A05 | Reference |
+| Tailoring Decision Record | A06 | Reference |
 | Stakeholder Register and Engagement Strategy | A07 | SKL-02-02 |
-| Governance and Decision Authority Record | A35 | SKL-02-04 |
+| Governance and Decision Authority Record | A35 | Reference |
 | PMO Configuration and Authority Record | A39 | SKL-07-01 |
 | PMBOK Evolution and Principles Traceability Record | A40 | Reference only |
-| Phase Gate Authorization Record | A03+A35 | SKL-02-06 |
+| Phase Gate Authorization Record | A04+A35 | Reference |
 
 ### Entry Gate
 - Business case approved
@@ -167,7 +167,7 @@ PMO and AI/Procurement skills (Packs 07–08) operate **cross-lifecycle** and ar
 | Team Operating and Responsibility Record | A25 | SKL-03-13 |
 | Delivery Approach and Team Operating Agreement | A09 | SKL-03-13 |
 | Risk Management Record | A19 | SKL-03-11 / 12 |
-| Quantitative Risk and Reserve Decision Record | A20 | SKL-05-10 |
+| Quantitative Risk and Reserve Decision Record | A20 | Reference |
 | Procurement and Supplier Management Record | A31 | SKL-03-14 |
 | Change Readiness and Adoption Record | A29 | SKL-03-15 |
 | Process Inputs, Outputs, and Tools Reference Record | A41 | Reference |
@@ -254,9 +254,9 @@ PMO and AI/Procurement skills (Packs 07–08) operate **cross-lifecycle** and ar
 |---------|----|-------|
 | Integrated Performance Reporting Record | A17 | SKL-05-01 |
 | Change and Exception Decision Log | A12 | SKL-05-02 |
-| Trade-Off Decision Record | A21 | SKL-05-11 |
-| Quantitative Risk and Reserve Decision Record | A20 | SKL-05-10 |
-| Supplier Change, Claim, and Compliance Record | A33 | SKL-05-12 |
+| Trade-Off Decision Record | A21 | Reference |
+| Quantitative Risk and Reserve Decision Record | A20 | Reference |
+| Supplier Change, Claim, and Compliance Record | A33 | Reference |
 | Quality Management Record | A38 | SKL-05-09 |
 
 ---
