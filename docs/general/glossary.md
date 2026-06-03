@@ -293,8 +293,8 @@ Entries are arranged alphabetically by letter heading. Each term carries a **Def
 **Related skill:** SKL-03-06 — Plan Schedule Management
 
 ### Focus Area
-**Definition:** One of the five organizational phases of project work in the PMOSkills repository — Initiating, Planning, Executing, Monitoring and Controlling, and Closing — used to classify skills and artifacts by their lifecycle position.
-**Source:** PMBOK8 Guide §2.1 · PMOSkills Artifacts-V-1.1
+**Definition:** One of the six foundational guides to behavior in PMBOK 8 that describe effective project management conduct without prescribing specific methods or processes.
+**Source:** PMBOK8 Standard §3.3–§3.8
 **Related artifact:** A14 — Integrated Project Management Plan
 **Related skill:** —
 
@@ -715,6 +715,12 @@ Entries are arranged alphabetically by letter heading. Each term carries a **Def
 **Source:** PMI Lexicon v5.0 · PMBOK8 Guide §10.1
 **Related artifact:** A28 — Communications and Reporting Record
 **Related skill:** SKL-03-08 — Plan Communications Management
+
+### Knowledge Area (Legacy)
+**Definition:** The structural grouping used in earlier PMBOK editions (for example, Integration, Scope, Schedule, Cost, Quality, Resource, Communications, Risk, Procurement, Stakeholder Management). PMBOK 8 replaces Knowledge Areas with Performance Domains as the primary structural framework.
+**Source:** PMBOK6 · PMBOK7 (historical); PMBOK8 Guide §2 (for domain shift)
+**Related artifact:** A40 — PMBOK Evolution and Principles Traceability Record
+**Related skill:** —
 
 ### Knowledge Management
 **Definition:** The systematic approach to creating, capturing, sharing, and applying project knowledge and experience so that it remains available to the organization and future projects beyond the current team.
