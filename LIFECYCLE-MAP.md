@@ -59,7 +59,7 @@ PMO and AI/Procurement skills (Packs 07–08) operate **cross-lifecycle** and ar
 | Business Case | A01 | SKL-01-02 |
 | Benefits and Value Measurement Record | A02 | SKL-01-04 |
 | Feasibility and Viable Options Record | A03 | SKL-01-05 |
-| Intake and Prioritization Decision Record | A04 | SKL-01-01 |
+| Intake and Prioritization Decision Record | A10 | SKL-01-01 |
 | PMO Service Engagement Record | A11 | SKL-01-06 |
 | Portfolio Interdependency Record | A22 | SKL-01-07 |
 
@@ -96,7 +96,7 @@ PMO and AI/Procurement skills (Packs 07–08) operate **cross-lifecycle** and ar
 ### Artifacts Triggered
 | Artifact | ID | Skill |
 |---------|----|-------|
-| Project Charter | A03 | SKL-02-01 |
+| Project Charter | A04 | SKL-02-01 |
 | Context Register | A05 | SKL-02-03 |
 | Tailoring Decision Record | A06 | SKL-02-05 |
 | Stakeholder Register and Engagement Strategy | A07 | SKL-02-02 |
