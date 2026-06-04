@@ -1,7 +1,8 @@
-/* Custom overrides for App container layout */
 .app-container {
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
   background-color: var(--bg-dark);
   font-family: var(--font-body);
 }
@@ -10,7 +11,8 @@
   flex: 1;
   padding: 2rem;
   overflow: hidden;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  min-height: 0;
 }

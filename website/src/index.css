@@ -39,12 +39,18 @@
   padding: 0;
 }
 
+html, body, #root {
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: var(--font-body);
   background-color: var(--bg-dark);
   color: var(--text-primary);
-  min-height: 100vh;
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -240,4 +246,7 @@ button, input, select, textarea {
 
 .animate-fade-in {
   animation: fadeIn var(--transition-normal) forwards;
+  flex: 1;
+  min-height: 0;
+  height: 100%;
 }
