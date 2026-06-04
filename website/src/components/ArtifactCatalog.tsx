@@ -103,9 +103,9 @@ export const ArtifactCatalog: React.FC<ArtifactCatalogProps> = ({ artifacts }) =
   }, [selectedArtifact]);
 
   return (
-    <div className="animate-fade-in" style={{ display: 'grid', gridTemplateColumns: '320px 1fr', gap: '2rem', height: 'calc(100vh - 120px)', overflow: 'hidden' }}>
+    <div className="animate-fade-in" style={{ display: 'grid', gridTemplateColumns: '320px 1fr', gap: '2rem', height: '100%', overflow: 'hidden' }}>
       {/* Left Sidebar: Artifacts list */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', height: '100%', borderRight: '1px solid var(--border-color)', paddingRight: '1.5rem' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', height: '100%', minHeight: 0, borderRight: '1px solid var(--border-color)', paddingRight: '1.5rem', overflow: 'hidden' }}>
         {/* Search */}
         <div style={{ position: 'relative' }}>
           <Search size={18} style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
@@ -151,7 +151,7 @@ export const ArtifactCatalog: React.FC<ArtifactCatalogProps> = ({ artifacts }) =
         </div>
 
         {/* Scrollable list */}
-        <div style={{ flex: 1, overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '0.5rem', paddingRight: '4px' }}>
+        <div style={{ flex: 1, overflowY: 'auto', minHeight: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem', paddingRight: '4px' }}>
           {filteredArtifacts.map(art => {
             const isSelected = art.id === selectedArtifactId;
             const filename = art.path ? art.path.split('/').pop() || art.id : art.id;
