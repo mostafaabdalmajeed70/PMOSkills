@@ -347,9 +347,9 @@ To ensure clear accountability, PMOSkills employs a strict **T1 to T4 Decision T
 * 🛠 [`docs/developer-tools/automated-validators.md`](docs/developer-tools/automated-validators.md) — 3-tier testing QA gates, Git hook setups, and validator commands.
 * 🔍 [`SKILL-REGISTRY.md`](SKILL-REGISTRY.md) — Master index of all 48 skills, dependency chains, and primary outputs.
 * 🤝 [`.github/CONTRIBUTING.md`](.github/CONTRIBUTING.md) — Contribution guidelines, authority rules, branch conventions, and PR checklist.
-* 📦 **[npmjs.com/package/pmoskills](https://www.npmjs.com/package/pmoskills)** — Published NPM package v0.5.0 (zero dependencies, ESM + CJS).
-* 🐍 **[pypi.org/project/pmoskills](https://pypi.org/project/pmoskills/)** — Published PyPI package v0.5.0 (zero dependencies, source + wheel).
-* 🏷️ [`RELEASE-NOTES.md`](RELEASE-NOTES.md) — Unified release notes for all versions (v0.1 – v0.5).
+* 📦 **[npmjs.com/package/pmoskills](https://www.npmjs.com/package/pmoskills)** — Published NPM package v0.5.1 (zero dependencies, ESM + CJS).
+* 🐍 **[pypi.org/project/pmoskills](https://pypi.org/project/pmoskills/)** — Published PyPI package v0.5.1 (zero dependencies, source + wheel).
+* 🏷️ [`RELEASE-NOTES.md`](RELEASE-NOTES.md) — Unified release notes for all versions (v0.1 – v0.5.1).
 * ⚖️ [`AUTHORITY-ROUTING.md`](AUTHORITY-ROUTING.md) — RACI matrix and escalation protocols for T1–T4 decisions.
 * 📈 [`LIFECYCLE-MAP.md`](LIFECYCLE-MAP.md) — Linear and hybrid process and artifact flow diagrams.
 * 📋 [`QUALITY-STANDARDS.md`](QUALITY-STANDARDS.md) — The single source of truth for YAML front-matter schemas and quality validation gates.
@@ -359,6 +359,7 @@ To ensure clear accountability, PMOSkills employs a strict **T1 to T4 Decision T
 
 ## 📈 Version History
 
+* **`v0.5.1` (2026-06-04):** **NPM & PyPI SDK Update.** Resolved artifact ID collisions in the compiler database by keying artifacts by their relative path. Restored 100% coverage of all 92 artifact physical files and compiled missing process reference index files. Fully updated TypeScript and Python SDK loaders for backward-compatible robust path/filename lookup.
 * **`v0.5` (2026-06-03):** **Release v0.5: PMBOK 8 Audit Completion & Cross-Language SDK Launch.** Closed all 28 audit findings, certified all 48 skills as Active · Tested, enriched 24 companion references, cross-referenced 30 process files, corrected principles architecture, restructured SDK directory structure, and published `pmoskills` packages to NPM (v0.5.0) and PyPI (v0.5.0).
 * **`v0.4` (2026-06-02):** **Release v0.4: NPM SDK Publication.** Published `pmoskills` NPM package (v0.3.0) with zero dependencies. Full corpus compiler, dual ESM/CJS output, TypeScript declarations, 18/18 unit tests. Available at [npmjs.com/package/pmoskills](https://www.npmjs.com/package/pmoskills).
 * **`v0.3` (2026-06-02):** **Release v0.3: Metrics & Onboarding Portal Integration.** Synchronized documentation indexes, README scorecards, changelogs, and release tag paths.

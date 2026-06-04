@@ -11,11 +11,34 @@
 
 | Version | Date | Milestone |
 |---|---|---|
+| [**v0.5.1**](#-v051--sdk-collision-resolution--database-integrity-patch) | June 4, 2026 | SDK Collision Resolution & Database Integrity Patch |
 | [**v0.5**](#-v05--pmbok-8-audit-completion--reference-layer-enrichment) | June 3, 2026 | PMBOK 8 Audit Completion & Reference Enrichment |
 | [**v0.4**](#-v04--npm-sdk-publication) | June 2, 2026 | NPM SDK Publication |
 | [**v0.3**](#-v03--metrics-sync--onboarding-integration) | June 2, 2026 | Metrics Sync & Onboarding Integration |
 | [**v0.2**](#-v02--documentation-expansion) | June 2, 2026 | Ultimate Documentation Expansion |
 | [**v0.1**](#-v01--first-stable-release) | June 2, 2026 | First Stable Framework Release |
+
+---
+---
+
+# 🏷️ v0.5.1 — SDK Collision Resolution & Database Integrity Patch
+
+**Release Tag:** `v0.5.1` · **Date:** June 4, 2026 · **NPM:** `pmoskills@0.5.1` · **PyPI:** `pmoskills@0.5.1`  
+**Commits:** 6 · **Files Changed:** 6  
+**Artifact Database Coverage:** 100% (92 physical files)
+
+---
+
+We are proud to present **PMOSkills Release v0.5.1** — the **SDK Collision Resolution & Database Integrity Patch**. This release fixes the critical artifact ID collisions in the build pipeline database generator, ensures the full collection of all 92 artifact files (records, templates, and examples) are included in the packaged SDK database without data loss, and updates both the TypeScript/JavaScript (NPM) and Python (PyPI) loaders.
+
+### 🐛 Critical Bug Fixes & DB Refactoring
+* **Non-Destructive Storage Layout**: Keyed `store.artifacts` entries by their unique relative path instead of their short ID, ensuring that overlapping templates (like `A20-team-charter.md` and `A20-Quantitative-Risk-and-Reserve-Decision-Record.md`) are both preserved in the database.
+* **Process Reference Compilation**: Fixed process reference index compilation (`compile-db.ts`) to successfully bundle the process index files (`reference/processes/index.md` and `reference/processes/00-index.md`).
+* **Parity SDK Loaders**: Enhanced `getArtifact`/`get_artifact` in both TypeScript and Python to query by short ID, title, path, or filename (e.g. `A20-team-charter.md`), ensuring complete backward compatibility while allowing access to all 92 templates.
+
+### 🧪 Programmatic Verification
+* **Diagnostic Suite**: Updated `check_pypi.py` validator and verified 100% asset coverage (Skills, Processes, References, Shared, Tests, System Prompts, and Ontology).
+* **Unit Tests**: Passed all 19 unit tests on Vitest (TypeScript) and unittest (Python) with new test cases added for collision resolution lookup.
 
 ---
 ---
