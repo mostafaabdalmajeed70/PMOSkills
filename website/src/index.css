@@ -246,4 +246,7 @@ button, input, select, textarea {
 
 .animate-fade-in {
   animation: fadeIn var(--transition-normal) forwards;
+  flex: 1;
+  min-height: 0;
+  height: 100%;
 }
