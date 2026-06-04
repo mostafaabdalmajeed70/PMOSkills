@@ -50,13 +50,30 @@ class TestPMOSkillsSDK(unittest.TestCase):
     # Artifact Templates
     def test_load_all_artifact_templates(self):
         artifacts = pmoskills.get_artifacts()
-        self.assertGreater(len(artifacts), 0)
+        self.assertEqual(len(artifacts), 92)
 
     def test_retrieve_a01_template(self):
         a01 = pmoskills.get_artifact("A01")
         self.assertIsNotNone(a01)
         self.assertEqual(a01.get("id"), "A01")
         self.assertIn("Business Case", a01.get("title", ""))
+
+    def test_resolve_artifact_collisions_and_retrieve_both_a20_a27_variants(self):
+        team_charter = pmoskills.get_artifact("A20-team-charter.md")
+        self.assertIsNotNone(team_charter)
+        self.assertEqual(team_charter.get("title"), "Team Charter")
+
+        risk_record = pmoskills.get_artifact("A20-Quantitative-Risk-and-Reserve-Decision-Record.md")
+        self.assertIsNotNone(risk_record)
+        self.assertEqual(risk_record.get("title"), "Quantitative Risk and Reserve Decision Record")
+
+        team_health = pmoskills.get_artifact("A27-team-health-development-record.md")
+        self.assertIsNotNone(team_health)
+        self.assertEqual(team_health.get("title"), "A27 — Team Health and Development Record")
+
+        project_closure = pmoskills.get_artifact("A27-project-closure-record.md")
+        self.assertIsNotNone(project_closure)
+        self.assertEqual(project_closure.get("title"), "Project Closure Record")
 
     # Reference Files
     def test_load_non_process_reference_files(self):

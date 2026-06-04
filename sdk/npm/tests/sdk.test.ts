@@ -60,7 +60,7 @@ describe('PMOSkills SDK Test Suite', () => {
   describe('Artifact Templates', () => {
     it('should load all artifact deliverable templates', () => {
       const artifacts = pmoskills.getArtifacts();
-      expect(artifacts.length).toBeGreaterThan(0);
+      expect(artifacts.length).toBe(92);
     });
 
     it('should retrieve A01 template correctly', () => {
@@ -68,6 +68,24 @@ describe('PMOSkills SDK Test Suite', () => {
       expect(a01).toBeDefined();
       expect(a01?.id).toBe('A01');
       expect(a01?.title).toContain('Business Case');
+    });
+
+    it('should resolve artifact collisions by file name and retrieve both A20 / A27 variants', () => {
+      const teamCharter = pmoskills.getArtifact('A20-team-charter.md');
+      expect(teamCharter).toBeDefined();
+      expect(teamCharter?.title).toBe('Team Charter');
+
+      const riskRecord = pmoskills.getArtifact('A20-Quantitative-Risk-and-Reserve-Decision-Record.md');
+      expect(riskRecord).toBeDefined();
+      expect(riskRecord?.title).toBe('Quantitative Risk and Reserve Decision Record');
+
+      const teamHealth = pmoskills.getArtifact('A27-team-health-development-record.md');
+      expect(teamHealth).toBeDefined();
+      expect(teamHealth?.title).toBe('A27 — Team Health and Development Record');
+
+      const projectClosure = pmoskills.getArtifact('A27-project-closure-record.md');
+      expect(projectClosure).toBeDefined();
+      expect(projectClosure?.title).toBe('Project Closure Record');
     });
   });
 

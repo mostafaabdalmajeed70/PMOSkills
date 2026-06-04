@@ -66,13 +66,25 @@ class PMOSkillsLoader:
         return list(self.store.get("processes", {}).values())
 
     def get_artifact(self, id: str) -> Optional[Dict[str, Any]]:
-        """Retrieves an artifact deliverable template by its ID or title."""
+        """Retrieves an artifact deliverable template by its ID, title, relative path, or filename."""
         artifacts = self.store.get("artifacts", {})
         if id in artifacts:
             return artifacts[id]
+        
+        lower_id = id.lower()
+        clean_id = lower_id[:-3] if lower_id.endswith(".md") else lower_id
+
         for a in artifacts.values():
-            if a.get("id") == id or a.get("title") == id:
+            if a.get("id", "").lower() == lower_id or a.get("title", "").lower() == lower_id:
                 return a
+            
+            path_val = a.get("path")
+            if path_val:
+                lower_path = path_val.lower()
+                filename = lower_path.split("/")[-1]
+                filename_no_ext = filename[:-3] if filename.endswith(".md") else filename
+                if filename == lower_id or filename_no_ext == clean_id or lower_path == lower_id:
+                    return a
         return None
 
     def get_artifacts(self) -> List[Dict[str, Any]]:

@@ -44,10 +44,26 @@ export class PMOSkillsLoader {
   }
 
   /**
-   * Retrieves an artifact deliverable template by its ID (e.g., 'A01').
+   * Retrieves an artifact deliverable template by its ID (e.g., 'A01', or path/filename).
    */
   public getArtifact(id: string): ArtifactTemplate | undefined {
-    return store.artifacts[id] || Object.values(store.artifacts).find(a => a.id === id || a.title === id);
+    if (store.artifacts[id]) {
+      return store.artifacts[id];
+    }
+    const lowerId = id.toLowerCase();
+    const cleanId = lowerId.replace(/\.md$/, '');
+
+    return Object.values(store.artifacts).find(a => {
+      if (a.id.toLowerCase() === lowerId || a.title.toLowerCase() === lowerId) {
+        return true;
+      }
+      if (!a.path) return false;
+      const lowerPath = a.path.toLowerCase();
+      const parts = lowerPath.split('/');
+      const filename = parts[parts.length - 1];
+      const filenameNoExt = filename.replace(/\.md$/, '');
+      return filename === lowerId || filenameNoExt === cleanId || lowerPath === lowerId;
+    });
   }
 
   /**

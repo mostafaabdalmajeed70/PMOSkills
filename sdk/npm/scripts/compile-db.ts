@@ -252,14 +252,10 @@ function main() {
       // Match A01, A02, etc.
       const idMatch = path.basename(file).match(/^A\d+/);
       const id = metadata.artifact_id || (idMatch ? idMatch[0] : relativePath);
-      
-      // Skip duplicate entries if template vs instantiated is present, keeping template as primary
-      if (store.artifacts[id] && !file.includes('-template')) {
-        continue;
-      }
 
-      store.artifacts[id] = {
+      store.artifacts[relativePath] = {
         id,
+        path: relativePath,
         title: metadata.name || metadata.artifact_name || metadata.title || (body.trim().split('\n')[0].replace(/^#+\s*/, '').trim()) || id,
         category: metadata.category || path.basename(path.dirname(file)),
         version: metadata.version || '1.0.0',
@@ -276,8 +272,8 @@ function main() {
     const referenceFiles = getFilesRecursively(referenceDir, '.md');
     console.log(`Found ${referenceFiles.length} reference files to parse...`);
     for (const file of referenceFiles) {
-      // Skip processes directory
-      if (file.includes('/reference/processes/')) {
+      // Skip process files (which start with PR) but include index files in reference/processes/
+      if (file.includes('/reference/processes/') && path.basename(file).startsWith('PR')) {
         continue;
       }
       const raw = fs.readFileSync(file, 'utf-8');

@@ -40,6 +40,7 @@ export interface OntologySpec {
 
 export interface ArtifactTemplate {
   id: string;
+  path: string;
   title: string;
   category: string;
   version: string;
