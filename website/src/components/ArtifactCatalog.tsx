@@ -14,14 +14,14 @@ interface ArtifactCatalogProps {
 }
 
 export const ArtifactCatalog: React.FC<ArtifactCatalogProps> = ({ artifacts }) => {
-  const [selectedArtifactId, setSelectedArtifactId] = useState<string>(artifacts[0]?.id || '');
+  const [selectedArtifactId, setSelectedArtifactId] = useState<string>(artifacts[0]?.path || artifacts[0]?.id || '');
   const [searchTerm, setSearchTerm] = useState<string>('');
   const [activeCategory, setActiveCategory] = useState<string>('All');
   const [copied, setCopied] = useState<boolean>(false);
 
   // Active selected artifact
   const selectedArtifact = useMemo(() => {
-    return artifacts.find(a => a.id === selectedArtifactId) || artifacts[0];
+    return artifacts.find(a => (a.path || a.id) === selectedArtifactId) || artifacts[0];
   }, [artifacts, selectedArtifactId]);
 
   // Extract categories (folder names) from artifact paths
@@ -59,8 +59,8 @@ export const ArtifactCatalog: React.FC<ArtifactCatalogProps> = ({ artifacts }) =
 
   // Set first filtered artifact if current selection is filtered out
   useEffect(() => {
-    if (filteredArtifacts.length > 0 && !filteredArtifacts.some(a => a.id === selectedArtifactId)) {
-      setSelectedArtifactId(filteredArtifacts[0].id);
+    if (filteredArtifacts.length > 0 && !filteredArtifacts.some(a => (a.path || a.id) === selectedArtifactId)) {
+      setSelectedArtifactId(filteredArtifacts[0].path || filteredArtifacts[0].id);
     }
   }, [filteredArtifacts, selectedArtifactId]);
 
@@ -153,12 +153,13 @@ export const ArtifactCatalog: React.FC<ArtifactCatalogProps> = ({ artifacts }) =
         {/* Scrollable list */}
         <div style={{ flex: 1, overflowY: 'auto', minHeight: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem', paddingRight: '4px' }}>
           {filteredArtifacts.map(art => {
-            const isSelected = art.id === selectedArtifactId;
+            const artKey = art.path || art.id;
+            const isSelected = artKey === selectedArtifactId;
             const filename = art.path ? art.path.split('/').pop() || art.id : art.id;
             return (
               <button
-                key={art.id}
-                onClick={() => setSelectedArtifactId(art.id)}
+                key={artKey}
+                onClick={() => setSelectedArtifactId(artKey)}
                 className="glass-card"
                 style={{
                   display: 'flex',
