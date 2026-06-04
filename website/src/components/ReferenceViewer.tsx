@@ -105,9 +105,9 @@ export const ReferenceViewer: React.FC<ReferenceViewerProps> = ({ references }) 
   };
 
   return (
-    <div className="animate-fade-in" style={{ display: 'grid', gridTemplateColumns: '320px 1fr', gap: '2rem', height: 'calc(100vh - 120px)', overflow: 'hidden' }}>
+    <div className="animate-fade-in" style={{ display: 'grid', gridTemplateColumns: '320px 1fr', gap: '2rem', height: '100%', overflow: 'hidden' }}>
       {/* Left Sidebar: Nav Tree */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', height: '100%', borderRight: '1px solid var(--border-color)', paddingRight: '1.5rem' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', height: '100%', minHeight: 0, borderRight: '1px solid var(--border-color)', paddingRight: '1.5rem', overflow: 'hidden' }}>
         {/* Search */}
         <div style={{ position: 'relative' }}>
           <Search size={18} style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
@@ -129,7 +129,7 @@ export const ReferenceViewer: React.FC<ReferenceViewerProps> = ({ references }) 
         </div>
 
         {/* Scrollable list */}
-        <div style={{ flex: 1, overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '1.25rem', paddingRight: '4px' }}>
+        <div style={{ flex: 1, overflowY: 'auto', minHeight: 0, display: 'flex', flexDirection: 'column', gap: '1.25rem', paddingRight: '4px' }}>
           {Object.entries(filteredGroupedReferences).map(([groupName, files]) => (
             <div key={groupName} style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
               <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em', display: 'flex', alignItems: 'center', gap: '0.25rem' }}>

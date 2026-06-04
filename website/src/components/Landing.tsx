@@ -15,7 +15,7 @@ interface LandingProps {
 
 export const Landing: React.FC<LandingProps> = ({ onNavigate, stats }) => {
   return (
-    <div className="animate-fade-in" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+    <div className="animate-fade-in" style={{ maxWidth: '1200px', margin: '0 auto', overflowY: 'auto', height: '100%', width: '100%', paddingRight: '0.5rem' }}>
       {/* Hero Section */}
       <section style={{ textAlign: 'center', padding: '3.5rem 1rem 2.5rem', position: 'relative' }}>
         <div style={{
