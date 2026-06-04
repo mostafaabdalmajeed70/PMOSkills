@@ -26,9 +26,10 @@ graph TD
 ### 2.1 PMO Directors & Governance Leads
 * **Objective:** Establish corporate project management governance frameworks, audit process compliance, and scale PMO capability maturity levels.
 * **Primary Navigation Path:**
-  1. Start with [Appendix X2: PMO Integration](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/reference/appendices/X2-pmo.md) to understand PMO archetypes and Change Control Board setups.
-  2. Review the [PMO Reference Layer Index](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/reference/pmo/index.md) and [PMO Standard Services](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/reference/pmo/pmo-services.md).
-  3. Deploy the [Governance Tailoring Guide](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/reference/tailoring/tailoring-governance.md) to set standard change control boundaries.
+  1. Read the [Executive Guide to Agentic PMO & MCP](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/docs/general/pmo-executive-guide-ai-mcp.md) for a 10,000-ft conceptual introduction to AI, Agents, and MCP using PMO terms.
+  2. Start with [Appendix X2: PMO Integration](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/reference/appendices/X2-pmo.md) to understand PMO archetypes and Change Control Board setups.
+  3. Review the [PMO Reference Layer Index](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/reference/pmo/index.md) and [PMO Standard Services](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/reference/pmo/pmo-services.md).
+  4. Deploy the [Governance Tailoring Guide](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/reference/tailoring/tailoring-governance.md) to set standard change control boundaries.
 * **PMO Director Checklist:**
   - [ ] Baseline the corporate [PMO Maturity rating](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/reference/pmo/pmo-maturity-model.md).
   - [ ] Set up the pre-approved [T1–T4 Authority Routing rules](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/AUTHORITY-ROUTING.md).

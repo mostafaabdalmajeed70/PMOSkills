@@ -27,6 +27,7 @@ To help you get started, we have organized the entire documentation suite into *
 
 | Document | Purpose | Core Standard Coverage |
 |---|---|---|
+| 👔 **[Executive Guide to Agentic PMO & MCP](general/pmo-executive-guide-ai-mcp.md)** | 10,000-ft strategic overview translating AI, Agents, and MCP for leadership. | Strategic PMO & OPM Alignment |
 | 📘 **[Getting Started Guide](human-practitioners/getting-started.md)** | Initialize workspace, establish directory control, and start execution. | PMO Services, Infrastructure |
 | ⚙️ **[SOP: How to Use Skills](human-practitioners/how-to-use-skills.md)** | Dynamic instructions on using the 48 atomic skills (Packs 01–07). | Executable PM checklists |
 | 📁 **[SOP: How to Use Artifacts](human-practitioners/how-to-use-artifacts.md)** | Guidance on instantiating the 78 clean templates and case examples. | Core PMBOK 8 Deliverables |
@@ -66,6 +67,7 @@ To help you get started, we have organized the entire documentation suite into *
 
 | Document | Purpose | Core Standard Coverage |
 |---|---|---|
+| 👔 **[Executive Guide to Agentic PMO & MCP](general/pmo-executive-guide-ai-mcp.md)** | 10,000-ft strategic overview translating AI, Agents, and MCP for leadership. | Strategic PMO & OPM Alignment |
 | 📖 **[Glossary of PM Terms](general/glossary.md)** | Standard definitions for PMBOK 8th Edition terminologies. | Lexicon standard alignment |
 | ❓ **[Frequently Asked Questions](general/faq.md)** | Standard repository operations, template copy rules, and troubleshooting. | PMO Helpdesk Support |
 | 🌱 **[Sustainability & ESG Guide](general/sustainability-guide.md)** | ESG principles and metrics mapped directly to Pack 03 skills. | Environmental Stewardship |
