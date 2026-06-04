@@ -383,13 +383,13 @@ If you use this repository or framework in your academic research, PMO governanc
   month        = jun,
   year         = 2026,
   publisher    = {Zenodo},
-  version      = {v0.5},
+  version      = {v0.5.1},
   doi          = {10.5281/zenodo.20510540},
   url          = {https://doi.org/10.5281/zenodo.20510540}
 }
 ```
 
-> Fakhruldeen, M. F. (2026). *PMOSkills: An Executable Skill System & PMO Reference Architecture built on PMI PMBOK® 8th Edition* (Version v0.5). Zenodo. https://doi.org/10.5281/zenodo.20510540
+> Fakhruldeen, M. F. (2026). *PMOSkills: An Executable Skill System & PMO Reference Architecture built on PMI PMBOK® 8th Edition* (Version v0.5.1). Zenodo. https://doi.org/10.5281/zenodo.20510540
 
 ---
 
