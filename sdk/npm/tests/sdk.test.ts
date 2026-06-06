@@ -60,7 +60,7 @@ describe('PMOSkills SDK Test Suite', () => {
   describe('Artifact Templates', () => {
     it('should load all artifact deliverable templates', () => {
       const artifacts = pmoskills.getArtifacts();
-      expect(artifacts.length).toBe(96);
+      expect(artifacts.length).toBe(100);
     });
 
     it('should retrieve A01 template correctly', () => {

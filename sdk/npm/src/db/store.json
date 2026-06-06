@@ -6632,6 +6632,58 @@
       "owner": "Project manager with risk lead support",
       "approval_authority": "Project manager for risk responses within thresholds; sponsor or governance body for reserve drawdown and risk exceptions per A06"
     },
+    "artifacts/monitoring-and-decisions/A19-risk-management-record-adaptive-template.md": {
+      "id": "A19",
+      "path": "artifacts/monitoring-and-decisions/A19-risk-management-record-adaptive-template.md",
+      "title": "Risk Management Record (Adaptive Variant)",
+      "category": "Risk",
+      "version": "1.0.0",
+      "status": "Template · Active",
+      "rawContent": "---\nartifact_id: A19\nname: Risk Management Record (Adaptive Variant)\ntemplate_version: \"1.0.0\"\nstatus: Template · Active\ncategory: Risk\nauthority: \"PMBOK8 Guide §2.7 · APG §5 · Risk-PPP\"\nsource_type: synthesis\nfile_path: artifacts/monitoring-and-decisions/A19-risk-management-record-adaptive-template.md\n---\n\n# A19 — Risk-Adjusted Backlog and Impediment Log (Adaptive Variant Template)\n\n> **Usage:** This is the adaptive variant of the risk register, tracking risks as risk-adjusted backlog items and current blockers as impediments. Replace every `[FIELD: ...]` placeholder with project-specific content.\n\n---\n\n## Section 1 — Identification\n\n| Field | Value |\n|---|---|\n| **Project Name** | [FIELD: Project name] |\n| **Project Manager/SM** | [FIELD: PM/SM name] |\n| **Document Version** | [FIELD: e.g. v1.0] |\n| **Last Updated** | [FIELD: YYYY-MM-DD] |\n\n---\n\n## Section 2 — Risk-Adjusted Backlog Items\n\nThese are risk mitigation or contingency tasks prioritized directly within the product backlog:\n\n| Risk ID | Risk Description | Potential Impact | Mitigation Action (Backlog Item) | Priority (MoSCoW) | Target Sprint | Linked Backlog Item ID |\n|---|---|---|---|---|---|---|\n| R-01 | [FIELD: Risk description] | [FIELD: Impact description] | [FIELD: Action to prevent/mitigate] | [FIELD: Priority] | [FIELD: Sprint #] | [FIELD: US-###] |\n| R-02 | [FIELD: Risk description] | [FIELD: Impact description] | [FIELD: Action to prevent/mitigate] | [FIELD: Priority] | [FIELD: Sprint #] | [FIELD: US-###] |\n\n---\n\n## Section 3 — Impediment and Blocker Board\n\nThese are active barriers currently impacting team velocity or blocking work completion:\n\n| Blocker ID | Impediment Description | Date Logged | Owner | Impacted Story / Task | Action Taken / Plan | Status |\n|---|---|---|---|---|---|---|\n| IMP-01 | [FIELD: Blocker description] | [FIELD: YYYY-MM-DD] | [FIELD: SM / Owner] | [FIELD: US-###] | [FIELD: Recovery action] | Open / Resolved |\n| IMP-02 | [FIELD: Blocker description] | [FIELD: YYYY-MM-DD] | [FIELD: SM / Owner] | [FIELD: US-###] | [FIELD: Recovery action] | Open / Resolved |\n\n---\n\n## Change Log\n\n| Version | Date | Author / Event | Description |\n|---|---|---|---|\n| 1.0.0 | 2026-06-07 | PMO Director | Initial adaptive risk template |\n\n---\n*Template for: A19 Risk Management Record (Adaptive)*  \n*Authority: PMBOK8 Guide §2.7 · APG §5 · Risk-PPP*\n",
+      "schema": {
+        "schema_version": "1.0.0",
+        "artifact_id": "A19",
+        "artifact_name": "Risk Management Record",
+        "pmbok8_ref": "PMBOK8",
+        "focus_area": "Planning",
+        "performance_domains": [
+          "Risk",
+          "Governance",
+          "Finance",
+          "Schedule",
+          "Stakeholders"
+        ],
+        "lifecycle_applicability": [
+          "predictive",
+          "adaptive",
+          "hybrid"
+        ],
+        "fields": [
+          {
+            "name": "title",
+            "title": "Title",
+            "type": "string",
+            "required": true,
+            "description": "The title of the artifact"
+          },
+          {
+            "name": "description",
+            "title": "Description",
+            "type": "string",
+            "required": true,
+            "description": "General description of the artifact"
+          }
+        ],
+        "produced_by_skills": [],
+        "consumed_by_skills": []
+      },
+      "artifact_id": "A19",
+      "name": "Risk Management Record (Adaptive Variant)",
+      "template_version": "1.0.0",
+      "authority": "PMBOK8 Guide §2.7 · APG §5 · Risk-PPP",
+      "source_type": "synthesis",
+      "file_path": "artifacts/monitoring-and-decisions/A19-risk-management-record-adaptive-template.md"
+    },
     "artifacts/monitoring-and-decisions/A19-risk-management-record-example.md": {
       "id": "A19",
       "path": "artifacts/monitoring-and-decisions/A19-risk-management-record-example.md",
@@ -7300,6 +7352,53 @@
       "source_type": "synthesis",
       "file_path": "artifacts/planning-and-baselines/A06-tailoring-decision-record-template.md"
     },
+    "artifacts/planning-and-baselines/A08-scope-requirements-backlog-adaptive-template.md": {
+      "id": "A08",
+      "path": "artifacts/planning-and-baselines/A08-scope-requirements-backlog-adaptive-template.md",
+      "title": "Scope, Requirements, and Backlog Document (Adaptive Variant)",
+      "category": "planning-and-baselines",
+      "version": "1.0.0",
+      "status": "Template · Active",
+      "rawContent": "---\nartifact_id: A08\nartifact_name: Scope, Requirements, and Backlog Document (Adaptive Variant)\nartifact_type: template\nversion: \"1.0.0\"\nstatus: Template · Active\nparent_definition: artifacts/planning-and-baselines/A08-scope-requirements-backlog.md\nauthority: PMBOK8 Guide §2.2 · APG §5\n---\n\n# A08 — Product Backlog (Adaptive Variant Template)\n\n> **Usage:** This is the adaptive variant of the scope baseline, focused on continuous prioritization, user stories, and release planning. Replace every `[FIELD: ...]` placeholder with project-specific content.\n\n---\n\n## Section 1 — Product Vision & Team Charter\n\n| Field | Entry |\n|---|---|\n| Product Name | [FIELD: Full product name] |\n| Product Owner | [FIELD: PO name] |\n| Scrum Master | [FIELD: SM name] |\n| Version | [FIELD: e.g., v1.0] |\n| Linked Artifacts | A04 · A05 · A07 · A27 |\n\n---\n\n## Section 2 — Product Backlog (Prioritized Features/Stories)\n\n| Item ID | User Story Description | Priority (MoSCoW/Value) | Story Points | Definition of Ready Met? | Status |\n|---|---|---|---|---|---|\n| US-001 | [FIELD: As a [user], I want [feature] so that [value]] | [FIELD: e.g. Must Have] | [FIELD: e.g. 5] | Yes / No | Backlog / Ready / In Progress / Done |\n| US-002 | [FIELD: As a [user], I want [feature] so that [value]] | [FIELD: Priority] | [FIELD: Points] | Yes / No | Status |\n\n---\n\n## Section 3 — Release Plan\n\n| Release ID | Release Goal | Target Date | Planned Stories / Features | Estimated Velocity |\n|---|---|---|---|---|\n| Release-01 | [FIELD: Goal description] | [FIELD: YYYY-MM-DD] | [FIELD: US-001, US-002] | [FIELD: Points] |\n\n---\n\n## Section 4 — Definition of Done (DoD)\n\n[FIELD: Describe the team's definition of done criteria, e.g., Code reviewed, unit tests pass, automated test coverage > 80%, accepted by Product Owner.]\n\n---\n\n## Change Log\n\n| Version | Date | Author / Event | Description |\n|---|---|---|---|\n| 1.0.0 | 2026-06-07 | PMO Director | Initial adaptive template |\n\n---\n*Template for: A08 Scope, Requirements, and Backlog (Adaptive)*  \n*Authority: PMBOK8 Guide §2.2 · APG §5*\n",
+      "schema": {
+        "schema_version": "1.0.0",
+        "artifact_id": "A08",
+        "artifact_name": "A08 Scope Requirements Backlog",
+        "pmbok8_ref": "PMBOK8",
+        "focus_area": "Planning",
+        "performance_domains": [
+          "Governance"
+        ],
+        "lifecycle_applicability": [
+          "predictive",
+          "adaptive",
+          "hybrid"
+        ],
+        "fields": [
+          {
+            "name": "title",
+            "title": "Title",
+            "type": "string",
+            "required": true,
+            "description": "The title of the artifact"
+          },
+          {
+            "name": "description",
+            "title": "Description",
+            "type": "string",
+            "required": true,
+            "description": "General description of the artifact"
+          }
+        ],
+        "produced_by_skills": [],
+        "consumed_by_skills": []
+      },
+      "artifact_id": "A08",
+      "artifact_name": "Scope, Requirements, and Backlog Document (Adaptive Variant)",
+      "artifact_type": "template",
+      "parent_definition": "artifacts/planning-and-baselines/A08-scope-requirements-backlog.md",
+      "authority": "PMBOK8 Guide §2.2 · APG §5"
+    },
     "artifacts/planning-and-baselines/A08-scope-requirements-backlog-example.md": {
       "id": "A08",
       "path": "artifacts/planning-and-baselines/A08-scope-requirements-backlog-example.md",
@@ -7434,6 +7533,60 @@
         "produced_by_skills": [],
         "consumed_by_skills": []
       }
+    },
+    "artifacts/planning-and-baselines/A14-integrated-project-management-plan-adaptive-template.md": {
+      "id": "A14",
+      "path": "artifacts/planning-and-baselines/A14-integrated-project-management-plan-adaptive-template.md",
+      "title": "Integrated Project Management Plan (Adaptive Variant)",
+      "category": "Planning",
+      "version": "1.0.0",
+      "status": "Template · Active",
+      "rawContent": "---\nartifact_id: A14\nname: Integrated Project Management Plan (Adaptive Variant)\ntemplate_version: \"1.0.0\"\nstatus: Template · Active\ncategory: Planning\nauthority: \"PMBOK8 Guide §4.5.2 · APG §5\"\nsource_type: synthesis\nfile_path: artifacts/planning-and-baselines/A14-integrated-project-management-plan-adaptive-template.md\n---\n\n# A14 — Lean Project Canvas and Agile Plan (Adaptive Variant Template)\n\n> **Usage:** This is the adaptive variant of the Integrated PM Plan, utilizing a Lean Canvas model for rapid initiation and agile execution. Replace every `[FIELD: ...]` placeholder with project-specific content.\n\n---\n\n## Section 1 — Identification\n\n| Field | Value |\n|---|---|\n| **Project Name** | [FIELD: Project name] |\n| **Product Owner** | [FIELD: PO name] |\n| **Scrum Master** | [FIELD: SM name] |\n| **Version** | [FIELD: e.g. v1.0] |\n| **Baseline Date** | [FIELD: YYYY-MM-DD] |\n\n---\n\n## Section 2 — Lean Canvas Model\n\n| Problem | Solution | Unique Value Prop | Key Metrics | Customer Segments |\n|---|---|---|---|---|\n| [FIELD: Top 3 problems] | [FIELD: Top 3 features] | [FIELD: Value proposition] | [FIELD: KPI metrics] | [FIELD: Target users] |\n\n| Cost Structure | Revenue / Benefits Stream |\n|---|---|\n| [FIELD: High-level costs (resource, infrastructure)] | [FIELD: Benefits realized (strategic value)] |\n\n---\n\n## Section 3 — Agile Cadence & Team Norms\n\n*   **Sprint Duration:** [FIELD: e.g., 2 weeks]\n*   **Daily Standup Time:** [FIELD: e.g., 9:30 AM Daily]\n*   **Sprint Review/Demo:** [FIELD: e.g., Alternate Fridays at 2 PM]\n*   **Retrospective:** [FIELD: e.g., Alternate Fridays at 3:30 PM]\n\n---\n\n## Section 4 — Release Governance & Tolerances\n\n*   **Velocity Tolerance:** [FIELD: Escalation trigger, e.g. velocity drops below 75% of target for 2 consecutive sprints]\n*   **Release Defect Threshold:** [FIELD: e.g. zero critical defects, max 5 minor defects to release to production]\n\n---\n\n## Change Log\n\n| Version | Date | Author / Event | Description |\n|---|---|---|---|\n| 1.0.0 | 2026-06-07 | PMO Director | Initial adaptive PM plan template |\n\n---\n*Template for: A14 Integrated PM Plan (Adaptive)*  \n*Authority: PMBOK8 Guide §4.5.2 · APG §5*\n",
+      "schema": {
+        "schema_version": "1.0.0",
+        "artifact_id": "A14",
+        "artifact_name": "Integrated Project Management Plan",
+        "pmbok8_ref": "PMBOK8",
+        "focus_area": "Planning",
+        "performance_domains": [
+          "Governance",
+          "Scope",
+          "Schedule",
+          "Finance",
+          "Stakeholders",
+          "Resources",
+          "Risk"
+        ],
+        "lifecycle_applicability": [
+          "predictive",
+          "adaptive",
+          "hybrid"
+        ],
+        "fields": [
+          {
+            "name": "title",
+            "title": "Title",
+            "type": "string",
+            "required": true,
+            "description": "The title of the artifact"
+          },
+          {
+            "name": "description",
+            "title": "Description",
+            "type": "string",
+            "required": true,
+            "description": "General description of the artifact"
+          }
+        ],
+        "produced_by_skills": [],
+        "consumed_by_skills": []
+      },
+      "artifact_id": "A14",
+      "name": "Integrated Project Management Plan (Adaptive Variant)",
+      "template_version": "1.0.0",
+      "authority": "PMBOK8 Guide §4.5.2 · APG §5",
+      "source_type": "synthesis",
+      "file_path": "artifacts/planning-and-baselines/A14-integrated-project-management-plan-adaptive-template.md"
     },
     "artifacts/planning-and-baselines/A14-integrated-project-management-plan-example.md": {
       "id": "A14",
@@ -7628,6 +7781,57 @@
       ],
       "owner": "Project manager",
       "approval_authority": "Sponsor or designated governance body consistent with project risk and organizational policy"
+    },
+    "artifacts/planning-and-baselines/A15-schedule-adaptive-template.md": {
+      "id": "A15",
+      "path": "artifacts/planning-and-baselines/A15-schedule-adaptive-template.md",
+      "title": "Schedule Baseline and Forecast Record (Adaptive Variant)",
+      "category": "Planning",
+      "version": "1.0.0",
+      "status": "Template · Active",
+      "rawContent": "---\nartifact_id: A15\nname: Schedule Baseline and Forecast Record (Adaptive Variant)\ntemplate_version: \"1.0.0\"\nstatus: Template · Active\ncategory: Planning\nauthority: \"PMBOK8 Guide Table 2-1 · APG §5\"\nsource_type: synthesis\nfile_path: artifacts/planning-and-baselines/A15-schedule-adaptive-template.md\n---\n\n# A15 — Release and Sprint Schedule (Adaptive Variant Template)\n\n> **Usage:** This is the adaptive scheduling variant focused on iteration cadences, release timelines, and velocity tracking. Replace every `[FIELD: ...]` placeholder with project-specific content.\n\n---\n\n## Section 1 — Schedule Identity\n\n| Field | Value |\n|---|---|\n| **Project Name** | [FIELD: Project name] |\n| **Project Manager/SM** | [FIELD: SM name] |\n| **Current Sprint** | [FIELD: Sprint #] |\n| **Sprint Duration** | [FIELD: e.g., 2 weeks] |\n| **Initial Estimated Velocity** | [FIELD: Story points per sprint] |\n\n---\n\n## Section 2 — Release Milestone Roadmap\n\n| Milestone ID | Milestone / Release Goal | Target Date | Status | Linked Backlog Items |\n|---|---|---|---|---|\n| RM-01 | [FIELD: Release 1 - MVP] | [FIELD: YYYY-MM-DD] | Planned / Active | [FIELD: US-001, US-002] |\n| RM-02 | [FIELD: Release 2] | [FIELD: YYYY-MM-DD] | Planned | [FIELD: US-003] |\n\n---\n\n## Section 3 — Sprint Iteration Plan\n\n| Sprint ID | Start Date | End Date | Sprint Goal | Committed Points | Actual Velocity | Status |\n|---|---|---|---|---|---|---|\n| Sprint-01 | [FIELD: YYYY-MM-DD] | [FIELD: YYYY-MM-DD] | [FIELD: Goal statement] | [FIELD: Points] | [FIELD: Points] | Active / Completed |\n| Sprint-02 | [FIELD: YYYY-MM-DD] | [FIELD: YYYY-MM-DD] | [FIELD: Goal statement] | [FIELD: Points] | [FIELD: Points] | Planned |\n\n---\n\n## Section 4 — Velocity History & Burndown Chart link\n\n*   **Average Velocity:** [FIELD: Average points completed over past 3 sprints]\n*   **Burndown Link:** [FIELD: URL or location of the live burndown chart]\n\n---\n\n## Change Log\n\n| Version | Date | Author / Event | Description |\n|---|---|---|---|\n| 1.0.0 | 2026-06-07 | PMO Director | Initial adaptive scheduling template |\n\n---\n*Template for: A15 Schedule Baseline and Forecast (Adaptive)*  \n*Authority: PMBOK8 Guide Table 2-1 · APG §5*\n",
+      "schema": {
+        "schema_version": "1.0.0",
+        "artifact_id": "A15",
+        "artifact_name": "Schedule Model and Baseline Record",
+        "pmbok8_ref": "PMBOK8",
+        "focus_area": "Planning",
+        "performance_domains": [
+          "Schedule",
+          "Governance",
+          "Risk",
+          "Resources"
+        ],
+        "lifecycle_applicability": [
+          "predictive",
+          "adaptive",
+          "hybrid"
+        ],
+        "fields": [
+          {
+            "name": "title",
+            "title": "Title",
+            "type": "string",
+            "required": true,
+            "description": "The title of the artifact"
+          },
+          {
+            "name": "description",
+            "title": "Description",
+            "type": "string",
+            "required": true,
+            "description": "General description of the artifact"
+          }
+        ],
+        "produced_by_skills": [],
+        "consumed_by_skills": []
+      },
+      "artifact_id": "A15",
+      "name": "Schedule Baseline and Forecast Record (Adaptive Variant)",
+      "template_version": "1.0.0",
+      "authority": "PMBOK8 Guide Table 2-1 · APG §5",
+      "source_type": "synthesis",
+      "file_path": "artifacts/planning-and-baselines/A15-schedule-adaptive-template.md"
     },
     "artifacts/planning-and-baselines/A15-schedule-baseline-example.md": {
       "id": "A15",
@@ -13618,5 +13822,5 @@
     "content": "# 🧠 PMOSkills Knowledge Graph & Ontology Specification\n\nThis document provides the authoritative ontological specifications and semantic relationships governing the files in the **PMOSkills Reference Architecture**. It is designed explicitly for **AI Agents**, LLM parsers, knowledge graph builders, and developer tools to programmatically parse and navigate the repository.\n\n---\n\n## 1. Ontological Node Types (Entity Classes)\n\nThe PMOSkills repository is modeled as a directed, acyclic semantic graph consisting of five core entity classes:\n\n```\n  ┌────────────────────────────────────────────────────────────────────────┐\n  │                                PMOSkills                               │\n  └───────────────────┬─────────────────────────────────┬──────────────────┘\n                      │                                 │\n                      ▼                                 ▼\n         ┌────────────────────────┐        ┌────────────────────────┐\n         │    Reference Layer     │        │      Skills Layer      │\n         └────────────┬───────────┘        └────────────┬───────────┘\n                      │                                 │\n                      ▼                                 ▼\n         ┌────────────────────────┐        ┌────────────────────────┐\n         │     Artifact Layer     │        │      Testing Layer     │\n         └────────────────────────┘        └────────────────────────┘\n```\n\n1.  **`Principle` (P01-P12):** Core philosophical standards guiding behavior.\n2.  **`PerformanceDomain` (PD01-PD08):** Broad operational performance fields.\n3.  **`ProcessRecord` (PR01-PR41):** Formal project management process definitions.\n4.  **`ExecutableSkill` (SKL-XX-YY):** Step-by-step procedural action manuals.\n5.  **`ArtifactTemplate` (A01-A39):** Machine-parsable, placeholder-driven project deliverables.\n6.  **`Testcase` (TST-XX-YY):** Programmatic QA tests validating skills and artifacts.\n\n---\n\n## 2. Relationship Schemas (Edges)\n\nNodes are linked by strict, deterministic semantic edges:\n\n| Subject Node | Relationship (Edge) | Object Node | Description |\n|---|---|---|---|\n| `ProcessRecord` | `MAPS_TO` | `PerformanceDomain` | Maps a process to its PMBOK 8 operational domain. |\n| `ExecutableSkill` | `IMPLEMENTS` | `ProcessRecord` | Maps a skill to its defining standard process. |\n| `ExecutableSkill` | `OUTPUTS` | `ArtifactTemplate` | Declares the mandatory template produced by a skill. |\n| `ArtifactTemplate` | `VALIDATES` | `ProcessRecord` | Connects a deliverable template back to standard process compliance. |\n| `Testcase` | `VERIFIES` | `ExecutableSkill` | Programmatic unit tests validating skill execution logs. |\n\n---\n\n## 3. Strict GOV Front-Matter Metadata Properties\n\nEvery markdown document in the repository must contain a valid YAML front-matter block at the absolute beginning of the file. AI agents must parse and validate these properties:\n\n### 3.1 Executable Skill (`skills/`) YAML Specifications\n```yaml\n---\nskill_id: SKL-03-03\nskill_name: \"Create Work Breakdown Structure (WBS)\"\npack: \"Pack 03: Planning\"\nversion: \"1.0.0\"\nstatus: Active\npmo_level: \"T2 Controlled\"\ninputs:\n  - \"docs/human-practitioners/tailoring-guide.md\"\n  - \"artifacts/initiating/A04-project-charter-template.md\"\noutputs:\n  - \"artifacts/planning-and-baselines/A09-work-breakdown-structure-template.md\"\n  - \"artifacts/planning-and-baselines/A10-wbs-dictionary-template.md\"\npmbok8_align:\n  - \"PR07: Create WBS\"\n  - \"PD03: Planning\"\n---\n```\n\n### 3.2 Artifact Template (`artifacts/`) YAML Specifications\n```yaml\n---\nartifact_id: A09\nartifact_name: \"Work Breakdown Structure Record\"\ncategory: \"Planning & Baselines\"\nversion: \"1.0.0\"\nstatus: Template\nproject_id: \"PMO-TEMPLATE\"\npmbok8_align:\n  - \"PR07: Create WBS\"\n  - \"PD03: Planning\"\n---\n```\n\n---\n\n## 4. Parser Directives for AI Graph Traversers\n\nAI crawlers navigating this repository should follow these traversal protocols:\n\n### 4.1 Upward Traceability Traversal\n*   **Goal:** Trace a modified artifact template back to its source PMBOK 8 standard.\n*   **Protocol:**\n    1.  Read `artifacts/AXX.md` front-matter properties to identify `pmbok8_align` values.\n    2.  Locate `reference/processes/PRXX.md` to review the standard process input/output definitions.\n    3.  Confirm alignment by reviewing the corresponding principle `reference/principles/PXX.md`.\n\n### 4.2 Downward Verification Traversal\n*   **Goal:** Verify that a standard process change is fully integrated.\n*   **Protocol:**\n    1.  Read `reference/processes/PRXX.md`.\n    2.  Query `skills/` for any skill matching `pmbok8_align: PRXX`.\n    3.  Verify the skill outputs the expected `AXX` template.\n    4.  Run unit tests `tests/` mapping `TST-XX` to confirm programmatic compliance.\n\n---\n\n*Authority: PMBOK 8 Core Schema Standard · PMO Shared Governance Board · AI Ontologies Council*"
   },
   "version": "0.3.0",
-  "compiledAt": "2026-06-06T21:46:59.753Z"
+  "compiledAt": "2026-06-06T21:49:42.269Z"
 }
