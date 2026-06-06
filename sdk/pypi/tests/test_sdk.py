@@ -5,7 +5,7 @@ class TestPMOSkillsSDK(unittest.TestCase):
     # Executable Skills
     def test_load_all_48_executable_skills(self):
         skills = pmoskills.get_skills()
-        self.assertEqual(len(skills), 48)
+        self.assertEqual(len(skills), 58)
 
     def test_retrieve_specific_skill_by_id_and_metadata(self):
         skill = pmoskills.get_skill("SKL-01-01")
@@ -50,7 +50,7 @@ class TestPMOSkillsSDK(unittest.TestCase):
     # Artifact Templates
     def test_load_all_artifact_templates(self):
         artifacts = pmoskills.get_artifacts()
-        self.assertEqual(len(artifacts), 92)
+        self.assertEqual(len(artifacts), 100)
 
     def test_retrieve_a01_template(self):
         a01 = pmoskills.get_artifact("A01")
@@ -82,9 +82,9 @@ class TestPMOSkillsSDK(unittest.TestCase):
         self.assertTrue(any(r.get("category") == "principles" for r in ref_files))
 
     def test_retrieve_principle_by_path(self):
-        p01 = pmoskills.get_reference_file("reference/principles/P01-stewardship.md")
+        p01 = pmoskills.get_reference_file("reference/principles/pmbok8/P8-01-holistic-view.md")
         self.assertIsNotNone(p01)
-        self.assertIn("Steward", p01.get("title", ""))
+        self.assertIn("Holistic", p01.get("title", ""))
 
     # Shared Assets
     def test_load_shared_assets(self):
