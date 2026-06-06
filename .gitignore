@@ -87,4 +87,7 @@ target/
 .factorypath
 .metadata/
 
+# PMI Reference Materials (local only)
+references/
+
 # Git specific
