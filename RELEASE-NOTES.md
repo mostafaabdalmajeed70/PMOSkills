@@ -11,12 +11,39 @@
 
 | Version | Date | Milestone |
 |---|---|---|
+| [**v0.6.0-beta.1**](#-v060-beta1--pmb-8-operating-system-remediation--tailoring-layer) | June 7, 2026 | PMBOK 8 Operating System Remediation & Tailoring Layer |
 | [**v0.5.1**](#-v051--sdk-collision-resolution--database-integrity-patch) | June 4, 2026 | SDK Collision Resolution & Database Integrity Patch |
 | [**v0.5**](#-v05--pmbok-8-audit-completion--reference-layer-enrichment) | June 3, 2026 | PMBOK 8 Audit Completion & Reference Enrichment |
 | [**v0.4**](#-v04--npm-sdk-publication) | June 2, 2026 | NPM SDK Publication |
 | [**v0.3**](#-v03--metrics-sync--onboarding-integration) | June 2, 2026 | Metrics Sync & Onboarding Integration |
 | [**v0.2**](#-v02--documentation-expansion) | June 2, 2026 | Ultimate Documentation Expansion |
 | [**v0.1**](#-v01--first-stable-release) | June 2, 2026 | First Stable Framework Release |
+
+---
+---
+
+# 🏷️ v0.6.0-beta.1 — PMBOK 8 Operating System Remediation & Tailoring Layer
+
+**Release Tag:** `v0.6.0-beta.1` · **Date:** June 7, 2026 · **NPM:** `pmoskills@0.6.0-beta.1` · **PyPI:** `pmoskills@0.6.0b1`  
+**Commits:** 4 · **Files Changed:** 72  
+**Artifact Database Coverage:** 100% (100 templates total)
+
+---
+
+We are proud to present **PMOSkills Release v0.6.0-beta.1** — the **PMBOK 8 Operating System Remediation & Tailoring Layer**. This beta release closes the structural remediation requirements, adds comprehensive lifecycle tailoring variants, standardizes PMO services mappings, introduces quantitative EVM checks, expands governance templates, and ensures all file paths in the documentation are relative to maintain workspace privacy.
+
+### 🌟 Key Enhancements & Features
+* **Lifecycle Variant Architecture (Phase 5)**: Embedded `lifecycle_applicability` and `lifecycle_notes` metadata to all 58 skill files. Added 4 new adaptive variant templates for key artifacts: A08 (Product Backlog), A14 (Lean PM Canvas), A15 (Sprint/Release Schedule), and A19 (Risk-Adjusted Backlog/Impediment Log).
+* **PMO Services Catalog (Phase 6)**: Created `reference/pmo/pmo-services-catalog.md` mapping the 26 standard PMO services to specific executable skills and target artifacts.
+* **EVM Threshold Validator (Phase 7)**: Formulated quantitative warning/critical thresholds and forecasting formulas in `shared/validators/evm-threshold-validator.md` for Earned Value Management.
+* **Governance Templates Expansion (Phase 8)**: Added 4 new governance templates: CCB SOP, RACI Matrix, Decision Record, and Governance Charter under `artifacts/governance/`.
+* **Companion Reference Crosswalk (Phase 9)**: Created a program-level crosswalk (`docs/companion-reference-crosswalk.md`) mapping all 24 PMI companion references to grounded skills, informed artifacts, and content gaps.
+* **Privacy Link Remediation**: Cleaned up the repository to replace all absolute local `file:///` URLs with secure, relative links.
+
+### 🧪 SDK Recompilation & Parity Testing (Phase 10)
+* Recompiled both the NPM and PyPI SDK data store to include all 100 templates and updated schemas.
+* Updated test suites to reflect new counts and archived principles paths.
+* Verified 100% test success rate (20/20 in Node SDK, 19/19 in PyPI SDK) and validated repository structural integrity.
 
 ---
 ---
