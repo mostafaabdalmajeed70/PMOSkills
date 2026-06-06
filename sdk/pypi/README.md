@@ -15,10 +15,10 @@ pip install pmoskills
 ```python
 from pmoskills import pmoskills, inject
 
-# 1. Access executable skills (Packs 01 to 07, 48 skills total)
+# 1. Access executable skills (Packs 01 to 08, 58 skills total)
 skill = pmoskills.get_skill("SKL-01-01")
 print(f"Skill Title: {skill['title']}")
-print(f"Focus Domain: {skill['metadata']['domain']}")
+print(f"Focus Focus: {skill['metadata']['domain']}")
 
 # 2. Access PMBOK 8 Process Records
 process = pmoskills.get_process("PR01")
@@ -82,7 +82,7 @@ print(injected)
   month     = jun,
   year      = 2026,
   publisher = {Zenodo},
-  version   = {v0.5},
+  version   = {v0.6},
   doi       = {10.5281/zenodo.20510540},
   url       = {https://doi.org/10.5281/zenodo.20510540}
 }

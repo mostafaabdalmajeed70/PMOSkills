@@ -11,7 +11,7 @@
   <a href="https://www.npmjs.com/package/pmoskills"><img src="https://img.shields.io/npm/v/pmoskills?style=for-the-badge&logo=npm&logoColor=white&color=cb0000" alt="npm version"></a>
   <a href="https://www.npmjs.com/package/pmoskills"><img src="https://img.shields.io/npm/dm/pmoskills?style=for-the-badge&logo=npm&logoColor=white&color=cb0000" alt="npm downloads"></a>
   <a href="https://pypi.org/project/pmoskills/"><img src="https://img.shields.io/pypi/v/pmoskills?style=for-the-badge&logo=python&logoColor=white&color=3776ab" alt="PyPI version"></a>
-  <a href="https://pypi.org/project/pmoskills/"><img src="https://img.shields.io/pypi/dm/pmoskills?style=for-the-badge&logo=python&logoColor=white&color=3776ab" alt="PyPI downloads"></a>
+  <a href="https://pepy.tech/project/pmoskills"><img src="https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=downloads&query=%24.total_downloads&url=https%3A%2F%2Fapi.pepy.tech%2Fapi%2Fv1%2Fprojects%2Fpmoskills&color=3776ab&logo=python&logoColor=white" alt="PyPI downloads"></a>
 </p>
 
 ---
@@ -118,7 +118,7 @@ npm install pmoskills
 import { pmoskills, inject } from 'pmoskills';
 
 // ── Executable Skills ──────────────────────────────────────────────
-const skills = pmoskills.getSkills();                    // all 48 skills
+const skills = pmoskills.getSkills();                    // all 58 skills
 const skill  = pmoskills.getSkill('SKL-01-01');          // by ID
 const gov    = pmoskills.getSkillsByDomain('Governance'); // filtered
 
@@ -127,19 +127,19 @@ const procs  = pmoskills.getProcesses();                 // all 41 records
 const proc   = pmoskills.getProcess('PR01');             // by ID
 
 // ── Artifact Deliverable Templates ────────────────────────────────
-const arts   = pmoskills.getArtifacts();                 // all 92 templates
+const arts   = pmoskills.getArtifacts();                 // all 100 templates
 const biz    = pmoskills.getArtifact('A01');             // Business Case
 
 // ── Reference Files (Principles, Domains, Focus Areas…) ───────────
-const refs   = pmoskills.getReferenceFiles();            // all 97 files
-const p01    = pmoskills.getReferenceFile('reference/principles/P01-stewardship.md');
+const refs   = pmoskills.getReferenceFiles();            // all 140 files
+const p01    = pmoskills.getReferenceFile('reference/principles/pmbok8/P8-01-holistic-view.md');
 
 // ── Shared Validators & Checklists ────────────────────────────────
-const shared = pmoskills.getSharedFiles();               // all 28 shared assets
+const shared = pmoskills.getSharedFiles();               // all 34 shared assets
 const val    = pmoskills.getSharedFile('shared/validate_structure.py');
 
 // ── Compliance & Skill Tests ───────────────────────────────────────
-const tests  = pmoskills.getTestFiles();                 // all 59 test plans
+const tests  = pmoskills.getTestFiles();                 // all 60 test plans
 const st01   = pmoskills.getTestFile('ST-SKL-01-01');    // 9 deterministic cases
 
 // ── System Prompts & Ontology ──────────────────────────────────────
@@ -167,7 +167,7 @@ pip install pmoskills
 from pmoskills import pmoskills, inject
 
 # ── Executable Skills ──────────────────────────────────────────────
-skills = pmoskills.get_skills()                          # all 48 skills
+skills = pmoskills.get_skills()                          # all 58 skills
 skill  = pmoskills.get_skill('SKL-01-01')                # by ID
 gov    = pmoskills.get_skills_by_domain('Governance')    # filtered
 
@@ -176,19 +176,19 @@ procs  = pmoskills.get_processes()                       # all 41 records
 proc   = pmoskills.get_process('PR01')                   # by ID
 
 # ── Artifact Deliverable Templates ────────────────────────────────
-arts   = pmoskills.get_artifacts()                       # all 92 templates
+arts   = pmoskills.get_artifacts()                       # all 100 templates
 biz    = pmoskills.get_artifact('A01')                   # Business Case
 
 # ── Reference Files (Principles, Domains, Focus Areas…) ───────────
-refs   = pmoskills.get_reference_files()                 # all 97 files
-p01    = pmoskills.get_reference_file('reference/principles/P01-stewardship.md')
+refs   = pmoskills.get_reference_files()                 # all 140 files
+p01    = pmoskills.get_reference_file('reference/principles/pmbok8/P8-01-holistic-view.md')
 
 # ── Shared Validators & Checklists ────────────────────────────────
-shared = pmoskills.get_shared_files()                    # all 28 shared assets
+shared = pmoskills.get_shared_files()                    # all 34 shared assets
 val    = pmoskills.get_shared_file('shared/validate_structure.py')
 
 # ── Compliance & Skill Tests ───────────────────────────────────────
-tests  = pmoskills.get_test_files()                      # all 59 test plans
+tests  = pmoskills.get_test_files()                      # all 60 test plans
 st01   = pmoskills.get_test_file('ST-SKL-01-01')          # 9 deterministic cases
 
 # ── System Prompts & Ontology ──────────────────────────────────────
@@ -206,14 +206,14 @@ output = inject(skill['prompt'], {
 
 | Collection | Count | JS/TS Getter | Python Getter |
 |---|:---:|---|---|
-| Executable Skills | 48 | `getSkills()` / `getSkill(id)` | `get_skills()` / `get_skill(id)` |
+| Executable Skills | 58 | `getSkills()` / `getSkill(id)` | `get_skills()` / `get_skill(id)` |
 | PMBOK 8 Process Records | 41 | `getProcesses()` / `getProcess(id)` | `get_processes()` / `get_process(id)` |
-| Artifact Templates | 92 | `getArtifacts()` / `getArtifact(id)` | `get_artifacts()` / `get_artifact(id)` |
-| Reference Files | 97 | `getReferenceFiles()` / `getReferenceFile(path)` | `get_reference_files()` / `get_reference_file(path)` |
-| Shared Validators & Checklists | 28 | `getSharedFiles()` / `getSharedFile(path)` | `get_shared_files()` / `get_shared_file(path)` |
-| Compliance Test Scenarios | 59 | `getTestFiles()` / `getTestFile(id)` | `get_test_files()` / `get_test_file(id)` |
+| Artifact Templates | 100 | `getArtifacts()` / `getArtifact(id)` | `get_artifacts()` / `get_artifact(id)` |
+| Reference Files | 140 | `getReferenceFiles()` / `getReferenceFile(path)` | `get_reference_files()` / `get_reference_file(path)` |
+| Shared Validators & Checklists | 34 | `getSharedFiles()` / `getSharedFile(path)` | `get_shared_files()` / `get_shared_file(path)` |
+| Compliance Test Scenarios | 60 | `getTestFiles()` / `getTestFile(id)` | `get_test_files()` / `get_test_file(id)` |
 | System Prompts | 4 | `getSystemPrompt(key)` | `get_system_prompt(key)` |
-| **Total Corpus Items** | **369+** | | |
+| **Total Corpus Items** | **437+** | | |
 
 > **Zero-FS Architecture:** All data is pre-compiled at build time. Compatible with Serverless, Edge, and Browser environments with no runtime file-system dependency.
 
