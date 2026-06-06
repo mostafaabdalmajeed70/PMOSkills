@@ -1,25 +1,32 @@
 ---
 skill_id: SKL-04-06
 skill_name: Manage Stakeholder Engagement
-pack: "04 — Executing"
-version: "1.1.0"
-status: "Active · Tested"
+pack: 04 — Executing
+version: 1.1.0
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact: "A07 — Stakeholder Register and Engagement Strategy (execution engagement log)"
+primary_artifact: A07 — Stakeholder Register and Engagement Strategy (execution engagement
+  log)
 artifacts_updated:
-  - "A28 — Communications and Reporting Record"
-  - "A18 — Issue, Impediment and Action Log"
-pmbok8_anchor: "Guide §2.5.2.4 Manage Stakeholder Engagement · Figure 2-36"
+- A28 — Communications and Reporting Record
+- A18 — Issue, Impediment and Action Log
+pmbok8_anchor: Guide §2.5.2.4 Manage Stakeholder Engagement · Figure 2-36
 performance_domains:
-  - Stakeholders
-  - Governance
+- Stakeholders
+- Governance
 focus_area: Executing
 upstream_prerequisites:
-  - "SKL-03-07 — A07 engagement strategy must be complete"
+- SKL-03-07 — A07 engagement strategy must be complete
 downstream_skills:
-  - "SKL-05-07 — Monitor Stakeholder Engagement"
-file_path: "skills/04-executing/SKL-04-06-manage-stakeholder-engagement.md"
+- SKL-05-07 — Monitor Stakeholder Engagement
+file_path: skills/04-executing/SKL-04-06-manage-stakeholder-engagement.md
 tests: 8
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-04-06 — Manage Stakeholder Engagement

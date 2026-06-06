@@ -1,31 +1,37 @@
 ---
 skill_id: SKL-05-07
 name: Monitor Stakeholder Engagement
-pack: "05 — Monitoring and Controlling"
+pack: 05 — Monitoring and Controlling
 version: 1.1.0
-status: "Active · Tested"
+status: Active · Tested
 source_type: PMI-derived
 authority: PMI-derived
-pmbok8_anchor: "Process-Groups §7.12 · Figure 7-23 · Figure 7-24"
+pmbok8_anchor: Process-Groups §7.12 · Figure 7-23 · Figure 7-24
 performance_domains:
-  - Stakeholders
-  - Measurement
+- Stakeholders
+- Measurement
 focus_area: Monitoring and Controlling
-primary_artifact: "A17 — Work Performance Information (stakeholder section)"
+primary_artifact: A17 — Work Performance Information (stakeholder section)
 artifacts_updated:
-  - "A03 — Stakeholder Register"
-  - "A07 — Stakeholder Engagement Plan"
-  - "A12 — Change Requests"
-  - "A18 — Issue Log"
-  - "A19 — Risk Register"
-  - "A21 — Lessons Learned Register"
+- A03 — Stakeholder Register
+- A07 — Stakeholder Engagement Plan
+- A12 — Change Requests
+- A18 — Issue Log
+- A19 — Risk Register
+- A21 — Lessons Learned Register
 upstream_prerequisites:
-  - SKL-04-06
+- SKL-04-06
 downstream_skills:
-  - SKL-05-02
+- SKL-05-02
 file_path: skills/05-monitoring-controlling/SKL-05-07-monitor-stakeholder-engagement.md
 tests: 6
-last_updated: "2026-06-03"
+last_updated: '2026-06-03'
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-05-07 — Monitor Stakeholder Engagement

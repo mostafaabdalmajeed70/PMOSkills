@@ -1,0 +1,67 @@
+schema_version: 1.0.0
+artifact_id: A24
+artifact_name: Closure and Benefits Transition Record
+pmbok8_ref: PMBOK8
+focus_area: Planning
+performance_domains:
+- Governance
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: project_or_phase_name
+  title: Project or phase name
+  type: string
+  required: false
+  description: Identifier of the initiative being closed
+- name: closure_type
+  title: Closure type
+  type: string
+  required: false
+  description: Planned completion, phase gate, or early termination
+- name: acceptance_confirmation
+  title: Acceptance confirmation
+  type: date
+  required: false
+  description: Summary of what was accepted, by whom, and on what date
+- name: benefits_transition
+  title: Benefits transition
+  type: date
+  required: false
+  description: Named business owner for each benefit stream, handoff date, and measurement
+    cadence
+- name: residual_risks_and_obligations
+  title: Residual risks and obligations
+  type: string
+  required: false
+  description: Outstanding risks, warranties, SLAs, or contractual obligations transferred
+    to operations
+- name: resource_release_decisions
+  title: Resource release decisions
+  type: string
+  required: false
+  description: People, equipment, and systems to be released or reassigned
+- name: financial_close
+  title: Financial close
+  type: number
+  required: false
+  description: Account closure status, final cost, reserve release, and audit preparation
+    note
+- name: records_and_archive_disposition
+  title: Records and archive disposition
+  type: string
+  required: false
+  description: Location, retention period, and access rules for all project records
+- name: lessons_learned_reference
+  title: Lessons learned reference
+  type: string
+  required: false
+  description: Pointer to A30 entry for this project
+- name: closure_authorization
+  title: Closure authorization
+  type: date
+  required: false
+  description: Sponsor or governing body sign-off with date
+produced_by_skills: []
+consumed_by_skills: []

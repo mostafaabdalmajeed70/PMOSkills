@@ -1,31 +1,36 @@
 ---
 skill_id: SKL-07-04
 name: Plan and Deliver Hybrid Projects
-pack: "07 — Adaptive & Hybrid"
+pack: 07 — Adaptive & Hybrid
 version: 1.1.0
-status: "Active · Tested"
+status: Active · Tested
 source_type: PMI-derived
 authority: PMI-derived
-pmbok8_anchor: "PMBOK8 Standard §4.2.3 · APG §3.1.6–3.1.11 · DA Hybrid Levels 1–3"
+pmbok8_anchor: PMBOK8 Standard §4.2.3 · APG §3.1.6–3.1.11 · DA Hybrid Levels 1–3
 performance_domains:
-  - Development Approach and Life Cycle
-  - Planning
-  - Delivery
-  - Governance
-focus_area: "Planning · Executing · Monitoring and Controlling"
-primary_artifact: "A06 §2 — Hybrid Structure extension"
+- Development Approach and Life Cycle
+- Planning
+- Delivery
+- Governance
+focus_area: Planning · Executing · Monitoring and Controlling
+primary_artifact: A06 §2 — Hybrid Structure extension
 artifacts_updated:
-  - "A15 — master schedule"
-  - "A19 — cross-stream risks"
-  - "A17 — hybrid dashboard"
+- A15 — master schedule
+- A19 — cross-stream risks
+- A17 — hybrid dashboard
 upstream_prerequisites:
-  - SKL-07-01
+- SKL-07-01
 downstream_skills:
-  - SKL-07-02
-  - SKL-05-02
-  - SKL-05-01
+- SKL-07-02
+- SKL-05-02
+- SKL-05-01
 file_path: skills/07-adaptive-hybrid/SKL-07-04-plan-and-deliver-hybrid-projects.md
 tests: 9
+lifecycle_applicability:
+- adaptive
+- hybrid
+lifecycle_notes: Primary focus on agile release cycles, sprint backlogs, and hybrid
+  integration frameworks.
 ---
 
 # SKL-07-04 — Plan and Deliver Hybrid Projects

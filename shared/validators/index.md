@@ -19,6 +19,7 @@ The `shared/validators/` directory contains standard audit and verification chec
 | **Waste Test** | [`waste-test.md`](./waste-test.md) | Detects lean waste categories (overproduction, waiting, defects, underutilized talent) in delivery processes. |
 | **Artifact Quality Check** | [`artifact-quality-check.md`](./artifact-quality-check.md) | Audits artifacts for completeness, metadata standards, and schema compliance. |
 | **Baseline Integrity Check**| [`baseline-integrity-check.md`](./baseline-integrity-check.md) | Verifies cross-baseline consistency (Scope WBS links to schedule baseline and cost baseline). |
+| **EVM Threshold Validator** | [`evm-threshold-validator.md`](./evm-threshold-validator.md) | Defines the quantitative control limits, performance variance boundaries, and forecasting rules for Earned Value Management. |
 
 ---
 

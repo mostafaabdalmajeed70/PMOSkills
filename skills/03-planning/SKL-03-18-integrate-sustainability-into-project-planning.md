@@ -1,26 +1,33 @@
 ---
 skill_id: SKL-03-18
 skill_name: Integrate Sustainability into Project Planning
-pack: "03 — Planning"
-version: "1.0.0"
-status: "Active · Tested"
+pack: 03 — Planning
+version: 1.0.0
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact_output: "A06 — Project Management Plan (Sustainability section)"
+primary_artifact_output: A06 — Project Management Plan (Sustainability section)
 artifacts_updated:
-  - "A06 — Project Management Plan"
-pmbok8_process_anchor: "Standard §3.7 Integrate Sustainability Within All Project Areas · Guide §2.1.6.5 Manage Sustainability"
+- A06 — Project Management Plan
+pmbok8_process_anchor: Standard §3.7 Integrate Sustainability Within All Project Areas
+  · Guide §2.1.6.5 Manage Sustainability
 performance_domains:
-  - Governance
-  - Scope
-  - Resources
+- Governance
+- Scope
+- Resources
 focus_area: Planning
 upstream_prerequisites:
-  - "SKL-02-01 — A04 Project Charter must be baselined"
-  - "SKL-03-02 — Scope Management section of A06 must be baselined"
+- SKL-02-01 — A04 Project Charter must be baselined
+- SKL-03-02 — Scope Management section of A06 must be baselined
 downstream_skills:
-  - "SKL-03-01 — Integrate and Align Project Plans"
-file_path: "skills/03-planning/SKL-03-18-integrate-sustainability-into-project-planning.md"
+- SKL-03-01 — Integrate and Align Project Plans
+file_path: skills/03-planning/SKL-03-18-integrate-sustainability-into-project-planning.md
 tests: 6
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-03-18 — Integrate Sustainability into Project Planning

@@ -1,0 +1,65 @@
+schema_version: 1.0.0
+artifact_id: A29
+artifact_name: Change Readiness and Adoption Record
+pmbok8_ref: PMBOK8
+focus_area: Planning
+performance_domains:
+- Governance
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: change_description
+  title: Change description
+  type: string
+  required: false
+  description: What is changing and for whom
+- name: stakeholder_group
+  title: Stakeholder group
+  type: string
+  required: false
+  description: Affected group or audience
+- name: readiness_dimension
+  title: Readiness dimension
+  type: string
+  required: false
+  description: Awareness, willingness, knowledge, ability, or reinforcement
+- name: current_readiness_level
+  title: Current readiness level
+  type: string
+  required: false
+  description: Assessed state (not ready, developing, ready)
+- name: target_readiness_level
+  title: Target readiness level
+  type: string
+  required: false
+  description: Required state before deployment or go-live
+- name: adoption_action
+  title: Adoption action
+  type: date
+  required: false
+  description: Specific intervention — training, communication, coaching, process
+    update
+- name: owner
+  title: Owner
+  type: string
+  required: false
+  description: Person responsible for the adoption action
+- name: due_date
+  title: Due date
+  type: date
+  required: false
+  description: Target date for action completion
+- name: feedback_summary
+  title: Feedback summary
+  type: string
+  required: false
+  description: Key themes from stakeholder feedback on the change
+- name: gate_recommendation
+  title: Gate recommendation
+  type: string
+  required: false
+  description: Readiness status at each deployment or review gate
+produced_by_skills: []
+consumed_by_skills: []

@@ -1,26 +1,33 @@
 ---
 skill_id: SKL-03-13
 skill_name: Plan Financial Management
-pack: "03 — Planning"
-version: "1.0.0"
-status: "Active · Tested"
+pack: 03 — Planning
+version: 1.0.0
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact_output: "A06 — Project Management Plan (Financial Management section)"
+primary_artifact_output: A06 — Project Management Plan (Financial Management section)
 artifacts_updated:
-  - "A06 — Project Management Plan"
-pmbok8_process_anchor: "Guide §2.4.6.1 Plan Financial Management · Guide §2.4 Finance Domain"
+- A06 — Project Management Plan
+pmbok8_process_anchor: Guide §2.4.6.1 Plan Financial Management · Guide §2.4 Finance
+  Domain
 performance_domains:
-  - Finance
+- Finance
 focus_area: Planning
 upstream_prerequisites:
-  - "SKL-02-01 — A04 Project Charter must be baselined"
-  - "SKL-01-01 — A05 Governance section must be baselined"
+- SKL-02-01 — A04 Project Charter must be baselined
+- SKL-01-01 — A05 Governance section must be baselined
 downstream_skills:
-  - "SKL-03-14 — Estimate Costs"
-  - "SKL-03-15 — Develop Budget"
-  - "SKL-05-05 — Control Costs"
-file_path: "skills/03-planning/SKL-03-13-plan-financial-management.md"
+- SKL-03-14 — Estimate Costs
+- SKL-03-15 — Develop Budget
+- SKL-05-05 — Control Costs
+file_path: skills/03-planning/SKL-03-13-plan-financial-management.md
 tests: 7
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-03-13 — Plan Financial Management

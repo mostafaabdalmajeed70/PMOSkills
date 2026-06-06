@@ -1,32 +1,38 @@
 ---
 skill_id: SKL-05-09
 name: Monitor Communications
-pack: "05 — Monitoring and Controlling"
+pack: 05 — Monitoring and Controlling
 version: 1.1.0
-status: "Active · Tested"
+status: Active · Tested
 source_type: PMI-derived
 authority: PMI-derived
-pmbok8_anchor: "Process-Groups §7.9 · Figure 7-17 · Figure 7-18"
+pmbok8_anchor: Process-Groups §7.9 · Figure 7-17 · Figure 7-18
 performance_domains:
-  - Stakeholders
-  - Measurement
+- Stakeholders
+- Measurement
 focus_area: Monitoring and Controlling
-primary_artifact: "A17 — Work Performance Information (communications section)"
+primary_artifact: A17 — Work Performance Information (communications section)
 artifacts_updated:
-  - "A28 — Communications Management Plan"
-  - "A07 — Stakeholder Engagement Plan"
-  - "A12 — Change Requests"
-  - "A18 — Issue Log"
-  - "A21 — Lessons Learned Register"
+- A28 — Communications Management Plan
+- A07 — Stakeholder Engagement Plan
+- A12 — Change Requests
+- A18 — Issue Log
+- A21 — Lessons Learned Register
 upstream_prerequisites:
-  - SKL-04-07
+- SKL-04-07
 downstream_skills:
-  - SKL-05-02
-  - SKL-03-11
-  - SKL-04-07
+- SKL-05-02
+- SKL-03-11
+- SKL-04-07
 file_path: skills/05-monitoring-controlling/SKL-05-09-monitor-communications.md
 tests: 5
-last_updated: "2026-06-03"
+last_updated: '2026-06-03'
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-05-09 — Monitor Communications

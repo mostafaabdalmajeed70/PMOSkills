@@ -1,31 +1,37 @@
 ---
 skill_id: SKL-06-01
 name: Close Project or Phase
-pack: "06 — Closing"
+pack: 06 — Closing
 version: 1.1.0
-status: "Active · Tested"
+status: Active · Tested
 source_type: PMI-derived
 authority: PMI-derived
-pmbok8_anchor: "Guide §2.1.6.7 Close Project or Phase · Figure 2-9"
+pmbok8_anchor: Guide §2.1.6.7 Close Project or Phase · Figure 2-9
 performance_domains:
-  - Governance
-  - Delivery
-  - Stakeholders
+- Governance
+- Delivery
+- Stakeholders
 focus_area: Closing
-primary_artifact: "A27 — Project Closure Record"
+primary_artifact: A27 — Project Closure Record
 artifacts_updated:
-  - A14
-  - A05
-  - A21
+- A14
+- A05
+- A21
 upstream_prerequisites:
-  - SKL-05-01
-  - SKL-05-06
-  - "All deliverables accepted"
+- SKL-05-01
+- SKL-05-06
+- All deliverables accepted
 downstream_skills:
-  - SKL-06-02
-  - SKL-06-03
+- SKL-06-02
+- SKL-06-03
 file_path: skills/06-closing/SKL-06-01-close-project-or-phase.md
 tests: 9
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-06-01 — Close Project or Phase

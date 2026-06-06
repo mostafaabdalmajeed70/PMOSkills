@@ -1,0 +1,76 @@
+schema_version: 1.0.0
+artifact_id: A13
+artifact_name: Requirements Traceability Matrix
+pmbok8_ref: PMBOK8 Guide Table 2-1 Elicit and Analyze Requirements; Validate Scope;
+  Requirements practice guidance
+focus_area: Planning
+performance_domains:
+- Scope
+- Delivery
+- Governance
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: requirement_id
+  title: Requirement ID
+  type: string
+  required: true
+  description: Unique identifier
+- name: requirement_statement
+  title: Requirement statement
+  type: string
+  required: true
+  description: Brief description of what is required
+- name: business_need_objective
+  title: Business need / objective
+  type: string
+  required: true
+  description: The need or project objective this requirement supports
+- name: priority
+  title: Priority
+  type: string
+  required: true
+  description: High / Medium / Low or MoSCoW classification
+- name: wbs_reference_or_backlog_item
+  title: WBS reference or backlog item
+  type: string
+  required: true
+  description: Where this requirement is implemented in the schedule or backlog
+- name: deliverable
+  title: Deliverable
+  type: string
+  required: true
+  description: The deliverable that satisfies this requirement
+- name: acceptance_criterion
+  title: Acceptance criterion
+  type: string
+  required: true
+  description: How satisfaction of the requirement will be verified
+- name: verification_method
+  title: Verification method
+  type: string
+  required: true
+  description: Test, inspection, demonstration, analysis
+- name: status
+  title: Status
+  type: string
+  required: true
+  description: Draft / Approved / In Development / Tested / Accepted / Deferred /
+    Rejected
+- name: change_reference
+  title: Change reference
+  type: string
+  required: false
+  description: Reference to any A12 change decision affecting this requirement
+- name: owner
+  title: Owner
+  type: string
+  required: false
+  description: Stakeholder or team responsible for the requirement
+produced_by_skills:
+- SKL-03-04
+consumed_by_skills:
+- SKL-03-04
+- SKL-05-03

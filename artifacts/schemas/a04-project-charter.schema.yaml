@@ -1,0 +1,77 @@
+schema_version: 1.0.0
+artifact_id: A04
+artifact_name: Project Charter
+pmbok8_ref: PMBOK8 Guide §4.5.1 Initiate Project or Phase
+focus_area: Initiating
+performance_domains:
+- Governance
+- Stakeholders
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: project_purpose
+  title: Project purpose
+  type: string
+  required: true
+  description: One to three sentence statement of why the project exists
+- name: high_level_scope_boundary
+  title: High-level scope boundary
+  type: string
+  required: true
+  description: What is in scope and what is explicitly out of scope
+- name: high_level_milestone_intent
+  title: High-level milestone intent
+  type: string
+  required: true
+  description: Key milestones or phase gate targets — not a baseline schedule
+- name: budget_boundary
+  title: Budget boundary
+  type: number
+  required: true
+  description: Approved funding ceiling or indicative budget range
+- name: named_sponsor
+  title: Named sponsor
+  type: string
+  required: true
+  description: Full name and role of the project sponsor
+- name: named_project_manager
+  title: Named project manager
+  type: string
+  required: true
+  description: Full name, role, and delegated authority level
+- name: initial_success_criteria
+  title: Initial success criteria
+  type: string
+  required: true
+  description: How success will be recognized at the governance level
+- name: approval_authority
+  title: Approval authority
+  type: date
+  required: true
+  description: Who approved the charter and on what date
+- name: assumptions
+  title: Assumptions
+  type: string
+  required: true
+  description: High-level assumptions that affect authorization
+- name: constraints
+  title: Constraints
+  type: string
+  required: true
+  description: High-level constraints that bound the project
+- name: stakeholder_references
+  title: Stakeholder references
+  type: string
+  required: false
+  description: Reference to identified key stakeholders (detail in A07)
+- name: related_documents
+  title: Related documents
+  type: string
+  required: false
+  description: Business case ID, feasibility record ID, portfolio decision reference
+produced_by_skills:
+- SKL-02-01
+consumed_by_skills:
+- SKL-02-01

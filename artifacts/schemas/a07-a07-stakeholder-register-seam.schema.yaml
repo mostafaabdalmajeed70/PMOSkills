@@ -1,0 +1,25 @@
+schema_version: 1.0.0
+artifact_id: A07
+artifact_name: A07 Stakeholder Register Seam
+pmbok8_ref: PMBOK8 Guide §2.5 · Standard §3 Principles · BAP-2E §4
+focus_area: Initiating
+performance_domains:
+- Stakeholders
+- Governance
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: title
+  title: Title
+  type: string
+  required: true
+  description: The title of the artifact
+- name: description
+  title: Description
+  type: string
+  required: true
+  description: General description of the artifact
+produced_by_skills: []
+consumed_by_skills: []

@@ -1,0 +1,65 @@
+schema_version: 1.0.0
+artifact_id: A20
+artifact_name: Team Charter
+pmbok8_ref: PMBOK8 Guide §2.6 Team Performance Domain; Table 2-1 Develop Team
+focus_area: Planning
+performance_domains:
+- Team
+- Governance
+- Resources
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: team_values
+  title: Team values
+  type: string
+  required: true
+  description: 3–7 shared values or commitments the team agrees to uphold
+- name: communication_norms
+  title: Communication norms
+  type: string
+  required: true
+  description: Preferred channels, response time expectations, meeting cadence
+- name: decision_making_rules
+  title: Decision-making rules
+  type: string
+  required: true
+  description: What decisions the team makes autonomously vs. requires escalation
+- name: meeting_norms
+  title: Meeting norms
+  type: string
+  required: true
+  description: Standing meetings, attendance expectations, facilitation approach
+- name: conflict_resolution_approach
+  title: Conflict resolution approach
+  type: string
+  required: true
+  description: How the team will surface and resolve disagreements constructively
+- name: definition_of_done
+  title: Definition of done
+  type: string
+  required: true
+  description: What done means for the team’s deliverables or work items
+- name: working_hours_and_availability
+  title: Working hours and availability
+  type: string
+  required: false
+  description: Expected working hours, time-zone considerations, on-call expectations
+- name: tool_and_platform_agreements
+  title: Tool and platform agreements
+  type: string
+  required: false
+  description: Which tools the team uses for what purpose
+- name: new_member_onboarding
+  title: New member onboarding
+  type: string
+  required: false
+  description: How new team members will be brought up to speed on the charter
+produced_by_skills:
+- SKL-03-14
+- SKL-04-04
+consumed_by_skills:
+- SKL-03-14
+- SKL-04-04

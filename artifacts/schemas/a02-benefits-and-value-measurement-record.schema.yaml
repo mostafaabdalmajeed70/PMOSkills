@@ -1,0 +1,76 @@
+schema_version: 1.0.0
+artifact_id: A02
+artifact_name: Benefits and Value Measurement Record
+pmbok8_ref: PMBOK8 Guide §2.1.2 · Standard §3 Principles · Program-5E · Portfolio-4E
+focus_area: Planning
+performance_domains:
+- Stakeholders
+- Value
+- Governance
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: benefit_id
+  title: Benefit ID
+  type: string
+  required: false
+  description: 'Format: B-NNN (e.g., B-001)'
+- name: benefit_name
+  title: Benefit Name
+  type: string
+  required: false
+  description: Short descriptive name
+- name: type
+  title: Type
+  type: string
+  required: false
+  description: Financial / Operational / Strategic / Compliance / Reputational
+- name: description
+  title: Description
+  type: string
+  required: false
+  description: Clear statement of the expected benefit
+- name: linked_deliverables
+  title: Linked Deliverable(s)
+  type: string
+  required: false
+  description: Project deliverable(s) that produce this benefit
+- name: benefit_owner
+  title: Benefit Owner
+  type: string
+  required: false
+  description: Named individual accountable for realization
+- name: kpi_indicator
+  title: KPI / Indicator
+  type: string
+  required: false
+  description: Measurable indicator of benefit realization
+- name: baseline_value
+  title: Baseline Value
+  type: string
+  required: false
+  description: Current state value before project
+- name: target_value
+  title: Target Value
+  type: string
+  required: false
+  description: Expected value after project
+- name: measurement_method
+  title: Measurement Method
+  type: string
+  required: false
+  description: How and where data will be collected
+- name: realization_timeframe
+  title: Realization Timeframe
+  type: string
+  required: false
+  description: When benefit is expected to be realized (during/post-project)
+- name: status
+  title: Status
+  type: string
+  required: false
+  description: Not Started / In Progress / Partially Realized / Fully Realized
+produced_by_skills: []
+consumed_by_skills: []

@@ -1,29 +1,35 @@
 ---
 skill_id: SKL-05-05
 name: Control Costs
-pack: "05 — Monitoring and Controlling"
+pack: 05 — Monitoring and Controlling
 version: 1.1.0
-status: "Active · Tested"
+status: Active · Tested
 source_type: PMI-derived
 authority: PMI-derived
-pmbok8_anchor: "Process-Groups §7.6 · Figure 7-11 · Figure 7-12 · Table 10-1"
+pmbok8_anchor: Process-Groups §7.6 · Figure 7-11 · Figure 7-12 · Table 10-1
 performance_domains:
-  - Finance
-  - Measurement
+- Finance
+- Measurement
 focus_area: Monitoring and Controlling
-primary_artifact: "A17 — Work Performance Information (cost section)"
+primary_artifact: A17 — Work Performance Information (cost section)
 artifacts_updated:
-  - "A16 — Cost Baseline"
-  - "A12 — Change Requests"
-  - "A18 — Issue Log"
-  - "A21 — Lessons Learned Register"
+- A16 — Cost Baseline
+- A12 — Change Requests
+- A18 — Issue Log
+- A21 — Lessons Learned Register
 upstream_prerequisites:
-  - SKL-05-01
+- SKL-05-01
 downstream_skills:
-  - SKL-05-02
+- SKL-05-02
 file_path: skills/05-monitoring-controlling/SKL-05-05-control-costs.md
 tests: 7
-last_updated: "2026-06-03"
+last_updated: '2026-06-03'
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-05-05 — Control Costs

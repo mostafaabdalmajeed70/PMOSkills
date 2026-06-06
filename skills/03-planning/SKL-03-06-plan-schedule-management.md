@@ -1,24 +1,29 @@
 ---
 skill_id: SKL-03-06
 skill_name: Plan Schedule Management
-pack: "03 — Planning"
-version: "1.0.0"
-status: "Active · Tested"
+pack: 03 — Planning
+version: 1.0.0
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact_output: "A06 — Project Management Plan (Schedule Management section)"
+primary_artifact_output: A06 — Project Management Plan (Schedule Management section)
 artifacts_updated:
-  - "A06 — Project Management Plan"
-pmbok8_process_anchor: "Guide §2.3.6.1 Plan Schedule Management · Guide §2.3 Schedule Domain"
+- A06 — Project Management Plan
+pmbok8_process_anchor: Guide §2.3.6.1 Plan Schedule Management · Guide §2.3 Schedule
+  Domain
 performance_domains:
-  - Schedule
+- Schedule
 focus_area: Planning
 upstream_prerequisites:
-  - "SKL-03-05 — A11 WBS must be baselined"
+- SKL-03-05 — A11 WBS must be baselined
 downstream_skills:
-  - "SKL-04-01 — Direct and Manage Project Work"
-  - "SKL-05-04 — Control Schedule"
-file_path: "skills/03-planning/SKL-03-06-plan-schedule-management.md"
+- SKL-04-01 — Direct and Manage Project Work
+- SKL-05-04 — Control Schedule
+file_path: skills/03-planning/SKL-03-06-plan-schedule-management.md
 tests: 6
+lifecycle_applicability:
+- predictive
+- hybrid
+lifecycle_notes: Standardized predictive modeling with hybrid adaptation interfaces.
 ---
 
 # SKL-03-06 — Plan Schedule Management

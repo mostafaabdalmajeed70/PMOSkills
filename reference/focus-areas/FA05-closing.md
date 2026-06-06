@@ -60,14 +60,13 @@ Closing is the focus area in which all project activities are formally completed
 | SKL-06-03 | Conduct Post-Project Review |
 
 ## Relationship to Performance Domains
-Closing engages a focused set of performance domains at their terminal and reflective stages:
+Closing engages several key performance domains at their terminal and reflective stages:
 
-- **PD06 — Delivery:** Final acceptance activities confirm that all deliverables meet requirements and that scope is complete; benefit transfer is the ultimate delivery outcome
-- **PD01 — Stakeholders:** Final stakeholder satisfaction is assessed; sponsor sign-off on the closure record represents the culmination of the entire stakeholder engagement effort
-- **PD07 — Measurement:** Final performance assessment against all baselines produces the definitive record of project outcomes; lessons learned draw on all measurement data accumulated during the project
-- **PD02 — Team:** Team members are formally released; recognition and performance evaluations conclude team management activities
-- **PD05 — Project Work:** All administrative and coordination activities are brought to an orderly conclusion; information systems are closed or transitioned
-- **PD08 — Uncertainty:** Residual risks that persist beyond project closure are identified and formally transferred to the operational owner; risk register is closed
+- **PD8-01 — Governance:** The primary domain for closing; executes the Close Project or Phase process, formalizes organizational archives, reconciles budgets, and completes contract closures.
+- **PD8-02 — Scope:** Confirms that all scope requirements have been delivered and accepted (Validate Scope output transition).
+- **PD8-05 — Stakeholders:** Assesses final stakeholder satisfaction and obtains formal sponsor sign-off.
+- **PD8-06 — Resources:** Releases team members and physical resources, and conducts team evaluations.
+- **PD8-07 — Risk:** Identifies residual risks to transition to operations and closes the risk register.
 
 ## Exit Criteria / Quality Gate
 - Project Closure Record (A27) is completed and signed by the sponsor

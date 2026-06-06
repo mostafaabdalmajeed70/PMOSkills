@@ -1,23 +1,29 @@
 ---
 skill_id: SKL-03-04
 skill_name: Define Scope
-pack: "03 — Planning"
-version: "1.0.0"
-status: "Active · Tested"
+pack: 03 — Planning
+version: 1.0.0
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact_output: "A10 — Project Scope Statement"
+primary_artifact_output: A10 — Project Scope Statement
 artifacts_updated:
-  - "A06 — Project Management Plan (Scope Baseline section)"
-pmbok8_process_anchor: "Guide §2.2.6.3 Define Scope · Guide §2.2 Scope Domain"
+- A06 — Project Management Plan (Scope Baseline section)
+pmbok8_process_anchor: Guide §2.2.6.3 Define Scope · Guide §2.2 Scope Domain
 performance_domains:
-  - Scope
+- Scope
 focus_area: Planning
 upstream_prerequisites:
-  - "SKL-03-03 — A08 Requirements Documentation must be baselined"
+- SKL-03-03 — A08 Requirements Documentation must be baselined
 downstream_skills:
-  - "SKL-03-05 — Develop Scope Structure (WBS)"
-file_path: "skills/03-planning/SKL-03-04-define-scope.md"
+- SKL-03-05 — Develop Scope Structure (WBS)
+file_path: skills/03-planning/SKL-03-04-define-scope.md
 tests: 7
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-03-04 — Define Scope

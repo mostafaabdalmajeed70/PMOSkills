@@ -1,0 +1,81 @@
+schema_version: 1.0.0
+artifact_id: A01
+artifact_name: Business Case
+pmbok8_ref: PMBOK8 Guide §2.1.1 Governance Performance Domain; §4.5.1 Initiate Project
+  or Phase
+focus_area: Initiating
+performance_domains:
+- Governance
+- Finance
+- Stakeholders
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: business_need
+  title: Business need
+  type: string
+  required: true
+  description: The problem, opportunity, or regulatory driver that motivates the investment
+- name: strategic_alignment
+  title: Strategic alignment
+  type: string
+  required: true
+  description: How the proposed project aligns with organizational strategy and objectives
+- name: options_considered
+  title: Options considered
+  type: string
+  required: true
+  description: At minimum two options, including the do-nothing option where applicable
+- name: recommended_option
+  title: Recommended option
+  type: string
+  required: true
+  description: The option recommended for approval with rationale
+- name: expected_benefits
+  title: Expected benefits
+  type: string
+  required: true
+  description: Quantified or described benefits — financial and non-financial
+- name: major_risks_and_assumptions
+  title: Major risks and assumptions
+  type: date
+  required: true
+  description: Investment-level risks and key assumptions that could invalidate the
+    case
+- name: affordability_summary
+  title: Affordability summary
+  type: number
+  required: true
+  description: Indicative cost, funding source, and affordability conclusion
+- name: success_criteria
+  title: Success criteria
+  type: string
+  required: true
+  description: How the investment will be recognized as successful
+- name: recommendation
+  title: Recommendation
+  type: string
+  required: true
+  description: Proceed, defer, or reject — with recommended next action
+- name: owner
+  title: Owner
+  type: string
+  required: true
+  description: Named individual responsible for the business case
+- name: constraints
+  title: Constraints
+  type: string
+  required: false
+  description: Key constraints that bound the options or investment
+- name: revalidation_triggers
+  title: Revalidation triggers
+  type: string
+  required: false
+  description: Conditions that require the case to be reviewed before the next phase
+    gate
+produced_by_skills:
+- SKL-02-01
+consumed_by_skills:
+- SKL-02-01

@@ -1,29 +1,37 @@
 ---
 skill_id: SKL-04-02
 skill_name: Manage Project Knowledge
-pack: "04 — Executing"
-version: "1.1.0"
-status: "Active · Tested"
+pack: 04 — Executing
+version: 1.1.0
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact: "A21 — Lessons Learned Record"
+primary_artifact: A21 — Lessons Learned Record
 artifacts_updated:
-  - "A05 — Context Register (OPA updates)"
-  - "A17 — Integrated Performance Reporting Record (knowledge digest entries)"
-  - "A28 — Communications and Reporting Record (knowledge-sharing events)"
-pmbok8_anchor: "Guide §2.1.6.4 Manage Project Knowledge · Figure 2-6 · Stewardship Principle"
+- A05 — Context Register (OPA updates)
+- A17 — Integrated Performance Reporting Record (knowledge digest entries)
+- A28 — Communications and Reporting Record (knowledge-sharing events)
+pmbok8_anchor: Guide §2.1.6.4 Manage Project Knowledge · Figure 2-6 · Stewardship
+  Principle
 performance_domains:
-  - Governance
-  - Delivery
-  - Team
+- Governance
+- Delivery
+- Team
 focus_area: Executing
 upstream_prerequisites:
-  - "SKL-04-01 — project work must be underway"
-  - "SKL-03-08 — A28 communications plan must exist (for knowledge-sharing events)"
+- SKL-04-01 — project work must be underway
+- SKL-03-08 — A28 communications plan must exist (for knowledge-sharing events)
 downstream_skills:
-  - "SKL-05-01 — Monitor and Control Project Work (performance data fed by knowledge capture)"
-  - "SKL-06-03 — Capture and Archive Lessons Learned"
-file_path: "skills/04-executing/SKL-04-02-manage-project-knowledge.md"
+- SKL-05-01 — Monitor and Control Project Work (performance data fed by knowledge
+  capture)
+- SKL-06-03 — Capture and Archive Lessons Learned
+file_path: skills/04-executing/SKL-04-02-manage-project-knowledge.md
 tests: 9
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-04-02 — Manage Project Knowledge

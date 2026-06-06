@@ -1,24 +1,28 @@
 ---
 skill_id: SKL-03-15
 skill_name: Develop Budget
-pack: "03 — Planning"
-version: "1.0.0"
-status: "Active · Tested"
+pack: 03 — Planning
+version: 1.0.0
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact_output: "A16 — Cost Baseline"
+primary_artifact_output: A16 — Cost Baseline
 artifacts_updated:
-  - "A06 — Project Management Plan (Cost Baseline section)"
-pmbok8_process_anchor: "Guide §2.4.6.3 Determine Budget · Guide §2.4 Finance Domain"
+- A06 — Project Management Plan (Cost Baseline section)
+pmbok8_process_anchor: Guide §2.4.6.3 Determine Budget · Guide §2.4 Finance Domain
 performance_domains:
-  - Finance
+- Finance
 focus_area: Planning
 upstream_prerequisites:
-  - "SKL-03-14 — A15 Cost Estimates must be baselined"
+- SKL-03-14 — A15 Cost Estimates must be baselined
 downstream_skills:
-  - "SKL-03-01 — Integrate and Align Project Plans"
-  - "SKL-05-05 — Control Costs"
-file_path: "skills/03-planning/SKL-03-15-develop-budget.md"
+- SKL-03-01 — Integrate and Align Project Plans
+- SKL-05-05 — Control Costs
+file_path: skills/03-planning/SKL-03-15-develop-budget.md
 tests: 7
+lifecycle_applicability:
+- predictive
+- hybrid
+lifecycle_notes: Standardized predictive modeling with hybrid adaptation interfaces.
 ---
 
 # SKL-03-15 — Develop Budget

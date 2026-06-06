@@ -1,26 +1,32 @@
 ---
 skill_id: SKL-04-08
 skill_name: Implement Risk Responses
-pack: "04 — Executing"
-version: "1.1.0"
-status: "Active · Tested"
+pack: 04 — Executing
+version: 1.1.0
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact: "A19 — Risk Management Record (response implementation log)"
+primary_artifact: A19 — Risk Management Record (response implementation log)
 artifacts_updated:
-  - "A18 — Issue, Impediment and Action Log (triggered risk events become issues)"
-  - "A16 — Financial Management and Cost Baseline Record (reserve consumption)"
-  - "A21 — Lessons Learned Record"
-pmbok8_anchor: "Guide §2.7.2.5 Implement Risk Responses · Figure 2-52"
+- A18 — Issue, Impediment and Action Log (triggered risk events become issues)
+- A16 — Financial Management and Cost Baseline Record (reserve consumption)
+- A21 — Lessons Learned Record
+pmbok8_anchor: Guide §2.7.2.5 Implement Risk Responses · Figure 2-52
 performance_domains:
-  - Risk
-  - Delivery
+- Risk
+- Delivery
 focus_area: Executing
 upstream_prerequisites:
-  - "SKL-03-12 — A19 response plans must be complete"
+- SKL-03-12 — A19 response plans must be complete
 downstream_skills:
-  - "SKL-05-06 — Monitor Risks"
-file_path: "skills/04-executing/SKL-04-08-implement-risk-responses.md"
+- SKL-05-06 — Monitor Risks
+file_path: skills/04-executing/SKL-04-08-implement-risk-responses.md
 tests: 8
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-04-08 — Implement Risk Responses

@@ -1,0 +1,2625 @@
+{
+  "A24": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A24",
+    "artifact_name": "Closure and Benefits Transition Record",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Governance"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "project_or_phase_name",
+        "title": "Project or phase name",
+        "type": "string",
+        "required": false,
+        "description": "Identifier of the initiative being closed"
+      },
+      {
+        "name": "closure_type",
+        "title": "Closure type",
+        "type": "string",
+        "required": false,
+        "description": "Planned completion, phase gate, or early termination"
+      },
+      {
+        "name": "acceptance_confirmation",
+        "title": "Acceptance confirmation",
+        "type": "date",
+        "required": false,
+        "description": "Summary of what was accepted, by whom, and on what date"
+      },
+      {
+        "name": "benefits_transition",
+        "title": "Benefits transition",
+        "type": "date",
+        "required": false,
+        "description": "Named business owner for each benefit stream, handoff date, and measurement cadence"
+      },
+      {
+        "name": "residual_risks_and_obligations",
+        "title": "Residual risks and obligations",
+        "type": "string",
+        "required": false,
+        "description": "Outstanding risks, warranties, SLAs, or contractual obligations transferred to operations"
+      },
+      {
+        "name": "resource_release_decisions",
+        "title": "Resource release decisions",
+        "type": "string",
+        "required": false,
+        "description": "People, equipment, and systems to be released or reassigned"
+      },
+      {
+        "name": "financial_close",
+        "title": "Financial close",
+        "type": "number",
+        "required": false,
+        "description": "Account closure status, final cost, reserve release, and audit preparation note"
+      },
+      {
+        "name": "records_and_archive_disposition",
+        "title": "Records and archive disposition",
+        "type": "string",
+        "required": false,
+        "description": "Location, retention period, and access rules for all project records"
+      },
+      {
+        "name": "lessons_learned_reference",
+        "title": "Lessons learned reference",
+        "type": "string",
+        "required": false,
+        "description": "Pointer to A30 entry for this project"
+      },
+      {
+        "name": "closure_authorization",
+        "title": "Closure authorization",
+        "type": "date",
+        "required": false,
+        "description": "Sponsor or governing body sign-off with date"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A27": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A27",
+    "artifact_name": "Team Health and Development Record",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Governance"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "health_observations",
+        "title": "Health observations",
+        "type": "string",
+        "required": false,
+        "description": "Signals of team effectiveness, collaboration, or wellbeing"
+      },
+      {
+        "name": "capability_gaps",
+        "title": "Capability gaps",
+        "type": "string",
+        "required": false,
+        "description": "Skills or knowledge areas requiring development"
+      },
+      {
+        "name": "coaching_actions",
+        "title": "Coaching actions",
+        "type": "string",
+        "required": false,
+        "description": "Specific coaching interventions agreed and assigned"
+      },
+      {
+        "name": "learning_actions",
+        "title": "Learning actions",
+        "type": "string",
+        "required": false,
+        "description": "Training, mentoring, or knowledge-transfer activities"
+      },
+      {
+        "name": "trend_notes",
+        "title": "Trend notes",
+        "type": "string",
+        "required": false,
+        "description": "Direction of change since last review"
+      },
+      {
+        "name": "owner_and_follow_up_date",
+        "title": "Owner and follow-up date",
+        "type": "date",
+        "required": false,
+        "description": "Role responsible and next review date"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A05": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A05",
+    "artifact_name": "Context Register",
+    "pmbok8_ref": "PMBOK8 Guide §1.1.2 Enterprise Environmental Factors; §1.1.3 Organizational Process Assets",
+    "focus_area": "Initiating",
+    "performance_domains": [
+      "Governance",
+      "Risk",
+      "Resources"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "eef_reference_id",
+        "title": "EEF reference ID",
+        "type": "string",
+        "required": false,
+        "description": "Unique identifier for this EEF entry"
+      },
+      {
+        "name": "eef_type",
+        "title": "EEF type",
+        "type": "string",
+        "required": false,
+        "description": "Internal (organizational) or External (market, regulatory, environmental)"
+      },
+      {
+        "name": "description",
+        "title": "Description",
+        "type": "string",
+        "required": false,
+        "description": "What the EEF is and how it affects the project"
+      },
+      {
+        "name": "impact",
+        "title": "Impact",
+        "type": "string",
+        "required": false,
+        "description": "How this factor constrains or influences planning, delivery, or decision-making"
+      },
+      {
+        "name": "owner",
+        "title": "Owner",
+        "type": "string",
+        "required": false,
+        "description": "Who in the organization is accountable for monitoring this factor"
+      },
+      {
+        "name": "status",
+        "title": "Status",
+        "type": "string",
+        "required": false,
+        "description": "Active / Resolved / Changed"
+      }
+    ],
+    "produced_by_skills": [
+      "SKL-02-01",
+      "SKL-03-01"
+    ],
+    "consumed_by_skills": [
+      "SKL-02-01",
+      "SKL-03-01",
+      "SKL-03-02"
+    ]
+  },
+  "A34": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A34",
+    "artifact_name": "Information Retention and Records Control Record",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Governance"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "record_category",
+        "title": "Record category",
+        "type": "string",
+        "required": false,
+        "description": "Type of record (e.g., contracts, baselines, risk records, communications)"
+      },
+      {
+        "name": "retention_rule",
+        "title": "Retention rule",
+        "type": "string",
+        "required": false,
+        "description": "Minimum retention period and regulatory basis if applicable"
+      },
+      {
+        "name": "storage_location",
+        "title": "Storage location",
+        "type": "string",
+        "required": false,
+        "description": "System, repository, or physical location"
+      },
+      {
+        "name": "access_level",
+        "title": "Access level",
+        "type": "string",
+        "required": false,
+        "description": "Who may access: public, team, restricted, confidential"
+      },
+      {
+        "name": "archival_owner",
+        "title": "Archival owner",
+        "type": "string",
+        "required": false,
+        "description": "Role responsible for long-term custody"
+      },
+      {
+        "name": "disposal_trigger",
+        "title": "Disposal trigger",
+        "type": "date",
+        "required": false,
+        "description": "Event or date that initiates disposal or review"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A35": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A35",
+    "artifact_name": "Governance and Decision Authority Record",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Governance"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "governance_bodies",
+        "title": "Governance bodies",
+        "type": "string",
+        "required": false,
+        "description": "Forums, steering groups, or boards with oversight authority"
+      },
+      {
+        "name": "decision_categories",
+        "title": "Decision categories",
+        "type": "string",
+        "required": false,
+        "description": "Types of decisions and which body owns each"
+      },
+      {
+        "name": "delegated_authorities",
+        "title": "Delegated authorities",
+        "type": "string",
+        "required": false,
+        "description": "What the project manager can approve within stated limits"
+      },
+      {
+        "name": "approval_thresholds",
+        "title": "Approval thresholds",
+        "type": "string",
+        "required": false,
+        "description": "Numeric or qualitative T1–T4 bands per the authority model"
+      },
+      {
+        "name": "cadence",
+        "title": "Cadence",
+        "type": "string",
+        "required": false,
+        "description": "Meeting frequency and reporting cycle"
+      },
+      {
+        "name": "escalation_triggers",
+        "title": "Escalation triggers",
+        "type": "string",
+        "required": false,
+        "description": "Conditions that require escalation beyond current authority"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A37": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A37",
+    "artifact_name": "AI Data and Privacy Control Record",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Governance"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "use_case_or_exposure_area",
+        "title": "Use case or exposure area",
+        "type": "string",
+        "required": false,
+        "description": "Specific AI, data, or digital scenario creating risk"
+      },
+      {
+        "name": "data_classification",
+        "title": "Data classification",
+        "type": "string",
+        "required": false,
+        "description": "Sensitivity level of data involved (public, internal, confidential, regulated)"
+      },
+      {
+        "name": "privacy_and_security_controls",
+        "title": "Privacy and security controls",
+        "type": "string",
+        "required": false,
+        "description": "Technical and procedural controls applied"
+      },
+      {
+        "name": "ai_specific_controls",
+        "title": "AI-specific controls",
+        "type": "string",
+        "required": false,
+        "description": "Bias checks, explainability requirements, human-in-the-loop rules, model monitoring"
+      },
+      {
+        "name": "supplier_obligations",
+        "title": "Supplier obligations",
+        "type": "string",
+        "required": false,
+        "description": "Contractual or attestation requirements placed on suppliers"
+      },
+      {
+        "name": "exception_or_escalation_path",
+        "title": "Exception or escalation path",
+        "type": "string",
+        "required": false,
+        "description": "Approved exception conditions and escalation route"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A39": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A39",
+    "artifact_name": "Change Management Plan",
+    "pmbok8_ref": "PMBOK8 Guide §2.5 Stakeholders Performance Domain; §2.7 Delivery Performance Domain; Managing Change in Organizations Practice Guide",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Stakeholders",
+      "Governance",
+      "Delivery"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "change_impact_assessment",
+        "title": "Change impact assessment",
+        "type": "string",
+        "required": true,
+        "description": "Which groups are affected, how significantly, and what they will need to do differently"
+      },
+      {
+        "name": "stakeholder_readiness_assessment",
+        "title": "Stakeholder readiness assessment",
+        "type": "string",
+        "required": true,
+        "description": "Current readiness level by affected group and target readiness required"
+      },
+      {
+        "name": "change_adoption_strategy",
+        "title": "Change adoption strategy",
+        "type": "string",
+        "required": true,
+        "description": "Overall approach to moving stakeholders from current to desired state"
+      },
+      {
+        "name": "resistance_management_approach",
+        "title": "Resistance management approach",
+        "type": "string",
+        "required": true,
+        "description": "How resistance will be identified, understood, and addressed"
+      },
+      {
+        "name": "change_champions_model",
+        "title": "Change champions model",
+        "type": "string",
+        "required": true,
+        "description": "Who will serve as change champions and how they will be engaged"
+      },
+      {
+        "name": "training_and_capability_building_plan",
+        "title": "Training and capability-building plan",
+        "type": "string",
+        "required": true,
+        "description": "What training or capability development is required and for whom"
+      },
+      {
+        "name": "change_communications_approach",
+        "title": "Change communications approach",
+        "type": "string",
+        "required": true,
+        "description": "How transition-specific communications will be delivered (references A10 for the full communications plan)"
+      },
+      {
+        "name": "adoption_metrics",
+        "title": "Adoption metrics",
+        "type": "string",
+        "required": true,
+        "description": "How change adoption will be measured and at what checkpoints"
+      },
+      {
+        "name": "transition_and_sustainment_plan",
+        "title": "Transition and sustainment plan",
+        "type": "string",
+        "required": false,
+        "description": "How the organization will sustain the change after project delivery"
+      },
+      {
+        "name": "sponsor_engagement_model",
+        "title": "Sponsor engagement model",
+        "type": "string",
+        "required": false,
+        "description": "How the sponsor and senior leaders will visibly lead the change"
+      }
+    ],
+    "produced_by_skills": [
+      "SKL-03-02"
+    ],
+    "consumed_by_skills": [
+      "SKL-03-02"
+    ]
+  },
+  "A01": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A01",
+    "artifact_name": "Business Case",
+    "pmbok8_ref": "PMBOK8 Guide §2.1.1 Governance Performance Domain; §4.5.1 Initiate Project or Phase",
+    "focus_area": "Initiating",
+    "performance_domains": [
+      "Governance",
+      "Finance",
+      "Stakeholders"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "business_need",
+        "title": "Business need",
+        "type": "string",
+        "required": true,
+        "description": "The problem, opportunity, or regulatory driver that motivates the investment"
+      },
+      {
+        "name": "strategic_alignment",
+        "title": "Strategic alignment",
+        "type": "string",
+        "required": true,
+        "description": "How the proposed project aligns with organizational strategy and objectives"
+      },
+      {
+        "name": "options_considered",
+        "title": "Options considered",
+        "type": "string",
+        "required": true,
+        "description": "At minimum two options, including the do-nothing option where applicable"
+      },
+      {
+        "name": "recommended_option",
+        "title": "Recommended option",
+        "type": "string",
+        "required": true,
+        "description": "The option recommended for approval with rationale"
+      },
+      {
+        "name": "expected_benefits",
+        "title": "Expected benefits",
+        "type": "string",
+        "required": true,
+        "description": "Quantified or described benefits — financial and non-financial"
+      },
+      {
+        "name": "major_risks_and_assumptions",
+        "title": "Major risks and assumptions",
+        "type": "date",
+        "required": true,
+        "description": "Investment-level risks and key assumptions that could invalidate the case"
+      },
+      {
+        "name": "affordability_summary",
+        "title": "Affordability summary",
+        "type": "number",
+        "required": true,
+        "description": "Indicative cost, funding source, and affordability conclusion"
+      },
+      {
+        "name": "success_criteria",
+        "title": "Success criteria",
+        "type": "string",
+        "required": true,
+        "description": "How the investment will be recognized as successful"
+      },
+      {
+        "name": "recommendation",
+        "title": "Recommendation",
+        "type": "string",
+        "required": true,
+        "description": "Proceed, defer, or reject — with recommended next action"
+      },
+      {
+        "name": "owner",
+        "title": "Owner",
+        "type": "string",
+        "required": true,
+        "description": "Named individual responsible for the business case"
+      },
+      {
+        "name": "constraints",
+        "title": "Constraints",
+        "type": "string",
+        "required": false,
+        "description": "Key constraints that bound the options or investment"
+      },
+      {
+        "name": "revalidation_triggers",
+        "title": "Revalidation triggers",
+        "type": "string",
+        "required": false,
+        "description": "Conditions that require the case to be reviewed before the next phase gate"
+      }
+    ],
+    "produced_by_skills": [
+      "SKL-02-01"
+    ],
+    "consumed_by_skills": [
+      "SKL-02-01"
+    ]
+  },
+  "A02": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A02",
+    "artifact_name": "Benefits and Value Measurement Record",
+    "pmbok8_ref": "PMBOK8 Guide §2.1.2 · Standard §3 Principles · Program-5E · Portfolio-4E",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Stakeholders",
+      "Value",
+      "Governance"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "benefit_id",
+        "title": "Benefit ID",
+        "type": "string",
+        "required": false,
+        "description": "Format: B-NNN (e.g., B-001)"
+      },
+      {
+        "name": "benefit_name",
+        "title": "Benefit Name",
+        "type": "string",
+        "required": false,
+        "description": "Short descriptive name"
+      },
+      {
+        "name": "type",
+        "title": "Type",
+        "type": "string",
+        "required": false,
+        "description": "Financial / Operational / Strategic / Compliance / Reputational"
+      },
+      {
+        "name": "description",
+        "title": "Description",
+        "type": "string",
+        "required": false,
+        "description": "Clear statement of the expected benefit"
+      },
+      {
+        "name": "linked_deliverables",
+        "title": "Linked Deliverable(s)",
+        "type": "string",
+        "required": false,
+        "description": "Project deliverable(s) that produce this benefit"
+      },
+      {
+        "name": "benefit_owner",
+        "title": "Benefit Owner",
+        "type": "string",
+        "required": false,
+        "description": "Named individual accountable for realization"
+      },
+      {
+        "name": "kpi_indicator",
+        "title": "KPI / Indicator",
+        "type": "string",
+        "required": false,
+        "description": "Measurable indicator of benefit realization"
+      },
+      {
+        "name": "baseline_value",
+        "title": "Baseline Value",
+        "type": "string",
+        "required": false,
+        "description": "Current state value before project"
+      },
+      {
+        "name": "target_value",
+        "title": "Target Value",
+        "type": "string",
+        "required": false,
+        "description": "Expected value after project"
+      },
+      {
+        "name": "measurement_method",
+        "title": "Measurement Method",
+        "type": "string",
+        "required": false,
+        "description": "How and where data will be collected"
+      },
+      {
+        "name": "realization_timeframe",
+        "title": "Realization Timeframe",
+        "type": "string",
+        "required": false,
+        "description": "When benefit is expected to be realized (during/post-project)"
+      },
+      {
+        "name": "status",
+        "title": "Status",
+        "type": "string",
+        "required": false,
+        "description": "Not Started / In Progress / Partially Realized / Fully Realized"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A04": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A04",
+    "artifact_name": "Project Charter",
+    "pmbok8_ref": "PMBOK8 Guide §4.5.1 Initiate Project or Phase",
+    "focus_area": "Initiating",
+    "performance_domains": [
+      "Governance",
+      "Stakeholders"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "project_purpose",
+        "title": "Project purpose",
+        "type": "string",
+        "required": true,
+        "description": "One to three sentence statement of why the project exists"
+      },
+      {
+        "name": "high_level_scope_boundary",
+        "title": "High-level scope boundary",
+        "type": "string",
+        "required": true,
+        "description": "What is in scope and what is explicitly out of scope"
+      },
+      {
+        "name": "high_level_milestone_intent",
+        "title": "High-level milestone intent",
+        "type": "string",
+        "required": true,
+        "description": "Key milestones or phase gate targets — not a baseline schedule"
+      },
+      {
+        "name": "budget_boundary",
+        "title": "Budget boundary",
+        "type": "number",
+        "required": true,
+        "description": "Approved funding ceiling or indicative budget range"
+      },
+      {
+        "name": "named_sponsor",
+        "title": "Named sponsor",
+        "type": "string",
+        "required": true,
+        "description": "Full name and role of the project sponsor"
+      },
+      {
+        "name": "named_project_manager",
+        "title": "Named project manager",
+        "type": "string",
+        "required": true,
+        "description": "Full name, role, and delegated authority level"
+      },
+      {
+        "name": "initial_success_criteria",
+        "title": "Initial success criteria",
+        "type": "string",
+        "required": true,
+        "description": "How success will be recognized at the governance level"
+      },
+      {
+        "name": "approval_authority",
+        "title": "Approval authority",
+        "type": "date",
+        "required": true,
+        "description": "Who approved the charter and on what date"
+      },
+      {
+        "name": "assumptions",
+        "title": "Assumptions",
+        "type": "string",
+        "required": true,
+        "description": "High-level assumptions that affect authorization"
+      },
+      {
+        "name": "constraints",
+        "title": "Constraints",
+        "type": "string",
+        "required": true,
+        "description": "High-level constraints that bound the project"
+      },
+      {
+        "name": "stakeholder_references",
+        "title": "Stakeholder references",
+        "type": "string",
+        "required": false,
+        "description": "Reference to identified key stakeholders (detail in A07)"
+      },
+      {
+        "name": "related_documents",
+        "title": "Related documents",
+        "type": "string",
+        "required": false,
+        "description": "Business case ID, feasibility record ID, portfolio decision reference"
+      }
+    ],
+    "produced_by_skills": [
+      "SKL-02-01"
+    ],
+    "consumed_by_skills": [
+      "SKL-02-01"
+    ]
+  },
+  "A30": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A30",
+    "artifact_name": "Knowledge and Lessons Management Record",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Governance"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "lesson_id",
+        "title": "Lesson ID",
+        "type": "string",
+        "required": false,
+        "description": "Unique identifier"
+      },
+      {
+        "name": "capture_date",
+        "title": "Capture date",
+        "type": "date",
+        "required": false,
+        "description": "Date the lesson was recorded"
+      },
+      {
+        "name": "source_event",
+        "title": "Source event",
+        "type": "string",
+        "required": false,
+        "description": "The situation, decision, or observation that generated the lesson"
+      },
+      {
+        "name": "category",
+        "title": "Category",
+        "type": "string",
+        "required": false,
+        "description": "Risk, schedule, stakeholder, technical, procurement, resources, governance, or other"
+      },
+      {
+        "name": "description",
+        "title": "Description",
+        "type": "string",
+        "required": false,
+        "description": "What happened and what was learned"
+      },
+      {
+        "name": "impact",
+        "title": "Impact",
+        "type": "string",
+        "required": false,
+        "description": "Effect on project outcomes or team performance"
+      },
+      {
+        "name": "recommendation",
+        "title": "Recommendation",
+        "type": "string",
+        "required": false,
+        "description": "What should be done differently or repeated"
+      },
+      {
+        "name": "applicability",
+        "title": "Applicability",
+        "type": "string",
+        "required": false,
+        "description": "Project types, contexts, or phases where this lesson is most relevant"
+      },
+      {
+        "name": "validation_status",
+        "title": "Validation status",
+        "type": "string",
+        "required": false,
+        "description": "Draft, reviewed, or approved for OPA contribution"
+      },
+      {
+        "name": "opa_destination",
+        "title": "OPA destination",
+        "type": "string",
+        "required": false,
+        "description": "Location in the organizational knowledge repository"
+      },
+      {
+        "name": "owner",
+        "title": "Owner",
+        "type": "string",
+        "required": false,
+        "description": "Person responsible for the entry and validation"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A12": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A12",
+    "artifact_name": "A12 Change Log",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Governance"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "cr_id",
+        "title": "CR ID",
+        "type": "string",
+        "required": false,
+        "description": "Unique ID — format: CR-NNN (e.g., CR-001)"
+      },
+      {
+        "name": "date_raised",
+        "title": "Date Raised",
+        "type": "date",
+        "required": false,
+        "description": "Date change request was submitted"
+      },
+      {
+        "name": "raised_by",
+        "title": "Raised By",
+        "type": "string",
+        "required": false,
+        "description": "Name and role of requestor"
+      },
+      {
+        "name": "description",
+        "title": "Description",
+        "type": "string",
+        "required": false,
+        "description": "Clear description of the requested change"
+      },
+      {
+        "name": "justification",
+        "title": "Justification",
+        "type": "string",
+        "required": false,
+        "description": "Business reason or driver"
+      },
+      {
+        "name": "impact_scope",
+        "title": "Impact — Scope",
+        "type": "string",
+        "required": false,
+        "description": "Effect on scope baseline (A08)"
+      },
+      {
+        "name": "impact_schedule",
+        "title": "Impact — Schedule",
+        "type": "string",
+        "required": false,
+        "description": "Effect on schedule baseline (A15) in days"
+      },
+      {
+        "name": "impact_cost",
+        "title": "Impact — Cost",
+        "type": "number",
+        "required": false,
+        "description": "Effect on cost baseline (A16) in currency"
+      },
+      {
+        "name": "impact_risk",
+        "title": "Impact — Risk",
+        "type": "string",
+        "required": false,
+        "description": "New or modified risks triggered (A19)"
+      },
+      {
+        "name": "impact_quality",
+        "title": "Impact — Quality",
+        "type": "string",
+        "required": false,
+        "description": "Quality criteria affected"
+      },
+      {
+        "name": "authority_threshold",
+        "title": "Authority Threshold",
+        "type": "string",
+        "required": false,
+        "description": "T1 / T2 / T3 / T4 per AUTHORITY-ROUTING.md"
+      },
+      {
+        "name": "disposition",
+        "title": "Disposition",
+        "type": "string",
+        "required": false,
+        "description": "Approved / Rejected / Deferred"
+      },
+      {
+        "name": "disposition_date",
+        "title": "Disposition Date",
+        "type": "date",
+        "required": false,
+        "description": "Date of CCB or authority decision"
+      },
+      {
+        "name": "decided_by",
+        "title": "Decided By",
+        "type": "string",
+        "required": false,
+        "description": "Decision authority (PM / Sponsor / Governing Body)"
+      },
+      {
+        "name": "baseline_updates",
+        "title": "Baseline Updates",
+        "type": "date",
+        "required": false,
+        "description": "Which baselines were updated (A08 / A15 / A16 / A19 / A14)"
+      },
+      {
+        "name": "implementation_status",
+        "title": "Implementation Status",
+        "type": "string",
+        "required": false,
+        "description": "Not Started / In Progress / Complete / Verified"
+      },
+      {
+        "name": "verification_date",
+        "title": "Verification Date",
+        "type": "date",
+        "required": false,
+        "description": "Date implementation was confirmed"
+      },
+      {
+        "name": "notes",
+        "title": "Notes",
+        "type": "string",
+        "required": false,
+        "description": "Any additional context, conditions, or constraints"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A17": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A17",
+    "artifact_name": "Integrated Performance Reporting Record",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Monitoring and Controlling",
+    "performance_domains": [
+      "Governance",
+      "Finance",
+      "Schedule",
+      "Scope",
+      "Risk",
+      "Stakeholders",
+      "Resources"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "title",
+        "title": "Title",
+        "type": "string",
+        "required": true,
+        "description": "The title of the artifact"
+      },
+      {
+        "name": "description",
+        "title": "Description",
+        "type": "string",
+        "required": true,
+        "description": "General description of the artifact"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A18": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A18",
+    "artifact_name": "Issue, Impediment, and Action Log",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Executing",
+    "performance_domains": [
+      "Governance",
+      "Resources",
+      "Stakeholders",
+      "Risk"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "title",
+        "title": "Title",
+        "type": "string",
+        "required": true,
+        "description": "The title of the artifact"
+      },
+      {
+        "name": "description",
+        "title": "Description",
+        "type": "string",
+        "required": true,
+        "description": "General description of the artifact"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A19": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A19",
+    "artifact_name": "Risk Management Record",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Risk",
+      "Governance",
+      "Finance",
+      "Schedule",
+      "Stakeholders"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "title",
+        "title": "Title",
+        "type": "string",
+        "required": true,
+        "description": "The title of the artifact"
+      },
+      {
+        "name": "description",
+        "title": "Description",
+        "type": "string",
+        "required": true,
+        "description": "General description of the artifact"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A20": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A20",
+    "artifact_name": "Team Charter",
+    "pmbok8_ref": "PMBOK8 Guide §2.6 Team Performance Domain; Table 2-1 Develop Team",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Team",
+      "Governance",
+      "Resources"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "team_values",
+        "title": "Team values",
+        "type": "string",
+        "required": true,
+        "description": "3–7 shared values or commitments the team agrees to uphold"
+      },
+      {
+        "name": "communication_norms",
+        "title": "Communication norms",
+        "type": "string",
+        "required": true,
+        "description": "Preferred channels, response time expectations, meeting cadence"
+      },
+      {
+        "name": "decision_making_rules",
+        "title": "Decision-making rules",
+        "type": "string",
+        "required": true,
+        "description": "What decisions the team makes autonomously vs. requires escalation"
+      },
+      {
+        "name": "meeting_norms",
+        "title": "Meeting norms",
+        "type": "string",
+        "required": true,
+        "description": "Standing meetings, attendance expectations, facilitation approach"
+      },
+      {
+        "name": "conflict_resolution_approach",
+        "title": "Conflict resolution approach",
+        "type": "string",
+        "required": true,
+        "description": "How the team will surface and resolve disagreements constructively"
+      },
+      {
+        "name": "definition_of_done",
+        "title": "Definition of done",
+        "type": "string",
+        "required": true,
+        "description": "What done means for the team’s deliverables or work items"
+      },
+      {
+        "name": "working_hours_and_availability",
+        "title": "Working hours and availability",
+        "type": "string",
+        "required": false,
+        "description": "Expected working hours, time-zone considerations, on-call expectations"
+      },
+      {
+        "name": "tool_and_platform_agreements",
+        "title": "Tool and platform agreements",
+        "type": "string",
+        "required": false,
+        "description": "Which tools the team uses for what purpose"
+      },
+      {
+        "name": "new_member_onboarding",
+        "title": "New member onboarding",
+        "type": "string",
+        "required": false,
+        "description": "How new team members will be brought up to speed on the charter"
+      }
+    ],
+    "produced_by_skills": [
+      "SKL-03-14",
+      "SKL-04-04"
+    ],
+    "consumed_by_skills": [
+      "SKL-03-14",
+      "SKL-04-04"
+    ]
+  },
+  "A21": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A21",
+    "artifact_name": "Lessons Learned Record",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Executing",
+    "performance_domains": [
+      "Governance",
+      "Stakeholders",
+      "Resources"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "title",
+        "title": "Title",
+        "type": "string",
+        "required": true,
+        "description": "The title of the artifact"
+      },
+      {
+        "name": "description",
+        "title": "Description",
+        "type": "string",
+        "required": true,
+        "description": "General description of the artifact"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A06": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A06",
+    "artifact_name": "A06 Project Management Plan",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Governance"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "title",
+        "title": "Title",
+        "type": "string",
+        "required": true,
+        "description": "The title of the artifact"
+      },
+      {
+        "name": "description",
+        "title": "Description",
+        "type": "string",
+        "required": true,
+        "description": "General description of the artifact"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A08": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A08",
+    "artifact_name": "A08 Scope Requirements Backlog",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Governance"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "title",
+        "title": "Title",
+        "type": "string",
+        "required": true,
+        "description": "The title of the artifact"
+      },
+      {
+        "name": "description",
+        "title": "Description",
+        "type": "string",
+        "required": true,
+        "description": "General description of the artifact"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A14": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A14",
+    "artifact_name": "Integrated Project Management Plan",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Governance",
+      "Scope",
+      "Schedule",
+      "Finance",
+      "Stakeholders",
+      "Resources",
+      "Risk"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "title",
+        "title": "Title",
+        "type": "string",
+        "required": true,
+        "description": "The title of the artifact"
+      },
+      {
+        "name": "description",
+        "title": "Description",
+        "type": "string",
+        "required": true,
+        "description": "General description of the artifact"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A15": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A15",
+    "artifact_name": "Schedule Model and Baseline Record",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Schedule",
+      "Governance",
+      "Risk",
+      "Resources"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "title",
+        "title": "Title",
+        "type": "string",
+        "required": true,
+        "description": "The title of the artifact"
+      },
+      {
+        "name": "description",
+        "title": "Description",
+        "type": "string",
+        "required": true,
+        "description": "General description of the artifact"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A16": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A16",
+    "artifact_name": "Financial Management and Cost Baseline Record",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Finance",
+      "Governance",
+      "Risk"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "title",
+        "title": "Title",
+        "type": "string",
+        "required": true,
+        "description": "The title of the artifact"
+      },
+      {
+        "name": "description",
+        "title": "Description",
+        "type": "string",
+        "required": true,
+        "description": "General description of the artifact"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A28": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A28",
+    "artifact_name": "Communications and Reporting Record",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Stakeholders",
+      "Governance"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "title",
+        "title": "Title",
+        "type": "string",
+        "required": true,
+        "description": "The title of the artifact"
+      },
+      {
+        "name": "description",
+        "title": "Description",
+        "type": "string",
+        "required": true,
+        "description": "General description of the artifact"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A23": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A23",
+    "artifact_name": "PMO Improvement Backlog",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Governance"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "item_id",
+        "title": "Item ID",
+        "type": "string",
+        "required": false,
+        "description": "Unique identifier for the improvement item"
+      },
+      {
+        "name": "improvement_description",
+        "title": "Improvement description",
+        "type": "string",
+        "required": false,
+        "description": "Brief description of the gap, enhancement, or change needed"
+      },
+      {
+        "name": "category",
+        "title": "Category",
+        "type": "string",
+        "required": false,
+        "description": "Method, template, tooling, coaching, standard, capability, or governance"
+      },
+      {
+        "name": "priority",
+        "title": "Priority",
+        "type": "string",
+        "required": false,
+        "description": "High, medium, or low based on PMO governance forum judgment"
+      },
+      {
+        "name": "source",
+        "title": "Source",
+        "type": "string",
+        "required": false,
+        "description": "Origin of the item (maturity review, lessons, feedback, audit, etc.)"
+      },
+      {
+        "name": "owner",
+        "title": "Owner",
+        "type": "string",
+        "required": false,
+        "description": "PMO team member responsible for delivering the improvement"
+      },
+      {
+        "name": "target_date",
+        "title": "Target date",
+        "type": "date",
+        "required": false,
+        "description": "Expected completion date"
+      },
+      {
+        "name": "status",
+        "title": "Status",
+        "type": "string",
+        "required": false,
+        "description": "Backlog, in progress, complete, or deferred"
+      },
+      {
+        "name": "outcome",
+        "title": "Outcome",
+        "type": "string",
+        "required": false,
+        "description": "Result achieved and any follow-on actions"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A36": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A36",
+    "artifact_name": "PMO Value Maturity and Improvement Record",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Governance"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "service_performance_themes",
+        "title": "Service performance themes",
+        "type": "string",
+        "required": false,
+        "description": "Patterns observed across PMO service delivery"
+      },
+      {
+        "name": "stakeholder_feedback_themes",
+        "title": "Stakeholder feedback themes",
+        "type": "string",
+        "required": false,
+        "description": "Summarized feedback from project managers, sponsors, teams"
+      },
+      {
+        "name": "maturity_observations",
+        "title": "Maturity observations",
+        "type": "string",
+        "required": false,
+        "description": "Current maturity level and gap analysis"
+      },
+      {
+        "name": "improvement_actions",
+        "title": "Improvement actions",
+        "type": "date",
+        "required": false,
+        "description": "Specific items with owner and target date"
+      },
+      {
+        "name": "owner",
+        "title": "Owner",
+        "type": "string",
+        "required": false,
+        "description": "Role responsible for each action"
+      },
+      {
+        "name": "target_date",
+        "title": "Target date",
+        "type": "date",
+        "required": false,
+        "description": "Expected completion date for each action"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A22": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A22",
+    "artifact_name": "Portfolio Interdependency Record",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Governance"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "dependency_id",
+        "title": "Dependency ID",
+        "type": "string",
+        "required": false,
+        "description": "Unique identifier for the dependency relationship"
+      },
+      {
+        "name": "source_initiative",
+        "title": "Source initiative",
+        "type": "string",
+        "required": false,
+        "description": "The project or program generating the dependency"
+      },
+      {
+        "name": "target_initiative",
+        "title": "Target initiative",
+        "type": "string",
+        "required": false,
+        "description": "The project or program affected by the dependency"
+      },
+      {
+        "name": "dependency_type",
+        "title": "Dependency type",
+        "type": "string",
+        "required": false,
+        "description": "Milestone, resource, data, decision, regulatory, or technical"
+      },
+      {
+        "name": "impact_if_unresolved",
+        "title": "Impact if unresolved",
+        "type": "number",
+        "required": false,
+        "description": "Schedule, cost, risk, or value impact"
+      },
+      {
+        "name": "coordination_action",
+        "title": "Coordination action",
+        "type": "string",
+        "required": false,
+        "description": "Agreed action to manage or resolve the dependency"
+      },
+      {
+        "name": "owner",
+        "title": "Owner",
+        "type": "string",
+        "required": false,
+        "description": "Person or role responsible for the coordination action"
+      },
+      {
+        "name": "due_date",
+        "title": "Due date",
+        "type": "date",
+        "required": false,
+        "description": "Expected resolution or review date"
+      },
+      {
+        "name": "status",
+        "title": "Status",
+        "type": "string",
+        "required": false,
+        "description": "Open, in progress, escalated, or resolved"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A11": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A11",
+    "artifact_name": "Procurement Management Plan",
+    "pmbok8_ref": "PMBOK8 Guide Appendix X4 Procurement; Table 2-1 Plan Procurement Management",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Governance",
+      "Finance",
+      "Risk",
+      "Resources"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "make_or_buy_decisions",
+        "title": "Make-or-buy decisions",
+        "type": "string",
+        "required": true,
+        "description": "Summary of what will be procured vs. performed internally, with rationale"
+      },
+      {
+        "name": "procurement_items_register",
+        "title": "Procurement items register",
+        "type": "date",
+        "required": true,
+        "description": "What is being procured, contract type, estimated value, target award date"
+      },
+      {
+        "name": "contract_types",
+        "title": "Contract types",
+        "type": "number",
+        "required": true,
+        "description": "Fixed-price, cost-reimbursable, time-and-materials — with rationale for each"
+      },
+      {
+        "name": "supplier_selection_criteria",
+        "title": "Supplier selection criteria",
+        "type": "string",
+        "required": true,
+        "description": "How suppliers will be evaluated and selected"
+      },
+      {
+        "name": "procurement_roles_and_responsibilities",
+        "title": "Procurement roles and responsibilities",
+        "type": "string",
+        "required": true,
+        "description": "Who has authority to solicit, evaluate, award, administer, and close contracts"
+      },
+      {
+        "name": "procurement_schedule",
+        "title": "Procurement schedule",
+        "type": "string",
+        "required": true,
+        "description": "Key milestones — RFP/RFQ issue, bid close, award, contract start, delivery, closure"
+      },
+      {
+        "name": "contract_administration_approach",
+        "title": "Contract administration approach",
+        "type": "string",
+        "required": true,
+        "description": "How contracts will be monitored, changed, and closed"
+      },
+      {
+        "name": "organizational_constraints_and_policies",
+        "title": "Organizational constraints and policies",
+        "type": "array",
+        "required": true,
+        "description": "Applicable procurement policies, approved supplier lists, spend thresholds"
+      },
+      {
+        "name": "pre_qualified_suppliers",
+        "title": "Pre-qualified suppliers",
+        "type": "string",
+        "required": false,
+        "description": "Any pre-approved or preferred suppliers relevant to this project"
+      },
+      {
+        "name": "risk_considerations",
+        "title": "Risk considerations",
+        "type": "string",
+        "required": false,
+        "description": "Procurement-specific risks that feed into A19"
+      }
+    ],
+    "produced_by_skills": [
+      "SKL-03-16"
+    ],
+    "consumed_by_skills": [
+      "SKL-03-16",
+      "SKL-04-09"
+    ]
+  },
+  "A31": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A31",
+    "artifact_name": "Procurement and Supplier Management Record",
+    "pmbok8_ref": "Guide §2.8 Procurement Management",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Resources",
+      "Finance",
+      "Governance"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "title",
+        "title": "Title",
+        "type": "string",
+        "required": true,
+        "description": "The title of the artifact"
+      },
+      {
+        "name": "description",
+        "title": "Description",
+        "type": "string",
+        "required": true,
+        "description": "General description of the artifact"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A32": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A32",
+    "artifact_name": "Supplier Evaluation and Award Decision Record",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Governance"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "procurement_reference",
+        "title": "Procurement reference",
+        "type": "string",
+        "required": false,
+        "description": "Identifier linking to the A31 procurement record and solicitation"
+      },
+      {
+        "name": "evaluation_criteria",
+        "title": "Evaluation criteria",
+        "type": "string",
+        "required": false,
+        "description": "Criteria used (technical, commercial, risk, past performance, etc.)"
+      },
+      {
+        "name": "weighting",
+        "title": "Weighting",
+        "type": "string",
+        "required": false,
+        "description": "Weight assigned to each criterion"
+      },
+      {
+        "name": "suppliers_evaluated",
+        "title": "Suppliers evaluated",
+        "type": "string",
+        "required": false,
+        "description": "Names or IDs of all suppliers in the evaluation"
+      },
+      {
+        "name": "scores_by_criterion",
+        "title": "Scores by criterion",
+        "type": "string",
+        "required": false,
+        "description": "Individual scores for each supplier against each criterion"
+      },
+      {
+        "name": "aggregate_score",
+        "title": "Aggregate score",
+        "type": "string",
+        "required": false,
+        "description": "Weighted total per supplier"
+      },
+      {
+        "name": "risk_and_compliance_flags",
+        "title": "Risk and compliance flags",
+        "type": "string",
+        "required": false,
+        "description": "Any red flags, qualifications, or compliance concerns noted"
+      },
+      {
+        "name": "recommendation",
+        "title": "Recommendation",
+        "type": "string",
+        "required": false,
+        "description": "Recommended supplier with rationale"
+      },
+      {
+        "name": "award_decision",
+        "title": "Award decision",
+        "type": "date",
+        "required": false,
+        "description": "Approved award, authority, and date"
+      },
+      {
+        "name": "sole_source_justification",
+        "title": "Sole-source justification",
+        "type": "string",
+        "required": false,
+        "description": "Required when competitive process is not used"
+      },
+      {
+        "name": "debrief_notes",
+        "title": "Debrief notes",
+        "type": "string",
+        "required": false,
+        "description": "Summary for unsuccessful supplier feedback when required"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A33": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A33",
+    "artifact_name": "Supplier Change, Claim, and Compliance Record",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Monitoring and Controlling",
+    "performance_domains": [
+      "Governance",
+      "Finance",
+      "Risk",
+      "Scope",
+      "Schedule"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "supplier_event_or_issue",
+        "title": "Supplier event or issue",
+        "type": "string",
+        "required": false,
+        "description": "Brief description of the change, claim, or compliance matter"
+      },
+      {
+        "name": "type_of_event",
+        "title": "Type of event",
+        "type": "string",
+        "required": false,
+        "description": "Change order / Claim / Dispute / Compliance finding / Acceptance finding"
+      },
+      {
+        "name": "impact_summary",
+        "title": "Impact summary",
+        "type": "number",
+        "required": false,
+        "description": "Effect on cost, schedule, scope, or quality"
+      },
+      {
+        "name": "compliance_finding",
+        "title": "Compliance finding",
+        "type": "string",
+        "required": false,
+        "description": "Specific compliance requirement involved (if applicable)"
+      },
+      {
+        "name": "decision_authority",
+        "title": "Decision authority",
+        "type": "string",
+        "required": false,
+        "description": "Role authorized to resolve this event per threshold"
+      },
+      {
+        "name": "resolution",
+        "title": "Resolution",
+        "type": "string",
+        "required": false,
+        "description": "Decision made, conditions, adjustments"
+      },
+      {
+        "name": "follow_up_action",
+        "title": "Follow-up action",
+        "type": "date",
+        "required": false,
+        "description": "Outstanding items, owner, due date"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A09": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A09",
+    "artifact_name": "Quality Management Plan",
+    "pmbok8_ref": "PMBOK8 Guide §2.7 Delivery Performance Domain; Table 2-1 Plan Quality Management",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Delivery",
+      "Governance",
+      "Scope"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "quality_standards_reference",
+        "title": "Quality standards reference",
+        "type": "string",
+        "required": true,
+        "description": "Which organizational, industry, regulatory, or contractual standards apply"
+      },
+      {
+        "name": "quality_objectives",
+        "title": "Quality objectives",
+        "type": "string",
+        "required": true,
+        "description": "Measurable quality targets for key deliverables or processes"
+      },
+      {
+        "name": "quality_roles_and_responsibilities",
+        "title": "Quality roles and responsibilities",
+        "type": "string",
+        "required": true,
+        "description": "Who owns quality assurance, quality control, and acceptance sign-off"
+      },
+      {
+        "name": "quality_assurance_activities",
+        "title": "Quality assurance activities",
+        "type": "string",
+        "required": true,
+        "description": "Scheduled process audits, peer reviews, phase gate quality checks"
+      },
+      {
+        "name": "quality_control_activities",
+        "title": "Quality control activities",
+        "type": "string",
+        "required": true,
+        "description": "Inspection, testing, verification, and validation activities with frequency"
+      },
+      {
+        "name": "quality_metrics",
+        "title": "Quality metrics",
+        "type": "string",
+        "required": true,
+        "description": "What will be measured, how, and at what threshold"
+      },
+      {
+        "name": "acceptance_criteria_process",
+        "title": "Acceptance criteria process",
+        "type": "string",
+        "required": true,
+        "description": "How acceptance criteria from A08 are verified and formally accepted"
+      },
+      {
+        "name": "non_conformance_process",
+        "title": "Non-conformance process",
+        "type": "string",
+        "required": true,
+        "description": "How defects, failures, and non-conformances are recorded, escalated, and resolved"
+      },
+      {
+        "name": "continuous_improvement_approach",
+        "title": "Continuous improvement approach",
+        "type": "string",
+        "required": false,
+        "description": "How quality lessons are captured and fed back into the process"
+      },
+      {
+        "name": "tools_and_techniques",
+        "title": "Tools and techniques",
+        "type": "array",
+        "required": false,
+        "description": "Quality management tools to be used (e.g., checklists, statistical sampling, reviews)"
+      }
+    ],
+    "produced_by_skills": [
+      "SKL-03-09"
+    ],
+    "consumed_by_skills": [
+      "SKL-03-09",
+      "SKL-05-01"
+    ]
+  },
+  "A13": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A13",
+    "artifact_name": "Requirements Traceability Matrix",
+    "pmbok8_ref": "PMBOK8 Guide Table 2-1 Elicit and Analyze Requirements; Validate Scope; Requirements practice guidance",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Scope",
+      "Delivery",
+      "Governance"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "requirement_id",
+        "title": "Requirement ID",
+        "type": "string",
+        "required": true,
+        "description": "Unique identifier"
+      },
+      {
+        "name": "requirement_statement",
+        "title": "Requirement statement",
+        "type": "string",
+        "required": true,
+        "description": "Brief description of what is required"
+      },
+      {
+        "name": "business_need_objective",
+        "title": "Business need / objective",
+        "type": "string",
+        "required": true,
+        "description": "The need or project objective this requirement supports"
+      },
+      {
+        "name": "priority",
+        "title": "Priority",
+        "type": "string",
+        "required": true,
+        "description": "High / Medium / Low or MoSCoW classification"
+      },
+      {
+        "name": "wbs_reference_or_backlog_item",
+        "title": "WBS reference or backlog item",
+        "type": "string",
+        "required": true,
+        "description": "Where this requirement is implemented in the schedule or backlog"
+      },
+      {
+        "name": "deliverable",
+        "title": "Deliverable",
+        "type": "string",
+        "required": true,
+        "description": "The deliverable that satisfies this requirement"
+      },
+      {
+        "name": "acceptance_criterion",
+        "title": "Acceptance criterion",
+        "type": "string",
+        "required": true,
+        "description": "How satisfaction of the requirement will be verified"
+      },
+      {
+        "name": "verification_method",
+        "title": "Verification method",
+        "type": "string",
+        "required": true,
+        "description": "Test, inspection, demonstration, analysis"
+      },
+      {
+        "name": "status",
+        "title": "Status",
+        "type": "string",
+        "required": true,
+        "description": "Draft / Approved / In Development / Tested / Accepted / Deferred / Rejected"
+      },
+      {
+        "name": "change_reference",
+        "title": "Change reference",
+        "type": "string",
+        "required": false,
+        "description": "Reference to any A12 change decision affecting this requirement"
+      },
+      {
+        "name": "owner",
+        "title": "Owner",
+        "type": "string",
+        "required": false,
+        "description": "Stakeholder or team responsible for the requirement"
+      }
+    ],
+    "produced_by_skills": [
+      "SKL-03-04"
+    ],
+    "consumed_by_skills": [
+      "SKL-03-04",
+      "SKL-05-03"
+    ]
+  },
+  "A03": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A03",
+    "artifact_name": "A03 Repository Tool Configuration Record",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Governance"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "title",
+        "title": "Title",
+        "type": "string",
+        "required": true,
+        "description": "The title of the artifact"
+      },
+      {
+        "name": "description",
+        "title": "Description",
+        "type": "string",
+        "required": true,
+        "description": "General description of the artifact"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A25": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A25",
+    "artifact_name": "Team Operating and Responsibility Record",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Resources",
+      "Governance",
+      "Stakeholders"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "title",
+        "title": "Title",
+        "type": "string",
+        "required": true,
+        "description": "The title of the artifact"
+      },
+      {
+        "name": "description",
+        "title": "Description",
+        "type": "string",
+        "required": true,
+        "description": "General description of the artifact"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A26": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A26",
+    "artifact_name": "Resource Capacity and Acquisition Record",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Governance"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "required_roles_and_resources",
+        "title": "Required roles and resources",
+        "type": "string",
+        "required": false,
+        "description": "Staff, equipment, materials, or facilities needed"
+      },
+      {
+        "name": "timing_and_duration",
+        "title": "Timing and duration",
+        "type": "string",
+        "required": false,
+        "description": "When each resource is needed and for how long"
+      },
+      {
+        "name": "acquisition_path",
+        "title": "Acquisition path",
+        "type": "string",
+        "required": false,
+        "description": "Internal assignment, external hire, procurement, or shared pool"
+      },
+      {
+        "name": "shared_resource_conflicts",
+        "title": "Shared-resource conflicts",
+        "type": "string",
+        "required": false,
+        "description": "Cross-project competition for the same resource"
+      },
+      {
+        "name": "allocation_assumptions",
+        "title": "Allocation assumptions",
+        "type": "string",
+        "required": false,
+        "description": "Basis for utilization rates and availability estimates"
+      },
+      {
+        "name": "release_criteria",
+        "title": "Release criteria",
+        "type": "string",
+        "required": false,
+        "description": "Conditions under which each resource is released"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A07": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A07",
+    "artifact_name": "Stakeholder Register and Stakeholder Engagement and Action Map (SEAM)",
+    "pmbok8_ref": "PMBOK8 Guide §2.5 · Standard §3 Principles · BAP-2E §4",
+    "focus_area": "Initiating",
+    "performance_domains": [
+      "Stakeholders",
+      "Governance"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "stakeholder_id",
+        "title": "Stakeholder ID",
+        "type": "string",
+        "required": false,
+        "description": "Format: S-NNN"
+      },
+      {
+        "name": "name",
+        "title": "Name",
+        "type": "string",
+        "required": false,
+        "description": "Full name (or role/group if individual not yet identified)"
+      },
+      {
+        "name": "organization_role",
+        "title": "Organization / Role",
+        "type": "string",
+        "required": false,
+        "description": "Organization and project role"
+      },
+      {
+        "name": "contact",
+        "title": "Contact",
+        "type": "string",
+        "required": false,
+        "description": "Primary contact method"
+      },
+      {
+        "name": "category",
+        "title": "Category",
+        "type": "string",
+        "required": false,
+        "description": "Internal / External / Sponsor / Regulator / Customer / Supplier / Team"
+      },
+      {
+        "name": "interest",
+        "title": "Interest",
+        "type": "string",
+        "required": false,
+        "description": "What the stakeholder cares about"
+      },
+      {
+        "name": "expectations",
+        "title": "Expectations",
+        "type": "string",
+        "required": false,
+        "description": "What the stakeholder expects to receive"
+      },
+      {
+        "name": "potential_influence",
+        "title": "Potential Influence",
+        "type": "string",
+        "required": false,
+        "description": "High / Medium / Low"
+      },
+      {
+        "name": "risk_to_project",
+        "title": "Risk to Project",
+        "type": "string",
+        "required": false,
+        "description": "Stakeholder-related risk if not engaged"
+      },
+      {
+        "name": "date_identified",
+        "title": "Date Identified",
+        "type": "date",
+        "required": false,
+        "description": "Date added to register"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  },
+  "A10": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A10",
+    "artifact_name": "Communications Management Plan",
+    "pmbok8_ref": "PMBOK8 Guide §2.5 Stakeholders Performance Domain; Table 2-1 Plan Communications Management",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Stakeholders",
+      "Governance",
+      "Resources"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "stakeholder_communications_needs",
+        "title": "Stakeholder communications needs",
+        "type": "string",
+        "required": true,
+        "description": "Summary of what information each key stakeholder group requires"
+      },
+      {
+        "name": "communication_item_register",
+        "title": "Communication item register",
+        "type": "string",
+        "required": true,
+        "description": "What is communicated, to whom, by whom, frequency, format, channel"
+      },
+      {
+        "name": "sender_and_receiver_responsibilities",
+        "title": "Sender and receiver responsibilities",
+        "type": "string",
+        "required": true,
+        "description": "Who is accountable for producing and distributing each communication"
+      },
+      {
+        "name": "communication_channels_and_tools",
+        "title": "Communication channels and tools",
+        "type": "string",
+        "required": true,
+        "description": "Approved tools and channels (email, portal, meetings, reports, dashboards)"
+      },
+      {
+        "name": "escalation_communications",
+        "title": "Escalation communications",
+        "type": "string",
+        "required": true,
+        "description": "How and when escalation communications are triggered and structured"
+      },
+      {
+        "name": "sensitive_information_handling",
+        "title": "Sensitive information handling",
+        "type": "string",
+        "required": true,
+        "description": "Rules for confidential, commercially sensitive, or regulated information"
+      },
+      {
+        "name": "communication_feedback_mechanism",
+        "title": "Communication feedback mechanism",
+        "type": "string",
+        "required": false,
+        "description": "How the team will know whether communications are effective"
+      },
+      {
+        "name": "glossary_terminology_alignment",
+        "title": "Glossary / terminology alignment",
+        "type": "string",
+        "required": false,
+        "description": "Common terms used to ensure clarity across stakeholder groups"
+      }
+    ],
+    "produced_by_skills": [
+      "SKL-03-13"
+    ],
+    "consumed_by_skills": [
+      "SKL-03-13",
+      "SKL-04-07",
+      "SKL-05-09"
+    ]
+  },
+  "A29": {
+    "schema_version": "1.0.0",
+    "artifact_id": "A29",
+    "artifact_name": "Change Readiness and Adoption Record",
+    "pmbok8_ref": "PMBOK8",
+    "focus_area": "Planning",
+    "performance_domains": [
+      "Governance"
+    ],
+    "lifecycle_applicability": [
+      "predictive",
+      "adaptive",
+      "hybrid"
+    ],
+    "fields": [
+      {
+        "name": "change_description",
+        "title": "Change description",
+        "type": "string",
+        "required": false,
+        "description": "What is changing and for whom"
+      },
+      {
+        "name": "stakeholder_group",
+        "title": "Stakeholder group",
+        "type": "string",
+        "required": false,
+        "description": "Affected group or audience"
+      },
+      {
+        "name": "readiness_dimension",
+        "title": "Readiness dimension",
+        "type": "string",
+        "required": false,
+        "description": "Awareness, willingness, knowledge, ability, or reinforcement"
+      },
+      {
+        "name": "current_readiness_level",
+        "title": "Current readiness level",
+        "type": "string",
+        "required": false,
+        "description": "Assessed state (not ready, developing, ready)"
+      },
+      {
+        "name": "target_readiness_level",
+        "title": "Target readiness level",
+        "type": "string",
+        "required": false,
+        "description": "Required state before deployment or go-live"
+      },
+      {
+        "name": "adoption_action",
+        "title": "Adoption action",
+        "type": "date",
+        "required": false,
+        "description": "Specific intervention — training, communication, coaching, process update"
+      },
+      {
+        "name": "owner",
+        "title": "Owner",
+        "type": "string",
+        "required": false,
+        "description": "Person responsible for the adoption action"
+      },
+      {
+        "name": "due_date",
+        "title": "Due date",
+        "type": "date",
+        "required": false,
+        "description": "Target date for action completion"
+      },
+      {
+        "name": "feedback_summary",
+        "title": "Feedback summary",
+        "type": "string",
+        "required": false,
+        "description": "Key themes from stakeholder feedback on the change"
+      },
+      {
+        "name": "gate_recommendation",
+        "title": "Gate recommendation",
+        "type": "string",
+        "required": false,
+        "description": "Readiness status at each deployment or review gate"
+      }
+    ],
+    "produced_by_skills": [],
+    "consumed_by_skills": []
+  }
+}

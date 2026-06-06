@@ -1,0 +1,73 @@
+schema_version: 1.0.0
+artifact_id: A09
+artifact_name: Quality Management Plan
+pmbok8_ref: PMBOK8 Guide §2.7 Delivery Performance Domain; Table 2-1 Plan Quality
+  Management
+focus_area: Planning
+performance_domains:
+- Delivery
+- Governance
+- Scope
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: quality_standards_reference
+  title: Quality standards reference
+  type: string
+  required: true
+  description: Which organizational, industry, regulatory, or contractual standards
+    apply
+- name: quality_objectives
+  title: Quality objectives
+  type: string
+  required: true
+  description: Measurable quality targets for key deliverables or processes
+- name: quality_roles_and_responsibilities
+  title: Quality roles and responsibilities
+  type: string
+  required: true
+  description: Who owns quality assurance, quality control, and acceptance sign-off
+- name: quality_assurance_activities
+  title: Quality assurance activities
+  type: string
+  required: true
+  description: Scheduled process audits, peer reviews, phase gate quality checks
+- name: quality_control_activities
+  title: Quality control activities
+  type: string
+  required: true
+  description: Inspection, testing, verification, and validation activities with frequency
+- name: quality_metrics
+  title: Quality metrics
+  type: string
+  required: true
+  description: What will be measured, how, and at what threshold
+- name: acceptance_criteria_process
+  title: Acceptance criteria process
+  type: string
+  required: true
+  description: How acceptance criteria from A08 are verified and formally accepted
+- name: non_conformance_process
+  title: Non-conformance process
+  type: string
+  required: true
+  description: How defects, failures, and non-conformances are recorded, escalated,
+    and resolved
+- name: continuous_improvement_approach
+  title: Continuous improvement approach
+  type: string
+  required: false
+  description: How quality lessons are captured and fed back into the process
+- name: tools_and_techniques
+  title: Tools and techniques
+  type: array
+  required: false
+  description: Quality management tools to be used (e.g., checklists, statistical
+    sampling, reviews)
+produced_by_skills:
+- SKL-03-09
+consumed_by_skills:
+- SKL-03-09
+- SKL-05-01

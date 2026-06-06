@@ -1,35 +1,41 @@
 ---
 skill_id: SKL-05-01
 name: Monitor and Control Project Work
-pack: "05 — Monitoring and Controlling"
+pack: 05 — Monitoring and Controlling
 version: 1.1.0
-status: "Active · Tested"
+status: Active · Tested
 source_type: PMI-derived
 authority: PMI-derived
-pmbok8_anchor: "Process-Groups §7.1 · Figure 7-1 · Figure 7-2"
+pmbok8_anchor: Process-Groups §7.1 · Figure 7-1 · Figure 7-2
 performance_domains:
-  - Measurement
-  - Governance
-  - Delivery
+- Measurement
+- Governance
+- Delivery
 focus_area: Monitoring and Controlling
-primary_artifact: "A17 — Work Performance Reports"
+primary_artifact: A17 — Work Performance Reports
 artifacts_updated:
-  - "A12 — Change Requests"
-  - "A16 — Cost Forecasts"
-  - "A18 — Issue Log"
-  - "A19 — Risk Register"
-  - "A21 — Lessons Learned Register"
+- A12 — Change Requests
+- A16 — Cost Forecasts
+- A18 — Issue Log
+- A19 — Risk Register
+- A21 — Lessons Learned Register
 upstream_prerequisites:
-  - SKL-04-01
+- SKL-04-01
 downstream_skills:
-  - SKL-05-02
-  - SKL-05-03
-  - SKL-05-04
-  - SKL-05-05
-  - SKL-05-06
+- SKL-05-02
+- SKL-05-03
+- SKL-05-04
+- SKL-05-05
+- SKL-05-06
 file_path: skills/05-monitoring-controlling/SKL-05-01-monitor-and-control-project-work.md
 tests: 5
-last_updated: "2026-06-03"
+last_updated: '2026-06-03'
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-05-01 — Monitor and Control Project Work

@@ -1,0 +1,104 @@
+schema_version: 1.0.0
+artifact_id: A12
+artifact_name: A12 Change Log
+pmbok8_ref: PMBOK8
+focus_area: Planning
+performance_domains:
+- Governance
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: cr_id
+  title: CR ID
+  type: string
+  required: false
+  description: 'Unique ID — format: CR-NNN (e.g., CR-001)'
+- name: date_raised
+  title: Date Raised
+  type: date
+  required: false
+  description: Date change request was submitted
+- name: raised_by
+  title: Raised By
+  type: string
+  required: false
+  description: Name and role of requestor
+- name: description
+  title: Description
+  type: string
+  required: false
+  description: Clear description of the requested change
+- name: justification
+  title: Justification
+  type: string
+  required: false
+  description: Business reason or driver
+- name: impact_scope
+  title: Impact — Scope
+  type: string
+  required: false
+  description: Effect on scope baseline (A08)
+- name: impact_schedule
+  title: Impact — Schedule
+  type: string
+  required: false
+  description: Effect on schedule baseline (A15) in days
+- name: impact_cost
+  title: Impact — Cost
+  type: number
+  required: false
+  description: Effect on cost baseline (A16) in currency
+- name: impact_risk
+  title: Impact — Risk
+  type: string
+  required: false
+  description: New or modified risks triggered (A19)
+- name: impact_quality
+  title: Impact — Quality
+  type: string
+  required: false
+  description: Quality criteria affected
+- name: authority_threshold
+  title: Authority Threshold
+  type: string
+  required: false
+  description: T1 / T2 / T3 / T4 per AUTHORITY-ROUTING.md
+- name: disposition
+  title: Disposition
+  type: string
+  required: false
+  description: Approved / Rejected / Deferred
+- name: disposition_date
+  title: Disposition Date
+  type: date
+  required: false
+  description: Date of CCB or authority decision
+- name: decided_by
+  title: Decided By
+  type: string
+  required: false
+  description: Decision authority (PM / Sponsor / Governing Body)
+- name: baseline_updates
+  title: Baseline Updates
+  type: date
+  required: false
+  description: Which baselines were updated (A08 / A15 / A16 / A19 / A14)
+- name: implementation_status
+  title: Implementation Status
+  type: string
+  required: false
+  description: Not Started / In Progress / Complete / Verified
+- name: verification_date
+  title: Verification Date
+  type: date
+  required: false
+  description: Date implementation was confirmed
+- name: notes
+  title: Notes
+  type: string
+  required: false
+  description: Any additional context, conditions, or constraints
+produced_by_skills: []
+consumed_by_skills: []

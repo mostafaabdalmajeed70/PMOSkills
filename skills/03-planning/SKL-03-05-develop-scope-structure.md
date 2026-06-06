@@ -1,26 +1,30 @@
 ---
 skill_id: SKL-03-05
 skill_name: Develop Scope Structure (WBS)
-pack: "03 — Planning"
-version: "1.0.0"
-status: "Active · Tested"
+pack: 03 — Planning
+version: 1.0.0
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact_output: "A11 — Work Breakdown Structure"
+primary_artifact_output: A11 — Work Breakdown Structure
 artifacts_updated:
-  - "A06 — Project Management Plan (Scope Baseline section)"
-  - "A09 — Requirements Traceability Matrix (WBS linkage)"
-pmbok8_process_anchor: "Guide §2.2.6.4 Create WBS · Guide §2.2 Scope Domain"
+- A06 — Project Management Plan (Scope Baseline section)
+- A09 — Requirements Traceability Matrix (WBS linkage)
+pmbok8_process_anchor: Guide §2.2.6.4 Create WBS · Guide §2.2 Scope Domain
 performance_domains:
-  - Scope
+- Scope
 focus_area: Planning
 upstream_prerequisites:
-  - "SKL-03-04 — A10 Scope Statement must be baselined"
+- SKL-03-04 — A10 Scope Statement must be baselined
 downstream_skills:
-  - "SKL-03-06 — Plan Schedule Management"
-  - "SKL-03-14 — Estimate Costs"
-  - "SKL-03-17 — Estimate Resources"
-file_path: "skills/03-planning/SKL-03-05-develop-scope-structure.md"
+- SKL-03-06 — Plan Schedule Management
+- SKL-03-14 — Estimate Costs
+- SKL-03-17 — Estimate Resources
+file_path: skills/03-planning/SKL-03-05-develop-scope-structure.md
 tests: 7
+lifecycle_applicability:
+- predictive
+- hybrid
+lifecycle_notes: Standardized predictive modeling with hybrid adaptation interfaces.
 ---
 
 # SKL-03-05 — Develop Scope Structure (WBS)

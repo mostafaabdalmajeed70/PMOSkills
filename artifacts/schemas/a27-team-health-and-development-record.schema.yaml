@@ -1,0 +1,44 @@
+schema_version: 1.0.0
+artifact_id: A27
+artifact_name: Team Health and Development Record
+pmbok8_ref: PMBOK8
+focus_area: Planning
+performance_domains:
+- Governance
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: health_observations
+  title: Health observations
+  type: string
+  required: false
+  description: Signals of team effectiveness, collaboration, or wellbeing
+- name: capability_gaps
+  title: Capability gaps
+  type: string
+  required: false
+  description: Skills or knowledge areas requiring development
+- name: coaching_actions
+  title: Coaching actions
+  type: string
+  required: false
+  description: Specific coaching interventions agreed and assigned
+- name: learning_actions
+  title: Learning actions
+  type: string
+  required: false
+  description: Training, mentoring, or knowledge-transfer activities
+- name: trend_notes
+  title: Trend notes
+  type: string
+  required: false
+  description: Direction of change since last review
+- name: owner_and_follow_up_date
+  title: Owner and follow-up date
+  type: date
+  required: false
+  description: Role responsible and next review date
+produced_by_skills: []
+consumed_by_skills: []

@@ -1,0 +1,59 @@
+schema_version: 1.0.0
+artifact_id: A22
+artifact_name: Portfolio Interdependency Record
+pmbok8_ref: PMBOK8
+focus_area: Planning
+performance_domains:
+- Governance
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: dependency_id
+  title: Dependency ID
+  type: string
+  required: false
+  description: Unique identifier for the dependency relationship
+- name: source_initiative
+  title: Source initiative
+  type: string
+  required: false
+  description: The project or program generating the dependency
+- name: target_initiative
+  title: Target initiative
+  type: string
+  required: false
+  description: The project or program affected by the dependency
+- name: dependency_type
+  title: Dependency type
+  type: string
+  required: false
+  description: Milestone, resource, data, decision, regulatory, or technical
+- name: impact_if_unresolved
+  title: Impact if unresolved
+  type: number
+  required: false
+  description: Schedule, cost, risk, or value impact
+- name: coordination_action
+  title: Coordination action
+  type: string
+  required: false
+  description: Agreed action to manage or resolve the dependency
+- name: owner
+  title: Owner
+  type: string
+  required: false
+  description: Person or role responsible for the coordination action
+- name: due_date
+  title: Due date
+  type: date
+  required: false
+  description: Expected resolution or review date
+- name: status
+  title: Status
+  type: string
+  required: false
+  description: Open, in progress, escalated, or resolved
+produced_by_skills: []
+consumed_by_skills: []

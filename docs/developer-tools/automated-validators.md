@@ -35,7 +35,7 @@ To ensure the integrity of the workspace, PMOSkills employs a **3-Tier testing p
 ```
 
 ### 1.1 L1 (Structural Validation)
-*   **Enforced By:** [`shared/validate_structure.py`](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/shared/validate_structure.py).
+*   **Enforced By:** [`shared/validate_structure.py`](../../shared/validate_structure.py).
 *   **Scope:** Verifies that all 41 standard process records (`PR01-PR41`) are present, confirms filename kebab-case constraints, and validates folder structures.
 
 ### 1.2 L2 (Content & Citation Validation)

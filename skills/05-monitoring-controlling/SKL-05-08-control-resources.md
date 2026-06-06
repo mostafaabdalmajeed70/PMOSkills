@@ -1,29 +1,35 @@
 ---
 skill_id: SKL-05-08
 name: Control Resources
-pack: "05 — Monitoring and Controlling"
+pack: 05 — Monitoring and Controlling
 version: 1.1.0
-status: "Active · Tested"
+status: Active · Tested
 source_type: PMI-derived
 authority: PMI-derived
-pmbok8_anchor: "Process-Groups §7.8 · Figure 7-15 · Figure 7-16"
+pmbok8_anchor: Process-Groups §7.8 · Figure 7-15 · Figure 7-16
 performance_domains:
-  - Delivery
-  - Measurement
+- Delivery
+- Measurement
 focus_area: Monitoring and Controlling
-primary_artifact: "A17 — Work Performance Information (resource section)"
+primary_artifact: A17 — Work Performance Information (resource section)
 artifacts_updated:
-  - "A12 — Change Requests"
-  - "A18 — Issue Log"
-  - "A19 — Risk Register"
-  - "A21 — Lessons Learned Register"
+- A12 — Change Requests
+- A18 — Issue Log
+- A19 — Risk Register
+- A21 — Lessons Learned Register
 upstream_prerequisites:
-  - SKL-04-03
+- SKL-04-03
 downstream_skills:
-  - SKL-05-02
+- SKL-05-02
 file_path: skills/05-monitoring-controlling/SKL-05-08-control-resources.md
 tests: 5
-last_updated: "2026-06-03"
+last_updated: '2026-06-03'
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-05-08 — Control Resources

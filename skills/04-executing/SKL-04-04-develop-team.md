@@ -1,24 +1,31 @@
 ---
 skill_id: SKL-04-04
 skill_name: Develop Team
-pack: "04 — Executing"
-version: "1.1.0"
-status: "Active · Tested"
+pack: 04 — Executing
+version: 1.1.0
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact: "A25 — Team Operating and Responsibility Record (team development section)"
+primary_artifact: A25 — Team Operating and Responsibility Record (team development
+  section)
 artifacts_updated:
-  - "A21 — Lessons Learned Record"
-pmbok8_anchor: "Guide §2.6.2.4 Develop Team · Figure 2-44"
+- A21 — Lessons Learned Record
+pmbok8_anchor: Guide §2.6.2.4 Develop Team · Figure 2-44
 performance_domains:
-  - Resources
-  - Team
+- Resources
+- Team
 focus_area: Executing
 upstream_prerequisites:
-  - "SKL-04-03 — team must be acquired (A25 populated)"
+- SKL-04-03 — team must be acquired (A25 populated)
 downstream_skills:
-  - "SKL-04-05 — Manage Team"
-file_path: "skills/04-executing/SKL-04-04-develop-team.md"
+- SKL-04-05 — Manage Team
+file_path: skills/04-executing/SKL-04-04-develop-team.md
 tests: 7
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-04-04 — Develop Team

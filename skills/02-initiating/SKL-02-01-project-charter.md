@@ -1,26 +1,33 @@
 ---
 skill_id: SKL-02-01
-skill_name: "Project Charter Creation"
-pack: "02 — Initiating"
-status: "Active · Tested"
+skill_name: Project Charter Creation
+pack: 02 — Initiating
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact_output: "A04 — Project Charter"
+primary_artifact_output: A04 — Project Charter
 artifacts_updated:
-  - "A05 — Context Register (Assumption Log)"
-pmbok8_process_anchor: "Guide §2.1.6.1 Initiate Project or Phase · Guide §2.1 Governance Domain · Standard §3.6 Be an Accountable Leader"
-version: "1.0.0"
+- A05 — Context Register (Assumption Log)
+pmbok8_process_anchor: Guide §2.1.6.1 Initiate Project or Phase · Guide §2.1 Governance
+  Domain · Standard §3.6 Be an Accountable Leader
+version: 1.0.0
 performance_domains:
-  - Governance
+- Governance
 focus_area: Initiating
 upstream_prerequisites:
-  - "SKL-01-01 — A05 Governance section must be baselined"
-  - "SKL-01-02 — Document Control Standards must be baselined"
-  - "SKL-01-03 — Repository configured"
+- SKL-01-01 — A05 Governance section must be baselined
+- SKL-01-02 — Document Control Standards must be baselined
+- SKL-01-03 — Repository configured
 downstream_skills:
-  - "SKL-02-02 — Stakeholder Identification"
-  - "SKL-03-01 — Integrate and Align Project Plans"
-file_path: "skills/02-initiating/SKL-02-01-project-charter.md"
+- SKL-02-02 — Stakeholder Identification
+- SKL-03-01 — Integrate and Align Project Plans
+file_path: skills/02-initiating/SKL-02-01-project-charter.md
 tests: 10
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-02-01 — Project Charter Creation

@@ -1,0 +1,69 @@
+schema_version: 1.0.0
+artifact_id: A32
+artifact_name: Supplier Evaluation and Award Decision Record
+pmbok8_ref: PMBOK8
+focus_area: Planning
+performance_domains:
+- Governance
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: procurement_reference
+  title: Procurement reference
+  type: string
+  required: false
+  description: Identifier linking to the A31 procurement record and solicitation
+- name: evaluation_criteria
+  title: Evaluation criteria
+  type: string
+  required: false
+  description: Criteria used (technical, commercial, risk, past performance, etc.)
+- name: weighting
+  title: Weighting
+  type: string
+  required: false
+  description: Weight assigned to each criterion
+- name: suppliers_evaluated
+  title: Suppliers evaluated
+  type: string
+  required: false
+  description: Names or IDs of all suppliers in the evaluation
+- name: scores_by_criterion
+  title: Scores by criterion
+  type: string
+  required: false
+  description: Individual scores for each supplier against each criterion
+- name: aggregate_score
+  title: Aggregate score
+  type: string
+  required: false
+  description: Weighted total per supplier
+- name: risk_and_compliance_flags
+  title: Risk and compliance flags
+  type: string
+  required: false
+  description: Any red flags, qualifications, or compliance concerns noted
+- name: recommendation
+  title: Recommendation
+  type: string
+  required: false
+  description: Recommended supplier with rationale
+- name: award_decision
+  title: Award decision
+  type: date
+  required: false
+  description: Approved award, authority, and date
+- name: sole_source_justification
+  title: Sole-source justification
+  type: string
+  required: false
+  description: Required when competitive process is not used
+- name: debrief_notes
+  title: Debrief notes
+  type: string
+  required: false
+  description: Summary for unsuccessful supplier feedback when required
+produced_by_skills: []
+consumed_by_skills: []

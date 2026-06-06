@@ -1,29 +1,33 @@
 ---
 skill_id: SKL-04-09
 skill_name: Conduct Procurements
-pack: "04 — Executing"
-version: "1.1.0"
-status: "Active · Tested"
+pack: 04 — Executing
+version: 1.1.0
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact: "A31 — Procurement and Supplier Management Record"
+primary_artifact: A31 — Procurement and Supplier Management Record
 artifacts_updated:
-  - "A16 — Financial Management and Cost Baseline Record (contracted costs in §4)"
-  - "A26 — Resource Capacity and Acquisition Record (external resource acquisition)"
-  - "A18 — Issue, Impediment and Action Log (supplier performance issues)"
-pmbok8_anchor: "Guide §2.8 Procurement Management"
+- A16 — Financial Management and Cost Baseline Record (contracted costs in §4)
+- A26 — Resource Capacity and Acquisition Record (external resource acquisition)
+- A18 — Issue, Impediment and Action Log (supplier performance issues)
+pmbok8_anchor: Guide §2.8 Procurement Management
 performance_domains:
-  - Resources
-  - Finance
-  - Governance
+- Resources
+- Finance
+- Governance
 focus_area: Executing
 upstream_prerequisites:
-  - "SKL-03-16 — A26 resource management plan (acquisition strategy)"
-  - "SKL-02-03 — A06 tailoring (procurement formality level)"
+- SKL-03-16 — A26 resource management plan (acquisition strategy)
+- SKL-02-03 — A06 tailoring (procurement formality level)
 downstream_skills:
-  - "SKL-05-05 — Control Costs (contracted cost tracking)"
-  - "SKL-06-01 — Close Project or Phase (contract closure via A31 §6)"
-file_path: "skills/04-executing/SKL-04-09-conduct-procurements.md"
+- SKL-05-05 — Control Costs (contracted cost tracking)
+- SKL-06-01 — Close Project or Phase (contract closure via A31 §6)
+file_path: skills/04-executing/SKL-04-09-conduct-procurements.md
 tests: 9
+lifecycle_applicability:
+- predictive
+- hybrid
+lifecycle_notes: Standardized predictive modeling with hybrid adaptation interfaces.
 ---
 
 # SKL-04-09 — Conduct Procurements

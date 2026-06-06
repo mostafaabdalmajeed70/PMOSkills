@@ -46,11 +46,12 @@ graph TD
 
 Navigate the deep governance structures and capabilities of modern PMOs using these dedicated reference guides:
 
-*   [PMO Types](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/reference/pmo/pmo-types.md) — 20+ PMO archetypes categorized by scope, control levels, business focus, and specific use cases.
-*   [PMO Services](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/reference/pmo/pmo-services.md) — The 26 standardized PMO services across 7 service categories, each mapped to a 5-level maturity scale.
-*   [PMO Competencies](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/reference/pmo/pmo-competencies.md) — The 30 core competencies for PMO professionals across Design, Operation, and Improvement domains.
-*   [PMO Customer Outcomes](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/reference/pmo/pmo-outcomes.md) — The 30 standard customer outcomes that a mature PMO delivers to its stakeholders with diagnostics.
-*   [PMO Maturity Model](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/reference/pmo/pmo-maturity-model.md) — The 5-level service maturity framework used to audit and scale PMO capabilities.
+*   [PMO Types](./pmo-types.md) — 20+ PMO archetypes categorized by scope, control levels, business focus, and specific use cases.
+*   [PMO Services](./pmo-services.md) — The 26 standardized PMO services across 7 service categories, each mapped to a 5-level maturity scale.
+*   [PMO Services Catalog](./pmo-services-catalog.md) — Mapping the 26 standard services to executable skills and artifacts.
+*   [PMO Competencies](./pmo-competencies.md) — The 30 core competencies for PMO professionals across Design, Operation, and Improvement domains.
+*   [PMO Customer Outcomes](./pmo-outcomes.md) — The 30 standard customer outcomes that a mature PMO delivers to its stakeholders with diagnostics.
+*   [PMO Maturity Model](./pmo-maturity-model.md) — The 5-level service maturity framework used to audit and scale PMO capabilities.
 
 ---
 

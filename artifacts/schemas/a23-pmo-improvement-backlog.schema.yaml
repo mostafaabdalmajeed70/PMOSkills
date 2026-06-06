@@ -1,0 +1,59 @@
+schema_version: 1.0.0
+artifact_id: A23
+artifact_name: PMO Improvement Backlog
+pmbok8_ref: PMBOK8
+focus_area: Planning
+performance_domains:
+- Governance
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: item_id
+  title: Item ID
+  type: string
+  required: false
+  description: Unique identifier for the improvement item
+- name: improvement_description
+  title: Improvement description
+  type: string
+  required: false
+  description: Brief description of the gap, enhancement, or change needed
+- name: category
+  title: Category
+  type: string
+  required: false
+  description: Method, template, tooling, coaching, standard, capability, or governance
+- name: priority
+  title: Priority
+  type: string
+  required: false
+  description: High, medium, or low based on PMO governance forum judgment
+- name: source
+  title: Source
+  type: string
+  required: false
+  description: Origin of the item (maturity review, lessons, feedback, audit, etc.)
+- name: owner
+  title: Owner
+  type: string
+  required: false
+  description: PMO team member responsible for delivering the improvement
+- name: target_date
+  title: Target date
+  type: date
+  required: false
+  description: Expected completion date
+- name: status
+  title: Status
+  type: string
+  required: false
+  description: Backlog, in progress, complete, or deferred
+- name: outcome
+  title: Outcome
+  type: string
+  required: false
+  description: Result achieved and any follow-on actions
+produced_by_skills: []
+consumed_by_skills: []

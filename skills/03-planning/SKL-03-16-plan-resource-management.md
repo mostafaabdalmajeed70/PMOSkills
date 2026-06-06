@@ -1,26 +1,33 @@
 ---
 skill_id: SKL-03-16
 skill_name: Plan Resource Management
-pack: "03 — Planning"
-version: "1.0.0"
-status: "Active · Tested"
+pack: 03 — Planning
+version: 1.0.0
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact_output: "A06 — Project Management Plan (Resource Management section)"
+primary_artifact_output: A06 — Project Management Plan (Resource Management section)
 artifacts_updated:
-  - "A06 — Project Management Plan"
-pmbok8_process_anchor: "Guide §2.6.6.1 Plan Resource Management · Guide §2.6 Resources Domain"
+- A06 — Project Management Plan
+pmbok8_process_anchor: Guide §2.6.6.1 Plan Resource Management · Guide §2.6 Resources
+  Domain
 performance_domains:
-  - Resources
+- Resources
 focus_area: Planning
 upstream_prerequisites:
-  - "SKL-03-05 — A11 WBS must be baselined"
+- SKL-03-05 — A11 WBS must be baselined
 downstream_skills:
-  - "SKL-03-17 — Estimate Resources"
-  - "SKL-04-03 — Acquire Resources"
-  - "SKL-04-04 — Develop Team"
-  - "SKL-04-05 — Manage Team"
-file_path: "skills/03-planning/SKL-03-16-plan-resource-management.md"
+- SKL-03-17 — Estimate Resources
+- SKL-04-03 — Acquire Resources
+- SKL-04-04 — Develop Team
+- SKL-04-05 — Manage Team
+file_path: skills/03-planning/SKL-03-16-plan-resource-management.md
 tests: 7
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-03-16 — Plan Resource Management

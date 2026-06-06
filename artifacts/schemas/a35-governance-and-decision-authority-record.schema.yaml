@@ -1,0 +1,44 @@
+schema_version: 1.0.0
+artifact_id: A35
+artifact_name: Governance and Decision Authority Record
+pmbok8_ref: PMBOK8
+focus_area: Planning
+performance_domains:
+- Governance
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: governance_bodies
+  title: Governance bodies
+  type: string
+  required: false
+  description: Forums, steering groups, or boards with oversight authority
+- name: decision_categories
+  title: Decision categories
+  type: string
+  required: false
+  description: Types of decisions and which body owns each
+- name: delegated_authorities
+  title: Delegated authorities
+  type: string
+  required: false
+  description: What the project manager can approve within stated limits
+- name: approval_thresholds
+  title: Approval thresholds
+  type: string
+  required: false
+  description: Numeric or qualitative T1–T4 bands per the authority model
+- name: cadence
+  title: Cadence
+  type: string
+  required: false
+  description: Meeting frequency and reporting cycle
+- name: escalation_triggers
+  title: Escalation triggers
+  type: string
+  required: false
+  description: Conditions that require escalation beyond current authority
+produced_by_skills: []
+consumed_by_skills: []

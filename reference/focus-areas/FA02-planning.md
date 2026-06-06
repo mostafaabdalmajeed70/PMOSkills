@@ -85,16 +85,15 @@ Planning is the focus area in which the total scope of effort is established, al
 | SKL-03-17 | Plan Risk Management |
 
 ## Relationship to Performance Domains
-Planning is the most multi-domain focus area; it directly engages or sets the foundation for nearly every performance domain:
+Planning is the most multi-domain focus area; it directly engages and establishes the plans and baselines for all 7 performance domains:
 
-- **PD04 — Planning:** The primary domain for this focus area; all planning processes, tools, baselines, and subsidiary plans are produced here
-- **PD03 — Development Approach and Life Cycle:** The delivery approach (predictive, adaptive, hybrid) is finalized and tailored; phase gating and iteration cadence are defined
-- **PD08 — Uncertainty:** Risk management planning, risk identification, and risk analysis are conducted; the risk register and reserve strategy are established
-- **PD01 — Stakeholders:** Stakeholder engagement strategies are refined; communications planning directly serves stakeholder needs
-- **PD02 — Team:** Resource planning, team structure, roles, responsibilities, and operating agreements are defined
-- **PD05 — Project Work:** Work packages, activity sequences, and resource assignments create the foundation for directing project work in FA03
-- **PD07 — Measurement:** Performance measurement baselines (scope, schedule, cost) are established; KPIs and reporting thresholds are defined
-- **PD06 — Delivery:** Acceptance criteria, quality standards, and the RTM are defined; the delivery roadmap is articulated
+- **PD8-01 — Governance:** Tailors the development approach and project lifecycle, plans sourcing strategies, and integrates all sub-plans into the master Integrated Project Management Plan.
+- **PD8-02 — Scope:** Establishes scope boundaries, collects requirements, and decomposes scope into the WBS or backlog.
+- **PD8-03 — Schedule:** Determines sequence, estimates activity durations, and develops the Schedule Baseline.
+- **PD8-04 — Finance:** Plans financial management, estimates costs, and establishes the Financial Baseline (budget).
+- **PD8-05 — Stakeholders:** Identifies stakeholder engagement plans and designs the communications approach.
+- **PD8-06 — Resources:** Establishes resource plans, estimates resource requirements, and builds team operating charters.
+- **PD8-07 — Risk:** Plans risk management, identifies risks, performs analysis, and prepares contingency reserves.
 
 ## Exit Criteria / Quality Gate
 - Integrated Project Management Plan is reviewed and formally approved by the sponsor

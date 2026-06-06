@@ -1,0 +1,52 @@
+schema_version: 1.0.0
+artifact_id: A05
+artifact_name: Context Register
+pmbok8_ref: PMBOK8 Guide §1.1.2 Enterprise Environmental Factors; §1.1.3 Organizational
+  Process Assets
+focus_area: Initiating
+performance_domains:
+- Governance
+- Risk
+- Resources
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: eef_reference_id
+  title: EEF reference ID
+  type: string
+  required: false
+  description: Unique identifier for this EEF entry
+- name: eef_type
+  title: EEF type
+  type: string
+  required: false
+  description: Internal (organizational) or External (market, regulatory, environmental)
+- name: description
+  title: Description
+  type: string
+  required: false
+  description: What the EEF is and how it affects the project
+- name: impact
+  title: Impact
+  type: string
+  required: false
+  description: How this factor constrains or influences planning, delivery, or decision-making
+- name: owner
+  title: Owner
+  type: string
+  required: false
+  description: Who in the organization is accountable for monitoring this factor
+- name: status
+  title: Status
+  type: string
+  required: false
+  description: Active / Resolved / Changed
+produced_by_skills:
+- SKL-02-01
+- SKL-03-01
+consumed_by_skills:
+- SKL-02-01
+- SKL-03-01
+- SKL-03-02

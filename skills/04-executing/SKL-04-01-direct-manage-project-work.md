@@ -1,26 +1,32 @@
 ---
 skill_id: SKL-04-01
 skill_name: Direct and Manage Project Work
-pack: "04 — Executing"
-version: "1.1.0"
-status: "Active · Tested"
+pack: 04 — Executing
+version: 1.1.0
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact: "A18 — Issue, Impediment and Action Log"
+primary_artifact: A18 — Issue, Impediment and Action Log
 artifacts_updated:
-  - "A21 — Lessons Learned Record"
-  - "A14 — Integrated PM Plan (via A12 change requests)"
-  - "A28 — Communications and Reporting Record (change notifications)"
-pmbok8_anchor: "Guide §2.1.6.3 Direct and Manage Project Work · Figure 2-5"
+- A21 — Lessons Learned Record
+- A14 — Integrated PM Plan (via A12 change requests)
+- A28 — Communications and Reporting Record (change notifications)
+pmbok8_anchor: Guide §2.1.6.3 Direct and Manage Project Work · Figure 2-5
 performance_domains:
-  - Delivery
-  - Governance
+- Delivery
+- Governance
 focus_area: Executing
 upstream_prerequisites:
-  - "SKL-03-01 — A14 must be baselined"
+- SKL-03-01 — A14 must be baselined
 downstream_skills:
-  - "SKL-05-01 — Monitor and Control Project Work"
-file_path: "skills/04-executing/SKL-04-01-direct-manage-project-work.md"
+- SKL-05-01 — Monitor and Control Project Work
+file_path: skills/04-executing/SKL-04-01-direct-manage-project-work.md
 tests: 9
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-04-01 — Direct and Manage Project Work

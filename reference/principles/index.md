@@ -20,7 +20,7 @@ last_updated: "2026-06-03"
 > **Change log v2.0.0 (2026-06-03):** Rewritten from PMBOK 7 (12 principles, §3.1–§3.12) to
 > PMBOK 8 (6 principles, §3.3–§3.8). PMBOK 7 heritage content is preserved in the section
 > at the end of this file under "PMBOK 7 Heritage Reference". Individual PMBOK 7 principle
-> files remain in this directory as `P7-01-stewardship.md` through `P7-12-change.md`.
+> files have been moved to the `pmbok7-archive/` subdirectory as historical reference.
 
 ---
 
@@ -38,12 +38,12 @@ They represent a community-driven consolidation of the twelve principles in PMBO
 
 | ID | Principle | §Ref | Brief Description | File |
 |----|-----------|------|-------------------|------|
-| P1 | Adopt a Holistic View | §3.3 | Understand the project as a system embedded in a larger context; decisions cascade across domains | [P01-stewardship.md](P01-stewardship.md) |
-| P2 | Focus on Value | §3.4 | Maintain consistent focus on the intended value — financial, social, environmental, or strategic — throughout the lifecycle | [P04-value.md](P04-value.md) |
-| P3 | Embed Quality Into Processes and Deliverables | §3.5 | Integrate quality prevention into every process and deliverable — not just inspection at delivery | [P08-quality.md](P08-quality.md) |
-| P4 | Be an Accountable Leader | §3.6 | Exercise clear, visible leadership with explicit accountability; authority and responsibility must be matched | [P7-06-leadership.md](P7-06-leadership.md) |
-| P5 | Integrate Sustainability Within All Project Areas | §3.7 | Balance environmental, social, and economic dimensions across all project decisions and deliverables | [P06-sustainability.md](P06-sustainability.md) |
-| P6 | Build an Empowered Culture | §3.8 | Create conditions for team empowerment, psychological safety, and distributed decision-making | [P02-team.md](P02-team.md) |
+| P8-01 | Adopt a Holistic View | §3.3 | Understand the project as a system embedded in a larger context; decisions cascade across domains | [P8-01-holistic-view.md](pmbok8/P8-01-holistic-view.md) |
+| P8-02 | Focus on Value | §3.4 | Maintain consistent focus on the intended value — financial, social, environmental, or strategic — throughout the lifecycle | [P8-02-focus-on-value.md](pmbok8/P8-02-focus-on-value.md) |
+| P8-03 | Embed Quality Into Processes and Deliverables | §3.5 | Integrate quality prevention into every process and deliverable — not just inspection at delivery | [P8-03-embed-quality.md](pmbok8/P8-03-embed-quality.md) |
+| P8-04 | Be an Accountable Leader | §3.6 | Exercise clear, visible leadership with explicit accountability; authority and responsibility must be matched | [P8-04-accountable-leader.md](pmbok8/P8-04-accountable-leader.md) |
+| P8-05 | Integrate Sustainability Within All Project Areas | §3.7 | Balance environmental, social, and economic dimensions across all project decisions and deliverables | [P8-05-integrate-sustainability.md](pmbok8/P8-05-integrate-sustainability.md) |
+| P8-06 | Build an Empowered Culture | §3.8 | Create conditions for team empowerment, psychological safety, and distributed decision-making | [P8-06-empowered-culture.md](pmbok8/P8-06-empowered-culture.md) |
 
 ---
 

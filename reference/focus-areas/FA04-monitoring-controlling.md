@@ -66,14 +66,15 @@ Monitoring and Controlling is the focus area that tracks, reviews, and regulates
 | SKL-05-09 | Monitor Risks |
 
 ## Relationship to Performance Domains
-Monitoring and Controlling is the governance overlay that connects all performance domains through measurement and feedback:
+Monitoring and Controlling serves as the governance overlay that connects and monitors progress across all 7 performance domains:
 
-- **PD07 — Measurement:** The primary domain; all performance measurement, KPI tracking, earned value analysis, variance reporting, and forecasting occur here; this domain exists almost entirely within this focus area
-- **PD08 — Uncertainty:** Risk monitoring, trigger identification, contingency drawdowns, and reserve management keep the project's uncertainty posture current and controlled
-- **PD06 — Delivery:** Scope validation, quality inspection, and acceptance reviews ensure deliverables meet defined standards before formal acceptance
-- **PD04 — Planning:** Approved changes from integrated change control feed back into plan updates; re-baselining decisions occur here when authorized
-- **PD01 — Stakeholders:** Stakeholder engagement monitoring identifies satisfaction gaps; corrective communications actions are initiated
-- **PD05 — Project Work:** Work performance data is the primary input from FA03 Executing; control decisions influence work direction in real time
+- **PD8-01 — Governance:** Regulates project performance, conducts change control, and manages knowledge audits.
+- **PD8-02 — Scope:** Inspects deliverables against quality requirements and controls scope creep (Control Scope and Validate Scope processes).
+- **PD8-03 — Schedule:** Monitors activity progress and critical path deviations against the schedule baseline.
+- **PD8-04 — Finance:** Tracks expenditures, calculates earned value indices (CV, SV, CPI, SPI), and forecasts financial completion.
+- **PD8-05 — Stakeholders:** Assesses stakeholder engagement levels and monitors communications performance.
+- **PD8-06 — Resources:** Monitors team performance, resource usage, and supplier/procurement contract compliance.
+- **PD8-07 — Risk:** Monitors risk triggers, implements contingency responses, and updates the risk register.
 
 ## Exit Criteria / Quality Gate
 - All planned deliverables are formally accepted by the sponsor or designated acceptance authority

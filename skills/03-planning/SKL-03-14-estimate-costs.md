@@ -1,24 +1,28 @@
 ---
 skill_id: SKL-03-14
 skill_name: Estimate Costs
-pack: "03 — Planning"
-version: "1.0.0"
-status: "Active · Tested"
+pack: 03 — Planning
+version: 1.0.0
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact_output: "A15 — Cost Estimates"
+primary_artifact_output: A15 — Cost Estimates
 artifacts_updated:
-  - "A06 — Project Management Plan (Cost Baseline reference)"
-pmbok8_process_anchor: "Guide §2.4.6.2 Estimate Costs · Guide §2.4 Finance Domain"
+- A06 — Project Management Plan (Cost Baseline reference)
+pmbok8_process_anchor: Guide §2.4.6.2 Estimate Costs · Guide §2.4 Finance Domain
 performance_domains:
-  - Finance
+- Finance
 focus_area: Planning
 upstream_prerequisites:
-  - "SKL-03-05 — A11 WBS must be baselined"
-  - "SKL-03-13 — Financial Management section of A06 must be baselined"
+- SKL-03-05 — A11 WBS must be baselined
+- SKL-03-13 — Financial Management section of A06 must be baselined
 downstream_skills:
-  - "SKL-03-15 — Develop Budget"
-file_path: "skills/03-planning/SKL-03-14-estimate-costs.md"
+- SKL-03-15 — Develop Budget
+file_path: skills/03-planning/SKL-03-14-estimate-costs.md
 tests: 7
+lifecycle_applicability:
+- predictive
+- hybrid
+lifecycle_notes: Standardized predictive modeling with hybrid adaptation interfaces.
 ---
 
 # SKL-03-14 — Estimate Costs

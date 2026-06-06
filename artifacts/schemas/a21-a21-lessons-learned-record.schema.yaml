@@ -1,0 +1,26 @@
+schema_version: 1.0.0
+artifact_id: A21
+artifact_name: A21 Lessons Learned Record
+pmbok8_ref: PMBOK8
+focus_area: Executing
+performance_domains:
+- Governance
+- Stakeholders
+- Resources
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: title
+  title: Title
+  type: string
+  required: true
+  description: The title of the artifact
+- name: description
+  title: Description
+  type: string
+  required: true
+  description: General description of the artifact
+produced_by_skills: []
+consumed_by_skills: []

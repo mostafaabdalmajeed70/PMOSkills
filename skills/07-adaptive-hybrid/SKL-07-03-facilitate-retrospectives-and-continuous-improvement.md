@@ -1,28 +1,33 @@
 ---
 skill_id: SKL-07-03
 name: Facilitate Retrospectives and Continuous Improvement
-pack: "07 — Adaptive & Hybrid"
+pack: 07 — Adaptive & Hybrid
 version: 1.1.0
-status: "Active · Tested"
+status: Active · Tested
 source_type: PMI-derived
 authority: PMI-derived
-pmbok8_anchor: "PMBOK8 Standard Principle 12 · APG §5 · APG §3.3 Table 3-2"
+pmbok8_anchor: PMBOK8 Standard Principle 12 · APG §5 · APG §3.3 Table 3-2
 performance_domains:
-  - Team
-  - Measurement
-  - Development Approach and Life Cycle
+- Team
+- Measurement
+- Development Approach and Life Cycle
 focus_area: Executing
-primary_artifact: "A21 — Retrospective section"
+primary_artifact: A21 — Retrospective section
 artifacts_updated:
-  - "Tailoring Changelog"
-  - A06
+- Tailoring Changelog
+- A06
 upstream_prerequisites:
-  - SKL-07-02
+- SKL-07-02
 downstream_skills:
-  - "SKL-07-01 (re-tailoring trigger)"
-  - SKL-06-03
+- SKL-07-01 (re-tailoring trigger)
+- SKL-06-03
 file_path: skills/07-adaptive-hybrid/SKL-07-03-facilitate-retrospectives-and-continuous-improvement.md
 tests: 9
+lifecycle_applicability:
+- adaptive
+- hybrid
+lifecycle_notes: Primary focus on agile release cycles, sprint backlogs, and hybrid
+  integration frameworks.
 ---
 
 # SKL-07-03 — Facilitate Retrospectives and Continuous Improvement

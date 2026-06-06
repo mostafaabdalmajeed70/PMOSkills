@@ -1,0 +1,53 @@
+schema_version: 1.0.0
+artifact_id: A33
+artifact_name: Supplier Change, Claim, and Compliance Record
+pmbok8_ref: PMBOK8
+focus_area: Monitoring and Controlling
+performance_domains:
+- Governance
+- Finance
+- Risk
+- Scope
+- Schedule
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: supplier_event_or_issue
+  title: Supplier event or issue
+  type: string
+  required: false
+  description: Brief description of the change, claim, or compliance matter
+- name: type_of_event
+  title: Type of event
+  type: string
+  required: false
+  description: Change order / Claim / Dispute / Compliance finding / Acceptance finding
+- name: impact_summary
+  title: Impact summary
+  type: number
+  required: false
+  description: Effect on cost, schedule, scope, or quality
+- name: compliance_finding
+  title: Compliance finding
+  type: string
+  required: false
+  description: Specific compliance requirement involved (if applicable)
+- name: decision_authority
+  title: Decision authority
+  type: string
+  required: false
+  description: Role authorized to resolve this event per threshold
+- name: resolution
+  title: Resolution
+  type: string
+  required: false
+  description: Decision made, conditions, adjustments
+- name: follow_up_action
+  title: Follow-up action
+  type: date
+  required: false
+  description: Outstanding items, owner, due date
+produced_by_skills: []
+consumed_by_skills: []

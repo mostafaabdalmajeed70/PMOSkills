@@ -1,24 +1,30 @@
 ---
 skill_id: SKL-03-03
 skill_name: Elicit and Analyze Requirements
-pack: "03 — Planning"
-version: "1.0.0"
-status: "Active · Tested"
+pack: 03 — Planning
+version: 1.0.0
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact_output: "A08 — Requirements Documentation"
+primary_artifact_output: A08 — Requirements Documentation
 artifacts_updated:
-  - "A09 — Requirements Traceability Matrix"
-pmbok8_process_anchor: "Guide §2.2.6.2 Collect Requirements · Guide §2.2 Scope Domain"
+- A09 — Requirements Traceability Matrix
+pmbok8_process_anchor: Guide §2.2.6.2 Collect Requirements · Guide §2.2 Scope Domain
 performance_domains:
-  - Scope
+- Scope
 focus_area: Planning
 upstream_prerequisites:
-  - "SKL-03-02 — Scope Management section of A06 must be complete"
+- SKL-03-02 — Scope Management section of A06 must be complete
 downstream_skills:
-  - "SKL-03-04 — Define Scope"
-  - "SKL-03-05 — Develop Scope Structure"
-file_path: "skills/03-planning/SKL-03-03-elicit-analyze-requirements.md"
+- SKL-03-04 — Define Scope
+- SKL-03-05 — Develop Scope Structure
+file_path: skills/03-planning/SKL-03-03-elicit-analyze-requirements.md
 tests: 8
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-03-03 — Elicit and Analyze Requirements

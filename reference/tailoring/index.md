@@ -52,7 +52,7 @@ Project routing is determined by project complexity, budget size, regulatory imp
 Tailoring is not a one-time startup task; it is a continuous, iterative cycle:
 
 1. **Identify Elicitation Factors:** Assess project complexity factors (skills availability, remote team footprint, technology maturity).
-2. **Select Initial Approach:** Choose predictive, agile, or hybrid methods (see [tailoring-approaches.md](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/reference/tailoring/tailoring-approaches.md)).
+2. **Select Initial Approach:** Choose predictive, agile, or hybrid methods (see [tailoring-approaches.md](./tailoring-approaches.md)).
 3. **Tailor Processes & Forms:** Customize the inputs, tools, techniques, and forms to eliminate waste.
 4. **Monitor and Adapt:** Periodically audit performance during execution gates and sprints to adjust the tailoring choices as complexity shifts.
 
@@ -62,14 +62,14 @@ Tailoring is not a one-time startup task; it is a continuous, iterative cycle:
 
 Navigate the specific tailoring considerations for each PMBOK 8 Performance Domain using these dedicated guides:
 
-*   [Governance Tailoring](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/reference/tailoring/tailoring-governance.md) — Customizing the PMO services, CCB structures, and authority levels.
-*   [Scope Tailoring](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/reference/tailoring/tailoring-scope.md) — Customizing WBS structures, requirements gathering, and verification gates.
-*   [Schedule Tailoring](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/reference/tailoring/tailoring-schedule.md) — Adjusting estimating models, network sequencing, and scheduling sprints.
-*   [Finance Tailoring](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/reference/tailoring/tailoring-finance.md) — Customizing funding limits, contingency modeling, and EVA frequencies.
-*   [Stakeholder Tailoring](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/reference/tailoring/tailoring-stakeholders.md) — Adjusting communications, collaboration platforms, and feedback loops.
-*   [Resource Tailoring](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/reference/tailoring/tailoring-resources.md) — Adapting resource assignments, training models, and procurement sourcing.
-*   [Risk Tailoring](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/reference/tailoring/tailoring-risk.md) — Adjusting qualitative vs. quantitative risk models and contingency reserve sizing.
-*   [Approaches Tailoring Guide](file:///home/mohamed/Desktop/Work/PMSkills/github/PMOSkills/reference/tailoring/tailoring-approaches.md) — Decision matrix comparing predictive, agile, and hybrid development frameworks.
+*   [Governance Tailoring](./tailoring-governance.md) — Customizing the PMO services, CCB structures, and authority levels.
+*   [Scope Tailoring](./tailoring-scope.md) — Customizing WBS structures, requirements gathering, and verification gates.
+*   [Schedule Tailoring](./tailoring-schedule.md) — Adjusting estimating models, network sequencing, and scheduling sprints.
+*   [Finance Tailoring](./tailoring-finance.md) — Customizing funding limits, contingency modeling, and EVA frequencies.
+*   [Stakeholder Tailoring](./tailoring-stakeholders.md) — Adjusting communications, collaboration platforms, and feedback loops.
+*   [Resource Tailoring](./tailoring-resources.md) — Adapting resource assignments, training models, and procurement sourcing.
+*   [Risk Tailoring](./tailoring-risk.md) — Adjusting qualitative vs. quantitative risk models and contingency reserve sizing.
+*   [Approaches Tailoring Guide](./tailoring-approaches.md) — Decision matrix comparing predictive, agile, and hybrid development frameworks.
 
 ---
 

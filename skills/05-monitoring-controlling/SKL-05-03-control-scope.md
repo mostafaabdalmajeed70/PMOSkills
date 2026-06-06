@@ -1,29 +1,35 @@
 ---
 skill_id: SKL-05-03
 name: Control Scope
-pack: "05 — Monitoring and Controlling"
+pack: 05 — Monitoring and Controlling
 version: 1.1.0
-status: "Active · Tested"
+status: Active · Tested
 source_type: PMI-derived
 authority: PMI-derived
-pmbok8_anchor: "Process-Groups §7.4 · Figure 7-7 · Figure 7-8"
+pmbok8_anchor: Process-Groups §7.4 · Figure 7-7 · Figure 7-8
 performance_domains:
-  - Scope
-  - Measurement
+- Scope
+- Measurement
 focus_area: Monitoring and Controlling
-primary_artifact: "A17 — Work Performance Information (scope section)"
+primary_artifact: A17 — Work Performance Information (scope section)
 artifacts_updated:
-  - "A08 — Scope Baseline"
-  - "A12 — Change Requests"
-  - "A18 — Issue Log"
-  - "A21 — Lessons Learned Register"
+- A08 — Scope Baseline
+- A12 — Change Requests
+- A18 — Issue Log
+- A21 — Lessons Learned Register
 upstream_prerequisites:
-  - SKL-05-01
+- SKL-05-01
 downstream_skills:
-  - SKL-05-02
+- SKL-05-02
 file_path: skills/05-monitoring-controlling/SKL-05-03-control-scope.md
 tests: 5
-last_updated: "2026-06-03"
+last_updated: '2026-06-03'
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-05-03 — Control Scope

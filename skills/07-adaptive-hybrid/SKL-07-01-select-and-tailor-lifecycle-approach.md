@@ -1,28 +1,34 @@
 ---
 skill_id: SKL-07-01
 name: Select and Tailor Lifecycle Approach
-pack: "07 — Adaptive & Hybrid"
+pack: 07 — Adaptive & Hybrid
 version: 1.1.0
-status: "Active · Tested"
+status: Active · Tested
 source_type: PMI-derived
 authority: PMI-derived
-pmbok8_anchor: "PMBOK8 Standard §4.2–4.3 · Guide §2.3 (Development Approach and Life Cycle Performance Domain)"
+pmbok8_anchor: PMBOK8 Standard §4.2–4.3 · Guide §2.3 (Development Approach and Life
+  Cycle Performance Domain)
 performance_domains:
-  - Development Approach and Life Cycle
-  - Governance
-  - Planning
-focus_area: "Initiating · Planning"
-primary_artifact: "A06 §2 — Development Approach and Lifecycle section"
+- Development Approach and Life Cycle
+- Governance
+- Planning
+focus_area: Initiating · Planning
+primary_artifact: A06 §2 — Development Approach and Lifecycle section
 artifacts_updated:
-  - "Tailoring Decision Log"
+- Tailoring Decision Log
 upstream_prerequisites:
-  - SKL-02-01
+- SKL-02-01
 downstream_skills:
-  - SKL-07-02
-  - SKL-07-04
-  - "SKL-03-01 (A06 input)"
+- SKL-07-02
+- SKL-07-04
+- SKL-03-01 (A06 input)
 file_path: skills/07-adaptive-hybrid/SKL-07-01-select-and-tailor-lifecycle-approach.md
 tests: 9
+lifecycle_applicability:
+- adaptive
+- hybrid
+lifecycle_notes: Primary focus on agile release cycles, sprint backlogs, and hybrid
+  integration frameworks.
 ---
 
 # SKL-07-01 — Select and Tailor Lifecycle Approach

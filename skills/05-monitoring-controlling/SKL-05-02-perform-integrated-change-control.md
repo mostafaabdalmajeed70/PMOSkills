@@ -1,29 +1,35 @@
 ---
 skill_id: SKL-05-02
 name: Perform Integrated Change Control
-pack: "05 — Monitoring and Controlling"
+pack: 05 — Monitoring and Controlling
 version: 1.1.0
-status: "Active · Tested"
+status: Active · Tested
 source_type: PMI-derived
 authority: PMI-derived
-pmbok8_anchor: "Process-Groups §7.2 · Figure 7-3 · Figure 7-4"
+pmbok8_anchor: Process-Groups §7.2 · Figure 7-3 · Figure 7-4
 performance_domains:
-  - Governance
-  - Uncertainty
-  - Planning
+- Governance
+- Uncertainty
+- Planning
 focus_area: Monitoring and Controlling
-primary_artifact: "A12 — Change Log (decisions)"
+primary_artifact: A12 — Change Log (decisions)
 artifacts_updated:
-  - "A08 — Scope Baseline"
-  - "A15 — Schedule Baseline"
-  - "A16 — Cost Baseline"
+- A08 — Scope Baseline
+- A15 — Schedule Baseline
+- A16 — Cost Baseline
 upstream_prerequisites:
-  - SKL-05-01
+- SKL-05-01
 downstream_skills:
-  - SKL-04-01
+- SKL-04-01
 file_path: skills/05-monitoring-controlling/SKL-05-02-perform-integrated-change-control.md
 tests: 5
-last_updated: "2026-06-03"
+last_updated: '2026-06-03'
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-05-02 — Perform Integrated Change Control

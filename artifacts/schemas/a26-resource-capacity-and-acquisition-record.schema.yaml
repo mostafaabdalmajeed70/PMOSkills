@@ -1,0 +1,44 @@
+schema_version: 1.0.0
+artifact_id: A26
+artifact_name: Resource Capacity and Acquisition Record
+pmbok8_ref: PMBOK8
+focus_area: Planning
+performance_domains:
+- Governance
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: required_roles_and_resources
+  title: Required roles and resources
+  type: string
+  required: false
+  description: Staff, equipment, materials, or facilities needed
+- name: timing_and_duration
+  title: Timing and duration
+  type: string
+  required: false
+  description: When each resource is needed and for how long
+- name: acquisition_path
+  title: Acquisition path
+  type: string
+  required: false
+  description: Internal assignment, external hire, procurement, or shared pool
+- name: shared_resource_conflicts
+  title: Shared-resource conflicts
+  type: string
+  required: false
+  description: Cross-project competition for the same resource
+- name: allocation_assumptions
+  title: Allocation assumptions
+  type: string
+  required: false
+  description: Basis for utilization rates and availability estimates
+- name: release_criteria
+  title: Release criteria
+  type: string
+  required: false
+  description: Conditions under which each resource is released
+produced_by_skills: []
+consumed_by_skills: []

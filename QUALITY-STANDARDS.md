@@ -85,7 +85,7 @@ tests: 9                                     # required · count of test cases i
 - `Deprecated` — superseded; do not use for new work
 
 **Canonical `performance_domains` vocabulary (PMBOK 8 Guide):**
-Governance · Scope · Schedule · Finance · Stakeholders · Resources · Risk · Delivery
+Governance · Scope · Schedule · Finance · Stakeholders · Resources · Risk
 
 **Canonical `focus_area` vocabulary:**
 Organizational Setup · Initiating · Planning · Executing · Monitoring and Controlling · Closing · Adaptive and Hybrid · PMO Operations · Portfolio and Program Management

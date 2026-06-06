@@ -1,31 +1,38 @@
 ---
 skill_id: SKL-03-01
-skill_name: "Integrate and Align Project Plans"
-pack: "03 — Planning"
-version: "1.0.0"
-status: "Active · Tested"
+skill_name: Integrate and Align Project Plans
+pack: 03 — Planning
+version: 1.0.0
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact_output: "A06 — Project Management Plan"
+primary_artifact_output: A06 — Project Management Plan
 artifacts_updated:
-  - "A06 — Project Management Plan"
-pmbok8_process_anchor: "Guide §2.3.6.1 Develop Project Management Plan · Guide §2.3 Schedule Domain · Standard §3.2 Focus on Value"
+- A06 — Project Management Plan
+pmbok8_process_anchor: Guide §2.3.6.1 Develop Project Management Plan · Guide §2.3
+  Schedule Domain · Standard §3.2 Focus on Value
 performance_domains:
-  - Governance
-  - Scope
-  - Schedule
-  - Finance
-  - Stakeholders
-  - Resources
-  - Risk
+- Governance
+- Scope
+- Schedule
+- Finance
+- Stakeholders
+- Resources
+- Risk
 focus_area: Planning
 upstream_prerequisites:
-  - "SKL-02-01 — A04 Project Charter must be baselined"
-  - "SKL-02-02 — A07 Stakeholder Register must be baselined"
+- SKL-02-01 — A04 Project Charter must be baselined
+- SKL-02-02 — A07 Stakeholder Register must be baselined
 downstream_skills:
-  - "SKL-03-02 through SKL-03-18 — All planning sub-skills feed into A06"
-  - "SKL-04-01 — Direct and Manage Project Work"
-file_path: "skills/03-planning/SKL-03-01-integrate-align-project-plans.md"
+- SKL-03-02 through SKL-03-18 — All planning sub-skills feed into A06
+- SKL-04-01 — Direct and Manage Project Work
+file_path: skills/03-planning/SKL-03-01-integrate-align-project-plans.md
 tests: 8
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-03-01 — Integrate and Align Project Plans

@@ -1,24 +1,31 @@
 ---
 skill_id: SKL-01-01
 skill_name: Establish PM Governance Framework
-pack: "01 — Organizational Setup"
-version: "1.0.0"
-status: "Active · Tested"
+pack: 01 — Organizational Setup
+version: 1.0.0
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact_output: "A05 — Context Register (Governance section)"
+primary_artifact_output: A05 — Context Register (Governance section)
 artifacts_updated:
-  - "A06 — Project Management Plan (governance reference)"
-pmbok8_process_anchor: "PMBOK8 Standard §3.6 Be an Accountable Leader · Guide §2.1 Governance Domain · Guide §4.5.2 Governance structures"
+- A06 — Project Management Plan (governance reference)
+pmbok8_process_anchor: PMBOK8 Standard §3.6 Be an Accountable Leader · Guide §2.1
+  Governance Domain · Guide §4.5.2 Governance structures
 performance_domains:
-  - Governance
+- Governance
 focus_area: Organizational Setup
 upstream_prerequisites: []
 downstream_skills:
-  - "SKL-01-02 — Define Artifact and Document Control Standards"
-  - "SKL-01-03 — Configure Project Repository and Tool Environment"
-  - "SKL-02-01 — Initiate Project or Phase"
-file_path: "skills/01-organizational-setup/SKL-01-01-establish-pm-governance-framework.md"
+- SKL-01-02 — Define Artifact and Document Control Standards
+- SKL-01-03 — Configure Project Repository and Tool Environment
+- SKL-02-01 — Initiate Project or Phase
+file_path: skills/01-organizational-setup/SKL-01-01-establish-pm-governance-framework.md
 tests: 9
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-01-01 — Establish PM Governance Framework

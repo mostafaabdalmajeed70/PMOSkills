@@ -1,25 +1,31 @@
 ---
 skill_id: SKL-06-02
 name: Conduct Final Performance Review
-pack: "06 — Closing"
+pack: 06 — Closing
 version: 1.1.0
-status: "Active · Tested"
+status: Active · Tested
 source_type: PMI-derived
 authority: PMI-derived
-pmbok8_anchor: "Guide §2.4.2 · §2.3.2 · §2.7.2 (closing performance synthesis)"
+pmbok8_anchor: Guide §2.4.2 · §2.3.2 · §2.7.2 (closing performance synthesis)
 performance_domains:
-  - Measurement
-  - Governance
+- Measurement
+- Governance
 focus_area: Closing
-primary_artifact: "A17 — Final Performance Report"
+primary_artifact: A17 — Final Performance Report
 artifacts_updated:
-  - "A27 — Closure Record (performance summary section)"
+- A27 — Closure Record (performance summary section)
 upstream_prerequisites:
-  - SKL-06-01
+- SKL-06-01
 downstream_skills:
-  - SKL-06-03
+- SKL-06-03
 file_path: skills/06-closing/SKL-06-02-conduct-final-performance-review.md
 tests: 9
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-06-02 — Conduct Final Performance Review

@@ -3,9 +3,9 @@ import { pmoskills, inject } from '../src';
 
 describe('PMOSkills SDK Test Suite', () => {
   describe('Executable Skills', () => {
-    it('should load all 48 executable skills', () => {
+    it('should load all 58 executable skills', () => {
       const skills = pmoskills.getSkills();
-      expect(skills.length).toBe(48);
+      expect(skills.length).toBe(58);
     });
 
     it('should retrieve a specific skill by ID and have correct metadata', () => {
@@ -60,7 +60,7 @@ describe('PMOSkills SDK Test Suite', () => {
   describe('Artifact Templates', () => {
     it('should load all artifact deliverable templates', () => {
       const artifacts = pmoskills.getArtifacts();
-      expect(artifacts.length).toBe(92);
+      expect(artifacts.length).toBe(96);
     });
 
     it('should retrieve A01 template correctly', () => {
@@ -68,6 +68,15 @@ describe('PMOSkills SDK Test Suite', () => {
       expect(a01).toBeDefined();
       expect(a01?.id).toBe('A01');
       expect(a01?.title).toContain('Business Case');
+    });
+
+    it('should retrieve A01 template with its parsed schema', () => {
+      const a01 = pmoskills.getArtifact('A01');
+      expect(a01).toBeDefined();
+      expect(a01?.schema).toBeDefined();
+      expect(a01?.schema.artifact_id).toBe('A01');
+      expect(a01?.schema.fields.length).toBeGreaterThan(0);
+      expect(a01?.schema.fields[0].name).toBe('business_need');
     });
 
     it('should resolve artifact collisions by file name and retrieve both A20 / A27 variants', () => {
@@ -97,9 +106,9 @@ describe('PMOSkills SDK Test Suite', () => {
     });
 
     it('should retrieve a principle by relative path', () => {
-      const p01 = pmoskills.getReferenceFile('reference/principles/P01-stewardship.md');
+      const p01 = pmoskills.getReferenceFile('reference/principles/pmbok8/P8-01-holistic-view.md');
       expect(p01).toBeDefined();
-      expect(p01?.title).toContain('Steward');
+      expect(p01?.title).toContain('Holistic');
     });
   });
 

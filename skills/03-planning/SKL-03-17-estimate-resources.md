@@ -1,25 +1,32 @@
 ---
 skill_id: SKL-03-17
 skill_name: Estimate Resources
-pack: "03 — Planning"
-version: "1.0.0"
-status: "Active · Tested"
+pack: 03 — Planning
+version: 1.0.0
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact_output: "A17 — Resource Estimates"
+primary_artifact_output: A17 — Resource Estimates
 artifacts_updated:
-  - "A06 — Project Management Plan (resource requirements reference)"
-pmbok8_process_anchor: "Guide §2.6.6.2 Estimate Activity Resources · Guide §2.6 Resources Domain"
+- A06 — Project Management Plan (resource requirements reference)
+pmbok8_process_anchor: Guide §2.6.6.2 Estimate Activity Resources · Guide §2.6 Resources
+  Domain
 performance_domains:
-  - Resources
+- Resources
 focus_area: Planning
 upstream_prerequisites:
-  - "SKL-03-16 — Resource Management section of A06 must be baselined"
-  - "SKL-03-05 — A11 WBS must be baselined"
+- SKL-03-16 — Resource Management section of A06 must be baselined
+- SKL-03-05 — A11 WBS must be baselined
 downstream_skills:
-  - "SKL-03-14 — Estimate Costs (uses resource types and rates)"
-  - "SKL-04-03 — Acquire Resources"
-file_path: "skills/03-planning/SKL-03-17-estimate-resources.md"
+- SKL-03-14 — Estimate Costs (uses resource types and rates)
+- SKL-04-03 — Acquire Resources
+file_path: skills/03-planning/SKL-03-17-estimate-resources.md
 tests: 7
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-03-17 — Estimate Resources

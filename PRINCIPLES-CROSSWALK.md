@@ -64,12 +64,12 @@ last_updated: "2026-06-03"
 
 | Principle | Highest-Impact Skills |
 |-----------|----------------------|
-| P1 Holistic View | SKL-00-05 (Quality Checklist) · SKL-03-01 (Integrated Plan) · SKL-05-01 (Performance Report) · SKL-06-01 (Closure Readiness) |
-| P2 Focus on Value | SKL-01-02 (Business Case) · SKL-03-07 (Financial Baseline) · SKL-06-03 (Benefits Transition) · SKL-06-09 (Final Report) |
-| P3 Quality | SKL-04-02 (Quality Assurance) · SKL-05-09 (Quality Control) · SKL-03-04 (Requirements) · SKL-05-03 (Scope Validation) |
-| P4 Accountable Leader | SKL-02-01 (Charter) · SKL-02-04 (Governance Setup) · SKL-00-02 (Authority Routing) · SKL-05-02 (Change Assessment) · SKL-06-10 (Closure Authorization) |
-| P5 Sustainability | SKL-08-03 (Data/Privacy) · SKL-03-07 (Financial Baseline: lifecycle cost) · SKL-06-03 (Benefits Transition: long-term impact) · SKL-03-18 (Integrate Sustainability Into Project Planning) |
-| P6 Empowered Culture | SKL-03-13 (Team Agreement) · SKL-04-07 (Team Leadership) · SKL-04-03 (Knowledge Management) · SKL-06-05 (Lessons Learned) |
+| P1 Holistic View | SKL-03-01 (Integrated Plan) · SKL-05-01 (Performance Report) · SKL-06-01 (Obtain Acceptance) · SKL-08-05 (Portfolio Reporting) |
+| P2 Focus on Value | SKL-02-01 (Project Charter) · SKL-03-13 (Financial Management) · SKL-06-03 (Lessons Learned) · SKL-08-03 (PMO Health Check) |
+| P3 Quality | SKL-03-19 (Plan Quality) · SKL-04-02 (Manage Quality Assurance) · SKL-05-09 (Quality Control) · SKL-03-03 (Elicit/Analyze Requirements) |
+| P4 Accountable Leader | SKL-01-01 (Governance Framework) · SKL-02-01 (Project Charter) · SKL-05-02 (Assess/Implement Changes) · SKL-08-04 (Escalation Protocols) |
+| P5 Sustainability | SKL-03-18 (Integrate Sustainability) · SKL-06-03 (Lessons Learned: long-term impact) · SKL-08-03 (PMO Health Check) |
+| P6 Empowered Culture | SKL-03-16 (Resource Management) · SKL-04-04 (Develop Team) · SKL-04-02 (Manage Knowledge) · SKL-06-03 (Lessons Learned) |
 
 ---
 

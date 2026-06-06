@@ -1,0 +1,44 @@
+schema_version: 1.0.0
+artifact_id: A36
+artifact_name: PMO Value Maturity and Improvement Record
+pmbok8_ref: PMBOK8
+focus_area: Planning
+performance_domains:
+- Governance
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: service_performance_themes
+  title: Service performance themes
+  type: string
+  required: false
+  description: Patterns observed across PMO service delivery
+- name: stakeholder_feedback_themes
+  title: Stakeholder feedback themes
+  type: string
+  required: false
+  description: Summarized feedback from project managers, sponsors, teams
+- name: maturity_observations
+  title: Maturity observations
+  type: string
+  required: false
+  description: Current maturity level and gap analysis
+- name: improvement_actions
+  title: Improvement actions
+  type: date
+  required: false
+  description: Specific items with owner and target date
+- name: owner
+  title: Owner
+  type: string
+  required: false
+  description: Role responsible for each action
+- name: target_date
+  title: Target date
+  type: date
+  required: false
+  description: Expected completion date for each action
+produced_by_skills: []
+consumed_by_skills: []

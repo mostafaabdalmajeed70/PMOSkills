@@ -241,6 +241,17 @@ function main() {
 
   // 3. Compile Artifacts
   const artifactsDir = path.resolve(rootDir, 'artifacts');
+  const schemasPath = path.resolve(rootDir, 'artifacts/schemas/schemas.json');
+  let schemas: Record<string, any> = {};
+  if (fs.existsSync(schemasPath)) {
+    try {
+      schemas = JSON.parse(fs.readFileSync(schemasPath, 'utf-8'));
+      console.log(`Loaded ${Object.keys(schemas).length} pre-compiled artifact schemas.`);
+    } catch (e) {
+      console.warn('Warning: Could not parse schemas.json:', e);
+    }
+  }
+
   if (fs.existsSync(artifactsDir)) {
     const artifactFiles = getFilesRecursively(artifactsDir, '.md');
     console.log(`Found ${artifactFiles.length} artifact files to parse...`);
@@ -261,6 +272,7 @@ function main() {
         version: metadata.version || '1.0.0',
         status: metadata.status || 'Active',
         rawContent: raw,
+        schema: schemas[id] || null,
         ...metadata
       };
     }

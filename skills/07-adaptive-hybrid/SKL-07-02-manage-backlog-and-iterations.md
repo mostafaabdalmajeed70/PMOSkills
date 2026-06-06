@@ -1,30 +1,35 @@
 ---
 skill_id: SKL-07-02
 name: Manage Backlog and Iterations
-pack: "07 — Adaptive & Hybrid"
+pack: 07 — Adaptive & Hybrid
 version: 1.1.0
-status: "Active · Tested"
+status: Active · Tested
 source_type: PMI-derived
 authority: PMI-derived
-pmbok8_anchor: "APG §5 · PMBOK8 Guide §2.3 (Development Approach and Life Cycle)"
+pmbok8_anchor: APG §5 · PMBOK8 Guide §2.3 (Development Approach and Life Cycle)
 performance_domains:
-  - Development Approach and Life Cycle
-  - Planning
-  - Delivery
-  - Measurement
-focus_area: "Planning · Executing"
-primary_artifact: "A08 — Backlog section"
+- Development Approach and Life Cycle
+- Planning
+- Delivery
+- Measurement
+focus_area: Planning · Executing
+primary_artifact: A08 — Backlog section
 artifacts_updated:
-  - "A15 — velocity / release forecast"
-  - "A07 — sprint review feedback"
+- A15 — velocity / release forecast
+- A07 — sprint review feedback
 upstream_prerequisites:
-  - SKL-07-01
+- SKL-07-01
 downstream_skills:
-  - SKL-07-03
-  - SKL-04-06
-  - SKL-05-03
+- SKL-07-03
+- SKL-04-06
+- SKL-05-03
 file_path: skills/07-adaptive-hybrid/SKL-07-02-manage-backlog-and-iterations.md
 tests: 9
+lifecycle_applicability:
+- adaptive
+- hybrid
+lifecycle_notes: Primary focus on agile release cycles, sprint backlogs, and hybrid
+  integration frameworks.
 ---
 
 # SKL-07-02 — Manage Backlog and Iterations

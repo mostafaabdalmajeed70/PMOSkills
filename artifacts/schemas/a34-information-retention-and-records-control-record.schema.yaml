@@ -1,0 +1,44 @@
+schema_version: 1.0.0
+artifact_id: A34
+artifact_name: Information Retention and Records Control Record
+pmbok8_ref: PMBOK8
+focus_area: Planning
+performance_domains:
+- Governance
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: record_category
+  title: Record category
+  type: string
+  required: false
+  description: Type of record (e.g., contracts, baselines, risk records, communications)
+- name: retention_rule
+  title: Retention rule
+  type: string
+  required: false
+  description: Minimum retention period and regulatory basis if applicable
+- name: storage_location
+  title: Storage location
+  type: string
+  required: false
+  description: System, repository, or physical location
+- name: access_level
+  title: Access level
+  type: string
+  required: false
+  description: 'Who may access: public, team, restricted, confidential'
+- name: archival_owner
+  title: Archival owner
+  type: string
+  required: false
+  description: Role responsible for long-term custody
+- name: disposal_trigger
+  title: Disposal trigger
+  type: date
+  required: false
+  description: Event or date that initiates disposal or review
+produced_by_skills: []
+consumed_by_skills: []

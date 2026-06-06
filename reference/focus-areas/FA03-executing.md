@@ -68,16 +68,12 @@ Executing is the focus area in which the work defined in the approved Integrated
 | SKL-04-09 | Conduct Procurements |
 
 ## Relationship to Performance Domains
-Executing is the focus area in which the most performance domains are simultaneously active and producing value:
+Executing is the focus area in which several key performance domains are active during task performance:
 
-- **PD05 — Project Work:** The primary domain; all work authorization, coordination, and delivery activity occurs here; the project management information system is in active use
-- **PD06 — Delivery:** Deliverables are produced and undergo quality checks; scope is progressively realized
-- **PD01 — Stakeholders:** Stakeholder engagement is actively managed; communications are executed; satisfaction is monitored and adjusted
-- **PD02 — Team:** Team development, performance management, and conflict resolution are the core people activities of this focus area
-- **PD03 — Development Approach:** The chosen delivery approach (predictive sprints, iterations, or hybrid) governs how work is sequenced and delivered
-- **PD08 — Uncertainty:** Risk responses are implemented; emerging risks are identified and escalated to FA04 for control action
-- **PD04 — Planning:** Re-planning and rolling wave planning occur as progressive elaboration reveals new information; plan updates are submitted as change requests
-- **PD07 — Measurement:** Performance data is collected and reported; actual vs. baseline metrics are generated for FA04 consumption
+- **PD8-01 — Governance:** Directs and manages project execution, manages quality assurance audits, and coordinates lessons learned and project knowledge.
+- **PD8-05 — Stakeholders:** Actively engages stakeholders, handles communication delivery, and resolves emergent stakeholder concerns.
+- **PD8-06 — Resources:** Acquires necessary human and physical resources and leads/coaches the project team.
+- **PD8-07 — Risk:** Implements agreed-upon risk responses to mitigate threats or capture opportunities.
 
 ## Exit Criteria / Quality Gate
 - All planned deliverables have been produced and are available for formal acceptance review

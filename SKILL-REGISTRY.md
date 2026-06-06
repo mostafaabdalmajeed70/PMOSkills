@@ -49,12 +49,13 @@ Each skill entry contains the following fields:
 |------|------|-------------|----------------|-------|--------|
 | **01** | **Organizational Setup** | **3** | 0 | **3** | ✅ Complete |
 | **02** | **Initiating** | **2** | 0 | **2** | ✅ Complete |
-| **03** | **Planning** | **18** | 0 | **18** | ✅ Complete |
+| **03** | **Planning** | **22** | 0 | **22** | ✅ Complete |
 | **04** | **Executing** | **9** | 0 | **9** | ✅ Complete |
-| **05** | **Monitoring & Controlling** | **9** | 0 | **9** | ✅ Complete |
+| **05** | **Monitoring & Controlling** | **10** | 0 | **10** | ✅ Complete |
 | **06** | **Closing** | **3** | 0 | **3** | ✅ Complete |
 | **07** | **Adaptive & Hybrid** | **4** | 0 | **4** | ✅ Complete |
-| — | **TOTAL** | **48 built** | **0 planned** | **48** | ✅ **All built** |
+| **08** | **PMO Governance** | **5** | 0 | **5** | ✅ Complete |
+| — | **TOTAL** | **58 built** | **0 planned** | **58** | ✅ **All built** |
 
 ---
 
@@ -540,6 +541,86 @@ Each skill entry contains the following fields:
 
 ---
 
+### SKL-03-06b — Develop and Baseline Schedule (Detailed)
+
+| Field | Value |
+|-------|-------|
+| **Skill ID** | SKL-03-06b |
+| **Skill Name** | Develop and Baseline Schedule (Detailed) |
+| **Pack** | 03 — Planning |
+| **Status** | Active · Tested |
+| **Source Type** | PMI-derived |
+| **Primary Artifact (Output)** | A15 — Schedule Model and Baseline Record |
+| **Artifacts Updated** | A14 (Integrated PM Plan) |
+| **PMBOK8 Process Anchor** | Guide §2.3.2.2 Develop Schedule · Guide §2.3 Schedule Domain |
+| **Performance Domains** | Schedule |
+| **Focus Area** | Planning |
+| **Upstream Prerequisites** | SKL-03-06 · SKL-03-05 |
+| **Downstream Skills** | SKL-03-15 · SKL-05-04 |
+| **File Path** | `skills/03-planning/SKL-03-06b-develop-schedule.md` |
+
+---
+
+### SKL-03-19 — Plan Quality Management
+
+| Field | Value |
+|-------|-------|
+| **Skill ID** | SKL-03-19 |
+| **Skill Name** | Plan Quality Management |
+| **Pack** | 03 — Planning |
+| **Status** | Active · Tested |
+| **Source Type** | PMI-derived |
+| **Primary Artifact (Output)** | A06 — Project Management Plan (Quality Management section) |
+| **Artifacts Updated** | A14 (Integrated PM Plan) |
+| **PMBOK8 Process Anchor** | Guide §2.2.2.6 · Guide §2.1.6.5 Manage Quality Assurance · Standard §3.5 Embed Quality |
+| **Performance Domains** | Scope · Governance |
+| **Focus Area** | Planning |
+| **Upstream Prerequisites** | SKL-03-03 · SKL-03-04 |
+| **Downstream Skills** | SKL-04-01 · SKL-05-09 |
+| **File Path** | `skills/03-planning/SKL-03-19-plan-quality-management.md` |
+
+---
+
+### SKL-03-20 — Plan Procurement Management
+
+| Field | Value |
+|-------|-------|
+| **Skill ID** | SKL-03-20 |
+| **Skill Name** | Plan Procurement Management |
+| **Pack** | 03 — Planning |
+| **Status** | Active · Tested |
+| **Source Type** | PMI-derived |
+| **Primary Artifact (Output)** | A06 — Project Management Plan (Procurement Management section) |
+| **Artifacts Updated** | A31 — Procurement and Supplier Management Record |
+| **PMBOK8 Process Anchor** | Guide §2.1.6.3 Plan Sourcing Strategy · Guide §2.1 Governance Domain |
+| **Performance Domains** | Governance |
+| **Focus Area** | Planning |
+| **Upstream Prerequisites** | SKL-03-01 · SKL-03-03 |
+| **Downstream Skills** | SKL-04-09 · SKL-05-08 |
+| **File Path** | `skills/03-planning/SKL-03-20-plan-procurement-management.md` |
+
+---
+
+### SKL-03-21 — Develop Requirements Traceability Matrix
+
+| Field | Value |
+|-------|-------|
+| **Skill ID** | SKL-03-21 |
+| **Skill Name** | Develop Requirements Traceability Matrix |
+| **Pack** | 03 — Planning |
+| **Status** | Active · Tested |
+| **Source Type** | PMI-derived |
+| **Primary Artifact (Output)** | A08 — Scope and Requirements Decision Record (RTM section) |
+| **Artifacts Updated** | A14 (Integrated PM Plan) |
+| **PMBOK8 Process Anchor** | Guide §2.2.2.2 Elicit and Analyze Requirements · Guide §2.2 Scope Domain |
+| **Performance Domains** | Scope |
+| **Focus Area** | Planning |
+| **Upstream Prerequisites** | SKL-03-03 · SKL-03-04 |
+| **Downstream Skills** | SKL-05-03 · SKL-05-09 |
+| **File Path** | `skills/03-planning/SKL-03-21-develop-requirements-traceability-matrix.md` |
+
+---
+
 ## Pack 04 — Executing
 
 > **Pack Purpose:** Skills that execute during the Executing focus area — directing and managing work, acquiring and developing resources, managing stakeholder and team engagement, managing communications, procurements, knowledge, and implementing risk responses.
@@ -906,6 +987,26 @@ Each skill entry contains the following fields:
 
 ---
 
+### SKL-05-13 — Perform Earned Value Analysis
+
+| Field | Value |
+|-------|-------|
+| **Skill ID** | SKL-05-13 |
+| **Skill Name** | Perform Earned Value Analysis |
+| **Pack** | 05 — Monitoring & Controlling |
+| **Status** | Active · Tested |
+| **Source Type** | PMI-derived |
+| **Primary Artifact (Output)** | A17 — Work Performance Information (EVM section) |
+| **Artifacts Updated** | A16 (Financial Record) · A12 (Change Log) |
+| **PMBOK8 Process Anchor** | Guide §2.4.2.4 Monitor and Control Finances · Practice Standard for EVM |
+| **Performance Domains** | Finance · Governance |
+| **Focus Area** | Monitoring and Controlling |
+| **Upstream Prerequisites** | SKL-05-05 |
+| **Downstream Skills** | SKL-05-02 |
+| **File Path** | `skills/05-monitoring-controlling/SKL-05-13-perform-earned-value-analysis.md` |
+
+---
+
 ## Pack 06 — Closing
 
 > **Pack Purpose:** Skills that execute during the Closing focus area — formally closing the project or phase, conducting a final performance review, and capturing and archiving lessons learned and OPA updates.
@@ -1070,6 +1171,116 @@ Each skill entry contains the following fields:
 
 ---
 
+## Pack 08 — PMO Governance
+
+> **Pack Purpose:** Skills that execute at the PMO / Organizational level — running steering committee/governance board sessions, establishing status reporting templates/KPIs, performing PMO capability health audits, enforcing escalation protocols, and compiling portfolio-level status summaries.
+
+> **Pack Prerequisites:** Governance structure defined in A35; core reporting standards defined in A05.
+
+> **Pack Completion Criteria:** PMO service catalog established, portfolio dashboard active, compliance registry populated, escalation protocols active.
+
+---
+
+### SKL-08-01 — Run Governance Board Packet
+
+| Field | Value |
+|-------|-------|
+| **Skill ID** | SKL-08-01 |
+| **Skill Name** | Run Governance Board Packet |
+| **Pack** | 08 — PMO Governance |
+| **Status** | Active · Tested |
+| **Source Type** | PMI-derived |
+| **Primary Artifact (Output)** | A35 - Governance and Decision Authority Record (Board section) |
+| **Artifacts Updated** | A17 — Work Performance Information |
+| **PMBOK8 Process Anchor** | Guide §2.1 Governance Domain · PMO-Guide — §Building/Running PMO |
+| **Performance Domains** | Governance |
+| **Focus Area** | Executing |
+| **Upstream Prerequisites** | SKL-01-01 |
+| **Downstream Skills** | SKL-08-05 |
+| **File Path** | `skills/08-pmo-governance/SKL-08-01-run-governance-board-packet.md` |
+
+---
+
+### SKL-08-02 — Standardize Status Reporting
+
+| Field | Value |
+|-------|-------|
+| **Skill ID** | SKL-08-02 |
+| **Skill Name** | Standardize Status Reporting |
+| **Pack** | 08 — PMO Governance |
+| **Status** | Active · Tested |
+| **Source Type** | PMI-derived |
+| **Primary Artifact (Output)** | A05 — Context Register (Status Reporting Standards section) |
+| **Artifacts Updated** | A17 — Work Performance Information (reporting template) |
+| **PMBOK8 Process Anchor** | Guide §2.1 Governance Domain · PMO-Guide — §Methodology & Standards |
+| **Performance Domains** | Governance |
+| **Focus Area** | Executing |
+| **Upstream Prerequisites** | SKL-01-01 |
+| **Downstream Skills** | SKL-08-05 |
+| **File Path** | `skills/08-pmo-governance/SKL-08-02-standardize-status-reporting.md` |
+
+---
+
+### SKL-08-03 — Perform PMO Health Check
+
+| Field | Value |
+|-------|-------|
+| **Skill ID** | SKL-08-03 |
+| **Skill Name** | Perform PMO Health Check |
+| **Pack** | 08 — PMO Governance |
+| **Status** | Active · Tested |
+| **Source Type** | PMI-derived |
+| **Primary Artifact (Output)** | A05 — Context Register (PMO Maturity section) |
+| **Artifacts Updated** | A21 — Lessons Learned Register |
+| **PMBOK8 Process Anchor** | Guide §2.1 Governance Domain · PMO-Guide — §PMO Value & Maturity Assessment |
+| **Performance Domains** | Governance |
+| **Focus Area** | Closing |
+| **Upstream Prerequisites** | SKL-08-02 |
+| **Downstream Skills** | SKL-08-05 |
+| **File Path** | `skills/08-pmo-governance/SKL-08-03-perform-pmo-health-check.md` |
+
+---
+
+### SKL-08-04 — Manage Escalation Protocols
+
+| Field | Value |
+|-------|-------|
+| **Skill ID** | SKL-08-04 |
+| **Skill Name** | Manage Escalation Protocols |
+| **Pack** | 08 — PMO Governance |
+| **Status** | Active · Tested |
+| **Source Type** | PMI-derived |
+| **Primary Artifact (Output)** | A35 — Governance and Decision Authority Record (Escalation section) |
+| **Artifacts Updated** | A18 — Issue, Impediment, and Action Log |
+| **PMBOK8 Process Anchor** | Guide §2.1 Governance Domain · AUTHORITY-ROUTING.md |
+| **Performance Domains** | Governance |
+| **Focus Area** | Executing |
+| **Upstream Prerequisites** | SKL-01-01 |
+| **Downstream Skills** | SKL-08-01 |
+| **File Path** | `skills/08-pmo-governance/SKL-08-04-manage-escalation-protocols.md` |
+
+---
+
+### SKL-08-05 — Manage PMO Portfolio Reporting
+
+| Field | Value |
+|-------|-------|
+| **Skill ID** | SKL-08-05 |
+| **Skill Name** | Manage PMO Portfolio Reporting |
+| **Pack** | 08 — PMO Governance |
+| **Status** | Active · Tested |
+| **Source Type** | PMI-derived |
+| **Primary Artifact (Output)** | A05 — Context Register (Portfolio Report section) |
+| **Artifacts Updated** | A17 — Work Performance Information (Portfolio view) |
+| **PMBOK8 Process Anchor** | Guide §2.1 Governance Domain · PMO-Guide — §Portfolio Reporting |
+| **Performance Domains** | Governance |
+| **Focus Area** | Monitoring and Controlling |
+| **Upstream Prerequisites** | SKL-08-02 |
+| **Downstream Skills** | SKL-08-03 |
+| **File Path** | `skills/08-pmo-governance/SKL-08-05-manage-pmo-portfolio-reporting.md` |
+
+---
+
 ## Dependency Chain Diagram
 
 ```
@@ -1151,58 +1362,68 @@ SKL-02-01 ──▶ SKL-07-01 (Select Lifecycle Approach)
 
 | Pack | Skill ID | Skill Name | Status |
 |------|----------|-----------|--------|
-| 01 | SKL-01-01 | Establish PM Governance Framework | ✅ Draft · Untested |
-| 01 | SKL-01-02 | Define Artifact and Document Control Standards | ✅ Draft · Untested |
-| 01 | SKL-01-03 | Configure Project Repository and Tool Environment | ✅ Draft · Untested |
-| 02 | SKL-02-01 | Initiate Project or Phase | ✅ Draft · Untested |
-| 02 | SKL-02-02 | Identify Stakeholders | ✅ Draft · Untested |
-| 03 | SKL-03-01 | Integrate and Align Project Plans | ✅ Draft · Untested |
-| 03 | SKL-03-02 | Plan Scope Management | ✅ Draft · Untested |
-| 03 | SKL-03-03 | Elicit and Analyze Requirements | ✅ Draft · Untested |
-| 03 | SKL-03-04 | Define Scope | ✅ Draft · Untested |
-| 03 | SKL-03-05 | Develop Scope Structure | ✅ Draft · Untested |
-| 03 | SKL-03-06 | Plan Schedule Management | ✅ Draft · Untested |
-| 03 | SKL-03-07 | Plan Stakeholder Engagement | ✅ Draft · Untested |
-| 03 | SKL-03-08 | Plan Communications Management | ✅ Draft · Untested |
-| 03 | SKL-03-09 | Plan Risk Management | ✅ Draft · Untested |
-| 03 | SKL-03-10 | Identify Risks | ✅ Draft · Untested |
-| 03 | SKL-03-11 | Perform Risk Analysis | ✅ Draft · Untested |
-| 03 | SKL-03-12 | Plan Risk Responses | ✅ Draft · Untested |
-| 03 | SKL-03-13 | Plan Financial Management | ✅ Draft · Untested |
-| 03 | SKL-03-14 | Estimate Costs | ✅ Draft · Untested |
-| 03 | SKL-03-15 | Develop Budget | ✅ Draft · Untested |
-| 03 | SKL-03-16 | Plan Resource Management | ✅ Draft · Untested |
-| 03 | SKL-03-17 | Estimate Resources | ✅ Draft · Untested |
-| 03 | SKL-03-18 | Integrate Sustainability Into Project Planning | ✅ Draft · Untested |
-| 04 | SKL-04-01 | Direct and Manage Project Work | ✅ Draft · Untested |
-| 04 | SKL-04-02 | Manage Project Knowledge | ✅ Draft · Untested |
-| 04 | SKL-04-03 | Acquire Resources | ✅ Draft · Untested |
-| 04 | SKL-04-04 | Develop Team | ✅ Draft · Untested |
-| 04 | SKL-04-05 | Manage Team | ✅ Draft · Untested |
-| 04 | SKL-04-06 | Manage Stakeholder Engagement | ✅ Draft · Untested |
-| 04 | SKL-04-07 | Manage Communications | ✅ Draft · Untested |
-| 04 | SKL-04-08 | Implement Risk Responses | ✅ Draft · Untested |
-| 04 | SKL-04-09 | Conduct Procurements | ✅ Draft · Untested |
-| 05 | SKL-05-01 | Monitor and Control Project Work | ✅ Draft · Untested |
-| 05 | SKL-05-02 | Perform Integrated Change Control | ✅ Draft · Untested |
-| 05 | SKL-05-03 | Control Scope | ✅ Draft · Untested |
-| 05 | SKL-05-04 | Control Schedule | ✅ Draft · Untested |
-| 05 | SKL-05-05 | Control Costs | ✅ Draft · Untested |
-| 05 | SKL-05-06 | Monitor Risks | ✅ Draft · Untested |
-| 05 | SKL-05-07 | Monitor Stakeholder Engagement | ✅ Draft · Untested |
-| 05 | SKL-05-08 | Control Resources | ✅ Draft · Untested |
-| 05 | SKL-05-09 | Monitor Communications | ✅ Draft · Untested |
-| 06 | SKL-06-01 | Close Project or Phase | ✅ Draft · Untested |
-| 06 | SKL-06-02 | Final Performance Review | ✅ Draft · Untested |
-| 06 | SKL-06-03 | Capture and Archive Lessons Learned | ✅ Draft · Untested |
-| 07 | SKL-07-01 | Select and Tailor Lifecycle Approach | ✅ Draft · Untested |
-| 07 | SKL-07-02 | Manage Backlog and Iterations | ✅ Draft · Untested |
-| 07 | SKL-07-03 | Facilitate Retrospectives and Continuous Improvement | ✅ Draft · Untested |
-| 07 | SKL-07-04 | Plan and Deliver Hybrid Projects | ✅ Draft · Untested |
+| 01 | SKL-01-01 | Establish PM Governance Framework | ✅ Active · Tested |
+| 01 | SKL-01-02 | Define Artifact and Document Control Standards | ✅ Active · Tested |
+| 01 | SKL-01-03 | Configure Project Repository and Tool Environment | ✅ Active · Tested |
+| 02 | SKL-02-01 | Initiate Project or Phase | ✅ Active · Tested |
+| 02 | SKL-02-02 | Identify Stakeholders | ✅ Active · Tested |
+| 03 | SKL-03-01 | Integrate and Align Project Plans | ✅ Active · Tested |
+| 03 | SKL-03-02 | Plan Scope Management | ✅ Active · Tested |
+| 03 | SKL-03-03 | Elicit and Analyze Requirements | ✅ Active · Tested |
+| 03 | SKL-03-04 | Define Scope | ✅ Active · Tested |
+| 03 | SKL-03-05 | Develop Scope Structure | ✅ Active · Tested |
+| 03 | SKL-03-06 | Plan Schedule Management | ✅ Active · Tested |
+| 03 | SKL-03-06b | Develop and Baseline Schedule (Detailed) | ✅ Active · Tested |
+| 03 | SKL-03-07 | Plan Stakeholder Engagement | ✅ Active · Tested |
+| 03 | SKL-03-08 | Plan Communications Management | ✅ Active · Tested |
+| 03 | SKL-03-09 | Plan Risk Management | ✅ Active · Tested |
+| 03 | SKL-03-10 | Identify Risks | ✅ Active · Tested |
+| 03 | SKL-03-11 | Perform Risk Analysis | ✅ Active · Tested |
+| 03 | SKL-03-12 | Plan Risk Responses | ✅ Active · Tested |
+| 03 | SKL-03-13 | Plan Financial Management | ✅ Active · Tested |
+| 03 | SKL-03-14 | Estimate Costs | ✅ Active · Tested |
+| 03 | SKL-03-15 | Develop Budget | ✅ Active · Tested |
+| 03 | SKL-03-16 | Plan Resource Management | ✅ Active · Tested |
+| 03 | SKL-03-17 | Estimate Resources | ✅ Active · Tested |
+| 03 | SKL-03-18 | Integrate Sustainability Into Project Planning | ✅ Active · Tested |
+| 03 | SKL-03-19 | Plan Quality Management | ✅ Active · Tested |
+| 03 | SKL-03-20 | Plan Procurement Management | ✅ Active · Tested |
+| 03 | SKL-03-21 | Develop Requirements Traceability Matrix | ✅ Active · Tested |
+| 04 | SKL-04-01 | Direct and Manage Project Work | ✅ Active · Tested |
+| 04 | SKL-04-02 | Manage Project Knowledge | ✅ Active · Tested |
+| 04 | SKL-04-03 | Acquire Resources | ✅ Active · Tested |
+| 04 | SKL-04-04 | Develop Team | ✅ Active · Tested |
+| 04 | SKL-04-05 | Manage Team | ✅ Active · Tested |
+| 04 | SKL-04-06 | Manage Stakeholder Engagement | ✅ Active · Tested |
+| 04 | SKL-04-07 | Manage Communications | ✅ Active · Tested |
+| 04 | SKL-04-08 | Implement Risk Responses | ✅ Active · Tested |
+| 04 | SKL-04-09 | Conduct Procurements | ✅ Active · Tested |
+| 05 | SKL-05-01 | Monitor and Control Project Work | ✅ Active · Tested |
+| 05 | SKL-05-02 | Perform Integrated Change Control | ✅ Active · Tested |
+| 05 | SKL-05-03 | Control Scope | ✅ Active · Tested |
+| 05 | SKL-05-04 | Control Schedule | ✅ Active · Tested |
+| 05 | SKL-05-05 | Control Costs | ✅ Active · Tested |
+| 05 | SKL-05-06 | Monitor Risks | ✅ Active · Tested |
+| 05 | SKL-05-07 | Monitor Stakeholder Engagement | ✅ Active · Tested |
+| 05 | SKL-05-08 | Control Resources | ✅ Active · Tested |
+| 05 | SKL-05-09 | Monitor Communications | ✅ Active · Tested |
+| 05 | SKL-05-13 | Perform Earned Value Analysis | ✅ Active · Tested |
+| 06 | SKL-06-01 | Close Project or Phase | ✅ Active · Tested |
+| 06 | SKL-06-02 | Final Performance Review | ✅ Active · Tested |
+| 06 | SKL-06-03 | Capture and Archive Lessons Learned | ✅ Active · Tested |
+| 07 | SKL-07-01 | Select and Tailor Lifecycle Approach | ✅ Active · Tested |
+| 07 | SKL-07-02 | Manage Backlog and Iterations | ✅ Active · Tested |
+| 07 | SKL-07-03 | Facilitate Retrospectives and Continuous Improvement | ✅ Active · Tested |
+| 07 | SKL-07-04 | Plan and Deliver Hybrid Projects | ✅ Active · Tested |
+| 08 | SKL-08-01 | Run Governance Board Packet | ✅ Active · Tested |
+| 08 | SKL-08-02 | Standardize Status Reporting | ✅ Active · Tested |
+| 08 | SKL-08-03 | Perform PMO Health Check | ✅ Active · Tested |
+| 08 | SKL-08-04 | Manage Escalation Protocols | ✅ Active · Tested |
+| 08 | SKL-08-05 | Manage PMO Portfolio Reporting | ✅ Active · Tested |
 
-**Built:** 48 skills ✅  
+**Built:** 58 skills ✅  
 **Planned:** 0  
-**Total indexed:** 48 skills — All packs complete (Pack 01–07)
+**Total indexed:** 58 skills — All packs complete (Pack 01–08)
 
 ---
 

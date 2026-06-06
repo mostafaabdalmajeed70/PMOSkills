@@ -1,28 +1,36 @@
 ---
 skill_id: SKL-01-03
 skill_name: Configure Project Repository and Tool Environment
-pack: "01 — Organizational Setup"
-version: "1.0.0"
-status: "Active · Tested"
+pack: 01 — Organizational Setup
+version: 1.0.0
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact_output: "A03 — Repository and Tool Configuration Record"
+primary_artifact_output: A03 — Repository and Tool Configuration Record
 artifacts_updated:
-  - "A05 — Context Register (EEF / tool environment section)"
-  - "A06 — Project Management Plan (tool environment reference)"
-pmbok8_process_anchor: "PMBOK8 Standard §3 Principles · Guide §2.1.6.4 Manage Project Knowledge · Guide §2.6 Resource Management"
+- A05 — Context Register (EEF / tool environment section)
+- A06 — Project Management Plan (tool environment reference)
+pmbok8_process_anchor: PMBOK8 Standard §3 Principles · Guide §2.1.6.4 Manage Project
+  Knowledge · Guide §2.6 Resource Management
 performance_domains:
-  - Governance
-  - Resources
-  - Delivery
+- Governance
+- Resources
+- Delivery
 focus_area: Organizational Setup
 upstream_prerequisites:
-  - "SKL-01-01 — A05 Governance section must be baselined"
-  - "SKL-01-02 — A05 Document Control Standards must be baselined"
+- SKL-01-01 — A05 Governance section must be baselined
+- SKL-01-02 — A05 Document Control Standards must be baselined
 downstream_skills:
-  - "SKL-02-01 — Initiate Project or Phase"
-  - "All Pack 02 through Pack 07 skills (repository must be configured before project execution)"
-file_path: "skills/01-organizational-setup/SKL-01-03-configure-project-repository-and-tool-environment.md"
+- SKL-02-01 — Initiate Project or Phase
+- All Pack 02 through Pack 07 skills (repository must be configured before project
+  execution)
+file_path: skills/01-organizational-setup/SKL-01-03-configure-project-repository-and-tool-environment.md
 tests: 9
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-01-03 — Configure Project Repository and Tool Environment

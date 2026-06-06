@@ -1,25 +1,31 @@
 ---
 skill_id: SKL-04-07
 skill_name: Manage Communications
-pack: "04 — Executing"
-version: "1.1.0"
-status: "Active · Tested"
+pack: 04 — Executing
+version: 1.1.0
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact: "A28 — Communications and Reporting Record (delivery log)"
+primary_artifact: A28 — Communications and Reporting Record (delivery log)
 artifacts_updated:
-  - "A17 — Integrated Performance Reporting Record (reports issued)"
-  - "A07 — Stakeholder Register (engagement updates from interactive communications)"
-pmbok8_anchor: "Guide §2.5.2.5 Manage Communications · Figure 2-37"
+- A17 — Integrated Performance Reporting Record (reports issued)
+- A07 — Stakeholder Register (engagement updates from interactive communications)
+pmbok8_anchor: Guide §2.5.2.5 Manage Communications · Figure 2-37
 performance_domains:
-  - Stakeholders
-  - Governance
+- Stakeholders
+- Governance
 focus_area: Executing
 upstream_prerequisites:
-  - "SKL-03-08 — A28 communications plan must be complete"
+- SKL-03-08 — A28 communications plan must be complete
 downstream_skills:
-  - "SKL-05-09 — Monitor Communications"
-file_path: "skills/04-executing/SKL-04-07-manage-communications.md"
+- SKL-05-09 — Monitor Communications
+file_path: skills/04-executing/SKL-04-07-manage-communications.md
 tests: 8
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-04-07 — Manage Communications

@@ -1,27 +1,33 @@
 ---
 skill_id: SKL-04-03
 skill_name: Acquire Resources
-pack: "04 — Executing"
-version: "1.1.0"
-status: "Active · Tested"
+pack: 04 — Executing
+version: 1.1.0
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact: "A25 — Team Operating and Responsibility Record"
+primary_artifact: A25 — Team Operating and Responsibility Record
 artifacts_updated:
-  - "A26 — Resource Capacity and Acquisition Record (acquisition actuals)"
-  - "A18 — Issue, Impediment and Action Log (resource gaps)"
-pmbok8_anchor: "Guide §2.6.2.3 Acquire Resources · Figure 2-43"
+- A26 — Resource Capacity and Acquisition Record (acquisition actuals)
+- A18 — Issue, Impediment and Action Log (resource gaps)
+pmbok8_anchor: Guide §2.6.2.3 Acquire Resources · Figure 2-43
 performance_domains:
-  - Resources
-  - Governance
+- Resources
+- Governance
 focus_area: Executing
 upstream_prerequisites:
-  - "SKL-03-16 — A26 Resource Management Plan must exist"
-  - "SKL-03-17 — A26 Resource Estimates must exist"
+- SKL-03-16 — A26 Resource Management Plan must exist
+- SKL-03-17 — A26 Resource Estimates must exist
 downstream_skills:
-  - "SKL-04-04 — Develop Team"
-  - "SKL-04-05 — Manage Team"
-file_path: "skills/04-executing/SKL-04-03-acquire-resources.md"
+- SKL-04-04 — Develop Team
+- SKL-04-05 — Manage Team
+file_path: skills/04-executing/SKL-04-03-acquire-resources.md
 tests: 8
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-04-03 — Acquire Resources

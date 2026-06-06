@@ -1,0 +1,65 @@
+schema_version: 1.0.0
+artifact_id: A07
+artifact_name: Stakeholder Register and Stakeholder Engagement and Action Map (SEAM)
+pmbok8_ref: PMBOK8 Guide §2.5 · Standard §3 Principles · BAP-2E §4
+focus_area: Initiating
+performance_domains:
+- Stakeholders
+- Governance
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: stakeholder_id
+  title: Stakeholder ID
+  type: string
+  required: false
+  description: 'Format: S-NNN'
+- name: name
+  title: Name
+  type: string
+  required: false
+  description: Full name (or role/group if individual not yet identified)
+- name: organization_role
+  title: Organization / Role
+  type: string
+  required: false
+  description: Organization and project role
+- name: contact
+  title: Contact
+  type: string
+  required: false
+  description: Primary contact method
+- name: category
+  title: Category
+  type: string
+  required: false
+  description: Internal / External / Sponsor / Regulator / Customer / Supplier / Team
+- name: interest
+  title: Interest
+  type: string
+  required: false
+  description: What the stakeholder cares about
+- name: expectations
+  title: Expectations
+  type: string
+  required: false
+  description: What the stakeholder expects to receive
+- name: potential_influence
+  title: Potential Influence
+  type: string
+  required: false
+  description: High / Medium / Low
+- name: risk_to_project
+  title: Risk to Project
+  type: string
+  required: false
+  description: Stakeholder-related risk if not engaged
+- name: date_identified
+  title: Date Identified
+  type: date
+  required: false
+  description: Date added to register
+produced_by_skills: []
+consumed_by_skills: []

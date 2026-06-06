@@ -1,0 +1,71 @@
+schema_version: 1.0.0
+artifact_id: A39
+artifact_name: Change Management Plan
+pmbok8_ref: PMBOK8 Guide §2.5 Stakeholders Performance Domain; §2.7 Delivery Performance
+  Domain; Managing Change in Organizations Practice Guide
+focus_area: Planning
+performance_domains:
+- Stakeholders
+- Governance
+- Delivery
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: change_impact_assessment
+  title: Change impact assessment
+  type: string
+  required: true
+  description: Which groups are affected, how significantly, and what they will need
+    to do differently
+- name: stakeholder_readiness_assessment
+  title: Stakeholder readiness assessment
+  type: string
+  required: true
+  description: Current readiness level by affected group and target readiness required
+- name: change_adoption_strategy
+  title: Change adoption strategy
+  type: string
+  required: true
+  description: Overall approach to moving stakeholders from current to desired state
+- name: resistance_management_approach
+  title: Resistance management approach
+  type: string
+  required: true
+  description: How resistance will be identified, understood, and addressed
+- name: change_champions_model
+  title: Change champions model
+  type: string
+  required: true
+  description: Who will serve as change champions and how they will be engaged
+- name: training_and_capability_building_plan
+  title: Training and capability-building plan
+  type: string
+  required: true
+  description: What training or capability development is required and for whom
+- name: change_communications_approach
+  title: Change communications approach
+  type: string
+  required: true
+  description: How transition-specific communications will be delivered (references
+    A10 for the full communications plan)
+- name: adoption_metrics
+  title: Adoption metrics
+  type: string
+  required: true
+  description: How change adoption will be measured and at what checkpoints
+- name: transition_and_sustainment_plan
+  title: Transition and sustainment plan
+  type: string
+  required: false
+  description: How the organization will sustain the change after project delivery
+- name: sponsor_engagement_model
+  title: Sponsor engagement model
+  type: string
+  required: false
+  description: How the sponsor and senior leaders will visibly lead the change
+produced_by_skills:
+- SKL-03-02
+consumed_by_skills:
+- SKL-03-02

@@ -1,0 +1,74 @@
+schema_version: 1.0.0
+artifact_id: A11
+artifact_name: Procurement Management Plan
+pmbok8_ref: PMBOK8 Guide Appendix X4 Procurement; Table 2-1 Plan Procurement Management
+focus_area: Planning
+performance_domains:
+- Governance
+- Finance
+- Risk
+- Resources
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: make_or_buy_decisions
+  title: Make-or-buy decisions
+  type: string
+  required: true
+  description: Summary of what will be procured vs. performed internally, with rationale
+- name: procurement_items_register
+  title: Procurement items register
+  type: date
+  required: true
+  description: What is being procured, contract type, estimated value, target award
+    date
+- name: contract_types
+  title: Contract types
+  type: number
+  required: true
+  description: Fixed-price, cost-reimbursable, time-and-materials — with rationale
+    for each
+- name: supplier_selection_criteria
+  title: Supplier selection criteria
+  type: string
+  required: true
+  description: How suppliers will be evaluated and selected
+- name: procurement_roles_and_responsibilities
+  title: Procurement roles and responsibilities
+  type: string
+  required: true
+  description: Who has authority to solicit, evaluate, award, administer, and close
+    contracts
+- name: procurement_schedule
+  title: Procurement schedule
+  type: string
+  required: true
+  description: Key milestones — RFP/RFQ issue, bid close, award, contract start, delivery,
+    closure
+- name: contract_administration_approach
+  title: Contract administration approach
+  type: string
+  required: true
+  description: How contracts will be monitored, changed, and closed
+- name: organizational_constraints_and_policies
+  title: Organizational constraints and policies
+  type: array
+  required: true
+  description: Applicable procurement policies, approved supplier lists, spend thresholds
+- name: pre_qualified_suppliers
+  title: Pre-qualified suppliers
+  type: string
+  required: false
+  description: Any pre-approved or preferred suppliers relevant to this project
+- name: risk_considerations
+  title: Risk considerations
+  type: string
+  required: false
+  description: Procurement-specific risks that feed into A19
+produced_by_skills:
+- SKL-03-16
+consumed_by_skills:
+- SKL-03-16
+- SKL-04-09

@@ -1,26 +1,32 @@
 ---
 skill_id: SKL-06-03
 name: Capture and Archive Lessons Learned
-pack: "06 — Closing"
+pack: 06 — Closing
 version: 1.1.0
-status: "Active · Tested"
+status: Active · Tested
 source_type: PMI-derived
 authority: PMI-derived
-pmbok8_anchor: "Guide §2.1.6.4 Manage Project Knowledge (closing activation)"
+pmbok8_anchor: Guide §2.1.6.4 Manage Project Knowledge (closing activation)
 performance_domains:
-  - Governance
-  - Team
+- Governance
+- Team
 focus_area: Closing
-primary_artifact: "A21 — Lessons Learned Register (Final version)"
+primary_artifact: A21 — Lessons Learned Register (Final version)
 artifacts_updated:
-  - "A05 — OPA"
+- A05 — OPA
 upstream_prerequisites:
-  - SKL-06-01
-  - SKL-06-02
-  - "SKL-07-03 (retrospective inputs, if applicable)"
+- SKL-06-01
+- SKL-06-02
+- SKL-07-03 (retrospective inputs, if applicable)
 downstream_skills: []
 file_path: skills/06-closing/SKL-06-03-capture-and-archive-lessons-learned.md
 tests: 9
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-06-03 — Capture and Archive Lessons Learned

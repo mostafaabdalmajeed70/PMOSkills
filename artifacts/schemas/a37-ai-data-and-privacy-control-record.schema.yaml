@@ -1,0 +1,46 @@
+schema_version: 1.0.0
+artifact_id: A37
+artifact_name: AI Data and Privacy Control Record
+pmbok8_ref: PMBOK8
+focus_area: Planning
+performance_domains:
+- Governance
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: use_case_or_exposure_area
+  title: Use case or exposure area
+  type: string
+  required: false
+  description: Specific AI, data, or digital scenario creating risk
+- name: data_classification
+  title: Data classification
+  type: string
+  required: false
+  description: Sensitivity level of data involved (public, internal, confidential,
+    regulated)
+- name: privacy_and_security_controls
+  title: Privacy and security controls
+  type: string
+  required: false
+  description: Technical and procedural controls applied
+- name: ai_specific_controls
+  title: AI-specific controls
+  type: string
+  required: false
+  description: Bias checks, explainability requirements, human-in-the-loop rules,
+    model monitoring
+- name: supplier_obligations
+  title: Supplier obligations
+  type: string
+  required: false
+  description: Contractual or attestation requirements placed on suppliers
+- name: exception_or_escalation_path
+  title: Exception or escalation path
+  type: string
+  required: false
+  description: Approved exception conditions and escalation route
+produced_by_skills: []
+consumed_by_skills: []

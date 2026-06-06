@@ -1,26 +1,34 @@
 ---
 skill_id: SKL-01-02
 skill_name: Define Artifact and Document Control Standards
-pack: "01 — Organizational Setup"
-version: "1.0.0"
-status: "Active · Tested"
+pack: 01 — Organizational Setup
+version: 1.0.0
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact_output: "A05 — Context Register (OPA / Document Control Standards section)"
+primary_artifact_output: A05 — Context Register (OPA / Document Control Standards
+  section)
 artifacts_updated:
-  - "A06 — Project Management Plan (document control reference)"
-pmbok8_process_anchor: "PMBOK8 Standard §3 Principles · Guide §2.1.6.4 Manage Project Knowledge · Artifacts-V-1.1"
+- A06 — Project Management Plan (document control reference)
+pmbok8_process_anchor: PMBOK8 Standard §3 Principles · Guide §2.1.6.4 Manage Project
+  Knowledge · Artifacts-V-1.1
 performance_domains:
-  - Governance
-  - Delivery
+- Governance
+- Delivery
 focus_area: Organizational Setup
 upstream_prerequisites:
-  - "SKL-01-01 — A05 Governance section must be baselined"
+- SKL-01-01 — A05 Governance section must be baselined
 downstream_skills:
-  - "SKL-01-03 — Configure Project Repository and Tool Environment"
-  - "SKL-02-01 — Initiate Project or Phase"
-  - "All artifact-producing skills (Pack 02 through Pack 07)"
-file_path: "skills/01-organizational-setup/SKL-01-02-define-artifact-and-document-control-standards.md"
+- SKL-01-03 — Configure Project Repository and Tool Environment
+- SKL-02-01 — Initiate Project or Phase
+- All artifact-producing skills (Pack 02 through Pack 07)
+file_path: skills/01-organizational-setup/SKL-01-02-define-artifact-and-document-control-standards.md
 tests: 9
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-01-02 — Define Artifact and Document Control Standards

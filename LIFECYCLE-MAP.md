@@ -32,7 +32,7 @@ PRE-SIGN ──► INITIATING ──► PLANNING ──► EXECUTING ──► M
                                A22–A29
 ```
 
-PMO and AI/Procurement skills (Packs 07–08) operate **cross-lifecycle** and are activated as needed.
+PMO Governance skills (Pack 08) and Adaptive/Hybrid skills (Pack 07) operate **cross-lifecycle** or are activated as needed.
 
 ---
 
@@ -303,33 +303,30 @@ PMO and AI/Procurement skills (Packs 07–08) operate **cross-lifecycle** and ar
 
 ---
 
-## Cross-Lifecycle: PMO Skills (Pack 07)
+## Cross-Lifecycle: Adaptive & Hybrid Skills (Pack 07)
 
-PMO skills are not bound to a single phase. They support all phases:
+Adaptive & Hybrid skills are selected based on the delivery approach and are applied throughout the lifecycle:
 
-| PMO Skill | Primary Phase(s) |
-|-----------|-----------------|
-| PMO Configuration | Pre-sign / Initiating |
-| PMO Service Catalog | Pre-sign ongoing |
-| PMO Service Engagement | Pre-sign / Initiating |
-| PMO Value and Maturity Assessment | Closing / Ongoing |
-| PMO Improvement Backlog | Executing / Closing / Ongoing |
-| PMO Template Governance | Ongoing |
-| PMO Portfolio Reporting | Monitoring and Controlling / Ongoing |
+| Skill ID | Skill Name | Primary Phase(s) |
+|----------|------------|------------------|
+| SKL-07-01 | Select and Tailor Lifecycle Approach | Initiating / Planning |
+| SKL-07-02 | Manage Backlog and Iterations | Planning / Executing |
+| SKL-07-03 | Facilitate Retrospectives and Continuous Improvement | Executing / Monitoring |
+| SKL-07-04 | Plan and Deliver Hybrid Projects | Planning through Closing |
 
 ---
 
-## Cross-Lifecycle: AI and Procurement Skills (Pack 08)
+## Cross-Lifecycle: PMO Governance Skills (Pack 08)
 
-| Skill | Primary Phase(s) |
-|-------|-----------------|
-| AI Use Case Assessment | Planning / Before Executing |
-| AI Decision Support and Oversight | Executing / Monitoring |
-| Data and Privacy Control | Planning through Closing |
-| Make-or-Buy Analysis | Planning |
-| Procurement Bid and Source Selection | Planning / Executing |
-| Contract Administration | Executing / Monitoring |
-| Claims and Dispute Management | Monitoring / Closing |
+PMO Governance skills are organizational/portfolio-level skills that support governance throughout the project life cycle:
+
+| Skill ID | Skill Name | Primary Phase(s) |
+|----------|------------|------------------|
+| SKL-08-01 | Run Governance Board Packet | Initiating / Executing / Monitoring |
+| SKL-08-02 | Standardize Status Reporting | Planning / Executing / Monitoring |
+| SKL-08-03 | Perform PMO Health Check | Executing / Closing / Ongoing |
+| SKL-08-04 | Manage Escalation Protocols | Initiating through Monitoring |
+| SKL-08-05 | Manage PMO Portfolio Reporting | Executing / Monitoring / Ongoing |
 
 ---
 

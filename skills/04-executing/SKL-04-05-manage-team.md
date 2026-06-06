@@ -1,27 +1,34 @@
 ---
 skill_id: SKL-04-05
 skill_name: Manage Team
-pack: "04 — Executing"
-version: "1.1.0"
-status: "Active · Tested"
+pack: 04 — Executing
+version: 1.1.0
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact: "A25 — Team Operating and Responsibility Record (performance and conflict log)"
+primary_artifact: A25 — Team Operating and Responsibility Record (performance and
+  conflict log)
 artifacts_updated:
-  - "A18 — Issue, Impediment and Action Log (team issues)"
-  - "A21 — Lessons Learned Record"
-  - "A26 — Resource Capacity and Acquisition Record (team composition changes)"
-pmbok8_anchor: "Guide §2.6.2.5 Manage Team · Figure 2-45"
+- A18 — Issue, Impediment and Action Log (team issues)
+- A21 — Lessons Learned Record
+- A26 — Resource Capacity and Acquisition Record (team composition changes)
+pmbok8_anchor: Guide §2.6.2.5 Manage Team · Figure 2-45
 performance_domains:
-  - Resources
-  - Team
-  - Leadership
+- Resources
+- Team
+- Leadership
 focus_area: Executing
 upstream_prerequisites:
-  - "SKL-04-04 — team development must be underway"
+- SKL-04-04 — team development must be underway
 downstream_skills:
-  - "SKL-05-08 — Control Resources"
-file_path: "skills/04-executing/SKL-04-05-manage-team.md"
+- SKL-05-08 — Control Resources
+file_path: skills/04-executing/SKL-04-05-manage-team.md
 tests: 8
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-04-05 — Manage Team

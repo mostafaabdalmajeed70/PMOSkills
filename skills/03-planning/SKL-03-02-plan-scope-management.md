@@ -1,25 +1,31 @@
 ---
 skill_id: SKL-03-02
 skill_name: Plan Scope Management
-pack: "03 — Planning"
-version: "1.0.0"
-status: "Active · Tested"
+pack: 03 — Planning
+version: 1.0.0
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact_output: "A06 — Project Management Plan (Scope Management section)"
+primary_artifact_output: A06 — Project Management Plan (Scope Management section)
 artifacts_updated:
-  - "A06 — Project Management Plan (Scope Management Plan section)"
-pmbok8_process_anchor: "Guide §2.2.6.1 Plan Scope Management · Guide §2.2 Scope Domain"
+- A06 — Project Management Plan (Scope Management Plan section)
+pmbok8_process_anchor: Guide §2.2.6.1 Plan Scope Management · Guide §2.2 Scope Domain
 performance_domains:
-  - Scope
+- Scope
 focus_area: Planning
 upstream_prerequisites:
-  - "SKL-02-01 — A04 Project Charter must be baselined"
+- SKL-02-01 — A04 Project Charter must be baselined
 downstream_skills:
-  - "SKL-03-03 — Elicit and Analyze Requirements"
-  - "SKL-03-04 — Define Scope"
-  - "SKL-03-05 — Develop Scope Structure"
-file_path: "skills/03-planning/SKL-03-02-plan-scope-management.md"
+- SKL-03-03 — Elicit and Analyze Requirements
+- SKL-03-04 — Define Scope
+- SKL-03-05 — Develop Scope Structure
+file_path: skills/03-planning/SKL-03-02-plan-scope-management.md
 tests: 7
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-03-02 — Plan Scope Management

@@ -54,11 +54,10 @@ Initiating is the focus area in which the project or phase is formally defined a
 ## Relationship to Performance Domains
 Initiating activates a focused subset of performance domains at their earliest and most foundational level:
 
-- **PD01 — Stakeholders:** Initial stakeholder identification and engagement assessment occurs here; the Stakeholder Register is first populated and engagement strategies are noted but not yet fully planned
-- **PD04 — Planning:** High-level scope, objectives, and assumptions are established; detailed planning has not yet begun but the foundation is set
-- **PD08 — Uncertainty:** Initial risk awareness is established; the project context is assessed for major uncertainty drivers, constraints, and assumptions that will feed into formal risk planning in FA02
+- **PD8-01 — Governance:** The project or phase is formally authorized (Initiate Project or Phase process), establishing the business case and governance boundaries.
+- **PD8-05 — Stakeholders:** Initial stakeholder identification and analysis (Identify Stakeholders process) occurs, populating the initial Stakeholder Register.
 
-All other performance domains (PD02 Team, PD03 Development Approach, PD05 Project Work, PD06 Delivery, PD07 Measurement) are not yet formally active but may have early organizational inputs that inform the charter.
+All other performance domains (Scope, Schedule, Finance, Resources, Risk) are not yet formally active but may have early organizational inputs that inform the charter.
 
 ## Exit Criteria / Quality Gate
 - Project Charter is signed by the authorizing sponsor

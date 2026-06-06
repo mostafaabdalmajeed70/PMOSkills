@@ -1,0 +1,70 @@
+schema_version: 1.0.0
+artifact_id: A30
+artifact_name: Knowledge and Lessons Management Record
+pmbok8_ref: PMBOK8
+focus_area: Planning
+performance_domains:
+- Governance
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: lesson_id
+  title: Lesson ID
+  type: string
+  required: false
+  description: Unique identifier
+- name: capture_date
+  title: Capture date
+  type: date
+  required: false
+  description: Date the lesson was recorded
+- name: source_event
+  title: Source event
+  type: string
+  required: false
+  description: The situation, decision, or observation that generated the lesson
+- name: category
+  title: Category
+  type: string
+  required: false
+  description: Risk, schedule, stakeholder, technical, procurement, resources, governance,
+    or other
+- name: description
+  title: Description
+  type: string
+  required: false
+  description: What happened and what was learned
+- name: impact
+  title: Impact
+  type: string
+  required: false
+  description: Effect on project outcomes or team performance
+- name: recommendation
+  title: Recommendation
+  type: string
+  required: false
+  description: What should be done differently or repeated
+- name: applicability
+  title: Applicability
+  type: string
+  required: false
+  description: Project types, contexts, or phases where this lesson is most relevant
+- name: validation_status
+  title: Validation status
+  type: string
+  required: false
+  description: Draft, reviewed, or approved for OPA contribution
+- name: opa_destination
+  title: OPA destination
+  type: string
+  required: false
+  description: Location in the organizational knowledge repository
+- name: owner
+  title: Owner
+  type: string
+  required: false
+  description: Person responsible for the entry and validation
+produced_by_skills: []
+consumed_by_skills: []

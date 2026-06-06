@@ -1,27 +1,34 @@
 ---
 skill_id: SKL-02-02
 skill_name: Stakeholder Identification
-pack: "02 — Initiating"
-version: "1.0.0"
-status: "Active · Tested"
+pack: 02 — Initiating
+version: 1.0.0
+status: Active · Tested
 source_type: PMI-derived
-primary_artifact_output: "A07 — Stakeholder Register"
+primary_artifact_output: A07 — Stakeholder Register
 artifacts_updated:
-  - "A04 — Project Charter (initial stakeholder list update)"
-  - "A05 — Context Register (stakeholder context notes)"
-pmbok8_process_anchor: "Guide §2.5.6.1 Identify Stakeholders · Guide §2.5 Stakeholders Domain · Standard §3.8 Build an Empowered Culture"
+- A04 — Project Charter (initial stakeholder list update)
+- A05 — Context Register (stakeholder context notes)
+pmbok8_process_anchor: Guide §2.5.6.1 Identify Stakeholders · Guide §2.5 Stakeholders
+  Domain · Standard §3.8 Build an Empowered Culture
 performance_domains:
-  - Stakeholders
+- Stakeholders
 focus_area: Initiating
 upstream_prerequisites:
-  - "SKL-02-01 — A04 Project Charter must be baselined"
+- SKL-02-01 — A04 Project Charter must be baselined
 downstream_skills:
-  - "SKL-03-07 — Plan Stakeholder Engagement"
-  - "SKL-03-08 — Plan Communications Management"
-  - "SKL-04-06 — Manage Stakeholder Engagement"
-  - "SKL-05-07 — Monitor Stakeholder Engagement"
-file_path: "skills/02-initiating/SKL-02-02-stakeholder-identification.md"
+- SKL-03-07 — Plan Stakeholder Engagement
+- SKL-03-08 — Plan Communications Management
+- SKL-04-06 — Manage Stakeholder Engagement
+- SKL-05-07 — Monitor Stakeholder Engagement
+file_path: skills/02-initiating/SKL-02-02-stakeholder-identification.md
 tests: 10
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+lifecycle_notes: Universal process applicable across all lifecycle models with appropriate
+  tailoring.
 ---
 
 # SKL-02-02 — Stakeholder Identification

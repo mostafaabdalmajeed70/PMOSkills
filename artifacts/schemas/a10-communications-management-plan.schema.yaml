@@ -1,0 +1,61 @@
+schema_version: 1.0.0
+artifact_id: A10
+artifact_name: Communications Management Plan
+pmbok8_ref: PMBOK8 Guide §2.5 Stakeholders Performance Domain; Table 2-1 Plan Communications
+  Management
+focus_area: Planning
+performance_domains:
+- Stakeholders
+- Governance
+- Resources
+lifecycle_applicability:
+- predictive
+- adaptive
+- hybrid
+fields:
+- name: stakeholder_communications_needs
+  title: Stakeholder communications needs
+  type: string
+  required: true
+  description: Summary of what information each key stakeholder group requires
+- name: communication_item_register
+  title: Communication item register
+  type: string
+  required: true
+  description: What is communicated, to whom, by whom, frequency, format, channel
+- name: sender_and_receiver_responsibilities
+  title: Sender and receiver responsibilities
+  type: string
+  required: true
+  description: Who is accountable for producing and distributing each communication
+- name: communication_channels_and_tools
+  title: Communication channels and tools
+  type: string
+  required: true
+  description: Approved tools and channels (email, portal, meetings, reports, dashboards)
+- name: escalation_communications
+  title: Escalation communications
+  type: string
+  required: true
+  description: How and when escalation communications are triggered and structured
+- name: sensitive_information_handling
+  title: Sensitive information handling
+  type: string
+  required: true
+  description: Rules for confidential, commercially sensitive, or regulated information
+- name: communication_feedback_mechanism
+  title: Communication feedback mechanism
+  type: string
+  required: false
+  description: How the team will know whether communications are effective
+- name: glossary_terminology_alignment
+  title: Glossary / terminology alignment
+  type: string
+  required: false
+  description: Common terms used to ensure clarity across stakeholder groups
+produced_by_skills:
+- SKL-03-13
+consumed_by_skills:
+- SKL-03-13
+- SKL-04-07
+- SKL-05-09
