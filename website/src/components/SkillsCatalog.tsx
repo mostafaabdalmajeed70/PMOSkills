@@ -1,12 +1,13 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { Search, Play, Check, Copy, Info } from 'lucide-react';
+import { Search, Play, Check, Copy, Info, Download } from 'lucide-react';
+import { marked } from 'marked';
 
 interface Skill {
   id: string;
   title: string;
-  domain: string;
-  status: string;
-  authority: string;
+  domain?: string;
+  status?: string;
+  authority?: string;
   complexity?: string;
   lifecycle?: string;
   inputs?: string[];
@@ -14,6 +15,7 @@ interface Skill {
   steps?: string[];
   prompt?: string;
   content?: string;
+  rawContent?: string;
   yaml?: any;
 }
 
@@ -26,8 +28,9 @@ interface SkillsCatalogProps {
 export const SkillsCatalog: React.FC<SkillsCatalogProps> = ({ skills, selectedSkillId, setSelectedSkillId }) => {
   const [searchTerm, setSearchTerm] = useState<string>('');
   const [activeLifecycleFilter, setActiveLifecycleFilter] = useState<string>('All');
-  const [activeTab, setActiveTab] = useState<'steps' | 'playground' | 'details'>('steps');
+  const [activeTab, setActiveTab] = useState<'steps' | 'playground' | 'details' | 'source'>('steps');
   const [copied, setCopied] = useState<boolean>(false);
+  const [sourceCopied, setSourceCopied] = useState<boolean>(false);
 
   // Playground Variables state
   const [playgroundVariables, setPlaygroundVariables] = useState<Record<string, string>>({});
@@ -37,10 +40,33 @@ export const SkillsCatalog: React.FC<SkillsCatalogProps> = ({ skills, selectedSk
     return skills.find(s => s.id === selectedSkillId) || skills[0];
   }, [skills, selectedSkillId]);
 
+  const promptTemplate = useMemo(() => {
+    if (selectedSkill?.prompt) return selectedSkill.prompt;
+    return `Use Skill ${selectedSkill?.id || 'UNKNOWN'} — ${selectedSkill?.title || 'Untitled Skill'} to create a project-ready output based on the skill's purpose and outputs.
+
+Project details:
+- Project Name: [PROJECT_NAME]
+- Sponsor: [SPONSOR]
+- Project Manager: [PROJECT_MANAGER]
+- Delivery Approach: [DELIVERY_APPROACH]
+- Budget: [BUDGET]
+- Duration: [DURATION]
+- Key Deliverables: [KEY_DELIVERABLES]
+- Constraints: [CONSTRAINTS]
+
+Skill context:
+- Purpose: ${selectedSkill?.title || ''}
+- Inputs: ${selectedSkill?.inputs?.join(', ') || 'N/A'}
+- Outputs: ${selectedSkill?.outputs?.join(', ') || 'N/A'}
+
+Instructions:
+Please create the requested deliverable using the above information.`;
+  }, [selectedSkill]);
+
   // Extract variables from the prompt
   const promptVariables = useMemo(() => {
-    if (!selectedSkill?.prompt) return [];
-    const template = selectedSkill.prompt;
+    if (!promptTemplate) return [];
+    const template = promptTemplate;
     const vars = new Set<string>();
     
     // Match {{key}} or {{ key }}
@@ -64,7 +90,7 @@ export const SkillsCatalog: React.FC<SkillsCatalogProps> = ({ skills, selectedSk
     }
 
     return Array.from(vars);
-  }, [selectedSkill]);
+  }, [promptTemplate]);
 
   // Reset variables whenever active skill changes
   useEffect(() => {
@@ -77,6 +103,10 @@ export const SkillsCatalog: React.FC<SkillsCatalogProps> = ({ skills, selectedSk
         initialVars[v] = '$50,000';
       } else if (v.toLowerCase().includes('date')) {
         initialVars[v] = new Date().toISOString().split('T')[0];
+      } else if (v.toLowerCase().includes('budget')) {
+        initialVars[v] = '$50,000';
+      } else if (v.toLowerCase().includes('duration')) {
+        initialVars[v] = '8 weeks';
       } else {
         initialVars[v] = `[${v}]`;
       }
@@ -87,8 +117,8 @@ export const SkillsCatalog: React.FC<SkillsCatalogProps> = ({ skills, selectedSk
 
   // Inject variables into prompt for the playground
   const injectedPrompt = useMemo(() => {
-    if (!selectedSkill?.prompt) return '';
-    let result = selectedSkill.prompt;
+    if (!promptTemplate) return '';
+    let result = promptTemplate;
     for (const [key, value] of Object.entries(playgroundVariables)) {
       // {{key}}
       const doubleBraceRegex = new RegExp(`{{\\s*${key}\\s*}}`, 'g');
@@ -103,7 +133,7 @@ export const SkillsCatalog: React.FC<SkillsCatalogProps> = ({ skills, selectedSk
       result = result.replace(bracketRegex, value);
     }
     return result;
-  }, [selectedSkill, playgroundVariables]);
+  }, [promptTemplate, playgroundVariables]);
 
   // Copy injected prompt to clipboard
   const handleCopyPrompt = () => {
@@ -111,6 +141,41 @@ export const SkillsCatalog: React.FC<SkillsCatalogProps> = ({ skills, selectedSk
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
+
+  // Copy full skill source markdown to clipboard
+  const handleCopySource = () => {
+    if (!selectedSkill?.content) return;
+    navigator.clipboard.writeText(selectedSkill.content);
+    setSourceCopied(true);
+    setTimeout(() => setSourceCopied(false), 2000);
+  };
+
+  // Download full skill source markdown
+  const handleDownloadSource = () => {
+    if (!selectedSkill?.content) return;
+    const blob = new Blob([selectedSkill.content], { type: 'text/markdown' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${selectedSkill.id || 'skill'}.md`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
+  const sourceHtml = useMemo(() => {
+    if (!selectedSkill?.content) return '';
+    try {
+      return marked.parse(selectedSkill.content, {
+        gfm: true,
+        breaks: true
+      }) as string;
+    } catch (e) {
+      console.error(e);
+      return selectedSkill.content;
+    }
+  }, [selectedSkill]);
 
   // Get unique lifecycle phases for filter
   const lifecycleOptions = useMemo(() => {
@@ -126,7 +191,7 @@ export const SkillsCatalog: React.FC<SkillsCatalogProps> = ({ skills, selectedSk
     return skills.filter(s => {
       const matchesSearch = s.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
                             s.id.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                            s.domain.toLowerCase().includes(searchTerm.toLowerCase());
+                            (s.domain?.toLowerCase().includes(searchTerm.toLowerCase()) ?? false);
       
       const matchesLifecycle = activeLifecycleFilter === 'All' || s.lifecycle === activeLifecycleFilter;
       
@@ -140,6 +205,13 @@ export const SkillsCatalog: React.FC<SkillsCatalogProps> = ({ skills, selectedSk
       setSelectedSkillId(filteredSkills[0].id);
     }
   }, [filteredSkills, selectedSkillId]);
+
+  const metadataItems = [
+    { label: 'Lifecycle', value: selectedSkill.lifecycle || 'Unknown' },
+    { label: 'Complexity', value: selectedSkill.complexity || 'Unspecified' },
+    { label: 'Status', value: selectedSkill.status || 'Unknown' },
+    { label: 'Authority', value: selectedSkill.authority || 'None' }
+  ];
 
   return (
     <div className="animate-fade-in" style={{ display: 'grid', gridTemplateColumns: '320px 1fr', gap: '2rem', height: '100%', minHeight: 0, overflow: 'hidden' }}>
@@ -250,10 +322,19 @@ export const SkillsCatalog: React.FC<SkillsCatalogProps> = ({ skills, selectedSk
               </span>
             </div>
             <h2 style={{ fontSize: '1.75rem', color: '#ffffff' }}>{selectedSkill.title}</h2>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginTop: '0.85rem' }}>
+              {metadataItems.map(item => (
+                <span key={item.label} style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', background: 'rgba(255,255,255,0.04)', border: '1px solid var(--border-color)', borderRadius: '999px', padding: '0.4rem 0.8rem' }}>
+                  <strong style={{ color: 'var(--text-primary)' }}>{item.label}:</strong> {item.value}
+                </span>
+              ))}
+            </div>
             {selectedSkill.authority && (
-              <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
-                Authority Level: <strong style={{ color: 'var(--text-primary)' }}>{selectedSkill.authority}</strong>
-              </span>
+              <div style={{ marginTop: '0.9rem' }}>
+                <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+                  Authority Level: <strong style={{ color: 'var(--text-primary)' }}>{selectedSkill.authority}</strong>
+                </span>
+              </div>
             )}
           </div>
 
@@ -303,6 +384,21 @@ export const SkillsCatalog: React.FC<SkillsCatalogProps> = ({ skills, selectedSk
               }}
             >
               Inputs & Outputs
+            </button>
+            <button 
+              onClick={() => setActiveTab('source')}
+              style={{
+                padding: '0.5rem 1rem',
+                border: 'none',
+                background: 'transparent',
+                color: activeTab === 'source' ? 'var(--color-skill)' : 'var(--text-secondary)',
+                fontWeight: activeTab === 'source' ? 600 : 400,
+                borderBottom: activeTab === 'source' ? '2px solid var(--color-skill)' : 'none',
+                cursor: 'pointer',
+                fontSize: '0.9rem'
+              }}
+            >
+              Full Source
             </button>
           </div>
 
@@ -409,7 +505,11 @@ export const SkillsCatalog: React.FC<SkillsCatalogProps> = ({ skills, selectedSk
                       )}
                     </button>
                   </div>
-                  
+                  {!selectedSkill?.prompt && (
+                    <div style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginBottom: '0.75rem' }}>
+                      No explicit skill prompt template found. Showing a generated playground prompt based on the skill title, inputs, and outputs.
+                    </div>
+                  )}
                   <textarea
                     readOnly
                     value={injectedPrompt || selectedSkill.prompt || 'No AI prompt template exists for this skill.'}
@@ -456,6 +556,74 @@ export const SkillsCatalog: React.FC<SkillsCatalogProps> = ({ skills, selectedSk
                       <li style={{ color: 'var(--text-muted)', listStyle: 'none' }}>No direct outputs mapped.</li>
                     )}
                   </ul>
+                </div>
+              </div>
+            )}
+            {activeTab === 'source' && (
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem', minHeight: '400px' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.25rem' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div>
+                      <h3 style={{ fontSize: '1.1rem', color: 'var(--color-skill)', margin: 0 }}>Full Skill Source</h3>
+                      <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Copy or download the complete markdown record.</span>
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                      <button
+                        onClick={handleCopySource}
+                        className="glass"
+                        style={{
+                          padding: '0.5rem 0.8rem',
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '0.35rem',
+                          fontSize: '0.8rem',
+                          cursor: 'pointer'
+                        }}
+                      >
+                        <Copy size={14} /> {sourceCopied ? 'Copied' : 'Copy'}
+                      </button>
+                      <button
+                        onClick={handleDownloadSource}
+                        className="glass"
+                        style={{
+                          padding: '0.5rem 0.8rem',
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '0.35rem',
+                          fontSize: '0.8rem',
+                          cursor: 'pointer'
+                        }}
+                      >
+                        <Download size={14} /> Download
+                      </button>
+                    </div>
+                  </div>
+
+                  <textarea
+                    readOnly
+                    value={selectedSkill.content || 'No source available for this skill.'}
+                    style={{
+                      flex: 1,
+                      width: '100%',
+                      minHeight: '260px',
+                      padding: '1rem',
+                      background: 'var(--bg-input)',
+                      border: '1px solid var(--border-color)',
+                      borderRadius: '8px',
+                      color: 'var(--text-primary)',
+                      fontFamily: 'ui-monospace, SFMono-Regular, Menlo, Monaco, monospace',
+                      fontSize: '0.8rem',
+                      resize: 'none',
+                      lineHeight: '1.4',
+                      whiteSpace: 'pre-wrap',
+                      overflow: 'auto'
+                    }}
+                  />
+                </div>
+
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.25rem', overflowY: 'auto' }}>
+                  <h3 style={{ fontSize: '1.1rem', color: 'var(--color-ref)', margin: 0 }}>Rendered Preview</h3>
+                  <div style={{ color: 'var(--text-primary)', fontSize: '0.9rem', lineHeight: '1.7' }} dangerouslySetInnerHTML={{ __html: sourceHtml }} />
                 </div>
               </div>
             )}

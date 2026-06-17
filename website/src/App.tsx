@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, type SVGProps } from 'react';
 import { Landing } from './components/Landing';
 import { SkillsCatalog } from './components/SkillsCatalog';
 import { ProcessCatalog } from './components/ProcessCatalog';
@@ -10,53 +10,99 @@ import './App.css';
 // Import the pre-compiled database directly into the bundle
 import store from '../../sdk/npm/src/db/store.json';
 
+type SkillItem = {
+  id: string;
+  title: string;
+  domain?: string;
+  status?: string;
+  authority?: string;
+  complexity?: string;
+  lifecycle?: string;
+  inputs?: unknown;
+  outputs?: unknown;
+  steps?: unknown;
+  prompt?: string;
+  content?: string;
+  rawContent?: string;
+  yaml?: string;
+};
+
+type ProcessItem = {
+  id: string;
+  title: string;
+  domain?: string;
+  description?: string;
+  inputs?: unknown;
+  outputs?: unknown;
+  tools?: unknown;
+  skills?: string[];
+  content?: string;
+  rawContent?: string;
+};
+
+type ArtifactItem = {
+  id: string;
+  title: string;
+  path?: string;
+  content?: string;
+  rawContent?: string;
+};
+
+type ReferenceItem = {
+  path: string;
+  title?: string;
+  content?: string;
+  rawContent?: string;
+};
+
 // Convert the database objects into simple arrays
-const skillsList = Object.values(store.skills).map((skill: any) => ({
+const skillsList = Object.values(store.skills as Record<string, SkillItem>).map((skill) => ({
   id: skill.id,
   title: skill.title,
-  domain: skill.domain,
-  status: skill.status,
-  authority: skill.authority,
+  domain: skill.domain || '',
+  status: skill.status || '',
+  authority: skill.authority || '',
   complexity: skill.complexity,
-  lifecycle: skill.lifecycle,
-  inputs: skill.inputs,
-  outputs: skill.outputs,
-  steps: skill.steps,
+  lifecycle: skill.lifecycle || '',
+  inputs: skill.inputs as string[] | undefined,
+  outputs: skill.outputs as string[] | undefined,
+  steps: skill.steps as string[] | undefined,
   prompt: skill.prompt,
-  content: skill.content,
+  content: skill.content || skill.rawContent || '' ,
+  rawContent: skill.rawContent || skill.content || '',
   yaml: skill.yaml
 }));
 
-const processesList = Object.values(store.processes).map((proc: any) => ({
+const processesList = Object.values(store.processes as Record<string, ProcessItem>).map((proc) => ({
   id: proc.id,
   title: proc.title,
-  domain: proc.domain,
+  domain: proc.domain || '',
   description: proc.description,
-  inputs: proc.inputs,
-  outputs: proc.outputs,
-  tools: proc.tools,
+  inputs: proc.inputs as string[] | undefined,
+  outputs: proc.outputs as string[] | undefined,
+  tools: proc.tools as string[] | undefined,
   skills: proc.skills || [],
-  content: proc.content
+  content: proc.content || proc.rawContent || ''
 }));
 
-const artifactsList = Object.values(store.artifacts).map((art: any) => ({
+const artifactsList = Object.values(store.artifacts as Record<string, ArtifactItem>).map((art) => ({
   id: art.id,
   title: art.title,
   path: art.path,
-  content: art.content || ''
+  content: art.content || art.rawContent || ''
 }));
 
-const referencesList = Object.values(store.reference).map((ref: any) => ({
+const referencesList = Object.values(store.reference as Record<string, ReferenceItem>).map((ref) => ({
   path: ref.path,
   title: ref.title || ref.path.split('/').pop() || 'Reference File',
-  content: ref.content || ''
+  content: ref.content || ref.rawContent || ''
 }));
 
 const sharedList = Object.values(store.shared);
 const testsList = Object.values(store.tests);
 
 // Custom GitHub Icon Component to avoid dependency mismatches
-const GithubIcon = ({ size = 18, ...props }: { size?: number; [key: string]: any }) => (
+const GithubIcon = ({ size = 18, ...props }: SVGProps<SVGSVGElement> & { size?: number }) => (
   <svg 
     viewBox="0 0 24 24" 
     width={size} 

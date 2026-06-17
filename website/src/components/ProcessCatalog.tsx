@@ -4,7 +4,7 @@ import { Search, Info, ArrowRight, Settings } from 'lucide-react';
 interface Process {
   id: string;
   title: string;
-  domain: string;
+  domain?: string;
   description?: string;
   inputs?: string[];
   outputs?: string[];
@@ -32,7 +32,7 @@ export const ProcessCatalog: React.FC<ProcessCatalogProps> = ({ processes, onNav
     return processes.filter(p => {
       return p.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
              p.id.toLowerCase().includes(searchTerm.toLowerCase()) ||
-             p.domain.toLowerCase().includes(searchTerm.toLowerCase());
+             (p.domain?.toLowerCase().includes(searchTerm.toLowerCase()) ?? false);
     });
   }, [processes, searchTerm]);
 

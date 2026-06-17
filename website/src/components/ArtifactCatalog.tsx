@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Search, Folder, Copy, Check, Download } from 'lucide-react';
 import { marked } from 'marked';
 
@@ -18,11 +18,6 @@ export const ArtifactCatalog: React.FC<ArtifactCatalogProps> = ({ artifacts }) =
   const [searchTerm, setSearchTerm] = useState<string>('');
   const [activeCategory, setActiveCategory] = useState<string>('All');
   const [copied, setCopied] = useState<boolean>(false);
-
-  // Active selected artifact
-  const selectedArtifact = useMemo(() => {
-    return artifacts.find(a => (a.path || a.id) === selectedArtifactId) || artifacts[0];
-  }, [artifacts, selectedArtifactId]);
 
   // Extract categories (folder names) from artifact paths
   const categories = useMemo(() => {
@@ -57,12 +52,23 @@ export const ArtifactCatalog: React.FC<ArtifactCatalogProps> = ({ artifacts }) =
     });
   }, [artifacts, searchTerm, activeCategory]);
 
-  // Set first filtered artifact if current selection is filtered out
-  useEffect(() => {
-    if (filteredArtifacts.length > 0 && !filteredArtifacts.some(a => (a.path || a.id) === selectedArtifactId)) {
-      setSelectedArtifactId(filteredArtifacts[0].path || filteredArtifacts[0].id);
+  const effectiveSelectedArtifactId = useMemo(() => {
+    if (filteredArtifacts.length === 0) {
+      return selectedArtifactId;
     }
+
+    const isSelectedInFiltered = filteredArtifacts.some(a => (a.path || a.id) === selectedArtifactId);
+    if (isSelectedInFiltered) {
+      return selectedArtifactId;
+    }
+
+    return filteredArtifacts[0].path || filteredArtifacts[0].id || selectedArtifactId;
   }, [filteredArtifacts, selectedArtifactId]);
+
+  // Active selected artifact
+  const selectedArtifact = useMemo(() => {
+    return artifacts.find(a => (a.path || a.id) === effectiveSelectedArtifactId) || artifacts[0];
+  }, [artifacts, effectiveSelectedArtifactId]);
 
   // Copy raw markdown template to clipboard
   const handleCopy = () => {
@@ -128,21 +134,14 @@ export const ArtifactCatalog: React.FC<ArtifactCatalogProps> = ({ artifacts }) =
 
         {/* Category Filter */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-          <label style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+          <label htmlFor="artifact-category-select" style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
             Category
           </label>
-          <select 
-            value={activeCategory} 
+          <select
+            id="artifact-category-select"
+            className="glass"
+            value={activeCategory}
             onChange={(e) => setActiveCategory(e.target.value)}
-            style={{
-              padding: '0.5rem',
-              background: 'var(--bg-input)',
-              border: '1px solid var(--border-color)',
-              borderRadius: '6px',
-              color: 'var(--text-primary)',
-              fontSize: '0.85rem',
-              textTransform: 'capitalize'
-            }}
           >
             {categories.map(cat => (
               <option key={cat} value={cat}>{cat.replace(/-/g, ' ')}</option>

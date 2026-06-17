@@ -136,6 +136,63 @@ function parseProcessDetails(body: string) {
   return { inputs, tools, outputs };
 }
 
+// Extract steps and inputs/outputs from skill body
+function parseSkillDetails(body: string) {
+  const steps: string[] = [];
+  const inputs: string[] = [];
+  const outputs: string[] = [];
+
+  // Extract Inputs from table (## Inputs Required section)
+  const inputsMatch = body.match(/## Inputs Required\r?\n\r?\n\|([\s\S]*?)(?=\n\r?\n##|\n\r?\n---|$)/);
+  if (inputsMatch) {
+    const rows = inputsMatch[1].split(/\r?\n/).slice(2);
+    for (const row of rows) {
+      const cols = row.split('|').map(s => s.trim());
+      if (cols.length > 2 && cols[1]) {
+        inputs.push(cols[1]);
+      }
+    }
+  }
+
+  // Extract Outputs from body mentions (typically in tables or bullet lists)
+  // Looking for common patterns
+  const outputsMatch = body.match(/(?:Outputs?|Deliverables?)[\s\S]*?\n\n([\s\S]*?)(?=\n\r?\n##|\n\r?\n---|$)/i);
+  if (outputsMatch) {
+    const lines = outputsMatch[1].split(/\r?\n/);
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (trimmed.startsWith('-') || trimmed.startsWith('*')) {
+        let output = trimmed.substring(1).trim();
+        // Remove markdown formatting
+        output = output.replace(/\*\*(.*?)\*\*/g, '$1').trim();
+        if (output && output.length > 5) {
+          outputs.push(output);
+        }
+      }
+    }
+  }
+
+  // Extract Steps from Instructions section
+  const instructionsMatch = body.match(/## Instructions\r?\n\r?\n([\s\S]*?)(?=\n\r?\n##|\n\r?\n---|$)/);
+  if (instructionsMatch) {
+    const instructionsBody = instructionsMatch[1];
+    // Find all step sections (### Step 1 — ..., ### Step 2 — ..., etc.)
+    const stepMatches = instructionsBody.match(/### Step \d+[^]*?(?=\n### Step|\n## |$)/g);
+    if (stepMatches) {
+      for (const stepMatch of stepMatches) {
+        // Extract the step title (first line after ### Step X)
+        const stepLines = stepMatch.split(/\r?\n/);
+        const stepTitle = stepLines[0].replace(/^###\s+Step \d+\s*—?\s*/, '').trim();
+        if (stepTitle) {
+          steps.push(stepTitle);
+        }
+      }
+    }
+  }
+
+  return { steps, inputs, outputs };
+}
+
 // Split and parse system prompts file
 function parseSystemPrompts(content: string): Record<string, SystemPrompt> {
   const prompts: Record<string, SystemPrompt> = {};
@@ -197,6 +254,7 @@ function main() {
     const raw = fs.readFileSync(file, 'utf-8');
     const { metadata, body } = parseFrontMatter(raw);
     const id = metadata.skill_id || path.basename(file, '.md').split('-').slice(0, 3).join('-');
+    const { steps, inputs, outputs } = parseSkillDetails(body);
     
     store.skills[id] = {
       id,
@@ -210,8 +268,12 @@ function main() {
         citations: metadata.pmbok8_process_anchor ? [metadata.pmbok8_process_anchor] : [],
         ...metadata
       },
+      steps: steps,
+      inputs: inputs,
+      outputs: outputs,
       template: body.trim(),
-      rawContent: raw
+      rawContent: raw,
+      content: body.trim()
     };
   }
 

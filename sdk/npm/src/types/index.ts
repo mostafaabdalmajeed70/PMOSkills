@@ -12,7 +12,11 @@ export interface Skill {
   id: string;
   title: string;
   metadata: SkillMetadata;
+  steps?: string[];
+  inputs?: string[];
+  outputs?: string[];
   template: string;
+  content?: string;
   rawContent: string;
 }
 
